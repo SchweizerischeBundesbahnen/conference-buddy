@@ -1,4 +1,4 @@
 devdaytools
 ===========
 
-The Dev Day Breafing an Feedback Tool
+The Dev Day Briefing and Feedback Tool
