@@ -1,4 +1,4 @@
-devdaytools
-===========
+Conference-Buddy
+================
 
-The Dev Day Briefing and Feedback Tool
+Conference-Buddy, your buddy app for conferences!
