@@ -1,0 +1,23 @@
+.talk {
+    border: 1px solid #eee;
+    border-left-color: orange;
+    border-left-width: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.talk .header {
+    font-size: 150%;
+}
+
+.talk .author {
+    font-style: italic;
+}
+
+.talk .description {
+    margin-top: 5px;
+}
+
+.talk .link-description {
+
+}
