@@ -1,13 +1,14 @@
 .talk {
     border: 1px solid #eee;
-    border-left-color: orange;
+    border-left-color: #FF0000;
     border-left-width: 5px;
     border-radius: 3px;
     margin-bottom: 5px;
 }
 
 .talk .header {
-    font-size: 150%;
+    font-size: 120%;
+    font-weight: bold;
 }
 
 .talk .author {
@@ -20,4 +21,15 @@
 
 .talk .link-description {
 
+}
+
+.track {
+    padding: 5px;
+}
+
+.banner {
+    padding: 10px;
+    background-color: #003399;
+    color: white;
+    font-weight: bold;
 }

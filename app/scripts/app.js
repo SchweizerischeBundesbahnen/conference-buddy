@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('konferenzBuddyApp', [
+  .module('conferenceBuddyApp', [
     'ngRoute',
     'ngTouch',
     'ui.bootstrap'
@@ -9,12 +9,8 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/bytrack', {
-        templateUrl: 'views/bytrack.html',
-        controller: 'BytrackCtrl'
+				templateUrl: 'views/tracks.html',
+				controller: 'TrackController'
       })
       .otherwise({
         redirectTo: '/'
