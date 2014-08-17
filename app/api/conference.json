@@ -143,8 +143,8 @@
 			"title": "Core Tec",
 			"talks": [
 				{
-					"talk": "cafe",
-					"speakers": [],
+					"talkId": "cafe",
+					"speakerIds": [],
 					"time": {
 						"start": "08:30",
 						"end": "09:00"
@@ -152,8 +152,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "begrüssung",
-					"speakers": [1],
+					"talkId": "begrüssung",
+					"speakerIds": [1],
 					"time": {
 						"start": "09:00",
 						"end": "09:10"
@@ -161,8 +161,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "keynote",
-					"speakers": [2, 3],
+					"talkId": "keynote",
+					"speakerIds": [2, 3],
 					"time": {
 						"start": "09:10",
 						"end": "10:00"
@@ -170,8 +170,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "pause",
-					"speakers": [],
+					"talkId": "pause",
+					"speakerIds": [],
 					"time": {
 						"start": "10:00",
 						"end": "10:25"
@@ -179,8 +179,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "a1",
-					"speakers": [4, 5],
+					"talkId": "a1",
+					"speakerIds": [4, 5],
 					"time": {
 						"start": "10:25",
 						"end": "11:10"
@@ -194,8 +194,8 @@
 			"title": "Java Tec",
 			"talks": [
 				{
-					"talk": "cafe",
-					"speakers": [],
+					"talkId": "cafe",
+					"speakerIds": [],
 					"time": {
 						"start": "08:30",
 						"end": "09:00"
@@ -203,8 +203,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "begrüssung",
-					"speakers": [1],
+					"talkId": "begrüssung",
+					"speakerIds": [1],
 					"time": {
 						"start": "09:00",
 						"end": "09:10"
@@ -212,8 +212,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "keynote",
-					"speakers": [2, 3],
+					"talkId": "keynote",
+					"speakerIds": [2, 3],
 					"time": {
 						"start": "09:10",
 						"end": "10:00"
@@ -221,8 +221,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "pause",
-					"speakers": [],
+					"talkId": "pause",
+					"speakerIds": [],
 					"time": {
 						"start": "10:00",
 						"end": "10:25"
@@ -230,8 +230,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "a2",
-					"speakers": [6],
+					"talkId": "a2",
+					"speakerIds": [6],
 					"time": {
 						"start": "10:25",
 						"end": "11:10"
@@ -245,8 +245,8 @@
 			"title": "Beyond Now",
 			"talks": [
 				{
-					"talk": "cafe",
-					"speakers": [],
+					"talkId": "cafe",
+					"speakerIds": [],
 					"time": {
 						"start": "08:30",
 						"end": "09:00"
@@ -254,8 +254,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "begrüssung",
-					"speakers": [1],
+					"talkId": "begrüssung",
+					"speakerIds": [1],
 					"time": {
 						"start": "09:00",
 						"end": "09:10"
@@ -263,8 +263,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "keynote",
-					"speakers": [2, 3],
+					"talkId": "keynote",
+					"speakerIds": [2, 3],
 					"time": {
 						"start": "09:10",
 						"end": "10:00"
@@ -272,8 +272,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "pause",
-					"speakers": [],
+					"talkId": "pause",
+					"speakerIds": [],
 					"time": {
 						"start": "10:00",
 						"end": "10:25"
@@ -281,8 +281,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "a3",
-					"speakers": [7, 8],
+					"talkId": "a3",
+					"speakerIds": [7, 8],
 					"time": {
 						"start": "10:25",
 						"end": "11:10"
@@ -296,8 +296,8 @@
 			"title": "Engineering Arts",
 			"talks": [
 				{
-					"talk": "cafe",
-					"speakers": [],
+					"talkId": "cafe",
+					"speakerIds": [],
 					"time": {
 						"start": "08:30",
 						"end": "09:00"
@@ -305,8 +305,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "begrüssung",
-					"speakers": [1],
+					"talkId": "begrüssung",
+					"speakerIds": [1],
 					"time": {
 						"start": "09:00",
 						"end": "09:10"
@@ -314,8 +314,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "keynote",
-					"speakers": [2, 3],
+					"talkId": "keynote",
+					"speakerIds": [2, 3],
 					"time": {
 						"start": "09:10",
 						"end": "10:00"
@@ -323,8 +323,8 @@
 					"room": "Kongressraum 1"
 				},
 				{
-					"talk": "pause",
-					"speakers": [],
+					"talkId": "pause",
+					"speakerIds": [],
 					"time": {
 						"start": "10:00",
 						"end": "10:25"
@@ -332,8 +332,8 @@
 					"room": "Foyer 1 Catering"
 				},
 				{
-					"talk": "a4",
-					"speakers": [9, 10],
+					"talkId": "a4",
+					"speakerIds": [9, 10],
 					"time": {
 						"start": "10:25",
 						"end": "11:10"

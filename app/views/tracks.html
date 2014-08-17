@@ -1,0 +1,28 @@
+<div class="banner">
+    <p class="h2">{{conference.name}}</p>
+
+    <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
+</div>
+<div class="container">
+    <div class="row track">
+        <p class="h3" ng-swipe-right="nextTrack()" ng-swipe-left="previousTrack()">
+                   <span ng-click="previousTrack()" ng-show="hasPreviousTrack()"
+                         class="glyphicon glyphicon-chevron-left"></span>
+            Track: {{currentTrack.title}}
+                <span ng-click="nextTrack()" ng-show="hasNextTrack()"
+                      class="glyphicon glyphicon-chevron-right"></span>
+        </p>
+
+    </div>
+    <div class="row talk" ng-repeat="talk in currentTrack.talks">
+        <div class="col-xs-2 col-lg-1">
+            {{talk.time.start}}<br>
+            {{talk.time.end}}
+        </div>
+        <div class="col-xs-10 col-lg-11">
+            <div class="header">{{talk.title}}</div>
+            <div ng-show="talk.speakers" class="author">mit {{formatSpeakers(talk)}}</div>
+            <div class="description hidden-xs">{{talk.description}}</div>
+        </div>
+    </div>
+</div>
