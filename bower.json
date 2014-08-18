@@ -8,6 +8,6 @@
     "bootstrap": "~3.0.3",
     "angular-touch": "~1.2.22",
     "angular": "~1.2.22",
-    "angular-route": "~1.2.22",
+    "angular-route": "~1.2.22"
   }
 }
