@@ -5,6 +5,7 @@ angular.module('conferenceBuddyApp')
 
 		$scope.conference = {tracks: []};
 		$scope.currentTrack;
+		$scope.showDetailsIndex = -1;
 
 		var currentTrackId = 0;
 
@@ -19,7 +20,7 @@ angular.module('conferenceBuddyApp')
 			var speakers = '';
 			talk.speakers.forEach(function (speaker) {
 				if (speakers !== '') {
-					speakers += ' und ';
+					speakers += ' & ';
 				}
 				speakers += speaker.name + ' ' + speaker.surname;
 			});
@@ -47,6 +48,11 @@ angular.module('conferenceBuddyApp')
 		$scope.hasPreviousTrack = function () {
 			return currentTrackId > 0;
 		};
+
+		$scope.toggleDetails = function (index) {
+			$scope.showDetailsIndex = $scope.showDetailsIndex === index ? -1 : index;
+		}
+
 		function updateTrack() {
 			$scope.currentTrack = $scope.conference.tracks[currentTrackId];
 		};
