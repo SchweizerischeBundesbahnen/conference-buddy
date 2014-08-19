@@ -4,7 +4,7 @@ angular.module('conferenceBuddyApp')
 	.controller('TrackController', ['$scope', 'ConferenceService', function ($scope, conferenceService) {
 
 		$scope.conference = {tracks: []};
-		$scope.currentTrack;
+		$scope.currentTrack = null;
 		$scope.showDetailsIndex = -1;
 
 		var currentTrackId = 0;
@@ -25,7 +25,7 @@ angular.module('conferenceBuddyApp')
 				speakers += speaker.name + ' ' + speaker.surname;
 			});
 			return speakers;
-		}
+		};
 
 		$scope.nextTrack = function () {
 			if ($scope.hasNextTrack()) {
@@ -51,15 +51,15 @@ angular.module('conferenceBuddyApp')
 
 		$scope.toggleDetails = function (index) {
 			$scope.showDetailsIndex = $scope.showDetailsIndex === index ? -1 : index;
-		}
+		};
 
 		function updateTrack() {
 			$scope.currentTrack = $scope.conference.tracks[currentTrackId];
-		};
+		}
 
 		function errorAlert(error) {
 			//TODO [kgu] err handling
 			console.log(error);
-		};
+		}
 
 	}]);
