@@ -6,6 +6,10 @@
     margin-bottom: 5px;
 }
 
+.selected {
+    border-left-color: #003399;
+}
+
 .talk .header {
     font-size: 120%;
     font-weight: bold;

@@ -3,9 +3,9 @@
 
     <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
 </div>
-<div class="container">
+<div class="container" ng-swipe-left="nextTrack()" ng-swipe-right="previousTrack()">
     <div class="row track">
-        <p class="h3" ng-swipe-right="nextTrack()" ng-swipe-left="previousTrack()">
+        <p class="h3">
                    <span ng-click="previousTrack()" ng-show="hasPreviousTrack()"
                          class="glyphicon glyphicon-chevron-left"></span>
             Track: {{currentTrack.title}}
@@ -14,7 +14,8 @@
         </p>
 
     </div>
-    <div class="row talk" ng-repeat="talk in currentTrack.talks">
+    <div ng-class="{row: true, talk: true, selected: showDetailsIndex === $index}"
+         ng-repeat="talk in currentTrack.talks" ng-click="toggleDetails($index)">
         <div class="col-xs-2 col-lg-1">
             {{talk.time.start}}<br>
             {{talk.time.end}}
@@ -22,7 +23,31 @@
         <div class="col-xs-10 col-lg-11">
             <div class="header">{{talk.title}}</div>
             <div ng-show="talk.speakers" class="author">mit {{formatSpeakers(talk)}}</div>
-            <div class="description hidden-xs">{{talk.description}}</div>
+            <div>
+                <small>{{talk.room}}</small>
+            </div>
+            <div ng-class="{description: true, 'hidden-xs': showDetailsIndex !== $index }">
+                <p>{{talk.abstract}}</p>
+                <p ng-show="talk.speakers.length > 1"><strong>Referenten</strong></p>
+                <p ng-show="talk.speakers.length === 1"><strong>Referent</strong></p>
+
+                <div ng-repeat="speaker in talk.speakers">
+                    <div class="row">
+                        <div class="col-xs-4 col-md-2 col-lg-1"><img
+                                ng-src="{{speaker.picture}}" width="80"
+                                height="140"/>
+                        </div>
+                        <div class="col-xs-8 col-md-10 col-lg-11">
+                            {{speaker.name + ' ' + speaker.surname}}<br>
+                            e-Mail: <a href="">{{speaker.email}}</a><br>
+                            Firma: {{speaker.company}}
+                            <p>
+                            {{speaker.bio}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -143,6 +143,18 @@ module.exports = function (grunt) {
       }
     },
 
+		// Automatically inject Bower components into the app
+		wiredep: {
+			options: {
+				cwd: '<%= yeoman.app %>'
+			},
+			app: {
+				src: ['<%= yeoman.app %>/index.html'],
+				// ignorePath: /..\//
+				ignorePath: '<%= yeoman.app %>'
+			}
+		},
+
     // Automatically inject Bower components into the app
     bowerInstall: {
       app: {
@@ -196,7 +208,7 @@ module.exports = function (grunt) {
     // The following *-min tasks produce minified files in the dist folder
     cssmin: {
       options: {
-        root: '<%= yeoman.app %>'
+        // root: '<%= yeoman.app %>'
       }
     },
 
@@ -344,7 +356,11 @@ module.exports = function (grunt) {
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
+      return grunt.task.run([
+				'clean:server',
+				'wiredep',
+				'build',
+				'connect:dist:keepalive']);
     }
 
     grunt.task.run([
@@ -372,6 +388,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+		'wiredep',
     'bowerInstall',
     'useminPrepare',
     'concurrent:dist',
