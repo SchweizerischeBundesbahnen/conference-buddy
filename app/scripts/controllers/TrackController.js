@@ -58,7 +58,6 @@ angular.module('conferenceBuddyApp')
 		}
 
 		function errorAlert(error) {
-			//TODO [kgu] err handling
 			console.log(error);
 		}
 
