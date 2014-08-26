@@ -3,11 +3,11 @@
 angular.module('conferenceBuddyApp')
 	.controller('TrackController', ['$scope', 'ConferenceService', 'DialogService', function ($scope, conferenceService, dialogService) {
 
-		$scope.conference = {tracks: []};
+		$scope.conference = {tracks: [ ]};
 		$scope.currentTrack = null;
 		$scope.showDetailsIndex = -1;
 
-		var currentTrackId = 0;
+		var currentTrackIndex = 0;
 
 		conferenceService.load().then(function (conference) {
 			$scope.conference = conference;
@@ -30,24 +30,24 @@ angular.module('conferenceBuddyApp')
 
 		$scope.nextTrack = function () {
 			if ($scope.hasNextTrack()) {
-				currentTrackId += 1;
+				currentTrackIndex += 1;
 				updateTrack();
 			}
 		};
 
 		$scope.hasNextTrack = function () {
-			return $scope.conference.tracks.length > currentTrackId + 1;
+			return $scope.conference.tracks.length > currentTrackIndex + 1;
 		};
 
 		$scope.previousTrack = function () {
 			if ($scope.hasPreviousTrack()) {
-				currentTrackId -= 1;
+				currentTrackIndex -= 1;
 				updateTrack();
 			}
 		};
 
 		$scope.hasPreviousTrack = function () {
-			return currentTrackId > 0;
+			return currentTrackIndex > 0;
 		};
 
 		$scope.toggleDetails = function (index) {
@@ -55,7 +55,7 @@ angular.module('conferenceBuddyApp')
 		};
 
 		function updateTrack() {
-			$scope.currentTrack = $scope.conference.tracks[currentTrackId];
+			$scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
 		}
 
 	}]);

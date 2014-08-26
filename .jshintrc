@@ -1,24 +1,36 @@
 {
-  "node": true,
-  "browser": true,
-  "esnext": true,
-  "bitwise": true,
-  "camelcase": true,
-  "curly": true,
-  "eqeqeq": true,
-  "immed": true,
-  "indent": 2,
-  "latedef": true,
-  "newcap": true,
-  "noarg": true,
-  "quotmark": "single",
-  "regexp": true,
-  "undef": true,
-  "unused": true,
-  "strict": true,
-  "trailing": true,
-  "smarttabs": true,
-  "globals": {
-    "angular": false
-  }
+	// DOGFOODING: https://confluence.sbb.ch/display/SWE/AP03.1+-+Linting
+
+	// Global Settings
+	"globalstrict": true, // Allow global "use strict" (also enables 'strict').
+	"maxerr": 50,				// Maximum error before stopping.
+
+
+	// Development.
+	"debug": false,			// Allow debugger statements e.g. browser breakpoints.
+	"devel": true,			// This option defines globals that are usually used for logging poor-man's debugging.
+
+
+	// Environments: These options let JSHint know about some pre-defined global variables.
+	"browser": true,      // Standard browser globals e.g. `window`, `document` to allow.
+	"node": true,			// Globals to beef about (default false) e.g. node, wsh, couch.
+
+
+	// Good Style.
+	"curly": true,				// Curly braces. Always.
+	"eqeqeq": true,				// Comparison without type coercion, === instead of ==.
+	"latedef": "nofunc",	// Variables may not be used before definition. Function declaration are ignored.
+	"newcap": true,				// Names of constructor functions always start with a capital.
+	"quotmark": true,			// Consistency of quotation marks (true: consistent, "single" or "double" for only).
+	"maxparams": 3,				// Max. number of parameters per function.
+	"maxdepth": 3,				// Max. number of nested blocks per function.
+	"unused": true,				// Defined variable/arguments never used.
+	"undef": true,				// Used variable is undefined.
+	"freeze": true,				// May not overwrite prototypes of native objects like Array.
+
+
+	// Project specific globals to allow aka Friends.
+	"predef": [
+		"angular"
+	]
 }

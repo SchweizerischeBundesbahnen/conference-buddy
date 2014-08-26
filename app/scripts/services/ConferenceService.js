@@ -29,7 +29,6 @@ angular.module('conferenceBuddyApp')
 								});
 							});
 						});
-
 						return conference;
 					});
 			}
