@@ -5,10 +5,12 @@ angular.module('conferenceBuddyApp')
 
 		this.showError = function (title, message, details) {
 			return this.showModal({}, {headerText: title, bodyText: message, details: details});
-		}
+		};
 
 		this.showModal = function (config, props) {
-			if (!config) config = {};
+			if (!config) {
+				config = {};
+			}
 			config.backdrop = 'static';
 			return this.show(config, props);
 		};
@@ -27,10 +29,10 @@ angular.module('conferenceBuddyApp')
 					$scope.ok = function (result) {
 						$modalInstance.close(result);
 					};
-					$scope.close = function (result) {
+					$scope.close = function () {
 						$modalInstance.dismiss('cancel');
 					};
-				}
+				};
 			}
 			return $modal.open(tempConfig).result;
 		};
