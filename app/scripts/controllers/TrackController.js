@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', '$location', 'ConferenceService', 'DialogService', function($scope, $location, conferenceService, dialogService) {
+['$scope', '$location','ConferenceService', 'DialogService', 'CommentService', function($scope, $location, conferenceService, dialogService, commentService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
@@ -66,7 +66,7 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     $scope.showMyTrack = function() {
         $location.path('mytrack');
-    }
+    };
 
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
@@ -77,4 +77,9 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         $scope.copperfield = $scope.copperfield ? '' : 'magic';
     }
 
-}]);
+	}])
+	.directive('comments', function () {
+		return {
+			templateUrl: 'templates/comments-template.html'
+		};
+	});
