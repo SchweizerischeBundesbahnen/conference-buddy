@@ -12,6 +12,10 @@ angular
 				templateUrl: 'views/tracks.html',
 				controller: 'TrackController'
 			})
+			.when('/comments', {
+				templateUrl: 'views/comments.html',
+				controller: 'TrackController'
+			})
 			.otherwise({
 				redirectTo: '/'
 			});

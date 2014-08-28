@@ -1,0 +1,18 @@
+<div class="row">
+	<form role="form">
+		<div class="form-group">
+			<textarea class="field span12" rows="2" cols="100" placeholder="Leave a comment"
+					  style="width: 100%"></textarea>
+			<button class="btn btn-primary pull-right">Submit</button>
+		</div>
+	</form>
+</div>
+
+<div class="row" style="padding-top: 15px">
+	<div class="panel panel-default" ng-repeat="comment in comments">
+		<div class="panel-heading">{{comment.author}}</div>
+		<div class="panel-body">
+			{{comment.comment}}
+		</div>
+	</div>
+</div>

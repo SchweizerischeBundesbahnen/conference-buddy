@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp')
-	.controller('TrackController', ['$scope', 'ConferenceService', 'DialogService', function ($scope, conferenceService, dialogService) {
+	.controller('TrackController', ['$scope', 'ConferenceService', 'DialogService', 'CommentService',
+		function ($scope, conferenceService, dialogService, commentService) {
 
 		$scope.conference = {tracks: [ ]};
 		$scope.currentTrack = null;
@@ -15,6 +16,10 @@ angular.module('conferenceBuddyApp')
 		}).catch(function (err) {
 			dialogService.showError('Backend Error', 'Failed to load conference data from the backend',
 					err.data + ' HTTP-Status:' + err.status);
+		});
+
+		commentService.load().then(function(data) {
+			$scope.comments = data;
 		});
 
 		$scope.formatSpeakers = function (talk) {
@@ -58,4 +63,9 @@ angular.module('conferenceBuddyApp')
 			$scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
 		}
 
-	}]);
+	}])
+	.directive('comments', function() {
+		return {
+			templateUrl: 'templates/comments-template.html'
+		};
+	});
