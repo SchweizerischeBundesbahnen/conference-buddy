@@ -1,39 +1,33 @@
 <div class="modalDialog">
     <div class="modal-header">
         <span class="modal-title">
-            <span class="pull-right"><button class="btn btn-primary" ng-click="close()">OK</button></span>
-            <strong>{{options.talk.title}}</strong><br>
+            <span class="pull-right"><button class="btn btn-primary" ng-click="close()">X</button></span>
+            <h4>{{options.talk.title}}</h4>
             <small>{{options.talk.time.start}} - {{options.talk.time.end}}, {{options.talk.room}}</small><br>
-            <small ng-show="options.talk.speakers && options.talk.abstract" class="author">mit {{options.formatSpeakers(options.talk)}}</small>
         </span>
     </div>
     <div class="modal-body">
         <div class="description">
             <p>{{options.talk.abstract}}</p>
 
-            <p ng-show="options.talk.speakers.length > 1"><strong>Referenten</strong></p>
+            <h4 ng-show="options.talk.speakers.length > 1">Referenten</h4>
 
-            <p ng-show="options.talk.speakers.length === 1"><strong>Referent</strong></p>
+            <h4 ng-show="options.talk.speakers.length === 1">Referent</h4>
 
             <div ng-repeat="speaker in options.talk.speakers">
                 <div class="row">
-                    <div class="col-xs-4 col-md-2 col-lg-1"><img
-                            ng-src="{{speaker.picture}}" width="80"
-                            height="140"/>
-                    </div>
-                    <div class="col-xs-8 col-md-10 col-lg-11">
-                        {{speaker.name + ' ' + speaker.surname}}<br>
-                        e-Mail: <a href="">{{speaker.email}}</a><br>
-                        Firma: {{speaker.company}}
-                        <p>
-                            {{speaker.bio}}
-                        </p>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <img ng-src="{{speaker.picture}}" class="pull-left profileimg"/>
+                        <strong>{{speaker.name}} {{speaker.surname}}</strong><br>
+                        <a href="mailto:{{speaker.email}}">{{speaker.email}}</a><br>
+                        {{speaker.company}}
+                        <p class="bio">{{speaker.bio}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-footer">
-        <button class="btn btn-primary" ng-click="close()">OK</button>
+        <button class="btn btn-primary" ng-click="close()">X</button>
     </div>
 </div>
