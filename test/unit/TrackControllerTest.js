@@ -15,13 +15,18 @@ describe('Controller: TrackController', function () {
 			var mockedConf = {tracks: [
 				{id: 'teaTime', title: 'The Art of Tea',
 					talks: [
-						{speakers: [
-							{name: 'Mr.', surname: 'Pink'},
-							{name: 'Mr.', surname: 'White'}
-						]},
-						{speakers: [
-							{name: 'Mr.', surname: 'White'}
-						]}
+						{
+							speakers: [
+								{name: 'Mr.', surname: 'Pink'},
+								{name: 'Mr.', surname: 'White'}
+							],
+							abstract: 'Hello World'
+						},
+						{
+							speakers: [
+								{name: 'Mr.', surname: 'White'}
+							]
+						}
 					]},
 				{id: 'coffeeTime', title: 'A Rush of Caffeine to the Head'}
 			]};
@@ -102,10 +107,22 @@ describe('Controller: TrackController', function () {
 		scope.showDetails(0);
 
 		expect(dialogService.showModal).toHaveBeenCalled();
-		var theCall = dialogService.showModal.calls[0];
-		expect(theCall.args[0]).toEqual({templateUrl: 'partials/talk.html'});
-		expect(theCall.args[1]).toEqual(jasmine.objectContaining({
+		var args = dialogService.showModal.calls[0].args;
+		expect(args[0]).toEqual({templateUrl: 'partials/talk.html'});
+		expect(args[1]).toEqual(jasmine.objectContaining({
 			talk: scope.currentTrack.talks[0]
 		}));
+	});
+
+
+	it('should not show the details modal dialog', function () {
+		createController();
+		rootScope.$apply();
+		spyOn(dialogService, 'showModal');
+
+		expect(scope.currentTrack.talks.length).toBe(2);
+		scope.showDetails(1);
+
+		expect(dialogService.showModal).not.toHaveBeenCalled();
 	});
 });
