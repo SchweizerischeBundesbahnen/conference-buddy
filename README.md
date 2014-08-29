@@ -12,10 +12,22 @@ npm install
 
 ### Run it
 ```
-grunt serve
+npm serve
 ```
 
-### Running tests
+### Running unit tests
 ```
 npm test
+```
+
+### Running E2E tests
+First install Protractor
+```
+npm install -g protractor
+```
+Selenium needs to be setup manually (see [here](https://github.com/angular/protractor/issues/1005)). Download it from http://docs.seleniumhq.org/download/ and ChromeDriver from  http://chromedriver.storage.googleapis.com/index.html. Put them under `\npm\node_modules\protractor\selenium`. 
+
+Now start E2E tests with
+```
+npm run protractor
 ```
