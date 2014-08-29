@@ -14,7 +14,8 @@
         </p>
 
     </div>
-    <div class="row talk" ng-repeat="talk in currentTrack.talks" ng-click="showDetails($index)">
+    <div ng-class="{row: true, talk: true, clickable: hasAbstract(talk)}" ng-repeat="talk in currentTrack.talks"
+         ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
             {{talk.time.start}}<br>
             {{talk.time.end}}
