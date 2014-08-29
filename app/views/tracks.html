@@ -28,7 +28,9 @@
             </div>
             <div ng-class="{description: true, 'hidden-xs': showDetailsIndex !== $index }">
                 <p>{{talk.abstract}}</p>
+
                 <p ng-show="talk.speakers.length > 1"><strong>Referenten</strong></p>
+
                 <p ng-show="talk.speakers.length === 1"><strong>Referent</strong></p>
 
                 <div ng-repeat="speaker in talk.speakers">
@@ -42,7 +44,7 @@
                             e-Mail: <a href="">{{speaker.email}}</a><br>
                             Firma: {{speaker.company}}
                             <p>
-                            {{speaker.bio}}
+                                {{speaker.bio}}
                             </p>
                         </div>
                     </div>
