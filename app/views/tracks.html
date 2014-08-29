@@ -14,8 +14,7 @@
         </p>
 
     </div>
-    <div ng-class="{row: true, talk: true, selected: showDetailsIndex === $index}"
-         ng-repeat="talk in currentTrack.talks" ng-click="toggleDetails($index)">
+    <div class="row talk" ng-repeat="talk in currentTrack.talks" ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
             {{talk.time.start}}<br>
             {{talk.time.end}}
@@ -25,28 +24,6 @@
             <div ng-show="talk.speakers" class="author">mit {{formatSpeakers(talk)}}</div>
             <div>
                 <small>{{talk.room}}</small>
-            </div>
-            <div ng-class="{description: true, 'hidden-xs': showDetailsIndex !== $index }">
-                <p>{{talk.abstract}}</p>
-                <p ng-show="talk.speakers.length > 1"><strong>Referenten</strong></p>
-                <p ng-show="talk.speakers.length === 1"><strong>Referent</strong></p>
-
-                <div ng-repeat="speaker in talk.speakers">
-                    <div class="row">
-                        <div class="col-xs-4 col-md-2 col-lg-1"><img
-                                ng-src="{{speaker.picture}}" width="80"
-                                height="140"/>
-                        </div>
-                        <div class="col-xs-8 col-md-10 col-lg-11">
-                            {{speaker.name + ' ' + speaker.surname}}<br>
-                            e-Mail: <a href="">{{speaker.email}}</a><br>
-                            Firma: {{speaker.company}}
-                            <p>
-                            {{speaker.bio}}
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

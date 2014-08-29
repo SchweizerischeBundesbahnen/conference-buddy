@@ -10,7 +10,7 @@
 			"surname": "Trentini",
 			"email": "",
 			"company": "K-IT-SWE",
-			"picture": "pict1.jpg",
+			"picture": "images/pict1.jpg",
 			"bio": ""
 		},
 		{
@@ -19,7 +19,7 @@
 			"surname": "Riesch",
 			"email": "xxx@xxx.ch",
 			"company": "Stiftung “Zugang für alle”",
-			"picture": "pict2.jpg",
+			"picture": "images/pict2.jpg",
 			"bio": "Markus Riesch hat an der ETH Zürich Maschinenbau und Betriebs- und Produktionswissenschaften studiert. Er ist Geschäftsführer der gemeinnützigen Stiftung «Zugang für alle», für welche er seit 2004 arbeitet. Markus Riesch vertritt die Anliegen von Menschen mit Behinderung bei der Nutzung von ICT in verschiedenen nationalen und internationalen Gremien. Im Jahr 2006 lancierte er das Schweizer Zertifikat für barrierefreie Websites der Stiftung «Zugang für alle». 2007 und 2011 war Markus Riesch Herausgeber der Schweizer Accessibility-Studie.\n Markus Riesch ist Experte für die Gestaltung barrierefreier Websites und Applikationen und berät zahlreiche nationale und internationale Organisationen und Unternehmen."
 		},
 		{
@@ -28,7 +28,7 @@
 			"surname": "Corciulo",
 			"email": "xxx@xxx.ch",
 			"company": "Stiftung “Zugang für alle”",
-			"picture": "pict3.jpg",
+			"picture": "images/pict3.jpg",
 			"bio": "Daniele Corciulo startete im August 2009 die Arbeit bei der Stiftung «Zugang für alle». Daniele ist selbst blind und absolvierte bei der Stiftung «Zugang für alle» eine Weiterbildung zum ECDL-Webmaster und Accessibility-Spezialist. Daniele Corciulo beschäftigt sich insbesondere mit Web Accessibility, mobile Apps mit dem Thema \"barrierefreie PDF-Dokumente\". Als Blinder kennt er die Anforderungen und Herausforderungen aus erster Hand. Als Accessibiltiy-Spezalist für Screenreader-Nutzung untersucht Daniele Corciulo Websites und Applikationen und erarbei-tet Verbesserungsvorschläge."
 		},
 		{
@@ -37,7 +37,7 @@
 			"surname": "Hiltbrunner",
 			"email": "xxx@xxx.ch",
 			"company": "IT-OM-PSV-BPF",
-			"picture": "pict4.jpg",
+			"picture": "images/pict4.jpg",
 			"bio": "Jürg Hiltbrunner ist seit 2011 als Oracle Datenbank Engineer bei SBB tätig.\n - 2013 Diploma of Advanced Studies (Berner Fachhochschule)\n - 2012 Oracle Database 11 Performance Tuning Certified Expert\n - 2011 OCP 11g (Oracle Certified Professional)\n - 1996 bis jetzt im DB-Umfeld auf Oracle und Mainframe"
 		},
 		{
@@ -46,7 +46,7 @@
 			"surname": "Krenger",
 			"email": "xxx@xxx.ch",
 			"company": "IT-OM-PSV-BPF",
-			"picture": "pict5.jpg",
+			"picture": "images/pict5.jpg",
 			"bio": "Simon Krenger ist seit 2012 bei der SBB als Oracle Datenbank-Engineer tätig. Nebenbei studiert er Informatik an der Berner Fach-hochschule\n - 2012 OCA 11g (Oracle Certified Associate)\n - Seit 2011 BSc. in Computer Science\n - Seit 2009 Datenbank-Erfahrung mit Oracle und MySQL"
 		},
 		{
@@ -55,7 +55,7 @@
 			"surname": "Hoffmann",
 			"email": "xxx@xxx.ch",
 			"company": "mtrail GmbH",
-			"picture": "pict6.jpg",
+			"picture": "images/pict6.jpg",
 			"bio": "Marc Hoffmann beschäftigt sich als Autor der Open Source Werkzeuge JaCoCo und EclEmma für die Code Coverage Analayse seit vielen Jahren mit der Arbeitsweise von Java Compilern und Java Virtual Machines. Beruflich arbeitet Marc als Softwarearchitekt für die Firma mtrail GmbH in Bern und unterstützt die SBB im Projekt Rail Control System (RCS)."
 		},
 		{
@@ -64,7 +64,7 @@
 			"surname": "Krausse",
 			"email": "xxx@xxx.ch",
 			"company": "IT-SWE-CD2-T25",
-			"picture": "pict7.jpg",
+			"picture": "images/pict7.jpg",
 			"bio": "Software Engineer bei der SBB seit April 2013 im Projekt SVS.\nSchwerpunkt: Individuelle Softwareentwicklung."
 		},
 		{
@@ -73,7 +73,7 @@
 			"surname": "Wingeier",
 			"email": "xxx@xxx.ch",
 			"company": "IT-SWE-CD3-T33",
-			"picture": "pict8.jpg",
+			"picture": "images/pict8.jpg",
 			"bio": "Software Engineer bei der SBB seit 2009 in Applikation CID Infra und Projekt OraCIS."
 		},
 		{
@@ -82,7 +82,7 @@
 			"surname": "Künzli",
 			"email": "xxx@xxx.ch",
 			"company": "IT-SWE-TF2-TS2",
-			"picture": "pict9.jpg",
+			"picture": "images/pict9.jpg",
 			"bio": "Mein Vater kam aus Will, meine Mutter aus Freiburg und ich bin in Genf geboren! Ich bin verheiratet und lebe mit meinen 2 Töchtern in Düdingen. Nach einer kaufmännischen Lehre absolvierte ich die Ingenieurschule in Wirtschaftsinformatik in Biel (1992). In 1999 habe ich ein Nachdip-lom bei der NDIT abgeschlossen und dieses Jahr ein EMBA in „Integrated Management“. Ich habe hauptsächlich in diversen Dienstleitungsfirmen als Entwickler, Analytiker, Projektleiter und Linienverantwortlicher gearbeitet. In der SBB-IT habe ich mich mit dem Thema Qualität beschäftigt. In meiner Freizeit kümmere ich mich in Winter um unseren Wald und sonst um unseren Familiengarten. Wandern, soziale Einsätze und Vater sein gehören ebenfalls zu meinen Beschäftigungen."
 		},
 		{
@@ -91,7 +91,7 @@
 			"surname": "Beyer",
 			"email": "xxx@xxx.ch",
 			"company": "IT-SCI-TOP-UNO",
-			"picture": "pict10.jpg",
+			"picture": "images/pict10.jpg",
 			"bio": "Seit 7 Jahren bei der SBB in den verschiedensten Rollen (Software Entwickler, Architekt, Projektleiter) in den Projekten NeTS und RCS tätig und seit Anfang 2012 Leiter von UNO. Neben Informatik habe ich noch ein Studium der Gesellschafts-, Kultur und Religionswissenschaften absolviert."
 		}
 	],
