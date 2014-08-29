@@ -1,13 +1,13 @@
 .talk {
     border: 1px solid #eee;
-    border-left-color: #FF0000;
+    border-left-color: #aaaaaa;
     border-left-width: 5px;
     border-radius: 3px;
     margin-bottom: 5px;
 }
 
-.selected {
-    border-left-color: #003399;
+.clickable {
+    border-left-color: #ff0000;
 }
 
 .talk .header {
@@ -44,4 +44,12 @@
 
 .modal-header {
     padding: 10px;
+}
+
+.profileimg {
+    margin: 0 2% 2% 0;
+}
+
+.bio {
+    margin-top: 10px;
 }

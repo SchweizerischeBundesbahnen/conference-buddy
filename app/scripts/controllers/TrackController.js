@@ -5,7 +5,6 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
-    $scope.showDetailsIndex = -1;
 
     var currentTrackIndex = 0;
 
@@ -49,8 +48,19 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         return currentTrackIndex > 0;
     };
 
-    $scope.toggleDetails = function(index) {
-        $scope.showDetailsIndex = $scope.showDetailsIndex === index ? -1 : index;
+    $scope.showDetails = function(index) {
+        var talk = $scope.currentTrack.talks[index];
+        if ($scope.hasAbstract(talk)) {
+            var options = {
+                talk: talk,
+                formatSpeakers: $scope.formatSpeakers
+            };
+            dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
+        }
+    };
+
+    $scope.hasAbstract = function(talk) {
+        return talk.abstract != null && talk.abstract.length > 0;
     };
 
     function updateTrack() {

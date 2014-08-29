@@ -42,6 +42,7 @@
 		"spyOn",
 		"module",
 		"exports",
-		"config"
+		"config",
+        "jasmine"
 	]
 }
