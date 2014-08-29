@@ -5,7 +5,6 @@ angular.module('conferenceBuddyApp')
 
 		$scope.conference = {tracks: [ ]};
 		$scope.currentTrack = null;
-		$scope.showDetailsIndex = -1;
 
 		var currentTrackIndex = 0;
 
