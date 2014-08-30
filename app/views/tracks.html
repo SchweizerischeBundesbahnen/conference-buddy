@@ -6,11 +6,9 @@
 <div class="container" ng-swipe-left="nextTrack()" ng-swipe-right="previousTrack()">
     <div class="row track">
         <p class="h3">
-                   <span ng-click="previousTrack()" ng-show="hasPreviousTrack()"
-                         class="glyphicon glyphicon-chevron-left"></span>
+            <span ng-click="previousTrack()" ng-show="hasPreviousTrack()" class="glyphicon glyphicon-chevron-left"></span>
             Track: {{currentTrack.title}}
-                <span ng-click="nextTrack()" ng-show="hasNextTrack()"
-                      class="glyphicon glyphicon-chevron-right"></span>
+            <span ng-click="nextTrack()" ng-show="hasNextTrack()" class="glyphicon glyphicon-chevron-right"></span>
         </p>
 
     </div>
