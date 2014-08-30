@@ -60,7 +60,7 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     };
 
     $scope.hasAbstract = function(talk) {
-        return talk.abstract != null && talk.abstract.length > 0;
+        return talk.abstract && talk.abstract.length > 0;
     };
 
     function updateTrack() {
