@@ -63,6 +63,12 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         return talk.abstract && talk.abstract.length > 0;
     };
 
+    $scope.isFavorite = function (talk) {
+        var favorites = ['a1', 'a2', 'a3'];
+        var index = favorites.indexOf(talk.talkId);
+        return index !== -1;
+    };
+    
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
     }
