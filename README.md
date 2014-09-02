@@ -24,7 +24,7 @@ npm test
 ```
 npm run protractor
 ```
-Für Installation siehe https://github.com/SchweizerischeBundesbahnen/conference-buddy/wiki#protractor
+For installation see https://github.com/SchweizerischeBundesbahnen/conference-buddy/wiki#protractor
 
 
 
