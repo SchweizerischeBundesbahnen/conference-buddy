@@ -5,6 +5,7 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
+    $scope.copperfield = '';
 
     var currentTrackIndex = 0;
 
@@ -65,6 +66,11 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
+        toggleMagic();
+    }
+
+    function toggleMagic() {
+        $scope.copperfield = $scope.copperfield ? '' : 'magic';
     }
 
 }]);

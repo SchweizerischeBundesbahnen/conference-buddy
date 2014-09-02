@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp', [
-    'ngRoute', 'ngTouch', 'ui.bootstrap'
+    'ngRoute', 'ngTouch', 'ngAnimate', 'ui.bootstrap'
 ]).config(['$provide', '$routeProvider', function($provide, $routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'views/tracks.html',
