@@ -53,3 +53,27 @@
 .bio {
     margin-top: 10px;
 }
+
+.trackLabel {
+    color: #aaaaaa;
+}
+
+span.glyphicon-chevron-left, span.glyphicon-chevron-right {
+    font-size: 0.8em;
+    color: #aaaaaa;
+}
+
+/* poor mans swipe animations */
+.copperfield {
+    -webkit-transition: all linear 0.1s;
+    transition: all linear 0.1s;
+    opacity: 1;
+}
+
+.copperfield.magic {
+    opacity: 1;
+}
+
+.copperfield.magic-remove, .copperfield.magic-add {
+    opacity: 0;
+}
