@@ -1,11 +1,12 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', 'ConferenceService', 'DialogService', function($scope, conferenceService, dialogService) {
+['$scope', 'ConferenceService', 'DialogService', 'FavoritesService', function($scope, conferenceService, dialogService, favoritesService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
     $scope.copperfield = '';
+    $scope.favorites = [];
 
     var currentTrackIndex = 0;
 
@@ -14,6 +15,12 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         updateTrack();
     }).catch(function(err) {
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
+    });
+
+    favoritesService.load().then(function(favorites) {
+        $scope.favorites = favorites;
+    }).catch(function(err) {
+        dialogService.showError('Backend Error', 'Failed to load favorites data from the backend', err.data + ' HTTP-Status:' + err.status);
     });
 
     $scope.formatSpeakers = function(talk) {
@@ -65,8 +72,7 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     };
 
     $scope.isFavorite = function (talk) {
-        var favorites = ['a1', 'a2', 'a3'];
-        var index = favorites.indexOf(talk.talkId);
+        var index = $scope.favorites.indexOf(talk.talkId);
         return index !== -1;
     };
     
