@@ -2,6 +2,8 @@
 
 angular.module('conferenceBuddyApp').service('DialogService', ['$modal', function($modal) {
 
+    console.log('hier');
+
     this.showError = function(title, message, details) {
         return this.showModal({}, {headerText: title, bodyText: message, details: details});
     };
@@ -32,6 +34,7 @@ angular.module('conferenceBuddyApp').service('DialogService', ['$modal', functio
                     $modalInstance.dismiss('cancel');
                 };
             };
+            tempConfig.controller.$inject = ['$scope', '$modalInstance'];
         }
         return $modal.open(tempConfig).result;
     };
