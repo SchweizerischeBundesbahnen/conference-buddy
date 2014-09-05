@@ -3,6 +3,9 @@ dist
 .tmp
 .sass-cache
 app/bower_components
-.idea
 *.iml
 atlassian-ide-plugin.xml
+
+# IDEA configuration
+.idea/*
+!.idea/codeStyleSettings.xml
