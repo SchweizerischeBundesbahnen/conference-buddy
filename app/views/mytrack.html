@@ -1,16 +1,11 @@
 <div class="banner">
     <p class="h3"><strong>{{conference.name}}</strong></p>
-    <button ng-click="showMyTrack()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-user"></button>
+    <button ng-click="showTracks()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-list"></button>
     <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
 </div>
-<div class="container copperfield" ng-class="{magic: copperfield}" ng-swipe-left="nextTrack()" ng-swipe-right="previousTrack()">
+<div class="container">
     <div class="row track">
-        <p class="h3">
-            <span ng-click="previousTrack()" ng-show="hasPreviousTrack()" class="glyphicon glyphicon-chevron-left"></span>
-            <span class="trackLabel">Track</span> <strong>{{currentTrack.title}}</strong>
-            <span ng-click="nextTrack()" ng-show="hasNextTrack()" class="glyphicon glyphicon-chevron-right"></span>
-        </p>
-
+        <p class="h3"><strong>My Track</strong></p>
     </div>
     <div ng-class="{row: true, talk: true, clickable: hasAbstract(talk)}" ng-repeat="talk in currentTrack.talks" ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', 'ConferenceService', 'DialogService', function($scope, conferenceService, dialogService) {
+['$scope', '$location', 'ConferenceService', 'DialogService', function($scope, $location, conferenceService, dialogService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
@@ -63,6 +63,10 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     $scope.hasAbstract = function(talk) {
         return talk.abstract && talk.abstract.length > 0;
     };
+
+    $scope.showMyTrack = function() {
+        $location.path('mytrack');
+    }
 
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
