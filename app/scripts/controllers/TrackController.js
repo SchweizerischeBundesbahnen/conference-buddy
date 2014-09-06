@@ -28,7 +28,6 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     };
 
     $scope.nextTrack = function() {
-        console.log('next');
         if ($scope.hasNextTrack()) {
             currentTrackIndex += 1;
             updateTrack();

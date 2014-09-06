@@ -2,7 +2,7 @@
 
 describe('Controller: TrackController', function() {
 
-    var scope, createController, rootScope, dialogService;
+    var scope, createController, rootScope, location, dialogService;
 
     beforeEach(function() {
 
@@ -10,7 +10,7 @@ describe('Controller: TrackController', function() {
             // configure $provide constants etc..
         });
 
-        angular.mock.inject(function($rootScope, $q, $controller, ConferenceService, DialogService) {
+        angular.mock.inject(function($rootScope, $q, $controller, $location, ConferenceService, DialogService) {
 
             var mockedConf = {tracks: [
                 {id: 'teaTime', title: 'The Art of Tea',
@@ -33,6 +33,8 @@ describe('Controller: TrackController', function() {
             spyOn(ConferenceService, 'load').andReturn(deferred.promise);
 
             rootScope = $rootScope;
+
+            location = $location;
 
             // new scope
             scope = $rootScope.$new();
@@ -117,5 +119,12 @@ describe('Controller: TrackController', function() {
         scope.showDetails(1);
 
         expect(dialogService.showModal).not.toHaveBeenCalled();
+    });
+
+    it('should navigate to mytrack view', function() {
+        createController();
+        expect(location.path()).toBe('');
+        scope.showMyTrack();
+        expect(location.path()).toBe('/mytrack');
     });
 });
