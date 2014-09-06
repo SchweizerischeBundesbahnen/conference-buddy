@@ -11,7 +11,7 @@ describe('Tracks page ', function() {
     });
 
     it('should show first Track', function() {
-        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Track: Core Tec');
+        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Core Tec');
     });
 
     it('should only show nextTrack arrow', function() {
@@ -24,21 +24,20 @@ describe('Tracks page ', function() {
     it('should navigate to next track on click until last one', function() {
         var nextTrack = element(by.css('.glyphicon-chevron-right'));
         nextTrack.click();
-        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Track: Java Tec');
+        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Java Tec');
         nextTrack.click();
-        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Track: Beyond Now');
+        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Beyond Now');
         nextTrack.click();
-        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Track: Engineering Arts');
+        expect(element(by.binding('currentTrack.title')).getText()).toEqual('Engineering Arts');
         expect(nextTrack.isDisplayed()).toBe(false);
     });
 
-    it('should select talk on click', function() {
-        var elem = element.all(by.repeater('talk in currentTrack.talks')).first();
-        expect(hasClass(elem, 'selected')).toBe(false);
-        elem.click();
-        expect(hasClass(elem, 'selected')).toBe(true);
-        elem.click();
-        expect(hasClass(elem, 'selected')).toBe(false);
+    it('should popup details of talk on click', function() {
+        var talk = element.all(by.css('.clickable')).first();
+        var talkTitle = talk.element(by.css('.header'));
+        talk.click();
+        var talkDetailsTitle = element(by.css('.modal-title')).element(by.tagName('h4'));
+        expect(talkDetailsTitle.getText()).toEqual(talkTitle.getText());
     });
 
     var hasClass = function(element, cls) {
