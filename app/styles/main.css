@@ -58,8 +58,12 @@
     color: #aaaaaa;
 }
 
-span.glyphicon-chevron-left, span.glyphicon-chevron-right {
+.glyphicon-chevron-left, .glyphicon-chevron-right {
     font-size: 0.8em;
+    color: #aaaaaa;
+}
+
+.glyphicon-user, .glyphicon-list {
     color: #aaaaaa;
 }
 
@@ -77,7 +81,6 @@ span.glyphicon-chevron-left, span.glyphicon-chevron-right {
 .copperfield.magic-remove, .copperfield.magic-add {
     opacity: 0;
 }
-
 
 /* view flip animations
    https://github.com/mgechev/angular-transitions
