@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('conferenceBuddyApp')
-	.controller('TrackController', ['$scope', 'ConferenceService', 'DialogService', function ($scope, conferenceService, dialogService) {
+angular.module('conferenceBuddyApp').controller('TrackController', ['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', function($scope, $location, conferenceService, commentService,
+                                                                                         dialogService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
@@ -16,20 +16,27 @@ angular.module('conferenceBuddyApp')
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
     });
 
-		commentService.load().then(function (data) {
-			$scope.comments = data;
-		});
+    $scope.formatSpeakers = function(talk) {
+        var speakers = '';
+        talk.speakers.forEach(function(speaker) {
+            if (speakers !== '') {
+                speakers += ' & ';
+            }
+            speakers += speaker.name + ' ' + speaker.surname;
+        });
+        return speakers;
+    };
 
-		$scope.formatSpeakers = function (talk) {
-			var speakers = '';
-			talk.speakers.forEach(function (speaker) {
-				if (speakers !== '') {
-					speakers += ' & ';
-				}
-				speakers += speaker.name + ' ' + speaker.surname;
-			});
-			return speakers;
-		};
+    $scope.nextTrack = function() {
+        if ($scope.hasNextTrack()) {
+            currentTrackIndex += 1;
+            updateTrack();
+        }
+    };
+
+    $scope.hasNextTrack = function() {
+        return $scope.conference.tracks.length > currentTrackIndex + 1;
+    };
 
     $scope.previousTrack = function() {
         if ($scope.hasPreviousTrack()) {
@@ -57,20 +64,17 @@ angular.module('conferenceBuddyApp')
         return talk.abstract && talk.abstract.length > 0;
     };
 
-		$scope.showDetails = function (index) {
-			var talk = $scope.currentTrack.talks[index];
-			if ($scope.hasAbstract(talk)) {
-				var options = {
-					talk: talk,
-					formatSpeakers: $scope.formatSpeakers
-				};
-				dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
-			}
-		};
+    $scope.showMyTrack = function() {
+        $location.path('mytrack');
+    };
 
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
         toggleMagic();
     }
 
-	}]);
+    function toggleMagic() {
+        $scope.copperfield = $scope.copperfield ? '' : 'magic';
+    }
+
+}]);
