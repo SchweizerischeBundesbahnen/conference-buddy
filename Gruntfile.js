@@ -285,7 +285,14 @@ module.exports = function(grunt) {
                         cwd: '<%= yeoman.app %>',
                         dest: '<%= yeoman.dist %>',
                         src: [
-                            '*.{ico,png,txt}', '.htaccess', '*.html', 'views/{,*/}*.html', 'images/{,*/}*.{webp}', 'fonts/*', 'api/*', 'partials/*'
+                            '*.{ico,png,txt}',
+                            '.htaccess',
+                            '*.html',
+                            'views/{,*/}*.html',
+                            'images/{,*/}*.{webp}',
+                            'fonts/*',
+                            'api/*',
+                            'partials/*'
                         ]
                     },
                     {
@@ -347,7 +354,21 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'clean:dist', 'wiredep', 'bowerInstall', 'useminPrepare', 'concurrent:dist', 'autoprefixer', 'concat', 'ngAnnotate', 'copy:dist', 'cdnify', 'cssmin', 'uglify', 'rev', 'usemin', 'htmlmin'
+        'clean:dist',
+        'wiredep',
+        'bowerInstall',
+        'useminPrepare',
+        'concurrent:dist',
+        'autoprefixer',
+        'concat',
+        'ngAnnotate',
+        'copy:dist',
+        'cdnify',
+        'cssmin',
+        'uglify',
+        'rev',
+        'usemin',
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [

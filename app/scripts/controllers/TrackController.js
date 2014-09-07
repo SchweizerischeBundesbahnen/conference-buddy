@@ -1,11 +1,12 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', '$location', 'ConferenceService', 'DialogService', function($scope, $location, conferenceService, dialogService) {
+['$scope', '$location', 'ConferenceService', 'DialogService', 'MyTrackService', function($scope, $location, conferenceService, dialogService, myTrackService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
     $scope.copperfield = '';
+    $scope.myTrack = [];
 
     var currentTrackIndex = 0;
 
@@ -14,6 +15,12 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         updateTrack();
     }).catch(function(err) {
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
+    });
+
+    myTrackService.load().then(function(myTrack) {
+        $scope.myTrack = myTrack;
+    }).catch(function(err) {
+        dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
     });
 
     $scope.formatSpeakers = function(talk) {
@@ -66,8 +73,13 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     $scope.showMyTrack = function() {
         $location.path('mytrack');
-    }
+    };
 
+    $scope.isMyTrack = function (talk) {
+        var index = $scope.myTrack.indexOf(talk.talkId);
+        return index !== -1;
+    };
+    
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
         toggleMagic();
