@@ -8,7 +8,7 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
 
     $scope.showTracks = function() {
         $location.path('/');
-    }
+    };
 
     $scope.hasAbstract = function(presentation) {
         return presentation.abstract && presentation.abstract.length > 0;

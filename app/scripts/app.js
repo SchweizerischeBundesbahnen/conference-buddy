@@ -22,7 +22,7 @@ angular.module('conferenceBuddyApp', [
                 var dialogService = $injector.get('DialogService');
                 console.log(dialogService);
                 var message = exception.toString();
-                var status = exception.status ? 'Status=' + exception.status : '-';
+                // var status = exception.status ? 'Status=' + exception.status : '-';
                 console.log(dialogService.showError);
                 // dialogService.showError('Technical Error', message, status);
                 console.error(message);
