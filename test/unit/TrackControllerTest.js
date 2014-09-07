@@ -2,7 +2,7 @@
 
 describe('Controller: TrackController', function() {
 
-    var scope, createController, rootScope, location, dialogService;
+    var scope, createController, rootScope, location, dialogService, myTrackService;
 
     beforeEach(function() {
 
@@ -10,7 +10,7 @@ describe('Controller: TrackController', function() {
             // configure $provide constants etc..
         });
 
-        angular.mock.inject(function($rootScope, $q, $controller, $location, ConferenceService, DialogService) {
+        angular.mock.inject(function($rootScope, $q, $controller,  $location, ConferenceService, DialogService, MyTrackService) {
 
             var mockedConf = {tracks: [
                 {id: 'teaTime', title: 'The Art of Tea',
@@ -32,6 +32,13 @@ describe('Controller: TrackController', function() {
             deferred.resolve(mockedConf);
             spyOn(ConferenceService, 'load').andReturn(deferred.promise);
 
+            var mockedMyTrack = ['a1', 'a2', 'a3'];
+
+            // mock 'load' resolving the promise
+            deferred = $q.defer();
+            deferred.resolve(mockedMyTrack);
+            spyOn(MyTrackService, 'load').andReturn(deferred.promise);
+
             rootScope = $rootScope;
 
             location = $location;
@@ -45,6 +52,7 @@ describe('Controller: TrackController', function() {
             };
 
             dialogService = DialogService;
+            myTrackService = MyTrackService;
 
         });
     });
