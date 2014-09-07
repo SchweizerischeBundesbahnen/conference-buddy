@@ -9,6 +9,9 @@ angular.module('conferenceBuddyApp', [
     }).when('/mytrack', {
         templateUrl: 'views/mytrack.html',
         controller: 'MyTrackController'
+    }).when('/comments', {
+        templateUrl: 'views/comments.html',
+        controller: 'TrackController'
     }).otherwise({
         redirectTo: '/'
     });
