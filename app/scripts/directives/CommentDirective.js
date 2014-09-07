@@ -6,7 +6,7 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
         scope: {
             talkId: '@'
         },
-        templateUrl: '../../templates/comments-template.html',
+        templateUrl: 'templates/comments-template.html',
         controller: function($scope) {
             $scope.commentEntry = null;
             $scope.author = userService.currentUser();
