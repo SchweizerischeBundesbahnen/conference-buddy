@@ -10,15 +10,15 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
         $location.path('/');
     }
 
-    $scope.hasAbstract = function(talk) {
-        return talk.abstract && talk.abstract.length > 0;
+    $scope.hasAbstract = function(presentation) {
+        return presentation.abstract && presentation.abstract.length > 0;
     };
 
     $scope.showDetails = function(index) {
-        var talk = $scope.currentTrack.talks[index];
-        if ($scope.hasAbstract(talk)) {
+        var presentation = $scope.currentTrack.presentations[index];
+        if ($scope.hasAbstract(presentation)) {
             var options = {
-                talk: talk,
+                talk: presentation,
                 formatSpeakers: $scope.formatSpeakers
             };
             dialogService.showModal({templateUrl: 'partials/talk.html'}, options);

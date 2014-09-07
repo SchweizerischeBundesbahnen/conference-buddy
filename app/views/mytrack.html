@@ -7,16 +7,16 @@
     <div class="row track">
         <p class="h3"><strong>My Track</strong></p>
     </div>
-    <div ng-class="{row: true, talk: true, clickable: hasAbstract(talk)}" ng-repeat="talk in currentTrack.talks" ng-click="showDetails($index)">
+    <div ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}" ng-repeat="presentation in currentTrack.presentations" ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
             {{talk.time.start}}<br>
             {{talk.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
-            <div class="header">{{talk.title}}</div>
-            <div ng-show="talk.speakers" class="author">mit {{formatSpeakers(talk)}}</div>
+            <div class="header">{{presentation.title}}</div>
+            <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
-                <small>{{talk.room}}</small>
+                <small>{{presentation.room}}</small>
             </div>
         </div>
     </div>
