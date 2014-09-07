@@ -24,7 +24,7 @@ angular.module('conferenceBuddyApp', [
                 var message = exception.toString();
                 var status = exception.status ? 'Status=' + exception.status : '-';
                 console.log(dialogService.showError);
-                dialogService.showError('Technical Error', message, status);
+                // dialogService.showError('Technical Error', message, status);
                 console.error(message);
             } catch (err) {
                 console.error(err);

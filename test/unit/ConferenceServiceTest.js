@@ -18,16 +18,16 @@ describe('Controller: ConferenceService', function() {
                 {id: 2, name: 'Mr.', surname: 'White'}
             ],
             talks: [
-                {id: 1, title: 'Picking your own color'},
-                {id: 2, title: 'Bam.Bam.Bam'}
+                {id: 1, title: 'Picking your own color', speakerIds: [1, 2]},
+                {id: 2, title: 'Bam.Bam.Bam', speakerIds: [2]}
             ],
             tracks: [
-                {id: 'coreTec', talks: [
-                    {talkId: 1, speakerIds: [1, 2]},
-                    {talkId: 2, speakerIds: [2]}
+                {id: 'coreTec', presentations: [
+                    {talkId: 1},
+                    {talkId: 2}
                 ]},
-                {id: 'javaTec', talks: [
-                    {talkId: 2, speakerIds: [1]}
+                {id: 'javaTec', presentations: [
+                    {talkId: 2}
                 ]}
             ]
         };
@@ -50,16 +50,17 @@ describe('Controller: ConferenceService', function() {
         expect(conference.talks.length).toBe(2);
         expect(conference.tracks.length).toBe(2);
         expect(conference.tracks[0].id).toBe('coreTec');
-        expect(conference.tracks[0].talks.length).toBe(2);
+        expect(conference.tracks[0].presentations.length).toBe(2);
+        expect(conference.tracks[1].presentations.length).toBe(1);
 
-        expect(conference.tracks[0].talks[0].title).toBe(conferenceJson.talks[0].title);
-        expect(conference.tracks[0].talks[0].speakers.length).toBe(2);
-        expect(conference.tracks[0].talks[0].speakers[0].surname).toBe('Pink');
-        expect(conference.tracks[0].talks[0].speakers[1].surname).toBe('White');
+        expect(conference.tracks[0].presentations[0].title).toBe(conferenceJson.talks[0].title);
+        expect(conference.tracks[0].presentations[0].speakers.length).toBe(2);
+        expect(conference.tracks[0].presentations[0].speakers[0].surname).toBe('Pink');
+        expect(conference.tracks[0].presentations[0].speakers[1].surname).toBe('White');
 
-        expect(conference.tracks[0].talks[1].title).toBe(conferenceJson.talks[1].title);
-        expect(conference.tracks[0].talks[1].speakers.length).toBe(1);
-        expect(conference.tracks[0].talks[1].speakers[0].surname).toBe('White');
+        expect(conference.tracks[0].presentations[1].title).toBe(conferenceJson.talks[1].title);
+        expect(conference.tracks[0].presentations[1].speakers.length).toBe(1);
+        expect(conference.tracks[0].presentations[1].speakers[0].surname).toBe('White');
     });
 
     function loadJsonMock() {

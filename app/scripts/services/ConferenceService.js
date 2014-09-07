@@ -14,17 +14,19 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', func
 
                 var talkMap = {};
                 conference.talks.forEach(function(talk) {
+                    talk.speakers = [];
+                    talk.speakerIds.forEach(function(speakerId) {
+                        talk.speakers.push(speakerMap[speakerId]);
+                    });
                     talkMap[talk.id] = talk;
                 });
 
                 conference.tracks.forEach(function(track) {
-                    track.talks.forEach(function(talk) {
-                        talk.title = talkMap[talk.talkId].title;
-                        talk.abstract = talkMap[talk.talkId].abstract;
-                        talk.speakers = [];
-                        talk.speakerIds.forEach(function(speakerId) {
-                            talk.speakers.push(speakerMap[speakerId]);
-                        });
+                    track.presentations.forEach(function(presentation) {
+                        var talk = talkMap[presentation.talkId];
+                        presentation.title = talk.title;
+                        presentation.abstract = talk.abstract;
+                        presentation.speakers = talk.speakers;
                     });
                 });
                 return conference;

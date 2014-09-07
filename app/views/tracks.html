@@ -12,17 +12,17 @@
         </p>
 
     </div>
-    <div ng-class="{row: true, talk: true, clickable: hasAbstract(talk)}" ng-repeat="talk in currentTrack.talks" ng-click="showDetails($index)">
+    <div ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}" ng-repeat="presentation in currentTrack.presentations" ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
-            <span ng-show="isMyTrack(talk)" class="glyphicon glyphicon-bookmark pull-right"></span>
-            {{talk.time.start}}<br>
-            {{talk.time.end}}
+            <span ng-show="isMyTrack(presentation)" class="glyphicon glyphicon-bookmark pull-right"></span>
+            {{presentation.time.start}}<br>
+            {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
-            <div class="header">{{talk.title}}</div>
-            <div ng-show="talk.speakers" class="author">mit {{formatSpeakers(talk)}}</div>
+            <div class="header">{{presentation.title}}</div>
+            <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
-                <small>{{talk.room}}</small>
+                <small>{{presentation.room}}</small>
             </div>
         </div>
     </div>

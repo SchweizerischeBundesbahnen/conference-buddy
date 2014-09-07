@@ -10,11 +10,11 @@ describe('Controller: TrackController', function() {
             // configure $provide constants etc..
         });
 
-        angular.mock.inject(function($rootScope, $q, $controller,  $location, ConferenceService, DialogService, MyTrackService) {
+        angular.mock.inject(function($rootScope, $q, $controller, $location, ConferenceService, DialogService, MyTrackService) {
 
             var mockedConf = {tracks: [
                 {id: 'teaTime', title: 'The Art of Tea',
-                    talks: [
+                    presentations: [
                         {speakers: [
                             {name: 'Mr.', surname: 'Pink'},
                             {name: 'Mr.', surname: 'White'}
@@ -92,10 +92,10 @@ describe('Controller: TrackController', function() {
         createController();
         rootScope.$apply();
 
-        var speaker = scope.formatSpeakers(scope.conference.tracks[0].talks[0]);
+        var speaker = scope.formatSpeakers(scope.conference.tracks[0].presentations[0]);
         expect(speaker).toBe('Mr. Pink & Mr. White');
 
-        speaker = scope.formatSpeakers(scope.conference.tracks[0].talks[1]);
+        speaker = scope.formatSpeakers(scope.conference.tracks[0].presentations[1]);
         expect(speaker).toBe('Mr. White');
 
         speaker = scope.formatSpeakers({speakers: []});
@@ -107,14 +107,14 @@ describe('Controller: TrackController', function() {
         rootScope.$apply();
         spyOn(dialogService, 'showModal');
 
-        expect(scope.currentTrack.talks.length).toBe(2);
+        expect(scope.currentTrack.presentations.length).toBe(2);
         scope.showDetails(0);
 
         expect(dialogService.showModal).toHaveBeenCalled();
         var args = dialogService.showModal.calls[0].args;
         expect(args[0]).toEqual({templateUrl: 'partials/talk.html'});
         expect(args[1]).toEqual(jasmine.objectContaining({
-            talk: scope.currentTrack.talks[0]
+            talk: scope.currentTrack.presentations[0]
         }));
     });
 
@@ -123,7 +123,7 @@ describe('Controller: TrackController', function() {
         rootScope.$apply();
         spyOn(dialogService, 'showModal');
 
-        expect(scope.currentTrack.talks.length).toBe(2);
+        expect(scope.currentTrack.presentations.length).toBe(2);
         scope.showDetails(1);
 
         expect(dialogService.showModal).not.toHaveBeenCalled();
