@@ -162,3 +162,7 @@
     transform: rotateX(0deg);
     z-index: 20;
 }
+
+textarea {
+    resize: none;
+}

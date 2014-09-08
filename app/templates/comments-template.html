@@ -1,23 +1,22 @@
-<div style="padding: 5px">
+<div style="padding-left:15px; padding-right: 15px">
     <div class="row">
         <hr/>
-        <h2>Kommentare</h2>
+        <h4>Kommentare</h4>
 
-        <form name="userForm" role="form" ng-submit="submitForm(userForm.$valid)" novalidate>
+        <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" novalidate>
             <div class="form-group">
-                <textarea class="field span12" rows="2" cols="100"
-                          placeholder="{{author.name}}, schreibe einen Kommentar für talk mit id {{talkId}}!"
-                          style="width: 100%" ng-model="commentEntry.comment" required></textarea>
-                <button class="btn btn-primary pull-right" ng-disabled="userForm.$invalid">Submit</button>
+                <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
+                          ng-model="commentEntry.comment" required></textarea>
             </div>
+            <button class="btn btn-primary pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
         </form>
     </div>
 
-    <div class="row" style="padding-top: 15px">
+    <div class="row" style="padding-top: 10px">
         <div class="panel panel-default" ng-repeat="comment in comments">
-            <div class="panel-heading">{{comment.author.name}}</div>
             <div class="panel-body">
                 {{comment.comment}}
+                <cite class="clearfix">—{{comment.author.name}}</cite>
             </div>
         </div>
     </div>
