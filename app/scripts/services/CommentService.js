@@ -10,7 +10,7 @@ angular.module('conferenceBuddyApp').factory('CommentService', ['$http', functio
             });
         },
         save: function(commentEntry) {
-            console.log('Save comment [' + commentEntry.author + ', ' + commentEntry.comment + ', ' + commentEntry.time + ']');
+            console.log('Save comment [' + commentEntry.author + ', ' + commentEntry.comment + ', ' + commentEntry.timestamp + ']');
         }
     };
 

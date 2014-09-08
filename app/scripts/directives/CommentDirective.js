@@ -13,21 +13,25 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
 
             commentService.load($scope.talkId).then(function(data) {
                 $scope.comments = data;
-                var i = $scope.comments[0];
-                console.log(i.time);
             });
 
             $scope.submitForm = function(isValid) {
                 if (isValid) {
                     var commentEntry = angular.copy($scope.commentEntry);
                     commentEntry.author = $scope.author;
-                    commentEntry.time = JSON.stringify(new Date());
-                    console.log(commentEntry.time);
+                    commentEntry.timestamp = JSON.stringify(new Date());
                     commentService.save(commentEntry);
                     $scope.comments.splice(0, 0, commentEntry);
                     $scope.commentEntry = null;
                 }
             };
+
+            $scope.formatDate = function(comment) {
+                var date = new Date(comment.timestamp);
+                var month = date.getMonth() + 1;
+                return date.getDate() + '.' + month + '.' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
+            };
+
         }
     };
 }]);

@@ -15,7 +15,7 @@
     <div class="row" style="padding-top: 10px">
         <div class="panel panel-default" ng-repeat="comment in comments">
             <div class="panel-body">
-                <strong>{{comment.time}}</strong>
+                <strong>{{formatDate(comment)}}</strong>
                 {{comment.comment}}
                 <cite class="clearfix">—{{comment.author.name}}</cite>
             </div>
