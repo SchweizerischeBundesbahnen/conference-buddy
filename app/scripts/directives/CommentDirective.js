@@ -19,7 +19,7 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
                 if (isValid) {
                     var commentEntry = angular.copy($scope.commentEntry);
                     commentEntry.author = $scope.author;
-                    commentEntry.timestamp = JSON.stringify(new Date());
+                    commentEntry.timestamp = new Date().toJSON();
                     commentService.save(commentEntry);
                     $scope.comments.splice(0, 0, commentEntry);
                     $scope.commentEntry = null;
