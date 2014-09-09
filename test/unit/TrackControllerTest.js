@@ -2,7 +2,7 @@
 
 describe('Controller: TrackController', function() {
 
-    var scope, createController, rootScope, location, dialogService, myTrackService;
+    var scope, createController, rootScope, location, dialogService, myTrackService, commentService;
 
     beforeEach(function() {
 
@@ -10,7 +10,7 @@ describe('Controller: TrackController', function() {
             // configure $provide constants etc..
         });
 
-        angular.mock.inject(function($rootScope, $q, $controller, $location, ConferenceService, DialogService, MyTrackService) {
+        angular.mock.inject(function($rootScope, $q, $controller, $location, ConferenceService, DialogService, MyTrackService, CommentService) {
 
             var mockedConf = {tracks: [
                 {id: 'teaTime', title: 'The Art of Tea',
@@ -39,6 +39,28 @@ describe('Controller: TrackController', function() {
             deferred.resolve(mockedMyTrack);
             spyOn(MyTrackService, 'load').andReturn(deferred.promise);
 
+            var mockedComments = [
+                {
+                    'author': {
+                        'name': 'Ellie McInelli'
+                    },
+                    'comment': 'Supergeil!',
+                    'timestamp': '2014-09-08T18:25:00.000Z'
+                },
+                {
+                    'author': {
+                        'name': 'Axel Schweiss'
+                    },
+                    'comment': 'Worum gehts hier?',
+                    'timestamp': '2014-09-08T18:26:00.000Z'
+                }
+            ];
+
+            // mock 'load' resolving the promise
+            deferred = $q.defer();
+            deferred.resolve(mockedComments);
+            spyOn(CommentService, 'load').andReturn(deferred.promise);
+
             rootScope = $rootScope;
 
             location = $location;
@@ -53,6 +75,7 @@ describe('Controller: TrackController', function() {
 
             dialogService = DialogService;
             myTrackService = MyTrackService;
+            commentService = CommentService;
 
         });
     });
