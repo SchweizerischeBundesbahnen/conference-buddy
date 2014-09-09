@@ -19,11 +19,19 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
                 if (isValid) {
                     var commentEntry = angular.copy($scope.commentEntry);
                     commentEntry.author = $scope.author;
+                    commentEntry.timestamp = new Date().toJSON();
                     commentService.save(commentEntry);
                     $scope.comments.splice(0, 0, commentEntry);
                     $scope.commentEntry = null;
                 }
             };
+
+            $scope.formatDate = function(comment) {
+                var date = new Date(comment.timestamp);
+                var month = date.getMonth() + 1;
+                return date.getDate() + '.' + month + '.' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
+            };
+
         }
     };
 }]);
