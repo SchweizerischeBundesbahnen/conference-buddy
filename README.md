@@ -10,7 +10,7 @@ cd conference-buddy
 npm install
 ```
 
-### Run it
+### Run Conference-Buddy
 ```
 npm start
 ```
