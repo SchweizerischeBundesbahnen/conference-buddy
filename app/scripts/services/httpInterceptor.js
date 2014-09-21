@@ -2,6 +2,7 @@
 
 angular.module('conferenceBuddyApp').factory('httpInterceptor', function httpInterceptor($q, $window, $location) {
     return function(promise) {
+
         var success = function(response) {
             return response;
         };
@@ -10,7 +11,6 @@ angular.module('conferenceBuddyApp').factory('httpInterceptor', function httpInt
             if (response.status === 401) {
                 $location.url('/register');
             }
-
             return $q.reject(response);
         };
 

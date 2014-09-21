@@ -1,8 +1,11 @@
 'use strict';
 
-angular.module('conferenceBuddyApp', [
-    'ngRoute', 'ngTouch', 'ngAnimate', 'ui.bootstrap'
-]).config(['$provide', '$routeProvider', function($provide, $routeProvider) {
+var app = angular.module('conferenceBuddyApp', ['ngRoute', 'ngTouch', 'ngAnimate', 'ngCookies', 'ui.bootstrap']);
+
+app.config(['$provide', '$routeProvider', '$httpProvider', function($provide, $routeProvider, $httpProvider) {
+
+    $httpProvider.responseInterceptors.push('httpInterceptor');
+
     $routeProvider.when('/', {
         templateUrl: 'views/tracks.html',
         controller: 'TrackController'
@@ -17,21 +20,16 @@ angular.module('conferenceBuddyApp', [
     });
 
     // provides a catch-all handler for all non-catched errors
-    $provide.decorator('$exceptionHandler', ['$delegate', '$injector', function($delegate, $injector) {
+    $provide.decorator('$exceptionHandler', ['$delegate', function($delegate) {
         return function(exception, cause) {
             console.error(exception);
             $delegate(exception, cause);
-            try {
-                var dialogService = $injector.get('DialogService');
-                console.log(dialogService);
-                var message = exception.toString();
-                // var status = exception.status ? 'Status=' + exception.status : '-';
-                console.log(dialogService.showError);
-                // dialogService.showError('Technical Error', message, status);
-                console.error(message);
-            } catch (err) {
-                console.error(err);
-            }
         };
     }]);
 }]);
+
+/*
+app.run(['RegistrationService', function(registrationService) {
+    registrationService.init();
+*/
+
