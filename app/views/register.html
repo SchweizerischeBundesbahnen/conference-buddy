@@ -1,0 +1,38 @@
+<div class="banner">
+    <p class="h3"><strong>{{conference.name}}</strong></p>
+    <button ng-click="showTracks()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-list"></button>
+    <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
+</div>
+<div class="container">
+
+    <div class="row registration" ng-show="step === 1">
+        <p class="h3"><strong>Registrierung</strong> <small>(Schritt 1 von 2)</small></p>
+        <p><i>Eine kurze Erläuterung hier: Warum? Kommentar, Rating, MyTrack...</i></p>
+        <button type="subbmit" ng-click="goToStep2()" class="btn btn-default">Weiter</button>
+    </div>
+
+    <div class="row registration" ng-show="step === 2">
+        <p class="h3"><strong>Registrierung</strong> <small>(Schritt 2 von 2)</small></p>
+        <form role="form" ng-submit="login()">
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+
+                <div class="input-group">
+                    <div class="input-group-addon">@</div>
+                    <input class="form-control" type="email" id="email" placeholder="E-Mail eingeben">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Vorname Nachname</label>
+                <input type="text" class="form-control" id="name" placeholder="Vorname Name eingeben">
+            </div>
+            <div class="form-group">
+                <label for="userId">SBB User-Id (nur Mitarbeiter)</label>
+                <input type="text" class="form-control" id="userId" placeholder="SBB User-Id oder leer lassen">
+            </div>
+            <button type="submit" class="btn btn-default">Registrieren</button>
+        </form>
+    </div>
+
+</div>
+</div>

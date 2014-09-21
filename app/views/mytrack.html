@@ -7,10 +7,10 @@
     <div class="row track">
         <p class="h3"><strong>My Track</strong></p>
     </div>
-    <div ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}" ng-repeat="presentation in currentTrack.presentations" ng-click="showDetails($index)">
+    <div ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}" ng-repeat="presentation in myTrack.presentations" ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
-            {{talk.time.start}}<br>
-            {{talk.time.end}}
+            {{presentation.time.start}}<br>
+            {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
             <div class="header">{{presentation.title}}</div>

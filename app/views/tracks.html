@@ -10,7 +10,6 @@
             <span class="trackLabel">Track</span> <strong>{{currentTrack.title}}</strong>
             <span ng-click="nextTrack()" ng-show="hasNextTrack()" class="glyphicon glyphicon-chevron-right"></span>
         </p>
-
     </div>
     <div ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}" ng-repeat="presentation in currentTrack.presentations" ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">

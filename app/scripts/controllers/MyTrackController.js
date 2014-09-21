@@ -1,10 +1,11 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('MyTrackController',
-['$scope', '$location', 'ConferenceService', 'DialogService', function($scope, $location, conferenceService, dialogService) {
+['$scope', '$location', 'ConferenceService', 'MyTrackService', 'DialogService', function($scope, $location, conferenceService, myTrackService,
+                                                                                         dialogService) {
 
     $scope.conference = {};
-    $scope.currentTrack = {};
+    $scope.myTrack = {};
 
     $scope.showTracks = function() {
         $location.path('/');
@@ -15,7 +16,7 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
     };
 
     $scope.showDetails = function(index) {
-        var presentation = $scope.currentTrack.presentations[index];
+        var presentation = $scope.myTrack.presentations[index];
         if ($scope.hasAbstract(presentation)) {
             var options = {
                 talk: presentation,
@@ -27,7 +28,11 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
-        $scope.currentTrack = $scope.conference.tracks[0];
+        myTrackService.loadResolved($scope.conference).then(function(myTrack) {
+            $scope.myTrack = myTrack;
+        }).catch(function(err) {
+            dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
+        });
     }).catch(function(err) {
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
     });

@@ -100,49 +100,57 @@
             "id": "cafe",
             "title": "Begrüssungscafe",
             "abstract": "",
-            "speakerIds": []
+            "speakerIds": [],
+            "common": true
         },
         {
             "id": "begrüssung",
             "title": "Begrüssung Developer Day 2013",
             "abstract": "",
-            "speakerIds": [1]
+            "speakerIds": [1],
+            "common": true
         },
         {
             "id": "pause",
             "title": "*** PAUSE ***",
             "abstract": "",
-            "speakerIds": []
+            "speakerIds": [],
+            "common": true
         },
         {
             "id": "keynote",
             "title": "Keynote 1 - Herausforderung Accessibility – Chancen für Menschen mit Behinderungen, Stolpersteine für Entwickler",
             "abstract": "Zugang zu Informations- und Kommunikationstechnologien bedeutet für Menschen mit Behinderungen mehr als für alle anderen. Der barrierefreie Zugang ermöglicht mehr Chancengleichheit und Selbstständigkeit im privaten und beruflichen Leben. Im ersten Teil der Keynote wird aufgezeigt, für was das Konzept Accessibility steht, wer alles davon profitiert, welche unterschiedlichen Bedürfnisse es gibt und wie diese durch assistierende Technologien unterstützt werden können. Im zweiten Teil wird live vorgestellt, was es heisst „blind“ einen Computer oder ein iPhone zu bedienen und wie Websites und Apps benutzt werden können oder wo teils unüberwindbare Hürden auftauchen. Am Schluss werden häufige Stolpersteine bei der Umsetzung von Rich Internet Applications in Websites durch den Einsatz von JS und AJAX aufgezeigt.",
-            "speakerIds": [2, 3]
+            "speakerIds": [2, 3],
+            "common": true
         },
         {
             "id": "a1",
             "title": "A1 – Oracle Datenbank 12c: Die Wolke aus der Steckdose",
             "abstract": "Die Oracle 12c Datenbank steht seit diesem Sommer zur Verfügung. Ab nächstem Jahr ist Oracle 12c auch gemäss ABC-Liste bei uns verfügbar und bestellbar. Wir stellen euch einige neue Features der 12c Datenbank vor. Mittels Demos zeigen wir, wie einfach und schnell in einer Container Datenbank eine weitere „Pluggable Database“ erstellt werden kann. Weiter stellen wir vor, was in SQL erweitert wurde und welche neuen Features Entwickler nutzen können. An diesem Vortrag erfährt ihr somit viele nützliche Informationen und Neuigkeiten zur neuen 12c Datenbank, welche euch die Arbeit vereinfachen werden.",
-            "speakerIds": [4, 5]
+            "speakerIds": [4, 5],
+            "common": false
         },
         {
             "id": "a2",
             "title": "A2 - Let’s make some 0xCAFEBABE!",
             "abstract": "Eine Einführung in die Grundlagen des Java Class-Fileformats und der Arbeitsweise der Java Virtual Machine.\n Die Java Virtual Machine ist heutzutage das „Arbeitspferd“ hinter vielen Server- und Client-Anwendungen. Zur Ausführung in der JMV gelangen sogenannte Class-Files, die aus Java-Sourcecode und anderen Sprachen kompiliert oder auch dynamisch erzeugt werden. Um solche Class-Files selber zu generieren, modifizieren, verifizieren oder analysieren zu können, muss man ihre Struktur sowie die grundlegende Funktionsweise der Virtual Machine kennen. Dieses Wissen ist insbesondere auch hilfreich beim Verständnis von Performance-, Speicher- und Nebenläufigkeitsaspekten von Java-Anwendungen.",
-            "speakerIds": [6]
+            "speakerIds": [6],
+            "common": false
         },
         {
             "id": "a3",
             "title": "A3 – HTML 5 & CSS 3 bei SBB-IT",
             "abstract": "HTML5 & CSS3 ist in aller Munde. Höchste Zeit, dass die SBB konzentriert ein Auge darauf wirft. Aus diesem Grund beschäftigt sich ein Vertiefungsthema von STT Java:Core seit Juli mit diesem Thema. Das Hauptziel ist, internes Know-How aufzubauen und zu prüfen, ob diese Technologie in der SBB eingesetzt wer-den kann oder nicht. Der Vortrag wird einen Überblick über die erarbeiteten Themen (Offline & Storage, Kommunikation Client-Server, etc.) bieten und einzelne Bereiche detailliert betrachten. Dabei werden technische Details und Möglich-keiten hervorgehoben. Das Publikum wird die Möglichkeit haben, erarbeitete Showcases zu betrachten.",
-            "speakerIds": [7, 8]
+            "speakerIds": [7, 8],
+            "common": false
         },
         {
             "id": "a4",
             "title": "A4 - Inspiration – Umsetzung - Agilität",
             "abstract": "„Ein Unternehmen ohne Ordnung ist unfähig zu überleben und ein Unternehmen ohne Unordnung ist unfähig sich zu entwickeln“. Wie wird beim Erreichen von Zielen Energie erzeugt, Verschwendung vermieden, Vision vermittelt, Verantwor-tung getragen und Sinn erlebt, so dass für alle Beteiligten optimale Ergebnisse resultieren? Auf den Ebenen „Individuum“, „Team“ und „Führung“ zeigen die Referenten in einem Dialog auf, wie sich theoretische Modelle mit täglicher Praxis verbinden lassen.  Die Zusammenarbeit als mächtiger Hebel um das systemische Glück (persönliche und organisatorische) zu erreichen, wird exemplarisch dargelegt. Diese Zusammenfassung stammt aus der Diplomarbeit „Collaborations@SBB-IT“ und Praktiken aus „Kanban@UNO“.",
-            "speakerIds": [9, 10]
+            "speakerIds": [9, 10],
+            "common": false
         }
     ],
     "tracks": [

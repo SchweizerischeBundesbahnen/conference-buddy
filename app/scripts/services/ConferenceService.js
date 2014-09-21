@@ -23,7 +23,8 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', func
 
                 conference.tracks.forEach(function(track) {
                     track.presentations.forEach(function(presentation) {
-                        var talk = talkMap[presentation.talkId];
+                        var talk = talkMap[presentation.talkId]
+                        presentation.common = talk.common;
                         presentation.title = talk.title;
                         presentation.abstract = talk.abstract;
                         presentation.speakers = talk.speakers;

@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', 'MyTrackService', function($scope, $location, conferenceService, commentService, dialogService, myTrackService) {
+['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', 'MyTrackService', function($scope, $location, conferenceService,
+                                                                                                           commentService, dialogService,
+                                                                                                           myTrackService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
@@ -13,14 +15,13 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
         updateTrack();
+        myTrackService.load($scope.conference).then(function(myTrack) {
+            $scope.myTrack = myTrack;
+        }).catch(function(err) {
+            dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
+        });
     }).catch(function(err) {
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
-    });
-
-    myTrackService.load().then(function(myTrack) {
-        $scope.myTrack = myTrack;
-    }).catch(function(err) {
-        dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
     });
 
     $scope.formatSpeakers = function(presentation) {
@@ -75,11 +76,11 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         $location.path('mytrack');
     };
 
-    $scope.isMyTrack = function (talk) {
-        var index = $scope.myTrack.indexOf(talk.talkId);
-        return index !== -1;
+    $scope.isMyTrack = function(presentation) {
+        var index = $scope.myTrack.indexOf(presentation.id);
+        return !presentation.common && index !== -1;
     };
-    
+
     function updateTrack() {
         $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
         toggleMagic();
