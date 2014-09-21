@@ -12,8 +12,8 @@
         </p>
     </div>
 
-    <!-- Smartphones -->
-    <div class="visible-xs-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
+    <!-- Smartphones und Tablets -->
+    <div class="visible-xs-block visible-sm-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
          ng-repeat="presentation in currentTrack.presentations"
          ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Desktops -->
-    <div class="hidden-xs-block" ng-class="{row: true, talk: true}"
+    <div class="visible-md-block visible-lg-block" ng-class="{row: true, talk: true}"
          ng-repeat="presentation in currentTrack.presentations">
         <div class="col-xs-2 col-lg-1">
             <span ng-show="isMyTrack(presentation)" class="glyphicon glyphicon-bookmark pull-right"></span>

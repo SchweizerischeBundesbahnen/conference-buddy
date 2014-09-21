@@ -29,7 +29,9 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div ng-view class="at-view-flip-in-vertical at-view-flip-out-vertical"></div>
+<!-- Use flip animation on Smartphone and Tablet only -->
+<div ng-view class="visible-xs-block visible-sm-block at-view-flip-in-vertical at-view-flip-out-vertical"></div>
+<div ng-view class="visible-md-block visible-lg-block"></div>
 
 <!--[if lt IE 9]>
 <script src="bower_components/es5-shim/es5-shim.js"></script>
