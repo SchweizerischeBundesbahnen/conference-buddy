@@ -23,8 +23,9 @@
     margin-top: 5px;
 }
 
-.talk .link-description {
-
+.talk .link-header {
+    font-size: 120%;
+    font-weight: bold;
 }
 
 .track {

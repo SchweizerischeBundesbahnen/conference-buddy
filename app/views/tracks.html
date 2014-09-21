@@ -10,9 +10,12 @@
             <span class="trackLabel">Track</span> <strong>{{currentTrack.title}}</strong>
             <span ng-click="nextTrack()" ng-show="hasNextTrack()" class="glyphicon glyphicon-chevron-right"></span>
         </p>
-
     </div>
-    <div ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}" ng-repeat="presentation in currentTrack.presentations" ng-click="showDetails($index)">
+
+    <!-- Smartphones -->
+    <div class="visible-xs-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
+         ng-repeat="presentation in currentTrack.presentations"
+         ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
             <span ng-show="isMyTrack(presentation)" class="glyphicon glyphicon-bookmark pull-right"></span>
             {{presentation.time.start}}<br>
@@ -20,6 +23,24 @@
         </div>
         <div class="col-xs-10 col-lg-11">
             <div class="header">{{presentation.title}}</div>
+            <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
+            <div>
+                <small>{{presentation.room}}</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktops -->
+    <div class="hidden-xs-block" ng-class="{row: true, talk: true}"
+         ng-repeat="presentation in currentTrack.presentations">
+        <div class="col-xs-2 col-lg-1">
+            <span ng-show="isMyTrack(presentation)" class="glyphicon glyphicon-bookmark pull-right"></span>
+            {{presentation.time.start}}<br>
+            {{presentation.time.end}}
+        </div>
+        <div class="col-xs-10 col-lg-11">
+            <div class="header" ng-show="!hasAbstract(presentation)">{{presentation.title}}</div>
+            <div class="link-header"><a href="#" ng-click="showDetails($index)" ng-show="hasAbstract(presentation)">{{presentation.title}}</a></div>
             <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
                 <small>{{presentation.room}}</small>
