@@ -10,7 +10,7 @@
 
     <!-- Smartphones und Tablets -->
     <div class="visible-xs-block visible-sm-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
-         ng-repeat="presentation in currentTrack.presentations"
+         ng-repeat="presentation in myTrack.presentations"
          ng-click="showDetails($index)">
         <div class="col-xs-2 col-lg-1">
             {{presentation.time.start}}<br>
@@ -27,7 +27,7 @@
 
     <!-- Desktops -->
     <div class="visible-md-block visible-lg-block" ng-class="{row: true, talk: true}"
-         ng-repeat="presentation in currentTrack.presentations">
+         ng-repeat="presentation in myTrack.presentations">
         <div class="col-xs-2 col-lg-1">
             {{presentation.time.start}}<br>
             {{presentation.time.end}}
