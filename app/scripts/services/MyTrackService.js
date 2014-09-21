@@ -17,7 +17,7 @@ angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$locat
     return {
         load: function() {
 
-            // TODO simulates server check
+            // TODO simulates server check & httpinterceptor
             if (!$http.defaults.headers.common['X-Access-Token']) {
                 $location.url('/register');
             }

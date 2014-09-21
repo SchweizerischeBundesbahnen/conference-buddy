@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', 'MyTrackService', 'RegistrationService',
-    function($scope, $location, conferenceService, commentService, dialogService, myTrackService, registrationService) {
+['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', 'MyTrackService', 'UserService',
+    function($scope, $location, conferenceService, commentService, dialogService, myTrackService, userService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
@@ -14,7 +14,7 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
         updateTrack();
-        if (registrationService.isRegistered()) {
+        if (userService.isRegistered()) {
             myTrackService.load().then(function(myTrack) {
                 $scope.myTrack = myTrack;
             }).catch(function(err) {

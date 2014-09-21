@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('httpInterceptor', function httpInterceptor($q, $window, $location) {
+angular.module('conferenceBuddyApp').factory('HttpInterceptor', function httpInterceptor($q, $window, $location) {
     return function(promise) {
 
         var success = function(response) {

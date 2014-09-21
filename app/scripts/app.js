@@ -4,7 +4,7 @@ var app = angular.module('conferenceBuddyApp', ['ngRoute', 'ngTouch', 'ngAnimate
 
 app.config(['$provide', '$routeProvider', '$httpProvider', function($provide, $routeProvider, $httpProvider) {
 
-    $httpProvider.responseInterceptors.push('httpInterceptor');
+    $httpProvider.responseInterceptors.push('HttpInterceptor');
 
     $routeProvider.when('/', {
         templateUrl: 'views/tracks.html',
@@ -14,7 +14,7 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function($provide, $r
         controller: 'MyTrackController'
     }).when('/register', {
         templateUrl: 'views/register.html',
-        controller: 'RegistrationController'
+        controller: 'UserController'
     }).otherwise({
         redirectTo: '/'
     });
