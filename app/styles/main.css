@@ -167,3 +167,12 @@
 textarea {
     resize: none;
 }
+
+.collapsible-text-toggle {
+    color: #428bca;
+    cursor: pointer;
+}
+
+.collapsible-text-toggle:hover {
+    color: #2a6496;
+}
