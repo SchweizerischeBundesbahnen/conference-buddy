@@ -17,23 +17,24 @@
         <p class="h3"><strong>Registrierung</strong>
             <small>(Schritt 2 von 2)</small>
         </p>
-        <form role="form" ng-submit="register()">
+        <form name="registration" novalidate role="form" ng-submit="register()" class="css-form">
             <div class="form-group">
                 <label for="email">E-Mail</label>
                 <div class="input-group">
                     <div class="input-group-addon">@</div>
-                    <input class="form-control" ng-model="user.email" type="email" id="email" placeholder="E-Mail eingeben">
+                    <input class="form-control" ng-model="user.email" type="email" id="email" required placeholder="E-Mail eingeben">
                 </div>
             </div>
             <div class="form-group">
-                <label for="name">Vorname Nachname</label>
-                <input type="text" class="form-control" ng-model="user.nameSurname" id="name" placeholder="Vorname Name eingeben">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" ng-model="user.name" id="name" required placeholder="Name eingeben">
             </div>
             <div class="form-group">
                 <label for="userId">SBB User-Id (nur Mitarbeiter)</label>
-                <input type="text" class="form-control" ng-model="user.userid" id="userId" placeholder="SBB User-Id oder leer lassen">
+                <input type="text" class="form-control" ng-model="user.userid" id="userId" ng-pattern="/u(e?)\d+/"
+                       placeholder="SBB User-Id oder leer lassen">
             </div>
-            <button type="submit" class="btn btn-default">Registrieren</button>
+            <button type="submit" class="btn btn-default" ng-disabled="registration.$invalid">Registrieren</button>
         </form>
     </div>
 

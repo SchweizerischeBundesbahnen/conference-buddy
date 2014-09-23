@@ -5,7 +5,7 @@
 
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" novalidate>
             <div class="form-group">
-                <textarea class="span12 form-control" rows="2" placeholder="{{author.nameSurname}}, erfasse einen Kommentar" style="width: 100%"
+                <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
                           ng-model="commentEntry.comment" required></textarea>
             </div>
             <button class="btn btn-primary pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
@@ -17,7 +17,7 @@
             <div class="panel-body">
                 <strong>{{formatDate(comment)}}</strong>
                 {{comment.comment}}
-                <cite class="clearfix">—{{comment.author.nameSurname}}</cite>
+                <cite class="clearfix">—{{comment.author.name}}</cite>
             </div>
         </div>
     </div>

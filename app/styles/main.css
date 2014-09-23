@@ -171,3 +171,11 @@
 textarea {
     resize: none;
 }
+
+.css-form input.ng-invalid {
+    border: 1px solid red;;
+}
+
+.css-form input.ng-valid {
+    border: 1px solid green;
+}

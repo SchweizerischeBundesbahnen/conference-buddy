@@ -8,7 +8,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
     $scope.currentTrack = {};
     $scope.step = 1;
 
-    $scope.user = {nameSurname: undefined, email: undefined, userId: undefined};
+    $scope.user = {};
 
     $scope.showTracks = function() {
         $location.path('/');
