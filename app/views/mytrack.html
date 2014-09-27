@@ -1,6 +1,6 @@
 <div class="banner">
     <p class="h3"><strong>{{conference.name}}</strong></p>
-    <button ng-click="showTracks()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-list"></button>
+    <button ng-controller="TrackSwitchController" ng-click="showTracks()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-list"></button>
     <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
 </div>
 <div class="container">

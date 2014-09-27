@@ -1,14 +1,17 @@
 <div class="banner">
     <p class="h3"><strong>{{conference.name}}</strong></p>
-    <button ng-click="showMyTrack()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-user"></button>
+    <button ng-controller="TrackSwitchController" ng-click="showMyTrack()"
+            class="pull-right btn btn-default btn-sm glyphicon glyphicon-user"></button>
     <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
 </div>
 <div class="container copperfield" ng-class="{magic: copperfield}" ng-swipe-left="nextTrack()" ng-swipe-right="previousTrack()">
     <div class="row track">
         <p class="h3">
             <span ng-click="previousTrack()" ng-show="hasPreviousTrack()" class="glyphicon glyphicon-chevron-left"></span>
-            <span class="trackLabel">Track</span> <strong>{{currentTrack.title}}</strong>
+            <span ng-hide="hasPreviousTrack()" class="glyphicon glyphicon-chevron-left disabled"></span>
             <span ng-click="nextTrack()" ng-show="hasNextTrack()" class="glyphicon glyphicon-chevron-right"></span>
+            <span ng-hide="hasNextTrack()" class="glyphicon glyphicon-chevron-right disabled"></span>
+            <span class="trackLabel">Track</span> <strong>{{currentTrack.title}}</strong>
         </p>
     </div>
 

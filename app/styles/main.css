@@ -188,3 +188,7 @@ textarea {
 .css-form input.ng-valid {
     border: 1px solid green;
 }
+
+.disabled {
+    color: #EEE;
+}

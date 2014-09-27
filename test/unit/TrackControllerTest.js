@@ -152,10 +152,4 @@ describe('Controller: TrackController', function() {
         expect(dialogService.showModal).not.toHaveBeenCalled();
     });
 
-    it('should navigate to mytrack view', function() {
-        createController();
-        expect(location.path()).toBe('');
-        scope.showMyTrack();
-        expect(location.path()).toBe('/mytrack');
-    });
 });
