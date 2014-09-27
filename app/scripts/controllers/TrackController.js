@@ -11,17 +11,6 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     var currentTrackIndex = 0;
 
-    $scope.showDetails = function(index) {
-        var presentation = $scope.currentTrack.presentations[index];
-        if ($scope.hasAbstract(presentation)) {
-            var options = {
-                talk: presentation,
-                formatSpeakers: $scope.formatSpeakers
-            };
-            dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
-        }
-    };
-
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
         updateTrack();
@@ -35,6 +24,17 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     }).catch(function(err) {
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
     });
+
+    $scope.showDetails = function(index) {
+        var presentation = $scope.currentTrack.presentations[index];
+        if ($scope.hasAbstract(presentation)) {
+            var options = {
+                talk: presentation,
+                formatSpeakers: $scope.formatSpeakers
+            };
+            dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
+        }
+    };
 
     $scope.formatSpeakers = function(presentation) {
         var speakers = '';
