@@ -7,14 +7,6 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
     $scope.conference = {};
     $scope.myTrack = {};
 
-    $scope.showTracks = function() {
-        $location.path('/');
-    };
-
-    $scope.hasAbstract = function(presentation) {
-        return presentation.abstract && presentation.abstract.length > 0;
-    };
-
     $scope.showDetails = function(index) {
         var presentation = $scope.myTrack.presentations[index];
         if ($scope.hasAbstract(presentation)) {
@@ -46,6 +38,14 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
             speakers += speaker.name + ' ' + speaker.surname;
         });
         return speakers;
+    };
+
+    $scope.hasAbstract = function(presentation) {
+        return presentation.abstract && presentation.abstract.length > 0;
+    };
+
+    $scope.showTracks = function() {
+        $location.path('/');
     };
 
 }]);
