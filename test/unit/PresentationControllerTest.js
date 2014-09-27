@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: TrackController', function() {
+describe('Controller: PresentationController', function() {
 
     var scope, createController, rootScope, location, dialogService, myTrackService, commentService;
 
@@ -68,9 +68,12 @@ describe('Controller: TrackController', function() {
             // new scope
             scope = $rootScope.$new();
 
+            scope.conference = mockedConf;
+            scope.currentTrack = mockedConf.tracks[0];
+
             // controller initialization
             createController = function() {
-                return $controller('TrackController', {$scope: scope});
+                return $controller('PresentationController', {$scope: scope});
             };
 
             dialogService = DialogService;
@@ -83,32 +86,45 @@ describe('Controller: TrackController', function() {
     afterEach(function() {
     });
 
-    it('should load JSON initially', function() {
+    it('should format speakers name correctly ', function() {
         createController();
         rootScope.$apply();
-        expect(scope.conference).toBeDefined();
-        expect(scope.conference.tracks.length).toBe(2);
-        expect(scope.conference.tracks[0].title).toBe('The Art of Tea');
+
+        var speaker = scope.formatSpeakers(scope.conference.tracks[0].presentations[0]);
+        expect(speaker).toBe('Mr. Pink & Mr. White');
+
+        speaker = scope.formatSpeakers(scope.conference.tracks[0].presentations[1]);
+        expect(speaker).toBe('Mr. White');
+
+        speaker = scope.formatSpeakers({speakers: []});
+        expect(speaker).toBe('');
     });
 
-    it('should start with first Track initially', function() {
+    it('should show the details modal dialog', function() {
         createController();
         rootScope.$apply();
-        expect(scope.currentTrack.id).toBe('teaTime');
+        spyOn(dialogService, 'showModal');
+
+        expect(scope.currentTrack.presentations.length).toBe(2);
+        scope.showDetails(0, scope.currentTrack);
+
+        expect(dialogService.showModal).toHaveBeenCalled();
+        var args = dialogService.showModal.calls[0].args;
+        expect(args[0]).toEqual({templateUrl: 'partials/talk.html'});
+        expect(args[1]).toEqual(jasmine.objectContaining({
+            talk: scope.currentTrack.presentations[0]
+        }));
     });
 
-    it('should change to next and prev track', function() {
+    it('should not show the details modal dialog', function() {
         createController();
         rootScope.$apply();
+        spyOn(dialogService, 'showModal');
 
-        expect(scope.hasNextTrack()).toBe(true);
-        scope.nextTrack();
-        expect(scope.currentTrack.id).toBe('coffeeTime');
-        expect(scope.hasNextTrack()).toBe(false);
+        expect(scope.currentTrack.presentations.length).toBe(2);
+        scope.showDetails(1, scope.currentTrack);
 
-        scope.previousTrack();
-        expect(scope.currentTrack.id).toBe('teaTime');
-        expect(scope.hasPreviousTrack()).toBe(false);
+        expect(dialogService.showModal).not.toHaveBeenCalled();
     });
 
 });
