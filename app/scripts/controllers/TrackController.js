@@ -1,8 +1,12 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', 'MyTrackService', 'UserService',
-    function($scope, $location, conferenceService, commentService, dialogService, myTrackService, userService) {
+['$scope', '$location', 'ConferenceService', 'CommentService', 'DialogService', 'MyTrackService', 'UserService', function($scope, $location,
+                                                                                                                          conferenceService,
+                                                                                                                          commentService,
+                                                                                                                          dialogService,
+                                                                                                                          myTrackService,
+                                                                                                                          userService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.currentTrack = null;
@@ -10,6 +14,17 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     $scope.myTrack = [];
 
     var currentTrackIndex = 0;
+
+    $scope.showDetails = function(index) {
+        var presentation = $scope.currentTrack.presentations[index];
+        if ($scope.hasAbstract(presentation)) {
+            var options = {
+                talk: presentation,
+                formatSpeakers: $scope.formatSpeakers
+            };
+            dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
+        }
+    };
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
@@ -56,17 +71,6 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     $scope.hasPreviousTrack = function() {
         return currentTrackIndex > 0;
-    };
-
-    $scope.showDetails = function(index) {
-        var presentation = $scope.currentTrack.presentations[index];
-        if ($scope.hasAbstract(presentation)) {
-            var options = {
-                talk: presentation,
-                formatSpeakers: $scope.formatSpeakers
-            };
-            dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
-        }
     };
 
     $scope.hasAbstract = function(presentation) {
