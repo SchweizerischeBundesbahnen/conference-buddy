@@ -37,4 +37,15 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
         dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
     });
 
+    $scope.formatSpeakers = function(presentation) {
+        var speakers = '';
+        presentation.speakers.forEach(function(speaker) {
+            if (speakers !== '') {
+                speakers += ' & ';
+            }
+            speakers += speaker.name + ' ' + speaker.surname;
+        });
+        return speakers;
+    };
+
 }]);
