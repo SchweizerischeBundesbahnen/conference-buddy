@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('MyTrackController',
-['$scope', '$location', 'ConferenceService', 'DialogService', 'MyTrackService', function($scope, $location, conferenceService, dialogService,
-                                                                                         myTrackService) {
+['$scope', 'ConferenceService', 'DialogService', 'MyTrackService', function($scope, conferenceService, dialogService, myTrackService) {
 
     $scope.conference = {};
     $scope.myTrack = {};
@@ -42,10 +41,6 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
 
     $scope.hasAbstract = function(presentation) {
         return presentation.abstract && presentation.abstract.length > 0;
-    };
-
-    $scope.showTracks = function() {
-        $location.path('/');
     };
 
 }]);
