@@ -11,9 +11,9 @@
     <!-- Smartphones und Tablets -->
     <div class="visible-xs-block visible-sm-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
          ng-repeat="presentation in myTrack.presentations"
-         ng-click="showDetails($index)">
+         ng-click="showDetails($index, myTrack)" ng-controller="PresentationController">
         <div class="col-xs-2 col-lg-1">
-            {{presentation.time.start}}<br>
+        {{presentation.time.start}}<br>
             {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
@@ -27,14 +27,15 @@
 
     <!-- Desktops -->
     <div class="visible-md-block visible-lg-block" ng-class="{row: true, talk: true}"
-         ng-repeat="presentation in myTrack.presentations">
+         ng-repeat="presentation in myTrack.presentations" ng-controller="PresentationController">
         <div class="col-xs-2 col-lg-1">
             {{presentation.time.start}}<br>
             {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
             <div class="header" ng-show="!hasAbstract(presentation)">{{presentation.title}}</div>
-            <div class="link-header"><a href="#" ng-click="showDetails($index)" ng-show="hasAbstract(presentation)">{{presentation.title}}</a></div>
+            <div class="link-header"><a href="#" ng-click="showDetails($index, myTrack)"
+                                        ng-show="hasAbstract(presentation)">{{presentation.title}}</a></div>
             <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
                 <small>{{presentation.room}}</small>
