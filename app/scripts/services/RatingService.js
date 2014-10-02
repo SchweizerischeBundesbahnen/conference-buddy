@@ -27,7 +27,7 @@ angular.module('conferenceBuddyApp').factory('RatingService', ['$http', function
                 'myRating': rating
             };
             /*
-            $http.post('api/rating/' + talkId, {
+            $http.post('api/rating/' + talkId + '/' + USER_TOKEN, {
                 'rating': rating
             }).then(function(result) {
                 return result.data;
@@ -42,7 +42,7 @@ angular.module('conferenceBuddyApp').factory('RatingService', ['$http', function
                 'myRating': rating
             };
             /*
-            $http.put('api/rating/' + talkId, {
+            $http.put('api/rating/' + talkId + '/' + USER_TOKEN, {
                 'id': ratingId,
                 'rating': rating
             });
