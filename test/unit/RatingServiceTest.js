@@ -51,6 +51,8 @@ describe('Controller: RatingService', function() {
         expect(ratings.myRating).toBe(3);
     });
 
+    // Tests for update() and save() must be written later, when the real functionality is implemented
+
     function loadJsonMock(presentationId) {
         httpBackend.expectGET('api/ratings.json');
         var ratings;
