@@ -16,7 +16,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
 
     $scope.showRegistration = function() {
         $scope.step++;
-    }
+    };
 
     $scope.register = function() {
         userService.register($scope.user).then(function() {
@@ -25,7 +25,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
             dialogService.showError('Backend Error', 'Failed to register at the backend', err.data + ' HTTP-Status:' + err.status);
             $scope.step--;
         });
-    }
+    };
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
