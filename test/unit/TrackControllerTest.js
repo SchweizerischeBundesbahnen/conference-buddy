@@ -2,7 +2,7 @@
 
 describe('Controller: TrackController', function() {
 
-    var scope, createController, rootScope, location, dialogService, myTrackService, commentService;
+    var scope, createController, rootScope, location, httpBackend, dialogService, myTrackService, commentService, conferenceService;
 
     beforeEach(function() {
 
@@ -10,32 +10,34 @@ describe('Controller: TrackController', function() {
             // configure $provide constants etc..
         });
 
-        angular.mock.inject(function($rootScope, $q, $controller, $location, ConferenceService, DialogService, MyTrackService, CommentService) {
+        angular.mock.inject(function($rootScope, $q, $controller, $location, $httpBackend, ConferenceService, DialogService, MyTrackService,
+                                     CommentService) {
 
-            var mockedConf = {tracks: [
-                {id: 'teaTime', title: 'The Art of Tea',
-                    presentations: [
-                        {speakers: [
-                            {name: 'Mr.', surname: 'Pink'},
-                            {name: 'Mr.', surname: 'White'}
-                        ],
-                            abstract: 'hello'},
-                        {speakers: [
-                            {name: 'Mr.', surname: 'White'}
-                        ]}
+            var mockedConf = {
+                speakers: [
+                    {id: 1, name: 'Mr.', surname: 'Pink'},
+                    {id: 2, name: 'Mr.', surname: 'White'}
+                ],
+                talks: [
+                    {id: 'teaTime', title: 'The Art of Tea', speakerIds: [1, 2]},
+                    {id: 'coffeeTime', title: 'The Merits of Coffee', speakerIds: [1]}
+                ],
+                tracks: [
+                    {id: 'tea4Life', title: 'Tea for life', presentations: [
+                        {talkId: 'teaTime'}
                     ]},
-                {id: 'coffeeTime', title: 'A Rush of Caffeine to the Head'}
-            ]};
+                    {id: 'coffeeFTW', title: 'CoffeeEEEEE', presentations: [
+                        {talkId: 'coffeeTime'}
+                    ]}
+                ]
+            };
 
-            // mock 'load' resolving the promise
-            var deferred = $q.defer();
-            deferred.resolve(mockedConf);
-            spyOn(ConferenceService, 'load').andReturn(deferred.promise);
+            $httpBackend.whenGET('api/conference.json').respond(mockedConf);
 
             var mockedMyTrack = ['a1', 'a2', 'a3'];
 
             // mock 'load' resolving the promise
-            deferred = $q.defer();
+            var deferred = $q.defer();
             deferred.resolve(mockedMyTrack);
             spyOn(MyTrackService, 'load').andReturn(deferred.promise);
 
@@ -73,42 +75,49 @@ describe('Controller: TrackController', function() {
                 return $controller('TrackController', {$scope: scope});
             };
 
+            httpBackend = $httpBackend;
             dialogService = DialogService;
             myTrackService = MyTrackService;
             commentService = CommentService;
+            conferenceService = ConferenceService;
 
         });
     });
 
     afterEach(function() {
+        httpBackend.verifyNoOutstandingExpectation();
+        httpBackend.verifyNoOutstandingRequest();
     });
 
     it('should load JSON initially', function() {
         createController();
         rootScope.$apply();
+        httpBackend.flush();
         expect(scope.conference).toBeDefined();
         expect(scope.conference.tracks.length).toBe(2);
-        expect(scope.conference.tracks[0].title).toBe('The Art of Tea');
+        expect(scope.conference.tracks[0].title).toBe('Tea for life');
     });
 
     it('should start with first Track initially', function() {
         createController();
         rootScope.$apply();
-        expect(scope.currentTrack.id).toBe('teaTime');
+        httpBackend.flush();
+        expect(scope.currentTrack.id).toBe('tea4Life');
     });
 
     it('should change to next and prev track', function() {
         createController();
         rootScope.$apply();
-
-        expect(scope.hasNextTrack()).toBe(true);
+        httpBackend.flush();
         scope.nextTrack();
-        expect(scope.currentTrack.id).toBe('coffeeTime');
-        expect(scope.hasNextTrack()).toBe(false);
+        expect(scope.currentTrack.id).toBe('coffeeFTW');
+        scope.nextTrack();
+        expect(scope.currentTrack.id).toBe('tea4Life');
 
         scope.previousTrack();
-        expect(scope.currentTrack.id).toBe('teaTime');
-        expect(scope.hasPreviousTrack()).toBe(false);
+        scope.previousTrack();
+        expect(scope.currentTrack.id).toBe('tea4Life');
+        scope.previousTrack();
+        expect(scope.currentTrack.id).toBe('coffeeFTW');
     });
-
 });

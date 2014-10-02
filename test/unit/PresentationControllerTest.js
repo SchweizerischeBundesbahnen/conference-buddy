@@ -2,7 +2,7 @@
 
 describe('Controller: PresentationController', function() {
 
-    var scope, createController, rootScope, dialogService;
+    var scope, createController, rootScope, conferenceService;
 
     beforeEach(function() {
 
@@ -10,7 +10,7 @@ describe('Controller: PresentationController', function() {
             // configure $provide constants etc..
         });
 
-        angular.mock.inject(function($rootScope, $q, $controller, DialogService) {
+        angular.mock.inject(function($rootScope, $q, $controller, ConferenceService) {
 
             var mockedConf = {tracks: [
                 {id: 'teaTime', title: 'The Art of Tea',
@@ -40,7 +40,7 @@ describe('Controller: PresentationController', function() {
                 return $controller('PresentationController', {$scope: scope});
             };
 
-            dialogService = DialogService;
+            conferenceService = ConferenceService;
 
         });
     });
@@ -62,31 +62,28 @@ describe('Controller: PresentationController', function() {
         expect(speaker).toBe('');
     });
 
-    it('should show the details modal dialog', function() {
+    it('should show the details view', function() {
         createController();
         rootScope.$apply();
-        spyOn(dialogService, 'showModal');
+        spyOn(conferenceService, 'selectPresentation');
 
         expect(scope.currentTrack.presentations.length).toBe(2);
         scope.showDetails(0, scope.currentTrack);
 
-        expect(dialogService.showModal).toHaveBeenCalled();
-        var args = dialogService.showModal.calls[0].args;
-        expect(args[0]).toEqual({templateUrl: 'partials/talk.html'});
-        expect(args[1]).toEqual(jasmine.objectContaining({
-            talk: scope.currentTrack.presentations[0]
-        }));
+        expect(conferenceService.selectPresentation).toHaveBeenCalled();
+        var args = conferenceService.selectPresentation.calls[0].args;
+        expect(args[0]).toEqual(scope.currentTrack.presentations[0]);
     });
 
     it('should not show the details modal dialog', function() {
         createController();
         rootScope.$apply();
-        spyOn(dialogService, 'showModal');
+        spyOn(conferenceService, 'selectPresentation');
 
         expect(scope.currentTrack.presentations.length).toBe(2);
         scope.showDetails(1, scope.currentTrack);
 
-        expect(dialogService.showModal).not.toHaveBeenCalled();
+        expect(conferenceService.selectPresentation).not.toHaveBeenCalled();
     });
 
 });

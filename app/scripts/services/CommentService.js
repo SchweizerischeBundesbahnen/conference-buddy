@@ -4,7 +4,6 @@ angular.module('conferenceBuddyApp').factory('CommentService', ['$http', functio
 
     return {
         load: function(talkId) {
-            console.log(talkId);
             return $http.get('api/comments.json').then(function(result) {
                 return result.data;
             });

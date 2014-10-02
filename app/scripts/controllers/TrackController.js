@@ -5,15 +5,16 @@ angular.module('conferenceBuddyApp').controller('TrackController',
                                                                                            userService) {
 
     $scope.conference = {tracks: [ ]};
-    $scope.currentTrack = null;
     $scope.copperfield = '';
     $scope.myTrack = [];
 
-    var currentTrackIndex = 0;
+    // conferenceService  will initialized after conferenceService (http-promise!)
+    $scope.conferenceService = {hasNextTrack: function() {}, hasPreviousTrack: function() {}};
 
     conferenceService.load().then(function(conference) {
+        $scope.conferenceService = conferenceService;
+        $scope.currentTrack = conferenceService.currentTrack();
         $scope.conference = conference;
-        updateTrack();
         if (userService.isRegistered()) {
             myTrackService.load().then(function(myTrack) {
                 $scope.myTrack = myTrack;
@@ -26,25 +27,13 @@ angular.module('conferenceBuddyApp').controller('TrackController',
     });
 
     $scope.nextTrack = function() {
-        if ($scope.hasNextTrack()) {
-            currentTrackIndex += 1;
-            updateTrack();
-        }
-    };
-
-    $scope.hasNextTrack = function() {
-        return $scope.conference.tracks.length > currentTrackIndex + 1;
+        $scope.currentTrack = $scope.conferenceService.nextTrack();
+        toggleMagic();
     };
 
     $scope.previousTrack = function() {
-        if ($scope.hasPreviousTrack()) {
-            currentTrackIndex -= 1;
-            updateTrack();
-        }
-    };
-
-    $scope.hasPreviousTrack = function() {
-        return currentTrackIndex > 0;
+        $scope.currentTrack = $scope.conferenceService.previousTrack();
+        toggleMagic();
     };
 
     $scope.isOnMyTrack = function(presentation) {
@@ -52,13 +41,8 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         return !presentation.common && index !== -1;
     };
 
-    function updateTrack() {
-        $scope.currentTrack = $scope.conference.tracks[currentTrackIndex];
-        toggleMagic();
-    }
-
     function toggleMagic() {
         $scope.copperfield = $scope.copperfield ? '' : 'magic';
     }
-
-}]);
+}
+]);

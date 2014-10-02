@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').controller('PresentationController', ['$scope', 'DialogService', function($scope, dialogService) {
+angular.module('conferenceBuddyApp').controller('PresentationController', ['$scope', '$location', 'ConferenceService', function($scope, $location, conferenceService) {
 
     $scope.formatSpeakers = function(presentation) {
         var speakers = '';
@@ -20,11 +20,8 @@ angular.module('conferenceBuddyApp').controller('PresentationController', ['$sco
     $scope.showDetails = function(index, track) {
         var presentation = track.presentations[index];
         if ($scope.hasAbstract(presentation)) {
-            var options = {
-                talk: presentation,
-                formatSpeakers: $scope.formatSpeakers
-            };
-            dialogService.showModal({templateUrl: 'partials/talk.html'}, options);
+            conferenceService.selectPresentation(presentation);
+            $location.path('/details');
         }
     };
 
