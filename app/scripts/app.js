@@ -12,6 +12,9 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function($provide, $r
     }).when('/mytrack', {
         templateUrl: 'views/mytrack.html',
         controller: 'MyTrackController'
+    }).when('/details', {
+        templateUrl: 'views/details.html',
+        controller: 'DetailsController'
     }).when('/register', {
         templateUrl: 'views/register.html',
         controller: 'UserController'

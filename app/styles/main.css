@@ -192,3 +192,7 @@ textarea {
 .disabled {
     color: #EEE;
 }
+
+.navLabel {
+    color: #aaaaaa;
+}
