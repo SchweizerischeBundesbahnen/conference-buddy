@@ -5,25 +5,19 @@ angular.module('conferenceBuddyApp').factory('RatingService', ['$http', function
     return {
         load: function(presentationId) {
             console.log('loading ratings for presentation ' + presentationId);
-            // null or undefined
-            if (presentationId == null) {
-                // return nothing
-                return {};
-            } else {
-                return $http.get('api/ratings.json').then(function(result) {
-                    var i;
-                    for (i = 0; i < result.data.length; i++) {
-                        if (result.data[i].presentationId === presentationId) {
-                        console.log('returning rating ' + result.data[i]);
-                            return result.data[i];
-                        }
+            return $http.get('api/ratings.json').then(function(result) {
+                var i;
+                for (i = 0; i < result.data.length; i++) {
+                    if (result.data[i].presentationId === presentationId) {
+                    console.log('returning rating ' + result.data[i]);
+                        return result.data[i];
                     }
-                    console.log('returning empty rating');
-                    return {
-                        'presentationId': presentationId
-                    };
-                });
-            }
+                }
+                console.log('returning empty rating');
+                return {
+                    'presentationId': presentationId
+                };
+            });
         },
         save: function(presentationId, rating) {
             console.log('Rating presentation ' + presentationId + ' as a solid ' + rating);
