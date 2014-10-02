@@ -1,0 +1,14 @@
+[
+    {
+        "talkId": "a1",
+        "ratings": [5, 3, 3, 4]
+    },
+    {
+        "talkId": "a2",
+        "ratings": [1, 1, 2, 1, 1, 2]
+    },
+    {
+        "talkId": "a3",
+        "ratings": []
+    }
+]
