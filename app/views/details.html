@@ -10,6 +10,7 @@
         <button type="button" ng-click="goBack()" class="btn btn-default">
             <span class="glyphicon glyphicon-chevron-left"></span><strong> Zurück</strong>
         </button>
+        <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
         <p class="h4">{{presentation.title}}</p>
         <small>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room}}</small>
         <p>{{presentation.abstract}}</p>
@@ -27,6 +28,10 @@
                 </div>
             </div>
         </div>
+        <rating ng-model="myRating" max="6"></rating>
+        <button type="button" ng-click="rate()" class="btn btn-default">
+            <strong>Bewerten!</strong>
+        </button>
         <comments talk-id="{{presentation.id}}"></comments>
     </div>
 </div>

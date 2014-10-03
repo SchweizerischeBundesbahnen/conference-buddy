@@ -1,0 +1,16 @@
+[
+    {
+        "presentationId": 3,
+        "average": 1.2,
+        "myRating": 2
+    },
+    {
+        "presentationId": 10,
+        "average": 4.7
+    },
+    {
+        "presentationId": 20,
+        "average": 6,
+        "myRating": 6
+    }
+]
