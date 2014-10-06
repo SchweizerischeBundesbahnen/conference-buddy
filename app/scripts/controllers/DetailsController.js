@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('DetailsController',
-    ['$scope', '$routeParams', '$window', 'ConferenceService', 'RatingService', 'UserService', 'DialogService', function($scope, $routeParams,
-        $window, conferenceService, ratingService, userService, dialogService) {
+    ['$scope', '$routeParams', '$window', 'ConferenceService', 'RatingService', 'UserService', function($scope, $routeParams, $window,
+        conferenceService, ratingService, userService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.presentation = null;
@@ -26,7 +26,7 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
 
     $scope.rate = function() {
         if (userService.isRegistered()) {
-            // "Vote!" sollte sowieso nur angezeigt werden, wenn der User registriert ist. Trotzdem hier nochmal prüfen zur Sicherheit.
+            // "Rate!" sollte sowieso nur angezeigt werden, wenn der User registriert ist. Trotzdem hier nochmal prüfen zur Sicherheit.
             var newRating;
 
             if ($scope.hasMyRating) {
