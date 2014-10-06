@@ -28,8 +28,8 @@
                 </div>
             </div>
         </div>
-        <rating ng-model="myRating" max="6"></rating>
-        <button type="button" ng-click="rate()" class="btn btn-default">
+        <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
+        <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">
             <strong>Bewerten!</strong>
         </button>
         <comments talk-id="{{presentation.id}}"></comments>
