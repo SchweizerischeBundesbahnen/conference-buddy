@@ -44,7 +44,7 @@
         </div>
         <div class="col-xs-10 col-lg-11">
             <div class="header" ng-show="!hasAbstract(presentation)">{{presentation.title}}</div>
-            <div class="link-header"><a href="#" ng-click="showDetails($index, currentTrack)" ng-show="hasAbstract(presentation)">{{presentation.title}}</a>
+            <div class="link-header"><a ng-click="showDetails($index, currentTrack)" ng-show="hasAbstract(presentation)">{{presentation.title}}</a>
             </div>
             <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>

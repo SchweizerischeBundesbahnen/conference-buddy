@@ -28,6 +28,10 @@
     font-weight: bold;
 }
 
+.link-header a {
+    cursor: pointer;
+}
+
 .track {
     padding: 5px;
 }

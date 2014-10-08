@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('DetailsController',
-    ['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', function($scope, $routeParams, $window, $location,
-        conferenceService, ratingService) {
+    ['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', function($scope, $routeParams, $window, $location,
+        conferenceService, ratingService, userService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.presentation = null;
@@ -32,16 +32,23 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
     };
 
     $scope.rate = function() {
-        var newRating;
+        if (userService.isRegistered()) {
+            // "Rate!" sollte sowieso nur angezeigt werden, wenn der User registriert ist. Trotzdem hier nochmal prüfen zur Sicherheit.
+            var newRating;
 
-        if ($scope.hasMyRating) {
-            newRating = ratingService.update($scope.presentation.id, $scope.myRating);
-        } else {
-            newRating = ratingService.save($scope.presentation.id, $scope.myRating);
-            $scope.hasMyRating = true;
+            if ($scope.hasMyRating) {
+                newRating = ratingService.update($scope.presentation.id, $scope.myRating);
+            } else {
+                newRating = ratingService.save($scope.presentation.id, $scope.myRating);
+                $scope.hasMyRating = true;
+            }
+
+            $scope.hasRatings = true;
+            $scope.averageRating = newRating.average;
         }
-
-        $scope.hasRatings = true;
-        $scope.averageRating = newRating.average;
     };
+
+    $scope.isRegistered = function() {
+        return userService.isRegistered();
+    }
 }]);
