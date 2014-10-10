@@ -15,7 +15,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -28,9 +28,22 @@
         href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+
+<!-- Navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavigationController">
+    <div class="col-xs-3 navlink" ng-class="{active:isConferenceActive()}"><a ng-click="goToConference()"><img src="images/home-32.png"></a></div>
+    <div class="col-xs-3 navlink" ng-class="{active:isTracksActive()}"><a ng-click="goToTracks()" href="/#/tracks"><img
+            src="images/talk-32.png"></a></div>
+    <div class="col-xs-3 navlink" ng-class="{active:isMyTrackActive()}"><a ng-click="goToMyTrack()" href="/#/mytrack"><img
+            src="images/popular_topic-32.png"></a></div>
+    <div class="col-xs-3 navlink navlinklast" ng-class="{active:isAboutActive()}"><a ng-click="goToAbout()" href="/#/about"><img
+            src="images/info-32.png"></a></div>
+</div>
+
+
 <!-- Add your site or application content here -->
 <!-- Use flip animation on Smartphone and Tablet only -->
-<div ng-view class="visible-xs-block visible-sm-block at-view-flip-in-vertical at-view-flip-out-vertical"></div>
+<div ng-view class="visible-xs-block visible-sm-block at-view-flip-in-vertical at-view-flip-out-vertical" autoscroll="true"></div>
 <div ng-view class="visible-md-block visible-lg-block"></div>
 
 <!--[if lt IE 9]>
@@ -64,9 +77,11 @@
 <script src="scripts/services/RatingService.js"></script>
 <script src="scripts/services/UserService.js"></script>
 <script src="scripts/services/HttpInterceptor.js"></script>
+<script src="scripts/controllers/NavigationController.js"></script>
 <script src="scripts/controllers/TrackController.js"></script>
+<script src="scripts/controllers/ConferenceController.js"></script>
+<script src="scripts/controllers/AboutController.js"></script>
 <script src="scripts/controllers/MyTrackController.js"></script>
-<script src="scripts/controllers/TrackSwitchController.js"></script>
 <script src="scripts/controllers/PresentationController.js"></script>
 <script src="scripts/controllers/DetailsController.js"></script>
 <script src="scripts/controllers/UserController.js"></script>

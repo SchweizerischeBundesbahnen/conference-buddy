@@ -36,13 +36,9 @@
     padding: 5px;
 }
 
-.registration {
-    padding: 10px;
-}
-
 .banner {
     padding: 10px;
-    background-color: rgb(0,33,99);
+    background-color: rgb(0, 33, 99);
     color: white;
     font-weight: bold;
 }
@@ -197,6 +193,28 @@ textarea {
     color: #EEE;
 }
 
-.navLabel {
-    color: #aaaaaa;
+.navlink {
+    background-color: rgb(0, 33, 99);
+    border-right: 1px solid silver;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.navlink.active {
+    background-color: rgb(0, 44, 134);
+    border-bottom: 5px solid #ff0000;
+}
+
+.navlinklast {
+    border-right: 0px;
+}
+
+.navlink img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    padding-top: 50px;
 }

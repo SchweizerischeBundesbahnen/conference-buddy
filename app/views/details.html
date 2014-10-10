@@ -1,15 +1,10 @@
-<div class="banner">
-    <p class="h3"><strong>{{conference.name}}</strong></p>
-    <button ng-controller="TrackSwitchController" ng-click="showMyTrack()"
-            class="pull-right btn btn-default btn-sm glyphicon glyphicon-user"></button>
-    <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
-</div>
-
-<div class="container copperfield" ng-class="{magic: copperfield}">
+<div class="container content copperfield" ng-class="{magic: copperfield}">
     <div class="row track">
+        <p class="h3">
         <button type="button" ng-click="goBack()" class="btn btn-default">
             <span class="glyphicon glyphicon-chevron-left"></span><strong> Zurück</strong>
         </button>
+        </p>
         <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
         <p class="h4">{{presentation.title}}</p>
         <small>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room}}</small>
