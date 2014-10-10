@@ -2,6 +2,8 @@
 
 angular.module('conferenceBuddyApp').controller('PresentationController', ['$scope', '$location', 'ConferenceService', 'ROUTES', function($scope, $location, conferenceService, ROUTES) {
 
+    $scope.ROUTES = ROUTES;
+
     $scope.formatSpeakers = function(presentation) {
         var speakers = '';
         presentation.speakers.forEach(function(speaker) {
