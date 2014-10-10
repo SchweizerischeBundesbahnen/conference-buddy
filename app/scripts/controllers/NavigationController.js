@@ -2,8 +2,6 @@
 
 angular.module('conferenceBuddyApp').controller('NavigationController', ['$scope', '$location', 'ROUTES', function($scope, $location, ROUTES) {
 
-    console.log(ROUTES);
-
     $scope.isConferenceActive = function() {
         return ROUTES.CONFERENCE === $location.path();
     };
