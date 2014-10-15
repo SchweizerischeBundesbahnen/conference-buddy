@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$location', function($http, $location) {
+angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$location', 'ROUTES', function($http, $location, ROUTES) {
 
     function lookupPresentation(conference, presentationId) {
         for (var i = 0; i < conference.tracks.length; i++) {
@@ -16,10 +16,9 @@ angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$locat
 
     return {
         load: function() {
-
             // TODO simulates server check & httpinterceptor
             if (!$http.defaults.headers.common['X-Access-Token']) {
-                $location.url('/register');
+                $location.url(ROUTES.REGISTER);
             }
 
             return $http.get('api/myTrack.json').then(function(result) {

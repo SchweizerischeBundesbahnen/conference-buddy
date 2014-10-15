@@ -2,26 +2,49 @@
 
 var app = angular.module('conferenceBuddyApp', ['ngRoute', 'ngTouch', 'ngAnimate', 'ngCookies', 'ui.bootstrap']);
 
-app.config(['$provide', '$routeProvider', '$httpProvider', function($provide, $routeProvider, $httpProvider) {
+// route constants, injectable into services and controllers
+app.constant('ROUTES', {
+    CONFERENCE: '/',
+    ABOUT: '/about',
+    MYTRACK: '/mytrack',
+    TRACKS: '/tracks',
+    DETAILS: '/details',
+    REGISTER: '/register'
+});
 
+
+app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($provide, $routeProvider, $httpProvider, ROUTES) {
+
+    // we are using the interceptor to check UserService status (auth-token)
     $httpProvider.responseInterceptors.push('HttpInterceptor');
 
-    $routeProvider.when('/', {
+    // routes
+    $routeProvider.when(ROUTES.CONFERENCE, {
+        templateUrl: 'views/conference.html',
+        controller: 'ConferenceController'
+    }).when(ROUTES.TRACKS, {
         templateUrl: 'views/tracks.html',
         controller: 'TrackController'
-    }).when('/mytrack', {
-        templateUrl: 'views/mytrack.html',
-        controller: 'MyTrackController'
-    }).when('/details', {
+    }).when(ROUTES.TRACKS + ROUTES.DETAILS, {
         templateUrl: 'views/details.html',
         controller: 'DetailsController'
-    }).when('/register', {
+    }).when(ROUTES.MYTRACK, {
+        templateUrl: 'views/mytrack.html',
+        controller: 'MyTrackController'
+    }).when(ROUTES.MYTRACK + ROUTES.DETAILS, {
+        templateUrl: 'views/details.html',
+        controller: 'DetailsController'
+    }).when(ROUTES.REGISTER, {
         templateUrl: 'views/register.html',
         controller: 'UserController'
+    }).when(ROUTES.ABOUT, {
+        templateUrl: 'views/about.html',
+        controller: 'AboutController'
     }).otherwise({
-        redirectTo: '/'
+        redirectTo: ROUTES.CONFERENCE
     });
 
+    // not sure if we need this?
     // provides a catch-all handler for all non-catched errors
     $provide.decorator('$exceptionHandler', ['$delegate', function($delegate) {
         return function(exception, cause) {
@@ -30,9 +53,4 @@ app.config(['$provide', '$routeProvider', '$httpProvider', function($provide, $r
         };
     }]);
 }]);
-
-/*
-app.run(['RegistrationService', function(registrationService) {
-    registrationService.init();
-*/
 

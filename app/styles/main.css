@@ -36,13 +36,9 @@
     padding: 5px;
 }
 
-.registration {
-    padding: 10px;
-}
-
 .banner {
     padding: 10px;
-    background-color: rgb(0,33,99);
+    background-color: rgb(0, 33, 99);
     color: white;
     font-weight: bold;
 }
@@ -91,87 +87,6 @@
     opacity: 0;
 }
 
-/* view flip animations
-   https://github.com/mgechev/angular-transitions
-*/
-.at-view-flip-out-vertical.ng-leave {
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 20;
-}
-
-.at-view-flip-out-vertical.ng-leave-active {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    z-index: 10;
-}
-
-.at-view-flip-in-vertical.ng-enter {
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-}
-
-.at-view-flip-in-vertical.ng-enter-active {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    z-index: 20;
-}
-
 textarea {
     resize: none;
 }
@@ -197,6 +112,27 @@ textarea {
     color: #EEE;
 }
 
-.navLabel {
-    color: #aaaaaa;
+.navlink {
+    background-color: rgb(0, 33, 99);
+    padding: 10px;
+    min-height: 50px;
+}
+
+.navlink.active {
+    background-color: rgb(0, 44, 134);
+    border-bottom: 5px solid #ff0000;
+}
+
+.navlinklast {
+    border-right: 0px;
+}
+
+.navlink img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    padding-top: 50px;
 }
