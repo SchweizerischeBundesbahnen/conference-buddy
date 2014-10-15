@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('UserController',
-['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService',
-    function($scope, $location, conferenceService, userService, dialogService) {
+['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES',
+    function($scope, $location, conferenceService, userService, dialogService, ROUTES) {
 
     $scope.conference = {};
     $scope.currentTrack = {};
@@ -11,7 +11,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
     $scope.user = {};
 
     $scope.showTracks = function() {
-        $location.path('/');
+        $location.path(ROUTES.TRACKS);
     };
 
     $scope.showRegistration = function() {

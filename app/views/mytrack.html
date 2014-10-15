@@ -1,19 +1,13 @@
-<div class="banner">
-    <p class="h3"><strong>{{conference.name}}</strong></p>
-    <button ng-controller="TrackSwitchController" ng-click="showTracks()" class="pull-right btn btn-default btn-sm glyphicon glyphicon-list"></button>
-    <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
-</div>
-<div class="container">
+<div class="container content">
     <div class="row track">
         <p class="h3"><strong>My Track</strong></p>
     </div>
-
     <!-- Smartphones und Tablets -->
     <div class="visible-xs-block visible-sm-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
          ng-repeat="presentation in myTrack.presentations"
-         ng-click="showDetails($index, myTrack)" ng-controller="PresentationController">
+         ng-click="showDetails($index, myTrack, ROUTES.MYTRACK)" ng-controller="PresentationController">
         <div class="col-xs-2 col-lg-1">
-        {{presentation.time.start}}<br>
+            {{presentation.time.start}}<br>
             {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">

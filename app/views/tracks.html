@@ -1,13 +1,5 @@
-<div class="banner">
-    <p class="h3"><strong>{{conference.name}}</strong></p>
-    <button ng-controller="TrackSwitchController" ng-click="showMyTrack()"
-            class="pull-right btn btn-default btn-sm glyphicon glyphicon-user"></button>
-    <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
-</div>
-
-<div class="container copperfield" ng-class="{magic: copperfield}" ng-swipe-left="nextTrack()"
+<div class="container content copperfield" ng-class="{magic: copperfield}" ng-swipe-left="nextTrack()"
      ng-swipe-right="previousTrack()">
-
     <div class="row track">
         <p class="h3">
             <span ng-click="previousTrack()" class="glyphicon glyphicon-chevron-left"></span>
@@ -19,7 +11,7 @@
     <!-- Smartphones und Tablets -->
     <div class="visible-xs-block visible-sm-block" ng-class="{row: true, talk: true, clickable: hasAbstract(presentation)}"
          ng-repeat="presentation in currentTrack.presentations"
-         ng-click="showDetails($index, currentTrack)" ng-controller="PresentationController">
+         ng-click="showDetails($index, currentTrack, ROUTES.TRACKS)" ng-controller="PresentationController">
         <div class="col-xs-2 col-lg-1">
             <span ng-show="isOnMyTrack(presentation)" class="glyphicon glyphicon-bookmark pull-right"></span>
             {{presentation.time.start}}<br>
