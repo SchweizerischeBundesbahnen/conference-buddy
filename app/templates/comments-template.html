@@ -3,7 +3,7 @@
         <hr/>
         <h4>Kommentare</h4>
 
-        <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" novalidate>
+        <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
                 <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
                           ng-model="commentEntry.comment" required></textarea>
