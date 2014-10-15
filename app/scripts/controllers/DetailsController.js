@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('DetailsController',
-    ['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', function($scope, $routeParams, $window, $location,
-        conferenceService, ratingService, userService) {
+    ['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES', function($scope, $routeParams, $window, $location,
+        conferenceService, ratingService, userService, ROUTES) {
 
     $scope.conference = {tracks: [ ]};
     $scope.presentation = null;
@@ -14,7 +14,7 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
             // presentation is null or undefined. can happen if the user has the details page open and closes the browser. when he re-opens the
             // browser and restores the open tabs from his last session, there will be no current presentation. in that case, we will redirect him
             // to the home page
-            $location.path('/');
+            $location.path(ROUTES.CONFERENCE);
         } else {
             ratingService.load($scope.presentation.id).then(function(rating) {
                 $scope.hasRatings = (rating.average !== undefined);
