@@ -10,7 +10,7 @@
             </div>
             <button class="btn btn-primary pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
         </form>
-        <div ng-show="!showInputForm()">Registriere dich, um hier teilnehmen zu können!</div>
+        <div ng-show="!showInputForm()"><a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> dich, um hier teilnehmen zu können!</div>
     </div>
 
     <div class="row" style="padding-top: 10px">
