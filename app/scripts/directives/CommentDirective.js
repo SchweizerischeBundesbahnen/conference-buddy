@@ -16,13 +16,15 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
             });
 
             $scope.submitForm = function(isValid) {
-                if (isValid) {
-                    var commentEntry = angular.copy($scope.commentEntry);
-                    commentEntry.author = $scope.author;
-                    commentEntry.timestamp = new Date().toJSON();
-                    commentService.save(commentEntry);
-                    $scope.comments.splice(0, 0, commentEntry);
-                    $scope.commentEntry = null;
+                if (userService.isRegistered()) {
+                    if (isValid) {
+                        var commentEntry = angular.copy($scope.commentEntry);
+                        commentEntry.author = $scope.author;
+                        commentEntry.timestamp = new Date().toJSON();
+                        commentService.save(commentEntry);
+                        $scope.comments.splice(0, 0, commentEntry);
+                        $scope.commentEntry = null;
+                    }
                 }
             };
 
@@ -32,6 +34,9 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
                 return date.getDate() + '.' + month + '.' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
             };
 
+            $scope.showInputForm = function() {
+                return userService.isRegistered();
+            };
         }
     };
 }]);

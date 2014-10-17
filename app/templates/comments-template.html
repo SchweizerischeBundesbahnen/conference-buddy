@@ -3,13 +3,14 @@
         <hr/>
         <h4>Kommentare</h4>
 
-        <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" novalidate>
+        <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
                 <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
                           ng-model="commentEntry.comment" required></textarea>
             </div>
             <button class="btn btn-primary pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
         </form>
+        <div ng-show="!showInputForm()"><a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> dich, um hier teilnehmen zu können!</div>
     </div>
 
     <div class="row" style="padding-top: 10px">
