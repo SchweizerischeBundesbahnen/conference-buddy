@@ -1,98 +1,251 @@
 {
     "id": 1,
-    "name": "Developer Day 2013",
-    "location": "BEA Expo",
-    "date": "12.12.2013",
+    "name": "Tech4",
+    "location": "Stade de Suisse Bern",
+    "date": "17.11.2014",
     "speakers": [
         {
             "id": 1,
-            "name": "Stefano",
-            "surname": "Trentini",
+            "name": "Nicolas",
+            "surname": "Perrin",
             "email": "",
-            "company": "K-IT-SWE",
+            "company": "IT-SCG",
             "picture": "images/pict1.jpg",
             "bio": ""
         },
         {
             "id": 2,
-            "name": "Markus",
-            "surname": "Riesch",
-            "email": "xxx@xxx.ch",
-            "company": "Stiftung “Zugang für alle”",
+            "name": "Eva",
+            "surname": "Siegenthaler",
+            "email": "",
+            "company": "IT-SWE",
             "picture": "images/pict2.jpg",
-            "bio": "Markus Riesch hat an der ETH Zürich Maschinenbau und Betriebs- und Produktionswissenschaften studiert. Er ist Geschäftsführer der gemeinnützigen Stiftung «Zugang für alle», für welche er seit 2004 arbeitet. Markus Riesch vertritt die Anliegen von Menschen mit Behinderung bei der Nutzung von ICT in verschiedenen nationalen und internationalen Gremien. Im Jahr 2006 lancierte er das Schweizer Zertifikat für barrierefreie Websites der Stiftung «Zugang für alle». 2007 und 2011 war Markus Riesch Herausgeber der Schweizer Accessibility-Studie.\n Markus Riesch ist Experte für die Gestaltung barrierefreier Websites und Applikationen und berät zahlreiche nationale und internationale Organisationen und Unternehmen."
+            "bio": ""
         },
         {
             "id": 3,
-            "name": "Daniele",
-            "surname": "Corciulo",
-            "email": "xxx@xxx.ch",
-            "company": "Stiftung “Zugang für alle”",
+            "name": "Sandro",
+            "surname": "Corradi",
+            "email": "",
+            "company": "IT-SWE",
             "picture": "images/pict3.jpg",
-            "bio": "Daniele Corciulo startete im August 2009 die Arbeit bei der Stiftung «Zugang für alle». Daniele ist selbst blind und absolvierte bei der Stiftung «Zugang für alle» eine Weiterbildung zum ECDL-Webmaster und Accessibility-Spezialist. Daniele Corciulo beschäftigt sich insbesondere mit Web Accessibility, mobile Apps mit dem Thema \"barrierefreie PDF-Dokumente\". Als Blinder kennt er die Anforderungen und Herausforderungen aus erster Hand. Als Accessibiltiy-Spezalist für Screenreader-Nutzung untersucht Daniele Corciulo Websites und Applikationen und erarbei-tet Verbesserungsvorschläge."
+            "bio": ""
         },
         {
             "id": 4,
-            "name": "Jürg",
-            "surname": "Hiltbrunner",
-            "email": "xxx@xxx.ch",
-            "company": "IT-OM-PSV-BPF",
+            "name": "Christian",
+            "surname": "Trachsel",
+            "email": "",
+            "company": "IT-AQ",
             "picture": "images/pict4.jpg",
-            "bio": "Jürg Hiltbrunner ist seit 2011 als Oracle Datenbank Engineer bei SBB tätig.\n - 2013 Diploma of Advanced Studies (Berner Fachhochschule)\n - 2012 Oracle Database 11 Performance Tuning Certified Expert\n - 2011 OCP 11g (Oracle Certified Professional)\n - 1996 bis jetzt im DB-Umfeld auf Oracle und Mainframe"
+            "bio": ""
         },
         {
             "id": 5,
-            "name": "Simon",
-            "surname": "Krenger",
-            "email": "xxx@xxx.ch",
-            "company": "IT-OM-PSV-BPF",
+            "name": "Paul",
+            "surname": "Kaeser",
+            "email": "",
+            "company": "Savvy Telematic Systems AG",
             "picture": "images/pict5.jpg",
-            "bio": "Simon Krenger ist seit 2012 bei der SBB als Oracle Datenbank-Engineer tätig. Nebenbei studiert er Informatik an der Berner Fach-hochschule\n - 2012 OCA 11g (Oracle Certified Associate)\n - Seit 2011 BSc. in Computer Science\n - Seit 2009 Datenbank-Erfahrung mit Oracle und MySQL"
+            "bio": ""
         },
         {
             "id": 6,
-            "name": "Marc",
-            "surname": "Hoffmann",
-            "email": "xxx@xxx.ch",
-            "company": "mtrail GmbH",
+            "name": "Felix",
+            "surname": "Schwarz",
+            "email": "",
+            "company": "Savvy Telematic Systems AG",
             "picture": "images/pict6.jpg",
-            "bio": "Marc Hoffmann beschäftigt sich als Autor der Open Source Werkzeuge JaCoCo und EclEmma für die Code Coverage Analayse seit vielen Jahren mit der Arbeitsweise von Java Compilern und Java Virtual Machines. Beruflich arbeitet Marc als Softwarearchitekt für die Firma mtrail GmbH in Bern und unterstützt die SBB im Projekt Rail Control System (RCS)."
+            "bio": ""
         },
         {
             "id": 7,
-            "name": "Michael",
-            "surname": "Krausse",
-            "email": "xxx@xxx.ch",
-            "company": "IT-SWE-CD2-T25",
+            "name": "Daniel",
+            "surname": "Berger",
+            "email": "",
+            "company": "IT-SCP",
             "picture": "images/pict7.jpg",
-            "bio": "Software Engineer bei der SBB seit April 2013 im Projekt SVS.\nSchwerpunkt: Individuelle Softwareentwicklung."
+            "bio": ""
         },
         {
             "id": 8,
-            "name": "Aravindo",
-            "surname": "Wingeier",
-            "email": "xxx@xxx.ch",
-            "company": "IT-SWE-CD3-T33",
+            "name": "Roger",
+            "surname": "Bula",
+            "email": "",
+            "company": "P-VS-EZ",
             "picture": "images/pict8.jpg",
-            "bio": "Software Engineer bei der SBB seit 2009 in Applikation CID Infra und Projekt OraCIS."
+            "bio": ""
         },
         {
             "id": 9,
-            "name": "Michael",
-            "surname": "Künzli",
-            "email": "xxx@xxx.ch",
-            "company": "IT-SWE-TF2-TS2",
+            "name": "André",
+            "surname": "Gerster",
+            "email": "",
+            "company": "IT-SCP",
             "picture": "images/pict9.jpg",
-            "bio": "Mein Vater kam aus Will, meine Mutter aus Freiburg und ich bin in Genf geboren! Ich bin verheiratet und lebe mit meinen 2 Töchtern in Düdingen. Nach einer kaufmännischen Lehre absolvierte ich die Ingenieurschule in Wirtschaftsinformatik in Biel (1992). In 1999 habe ich ein Nachdip-lom bei der NDIT abgeschlossen und dieses Jahr ein EMBA in „Integrated Management“. Ich habe hauptsächlich in diversen Dienstleitungsfirmen als Entwickler, Analytiker, Projektleiter und Linienverantwortlicher gearbeitet. In der SBB-IT habe ich mich mit dem Thema Qualität beschäftigt. In meiner Freizeit kümmere ich mich in Winter um unseren Wald und sonst um unseren Familiengarten. Wandern, soziale Einsätze und Vater sein gehören ebenfalls zu meinen Beschäftigungen."
+            "bio": ""
         },
         {
             "id": 10,
-            "name": "Michael",
-            "surname": "Beyer",
-            "email": "xxx@xxx.ch",
-            "company": "IT-SCI-TOP-UNO",
+            "name": "Lothar",
+            "surname": "Jöckel",
+            "email": "",
+            "company": "IT-SCI",
             "picture": "images/pict10.jpg",
-            "bio": "Seit 7 Jahren bei der SBB in den verschiedensten Rollen (Software Entwickler, Architekt, Projektleiter) in den Projekten NeTS und RCS tätig und seit Anfang 2012 Leiter von UNO. Neben Informatik habe ich noch ein Studium der Gesellschafts-, Kultur und Religionswissenschaften absolviert."
+            "bio": ""
+        },
+        {
+            "id": 11,
+            "name": "Thomas",
+            "surname": "Probst",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 12,
+            "name": "Peter",
+            "surname": "Müller",
+            "email": "",
+            "company": "Siemens",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 13,
+            "name": "Adrian",
+            "surname": "Peter",
+            "email": "",
+            "company": "I-ET",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 14,
+            "name": "Christoph",
+            "surname": "Marthaler",
+            "email": "",
+            "company": "IT-SCI",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 15,
+            "name": "Beat",
+            "surname": "Wettstein",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 16,
+            "name": "Gabriela",
+            "surname": "Loosli",
+            "email": "",
+            "company": "IT-AQ",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 17,
+            "name": "Yannis",
+            "surname": "Baillet",
+            "email": "",
+            "company": "IT-AQ",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 18,
+            "name": "Raphael",
+            "surname": "Kosir",
+            "email": "",
+            "company": "IT-SCG",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 19,
+            "name": "Reto",
+            "surname": "Schlunegger",
+            "email": "",
+            "company": "IT-SCF",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 20,
+            "name": "Marcel",
+            "surname": "Affolter",
+            "email": "",
+            "company": "IT-AQ",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 21,
+            "name": "Melkon",
+            "surname": "Torosyan",
+            "email": "",
+            "company": "IT-AQ",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 22,
+            "name": "Marco",
+            "surname": "Nepote",
+            "email": "",
+            "company": "IT-SCF",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 23,
+            "name": "Robert",
+            "surname": "Gebel",
+            "email": "",
+            "company": "Swisscom",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 24,
+            "name": "Beat",
+            "surname": "Maurer",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 25,
+            "name": "Jürg",
+            "surname": "Frühauf",
+            "email": "",
+            "company": "IT-SCF",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 26,
+            "name": "Roger",
+            "surname": "Furrer",
+            "email": "",
+            "company": "IT-SCP",
+            "picture": "images/pict10.jpg",
+            "bio": ""
+        },
+        {
+            "id": 27,
+            "name": "Ingo",
+            "surname": "Wendler",
+            "email": "",
+            "company": "I-ET-TC",
+            "picture": "images/pict10.jpg",
+            "bio": ""
         }
     ],
     "talks": [
@@ -119,242 +272,470 @@
         },
         {
             "id": "keynote",
-            "title": "Keynote 1 - Herausforderung Accessibility – Chancen für Menschen mit Behinderungen, Stolpersteine für Entwickler",
+            "title": "Keynote - SBB IT - Mehr Wert für den Kunden",
             "abstract": "Zugang zu Informations- und Kommunikationstechnologien bedeutet für Menschen mit Behinderungen mehr als für alle anderen. Der barrierefreie Zugang ermöglicht mehr Chancengleichheit und Selbstständigkeit im privaten und beruflichen Leben. Im ersten Teil der Keynote wird aufgezeigt, für was das Konzept Accessibility steht, wer alles davon profitiert, welche unterschiedlichen Bedürfnisse es gibt und wie diese durch assistierende Technologien unterstützt werden können. Im zweiten Teil wird live vorgestellt, was es heisst „blind“ einen Computer oder ein iPhone zu bedienen und wie Websites und Apps benutzt werden können oder wo teils unüberwindbare Hürden auftauchen. Am Schluss werden häufige Stolpersteine bei der Umsetzung von Rich Internet Applications in Websites durch den Einsatz von JS und AJAX aufgezeigt.",
-            "speakerIds": [2, 3],
+            "speakerIds": [1],
             "common": true
         },
         {
             "id": "a1",
-            "title": "A1 – Oracle Datenbank 12c: Die Wolke aus der Steckdose",
-            "abstract": "Die Oracle 12c Datenbank steht seit diesem Sommer zur Verfügung. Ab nächstem Jahr ist Oracle 12c auch gemäss ABC-Liste bei uns verfügbar und bestellbar. Wir stellen euch einige neue Features der 12c Datenbank vor. Mittels Demos zeigen wir, wie einfach und schnell in einer Container Datenbank eine weitere „Pluggable Database“ erstellt werden kann. Weiter stellen wir vor, was in SQL erweitert wurde und welche neuen Features Entwickler nutzen können. An diesem Vortrag erfährt ihr somit viele nützliche Informationen und Neuigkeiten zur neuen 12c Datenbank, welche euch die Arbeit vereinfachen werden.",
-            "speakerIds": [4, 5],
+            "title": "A1 – UX@SBB",
+            "abstract": "Die Themen Usability und User Experience (UX) stellen eine zentrale Herausforderung dar, und zwar sowohl bei kommerziellen Anwendungen wie auch bei spezifischen Geschäftsapplikationen. Grosskonzerne wie Apple haben mit ihren Produkten neue Standards geschaffen worden, die erlebnisreiche Erfahrungen auslösen und die Ansprüche der Kunden und Anwender im Hinblick auf Bedienung und Ästhetik signifikant erhöht haben. Diese Erfahrungen und Erwartungen tragen sie auch in ihren beruflichen Kontext hinein. Selbst von betrieblichen Anwendungen erwarten sie heute ein modernes, einfaches und ansprechendes User Interface, wie sie von aktuellen Web- und Mobile Applikationen gewohnt sind. Bei der Entwicklung oder der Beschaffung von immer komplexeren Produkten und immer umfassenderen Software-Lösungen wird die Einbeziehung der Endkunden und der Endanwender immer wichtiger bzw. unabdingbar, und zwar so früh wie möglich und im gesamten Entwicklungsprozess. Seit Beginn 2014 widmet sich eine zentrale Einheit diesem Themenfeld. Das aus Informatikern, Psychologen, Ingenieuren, Designern und Ökonomen bestehende Team verfolgt die Vision, User Centered Design innerhalb der SBB-IT zu verankern und somit eine wesentlichen Beitrag zur Kunden- und Mitarbeiterzufriedenheit zu leisten. In der Präsentation stellt sich das neue UX-Team vor. Es zeigt auf was seine Dienstleistungen sind und was es mit diesen erreichen will.",
+            "speakerIds": [2, 3],
             "common": false
         },
         {
             "id": "a2",
-            "title": "A2 - Let’s make some 0xCAFEBABE!",
-            "abstract": "Eine Einführung in die Grundlagen des Java Class-Fileformats und der Arbeitsweise der Java Virtual Machine.\n Die Java Virtual Machine ist heutzutage das „Arbeitspferd“ hinter vielen Server- und Client-Anwendungen. Zur Ausführung in der JMV gelangen sogenannte Class-Files, die aus Java-Sourcecode und anderen Sprachen kompiliert oder auch dynamisch erzeugt werden. Um solche Class-Files selber zu generieren, modifizieren, verifizieren oder analysieren zu können, muss man ihre Struktur sowie die grundlegende Funktionsweise der Virtual Machine kennen. Dieses Wissen ist insbesondere auch hilfreich beim Verständnis von Performance-, Speicher- und Nebenläufigkeitsaspekten von Java-Anwendungen.",
-            "speakerIds": [6],
+            "title": "A2 - ePOS, Nutzen für den Kunden",
+            "abstract": "Die SBB ersetzt zwischen 2014 und 2015 schweizweit 1‘000 der alten Billettautomaten BATS (1. Generation Touch Screen Automaten) durch Automaten der neusten Generation – dem ePOS. Unsere Kunden profitieren von zahlreichen Verbesserungen: Das Bezahlen mit grossen Noten wird möglich, da das Rückgeld neu auch in Noten erfolgt. Daneben ermöglicht der neue Automat kontaktloses Bezahlen mit Kreditkarten und erfüllt die Anforderungen des Behindertengesetzes. Durch den Einbau eines zweiten Druckers, dem erhöhten Aufbruchschutz und der Notenausgabe reduziert sich die Störungsanfälligkeit und somit die Verfügbarkeit der Automaten für unsere Kundinnen und Kunden. Aber auch unser Servicepersonal, welches tagtäglich den Unterhalt sicherstellt, kann sich freuen: Komponentenwechsel sind ohne Werkzeug möglich.",
+            "speakerIds": [8, 9],
             "common": false
         },
         {
             "id": "a3",
-            "title": "A3 – HTML 5 & CSS 3 bei SBB-IT",
-            "abstract": "HTML5 & CSS3 ist in aller Munde. Höchste Zeit, dass die SBB konzentriert ein Auge darauf wirft. Aus diesem Grund beschäftigt sich ein Vertiefungsthema von STT Java:Core seit Juli mit diesem Thema. Das Hauptziel ist, internes Know-How aufzubauen und zu prüfen, ob diese Technologie in der SBB eingesetzt wer-den kann oder nicht. Der Vortrag wird einen Überblick über die erarbeiteten Themen (Offline & Storage, Kommunikation Client-Server, etc.) bieten und einzelne Bereiche detailliert betrachten. Dabei werden technische Details und Möglich-keiten hervorgehoben. Das Publikum wird die Möglichkeit haben, erarbeitete Showcases zu betrachten.",
-            "speakerIds": [7, 8],
+            "title": "A3 – A Day in the Life: Basisdienste...",
+            "abstract": "Kunden erwarten von der SBB korrekte und konsistente Informationen. Für die IT-Systeme bedeutet das, die richtigen Daten zum richtigen Zeitpunkt am richtigen Ort in der richtigen Qualität zur Verfügung zu stellen. Basisdienste helfen, diese Anforderung sicherzustellen indem sie festlegen, wie Daten identifiziert und von Anwendungen standardisiert bezogen werden. In unserem Vortrag gehen wir folgenden Fragen nach: Was ist eigentlich ein fachlicher Basisdienst? Warum brauchen wir Basisdienste? Welche Basisdienste machen bei der SBB Sinn? Welche existieren bereits? Welche lohnt es sich zu erstellen und warum? Welchen Mehrwert bieten Basisdienste den Kunden? Zur Veranschaulichung zeigen wir dabei einen typischen Tag eines SBB-Kunden und vergleichen ausgewählte Situationen mit und ohne Basisdienste. Wir zeigen die Vorteile auf, die Kunden haben, wenn ihre Interaktionen mit der SBB durch Basisdienste unterstützt werden.",
+            "speakerIds": [16, 17],
             "common": false
         },
         {
             "id": "a4",
-            "title": "A4 - Inspiration – Umsetzung - Agilität",
-            "abstract": "„Ein Unternehmen ohne Ordnung ist unfähig zu überleben und ein Unternehmen ohne Unordnung ist unfähig sich zu entwickeln“. Wie wird beim Erreichen von Zielen Energie erzeugt, Verschwendung vermieden, Vision vermittelt, Verantwor-tung getragen und Sinn erlebt, so dass für alle Beteiligten optimale Ergebnisse resultieren? Auf den Ebenen „Individuum“, „Team“ und „Führung“ zeigen die Referenten in einem Dialog auf, wie sich theoretische Modelle mit täglicher Praxis verbinden lassen.  Die Zusammenarbeit als mächtiger Hebel um das systemische Glück (persönliche und organisatorische) zu erreichen, wird exemplarisch dargelegt. Diese Zusammenfassung stammt aus der Diplomarbeit „Collaborations@SBB-IT“ und Praktiken aus „Kanban@UNO“.",
-            "speakerIds": [9, 10],
+            "title": "A4 - SBB Maps",
+            "abstract": "„Was ist das Ziel? Mit wenigen publizierten Services können verschiedenste SBB Clients einfach und effizient mit Kartenmaterial ausgestattet werden um den wichtigen räumlichen Bezug der Business Daten zu erhalten. Was ist ein Bahnplan? Räumlich dargestellte Bahnanlagen wie Gleis, Signalanlagen, Bahnhofdetails aus der DfA (Datenbank feste Anlagen). Wo können die SBB Maps verwendet werden? IPAD, Android, SAP, Browser, allgemein in Applikationen. Wo werden sie bereits oder nächstens produktiv verwendet? iPad für Sperrprozess Bau, iPad für Zustandsmonitoring Infra Anlagen, verschiedene WebGIS Browser Applikationen wie Immobilienbewirtschaftung, Naturrisiken oder Energie. Was kostet es? Grobe Einschätzung: Günstig bis Gratis (je nach Anzahl Anfragen pro Tag), ein wiederverwendeter Service aus dem Standartangebot.Teurer ist ein projektspezifischer zusätzlicher Service (Beispiel Offerte RailClean GPS: 6‘000.- pro Jahr Betrieb plus die Erstellung) und nochmals teurer ein optimierter, vorgerechneter und hochauflösender Kacheldienst. Was brauchts um SBB Maps anzubieten?",
+            "speakerIds": [24],
+            "common": false
+        },
+        {
+            "id": "b1",
+            "title": "B1 - Open Data",
+            "abstract": "Wie komme ich von A nach B? Was man sich früher über x Kombinationsmöglichkeiten mühsam von Hand aus dem Kursbuch heraussuchen musste ist heute per Knopfdruck verfügbar. Diese Information will nicht nur die SBB den Schweizerinnen und Schweizer zur Verfügung stellen. Neben Big Players wie Google und Amadeus wollen auch Open Source Projekte, KMU’s und Privatpersonen eine qualitativ hochwertige Reiseinformation anbieten. Intermodaler Routenplaner, Tür zu Tür Navigation, jeder Anbieter will sich durch Zusatznutzen beim Kunden profilieren. Was sind die innovativsten/kreativsten Umsetzungen auf Basis der ÖV Information und wie positioniert sich die SBB in diesem umkämpften Markt? Welche SBB-Informationen interessieren die Open Data Community nebst dem Fahrplan und wie geht die SBB mit diesen Anfragen um. ",
+            "speakerIds": [4],
+            "common": false
+        },
+        {
+            "id": "b2",
+            "title": "B2 - Innovative Kundenlenkung",
+            "abstract": "Die Systeme der SBB sind hochgradig vernetzt und erfassen eine Vielzahl von Daten. Im ersten Schritt der Kundeninformation hat man den Automatisierungsgrad für die Kundeninformation ausgebaut um die visuellen und akustischen Ausgaben zentral in Echtzeit steuern zu können. Im zweiten Schritt wird ein weiterer Teil der bestehenden Daten verwendet, um die Kundeninformationen für die Kundenlenkung anzureichern. Konkret soll die Auslastung der Personenwagen in Echtzeit mit den heutigen Systemen ermittelt werden. Hierbei werden unterschiedliche Messwerte analysiert und mittels selbstlernender Algorithmen aus der künstlichen Intelligenz trainiert. Ziel ist es auf dieser Basis dann die Auslastung in Echtzeit zu kennen um z.B. im Ereignisfall abschätzen zu können, wie viele Reisende betroffen sind um die benötigten Ersatzbusse aufzubieten.",
+            "speakerIds": [10, 11],
+            "common": false
+        },
+        {
+            "id": "b3",
+            "title": "B3 - Usability@Cargo",
+            "abstract": "Durch nationale und internationale Gesetze und Vorgaben im Güterverkehr ist SBB Cargo verpflichtet, die Instandhaltung der Güterwagenflotte lückenlos zu dokumentieren. Ein besonderes Augenmerk liegt dabei auf den sicherheitsrelevanten Komponenten wie Radsätze oder Bremssohlen. Gerade bei Implementationen von neuen Gesetzesanforderungen ist es dabei umso wichtiger, dass mit Hilfe von IT-Systemen neue und zusätzliche Prozessschritte möglichst einfach und effizient abgewickelt werden können. Mit diesem Ziel vor Augen, sind bei SBB Cargo 2014 zwei SAP Lösungen eingeführt worden, die auf neusten SAP UI Technologien aufsetzen. Durch den Einsatz von SAP Netweaver Business Client (NWBC) konnten ausgewählte Prozesse mit einer neuen Benutzeroberfläche stark vereinfacht werden. Die Reduzierung von „Klicks“, die Unterstützung von „drag and drop“ Funktionalitäten und die voreingestellten Selektionen von Objekten haben zu einer Verbesserung der Datenqualität, einer Optimierung der Durchlaufzeiten und einer Steigerung der Benutzerakzeptanz geführt. Mit einer mobilen „HTML5“ Tablet-Lösung kann der Mitarbeitende bei der Fahrzeug Eingangskontrolle (Befundung) direkt am Fahrzeug die notwendigen Reparaturaufträge im SAP auswählen, weitere Informationen zum Vorgang nachschlagen und Hinweise zur  Schadensbehebung verfassen. Mit Hilfe dieser Lösung können Fahrzeuge papierlos, einfach und effizient kontrolliert werden. Mögliche Fehlerquellen werden dabei auf ein Minimum beschränkt.",
+            "speakerIds": [18, 19],
+            "common": false
+        },
+        {
+            "id": "b4",
+            "title": "B4 - Big Data",
+            "abstract": "Viel wurde darüber schon geredet und geschrieben, wenige haben Erfahrung damit. Der Big Data Hype hat seinen Zenit gemäss Einschätzung Gartner überschritten. Wie ist Big Data auf dem Boden der SBB-Realität angekommen? Hält die Technologie was sie verspricht? Wir berichten über Erfahrungen mit ersten realisierten Use Cases aus verschiedenen Anwendungsgebieten und zeigen am Beispiel wie es funktioniert. Zudem wagen wir einen Blick in die nahe Zukunft: Welche SBB-Innovationen könnte Big Data unterstützen oder sogar erst ermöglichen? Und was ist dazu notwendig an Technologie, Kompetenzen sowie Vernetzung von Fach und IT? Wir sind überzeugt: Der SBB-Datenschatz birgt viel Innovationspotential. Und Big Data hilft bei der Hebung dieses Schatzes. Darüber hinaus zeigen wir, wie ein „Data Lake“ funktioniert und wie sich eine Big Data Infrastruktur in die IT-Landschaft der SBB integrieren lässt. Wie kommen die Daten in den „Data Lake“, wie lange bleiben sie drin und wohin fliessen sie daraus ab? Wer darf die Daten zu welchen Zwecken nutzen und wie steht es um den Datenschutz? Welche Fähigkeiten sind für den Umgang mit Big Data Technologien erforderlich? Viele Fragen rund um Big Data sind zu klären. Wir geben Einblick in den Stand der Abklärungen.",
+            "speakerIds": [25],
+            "common": false
+        },
+        {
+            "id": "c1",
+            "title": "C1 - Neue Technologien werden erwachsen",
+            "abstract": "Schäden am Rollmaterial, verursacht durch unsachgemässe Behandlung, fehlerhafte Bedienung oder infrastrukturseitige Einflüsse, erzeugen nicht nur hohe Reparaturkosten, sondern können auch den geordneten Bahnbetrieb beeinflussen und generieren grosse Aufwände für die Kompensation des entstandenen Produktionsausfalls. Um die Schadensursachen beseitigen zu können, müssen diese erst identifiziert werden. Mit den regelmässig durchgeführten Kontrollen ist dies in vielen Fällen nicht möglich. Am Rollmaterial installierte, intelligente Sensoren sind heute in der Lage, Schäden wie z.B. Flachstellen zu detektieren und mit GPS Unterstützung verschiedene weitere Ereignisse und Einflussfaktoren genau zu protokollieren. Mittels Telemetrie können diese Informationen als potentielle Schadensverursacher in eine zentrale Datenbank übertragen werden. Bei Flotten von mehren tausend Fahrzeugen entstehen so grosse Datenmengen mit vielfältigem Informationsgehalt, wie Sensormessdaten, Stossereignisse oder Bewegungsprofile. Eine Auswertung dieses Datenberges mit konventionellen Methoden wäre sehr zeitaufwändig und würde sich nur in ganz spezifischen Fällen lohnen. Auswertungen, basierend auf Business Intelligence Technologien, erlauben dagegen eine gezielte Korrelation verschiedenster Einflussfaktoren gegeneinander und ermöglichen eine effiziente Identifikation von Schadensursachen. Der Vortrag zeigt Methoden und Technologien, wie aus einer riesigen Datenmenge aus unterschiedlichen Quellen  (Big Data) gezielt nach Schadensursachen gesucht werden kann und diese genau identifiziert werden können. Im Weiteren wird die für diesen Zweck benötigte Infrastruktur und die zugrundeligende Softwarearchitektur beleuchtet. Bezug: Eine Verkettung neuer Technologien, wie inntelligente Sensoren, Telemetrie, Big Data und  Bussiness Intelligence ermöglichen neue innovative Ansätze zur Optimierung des geregelten Bahnbetriebs und zur Senkung der Instandhaltungskosten.",
+            "speakerIds": [5, 6],
+            "common": false
+        },
+        {
+            "id": "c2",
+            "title": "C2 - GBT",
+            "abstract": "Siemens präsentiert die Tunnelleittechnik (TLT) für den Gotthard Basistunnel (GBT). Die TLT ist Anzeige und Bedinung der Einrichtungen im GBT, wie Telekom-Einrichtungen, Tunnelfunk, Stromversorgung 50Hz, Stromversorgung 16.3 Hz, Belüftung, Klima, Entwässerung… die Liste ist fast endlos. Für die Ereignisbewältigung ist die die TLT mit einem voll integrierten Einsatzleitsystem und für die Instandhaltung mit einem Maintenance Management Tool auf Basis SAP verbunden. Wie erfolgen die Anzeige und Bedienung in einem derart komplexen Systemumfeld?",
+            "speakerIds": [5, 6],
+            "common": false
+        },
+        {
+            "id": "c3",
+            "title": "C3 - Mitarbeitende verbinden",
+            "abstract": "Mit der Digitalisierung wird die Welt schneller, komplexer, mobiler und transparenter. Künftig wird alles miteinander verbunden sein: Menschen, Informationen, Anlagen, Unternehmen. Privat und im Arbeitsalltag. Der Trend zu mobilen Geräten ist ungebrochen, auch bei der SBB. Moderne Kommunikations- und Arbeitsmittel tragen dazu bei, dass Mitarbeitende unseren Kundinnen und Kunden einen exzellenten Service bieten. Die KL hat beschlossen die Mitarbeitenden der SBB bis 2015 flächendeckend mit mobilen Endgeräten auszurüsten und den digitalen Graben zu schliessen. Die Kompetenz zur Anwendung digitaler Endgeräte wird somit beschleunigt & flächendeckend aufgebaut. Mit diesem Entscheid wird das Mobile Computing im Unternehmen standardisiert und die Basis für effiziente, mobile Prozesse im Unternehmen geschaffen. Bereits sind Anwendungen vorhanden oder geplant, um in ihren Bereichen schneller, transparenter und besser zu werden. Einige Anwendungsfälle: Durch MIT bereitgestellte SBB-Anwendungen wie Digitale Dokumentenmappe, Mängel-App, News-App, Intranet, u.a. Business Case: Integrale Geschäftsabwicklung von Railclean (IGCL) – Ablösung der Meldezettel sowie die Auftragsrapportierung (Papier) durch moderne Apps. Dieser Schritt hat Herausforderungen für die MAIN und auch für die IT. Denn wir kriegen dadurch viele neue IT-Nutzer, die nur mobil bedient werden können. Die neue Zielarchitektur muss u.a. die Inbetriebnahme- und Support-Prozesse „Mobile only“ nutzbar machen und Antworten auf die Fragen liefern wie: Wie nehmen Mitarbeiternde ein mobiles, integriertes Endgerät in Betrieb, wenn der Vorgesetzte keinen ICT-Workplace hat? Wie ändere ich das SBB-Passwort (NT-SBB1) mit einem Smartphone? Wie lösche ich alte Mails, wenn meine Mailbox voll ist und ich auf dem Smartphone nur noch die letzten 3 Monate sehe?",
+            "speakerIds": [20, 21, 22],
+            "common": false
+        },
+        {
+            "id": "c4",
+            "title": "C4 - SBB Police goes Mobile",
+            "abstract": "Praktisch alle Geschäftsprozesse der Transportpolizei werden durch die IT unterstützt, z.B. in der Einsatzleitzentrale bei der Koordination von geplanten und präventiven Einsätzen sowie auch bei ungeplanten Einsätzen und Notfällen. Mobile Einsatzmittel sind immer stärker gefragt und gefordert. Die Modernisierung der Einsatzmittel für das ganze Korps der Transportpolizei findet seit der Integration der TPO in die SBB im 2011 laufend statt, sei es mit einem mobilen Patrouillenjournal oder die GPS basierten Lokalisierung der Patrouillen. Dank der neuen Einsatzmittel hat die Transportpolizei unter anderem folgende Vorteile: Sie ist in der Lage schneller, effizienter und gezielter auf Ereignisse zu reagieren. Sie ist schneller beim Endkunden vor Ort und verstärkt so dessen Sicherheitsgefühl durch mehr Präsenz. Die Einsätze können durch die Einsatzleitzentrale einfacher und schneller koordiniert werden. Journale werden künftig über das mobile Patrouillenjournal elektronisch übermittelt – damit können Medienbrüche und hoher administrativer Aufwand deutlich reduziert werden. Die Einsatzkräfte sind, aufgrund der Lokalisierung durch Tracker, sofort allozierbar und abrufbereit. Die erhöhte Einsatzbereitschaft kann kurzfristig sichergestellt werden. Sie ist besser mit anderen Polizeikorps vernetzt. Die Einsatzkoordination über Korps hinweg wird einfacher. Andere Polizeikorps zeigen Interesse an den innovativen Lösungen, die die SBB IT für die Transportpolizei umgesetzt hat!",
+            "speakerIds": [26],
+            "common": false
+        },
+        {
+            "id": "d1",
+            "title": "D1 - Touchpoints - Kunden berühren",
+            "abstract": "Die Bedürfnisse der Kunden haben sich in den letzten Jahren stetig und rasch verändert. Die Kunden wünschen die Leistungen des öffentlichen Verkehrs schneller, mobiler, persönlicher und transparenter. Der Kunde des öV Schweiz differenziert dabei kaum, welcher Geschäftsakteur welche Dienstleistung für ihn erbringt; für den Kunden zählt vielmehr das eigene Erlebnis bei der Erfüllung seiner persönlichen Mobilitätsbedürfnisse. Dieses Erlebnis wird zunehmend von der Gesamtheit der IT-Unterstützung geprägt. Der für eine Dienstleistung zuständige Geschäftsakteur ist nämlich zwangsläufig in seiner Innenperspektive gefangen: er sieht zwar gut, wie er «seinen» Kanal zum Kunden gestalten soll. Umgekehrt ist es schwieriger: die Perspektive des Kunden einnehmen und von aussen betrachten, wie die Vielfalt aller Geschäftsfähigkeiten an einem bestimmten Punkt wirkt! Wir stellen uns die Frage: Wie können die grossartigen Soli der einzelnen Leistungserbringer am Berührungspunkt zwischen Kunde und SBB zur einer harmonischen Synfonie orchestriert werden? Das öV Branchenmodell aus der Geschäftsarchitektur des Personenverkehrs bringt mit dem «Touchpoint-Ansatz» ein innovatives Denkmodell und nützliches Arbeitsinstrument ins Spiel.",
+            "speakerIds": [7],
+            "common": false
+        },
+        {
+            "id": "d2",
+            "title": "D2 - Projekt VVB",
+            "abstract": "Das Konzern Top-Programm «Energiesparen» hat zum Ziel, den Energieverbrauch gegenüber der unbeeinflussten Prognose von 2025 um 20% zu senken. Grundvoraussetzung für die langfristige Zielerreichung ist eine transparente und verursachergerechte Verrechnung des Bahnstroms (VVB). Die elektrischen Lokomotiven werden mit Messgeräten ausgestattet. Die gemessenen Energiedaten (Stromverbrauch) werden an das europäische Abrechnungssystem EREX (Norwegen) gesendet und dort ausgewertet, damit nachfolgend der effektiven Stromverbrauch, mittels der SBB IT Anwendung I-Prix, den Eisenbahnverkehrsunternehmen (EVU) verrechnet werden kann. Das Referat bietet einerseits einen Einblick in die WebService IT-Architektur der Schnittstelle zwischen I-Prix und EREX und andererseits werden neben Business Anforderungen betreffend verursachergerechte Verrechnung auch Energiemesstechniken im Fahrzeug vorgestellt. Dank VVB wird zukünftig die Energie nicht mehr pauschal sondern verursachergerecht verrechnet, und damit wird ein Anreiz zum Stromsparen geschaffen, was einem realen Kundenwunsch entspricht.",
+            "speakerIds": [13, 14, 15],
+            "common": false
+        },
+        {
+            "id": "d3",
+            "title": "D3 - M2M & Daten",
+            "abstract": "Bigdata und Machine2Machine sind mittlerweile Buzzwords, die in aller Munde sind und sich sehr schnell verbrauchen. Dahinter steht aber eine reale und sich schnell entwickelnde Tatsache: immer mehr Menschen und immer mehr Dinge kommunizieren miteinander. Diese Hyperdigitalisierung führt zu gewaltigen Datenmengen, die ein grosses Potenzial darstellen. Dieses Potenzial nutzen wir heute – am Anfang der Hyperdigitalisierung – nur zu einem kleinen Teil. Meist geschieht das mit konkreten Fragestellungen auf sehr isolierten Datenbeständen. Die Nutzung verschiedenster Datenquellen über Unternehmensgrenzen hinweg ist dabei die nächste Entwicklungsstufe – verbunden mit mächtigen Werkzeugen, die grosse Datenmengen flexibel auswerten können. Zentral dabei ist die Frage der Sicherheit und des Datenschutzes. Dies stellt eine grosse Herausforderung im Spannungsfeld technischer Machbarkeit und ethischer Vertretbarkeit dar. Der Vortrag beleuchtet die aktuellen Möglichkeiten von Machine2Machine und Bigdata aus der Sicht von Swisscom. Ausserdem wagen wir einen Blick in die Nahe Zukunft und beschäftigen uns mit Risiken und flankierenden Massnahmen.",
+            "speakerIds": [23],
+            "common": false
+        },
+        {
+            "id": "d4",
+            "title": "D4 - GSM-R",
+            "abstract": "Die moderne Zugsicherung mittels ETCS wird mehr und mehr die etablierten Lichtsignale und elektromechanischen Steuersysteme ablösen. ETCS wurde ins Leben gerufen, um in Europa eine einheitliche und länderübergreifende Zugsicherung mit Führerstandsignalisierung einzuführen, so dass Züge im grenz-überschreitenden Verkehr den Transport von Personen und Gütern ohne Wechsel des Traktions- und Zusicherungssystems sicherstellen können. Die Einführung von ETCS reduziert somit die Reisezeiten im grenzüberschreitenden Verkehr, erlaubt zudem eine höhere Strecken-Zugdichte und reduziert Verspätungsminuten. Der Transport der ETCS-Applikation erfolgt heute über das SBB eigene GSM-R Mobilkommunikationssystem. Die notwendige Bandbreite zur Übertragung der ETCS Applikation, im SBB Durchschnitt 500 Bit/s, erfolgt momentan im leitungsorientierten Übertragungsmodus. Hierfür werden vom GSM-R System Übertragungsbandbreiten von 4.8 bzw. 9.6kbit/s vom System zur Verfügung gestellt. Aufgrund der geringen Bandbreitenanforderungen der ETCS-Applikation stellt sich die Frage, ob dessen Transport neu im GSM Paketmodus erfolgen kann. Damit verbunden sind folgende Fragestellungen zu beantworten: Kann ein Übertragungsressource mehrfach genutzt werden? Wie gross ist der Multiplexing Gain pro Übertragungsressource?    Ist der Paketmodus robust gegenüber äusseren Einflüssen (z.B. Doppler Effekt) und wie schnell können Übertragungsfehler korrigiert werden? Können die QoS Anforderungen für Packet Transfer Delay/Loss etc. eingehalten werden? Kann das GSM-R Radionetzwerk der ETCS Applikation Übertragungsressourcen zuweisen, die dessen  QoS Anforderungen (z.B. Garantierte Bitrate oder Verkehrskategorie) ensprechen?",
+            "speakerIds": [27],
             "common": false
         }
     ],
     "tracks": [
         {
-            "id": "coreTec",
-            "title": "Core Tec",
+            "id": "kunden",
+            "title": "Mehr Wert für die Kunden",
             "presentations": [
                 {
-                    "id": 1,
-                    "talkId": "cafe",
-                    "time": {
-                        "start": "08:30",
-                        "end": "09:00"
-                    },
-                    "room": "Foyer 1 Catering"
-                },
-                {
-                    "id": 2,
-                    "talkId": "begrüssung",
-                    "time": {
-                        "start": "09:00",
-                        "end": "09:10"
-                    },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 3,
+                    "id": 5,
                     "talkId": "keynote",
                     "time": {
-                        "start": "09:10",
-                        "end": "10:00"
+                        "start": "09:00",
+                        "end": "09:45"
                     },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 4,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "10:00",
-                        "end": "10:25"
-                    },
-                    "room": "Foyer 1 Catering"
+                    "room": "Saal 1"
                 },
                 {
                     "id": 10,
-                    "talkId": "a1",
-                    "time": {
-                        "start": "10:25",
-                        "end": "11:10"
-                    },
-                    "room": "Kongressraum 3"
-                }
-            ]
-        },
-        {
-            "id": "javaTec",
-            "title": "Java Tec",
-            "presentations": [
-                {
-                    "id": 1,
-                    "talkId": "cafe",
-                    "time": {
-                        "start": "08:30",
-                        "end": "09:00"
-                    },
-                    "room": "Foyer 1 Catering"
-                },
-                {
-                    "id": 2,
-                    "talkId": "begrüssung",
-                    "time": {
-                        "start": "09:00",
-                        "end": "09:10"
-                    },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 3,
-                    "talkId": "keynote",
-                    "time": {
-                        "start": "09:10",
-                        "end": "10:00"
-                    },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 4,
                     "talkId": "pause",
                     "time": {
                         "start": "10:00",
                         "end": "10:25"
                     },
-                    "room": "Foyer 1 Catering"
+                    "room": ""
+                },
+                {
+                    "id": 15,
+                    "talkId": "a1",
+                    "time": {
+                        "start": "10:45",
+                        "end": "11:30"
+                    },
+                    "room": "Saal Mailand"
                 },
                 {
                     "id": 20,
-                    "talkId": "a2",
-                    "time": {
-                        "start": "10:25",
-                        "end": "11:10"
-                    },
-                    "room": "Kongressraum 4"
-                }
-            ]
-        },
-        {
-            "id": "beyondNow",
-            "title": "Beyond Now",
-            "presentations": [
-                {
-                    "id": 1,
-                    "talkId": "cafe",
-                    "time": {
-                        "start": "08:30",
-                        "end": "09:00"
-                    },
-                    "room": "Foyer 1 Catering"
-                },
-                {
-                    "id": 2,
-                    "talkId": "begrüssung",
-                    "time": {
-                        "start": "09:00",
-                        "end": "09:10"
-                    },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 3,
-                    "talkId": "keynote",
-                    "time": {
-                        "start": "09:10",
-                        "end": "10:00"
-                    },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 4,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:00",
-                        "end": "10:25"
+                        "start": "11:30",
+                        "end": "11:45"
                     },
-                    "room": "Foyer 1 Catering"
+                    "room": ""
+                },
+                {
+                    "id": 25,
+                    "talkId": "a2",
+                    "time": {
+                        "start": "11:45",
+                        "end": "12:30"
+                    },
+                    "room": "Saal Rom"
                 },
                 {
                     "id": 30,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "12:30",
+                        "end": "14:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 35,
                     "talkId": "a3",
                     "time": {
-                        "start": "10:25",
-                        "end": "11:10"
+                        "start": "14:00",
+                        "end": "14:45"
                     },
-                    "room": "Kongressraum 1"
+                    "room": "Saal Berlin"
+                },
+                {
+                    "id": 40,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "14:45",
+                        "end": "15:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 45,
+                    "talkId": "a4",
+                    "time": {
+                        "start": "15:00",
+                        "end": "15:45"
+                    },
+                    "room": "Saal London"
                 }
             ]
         },
         {
-            "id": "engineeringArts",
-            "title": "Engineering Arts",
+            "id": "innovation",
+            "title": "Innovative (IT-) Projekte aus dem Business / Was bewegt das Bahnhofsgeschäft",
             "presentations": [
                 {
-                    "id": 1,
-                    "talkId": "cafe",
-                    "time": {
-                        "start": "08:30",
-                        "end": "09:00"
-                    },
-                    "room": "Foyer 1 Catering"
-                },
-                {
-                    "id": 2,
-                    "talkId": "begrüssung",
-                    "time": {
-                        "start": "09:00",
-                        "end": "09:10"
-                    },
-                    "room": "Kongressraum 1"
-                },
-                {
-                    "id": 3,
+                    "id": 6,
                     "talkId": "keynote",
                     "time": {
-                        "start": "09:10",
-                        "end": "10:00"
+                        "start": "09:00",
+                        "end": "09:45"
                     },
-                    "room": "Kongressraum 1"
+                    "room": "Saal 1"
                 },
                 {
-                    "id": 4,
+                    "id": 11,
                     "talkId": "pause",
                     "time": {
                         "start": "10:00",
                         "end": "10:25"
                     },
-                    "room": "Foyer 1 Catering"
+                    "room": ""
                 },
                 {
-                    "id": 40,
-                    "talkId": "a4",
+                    "id": 16,
+                    "talkId": "b1",
                     "time": {
-                        "start": "10:25",
-                        "end": "11:10"
+                        "start": "10:45",
+                        "end": "11:30"
                     },
-                    "room": "Kongressraum 6"
+                    "room": "Saal Lausanne"
+                },
+                {
+                    "id": 21,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "11:30",
+                        "end": "11:45"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 26,
+                    "talkId": "b2",
+                    "time": {
+                        "start": "11:45",
+                        "end": "12:30"
+                    },
+                    "room": "Saal Genf"
+                },
+                {
+                    "id": 31,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "12:30",
+                        "end": "14:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 36,
+                    "talkId": "b3",
+                    "time": {
+                        "start": "14:00",
+                        "end": "14:45"
+                    },
+                    "room": "Saal Basel"
+                },
+                {
+                    "id": 41,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "14:45",
+                        "end": "15:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 46,
+                    "talkId": "b4",
+                    "time": {
+                        "start": "15:00",
+                        "end": "15:45"
+                    },
+                    "room": "Saal Luzern"
+                }
+            ]
+        },
+        {
+            "id": "erfahrungen",
+            "title": "Erfahrungen aus dem IT-gestützten Bahngeschäft",
+            "presentations": [
+                {
+                    "id": 7,
+                    "talkId": "keynote",
+                    "time": {
+                        "start": "09:00",
+                        "end": "09:45"
+                    },
+                    "room": "Saal 1"
+                },
+                {
+                    "id": 12,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "10:00",
+                        "end": "10:25"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 17,
+                    "talkId": "c1",
+                    "time": {
+                        "start": "10:45",
+                        "end": "11:30"
+                    },
+                    "room": "Saal Sydney"
+                },
+                {
+                    "id": 22,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "11:30",
+                        "end": "11:45"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 27,
+                    "talkId": "c2",
+                    "time": {
+                        "start": "11:45",
+                        "end": "12:30"
+                    },
+                    "room": "Saal Hongkong"
+                },
+                {
+                    "id": 32,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "12:30",
+                        "end": "14:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 37,
+                    "talkId": "c3",
+                    "time": {
+                        "start": "14:00",
+                        "end": "14:45"
+                    },
+                    "room": "Saal Peking"
+                },
+                {
+                    "id": 42,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "14:45",
+                        "end": "15:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 47,
+                    "talkId": "c4",
+                    "time": {
+                        "start": "15:00",
+                        "end": "15:45"
+                    },
+                    "room": "Saal Tokio"
+                }
+            ]
+        },
+        {
+            "id": "future",
+            "title": "Future and Trends",
+            "presentations": [
+                {
+                    "id": 8,
+                    "talkId": "keynote",
+                    "time": {
+                        "start": "09:00",
+                        "end": "09:45"
+                    },
+                    "room": "Saal 1"
+                },
+                {
+                    "id": 13,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "10:00",
+                        "end": "10:25"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 18,
+                    "talkId": "d1",
+                    "time": {
+                        "start": "10:45",
+                        "end": "11:30"
+                    },
+                    "room": "Saal Vancouver"
+                },
+                {
+                    "id": 23,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "11:30",
+                        "end": "11:45"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 28,
+                    "talkId": "d2",
+                    "time": {
+                        "start": "11:45",
+                        "end": "12:30"
+                    },
+                    "room": "Saal Quebec"
+                },
+                {
+                    "id": 33,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "12:30",
+                        "end": "14:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 38,
+                    "talkId": "d3",
+                    "time": {
+                        "start": "14:00",
+                        "end": "14:45"
+                    },
+                    "room": "Saal Toronto"
+                },
+                {
+                    "id": 43,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "14:45",
+                        "end": "15:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 48,
+                    "talkId": "d4",
+                    "time": {
+                        "start": "15:00",
+                        "end": "15:45"
+                    },
+                    "room": "Saal Montreal"
                 }
             ]
         }
