@@ -114,8 +114,17 @@ textarea {
 
 .navlink {
     background-color: rgb(0, 33, 99);
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
     min-height: 50px;
+    text-align: center;
+    border-right: 1px solid #2a516c;
+}
+
+.navlink span {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    color: white;
 }
 
 .navlink.active {
@@ -134,5 +143,5 @@ textarea {
 }
 
 .content {
-    padding-top: 50px;
+    padding-top: 55px;
 }
