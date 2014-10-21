@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    This configuration file is an exemple for the ESTA-Template.
+    For more information about the Ehcache configuration, see:
+    http://ehcache.org/documentation/configuration/configuration
+-->
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="ehcache.xsd"
+		 updateCheck="true" monitoring="autodetect"
+		 dynamicConfig="true">
+
+	<diskStore path="java.io.tmpdir"/>
+
+	<transactionManagerLookup class="net.sf.ehcache.transaction.manager.DefaultTransactionManagerLookup"
+							  properties="jndiName=java:/TransactionManager" propertySeparator=";"/>
+	<cacheManagerEventListenerFactory class="" properties=""/>
+	<!--
+	Default Cache configuration. These settings will be applied to caches
+	created programmatically using CacheManager.add(String cacheName).
+	This element is optional, and using CacheManager.add(String cacheName) when
+	its not present will throw CacheException
+
+	The defaultCache has an implicit name "default" which is a reserved cache name.
+	-->
+	<defaultCache
+			eternal="false"
+			timeToIdleSeconds="120"
+			timeToLiveSeconds="120"
+			diskSpoolBufferSizeMB="30"
+			diskExpiryThreadIntervalSeconds="120"
+			memoryStoreEvictionPolicy="LRU">
+	</defaultCache>
+
+	<!--
+		VT JC04 - Beispielen von lokale Cache
+	-->
+	<cache name="currentDate"
+		   eternal="false"
+		   diskSpoolBufferSizeMB="20"
+		   timeToIdleSeconds="10"
+		   timeToLiveSeconds="20"
+		   memoryStoreEvictionPolicy="LFU"
+		   statistics="true"
+		   transactionalMode="off">
+	</cache>
+
+	<cache name="grenzpunktCache"
+		   eternal="false"
+		   timeToIdleSeconds="120"
+		   timeToLiveSeconds="120"
+		   diskSpoolBufferSizeMB="30"
+		   diskExpiryThreadIntervalSeconds="120"
+		   statistics="true"
+		   memoryStoreEvictionPolicy="LRU">
+	</cache>
+
+	<!--
+		End: VT JC04 - Beispielen von lokale Cache
+	-->
+
+	<!--
+	Sample caches. Following are some example caches. Remove these before use.
+	-->
+
+	<!--
+	Sample cache named sampleCache1
+	This cache contains a maximum in memory of 10000 elements, and will expire
+	an element if it is idle for more than 5 minutes and lives for more than
+	10 minutes.
+
+	If there are more than 10000 elements it will overflow to the
+	disk cache, which in this configuration will go to wherever java.io.tmp is
+	defined on your system. On a standard Linux system this will be /tmp"
+	-->
+	<cache name="sampleCache1"
+		   eternal="false"
+		   diskSpoolBufferSizeMB="20"
+		   timeToIdleSeconds="300"
+		   timeToLiveSeconds="600"
+		   memoryStoreEvictionPolicy="LFU"
+		   transactionalMode="off">
+	</cache>
+
+	<!--
+	Sample cache named sampleCache2
+	This cache has a maximum of 1000 elements in memory. There is no overflow to disk, so 1000
+	is also the maximum cache size. Note that when a cache is eternal, timeToLive and
+	timeToIdle are not used and do not need to be specified.
+	-->
+	<cache name="sampleCache2"
+		   eternal="true"
+		   memoryStoreEvictionPolicy="FIFO">
+	</cache>
+
+	<!--
+	Sample cache named sampleCache3. This cache overflows to disk. The disk store is
+	persistent between cache and VM restarts. The disk expiry thread interval is set to 10
+	minutes, overriding the default of 2 minutes.
+	-->
+	<cache name="sampleCache3"
+		   eternal="false"
+		   overflowToDisk="true"
+		   diskPersistent="true"
+		   timeToIdleSeconds="300"
+		   timeToLiveSeconds="600"
+		   diskExpiryThreadIntervalSeconds="1"
+		   memoryStoreEvictionPolicy="LFU">
+	</cache>
+
+
+	<!--
+	Sample distributed cache named sampleReplicatedCache1.
+	This cache replicates using defaults.
+	It also bootstraps from the cluster, using default properties.
+	-->
+	<cache name="sampleReplicatedCache1"
+		   eternal="false"
+		   timeToIdleSeconds="100"
+		   timeToLiveSeconds="100">
+
+		<cacheEventListenerFactory
+				class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"/>
+		<bootstrapCacheLoaderFactory
+				class="net.sf.ehcache.distribution.RMIBootstrapCacheLoaderFactory"/>
+	</cache>
+
+
+	<!--
+	Sample distributed cache named sampleReplicatedCache2.
+	This cache replicates using specific properties.
+	It only replicates updates and does so synchronously via copy
+	-->
+	<cache name="sampleRepicatedCache2"
+		   eternal="false"
+		   timeToIdleSeconds="100"
+		   timeToLiveSeconds="100">
+		<cacheEventListenerFactory
+				class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+				properties="replicateAsynchronously=false, replicatePuts=false,
+                            replicatePutsViaCopy=false, replicateUpdates=true,
+                            replicateUpdatesViaCopy=true, replicateRemovals=false"/>
+	</cache>
+
+	<!--
+	Sample distributed cache named sampleReplicatedCache3.
+	This cache replicates using defaults except that the asynchronous replication
+	interval is set to 200ms.
+	This one includes / and # which were illegal in ehcache 1.5.
+	-->
+	<cache name="sampleReplicatedCache3"
+		   eternal="false"
+		   timeToIdleSeconds="100"
+		   timeToLiveSeconds="100">
+		<cacheEventListenerFactory
+				class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+				properties="asynchronousReplicationIntervalMillis=200"/>
+	</cache>
+
+	<!--
+	Sample Terracotta clustered cache named sampleTerracottaCache.
+	This cache uses Terracotta to cluster the contents of the cache.
+	-->
+	<!--
+	<cache name="sampleTerracottaCache"
+		   eternal="false"
+		   timeToIdleSeconds="3600"
+		   timeToLiveSeconds="1800">
+		<terracotta/>
+	</cache>
+	-->
+
+	<!--
+	  Sample xa enabled cache named xaCache
+	<cache name="xaCache"
+		   eternal="false"
+		   timeToIdleSeconds="300"
+		   timeToLiveSeconds="600"
+		   diskExpiryThreadIntervalSeconds="1"
+		   transactionalMode="xa_strict">
+	</cache>
+	-->
+
+	<!--
+	  Sample copy on both read and write cache named copyCache
+	  using the default (explicitly configured here as an example) ReadWriteSerializationCopyStrategy
+	  class could be any implementation of net.sf.ehcache.store.compound.CopyStrategy
+	<cache name="copyCache"
+		   eternal="false"
+		   timeToIdleSeconds="300"
+		   timeToLiveSeconds="600"
+		   diskExpiryThreadIntervalSeconds="1"
+		   copyOnRead="true"
+		   copyOnWrite="true">
+		<copyStrategy class="net.sf.ehcache.store.compound.ReadWriteSerializationCopyStrategy" />
+	</cache>
+	-->
+	<!--
+	  Sample, for Enterprise Ehcache only, demonstrating a tiered cache with in-memory, off-heap and disk stores. In this example the in-memory (on-heap) store is limited to 10,000 items ... which for example for 1k items would use 10MB of memory, the off-heap store is limited to 4GB and the disk store is unlimited in size.
+	<cache name="tieredCache"
+		   eternal="false"
+		   timeToLiveSeconds="600"
+		   overflowToOffHeap="true"
+		   maxBytesLocalOffHeap="4g"
+		   diskExpiryThreadIntervalSeconds="1">
+	 </cache>
+	-->
+	<!--
+	  Sample, for Enterprise Ehcache only, demonstrating a restartable cache with in-memory and off-heap stores.
+	<cache name="restartableCache"
+		   eternal="true"
+		   overflowToOffHeap="true"
+		   maxBytesLocalOffHeap="4g"
+	 </cache>
+	 -->
+</ehcache>
