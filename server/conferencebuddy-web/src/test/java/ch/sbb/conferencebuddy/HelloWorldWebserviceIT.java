@@ -18,8 +18,9 @@ public class HelloWorldWebserviceIT extends AbstractRestIT {
     @Test
     public void testInsertUserTalks() {
         final String url = urlOfFirstPage + "/helloworld";
-        final Response response = client.target(url).request("text/plain").post(Entity.text("hans"));
+        final Response response = client.target(url).request("text/plain").get();
         Assert.assertNotNull(response);
+        Assert.assertEquals(200, response.getStatus());
     }
 
 }

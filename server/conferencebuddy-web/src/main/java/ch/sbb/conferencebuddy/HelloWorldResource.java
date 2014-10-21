@@ -21,11 +21,10 @@ public class HelloWorldResource {
         SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
     }
 
-    @POST
+    @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Consumes(MediaType.TEXT_PLAIN)
     @Path("/helloworld")
-    public String getHello(String name) {
-        return "Hello World! " + name;
+    public String getHello() {
+        return "Hello World!";
     }
 }
