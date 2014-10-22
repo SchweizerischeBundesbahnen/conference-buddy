@@ -7,6 +7,8 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
+
+
 module.exports = function(grunt) {
 
     // Load grunt tasks automatically
@@ -67,12 +69,49 @@ module.exports = function(grunt) {
                 hostname: 'localhost',
                 livereload: 35729
             },
+            server: {
+                proxies: [
+                    {
+                        context: '/conferencebuddy-web',
+                        host: 'localhost',
+                        port: 8080,
+                        https: false,
+                        changeOrigin: false,
+                        xforward: false,
+                        headers: {
+                            "x-custom-added-header": "foo"
+                        }
+                        // rewrite: {
+                        //    '^/api': '/conferencebuddy-app'
+                        // }
+                    }
+                ]
+            },
             livereload: {
                 options: {
                     open: true,
                     base: [
                         '.tmp', '<%= yeoman.app %>'
-                    ]
+                    ],
+                    middleware: function(connect, options) {
+                        if (!Array.isArray(options.base)) {
+                            options.base = [options.base];
+                        }
+
+                        // Setup the proxy
+                        var middlewares = [require('grunt-connect-proxy/lib/utils').proxyRequest];
+
+                        // Serve static files.
+                        options.base.forEach(function(base) {
+                            middlewares.push(connect.static(base));
+                        });
+
+                        // Make directory browse-able.
+                        var directory = options.directory || options.base[options.base.length - 1];
+                        middlewares.push(connect.directory(directory));
+
+                        return middlewares;
+                    }
                 }
             },
             test: {
@@ -164,9 +203,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                        '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/styles/fonts/*'
+                        '<%= yeoman.dist %>/scripts/{,*/}*.js', '<%= yeoman.dist %>/styles/{,*/}*.css', '<%= yeoman.dist %>/styles/fonts/*'
                     ]
                 }
             }
@@ -285,15 +322,7 @@ module.exports = function(grunt) {
                         cwd: '<%= yeoman.app %>',
                         dest: '<%= yeoman.dist %>',
                         src: [
-                            '*.{ico,png,txt}',
-                            '.htaccess',
-                            '*.html',
-                            'views/{,*/}*.html',
-                            'images/{,*/}*.{webp}',
-                            'fonts/*',
-                            'api/*',
-                            'partials/*',
-                            'templates/*'
+                            '*.{ico,png,txt}', '.htaccess', '*.html', 'views/{,*/}*.html', 'images/{,*/}*.{webp}', 'fonts/*', 'api/*', 'partials/*', 'templates/*'
                         ]
                     },
                     {
@@ -337,11 +366,11 @@ module.exports = function(grunt) {
     grunt.registerTask('serve', function(target) {
         if (target === 'dist') {
             return grunt.task.run([
-                'clean:server', 'wiredep', 'build', 'connect:dist:keepalive']);
+                'clean:server', 'wiredep', 'build', 'configureProxies:server', 'connect:dist:keepalive']);
         }
 
         grunt.task.run([
-            'clean:server', 'bowerInstall', 'concurrent:server', 'autoprefixer', 'connect:livereload', 'watch'
+            'clean:server', 'bowerInstall', 'concurrent:server', 'autoprefixer', 'configureProxies:server', 'connect:livereload', 'watch'
         ]);
     });
 
@@ -355,21 +384,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'clean:dist',
-        'wiredep',
-        'bowerInstall',
-        'useminPrepare',
-        'concurrent:dist',
-        'autoprefixer',
-        'concat',
-        'ngAnnotate',
-        'copy:dist',
-        'cdnify',
-        'cssmin',
-        'uglify',
-        'rev',
-        'usemin',
-        'htmlmin'
+        'clean:dist', 'wiredep', 'bowerInstall', 'useminPrepare', 'concurrent:dist', 'autoprefixer', 'concat', 'ngAnnotate', 'copy:dist', 'cdnify', 'cssmin', 'uglify', 'rev', 'usemin', 'htmlmin'
     ]);
 
     grunt.registerTask('default', [
