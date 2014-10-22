@@ -9,3 +9,8 @@ atlassian-ide-plugin.xml
 # IDEA configuration
 .idea/*
 !.idea/codeStyleSettings.xml
+**/target
+*.tlog
+*.class
+*.jar
+*.lst

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+
+    <changeSet id="1" author="u215246 Gilles Zimmermann">
+        <createTable tableName="USER_TALK">
+            <column autoIncrement="true" name="ID" type="NUMBER(19,0)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="USER_TALK_PK"/>
+            </column>
+            <column name="VERSION" type="NUMBER(19,0)"/>
+            <column name="PID" type="NUMBER(19,0)">
+                <constraints nullable="false" />
+            </column>
+            <column name="USER_ID" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <!-- Sequence -->
+        <createSequence sequenceName="USER_TALK_SEQ" incrementBy="1" startValue="1"/>
+        <!-- TODO find solution "Index 'USER_TALK_USER_FK_PID_UK_INDEX_8' has no suffix '_IX', " -->
+        <!-- <addUniqueConstraint tableName="USER_TALK" columnNames="PID, USER_ID" constraintName="USER_TALK_USER_FK_PID_UK" /> -->
+    </changeSet>
+</databaseChangeLog>
+

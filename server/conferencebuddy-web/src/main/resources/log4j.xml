@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+	<!-- Appenders -->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d] [%t] %-5p %c %M - corid=%X{correlationId} %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="file" class="org.apache.log4j.FileAppender">
+		<param name="File" value="logs/conferencebuddy.log"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d] [%t] %-5p %c %M - corid=%X{correlationId} %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- debug Template itself -->
+	<logger name="ch.sbb.conferencebuddy">
+		<level value="DEBUG"/>
+	</logger>
+
+	<!-- info Esta -->
+	<logger name="ch.sbb.esta">
+		<level value="INFO"/>
+	</logger>
+
+	<logger name="org.springframework.core.env.PropertySource">
+		<level value="DEBUG"/>
+	</logger>
+
+
+	<!--  debug SQL -->
+	<logger name="org.hibernate.SQL">
+		<level value="DEBUG"/>
+	</logger>
+
+	<logger name="facelets">
+		<level value="debug"/>
+	</logger>
+
+	<logger name="org.springframework.web">
+		<level value="debug"/>
+	</logger>
+
+	<logger name="org.springframework.binding">
+		<level value="debug"/>
+	</logger>
+
+	<logger name="org.primefaces">
+		<level value="debug"/>
+	</logger>
+
+	<logger name="ch.sbb.esta.business.visibility.impl">
+		<level value="debug"/>
+	</logger>
+
+	<logger name="com.gargoylesoftware.htmlunit">
+		<level value="error"/>
+	</logger>
+
+	<logger name="ch.sbb.esta.jsf.util">
+		<level value="debug"/>
+	</logger>
+
+	<logger name="ch.sbb.esta.util.spring.web.RestoreSpringSessionListener">
+		<level value="debug"/>
+	</logger>
+
+
+	<!-- Root Logger -->
+	<root>
+		<priority value="info"/>
+		<appender-ref ref="console"/>
+		<appender-ref ref="file"/>
+	</root>
+
+</log4j:configuration>
