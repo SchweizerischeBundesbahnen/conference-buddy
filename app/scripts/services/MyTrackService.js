@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$location', 'ROUTES', function($http, $location, ROUTES) {
+angular.module('conferenceBuddyApp').factory('MyTrackService',
+['$http', '$location', 'ROUTES', 'REST_URL', function($http, $location, ROUTES, REST_URL) {
 
     function lookupPresentation(conference, presentationId) {
         for (var i = 0; i < conference.tracks.length; i++) {
@@ -21,7 +22,7 @@ angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$locat
                 $location.url(ROUTES.REGISTER);
             }
 
-            return $http.get('api/myTrack.json').then(function(result) {
+            return $http.get(REST_URL + '/mytrack').then(function(result) {
                 return result.data;
             });
         },

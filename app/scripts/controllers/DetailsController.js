@@ -34,17 +34,11 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
     $scope.rate = function() {
         if (userService.isRegistered()) {
             // "Rate!" sollte sowieso nur angezeigt werden, wenn der User registriert ist. Trotzdem hier nochmal prüfen zur Sicherheit.
-            var newRating;
-
-            if ($scope.hasMyRating) {
-                newRating = ratingService.update($scope.presentation.id, $scope.myRating);
-            } else {
-                newRating = ratingService.save($scope.presentation.id, $scope.myRating);
+            ratingService.save($scope.presentation.id, $scope.myRating).then(function(rating) {
                 $scope.hasMyRating = true;
-            }
-
-            $scope.hasRatings = true;
-            $scope.averageRating = newRating.average;
+                $scope.hasRatings = true;
+                $scope.averageRating = rating.average;
+            })
         }
     };
 

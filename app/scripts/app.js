@@ -10,7 +10,8 @@ app.constant('ROUTES', {
     TRACKS: '/tracks',
     DETAILS: '/details',
     REGISTER: '/register'
-});
+})
+app.constant('REST_URL', 'http://localhost:9000/conferencebuddy-web');
 
 
 app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($provide, $routeProvider, $httpProvider, ROUTES) {

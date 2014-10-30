@@ -1,47 +1,17 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('RatingService', ['$http', function($http) {
+angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'REST_URL', function($http, REST_URL) {
 
     return {
         load: function(presentationId) {
-            return $http.get('api/ratings.json').then(function(result) {
-                var i;
-                for (i = 0; i < result.data.length; i++) {
-                    if (result.data[i].presentationId === presentationId) {
-                        return result.data[i];
-                    }
-                }
-                return {
-                    'presentationId': presentationId
-                };
+            return $http.get(REST_URL + '/rating/' + presentationId).then(function(result) {
+                return result.data;
             });
         },
         save: function(presentationId, rating) {
-            return {
-                'presentationId': presentationId,
-                'average': 5.3,
-                'myRating': rating
-            };
-            /*
-            $http.post('api/rating/' + talkId, {
-                'rating': rating
-            }).then(function(result) {
+            return $http.put(REST_URL + '/rating', {pid: presentationId, myRating: rating}).then(function(result) {
                 return result.data;
             });
-            */
-        },
-        update: function(presentationId, rating) {
-            return {
-                'presentationId': presentationId,
-                'average': 3.7,
-                'myRating': rating
-            };
-            /*
-            $http.put('api/rating/' + talkId, {
-                'id': ratingId,
-                'rating': rating
-            });
-            */
         }
     };
 }]);

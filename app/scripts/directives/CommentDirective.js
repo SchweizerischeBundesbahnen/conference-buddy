@@ -4,25 +4,24 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
     return {
         restrict: 'E',
         scope: {
-            talkId: '@'
+            pid: '@'
         },
         templateUrl: 'templates/comments-template.html',
         controller: function($scope) {
             $scope.commentEntry = null;
             $scope.author = userService.currentUser();
 
-            commentService.load($scope.talkId).then(function(data) {
+            commentService.load($scope.pid).then(function(data) {
                 $scope.comments = data;
             });
 
             $scope.submitForm = function(isValid) {
                 if (userService.isRegistered()) {
                     if (isValid) {
-                        var commentEntry = angular.copy($scope.commentEntry);
-                        commentEntry.author = $scope.author;
-                        commentEntry.timestamp = new Date().toJSON();
-                        commentService.save(commentEntry);
-                        $scope.comments.splice(0, 0, commentEntry);
+                        commentService.save($scope.pid, $scope.commentEntry.comment).then(function(comment) {
+                            // TODO why not reload all here?
+                            $scope.comments.splice(0, 0, comment);
+                        });
                         $scope.commentEntry = null;
                     }
                 }
