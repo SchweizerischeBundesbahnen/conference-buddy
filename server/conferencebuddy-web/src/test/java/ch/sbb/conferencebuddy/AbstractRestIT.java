@@ -8,19 +8,19 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 public abstract class AbstractRestIT {
+
+    protected Client client;
 
     /**
      * Die URL von der ersten Seite, kann mit dem System-Property demo.baseUrl (z.B.. via mvn) überschrieben werden
      * (Je nachdem wo die Applikation betrieben wird). Standard-Wert ist für Tomcat konfiguriert.
      */
     protected final String urlOfFirstPage = System.getProperty("demo.baseUrl", "http://localhost:8080/conferencebuddy-web/");
-
-    protected Client client;
 
 
     @Before

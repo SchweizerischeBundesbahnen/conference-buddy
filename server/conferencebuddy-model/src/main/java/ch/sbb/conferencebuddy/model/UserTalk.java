@@ -8,9 +8,9 @@ import javax.validation.constraints.NotNull;
 /**
  * As exported from e-tutor.
  *
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @Entity
 public class UserTalk extends LongIdEntity {
@@ -19,10 +19,10 @@ public class UserTalk extends LongIdEntity {
      * vortrag-Id.
      */
     @NotNull
+    private Long pid;
     /**
      * u-Nummer.
      */
-    private Long pid;
     @NotNull
     private String userId;
 

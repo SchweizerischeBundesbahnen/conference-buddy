@@ -14,9 +14,9 @@ import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @XmlRootElement(name="comment")
 @XmlAccessorType(XmlAccessType.FIELD)

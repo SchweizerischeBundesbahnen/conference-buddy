@@ -18,9 +18,9 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @EstaService
 public class UserServiceImpl implements UserService {
