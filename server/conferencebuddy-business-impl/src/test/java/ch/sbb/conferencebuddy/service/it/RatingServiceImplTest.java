@@ -20,11 +20,19 @@ public class RatingServiceImplTest extends AbstractTalkServiceImplIT {
     private RatingRepository ratingRepository; // only for testing
 
     @Test
-    public void testUpdate() {
+    public void testSaveOrUpdate() {
+        // update
+        testUpdate();
+    }
+
+
+    private void testUpdate() {
         final Rating rating = ratingService.loadAll(TEST_PID).get(0); // ugly
         ratingRepository.flush();
         final Long newRate = Long.valueOf(1);
-        ratingService.update(rating.getId(), newRate, userUUID);
+        final Rating updatedRating = ratingService.saveOrUpdate(rating.getPid(), newRate, rating.getUserFk());
+        Assert.assertEquals(rating.getId(), updatedRating.getId());
+        Assert.assertEquals(newRate, updatedRating.getRate());
 
         final List<Rating> ratings = ratingService.loadAll(TEST_PID);
         boolean found = false;
@@ -40,7 +48,7 @@ public class RatingServiceImplTest extends AbstractTalkServiceImplIT {
     }
 
     @Override
-    protected Talk createTestValue(Long pid) {
+    protected Talk createTestValue(final Long pid, final String userUUID) {
         final Rating rating = new Rating();
         rating.setUserFk(userUUID);
         rating.setPid(pid);

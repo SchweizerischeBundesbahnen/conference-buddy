@@ -51,4 +51,14 @@
         </property>
     </bean>
 
+    <!-- starting a h2-WebServer when in development profile -->
+    <beans profile="development">
+        <!-- h2 db console -->
+        <bean id="H2WebServer" class="org.h2.tools.Server" scope="singleton"
+              factory-method="createWebServer" init-method="start" destroy-method="stop">
+            <constructor-arg value="-web,-webAllowOthers,-webPort,8082"/>
+        </bean>
+    </beans>
+
+
 </beans>

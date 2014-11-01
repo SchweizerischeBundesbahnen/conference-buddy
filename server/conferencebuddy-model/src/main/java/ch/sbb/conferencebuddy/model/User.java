@@ -17,9 +17,9 @@ import ch.sbb.esta.core.type.webservice.xmladapter.EmailAdapter;
 import ch.sbb.esta.util.model.EstaMappingType;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @XmlRootElement(name="user")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -28,8 +28,6 @@ public class User extends StringIdEntity {
 
     private String name;
     @Size(max = 10)
-    @NotNull
-    @XmlElement(required = true)
     private String userId;
     private String email;
 

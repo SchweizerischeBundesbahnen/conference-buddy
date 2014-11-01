@@ -5,9 +5,9 @@ import java.util.List;
 import ch.sbb.conferencebuddy.model.User;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 public interface UserService {
 

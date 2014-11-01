@@ -28,6 +28,11 @@
         </dependency>
 
         <dependency>
+            <groupId>ch.sbb.esta</groupId>
+            <artifactId>esta-starter-tomcat</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
         </dependency>

@@ -1,5 +1,7 @@
 package ch.sbb.conferencebuddy;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.ws.rs.*;
@@ -17,9 +19,9 @@ import ch.sbb.esta.util.condition.Reject;
 /**
  * User handling.
  *
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
@@ -65,8 +67,14 @@ public class UserResource {
      */
     @GET
     @Path("/mytrack")
-    public List<Long> loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
-        return userService.loadUserTracks(userId);
+    public long[] loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
+        List<Long> mytracks = userService.loadUserTracks(userId);
+        long[] retVal = new long[mytracks.size()];
+        for(int i=0 ; i<mytracks.size() ; i++){
+            retVal[i] = mytracks.get(i);
+
+        }
+        return retVal;
     }
 
     @POST

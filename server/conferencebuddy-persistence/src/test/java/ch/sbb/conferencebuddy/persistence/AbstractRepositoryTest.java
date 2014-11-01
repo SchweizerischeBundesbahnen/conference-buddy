@@ -9,9 +9,9 @@ import org.springframework.test.context.ContextConfiguration;
 import java.util.UUID;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @ContextConfiguration("classpath:persistence-context.xml")
 public abstract class AbstractRepositoryTest extends JpaTest {
@@ -26,7 +26,7 @@ public abstract class AbstractRepositoryTest extends JpaTest {
         // make sure the tables are empty
         userRepository.deleteAll();
         // create new user
-        userRepository.save(createNewUser());
+        userRepository.save(createNewUser(USER_ID, "u123456"));
 
         // create user-load test data
         createTestdata();
@@ -34,10 +34,10 @@ public abstract class AbstractRepositoryTest extends JpaTest {
 
     abstract void createTestdata();
 
-    private User createNewUser(){
+    protected User createNewUser(final String userUUID, final String uNummer){
         final User user = new User();
-        user.setId(USER_ID);
-        user.setUserId("u123456");
+        user.setId(userUUID);
+        user.setUserId(uNummer);
         return user;
     }
 }
