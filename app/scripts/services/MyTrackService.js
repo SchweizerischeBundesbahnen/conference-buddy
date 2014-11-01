@@ -14,6 +14,35 @@ angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$locat
         }
     }
 
+    function lookupTalk(conference, talkId) {
+        var result;
+        conference.talks.forEach(function(talk) {
+            if (talkId === talk.id) {
+                result = talk;
+            }
+        });
+        return result;
+    }
+
+    function createMyTrack(conference, myTrackIds) {
+        var result = [];
+        conference.tracks[0].presentations.forEach(function(presentation) {
+            var myTrackPresentationId, pres;
+            var talkId = presentation.talkId;
+            var talk = lookupTalk(conference, talkId);
+            if (talk.common) {
+                result.push(presentation);
+            } else {
+                myTrackPresentationId = myTrackIds[0];
+                myTrackIds = myTrackIds.slice(1);
+                pres = lookupPresentation(conference, myTrackPresentationId);
+                result.push(pres);
+            }
+
+        });
+        return result;
+    }
+
     return {
         load: function() {
             // TODO simulates server check & httpinterceptor
@@ -29,12 +58,14 @@ angular.module('conferenceBuddyApp').factory('MyTrackService', ['$http', '$locat
         loadResolved: function(conference) {
             return this.load().then(function(myTrackIds) {
                 var myTrack = { presentations: [] };
-                myTrackIds.forEach(function(presentationId) {
-                    var presentation = lookupPresentation(conference, presentationId);
-                    myTrack.presentations.push(presentation);
-                });
+                myTrack.presentations = createMyTrack(conference, myTrackIds);
                 return myTrack;
             });
+        },
+
+        createMyTrack: function(conference, myTrackIds) {
+            return createMyTrack(conference, myTrackIds);
         }
+
     };
 }]);
