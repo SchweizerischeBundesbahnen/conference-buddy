@@ -15,7 +15,6 @@ angular.module('conferenceBuddyApp').factory('UserService', ['$http', '$cookieSt
         register: function(user) {
             return $http.post(REST_URL + '/user', user).then(function(result) {
                 // TODO wait for registration e-
-                console.log(result.data);
                 $http.defaults.headers.common[HTTP_HEADER_TOKEN] = result.data;
                 $cookieStore.put(COOKIES_USERTOKEN, result.data);
                 $cookieStore.put(COOKIES_USER, user);
@@ -27,6 +26,7 @@ angular.module('conferenceBuddyApp').factory('UserService', ['$http', '$cookieSt
                 $http.defaults.headers.common[HTTP_HEADER_TOKEN] = result.data;
                 $cookieStore.put(COOKIES_USERTOKEN, result.data);
                 $cookieStore.put(COOKIES_USER, user);
+                thService.register(userToken, result.data);
             });
         },
         currentUser: function() {
