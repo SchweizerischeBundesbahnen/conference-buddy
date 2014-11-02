@@ -43,7 +43,7 @@ describe('Controller: CommentService', function() {
 
     it('should transform/denormalize JSON on load', function() {
         var comments = loadJsonMock();
-        expect(comments.length).toBe(2);
+        expect(comments.length).toBe(3);
 
         expect(comments[0].author.name).toBe(commentsJson[0].author.name);
         expect(comments[1].comment).toBe(commentsJson[1].comment);
