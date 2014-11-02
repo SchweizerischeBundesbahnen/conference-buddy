@@ -1,9 +1,10 @@
 <div style="padding-left:15px; padding-right: 15px">
     <div class="row">
         <hr/>
-        <h4>Kommentare</h4>
-
-        <button ng-click="load()" type="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-repeat"></span></button>
+        <h4>Kommentare
+            <button ng-click="load()" type="button" class="btn btn-default pull-right btn-xs"><span class="glyphicon glyphicon-repeat"></span>
+            </button>
+            </button></h4>
 
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
