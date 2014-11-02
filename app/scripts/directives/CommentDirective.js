@@ -11,9 +11,13 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
             $scope.commentEntry = null;
             $scope.author = userService.currentUser();
 
-            commentService.load($scope.talkId).then(function(data) {
-                $scope.comments = data;
-            });
+            $scope.load = function() {
+                commentService.load($scope.talkId).then(function(data) {
+                    $scope.comments = data;
+                });
+            };
+
+            $scope.load();
 
             $scope.submitForm = function(isValid) {
                 if (userService.isRegistered()) {
