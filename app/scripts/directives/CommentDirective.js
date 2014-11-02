@@ -11,14 +11,18 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
             $scope.commentEntry = null;
             $scope.author = userService.currentUser();
 
-            commentService.load($scope.pid).then(function(data) {
-                $scope.comments = data;
-            });
+            $scope.load = function() {
+                commentService.load($scope.pid).then(function(data) {
+                    $scope.comments = data;
+                });
+            };
+
+            $scope.load();
 
             $scope.submitForm = function(isValid) {
                 if (userService.isRegistered()) {
                     if (isValid) {
-                        commentService.save($scope.pid, $scope.commentEntry.comment).then(function(comment) {
+                        commentService.save($scope.pid, $scope.commentEntry.value).then(function(comment) {
                             // TODO why not reload all here?
                             $scope.comments.splice(0, 0, comment);
                         });

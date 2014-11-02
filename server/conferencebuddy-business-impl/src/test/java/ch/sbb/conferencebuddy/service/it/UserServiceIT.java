@@ -35,14 +35,14 @@ public class UserServiceIT extends AbstractServiceIT {
 
     @Test
     public void testRegister() {
-        final String registerdUser = userTestFixture.registerNewUser();
+        final String registerdUser = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_1);
         Assert.assertNotNull(registerdUser);
     }
 
     @Test
     public void testLoadUserTracks() {
         initTestTracks();
-        final String registerdUser = userTestFixture.registerNewUser();
+        final String registerdUser = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_1);
         final List<Long> pids = userService.loadUserTracks(registerdUser);
 
         Assert.assertNotNull(pids);

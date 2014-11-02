@@ -10,7 +10,6 @@ angular.module('conferenceBuddyApp').factory('HttpInterceptor', ['$q', '$locatio
 
         var error = function(response) {
             if (response.status === 401) {
-                console.log('HttpInterceptor', response);
                 $location.url(ROUTES.REGISTER);
             }
             return $q.reject(response);

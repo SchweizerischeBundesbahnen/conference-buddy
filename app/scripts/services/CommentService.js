@@ -9,12 +9,12 @@ angular.module('conferenceBuddyApp').factory('CommentService', ['$http', 'REST_U
             });
         },
         save: function(pid, comment) {
-            return $http.put(REST_URL + '/comment', {pid: pid, comment: comment}).then(function(result) {
+            return $http.put(REST_URL + '/comment', {pid: pid, value: comment}).then(function(result) {
                 return result.data;
             });
         },
         update: function(cid, comment) {
-            return $http.post(REST_URL + '/comment/' + cid, {comment: comment}).then(function(result) {
+            return $http.post(REST_URL + '/comment/' + cid, {value: comment}).then(function(result) {
                 return result.data;
             });
         },

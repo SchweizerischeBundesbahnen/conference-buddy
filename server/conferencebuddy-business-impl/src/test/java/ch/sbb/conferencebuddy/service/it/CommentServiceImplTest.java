@@ -1,15 +1,16 @@
 package ch.sbb.conferencebuddy.service.it;
 
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import ch.sbb.conferencebuddy.model.Comment;
 import ch.sbb.conferencebuddy.model.Talk;
 import ch.sbb.conferencebuddy.persistence.CommentRepository;
 import ch.sbb.conferencebuddy.service.CommentService;
 import ch.sbb.conferencebuddy.service.TalkService;
-import org.junit.Assert;
-import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
 
 public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
 
@@ -25,7 +26,7 @@ public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
         final Comment comment = commentService.loadAll(TEST_PID).get(0); // ugly
         commentRepository.flush();
         final String newComment = "new-comment";
-        commentService.update(comment.getId(), newComment, userUUID);
+        commentService.update(comment.getId(), newComment, userUUID1);
 
         final List<Comment> comments = commentService.loadAll(TEST_PID);
         boolean found = false;
@@ -44,7 +45,7 @@ public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
     public void testDelete() {
         final Comment comment = commentService.loadAll(TEST_PID).get(0); // ugly
         commentRepository.flush();
-        commentService.delete(comment.getId(), userUUID);
+        commentService.delete(comment.getId(), userUUID1);
 
         final List<Comment> comments = commentService.loadAll(TEST_PID);
         boolean found = false;
@@ -59,7 +60,7 @@ public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
     }
 
     @Override
-    protected Talk createTestValue(Long pid) {
+    protected Talk createTestValue(final Long pid, final String userUUID) {
         final Comment comment = new Comment();
         comment.setUserFk(userUUID);
         comment.setPid(pid);

@@ -22,10 +22,10 @@ import java.util.List;
 
 /**
  * User handling.
- * 
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ *
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
@@ -48,7 +48,7 @@ public class UserResource {
 
     /**
      * Registriert einen Benutzer und generiert einen eindeutigen Token, am besten eine UUID.
-     * 
+     *
      * @return unique ID
      */
     @POST
@@ -64,23 +64,26 @@ public class UserResource {
 
     /**
      * Liefert alle Vorträge des Users {userId}.
-     * 
+     *
      * @return Array von Vortrag-Ids (pid). Die Einträge sind chronologisch nach Startzeiten der Vorträge
      *         sortiert, von der Ersten zur Letzten. Falls keine Vorträge existieren, wird ein leeres Array
      *         zurückgeliefert.
      */
     @GET
     @Path("/mytrack")
-    public List<Long> loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
-        if (!isValidUserId(userId)) {
+    public long[] loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
+        //TODO Gilles: token validation for each request
+        if(!isValidUserId(userId)) {
             throw new WebApplicationException(Response.status(Response.Status.UNAUTHORIZED)
                     .entity("YOU SHALL NOT PASS!").type(MediaType.APPLICATION_JSON).build());
         }
-        return userService.loadUserTracks(userId);
-    }
+        List<Long> mytracks = userService.loadUserTracks(userId);
+        long[] retVal = new long[mytracks.size()];
+        for(int i=0 ; i<mytracks.size() ; i++){
+            retVal[i] = mytracks.get(i);
 
-    private boolean isValidUserId(String userId) {
-        return userId != null /* && validateToken(userId) */;
+        }
+        return retVal;
     }
 
     @POST
@@ -89,5 +92,10 @@ public class UserResource {
     @Path("admin/{pid}")
     public void insertUserTalks(@PathParam("pid") final long pid, final String csv) {
         userService.insertUserTalks(Long.valueOf(pid), csv);
+    }
+
+
+    private boolean isValidUserId(String userId) {
+        return userId != null /* && validateToken(userId) */;
     }
 }

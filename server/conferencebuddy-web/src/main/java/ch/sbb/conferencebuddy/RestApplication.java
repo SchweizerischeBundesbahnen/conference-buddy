@@ -14,9 +14,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @ApplicationPath("/")
 public class RestApplication extends Application {

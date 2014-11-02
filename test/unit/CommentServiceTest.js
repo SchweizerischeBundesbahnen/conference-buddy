@@ -15,8 +15,8 @@ describe('Controller: CommentService', function() {
         });
 
         commentsJson = [
-            { comment: "c1"},
-            { comment: "c2"}
+            { value: "c1"},
+            { value: "c2"}
         ];
         httpBackend.whenGET('/api-mock/comment/13').respond(commentsJson);
         httpBackend.whenPUT('/api-mock/comment').respond(commentsJson);
@@ -39,7 +39,7 @@ describe('Controller: CommentService', function() {
     });
 
     it('should POST comment on update ', function() {
-        httpBackend.expectPOST('/api-mock/comment/33', {comment: 'foo'});
+        httpBackend.expectPOST('/api-mock/comment/33', {value: 'foo'});
         commentService.update(33, 'foo').then(function(result) {
             expect(result).toBeDefined();
             expect(result).toEqual({});
@@ -48,7 +48,7 @@ describe('Controller: CommentService', function() {
     });
 
     it('should PUT comment on save ', function() {
-        httpBackend.expectPUT('/api-mock/comment', {pid: 333, comment: 'foo'});
+        httpBackend.expectPUT('/api-mock/comment', {pid: 333, value: 'foo'});
         commentService.save(333, 'foo').then(function(result) {
             expect(result).toBeDefined();
             expect(result).toEqual(commentsJson);

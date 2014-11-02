@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 public interface UserTalkRepository extends JpaRepository<UserTalk, Long> {
 

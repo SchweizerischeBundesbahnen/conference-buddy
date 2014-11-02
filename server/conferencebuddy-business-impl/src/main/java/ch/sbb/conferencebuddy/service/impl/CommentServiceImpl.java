@@ -10,9 +10,9 @@ import ch.sbb.esta.core.stereotype.EstaService;
 import ch.sbb.esta.util.condition.Reject;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @EstaService
 public class CommentServiceImpl extends AbstractTalkServiceImpl<Comment> implements CommentService {

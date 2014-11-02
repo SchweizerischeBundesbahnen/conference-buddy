@@ -7,9 +7,9 @@ import org.springframework.test.context.ContextConfiguration;
 import ch.sbb.esta.util.persistence.test.EstaPersistenceRunner;
 
 /**
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @RunWith(EstaPersistenceRunner.class)
 @ContextConfiguration({ "classpath:test-esta-persistence.xml",

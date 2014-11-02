@@ -1,16 +1,20 @@
 package ch.sbb.conferencebuddy;
 
-import java.util.List;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
-
 import ch.sbb.conferencebuddy.model.Rating;
 import ch.sbb.conferencebuddy.service.RatingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 /**
  * 
@@ -24,9 +28,9 @@ import ch.sbb.conferencebuddy.service.RatingService;
  *     }
  * </pre>
  * 
- * @author u215246 (Gilles Zimmermann)
- * @version $Id: $
- * @since 2014
+ * @author Gilles Zimmermann
+ *
+ * @since 0.0.1, 2014
  */
 @Path("/rating")
 @Produces(MediaType.APPLICATION_JSON)
@@ -35,10 +39,11 @@ public class RatingResource {
     /** logger */
     private static final Logger LOGGER = LoggerFactory.getLogger(RatingResource.class);
 
+    @Autowired
     private RatingService ratingService;
 
     /**
-     * init {@code Autowired} fields.
+     * init {@code autowired} fields.
      */
     public RatingResource() {
         LOGGER.info("in RatingResource");
@@ -47,25 +52,13 @@ public class RatingResource {
 
     @GET
     @Path("/{pid}")
-    public Rating[] loadAll(@PathParam("pid") final long pid){
-        final List<Rating> ratingList = ratingService.loadAll(pid);
-
-        if (ratingList == null) {
-            return new Rating[0];
-        }
-        return ratingList.toArray(new Rating[ratingList.size()]);
+    public Rating load(@PathParam("pid") final long pid, @HeaderParam("X-Access-Token") String userId){
+        return ratingService.loadUserRating(pid, userId);
     }
 
     @PUT
     @Path("/")
-    public Rating save(final Rating rating, @HeaderParam("X-Access-Token") String userId) {
-        return ratingService.save(rating, userId);
-    }
-
-    @POST
-    @Path("/{rid}/{rate}")
-    public void update(@PathParam("rid") final long id, @PathParam("rate") final long rate,
-            @HeaderParam("X-Access-Token") String userId) {
-        ratingService.update(id, rate, userId);
+    public Rating update(@PathParam("pid") final long pid , final long rate, @HeaderParam("X-Access-Token") String userId) {
+        return ratingService.saveOrUpdate(pid, rate, userId);
     }
 }

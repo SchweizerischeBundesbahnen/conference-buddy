@@ -1,20 +1,24 @@
 package ch.sbb.conferencebuddy.service.it;
 
-import ch.sbb.conferencebuddy.model.Talk;
-import ch.sbb.conferencebuddy.service.TalkService;
-import ch.sbb.conferencebuddy.service.UserService;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
+import ch.sbb.conferencebuddy.model.Talk;
+import ch.sbb.conferencebuddy.service.TalkService;
+import ch.sbb.conferencebuddy.service.UserService;
 
 public abstract class AbstractTalkServiceImplIT<T extends Talk> extends AbstractServiceIT {
 
     protected final static int EXPECTED_VALUES = 3;
     protected final static Long TEST_PID = Long.valueOf(1);
-    protected String userUUID;
+    protected final static Long SAVE_TEST_PID = Long.valueOf(9);
+    protected String userUUID1;
+    protected String userUUID2;
+    protected String userUUID3;
 
 
     @Autowired
@@ -26,8 +30,11 @@ public abstract class AbstractTalkServiceImplIT<T extends Talk> extends Abstract
     @Before
     public void createInitData(){
         userTestFixture = new UserTestFixture(userService);
-        userUUID = userTestFixture.registerNewUser();
-        createTestdata(userUUID);
+        userUUID1 = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_1);
+        userUUID2 = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_2);
+        userUUID3 = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_3);
+
+        createTestdata(userUUID1, userUUID2, userUUID3);
     }
 
     @Test
@@ -39,24 +46,24 @@ public abstract class AbstractTalkServiceImplIT<T extends Talk> extends Abstract
 
     @Test
     public void testSave() {
-        T value = getTalkService().save(createTestValue(TEST_PID), userUUID);
+        T value = getTalkService().save(createTestValue(SAVE_TEST_PID, userUUID1), userUUID1);
         Assert.assertNotNull(value);
         Assert.assertNotNull(value.getId());
-        Assert.assertEquals(TEST_PID, value.getPid());
+        Assert.assertEquals(SAVE_TEST_PID, value.getPid());
     }
 
     /**
      * create {@link #EXPECTED_VALUES} values with PID {@link #TEST_PID}.
      */
-    protected void createTestdata(String userUUID){
-        getTalkService().save(createTestValue(TEST_PID), userUUID);
-        getTalkService().save(createTestValue(TEST_PID), userUUID);
-        getTalkService().save(createTestValue(TEST_PID), userUUID);
-        getTalkService().save(createTestValue(Long.valueOf(2)), userUUID);
-        getTalkService().save(createTestValue(Long.valueOf(2)), userUUID);
+    protected void createTestdata(String userUUID1, String userUUID2, String userUUID3){
+        getTalkService().save(createTestValue(TEST_PID, userUUID1), userUUID1);
+        getTalkService().save(createTestValue(TEST_PID, userUUID2), userUUID2);
+        getTalkService().save(createTestValue(TEST_PID, userUUID3), userUUID3);
+        getTalkService().save(createTestValue(Long.valueOf(2), userUUID1), userUUID1);
+        getTalkService().save(createTestValue(Long.valueOf(2), userUUID2), userUUID2);
     }
 
-    protected abstract T createTestValue (final Long pid);
+    protected abstract T createTestValue (final Long pid, final String userUUID);
 
     protected abstract TalkService<T> getTalkService();
 }
