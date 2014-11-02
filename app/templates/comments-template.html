@@ -3,6 +3,8 @@
         <hr/>
         <h4>Kommentare</h4>
 
+        <button ng-click="load()" type="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-repeat"></span></button>
+
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
                 <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
