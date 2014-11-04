@@ -1,5 +1,7 @@
 package ch.sbb.conferencebuddy;
 
+import ch.sbb.conferencebuddy.provider.UserUnauthorizedExceptionMapper;
+import ch.sbb.conferencebuddy.service.exception.UserUnauthorizedException;
 import ch.sbb.esta.core.webservice.rest.handler.EstaCheckedExceptionMapper;
 import ch.sbb.esta.core.webservice.rest.handler.EstaRuntimeExceptionMapper;
 import ch.sbb.esta.core.webservice.rest.handler.WebApplicationExceptionMapper;
@@ -29,11 +31,6 @@ public class RestApplication extends Application {
 
     /**
      * {@inheritDoc}.
-     *
-     * <ul>
-     * <li>{@link HelloWorldResource}</li>
-     * <li>{@link org.glassfish.jersey.filter.LoggingFilter}</li>
-     * </ul>
      */
     @Override
     public Set<Class<?>> getClasses() {
@@ -41,6 +38,8 @@ public class RestApplication extends Application {
         final Set<Class<?>> classes = new HashSet<>();
         classes.add(HelloWorldResource.class);
         classes.add(CommentResource.class);
+        classes.add(RatingResource.class);
+        classes.add(UserResource.class);
         classes.add(LoggingFilter.class);
         return classes;
     }
@@ -48,13 +47,7 @@ public class RestApplication extends Application {
     /**
      * {@inheritDoc}.
      *
-     * Gibt alle Singletons zurück, welche als Beispiel in dieser Applikation erstellt wurden. Es sind dies u.A. (List muss nicht vollständig sein):
-     * <ul>
-     * <li>{@link org.glassfish.jersey.jackson.JacksonFeature}</li>
-     * <li>{@link ch.sbb.esta.core.webservice.rest.handler.EstaCheckedExceptionMapper}</li>
-     * <li>{@link ch.sbb.esta.core.webservice.rest.handler.EstaRuntimeExceptionMapper}</li>
-     * <li>{@link ch.sbb.esta.core.webservice.rest.handler.WebApplicationExceptionMapper}</li>
-     * </ul>
+     * Gibt alle Singletons zurück, welche als Beispiel in dieser Applikation erstellt wurden.
      *
      */
     @Override
@@ -63,6 +56,7 @@ public class RestApplication extends Application {
         singletons.add(new JacksonFeature());
         singletons.add(new EstaCheckedExceptionMapper());
         singletons.add(new EstaRuntimeExceptionMapper());
+        singletons.add(new UserUnauthorizedExceptionMapper());
         singletons.add(new WebApplicationExceptionMapper());
         return singletons;
 

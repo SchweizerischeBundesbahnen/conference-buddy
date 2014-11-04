@@ -12,7 +12,7 @@ import ch.sbb.esta.util.condition.Reject;
  *
  * @since 0.0.1, 2014
  */
-public abstract class AbstractTalkServiceImpl<T extends Talk> implements TalkService<T> {
+public abstract class AbstractTalkServiceImpl<T extends Talk> extends AbstractServiceImpl implements TalkService<T> {
 
     @Override
     public List<T> loadAll(final Long pid) {
@@ -26,14 +26,14 @@ public abstract class AbstractTalkServiceImpl<T extends Talk> implements TalkSer
     public T save(final T value, final String userId) {
         // pre condition
         Reject.ifNull(value);
-        Reject.ifEmpty(userId);
+        validateUser(userId);
 
         // check userId
         if (value.getUserFk() == null) {
             value.setUserFk(userId);
         }
         // post condition
-        Reject.ifFalse(userId.equals(value.getUserFk()));
+        validateUser(value.getUserFk(), userId);
 
         return getAbstractTalkRepository().save(value);
     }
