@@ -1,10 +1,8 @@
 package ch.sbb.conferencebuddy;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
-import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Response;
 
 /**

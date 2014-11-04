@@ -11,7 +11,12 @@ app.constant('ROUTES', {
     DETAILS: '/details',
     REGISTER: '/register'
 });
-
+app.constant('REST_URL', 'http://localhost:9000/conferencebuddy-web');
+app.constant('AUTH', {
+    HTTP_HEADER_TOKEN: 'X-Access-Token',
+    COOKIES_USERTOKEN: 'userToken',
+    COOKIES_USER: 'user'
+});
 
 app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($provide, $routeProvider, $httpProvider, ROUTES) {
 
@@ -44,13 +49,5 @@ app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($p
         redirectTo: ROUTES.CONFERENCE
     });
 
-    // not sure if we need this?
-    // provides a catch-all handler for all non-catched errors
-    $provide.decorator('$exceptionHandler', ['$delegate', function($delegate) {
-        return function(exception, cause) {
-            console.error(exception);
-            $delegate(exception, cause);
-        };
-    }]);
 }]);
 

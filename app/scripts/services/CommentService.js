@@ -1,29 +1,27 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('CommentService', ['$http', function($http) {
-
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
-    }
+angular.module('conferenceBuddyApp').factory('CommentService', ['$http', 'REST_URL', function($http, REST_URL) {
 
     return {
-        load: function(talkId) {
-            return $http.get('api/comments.json').then(function(result) {
-                var number = getRandomInt(0, 100);
-                var text = 'Random Text: ' + number;
-
-                result.data.push({
-                    'author': {
-                        'name': 'Random User'
-                    },
-                    'comment': text,
-                    'timestamp': '2014-09-08T18:26:00.000Z'
-                });
+        load: function(pid) {
+            return $http.get(REST_URL + '/comment/' + pid).then(function(result) {
                 return result.data;
             });
         },
-        save: function(commentEntry) {
-            console.log('Save comment [' + commentEntry.author + ', ' + commentEntry.comment + ', ' + commentEntry.timestamp + ']');
+        save: function(pid, comment) {
+            return $http.put(REST_URL + '/comment', {pid: pid, value: comment}).then(function(result) {
+                return result.data;
+            });
+        },
+        update: function(cid, comment) {
+            return $http.post(REST_URL + '/comment/' + cid, {value: comment}).then(function(result) {
+                return result.data;
+            });
+        },
+        delete: function(cid) {
+            return $http.delete(REST_URL + '/comment/' + cid).then(function(result) {
+                return result.data;
+            });
         }
     };
 

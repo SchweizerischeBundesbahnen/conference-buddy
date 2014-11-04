@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('HttpInterceptor', function httpInterceptor($q, $window, $location) {
+angular.module('conferenceBuddyApp').factory('HttpInterceptor', ['$q', '$location', 'ROUTES', function($q, $location, ROUTES) {
+
     return function(promise) {
 
         var success = function(response) {
@@ -9,11 +10,11 @@ angular.module('conferenceBuddyApp').factory('HttpInterceptor', function httpInt
 
         var error = function(response) {
             if (response.status === 401) {
-                $location.url('/register');
+                $location.url(ROUTES.REGISTER);
             }
             return $q.reject(response);
         };
 
         return promise.then(success, error);
     };
-});
+}]);
