@@ -11,7 +11,7 @@ angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'REST_UR
         },
         save: function(presentationId, rating) {
             console.log(rating)
-            return $http.put(REST_URL + '/rating', {pid: presentationId, rate: rating}).then(function(result) {
+            return $http.put(REST_URL + '/rating/' + presentationId, {rate: rating}).then(function(result) {
                 return result.data;
             });
         }
