@@ -28,14 +28,13 @@ public class CommentServiceImpl extends AbstractTalkServiceImpl<Comment> impleme
         final Comment comment = findOneComment(id, userId);
 
         // set new value
-        comment.setValue(value); // that should be enough, since the comment-obj is still attached and will be
-                                 // updated.
+        comment.setValue(value);
+        commentRepository.save(comment);
     }
 
     @Override
     public void delete(Long id, String userId) {
         final Comment comment = findOneComment(id, userId);
-
         commentRepository.delete(comment); // this could be replaced by just deleting by id, but we should
                                            // check if the comment belongs to the user which tries to delete
                                            // the comment
@@ -45,13 +44,13 @@ public class CommentServiceImpl extends AbstractTalkServiceImpl<Comment> impleme
     private Comment findOneComment(Long id, String userId) {
         // pre condition
         Reject.ifNull(id);
-        Reject.ifEmpty(userId);
+        validateUser(userId);
 
         final Comment comment = commentRepository.findOne(id);
 
         // post condition
         Reject.ifNull(comment);
-        Reject.ifFalse(userId.equals(comment.getUserFk()));
+        validateUser(comment.getUserFk(), userId);
         return comment;
     }
 

@@ -29,6 +29,7 @@
 			<groupId>ch.sbb.esta</groupId>
 			<artifactId>esta-unittest-persistence</artifactId>
 		</dependency>
+
 	</dependencies>
 
 </project>

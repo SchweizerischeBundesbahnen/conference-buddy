@@ -23,10 +23,7 @@ import java.util.UUID;
  * @since 0.0.1, 2014
  */
 @EstaService
-public class UserServiceImpl implements UserService {
-
-    @Autowired
-    private UserRepository userRepository;
+public class UserServiceImpl extends AbstractServiceImpl implements UserService {
 
     @Autowired
     private UserTalkRepository userTalkRepository;
@@ -53,7 +50,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<Long> loadUserTracks(final String userId) {
         // pre condition
-        Reject.ifEmpty(userId);
+        validateUser(userId);
 
         // load user
         final User user = userRepository.findOne(userId);

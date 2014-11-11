@@ -22,17 +22,11 @@
     </bean>
 
 	<!-- local H2 in-memory database -->
-	<!-- used for local development, education, etc. -->
-    <bean id="dataSourceFactory" class="ch.sbb.esta.util.persistence.h2.H2DatabaseFactory">
-        <property name="dataSourceFactory">
-            <bean class="ch.sbb.esta.util.persistence.h2.H2XADataSourceFactory"/>
-        </property>
-        <property name="mode" value="Oracle"/>
-        <property name="databasePopulator" ref="liquibasePopulator"/>
-    </bean>
-
-    <bean id="dataSource" factory-bean="dataSourceFactory"
-          factory-method="getDatabase" destroy-method="shutdown">
+    <!-- used for local development, education, etc. -->
+    <bean id="dataSource"  class="ch.sbb.esta.util.persistence.h2.LiquibaseInitializingH2XADataSource">
+        <property name="url" value="jdbc:h2:mem:esta-test;DB_CLOSE_DELAY=-1;MODE=Oracle;" />
+        <property name="username" value="sa" />
+        <property name="password" value="" />
     </bean>
 
     <bean id="liquibasePopulator" class="ch.sbb.esta.util.persistence.liquibase.LiquibasePopulator">

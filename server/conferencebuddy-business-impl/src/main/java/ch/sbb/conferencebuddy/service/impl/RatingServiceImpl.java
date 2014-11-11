@@ -39,7 +39,7 @@ public class RatingServiceImpl extends AbstractTalkServiceImpl<Rating> implement
         // pre condition
         Reject.ifNull(rate);
         Reject.ifNull(pid);
-        Reject.ifEmpty(userId);
+        validateUser(userId);
 
         Rating rating = ratingRepository.findByPidAndUserFk(pid, userId);
 
@@ -68,8 +68,7 @@ public class RatingServiceImpl extends AbstractTalkServiceImpl<Rating> implement
     private Rating update(final Rating rating, final Long rate, String userId) {
         // post condition
         Reject.ifNull(rating);
-        Reject.ifFalse(userId.equals(rating.getUserFk()));
-
+        validateUser(rating.getUserFk(), userId);
         // set new value
         rating.setRate(rate);
         ratingRepository.save(rating);
