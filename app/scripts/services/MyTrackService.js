@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').factory('MyTrackService',
-['$http', '$location', 'ROUTES', 'REST_URL', function($http, $location, ROUTES, REST_URL) {
+['$http', '$location', 'UserService', 'ROUTES', 'REST_URL', function($http, $location, userService, ROUTES, REST_URL) {
+
+    userService.initFromCookie();
 
     function lookupPresentation(conference, presentationId) {
         for (var i = 0; i < conference.tracks.length; i++) {
@@ -27,7 +29,7 @@ angular.module('conferenceBuddyApp').factory('MyTrackService',
 
     function createMyTrack(conference, myTrackIds) {
         var result = [];
-        if( !myTrackIds || myTrackIds.length === 0 ) {
+        if (!myTrackIds || myTrackIds.length === 0) {
             return result;
         }
         conference.tracks[0].presentations.forEach(function(presentation) {
@@ -49,11 +51,9 @@ angular.module('conferenceBuddyApp').factory('MyTrackService',
 
     return {
         load: function() {
-            // TODO simulates server check & httpinterceptor
-            if (!$http.defaults.headers.common['X-Access-Token']) {
+            if(!userService.isRegistered()) {
                 $location.url(ROUTES.REGISTER);
             }
-
             return $http.get(REST_URL + '/mytrack').then(function(result) {
                 return result.data;
             });

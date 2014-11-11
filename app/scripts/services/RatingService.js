@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'REST_URL', function($http, REST_URL) {
+angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'UserService', 'REST_URL', function($http, userService, REST_URL) {
+
+    userService.initFromCookie();
 
     return {
         load: function(presentationId) {
@@ -10,8 +12,8 @@ angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'REST_UR
             });
         },
         save: function(presentationId, rating) {
-            console.log(rating);
-            return $http.put(REST_URL + '/rating/' + presentationId, {rate: rating}).then(function(result) {
+            console.log('rating-save', rating);
+            return $http.put(REST_URL + '/rating/' + presentationId, rating).then(function(result) {
                 return result.data;
             });
         }
