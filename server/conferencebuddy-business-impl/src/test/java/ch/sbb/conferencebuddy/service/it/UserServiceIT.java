@@ -5,6 +5,7 @@ import ch.sbb.conferencebuddy.persistence.UserTalkRepository;
 import ch.sbb.conferencebuddy.service.UserService;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReader;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReaderTest;
+import org.joda.time.LocalTime;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -55,7 +56,7 @@ public class UserServiceIT extends AbstractServiceIT {
                 "U123456;Daniel;Muster;DANIEL.MUSTER@SBB-bla.CH;IT-SWE-CD2-T29;\n" +
                 "U123457;Stefan;Meier;STEFAN.MEIER@SBB-bla.CH;IT-SWE-CD5-T55;";
 
-        userService.insertUserTalks(PID, testCSV);
+        userService.insertUserTalks(PID, new LocalTime(15, 10), testCSV);
         userTalkRepository.flush();
     }
 }

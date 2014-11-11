@@ -1,12 +1,11 @@
 package ch.sbb.conferencebuddy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
+import org.joda.time.LocalTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,8 +79,8 @@ public class UserResource {
     @POST
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes(MediaType.TEXT_PLAIN)
-    @Path("admin/{pid}")
-    public void insertUserTalks(@PathParam("pid") final long pid, final String csv) {
-        userService.insertUserTalks(Long.valueOf(pid), csv);
+    @Path("admin/{pid}/{hour}/{minute}")
+    public void insertUserTalks(@PathParam("pid") final long pid, @PathParam("hour") final int hour, @PathParam("minute")final int minute, final String csv) {
+        userService.insertUserTalks(Long.valueOf(pid), new LocalTime(hour, minute), csv);
     }
 }

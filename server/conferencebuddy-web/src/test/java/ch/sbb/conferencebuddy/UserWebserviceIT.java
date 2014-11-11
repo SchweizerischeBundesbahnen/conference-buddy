@@ -11,6 +11,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import ch.sbb.conferencebuddy.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.UUID;
 
@@ -52,12 +54,17 @@ public class UserWebserviceIT extends AbstractRestIT {
 
     private static final String NEW_COMMENT = "newComment";
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserWebserviceIT.class);
+
+
     @Test
     public void testInsertUserTalks() {
+        LOGGER.info(urlOfFirstPage);
+
         // 1)
-        importCSV(TEST_PID_1, TEST_CSV_1_AND_2);
-        importCSV(TEST_PID_2, TEST_CSV_1_AND_2);
-        importCSV(TEST_PID_99, TEST_CSV_99);
+        importCSV(TEST_PID_1, 8, 10, TEST_CSV_1_AND_2);
+        importCSV(TEST_PID_2, 14, 11, TEST_CSV_1_AND_2);
+        importCSV(TEST_PID_99, 16, 53, TEST_CSV_99);
 
         // 2)
         String userUUID = registerUser();
@@ -181,8 +188,8 @@ public class UserWebserviceIT extends AbstractRestIT {
         return userUUID;
     }
 
-    private void importCSV(final long pid, final String csv){
-        final String url = urlOfFirstPage + "admin/" + pid;
+    private void importCSV(final long pid, final int hour, final int minutes, final String csv){
+        final String url = urlOfFirstPage + "admin/" + pid + "/" + hour + "/" + minutes;
 
         final Response response = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.text(csv));
         Assert.assertNotNull(response);

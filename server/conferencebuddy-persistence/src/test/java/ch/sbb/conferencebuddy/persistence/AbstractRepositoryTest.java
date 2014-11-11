@@ -38,6 +38,7 @@ public abstract class AbstractRepositoryTest extends JpaTest {
         final User user = new User();
         user.setId(userUUID);
         user.setUserId(uNummer);
+        user.setEmail("mein.name@main.domain.go");
         return user;
     }
 }

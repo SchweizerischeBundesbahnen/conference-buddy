@@ -29,6 +29,7 @@ public class User extends StringIdEntity {
     private String name;
     @Size(max = 10)
     private String userId;
+    @NotNull
     private String email;
 
     public String getName() {

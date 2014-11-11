@@ -3,6 +3,7 @@ package ch.sbb.conferencebuddy.service;
 import java.util.List;
 
 import ch.sbb.conferencebuddy.model.User;
+import org.joda.time.LocalTime;
 
 /**
  * @author Gilles Zimmermann
@@ -21,5 +22,5 @@ public interface UserService {
     /**
      * importing all users visiting a {@code pid}.
      */
-    void insertUserTalks(final Long pid, final String csv);
+    void insertUserTalks(final Long pid, final LocalTime startTime, final String csv);
 }

@@ -1,6 +1,7 @@
 package ch.sbb.conferencebuddy.persistence;
 
 import ch.sbb.conferencebuddy.model.UserTalk;
+import org.joda.time.LocalTime;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ public class UserTalkRepositoryTest extends AbstractRepositoryTest {
 
     public static final String TEST_U_NUMMER = "u123456";
     public static final Long PID = Long.valueOf(1);
+    public static final Long PID_2 = Long.valueOf(2);
     @Autowired
     private UserTalkRepository userTalkRepository;
 
@@ -31,17 +33,25 @@ public class UserTalkRepositoryTest extends AbstractRepositoryTest {
     @Test
     public void testFindByUserId() {
 
-        final UserTalk userTalk = new UserTalk();
-        userTalk.setPid(PID);
-        userTalk.setUserId(TEST_U_NUMMER);
-
-        userTalkRepository.save(userTalk);
-        userTalkRepository.flush();
+        createNewUserTalk(PID, new LocalTime(17, 2));
+        createNewUserTalk(PID_2, new LocalTime(15, 2));
 
         final List<Long> userTalks = userTalkRepository.findByUserId(TEST_U_NUMMER);
 
         Assert.assertNotNull(userTalks);
-        Assert.assertFalse(userTalks.isEmpty());
-        Assert.assertEquals(PID, userTalks.get(0));
+        Assert.assertEquals(2, userTalks.size());
+        Assert.assertEquals(PID_2, userTalks.get(0));
+        Assert.assertEquals(PID, userTalks.get(1));
+    }
+
+
+    private void createNewUserTalk(final Long pid, final LocalTime startZeit){
+        final UserTalk userTalk = new UserTalk();
+        userTalk.setPid(pid);
+        userTalk.setUserId(TEST_U_NUMMER);
+        userTalk.setStartTime(startZeit);
+
+        userTalkRepository.save(userTalk);
+        userTalkRepository.flush();
     }
 }

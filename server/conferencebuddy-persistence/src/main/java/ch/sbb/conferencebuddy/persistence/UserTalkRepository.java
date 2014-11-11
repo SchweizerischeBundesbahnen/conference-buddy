@@ -14,7 +14,7 @@ import java.util.List;
  */
 public interface UserTalkRepository extends JpaRepository<UserTalk, Long> {
 
-    @Query("select ut.pid from UserTalk ut where ut.userId = ?1")
+    @Query("select ut.pid from UserTalk ut where ut.userId = ?1 order by ut.startTime asc")
     List<Long> findByUserId(final String userId);
 
     @Modifying

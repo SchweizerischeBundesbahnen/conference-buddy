@@ -15,6 +15,9 @@
             <column name="USER_ID" type="VARCHAR(255)">
                 <constraints nullable="false" />
             </column>
+            <column name="START_TIME" type="TIME">
+                <constraints nullable="false" />
+            </column>
         </createTable>
 
         <!-- Sequence -->
