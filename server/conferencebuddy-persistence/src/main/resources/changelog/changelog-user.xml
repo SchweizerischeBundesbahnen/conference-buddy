@@ -9,9 +9,11 @@
                 <constraints nullable="false" primaryKey="true" primaryKeyName="USER_PK"/>
             </column>
             <column name="VERSION" type="NUMBER(19,0)"/>
+            <column name="CREATED" type="DATETIME"/>
             <column name="NAME" type="VARCHAR(255)"/>
             <column name="USER_ID" type="VARCHAR(10)"/>
             <column name="EMAIL" type="VARCHAR(255)"/>
+            <column name="EMAIL_SENT" type="BOOLEAN"/>
         </createTable>
 
         <!-- Sequence -->

@@ -19,14 +19,14 @@ public abstract class AbstractRepositoryTest extends JpaTest {
     static final String USER_ID = UUID.randomUUID().toString();
 
     @Autowired
-    private UserRepository userRepository;
+    protected UserRepository userRepository;
 
     @Before
     public void createInitData(){
         // make sure the tables are empty
         userRepository.deleteAll();
         // create new user
-        userRepository.save(createNewUser(USER_ID, "u123456"));
+        userRepository.save(createNewUser(USER_ID, "u123456", false));
 
         // create user-load test data
         createTestdata();
@@ -34,7 +34,7 @@ public abstract class AbstractRepositoryTest extends JpaTest {
 
     abstract void createTestdata();
 
-    protected User createNewUser(final String userUUID, final String uNummer){
+    protected User createNewUser(final String userUUID, final String uNummer, boolean emailSent){
         final User user = new User();
         user.setId(userUUID);
         user.setUserId(uNummer);

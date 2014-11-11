@@ -179,7 +179,7 @@ public class UserWebserviceIT extends AbstractRestIT {
         final User user = new User();
         user.setUserId(U_NUMMER);
         user.setName("DANIEL MUSTER");
-        user.setEmail("DANIEL.MUSTER@SBB-bla.CH");
+        user.setEmail("mein.name@mein.domain.go");
 
 
         final String userUUID = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.json(user), String.class);

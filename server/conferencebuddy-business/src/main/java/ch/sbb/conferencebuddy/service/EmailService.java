@@ -8,5 +8,5 @@ import ch.sbb.conferencebuddy.model.User;
  */
 public interface EmailService {
 
-    void sendMail(final User user);
+    void sendMail();
 }

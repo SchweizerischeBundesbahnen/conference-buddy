@@ -30,9 +30,6 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
     @Autowired
     private UserTalkRepository userTalkRepository;
 
-    @Autowired
-    private EmailService emailService;
-
     @Override
     public String register(final User user) {
         Reject.ifNull(user);
@@ -43,8 +40,6 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
 
         // save
         userRepository.save(user);
-
-        emailService.sendMail(user);
 
         return id;
     }

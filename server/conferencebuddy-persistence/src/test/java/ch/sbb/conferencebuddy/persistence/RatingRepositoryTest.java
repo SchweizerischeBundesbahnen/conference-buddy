@@ -34,9 +34,9 @@ public class RatingRepositoryTest extends AbstractRepositoryTest {
 
         final String testUser2UUID = UUID.randomUUID().toString();
         final String testUser3UUID = UUID.randomUUID().toString();
-        final User testUser2 = createNewUser(testUser2UUID, "u654321");
+        final User testUser2 = createNewUser(testUser2UUID, "u654321", false);
         userRepository.save(testUser2);
-        final User testUser3 = createNewUser(testUser3UUID, "u123457");
+        final User testUser3 = createNewUser(testUser3UUID, "u123457", false);
         userRepository.save(testUser3);
 
         // create ratings
