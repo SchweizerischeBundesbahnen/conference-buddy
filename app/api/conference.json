@@ -246,6 +246,15 @@
             "company": "I-ET-TC",
             "picture": "images/pict10.jpg",
             "bio": ""
+        },
+        {
+            "id": 28,
+            "name": "Peter",
+            "surname": "Kummer",
+            "email": "",
+            "company": "IT",
+            "picture": "images/pict10.jpg",
+            "bio": ""
         }
     ],
     "talks": [
@@ -257,11 +266,18 @@
             "common": true
         },
         {
-            "id": "begrüssung",
-            "title": "Begrüssung Developer Day 2013",
+            "id": "opening",
+            "title": "Opening Remarks",
             "abstract": "",
-            "speakerIds": [1],
-            "common": true
+            "speakerIds": [28],
+            "common": false
+        },
+        {
+            "id": "closing",
+            "title": "Closing Remarks",
+            "abstract": "",
+            "speakerIds": [28],
+            "common": false
         },
         {
             "id": "pause",
@@ -396,20 +412,29 @@
             "title": "Mehr Wert für die Kunden",
             "presentations": [
                 {
+                    "id": 1,
+                    "talkId": "opening",
+                    "time": {
+                        "start": "09:00",
+                        "end": "09:15"
+                    },
+                    "room": ""
+                },
+                {
                     "id": 5,
                     "talkId": "keynote",
                     "time": {
-                        "start": "09:00",
-                        "end": "09:45"
+                        "start": "09:15",
+                        "end": "10:15"
                     },
-                    "room": "Saal 1"
+                    "room": ""
                 },
                 {
                     "id": 10,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:00",
-                        "end": "10:25"
+                        "start": "10:15",
+                        "end": "10:45"
                     },
                     "room": ""
                 },
@@ -420,7 +445,7 @@
                         "start": "10:45",
                         "end": "11:30"
                     },
-                    "room": "Saal Mailand"
+                    "room": "Champions Lounge"
                 },
                 {
                     "id": 20,
@@ -438,7 +463,7 @@
                         "start": "11:45",
                         "end": "12:30"
                     },
-                    "room": "Saal Rom"
+                    "room": "Media Center"
                 },
                 {
                     "id": 30,
@@ -456,7 +481,7 @@
                         "start": "14:00",
                         "end": "14:45"
                     },
-                    "room": "Saal Berlin"
+                    "room": "Media Center"
                 },
                 {
                     "id": 40,
@@ -474,7 +499,25 @@
                         "start": "15:00",
                         "end": "15:45"
                     },
-                    "room": "Saal London"
+                    "room": "Media Center"
+                },
+                {
+                    "id": 50,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "15:45",
+                        "end": "16:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 55,
+                    "talkId": "closing",
+                    "time": {
+                        "start": "16:00",
+                        "end": "16:15"
+                    },
+                    "room": ""
                 }
             ]
         },
@@ -483,20 +526,29 @@
             "title": "Innovative (IT-) Projekte aus dem Business / Was bewegt das Bahnhofsgeschäft",
             "presentations": [
                 {
+                    "id": 2,
+                    "talkId": "opening",
+                    "time": {
+                        "start": "09:00",
+                        "end": "09:15"
+                    },
+                    "room": ""
+                },
+                {
                     "id": 6,
                     "talkId": "keynote",
                     "time": {
-                        "start": "09:00",
-                        "end": "09:45"
+                        "start": "09:15",
+                        "end": "10:15"
                     },
-                    "room": "Saal 1"
+                    "room": ""
                 },
                 {
                     "id": 11,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:00",
-                        "end": "10:25"
+                        "start": "10:15",
+                        "end": "10:45"
                     },
                     "room": ""
                 },
@@ -507,7 +559,7 @@
                         "start": "10:45",
                         "end": "11:30"
                     },
-                    "room": "Saal Lausanne"
+                    "room": "Media Center"
                 },
                 {
                     "id": 21,
@@ -525,7 +577,7 @@
                         "start": "11:45",
                         "end": "12:30"
                     },
-                    "room": "Saal Genf"
+                    "room": "Champions Lounge"
                 },
                 {
                     "id": 31,
@@ -543,7 +595,7 @@
                         "start": "14:00",
                         "end": "14:45"
                     },
-                    "room": "Saal Basel"
+                    "room": "Sky Lounge"
                 },
                 {
                     "id": 41,
@@ -561,7 +613,25 @@
                         "start": "15:00",
                         "end": "15:45"
                     },
-                    "room": "Saal Luzern"
+                    "room": "Future Lounge"
+                },
+                {
+                    "id": 51,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "15:45",
+                        "end": "16:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 56,
+                    "talkId": "closing",
+                    "time": {
+                        "start": "16:00",
+                        "end": "16:15"
+                    },
+                    "room": ""
                 }
             ]
         },
@@ -570,20 +640,29 @@
             "title": "Erfahrungen aus dem IT-gestützten Bahngeschäft",
             "presentations": [
                 {
+                    "id": 3,
+                    "talkId": "opening",
+                    "time": {
+                        "start": "09:00",
+                        "end": "09:15"
+                    },
+                    "room": ""
+                },
+                {
                     "id": 7,
                     "talkId": "keynote",
                     "time": {
-                        "start": "09:00",
-                        "end": "09:45"
+                        "start": "09:15",
+                        "end": "10:15"
                     },
-                    "room": "Saal 1"
+                    "room": ""
                 },
                 {
                     "id": 12,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:00",
-                        "end": "10:25"
+                        "start": "10:15",
+                        "end": "10:45"
                     },
                     "room": ""
                 },
@@ -594,7 +673,7 @@
                         "start": "10:45",
                         "end": "11:30"
                     },
-                    "room": "Saal Sydney"
+                    "room": "Future Lounge"
                 },
                 {
                     "id": 22,
@@ -612,7 +691,7 @@
                         "start": "11:45",
                         "end": "12:30"
                     },
-                    "room": "Saal Hongkong"
+                    "room": "Future Lounge"
                 },
                 {
                     "id": 32,
@@ -630,7 +709,7 @@
                         "start": "14:00",
                         "end": "14:45"
                     },
-                    "room": "Saal Peking"
+                    "room": "Champions Lounge"
                 },
                 {
                     "id": 42,
@@ -648,7 +727,25 @@
                         "start": "15:00",
                         "end": "15:45"
                     },
-                    "room": "Saal Tokio"
+                    "room": "Champions Lounge"
+                },
+                {
+                    "id": 52,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "15:45",
+                        "end": "16:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 57,
+                    "talkId": "closing",
+                    "time": {
+                        "start": "16:00",
+                        "end": "16:15"
+                    },
+                    "room": ""
                 }
             ]
         },
@@ -657,11 +754,20 @@
             "title": "Future and Trends",
             "presentations": [
                 {
+                    "id": 4,
+                    "talkId": "opening",
+                    "time": {
+                        "start": "09:00",
+                        "end": "09:15"
+                    },
+                    "room": ""
+                },
+                {
                     "id": 8,
                     "talkId": "keynote",
                     "time": {
-                        "start": "09:00",
-                        "end": "09:45"
+                        "start": "09:15",
+                        "end": "10:15"
                     },
                     "room": "Saal 1"
                 },
@@ -669,8 +775,8 @@
                     "id": 13,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:00",
-                        "end": "10:25"
+                        "start": "10:15",
+                        "end": "10:45"
                     },
                     "room": ""
                 },
@@ -681,7 +787,7 @@
                         "start": "10:45",
                         "end": "11:30"
                     },
-                    "room": "Saal Vancouver"
+                    "room": "Sky Lounge"
                 },
                 {
                     "id": 23,
@@ -699,7 +805,7 @@
                         "start": "11:45",
                         "end": "12:30"
                     },
-                    "room": "Saal Quebec"
+                    "room": "Sky Lounge"
                 },
                 {
                     "id": 33,
@@ -717,7 +823,7 @@
                         "start": "14:00",
                         "end": "14:45"
                     },
-                    "room": "Saal Toronto"
+                    "room": "Future Lounge"
                 },
                 {
                     "id": 43,
@@ -735,7 +841,25 @@
                         "start": "15:00",
                         "end": "15:45"
                     },
-                    "room": "Saal Montreal"
+                    "room": "Sky Lounge"
+                },
+                {
+                    "id": 53,
+                    "talkId": "pause",
+                    "time": {
+                        "start": "15:45",
+                        "end": "16:00"
+                    },
+                    "room": ""
+                },
+                {
+                    "id": 58,
+                    "talkId": "closing",
+                    "time": {
+                        "start": "16:00",
+                        "end": "16:15"
+                    },
+                    "room": ""
                 }
             ]
         }
