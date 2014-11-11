@@ -51,21 +51,8 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q'
                 });
 
                 return conference;
-            })
+            });
         },
-
-        /*
-        lookupPresentation: function(conference, id) {
-            for (var i = 0; i < conference.tracks.length; i++) {
-                var track = conference.tracks[i];
-                for (var j = 0; j < track.presentations.length; j++) {
-                    if (track.presentations[j].id === parseInt(id, 10)) {
-                        return track.presentations[j];
-                    }
-                }
-            }
-        }
-        */
 
         currentTrack: function() {
             return conference.tracks[currentTrackIndex];
