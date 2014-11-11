@@ -4,6 +4,7 @@ import ch.sbb.conferencebuddy.model.User;
 import ch.sbb.conferencebuddy.model.UserTalk;
 import ch.sbb.conferencebuddy.persistence.UserRepository;
 import ch.sbb.conferencebuddy.persistence.UserTalkRepository;
+import ch.sbb.conferencebuddy.service.EmailService;
 import ch.sbb.conferencebuddy.service.UserService;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReader;
 import ch.sbb.esta.core.exception.EstaRuntimeException;
@@ -29,6 +30,9 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
     @Autowired
     private UserTalkRepository userTalkRepository;
 
+    @Autowired
+    private EmailService emailService;
+
     @Override
     public String register(final User user) {
         Reject.ifNull(user);
@@ -40,7 +44,7 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
         // save
         userRepository.save(user);
 
-        // TODO: send mail!!!
+        emailService.sendMail(user);
 
         return id;
     }
