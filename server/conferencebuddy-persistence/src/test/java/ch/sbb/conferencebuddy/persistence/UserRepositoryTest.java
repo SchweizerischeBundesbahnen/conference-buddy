@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.List;
 import java.util.UUID;
 
 public class UserRepositoryTest extends AbstractRepositoryTest {
@@ -20,23 +21,22 @@ public class UserRepositoryTest extends AbstractRepositoryTest {
 
     @Test
     public void testFindByEmailSentTrueOrderByCreatedAt() {
-        Page<User> userPage = null;
+        List<User> userPage = null;
         int count = 0;
         do {
-            userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc(new PageRequest(1, 1));
+            userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc();
 
-            if(userPage.hasContent()) {
+            if(userPage!=null && !userPage.isEmpty()) {
                 count++;
                 Assert.assertNotNull(userPage);
-                Assert.assertEquals(1, userPage.getContent().size());
 
-                User user = userPage.getContent().get(0);
+                User user = userPage.get(0);
                 Assert.assertFalse(user.isEmailSent());
 
                 user.setEmailSent(true);
                 userRepository.save(user);
             }
-        }while(userPage.hasContent()); // possible infinite loop...
+        }while(userPage!=null && !userPage.isEmpty());
 
         Assert.assertNotNull(userPage);
         Assert.assertEquals(2, count);

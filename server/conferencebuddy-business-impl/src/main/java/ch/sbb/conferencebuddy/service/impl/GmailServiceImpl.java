@@ -1,5 +1,6 @@
 package ch.sbb.conferencebuddy.service.impl;
 
+import java.util.List;
 import java.util.Properties;
 
 import javax.mail.*;
@@ -35,10 +36,10 @@ public class GmailServiceImpl implements EmailService {
 
     @Override
     @Scheduled(fixedRate= 30*1000) // every 30sec
-    public void sendMail() {
-        final Page<User> userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc(new PageRequest(1, 1));
-        if(userPage.hasContent()) {
-            final User user = userPage.getContent().get(0);
+    public synchronized void sendMail() {
+        final List<User> userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc(); // performance???
+        if (userPage != null && !userPage.isEmpty()) {
+            final User user = userPage.get(0);
             sendMail(user);
             user.setEmailSent(true);
             userRepository.save(user);
@@ -52,7 +53,7 @@ public class GmailServiceImpl implements EmailService {
 
 
         final String username = "sender@mein.domain.go";
-        final String password = "conf$buddy_2014";
+        final String password = "password";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -73,7 +74,7 @@ public class GmailServiceImpl implements EmailService {
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(user.getEmail()));
             message.setSubject("conference-buddy registration");
             message.setText("Dear " + user.getName() + ","
-                + "\n\n Your Registration-URL: http://sbb-conferencebuddy.elasticbeanstalk.com/t=" + user.getUserId()
+                + "\n\n Your Registration-URL: http://sbb-conferencebuddy.elasticbeanstalk.com/t=" + user.getId()
                 + "\n\n Your conference-buddy team"
             );
 

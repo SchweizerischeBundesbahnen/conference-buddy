@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import ch.sbb.conferencebuddy.model.User;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.List;
+
 
 /**
  * @author Gilles Zimmermann
@@ -16,5 +18,5 @@ import org.springframework.data.jpa.repository.Query;
 public interface UserRepository  extends JpaRepository<User, String> {
 
     @Query("select u from User u where u.emailSent = false order by u.created asc")
-    Page<User> findByEmailSentFalseOrderByCreatedAsc(Pageable pageable);
+    List<User> findByEmailSentFalseOrderByCreatedAsc();
 }
