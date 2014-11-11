@@ -1,17 +1,20 @@
 package ch.sbb.conferencebuddy;
 
-import java.util.List;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-
+import ch.sbb.conferencebuddy.model.Rating;
+import ch.sbb.conferencebuddy.service.RatingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
-import ch.sbb.conferencebuddy.model.Rating;
-import ch.sbb.conferencebuddy.service.RatingService;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 /**
  * 
@@ -40,7 +43,7 @@ public class RatingResource {
     private RatingService ratingService;
 
     /**
-     * init {@code Autowired} fields.
+     * init {@code autowired} fields.
      */
     public RatingResource() {
         LOGGER.info("in RatingResource");
@@ -54,8 +57,8 @@ public class RatingResource {
     }
 
     @PUT
-    @Path("/{pid}")
-    public Rating update(@PathParam("pid ") final long pid , final long rate, @HeaderParam("X-Access-Token") String userId) {
+    @Path("/")
+    public Rating update(@PathParam("pid") final long pid , final long rate, @HeaderParam("X-Access-Token") String userId) {
         return ratingService.saveOrUpdate(pid, rate, userId);
     }
 }

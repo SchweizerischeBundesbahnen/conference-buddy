@@ -6,29 +6,22 @@ describe('Controller: CommentService', function() {
 
     // load the controller's module
     beforeEach(function() {
-        angular.mock.module('conferenceBuddyApp');
+        angular.mock.module('conferenceBuddyApp', function($provide) {
+            $provide.constant('REST_URL', '/api-mock');
+        });
         angular.mock.inject(function(_CommentService_, $httpBackend) {
             commentService = _CommentService_;
             httpBackend = $httpBackend;
         });
 
         commentsJson = [
-            {
-                'author': {
-                    'name': 'Ellie McInelli'
-                },
-                'comment': 'Supergeil!',
-                'timestamp': '2014-09-08T18:25:00.000Z'
-            },
-            {
-                'author': {
-                    'name': 'Axel Schweiss'
-                },
-                'comment': 'Worum gehts hier?',
-                'timestamp': '2014-09-08T18:26:00.000Z'
-            }
+            { value: "c1"},
+            { value: "c2"}
         ];
-        httpBackend.whenGET('api/comments.json').respond(commentsJson);
+        httpBackend.whenGET('/api-mock/comment/13').respond(commentsJson);
+        httpBackend.whenPUT('/api-mock/comment').respond(commentsJson);
+        httpBackend.whenPOST('/api-mock/comment/33').respond({});
+        httpBackend.whenDELETE('/api-mock/comment/33').respond({});
     });
 
     afterEach(function() {
@@ -36,26 +29,40 @@ describe('Controller: CommentService', function() {
         httpBackend.verifyNoOutstandingRequest();
     });
 
-    it('should fetch JSON on load ', function() {
-        var comments = loadJsonMock();
-        expect(comments).toBeDefined();
-    });
-
-    it('should transform/denormalize JSON on load', function() {
-        var comments = loadJsonMock();
-        expect(comments.length).toBe(3);
-
-        expect(comments[0].author.name).toBe(commentsJson[0].author.name);
-        expect(comments[1].comment).toBe(commentsJson[1].comment);
-    });
-
-    function loadJsonMock() {
-        httpBackend.expectGET('api/comments.json');
-        var comments;
-        commentService.load().then(function(result) {
-            comments = result;
+    it('should GET comments on load ', function() {
+        httpBackend.expectGET('/api-mock/comment/13');
+        commentService.load(13).then(function(result) {
+            expect(result).toBeDefined();
+            expect(result).toEqual(commentsJson);
         });
         httpBackend.flush();
-        return comments;
-    }
+    });
+
+    it('should POST comment on update ', function() {
+        httpBackend.expectPOST('/api-mock/comment/33', {value: 'foo'});
+        commentService.update(33, 'foo').then(function(result) {
+            expect(result).toBeDefined();
+            expect(result).toEqual({});
+        });
+        httpBackend.flush();
+    });
+
+    it('should PUT comment on save ', function() {
+        httpBackend.expectPUT('/api-mock/comment', {pid: 333, value: 'foo'});
+        commentService.save(333, 'foo').then(function(result) {
+            expect(result).toBeDefined();
+            expect(result).toEqual(commentsJson);
+        });
+        httpBackend.flush();
+    });
+
+    it('should DELETE comment on delete ', function() {
+        httpBackend.expectDELETE('/api-mock/comment/33');
+        commentService.delete(33).then(function(result) {
+            expect(result).toBeDefined();
+            expect(result).toEqual({});
+        });
+        httpBackend.flush();
+    });
+
 });

@@ -14,3 +14,7 @@ atlassian-ide-plugin.xml
 *.class
 *.jar
 *.lst
+
+target/
+logs/
+

@@ -9,7 +9,7 @@
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
                 <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
-                          ng-model="commentEntry.comment" required></textarea>
+                          ng-model="commentEntry.value" required></textarea>
             </div>
             <button class="btn btn-primary pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
         </form>
@@ -22,7 +22,7 @@
         <div class="panel panel-default" ng-repeat="comment in comments">
             <div class="panel-body">
                 <strong>{{formatDate(comment)}}</strong>
-                {{comment.comment}}
+                {{comment.value}}
                 <cite class="clearfix">—{{comment.author.name}}</cite>
             </div>
         </div>

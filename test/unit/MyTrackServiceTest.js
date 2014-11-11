@@ -144,7 +144,9 @@ describe('Controller: MyTrackService', function() {
 
     // load the controller's module
     beforeEach(function() {
-        angular.mock.module('conferenceBuddyApp');
+        angular.mock.module('conferenceBuddyApp', function($provide) {
+            $provide.constant('REST_URL', '/api-mock');
+        });
         angular.mock.inject(function(_MyTrackService_, $httpBackend) {
             myTrackService = _MyTrackService_;
             httpBackend = $httpBackend;
@@ -153,7 +155,8 @@ describe('Controller: MyTrackService', function() {
         myTrackJson = [
             15, 16
         ];
-        httpBackend.whenGET('api/myTrack.json').respond(myTrackJson);
+
+        httpBackend.whenGET('/api-mock/mytrack').respond(myTrackJson);
     });
 
     afterEach(function() {
@@ -164,13 +167,7 @@ describe('Controller: MyTrackService', function() {
     it('should fetch JSON on load ', function() {
         var myTrack = loadJsonMock();
         expect(myTrack).toBeDefined();
-    });
-
-    it('should transform/denormalize JSON on load', function() {
-        var myTrack = loadJsonMock();
-        expect(myTrack.length).toBe(2);
-        expect(myTrack[0]).toBe(15);
-        expect(myTrack[1]).toBe(16);
+        expect(myTrack).toEqual(myTrackJson);
     });
 
     it('should create MyTrack correct', function() {
@@ -186,7 +183,7 @@ describe('Controller: MyTrackService', function() {
     });
 
     function loadJsonMock() {
-        httpBackend.expectGET('api/myTrack.json');
+        httpBackend.expectGET('/api-mock/mytrack');
         var myTrack;
         myTrackService.load().then(function(result) {
             myTrack = result;

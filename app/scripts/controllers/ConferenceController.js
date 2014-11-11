@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('ConferenceController',
-['$scope', '$location', 'ConferenceService', function($scope, $location, conferenceService) {
+['$scope', '$location', 'ConferenceService', 'DialogService', function($scope, $location, conferenceService, dialogService) {
 
     $scope.averageRating = 6;
 
