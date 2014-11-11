@@ -12,6 +12,8 @@ import org.junit.Test;
 
 import ch.sbb.conferencebuddy.model.User;
 
+import java.util.UUID;
+
 /**
  * Testing the whole process, starting:
  * 1. import csv
@@ -70,17 +72,27 @@ public class UserWebserviceIT extends AbstractRestIT {
         // 7)
         deleteComment(userUUID, comment);
         // 8)
-        Long ratingId = createVote(userUUID, TEST_PID_1);
+        Long ratingId = createRating(userUUID, TEST_PID_1);
         // 9)
-        updateVote(userUUID, TEST_PID_1, ratingId);
+        updateRating(userUUID, TEST_PID_1, ratingId);
+        // 10)
+        updateRatingWrongUserId(UUID.randomUUID().toString(), TEST_PID_1, ratingId);
 
     }
 
-    private void updateVote(final String userUUID, final long pid, final Long expectedId) {
+    private void updateRatingWrongUserId(final String userUUID, final long pid, final long vote) {
+        final String url = urlOfFirstPage + "rating/" + pid;
+        Response response = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", null).put(Entity.json(vote));
+
+        Assert.assertNotNull(response);
+        Assert.assertEquals(Response.Status.UNAUTHORIZED.getStatusCode(), response.getStatus());
+    }
+
+    private void updateRating(final String userUUID, final long pid, final Long expectedId) {
         Assert.assertEquals(expectedId, vote(userUUID, pid, 2).getId());
     }
 
-    private Long createVote(final String userUUID, final Long pid) {
+    private Long createRating(final String userUUID, final Long pid) {
         return vote(userUUID, pid, 6).getId();
     }
 
@@ -94,7 +106,6 @@ public class UserWebserviceIT extends AbstractRestIT {
         Assert.assertNotNull(rating);
         Assert.assertEquals(userUUID, rating.getUserFk());
         Assert.assertEquals(Long.valueOf(vote), rating.getRate());
-        Assert.assertEquals(Double.valueOf(vote), rating.getAverageRate());
 
         return rating;
     }
@@ -103,7 +114,7 @@ public class UserWebserviceIT extends AbstractRestIT {
         final String url = urlOfFirstPage + "comment/" + comment.getId();
         Response response = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", userUUID).delete();
         Assert.assertNotNull(response);
-        Assert.assertEquals(204, response.getStatus());
+        Assert.assertEquals(Response.Status.NO_CONTENT.getStatusCode(), response.getStatus());
 
         // check by loading all comments
         final String getURL = urlOfFirstPage + "comment/" + comment.getPid();
@@ -126,7 +137,7 @@ public class UserWebserviceIT extends AbstractRestIT {
 
         Response response = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", userUUID).post(Entity.json(NEW_COMMENT));
         Assert.assertNotNull(response);
-        Assert.assertEquals(204, response.getStatus());
+        Assert.assertEquals(Response.Status.NO_CONTENT.getStatusCode(), response.getStatus());
     }
 
     private Comment createComment(final String userUUID) {
@@ -175,7 +186,7 @@ public class UserWebserviceIT extends AbstractRestIT {
 
         final Response response = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.text(csv));
         Assert.assertNotNull(response);
-        Assert.assertEquals(204, response.getStatus());
+        Assert.assertEquals(Response.Status.NO_CONTENT.getStatusCode(), response.getStatus());
     }
 
 }

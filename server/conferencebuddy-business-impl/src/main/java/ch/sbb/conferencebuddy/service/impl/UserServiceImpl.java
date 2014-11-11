@@ -26,9 +26,6 @@ import java.util.UUID;
 public class UserServiceImpl extends AbstractServiceImpl implements UserService {
 
     @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
     private UserTalkRepository userTalkRepository;
 
     @Override
