@@ -4,15 +4,13 @@ import java.util.List;
 import java.util.Properties;
 
 import javax.mail.*;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import ch.sbb.conferencebuddy.model.User;
@@ -34,26 +32,32 @@ public class GmailServiceImpl implements EmailService {
     @Autowired
     private UserRepository userRepository;
 
+    @Value("${email.username}")
+    private String username;
+
+    @Value("${email.password}")
+    private String password;
+
     @Override
-    @Scheduled(fixedRate= 30*1000) // every 30sec
+    @Scheduled(fixedRate= 3*1000) // every 3sec, performance???
     public synchronized void sendMail() {
         final List<User> userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc(); // performance???
         if (userPage != null && !userPage.isEmpty()) {
+            LOGGER.info("still {} emails to send", userPage.size());
             final User user = userPage.get(0);
-            sendMail(user);
-            user.setEmailSent(true);
-            userRepository.save(user);
+            try {
+                sendMail(user);
+                user.setEmailSent(true);
+                userRepository.save(user);
+            } catch (MessagingException e) { // ensure each user has got an email before the flag is set to true
+                LOGGER.error("messaging-exception: {}", e);
+            }
         }
     }
 
-    void sendMail(final User user) {
+    void sendMail(final User user) throws MessagingException {
         // ugli, ugli, ugli but quick and dirty
-
         LOGGER.info("send email for user {}", user.getEmail());
-
-
-        final String username = "sender@mein.domain.go";
-        final String password = "password";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -62,26 +66,21 @@ public class GmailServiceImpl implements EmailService {
         props.put("mail.smtp.port", "587");
 
         final Session session = Session.getInstance(props,
-                new javax.mail.Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
-                    }
-                });
+            new javax.mail.Authenticator() {
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication(username, password);
+                }
+            });
 
-        try {
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(username));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(user.getEmail()));
-            message.setSubject("conference-buddy registration");
-            message.setText("Dear " + user.getName() + ","
-                + "\n\n Your Registration-URL: http://sbb-conferencebuddy.elasticbeanstalk.com/t=" + user.getId()
-                + "\n\n Your conference-buddy team"
-            );
+        Message message = new MimeMessage(session);
+        message.setFrom(new InternetAddress(username));
+        message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(user.getEmail()));
+        message.setSubject("conference-buddy registration");
+        message.setText("Dear " + user.getName() + ","
+            + "\n\nYour Registration-URL: http://sbb-conferencebuddy.elasticbeanstalk.com/t=" + user.getId()
+            + "\n\nYour conference-buddy team"
+        );
 
-            Transport.send(message);
-        } catch (MessagingException e) {
-            LOGGER.error("messaging-exception: {}", e);
-        }
-
+        Transport.send(message);
     }
 }
