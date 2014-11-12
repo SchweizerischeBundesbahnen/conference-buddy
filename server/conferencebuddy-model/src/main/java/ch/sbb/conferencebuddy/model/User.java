@@ -41,6 +41,10 @@ public class User extends StringIdEntity {
     @NotNull
     private DateTime created = new DateTime();
 
+    @XmlTransient
+    private int retryCount = 0;
+
+
     public String getName() {
         return name;
     }
@@ -79,5 +83,13 @@ public class User extends StringIdEntity {
 
     public void setCreated(DateTime created) {
         this.created = created;
+    }
+
+    public int getRetryCount() {
+        return retryCount;
+    }
+
+    public void setRetryCount(int retryCount) {
+        this.retryCount = retryCount;
     }
 }

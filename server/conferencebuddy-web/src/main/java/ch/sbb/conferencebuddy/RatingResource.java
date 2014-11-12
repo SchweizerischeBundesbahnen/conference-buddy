@@ -57,7 +57,7 @@ public class RatingResource {
     }
 
     @PUT
-    @Path("/")
+    @Path("/{pid}")
     public Rating update(@PathParam("pid") final long pid , final long rate, @HeaderParam("X-Access-Token") String userId) {
         return ratingService.saveOrUpdate(pid, rate, userId);
     }

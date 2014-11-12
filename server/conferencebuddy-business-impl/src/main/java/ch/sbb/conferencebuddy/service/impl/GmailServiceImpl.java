@@ -1,6 +1,8 @@
 package ch.sbb.conferencebuddy.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.mail.*;
@@ -48,10 +50,12 @@ public class GmailServiceImpl implements EmailService {
             try {
                 sendMail(user);
                 user.setEmailSent(true);
-                userRepository.save(user);
             } catch (MessagingException e) { // ensure each user has got an email before the flag is set to true
                 LOGGER.error("messaging-exception: {}", e);
+                // possible infinit loop...  performance??? TODO introduce max retry foreach email.
+                user.setRetryCount(user.getRetryCount()+1);
             }
+            userRepository.save(user);
         }
     }
 

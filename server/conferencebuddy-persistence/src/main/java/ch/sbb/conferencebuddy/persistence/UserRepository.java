@@ -17,6 +17,6 @@ import java.util.List;
  */
 public interface UserRepository  extends JpaRepository<User, String> {
 
-    @Query("select u from User u where u.emailSent = false order by u.created asc")
+    @Query("select u from User u where u.emailSent = false and u.retryCount < 10 order by u.created asc")
     List<User> findByEmailSentFalseOrderByCreatedAsc();
 }
