@@ -11,7 +11,7 @@ app.constant('ROUTES', {
     DETAILS: '/details',
     REGISTER: '/register'
 });
-app.constant('REST_URL', 'http://127.0.0.1:9000/conferencebuddy-web');
+app.constant('REST_URL', '/conferencebuddy-web');
 app.constant('AUTH', {
     HTTP_HEADER_TOKEN: 'X-Access-Token',
     COOKIES_USERTOKEN: 'userToken',
@@ -43,8 +43,7 @@ app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($p
         templateUrl: 'views/register.html',
         controller: 'UserController'
     }).when(ROUTES.ABOUT, {
-        templateUrl: 'views/about.html',
-        controller: 'AboutController'
+        templateUrl: 'views/about.html'
     }).otherwise({
         redirectTo: ROUTES.CONFERENCE
     });

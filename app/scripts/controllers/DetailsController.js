@@ -10,11 +10,11 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
         $scope.presentation = conferenceService.currentPresentation();
-        if ($scope.presentation === null) {
+        if (!$scope.presentation) {
             // presentation is null or undefined. can happen if the user has the details page open and closes the browser. when he re-opens the
             // browser and restores the open tabs from his last session, there will be no current presentation. in that case, we will redirect him
             // to the home page
-            $location.path(ROUTES.CONFERENCE);
+            $location.path(ROUTES.TRACKS);
         } else {
             ratingService.load($scope.presentation.id).then(function(rating) {
                 $scope.hasRatings = (rating.average !== undefined);
