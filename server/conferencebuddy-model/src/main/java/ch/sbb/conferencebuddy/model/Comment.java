@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import ch.sbb.conferencebuddy.model.xml.adapter.StringDateTimeAdapter;
 import ch.sbb.esta.core.webservice.xmladapter.DateTimeAdapter;
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
@@ -27,7 +28,7 @@ public class Comment extends Talk {
     @NotNull
     private String value;
     @Type(type = JODA_PERSISTENCE_DATE_TIME)
-    @XmlJavaTypeAdapter(DateTimeAdapter.class)
+    @XmlJavaTypeAdapter(StringDateTimeAdapter.class)
     private DateTime timestamp;
 
     public String getAuthor() {

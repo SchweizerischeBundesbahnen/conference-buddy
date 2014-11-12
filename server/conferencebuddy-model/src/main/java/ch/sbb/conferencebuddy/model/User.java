@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import ch.sbb.conferencebuddy.model.xml.adapter.StringDateTimeAdapter;
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 
@@ -37,7 +38,7 @@ public class User extends StringIdEntity {
     private boolean emailSent = false;
 
     @Type(type = JODA_PERSISTENCE_DATE_TIME)
-    @XmlJavaTypeAdapter(DateTimeAdapter.class)
+    @XmlJavaTypeAdapter(StringDateTimeAdapter.class)
     @NotNull
     private DateTime created = new DateTime();
 
