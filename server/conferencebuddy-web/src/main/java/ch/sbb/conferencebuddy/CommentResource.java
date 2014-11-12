@@ -70,7 +70,7 @@ public class CommentResource {
      */
     @GET
     @Path("/{pid}")
-    public Comment[] loadAll(@PathParam("pid") final long pid) {
+    public Comment[] loadAll(@PathParam("pid") final String pid) {
         final List<Comment> commentList = commentService.loadAll(pid);
 
         if (commentList == null) {

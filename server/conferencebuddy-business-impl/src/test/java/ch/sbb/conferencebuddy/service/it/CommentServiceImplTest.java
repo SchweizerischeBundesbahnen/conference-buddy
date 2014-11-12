@@ -60,7 +60,7 @@ public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
     }
 
     @Override
-    protected Talk createTestValue(final Long pid, final String userUUID) {
+    protected Talk createTestValue(final String pid, final String userUUID) {
         final Comment comment = new Comment();
         comment.setUserFk(userUUID);
         comment.setPid(pid);

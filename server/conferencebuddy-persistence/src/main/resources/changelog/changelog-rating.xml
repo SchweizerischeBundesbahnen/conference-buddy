@@ -9,7 +9,7 @@
                 <constraints nullable="false" primaryKey="true" primaryKeyName="RATING_PK"/>
             </column>
             <column name="VERSION" type="NUMBER(19,0)"/>
-            <column name="PID" type="NUMBER(19,0)">
+            <column name="PID" type="VARCHAR(10)">
                 <constraints nullable="false" />
             </column>
             <column name="USER_FK" type="VARCHAR(255)">

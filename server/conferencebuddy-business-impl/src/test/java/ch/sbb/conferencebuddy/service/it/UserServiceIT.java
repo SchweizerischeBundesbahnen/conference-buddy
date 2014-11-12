@@ -18,7 +18,7 @@ import java.util.List;
 
 public class UserServiceIT extends AbstractServiceIT {
 
-    public static final Long PID = Long.valueOf(1);
+    public static final String PID = "1";
 
     @Autowired
     private UserService userService;
@@ -44,7 +44,7 @@ public class UserServiceIT extends AbstractServiceIT {
     public void testLoadUserTracks() {
         initTestTracks();
         final String registerdUser = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_1);
-        final List<Long> pids = userService.loadUserTracks(registerdUser);
+        final List<String> pids = userService.loadUserTracks(registerdUser);
 
         Assert.assertNotNull(pids);
         Assert.assertEquals(1, pids.size());

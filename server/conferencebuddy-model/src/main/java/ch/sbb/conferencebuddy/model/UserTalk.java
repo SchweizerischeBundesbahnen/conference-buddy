@@ -26,7 +26,7 @@ public class UserTalk extends LongIdEntity {
      * vortrag-Id.
      */
     @NotNull
-    private Long pid;
+    private String pid;
     /**
      * u-Nummer.
      */
@@ -38,11 +38,11 @@ public class UserTalk extends LongIdEntity {
     @NotNull
     private LocalTime startTime;
 
-    public Long getPid() {
+    public String getPid() {
         return pid;
     }
 
-    public void setPid(Long pid) {
+    public void setPid(String pid) {
         this.pid = pid;
     }
 

@@ -48,7 +48,7 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
      * @param userId UUID out of {@link ch.sbb.conferencebuddy.model.User#id}
      */
     @Override
-    public List<Long> loadUserTracks(final String userId) {
+    public List<String> loadUserTracks(final String userId) {
         // pre condition
         validateUser(userId);
 
@@ -63,7 +63,7 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
     }
 
     @Override
-    public void insertUserTalks(final Long pid, final LocalTime startTime, final String csv) {
+    public void insertUserTalks(final String pid, final LocalTime startTime, final String csv) {
         Reject.ifNull(pid);
         Reject.ifEmpty(csv);
 

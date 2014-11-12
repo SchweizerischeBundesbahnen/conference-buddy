@@ -14,8 +14,8 @@ import ch.sbb.conferencebuddy.service.UserService;
 public abstract class AbstractTalkServiceImplIT<T extends Talk> extends AbstractServiceIT {
 
     protected final static int EXPECTED_VALUES = 3;
-    protected final static Long TEST_PID = Long.valueOf(1);
-    protected final static Long SAVE_TEST_PID = Long.valueOf(9);
+    protected final static String TEST_PID = "1";
+    protected final static String SAVE_TEST_PID = "9";
     protected String userUUID1;
     protected String userUUID2;
     protected String userUUID3;
@@ -59,11 +59,11 @@ public abstract class AbstractTalkServiceImplIT<T extends Talk> extends Abstract
         getTalkService().save(createTestValue(TEST_PID, userUUID1), userUUID1);
         getTalkService().save(createTestValue(TEST_PID, userUUID2), userUUID2);
         getTalkService().save(createTestValue(TEST_PID, userUUID3), userUUID3);
-        getTalkService().save(createTestValue(Long.valueOf(2), userUUID1), userUUID1);
-        getTalkService().save(createTestValue(Long.valueOf(2), userUUID2), userUUID2);
+        getTalkService().save(createTestValue("2", userUUID1), userUUID1);
+        getTalkService().save(createTestValue("2", userUUID2), userUUID2);
     }
 
-    protected abstract T createTestValue (final Long pid, final String userUUID);
+    protected abstract T createTestValue (final String pid, final String userUUID);
 
     protected abstract TalkService<T> getTalkService();
 }

@@ -17,8 +17,8 @@ import java.util.List;
 public class UserTalkRepositoryTest extends AbstractRepositoryTest {
 
     public static final String TEST_U_NUMMER = "u123456";
-    public static final Long PID = Long.valueOf(1);
-    public static final Long PID_2 = Long.valueOf(2);
+    public static final String PID = "1";
+    public static final String PID_2 = "2";
     @Autowired
     private UserTalkRepository userTalkRepository;
 
@@ -36,7 +36,7 @@ public class UserTalkRepositoryTest extends AbstractRepositoryTest {
         createNewUserTalk(PID, new LocalTime(17, 2));
         createNewUserTalk(PID_2, new LocalTime(15, 2));
 
-        final List<Long> userTalks = userTalkRepository.findByUserId(TEST_U_NUMMER);
+        final List<String> userTalks = userTalkRepository.findByUserId(TEST_U_NUMMER);
 
         Assert.assertNotNull(userTalks);
         Assert.assertEquals(2, userTalks.size());
@@ -45,7 +45,7 @@ public class UserTalkRepositoryTest extends AbstractRepositoryTest {
     }
 
 
-    private void createNewUserTalk(final Long pid, final LocalTime startZeit){
+    private void createNewUserTalk(final String pid, final LocalTime startZeit){
         final UserTalk userTalk = new UserTalk();
         userTalk.setPid(pid);
         userTalk.setUserId(TEST_U_NUMMER);

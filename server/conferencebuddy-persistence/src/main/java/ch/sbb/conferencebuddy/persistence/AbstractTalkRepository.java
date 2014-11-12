@@ -13,5 +13,5 @@ import ch.sbb.conferencebuddy.model.Talk;
  */
 public interface AbstractTalkRepository<T extends Talk> extends JpaRepository<T, Long> {
 
-    List<T> findByPid(final Long pid);
+    List<T> findByPid(final String pid);
 }

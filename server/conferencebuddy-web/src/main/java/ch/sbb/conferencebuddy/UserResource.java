@@ -1,5 +1,6 @@
 package ch.sbb.conferencebuddy;
 
+import java.util.Collections;
 import java.util.List;
 
 import javax.ws.rs.*;
@@ -66,13 +67,10 @@ public class UserResource {
      */
     @GET
     @Path("/mytrack")
-    public long[] loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
-        List<Long> mytracks = userService.loadUserTracks(userId);
-        long[] retVal = new long[mytracks.size()];
-        for(int i=0 ; i<mytracks.size() ; i++){
-            retVal[i] = mytracks.get(i);
-
-        }
+    public String[] loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
+        final List<String> mytracks = userService.loadUserTracks(userId);
+        String[] retVal = new String[mytracks.size()];
+        retVal = mytracks.toArray(retVal);
         return retVal;
     }
 
@@ -80,7 +78,7 @@ public class UserResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes(MediaType.TEXT_PLAIN)
     @Path("admin/{pid}/{hour}/{minute}")
-    public void insertUserTalks(@PathParam("pid") final long pid, @PathParam("hour") final int hour, @PathParam("minute")final int minute, final String csv) {
-        userService.insertUserTalks(Long.valueOf(pid), new LocalTime(hour, minute), csv);
+    public void insertUserTalks(@PathParam("pid") final String pid, @PathParam("hour") final int hour, @PathParam("minute")final int minute, final String csv) {
+        userService.insertUserTalks(pid, new LocalTime(hour, minute), csv);
     }
 }

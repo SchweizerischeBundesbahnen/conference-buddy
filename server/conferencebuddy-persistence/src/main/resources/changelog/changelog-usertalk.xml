@@ -9,7 +9,7 @@
                 <constraints nullable="false" primaryKey="true" primaryKeyName="USER_TALK_PK"/>
             </column>
             <column name="VERSION" type="NUMBER(19,0)"/>
-            <column name="PID" type="NUMBER(19,0)">
+            <column name="PID" type="VARCHAR(10)">
                 <constraints nullable="false" />
             </column>
             <column name="USER_ID" type="VARCHAR(255)">

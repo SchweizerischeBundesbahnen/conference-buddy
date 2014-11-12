@@ -17,10 +17,10 @@ public interface UserService {
     /**
      * @param userId UUID out of {@link ch.sbb.conferencebuddy.model.User#id}
      */
-    public List<Long> loadUserTracks(final String userId);
+    public List<String> loadUserTracks(final String userId);
 
     /**
      * importing all users visiting a {@code pid}.
      */
-    void insertUserTalks(final Long pid, final LocalTime startTime, final String csv);
+    void insertUserTalks(final String pid, final LocalTime startTime, final String csv);
 }

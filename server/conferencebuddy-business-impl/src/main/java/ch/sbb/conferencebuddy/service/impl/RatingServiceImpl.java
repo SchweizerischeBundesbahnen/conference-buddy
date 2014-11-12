@@ -24,7 +24,7 @@ public class RatingServiceImpl extends AbstractTalkServiceImpl<Rating> implement
 
 
     @Override
-    public Rating loadUserRating(Long pid, String userId) {
+    public Rating loadUserRating(String pid, String userId) {
         Rating rating = ratingRepository.findByPidAndUserFk(pid, userId);
         if(rating == null) {
             rating = new Rating();
@@ -35,7 +35,7 @@ public class RatingServiceImpl extends AbstractTalkServiceImpl<Rating> implement
     }
 
     @Override
-    public Rating saveOrUpdate(final Long pid, final Long rate, final String userId) {
+    public Rating saveOrUpdate(final String pid, final Long rate, final String userId) {
         // pre condition
         Reject.ifNull(rate);
         Reject.ifNull(pid);
@@ -57,7 +57,7 @@ public class RatingServiceImpl extends AbstractTalkServiceImpl<Rating> implement
     /**
      * package private for testing only.
      */
-    Rating createNewRating(final Long pid, final Long rate, final String userId) {
+    Rating createNewRating(final String pid, final Long rate, final String userId) {
         final Rating rating = new Rating();
         rating.setRate(rate);
         rating.setPid(pid);
@@ -84,7 +84,7 @@ public class RatingServiceImpl extends AbstractTalkServiceImpl<Rating> implement
     }
 
     @Override
-    public List<Rating> loadAll(Long pid) {
+    public List<Rating> loadAll(String pid) {
         List<Rating> ratings = super.loadAll(pid);
         // n+1 select problem, could be solved with a local cache, but since this method is used only for testing, it's not worth the time
         for(Rating r : ratings)  {

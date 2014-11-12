@@ -16,18 +16,18 @@ public abstract class Talk extends LongIdEntity {
      * vortrag-Id.
      */
     @NotNull
-    private Long pid;
+    private String pid;
     /**
      * uuid as FK to {@link ch.sbb.conferencebuddy.model.User#id}
      */
     @NotNull
     private String userFk;
 
-    public Long getPid() {
+    public String getPid() {
         return pid;
     }
 
-    public void setPid(Long pid) {
+    public void setPid(String pid) {
         this.pid = pid;
     }
 
