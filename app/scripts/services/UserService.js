@@ -6,9 +6,10 @@ angular.module('conferenceBuddyApp').factory('UserService', ['$http', '$cookieSt
     var COOKIES_USERTOKEN = 'userToken';
     var COOKIES_USER = 'user';
 
-    $http.defaults.headers.common[HTTP_HEADER_TOKEN] = $cookieStore.get(COOKIES_USERTOKEN);
-
     return {
+        initFromCookie: function() {
+            $http.defaults.headers.common[HTTP_HEADER_TOKEN] = $cookieStore.get(COOKIES_USERTOKEN);
+        },
         isRegistered: function() {
             return typeof $cookieStore.get(COOKIES_USERTOKEN) === 'string';
         },
@@ -26,7 +27,6 @@ angular.module('conferenceBuddyApp').factory('UserService', ['$http', '$cookieSt
                 $http.defaults.headers.common[HTTP_HEADER_TOKEN] = result.data;
                 $cookieStore.put(COOKIES_USERTOKEN, result.data);
                 $cookieStore.put(COOKIES_USER, user);
-                thService.register(userToken, result.data);
             });
         },
         currentUser: function() {
