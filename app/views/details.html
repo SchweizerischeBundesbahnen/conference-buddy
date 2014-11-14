@@ -23,8 +23,11 @@
                 </div>
             </div>
         </div>
-        <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
-        <button type="button" ng-click="rate()" class="btn btn-default btn-sm" ng-show="isRegistered()">Bewerten</button>
+        <div class="pull-right">
+            <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
+            <button type="button" ng-click="rate()" class="btn btn-default btn-sm" ng-show="isRegistered()">Bewerten</button>
+        </div>
+        <br/>
         <comments pid="{{presentation.id}}"></comments>
     </div>
 </div>
