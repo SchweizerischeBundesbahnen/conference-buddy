@@ -5,6 +5,7 @@ import ch.sbb.conferencebuddy.persistence.UserTalkRepository;
 import ch.sbb.conferencebuddy.service.UserService;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReader;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReaderTest;
+import org.joda.time.LocalTime;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class UserServiceIT extends AbstractServiceIT {
 
-    public static final Long PID = Long.valueOf(1);
+    public static final String PID = "1";
 
     @Autowired
     private UserService userService;
@@ -43,7 +44,7 @@ public class UserServiceIT extends AbstractServiceIT {
     public void testLoadUserTracks() {
         initTestTracks();
         final String registerdUser = userTestFixture.registerNewUser(UserTestFixture.U_NUMMER_1);
-        final List<Long> pids = userService.loadUserTracks(registerdUser);
+        final List<String> pids = userService.loadUserTracks(registerdUser);
 
         Assert.assertNotNull(pids);
         Assert.assertEquals(1, pids.size());
@@ -55,7 +56,7 @@ public class UserServiceIT extends AbstractServiceIT {
                 "U123456;Daniel;Muster;DANIEL.MUSTER@SBB-bla.CH;IT-SWE-CD2-T29;\n" +
                 "U123457;Stefan;Meier;STEFAN.MEIER@SBB-bla.CH;IT-SWE-CD5-T55;";
 
-        userService.insertUserTalks(PID, testCSV);
+        userService.insertUserTalks(PID, new LocalTime(15, 10), testCSV);
         userTalkRepository.flush();
     }
 }

@@ -9,7 +9,7 @@ import ch.sbb.conferencebuddy.model.Rating;
  */
 public interface RatingService extends TalkService<Rating> {
 
-    Rating loadUserRating(final Long pid, final String userId);
+    Rating loadUserRating(final String pid, final String userId);
 
-    Rating saveOrUpdate(final Long pid, final Long rate, final String userId);
+    Rating saveOrUpdate(final String pid, final Long rate, final String userId);
 }

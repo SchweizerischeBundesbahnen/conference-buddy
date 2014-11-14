@@ -4,11 +4,13 @@ import ch.sbb.conferencebuddy.model.User;
 import ch.sbb.conferencebuddy.model.UserTalk;
 import ch.sbb.conferencebuddy.persistence.UserRepository;
 import ch.sbb.conferencebuddy.persistence.UserTalkRepository;
+import ch.sbb.conferencebuddy.service.EmailService;
 import ch.sbb.conferencebuddy.service.UserService;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReader;
 import ch.sbb.esta.core.exception.EstaRuntimeException;
 import ch.sbb.esta.core.stereotype.EstaService;
 import ch.sbb.esta.util.condition.Reject;
+import org.joda.time.LocalTime;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.BufferedReader;
@@ -39,8 +41,6 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
         // save
         userRepository.save(user);
 
-        // TODO: send mail!!!
-
         return id;
     }
 
@@ -48,7 +48,7 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
      * @param userId UUID out of {@link ch.sbb.conferencebuddy.model.User#id}
      */
     @Override
-    public List<Long> loadUserTracks(final String userId) {
+    public List<String> loadUserTracks(final String userId) {
         // pre condition
         validateUser(userId);
 
@@ -63,7 +63,7 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
     }
 
     @Override
-    public void insertUserTalks(Long pid, String csv) {
+    public void insertUserTalks(final String pid, final LocalTime startTime, final String csv) {
         Reject.ifNull(pid);
         Reject.ifEmpty(csv);
 
@@ -84,6 +84,7 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
             UserTalk userTalk = new UserTalk();
             userTalk.setPid(pid);
             userTalk.setUserId(uNummer);
+            userTalk.setStartTime(startTime);
             userTalkRepository.save(userTalk);
         }
     }

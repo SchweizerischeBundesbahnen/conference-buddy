@@ -48,7 +48,7 @@ public class RatingServiceImplTest extends AbstractTalkServiceImplIT {
     }
 
     @Override
-    protected Talk createTestValue(final Long pid, final String userUUID) {
+    protected Talk createTestValue(final String pid, final String userUUID) {
         final Rating rating = new Rating();
         rating.setUserFk(userUUID);
         rating.setPid(pid);

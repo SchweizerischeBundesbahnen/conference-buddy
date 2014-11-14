@@ -11,6 +11,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import ch.sbb.conferencebuddy.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.UUID;
 
@@ -43,21 +45,26 @@ public class UserWebserviceIT extends AbstractRestIT {
             "U654321;Daniel;Muster;DANIEL.MUSTER@SBB-bla.CH;IT-SWE-CD2-T29;\n" +
             "U754321;Stefan;Meier;STEFAN.MEIER@SBB-bla.CH;IT-SWE-CD5-T55;";
 
-    private static final long TEST_PID_1 = 1L;
-    private static final long TEST_PID_2 = 2L;
-    private static final long TEST_PID_99 = 99L;
+    private static final String TEST_PID_1 = "1";
+    private static final String TEST_PID_2 = "2";
+    private static final String TEST_PID_99 = "99";
 
     private static final String U_NUMMER = "U123456";
 
 
     private static final String NEW_COMMENT = "newComment";
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserWebserviceIT.class);
+
+
     @Test
     public void testInsertUserTalks() {
+        LOGGER.info(urlOfFirstPage);
+
         // 1)
-        importCSV(TEST_PID_1, TEST_CSV_1_AND_2);
-        importCSV(TEST_PID_2, TEST_CSV_1_AND_2);
-        importCSV(TEST_PID_99, TEST_CSV_99);
+        importCSV(TEST_PID_1, 8, 10, TEST_CSV_1_AND_2);
+        importCSV(TEST_PID_2, 14, 11, TEST_CSV_1_AND_2);
+        importCSV(TEST_PID_99, 16, 53, TEST_CSV_99);
 
         // 2)
         String userUUID = registerUser();
@@ -80,7 +87,7 @@ public class UserWebserviceIT extends AbstractRestIT {
 
     }
 
-    private void updateRatingWrongUserId(final String userUUID, final long pid, final long vote) {
+    private void updateRatingWrongUserId(final String userUUID, final String pid, final long vote) {
         final String url = urlOfFirstPage + "rating/" + pid;
         Response response = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", null).put(Entity.json(vote));
 
@@ -88,18 +95,18 @@ public class UserWebserviceIT extends AbstractRestIT {
         Assert.assertEquals(Response.Status.UNAUTHORIZED.getStatusCode(), response.getStatus());
     }
 
-    private void updateRating(final String userUUID, final long pid, final Long expectedId) {
+    private void updateRating(final String userUUID, final String pid, final Long expectedId) {
         Assert.assertEquals(expectedId, vote(userUUID, pid, 2).getId());
     }
 
-    private Long createRating(final String userUUID, final Long pid) {
+    private Long createRating(final String userUUID, final String pid) {
         return vote(userUUID, pid, 6).getId();
     }
 
     /**
      * internal helper class.
      */
-    private Rating vote(final String userUUID, final Long pid, final long vote) {
+    private Rating vote(final String userUUID, final String pid, final long vote) {
         final String url = urlOfFirstPage + "rating/" + pid;
         Rating rating = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", userUUID).put(Entity.json(vote), Rating.class);
 
@@ -160,7 +167,7 @@ public class UserWebserviceIT extends AbstractRestIT {
     private void loadMyTrack(final String userUUID) {
         final String url = urlOfFirstPage + "mytrack";
 
-        long[] mytracks = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", userUUID).get(long[].class);
+        final String[] mytracks = client.target(url).request(MediaType.APPLICATION_JSON).header("X-Access-Token", userUUID).get(String[].class);
         Assert.assertNotNull(mytracks);
         Assert.assertEquals(2, mytracks.length);
 
@@ -172,7 +179,7 @@ public class UserWebserviceIT extends AbstractRestIT {
         final User user = new User();
         user.setUserId(U_NUMMER);
         user.setName("DANIEL MUSTER");
-        user.setEmail("DANIEL.MUSTER@SBB-bla.CH");
+        user.setEmail("mein.name@mein.domain.go");
 
 
         final String userUUID = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.json(user), String.class);
@@ -181,8 +188,8 @@ public class UserWebserviceIT extends AbstractRestIT {
         return userUUID;
     }
 
-    private void importCSV(final long pid, final String csv){
-        final String url = urlOfFirstPage + "admin/" + pid;
+    private void importCSV(final String pid, final int hour, final int minutes, final String csv){
+        final String url = urlOfFirstPage + "admin/" + pid + "/" + hour + "/" + minutes;
 
         final Response response = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.text(csv));
         Assert.assertNotNull(response);

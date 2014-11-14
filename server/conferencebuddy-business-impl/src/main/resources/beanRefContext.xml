@@ -16,6 +16,8 @@
 				<value>classpath:esta-cache.xml</value>
 				<value>classpath:persistence-context.xml</value>
 				<value>classpath:root-context.xml</value>
+                <value>classpath:scheduled-async-context.xml</value>
+                <value>classpath:email-config-context.xml</value>
 			</list>
 		</constructor-arg>
 	</bean>

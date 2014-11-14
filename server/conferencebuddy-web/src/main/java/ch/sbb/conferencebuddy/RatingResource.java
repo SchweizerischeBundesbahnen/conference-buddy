@@ -52,13 +52,13 @@ public class RatingResource {
 
     @GET
     @Path("/{pid}")
-    public Rating load(@PathParam("pid") final long pid, @HeaderParam("X-Access-Token") String userId){
+    public Rating load(@PathParam("pid") final String pid, @HeaderParam("X-Access-Token") String userId){
         return ratingService.loadUserRating(pid, userId);
     }
 
     @PUT
-    @Path("/")
-    public Rating update(@PathParam("pid") final long pid , final long rate, @HeaderParam("X-Access-Token") String userId) {
+    @Path("/{pid}")
+    public Rating update(@PathParam("pid") final String pid , final long rate, @HeaderParam("X-Access-Token") String userId) {
         return ratingService.saveOrUpdate(pid, rate, userId);
     }
 }

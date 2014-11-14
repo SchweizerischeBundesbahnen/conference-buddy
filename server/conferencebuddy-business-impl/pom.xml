@@ -41,6 +41,13 @@
             <artifactId>esta-unittest-util</artifactId>
         </dependency>
 
+        <!-- email -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+
         <!-- integration test-like for EstaServices -->
         <dependency>
             <groupId>ch.sbb.esta</groupId>

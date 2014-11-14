@@ -28,7 +28,7 @@ public class CommentRepositoryTest extends AbstractRepositoryTest {
     @Test
     public void testCRUDComment(){
         final Comment comment = new Comment();
-        comment.setPid(Long.valueOf(1));
+        comment.setPid("1");
         comment.setAuthor("author");
         comment.setValue("comment");
         comment.setUserFk(USER_ID);

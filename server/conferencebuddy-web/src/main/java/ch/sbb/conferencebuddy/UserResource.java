@@ -1,24 +1,20 @@
 package ch.sbb.conferencebuddy;
 
-import ch.sbb.conferencebuddy.model.User;
-import ch.sbb.conferencebuddy.service.UserService;
-import ch.sbb.esta.util.condition.Reject;
+import java.util.Collections;
+import java.util.List;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+
+import org.joda.time.LocalTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.HeaderParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.util.List;
+import ch.sbb.conferencebuddy.model.User;
+import ch.sbb.conferencebuddy.service.UserService;
+import ch.sbb.esta.util.condition.Reject;
 
 /**
  * User handling.
@@ -71,31 +67,18 @@ public class UserResource {
      */
     @GET
     @Path("/mytrack")
-    public long[] loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
-        //TODO Gilles: token validation for each request
-        if(!isValidUserId(userId)) {
-            throw new WebApplicationException(Response.status(Response.Status.UNAUTHORIZED)
-                    .entity("YOU SHALL NOT PASS!").type(MediaType.APPLICATION_JSON).build());
-        }
-        List<Long> mytracks = userService.loadUserTracks(userId);
-        long[] retVal = new long[mytracks.size()];
-        for(int i=0 ; i<mytracks.size() ; i++){
-            retVal[i] = mytracks.get(i);
-
-        }
+    public String[] loadUserTracks(@HeaderParam("X-Access-Token") String userId) {
+        final List<String> mytracks = userService.loadUserTracks(userId);
+        String[] retVal = new String[mytracks.size()];
+        retVal = mytracks.toArray(retVal);
         return retVal;
     }
 
     @POST
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes(MediaType.TEXT_PLAIN)
-    @Path("admin/{pid}")
-    public void insertUserTalks(@PathParam("pid") final long pid, final String csv) {
-        userService.insertUserTalks(Long.valueOf(pid), csv);
-    }
-
-
-    private boolean isValidUserId(String userId) {
-        return userId != null /* && validateToken(userId) */;
+    @Path("admin/{pid}/{hour}/{minute}")
+    public void insertUserTalks(@PathParam("pid") final String pid, @PathParam("hour") final int hour, @PathParam("minute")final int minute, final String csv) {
+        userService.insertUserTalks(pid, new LocalTime(hour, minute), csv);
     }
 }

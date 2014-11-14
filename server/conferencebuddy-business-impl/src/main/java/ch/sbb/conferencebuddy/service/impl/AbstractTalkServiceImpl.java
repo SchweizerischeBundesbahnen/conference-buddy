@@ -15,7 +15,7 @@ import ch.sbb.esta.util.condition.Reject;
 public abstract class AbstractTalkServiceImpl<T extends Talk> extends AbstractServiceImpl implements TalkService<T> {
 
     @Override
-    public List<T> loadAll(final Long pid) {
+    public List<T> loadAll(final String pid) {
         // pre condition
         Reject.ifNull(pid);
         return getAbstractTalkRepository().findByPid(pid);
