@@ -12,6 +12,8 @@ import ch.sbb.esta.core.stereotype.EstaService;
 import ch.sbb.esta.util.condition.Reject;
 import org.springframework.util.StringUtils;
 
+import java.util.List;
+
 /**
  * @author Gilles Zimmermann
  *
@@ -22,6 +24,13 @@ public class CommentServiceImpl extends AbstractTalkServiceImpl<Comment> impleme
 
     @Autowired
     private CommentRepository commentRepository;
+
+    @Override
+    public List<Comment> loadAll(final String pid) {
+        // pre condition
+        Reject.ifNull(pid);
+        return commentRepository.findByPidOrderByTimestampDesc(pid);
+    }
 
     @Override
     public Comment save(Comment value, String userId) {
