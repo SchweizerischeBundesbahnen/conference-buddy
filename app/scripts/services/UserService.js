@@ -18,7 +18,7 @@ angular.module('conferenceBuddyApp').factory('UserService',
             });
         },
         validate: function(userToken) {
-            $http.get(REST_URL + '/user').then(function(result) {
+            return $http.get(REST_URL + '/user').then(function(result) {
                 $http.defaults.headers.common[AUTH.HTTP_HEADER_TOKEN] = result.data;
                 $cookieStore.put(AUTH.COOKIES_USERTOKEN, result.data);
                 $cookieStore.put(AUTH.COOKIES_USER, user);
