@@ -151,8 +151,6 @@ public class UserWebserviceIT extends AbstractRestIT {
 
         final Comment comment = new Comment();
         comment.setValue("test");
-        comment.setAuthor("Tester");
-        comment.setTimestamp(new DateTime());
         comment.setPid(TEST_PID_1);
 
         final String url = urlOfFirstPage + "comment";
