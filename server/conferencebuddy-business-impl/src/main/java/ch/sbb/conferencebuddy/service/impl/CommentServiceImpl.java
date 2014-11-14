@@ -1,5 +1,7 @@
 package ch.sbb.conferencebuddy.service.impl;
 
+import ch.sbb.conferencebuddy.model.User;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import ch.sbb.conferencebuddy.model.Comment;
@@ -8,6 +10,7 @@ import ch.sbb.conferencebuddy.persistence.CommentRepository;
 import ch.sbb.conferencebuddy.service.CommentService;
 import ch.sbb.esta.core.stereotype.EstaService;
 import ch.sbb.esta.util.condition.Reject;
+import org.springframework.util.StringUtils;
 
 /**
  * @author Gilles Zimmermann
@@ -19,6 +22,20 @@ public class CommentServiceImpl extends AbstractTalkServiceImpl<Comment> impleme
 
     @Autowired
     private CommentRepository commentRepository;
+
+    @Override
+    public Comment save(Comment value, String userId) {
+        validateUser(userId);
+        if(value.getTimestamp() == null){
+            value.setTimestamp(new DateTime());
+        }
+        if(StringUtils.isEmpty(value.getAuthor())) {
+            User user = userRepository.findOne(userId);
+            value.setAuthor(user.getName());
+        }
+
+        return super.save(value, userId);
+    }
 
     @Override
     public void update(final Long id, final String value, final String userId) {

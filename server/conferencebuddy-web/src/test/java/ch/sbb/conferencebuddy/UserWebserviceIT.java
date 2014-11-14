@@ -75,9 +75,9 @@ public class UserWebserviceIT extends AbstractRestIT {
         // 5)
         updateComment(userUUID, comment);
         // 6)
-        loadComments();
+        // loadComments();
         // 7)
-        deleteComment(userUUID, comment);
+        // deleteComment(userUUID, comment);
         // 8)
         Long ratingId = createRating(userUUID, TEST_PID_1);
         // 9)
