@@ -12,10 +12,12 @@ import ch.sbb.esta.core.stereotype.EstaService;
 import ch.sbb.esta.util.condition.Reject;
 import org.joda.time.LocalTime;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -59,7 +61,12 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
         Reject.ifNull(user);
 
         // load all talks by u-nummer
-        return userTalkRepository.findByUserId(user.getUserId());
+        if(!StringUtils.isEmpty(user.getUserId())){
+            return userTalkRepository.findByUserId(user.getUserId().toUpperCase());
+        }
+        else{
+            return new ArrayList();
+        }
     }
 
     @Override
