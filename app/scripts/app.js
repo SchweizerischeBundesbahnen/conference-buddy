@@ -11,7 +11,7 @@ app.constant('ROUTES', {
     DETAILS: '/details',
     REGISTER: '/register'
 });
-app.constant('REST_URL', '/conferencebuddy-web');
+app.constant('REST_URL', '/service');
 app.constant('AUTH', {
     HTTP_HEADER_TOKEN: 'X-Access-Token',
     COOKIES_USERTOKEN: 'userToken',
