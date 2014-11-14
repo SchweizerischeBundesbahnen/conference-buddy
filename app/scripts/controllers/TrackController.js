@@ -1,14 +1,17 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', 'ConferenceService', 'MyTrackService', 'UserService', 'DialogService', function($scope, conferenceService, myTrackService, userService, dialogService) {
+['$scope', 'ConferenceService', 'MyTrackService', 'UserService', 'DialogService', function($scope, conferenceService, myTrackService, userService,
+                                                                                           dialogService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.copperfield = '';
     $scope.myTrack = [];
 
     // conferenceService  will initialized after conferenceService (http-promise!)
-    $scope.conferenceService = {hasNextTrack: function() {}, hasPreviousTrack: function() {}};
+    $scope.conferenceService = {hasNextTrack: function() {
+    }, hasPreviousTrack: function() {
+    }};
 
     conferenceService.load().then(function(conference) {
         $scope.conferenceService = conferenceService;
@@ -18,7 +21,9 @@ angular.module('conferenceBuddyApp').controller('TrackController',
             myTrackService.load().then(function(myTrack) {
                 $scope.myTrack = myTrack;
             }).catch(function(err) {
-                dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
+                if (err.status !== 401) {
+                    dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
+                }
             });
         }
     }).catch(function(err) {

@@ -1,8 +1,8 @@
 <div class="container content copperfield" ng-class="{magic: copperfield}">
     <div class="row track">
         <p class="h3">
-        <button type="button" ng-click="goBack()" class="btn btn-default">
-            <span class="glyphicon glyphicon-chevron-left"></span><strong> Zurück</strong>
+        <button type="button" ng-click="goBack()" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-chevron-left"></span> Zurück
         </button>
         </p>
         <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
@@ -24,9 +24,7 @@
             </div>
         </div>
         <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
-        <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">
-            <strong>Bewerten</strong>
-        </button>
+        <button type="button" ng-click="rate()" class="btn btn-default btn-sm" ng-show="isRegistered()">Bewerten</button>
         <comments pid="{{presentation.id}}"></comments>
     </div>
 </div>

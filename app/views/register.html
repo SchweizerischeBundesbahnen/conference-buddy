@@ -8,7 +8,7 @@
             Wenn Du Vorträge bewerten und Kommentare abgeben möchtest, musst Du Dich registrieren. Zusätzlich erhalten SBB Mitarbeiter nach der
             Registrierung Zugriff auf Funktion MyTracks. MyTracks zeigt Dir die Vorträge an, zu denen Du Dich im E-Tutor angemeldet hast.
         </p>
-        <button type="submit" ng-click="showRegistration()" class="btn btn-default">Weiter</button>
+        <button type="submit" ng-click="showRegistration()" class="btn btn-default btn-sm">Weiter</button>
     </div>
 
     <div class="row registration" ng-show="step === 2">
@@ -31,9 +31,9 @@
             <div class="form-group">
                 <label for="userId">U-Nummer (nur SBB Mitarbeiter)</label>
                 <input type="text" class="form-control" ng-model="user.userId" id="userId" ng-pattern="/u(e?)\d+/"
-                       placeholder="SBB User-Id oder leer lassen"/>
+                       placeholder="U-Nummer eingeben oder leer lassen"/>
             </div>
-            <button type="submit" class="btn btn-default" ng-disabled="registration.$invalid">Registrieren</button>
+            <button type="submit" class="btn btn-default btn-sm" ng-disabled="registration.$invalid">Registrieren</button>
         </form>
     </div>
 
