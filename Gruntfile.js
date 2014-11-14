@@ -72,17 +72,17 @@ module.exports = function(grunt) {
             server: {
                 proxies: [
                     {
-                        context: '/conferencebuddy-web',
+                        context: '/service',
                         host: 'sbb-conferencebuddy.elasticbeanstalk.com',
                         port: 80,
                         https: false,
                         changeOrigin: false,
                         xforward: false,
                         headers: {
-                            'x-custom-added-header': 'foo'
+                            'x-custom-added-header': 'korhan-fooya'
                         },
                          rewrite: {
-                            '^/conferencebuddy-web': '/'
+                            '^/service': '/service'
                         }
                     }
                 ]

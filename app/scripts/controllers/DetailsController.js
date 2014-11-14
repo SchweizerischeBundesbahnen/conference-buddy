@@ -1,8 +1,11 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('DetailsController',
-    ['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES', function($scope, $routeParams, $window, $location,
-        conferenceService, ratingService, userService, ROUTES) {
+['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES', function($scope, $routeParams,
+                                                                                                                           $window, $location,
+                                                                                                                           conferenceService,
+                                                                                                                           ratingService, userService,
+                                                                                                                           ROUTES) {
 
     $scope.conference = {tracks: []};
     $scope.presentation = null;
@@ -16,14 +19,7 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
             // to the home page
             $location.path(ROUTES.TRACKS);
         } else {
-            ratingService.load($scope.presentation.id).then(function(rating) {
-                $scope.hasRatings = (rating.average !== undefined);
-                if ($scope.hasRatings) {
-                    $scope.averageRating = rating.average;
-                }
-                $scope.hasMyRating = (rating.myRating !== undefined);
-                $scope.myRating = $scope.hasMyRating ? rating.myRating : 0;
-            });
+            loadRatings();
         }
     });
 
@@ -33,11 +29,8 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
 
     $scope.rate = function() {
         if (userService.isRegistered()) {
-            // "Rate!" sollte sowieso nur angezeigt werden, wenn der User registriert ist. Trotzdem hier nochmal prüfen zur Sicherheit.
             ratingService.save($scope.presentation.id, $scope.myRating).then(function(rating) {
-                $scope.hasMyRating = true;
-                $scope.hasRatings = true;
-                $scope.averageRating = rating.average;
+                loadRatings();
             });
         }
     };
@@ -45,4 +38,15 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
     $scope.isRegistered = function() {
         return userService.isRegistered();
     };
+
+    function loadRatings() {
+        ratingService.load($scope.presentation.id).then(function(rating) {
+            $scope.hasRatings = (rating.averageRate !== undefined);
+            if ($scope.hasRatings) {
+                $scope.averageRating = rating.averageRate;
+            }
+            $scope.myRating = (rating.rate !== undefined) ? rating.rate : 0;
+        });
+
+    }
 }]);

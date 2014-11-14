@@ -1,17 +1,19 @@
 <div style="padding-left:15px; padding-right: 15px">
     <div class="row">
         <hr/>
-        <h4>Kommentare
-            <button ng-click="load()" type="button" class="btn btn-default pull-right btn-xs"><span class="glyphicon glyphicon-repeat"></span>
+        <p class="h4">Kommentare
+            <button ng-click="load()" type="button" class="btn btn-default pull-right btn-sm">
+                <span class="glyphicon glyphicon-repeat"></span>
             </button>
-        </h4>
+        </p>
 
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
                 <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
                           ng-model="commentEntry.value" required></textarea>
             </div>
-            <button class="btn btn-primary pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
+            <button class="btn btn-default pull-right btn-sm" ng-disabled="commentsForm.$invalid">Abschicken</button>
+
         </form>
         <div ng-show="!showInputForm()"><a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> dich, um hier teilnehmen zu
             können!
@@ -23,7 +25,7 @@
             <div class="panel-body">
                 <strong>{{formatDate(comment)}}</strong>
                 {{comment.value}}
-                <cite class="clearfix">—{{comment.author.name}}</cite>
+                <cite class="clearfix"> - {{comment.author}}</cite>
             </div>
         </div>
     </div>
