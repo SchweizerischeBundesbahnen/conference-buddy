@@ -145,3 +145,7 @@ textarea {
 .content {
     padding-top: 55px;
 }
+
+cite {
+    font-style: italic;
+}

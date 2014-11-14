@@ -79,10 +79,10 @@ module.exports = function(grunt) {
                         changeOrigin: false,
                         xforward: false,
                         headers: {
-                            'x-custom-added-header': 'foo'
+                            'x-custom-added-header': 'korhan-fooya'
                         },
                          rewrite: {
-                            '^/conferencebuddy-web': '/'
+                            '^/conferencebuddy-web': '/service'
                         }
                     }
                 ]
