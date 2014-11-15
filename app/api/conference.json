@@ -270,14 +270,14 @@
             "title": "Opening Remarks",
             "abstract": "",
             "speakerIds": [28],
-            "common": false
+            "common": true
         },
         {
             "id": "closing",
             "title": "Closing Remarks",
             "abstract": "",
             "speakerIds": [28],
-            "common": false
+            "common": true
         },
         {
             "id": "pause",
