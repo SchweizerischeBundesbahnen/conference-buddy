@@ -1,12 +1,11 @@
 <div class="container content">
     <div class="row track">
-        <p class="h3"><strong>{{conference.name}}</strong> <i>logo</i></p>
-
+        <p class="h3"><strong>{{conference.name}}</strong></p>
         <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
-
         <p><i>Beschreibung der Veranstaltung...</i></p>
 
-        <p class="h4">Bewertung
+        <p class="h4">
+            Bewertung
             <small>
                 <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
             </small>
@@ -15,6 +14,7 @@
             <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default btn-sm" ng-show="isRegistered()">Bewerten</button>
         </div>
+        <br/>
         <hr/>
         <comments pid="{{conference.id}}"></comments>
     </div>
