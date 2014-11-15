@@ -4,10 +4,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
 ['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES', function($scope, $location, conferenceService, userService,
                                                                                                 dialogService, ROUTES) {
 
-    $scope.conference = {};
-    $scope.currentTrack = {};
     $scope.step = 1;
-
     $scope.user = {};
 
     checkRegistrationLink();
