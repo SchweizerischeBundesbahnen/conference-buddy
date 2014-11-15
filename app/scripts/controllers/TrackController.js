@@ -22,12 +22,12 @@ angular.module('conferenceBuddyApp').controller('TrackController',
                 $scope.myTrack = myTrack;
             }).catch(function(err) {
                 if (err.status !== 401) {
-                    dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', err.data + ' HTTP-Status:' + err.status);
+                    dialogService.showError('Backend Error', 'Failed to load myTrack data from the backend', 'HTTP-Status:' + err.status);
                 }
             });
         }
     }).catch(function(err) {
-        dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
+        dialogService.showError('Backend Error', 'Failed to load conference data from the backend', 'HTTP-Status:' + err.status);
     });
 
     $scope.nextTrack = function() {

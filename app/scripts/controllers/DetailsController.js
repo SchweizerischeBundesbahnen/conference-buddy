@@ -1,11 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('DetailsController',
-['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES', function($scope, $routeParams,
-                                                                                                                           $window, $location,
-                                                                                                                           conferenceService,
-                                                                                                                           ratingService, userService,
-                                                                                                                           ROUTES) {
+['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES',
+    function($scope, $routeParams, $window, $location, conferenceService, ratingService, userService, ROUTES) {
 
     $scope.conference = {tracks: []};
     $scope.presentation = null;

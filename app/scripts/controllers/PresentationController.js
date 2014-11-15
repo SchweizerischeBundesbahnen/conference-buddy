@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').controller('PresentationController', ['$scope', '$location', 'ConferenceService', 'ROUTES', function($scope, $location, conferenceService, ROUTES) {
+angular.module('conferenceBuddyApp').controller('PresentationController', ['$scope', '$location', 'ConferenceService', 'ROUTES',
+    function($scope, $location, conferenceService, ROUTES) {
 
     $scope.ROUTES = ROUTES;
 
