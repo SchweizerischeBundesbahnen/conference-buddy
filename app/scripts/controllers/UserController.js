@@ -9,10 +9,6 @@ angular.module('conferenceBuddyApp').controller('UserController',
 
     checkRegistrationLink();
 
-    $scope.showTracks = function() {
-        $location.path(ROUTES.TRACKS);
-    };
-
     $scope.showRegistration = function() {
         $scope.step++;
     };
@@ -35,7 +31,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
     function checkRegistrationLink() {
         if ($location.hash()) {
             userService.validate($location.hash()).then(function() {
-                $scope.showTracks();
+                $location.path(ROUTES.MYTRACK);
             }).catch(function(err) {
                 $location.path(ROUTES.REGISTER);
             });
