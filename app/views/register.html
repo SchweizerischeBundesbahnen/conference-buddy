@@ -1,14 +1,19 @@
 <div class="container content">
     <div class="row track" ng-show="step === 1">
-        <p class="h3"><strong>Registrierung</strong>
+        <p class="h3">
+            <strong>Registrierung</strong>
             <small>(Schritt 1 von 2)</small>
         </p>
-        <p><i>Eine kurze Erläuterung hier: Warum? Kommentar, Rating, MyTrack...</i></p>
+        <p>
+            Wenn Du Vorträge bewerten und Kommentare abgeben möchtest, musst Du Dich registrieren. Zusätzlich erhalten SBB Mitarbeiter nach der
+            Registrierung Zugriff auf Funktion MyTracks. MyTracks zeigt Dir die Vorträge an, zu denen Du Dich im E-Tutor angemeldet hast.
+        </p>
         <button type="submit" ng-click="showRegistration()" class="btn btn-default btn-sm">Weiter</button>
     </div>
 
     <div class="row registration" ng-show="step === 2">
-        <p class="h3"><strong>Registrierung</strong>
+        <p class="h3">
+            <strong>Registrierung</strong>
             <small>(Schritt 2 von 2)</small>
         </p>
         <form name="registration" novalidate role="form" ng-submit="register()" class="css-form">
@@ -16,28 +21,29 @@
                 <label for="email">E-Mail</label>
                 <div class="input-group">
                     <div class="input-group-addon">@</div>
-                    <input class="form-control" ng-model="user.email" type="email" id="email" required placeholder="E-Mail eingeben">
+                    <input class="form-control" ng-model="user.email" type="email" id="email" required placeholder="E-Mail eingeben"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" ng-model="user.name" id="name" required placeholder="Name eingeben">
+                <input type="text" class="form-control" ng-model="user.name" id="name" required placeholder="Name eingeben"/>
             </div>
             <div class="form-group">
-                <label for="userId">SBB User-Id (nur Mitarbeiter)</label>
+                <label for="userId">U-Nummer (nur SBB Mitarbeiter)</label>
                 <input type="text" class="form-control" ng-model="user.userId" id="userId" ng-pattern="/u(e?)\d+/"
-                       placeholder="SBB User-Id oder leer lassen">
+                       placeholder="U-Nummer eingeben oder leer lassen"/>
             </div>
             <button type="submit" class="btn btn-default btn-sm" ng-disabled="registration.$invalid">Registrieren</button>
         </form>
     </div>
 
     <div class="row registration" ng-show="step === 3">
-        <p class="h3"><strong>Danke</strong></p>
-
-        <p><i>Und jetzt?? <br>
-            Bestätigung Kommentar + Rating <br>
-            Dann weiter mit MyTrack falls vorhanden</i></p>
+        <p class="h3">
+            <strong>Registrierung erfolgreich</strong>
+        </p>
+        <p>
+            Nun kannst Du Vorträge bewerten und Kommentare abgeben. Viel Spass!
+        </p>
     </div>
 </div>
 
