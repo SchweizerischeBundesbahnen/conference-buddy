@@ -26,7 +26,7 @@ public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
         final Comment comment = commentService.loadAll(TEST_PID).get(0); // ugly
         commentRepository.flush();
         final String newComment = "new-comment";
-        commentService.update(comment.getId(), newComment, userUUID1);
+        commentService.update(comment.getId(), newComment, comment.getUserFk());
 
         final List<Comment> comments = commentService.loadAll(TEST_PID);
         boolean found = false;
@@ -45,7 +45,7 @@ public class CommentServiceImplTest extends AbstractTalkServiceImplIT {
     public void testDelete() {
         final Comment comment = commentService.loadAll(TEST_PID).get(0); // ugly
         commentRepository.flush();
-        commentService.delete(comment.getId(), userUUID1);
+        commentService.delete(comment.getId(), comment.getUserFk());
 
         final List<Comment> comments = commentService.loadAll(TEST_PID);
         boolean found = false;

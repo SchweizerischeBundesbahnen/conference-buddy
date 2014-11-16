@@ -133,18 +133,68 @@
                         </systemProperties>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>pl.allegro</groupId>
+                    <artifactId>grunt-maven-plugin</artifactId>
+                    <version>1.4.1</version>
+                    <configuration>
+                        <!-- relative to src/main/webapp/, default: static -->
+                        <jsSourceDirectory>../../</jsSourceDirectory>
+
+                        <!-- example options usage to get verbose output in logs -->
+                        <gruntOptions>
+                            <gruntOption>--verbose</gruntOption>
+                        </gruntOptions>
+
+                        <!-- add more configuration here -->
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <!-- ??? -->
+                                <goal>create-resources</goal>
+                                <goal>npm</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
+            <!-- not yet working :( -->
+            <!-- plugin>
+                <groupId>pl.allegro</groupId>
+                <artifactId>grunt-maven-plugin</artifactId>
+            </plugin -->
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
+
                 <configuration>
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
                             <classpathPrefix>WEB-INF/lib/</classpathPrefix>
+                            <addClasspath>true</addClasspath>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
+                        <manifestEntries>
+                            <Build-Number>${buildNumber}</Build-Number>
+                            <Build-Time>${maven.build.timestamp}</Build-Time>
+                        </manifestEntries>
                     </archive>
+                    <webResources>
+                        <!-- angular client einbinden -->
+                        <!-- resource>
+                            <directory>../../client_dist/</directory>
+                        </resource -->
+                        <webResource>
+                            <directory>${basedir}/src/main/webapp/WEB-INF</directory>
+                            <includes>
+                                <include>web.xml</include>
+                            </includes>
+                            <targetPath>WEB-INF</targetPath>
+                            <filtering>true</filtering>
+                        </webResource>
+                    </webResources>
                 </configuration>
             </plugin>
             <plugin>

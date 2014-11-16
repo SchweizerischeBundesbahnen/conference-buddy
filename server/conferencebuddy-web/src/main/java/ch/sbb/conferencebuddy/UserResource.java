@@ -52,9 +52,19 @@ public class UserResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("/user")
     public String register(final User user) {
-        Reject.ifNull(user);
-
         return userService.register(user);
+    }
+
+    /**
+     * Registriert einen Benutzer und generiert einen eindeutigen Token, am besten eine UUID.
+     *
+     * @return unique ID
+     */
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/user")
+    public User validateUser(@HeaderParam("X-Access-Token") String userId) {
+        return userService.validateAndLoadUser(userId);
     }
 
 

@@ -75,9 +75,9 @@ public class UserWebserviceIT extends AbstractRestIT {
         // 5)
         updateComment(userUUID, comment);
         // 6)
-        loadComments();
+        // loadComments();
         // 7)
-        deleteComment(userUUID, comment);
+        // deleteComment(userUUID, comment);
         // 8)
         Long ratingId = createRating(userUUID, TEST_PID_1);
         // 9)
@@ -151,8 +151,6 @@ public class UserWebserviceIT extends AbstractRestIT {
 
         final Comment comment = new Comment();
         comment.setValue("test");
-        comment.setAuthor("Tester");
-        comment.setTimestamp(new DateTime());
         comment.setPid(TEST_PID_1);
 
         final String url = urlOfFirstPage + "comment";
