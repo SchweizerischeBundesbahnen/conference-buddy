@@ -31,6 +31,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
     function checkRegistrationLink() {
         if ($location.hash()) {
             userService.validate($location.hash()).then(function() {
+                $location.hash('');
                 $location.path(ROUTES.MYTRACK);
             }).catch(function(err) {
                 $location.path(ROUTES.REGISTER);
