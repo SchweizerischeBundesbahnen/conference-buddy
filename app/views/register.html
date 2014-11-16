@@ -5,13 +5,16 @@
             <small>(Schritt 1 von 2)</small>
         </p>
         <p>
-            Wenn Du Vorträge bewerten und Kommentare abgeben möchtest, musst Du Dich registrieren. Zusätzlich erhalten SBB Mitarbeiter nach der
-            Registrierung Zugriff auf Funktion MyTracks. MyTracks zeigt Dir die Vorträge an, zu denen Du Dich im E-Tutor angemeldet hast.
+            Wenn Du Vorträge bewerten und Kommentare abgeben möchtest, musst Du Dich registrieren.
+        </p>
+
+        <p>Zusätzlich erhalten SBB Mitarbeiter nach der Registrierung Zugriff auf die Funktion MyTrack.
+            MyTrack zeigt Dir die Vorträge an, zu denen Du Dich im E-Tutor angemeldet hast.
         </p>
         <button type="submit" ng-click="showRegistration()" class="btn btn-default btn-sm">Weiter</button>
     </div>
 
-    <div class="row registration" ng-show="step === 2">
+    <div class="row track registration" ng-show="step === 2">
         <p class="h3">
             <strong>Registrierung</strong>
             <small>(Schritt 2 von 2)</small>
@@ -19,6 +22,7 @@
         <form name="registration" novalidate role="form" ng-submit="register()" class="css-form">
             <div class="form-group">
                 <label for="email">E-Mail</label>
+
                 <div class="input-group">
                     <div class="input-group-addon">@</div>
                     <input class="form-control" ng-model="user.email" type="email" id="email" required placeholder="E-Mail eingeben"/>
@@ -37,13 +41,11 @@
         </form>
     </div>
 
-    <div class="row registration" ng-show="step === 3">
+    <div class="row track registration" ng-show="step === 3">
         <p class="h3">
             <strong>Registrierung erfolgreich</strong>
         </p>
-        <p>
-            Nun kannst Du Vorträge bewerten und Kommentare abgeben. Viel Spass!
-        </p>
+        <p>Du erhälst bald eine E-Mail mit der Bestätigung.</p>
     </div>
 </div>
 

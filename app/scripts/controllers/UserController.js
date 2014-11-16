@@ -4,15 +4,10 @@ angular.module('conferenceBuddyApp').controller('UserController',
 ['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES',
     function($scope, $location, conferenceService, userService, dialogService, ROUTES) {
 
-    $scope.conference = {};
-    $scope.currentTrack = {};
     $scope.step = 1;
-
     $scope.user = {};
 
-    $scope.showTracks = function() {
-        $location.path(ROUTES.TRACKS);
-    };
+    checkRegistrationLink();
 
     $scope.showRegistration = function() {
         $scope.step++;
@@ -22,7 +17,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
         userService.register($scope.user).then(function() {
             $scope.step++;
         }).catch(function(err) {
-            dialogService.showError('Backend Error', 'Failed to register at the backend', err.data + ' HTTP-Status:' + err.status);
+            dialogService.showError('Backend Error', 'Failed to register at the backend', 'HTTP-Status:' + err.status);
             $scope.step--;
         });
     };
@@ -30,7 +25,17 @@ angular.module('conferenceBuddyApp').controller('UserController',
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
     }).catch(function(err) {
-        dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
+        dialogService.showError('Backend Error', 'Failed to load conference data from the backend', 'HTTP-Status:' + err.status);
     });
+
+    function checkRegistrationLink() {
+        if ($location.hash()) {
+            userService.validate($location.hash()).then(function() {
+                $location.path(ROUTES.MYTRACK);
+            }).catch(function(err) {
+                $location.path(ROUTES.REGISTER);
+            });
+        }
+    }
 
 }]);

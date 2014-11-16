@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('ConferenceController',
-['$scope', '$location', 'ConferenceService', 'RatingService', 'UserService', 'DialogService', function($scope, $location, conferenceService,
-                                                                                                       ratingService, userService, dialogService) {
+['$scope', '$location', 'ConferenceService', 'RatingService', 'UserService', 'DialogService',
+    function($scope, $location, conferenceService, ratingService, userService, dialogService) {
 
     $scope.averageRating = 0;
     $scope.hasRatings = false;
@@ -12,7 +12,7 @@ angular.module('conferenceBuddyApp').controller('ConferenceController',
         $scope.conference = conference;
         loadRatings();
     }).catch(function(err) {
-        dialogService.showError('Backend Error', 'Failed to load conference data from the backend', err.data + ' HTTP-Status:' + err.status);
+        dialogService.showError('Backend Error', 'Failed to load conference data from the backend', 'HTTP-Status:' + err.status);
     });
 
     $scope.rate = function() {
@@ -35,7 +35,7 @@ angular.module('conferenceBuddyApp').controller('ConferenceController',
             }
             $scope.myRating = (rating.rate !== undefined) ? rating.rate : 0;
         }).catch(function(err) {
-            dialogService.showError('Backend Error', 'Failed to load ratings from the backend', err.data + ' HTTP-Status:' + err.status);
+            dialogService.showError('Backend Error', 'Failed to load ratings from the backend', 'HTTP-Status:' + err.status);
         });
     }
 
