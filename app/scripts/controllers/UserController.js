@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('UserController',
-['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES',
-    function($scope, $location, conferenceService, userService, dialogService, ROUTES) {
+['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES', function($scope, $location, conferenceService, userService,
+                                                                                                dialogService, ROUTES) {
 
     $scope.step = 1;
     $scope.user = {};
@@ -29,9 +29,11 @@ angular.module('conferenceBuddyApp').controller('UserController',
     });
 
     function checkRegistrationLink() {
-        if ($location.hash()) {
-            userService.validate($location.hash()).then(function() {
-                $location.hash('');
+        var url = $location.url();
+        var pos = url.lastIndexOf("?");
+        if (pos > -1) {
+            var userToken = url.substr(pos + 1);
+            userService.validate(userToken).then(function() {
                 $location.path(ROUTES.MYTRACK);
             }).catch(function(err) {
                 $location.path(ROUTES.REGISTER);
