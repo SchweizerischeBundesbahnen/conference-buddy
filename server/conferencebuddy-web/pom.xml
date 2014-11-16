@@ -184,7 +184,7 @@
                     <webResources>
                         <!-- angular client einbinden -->
                         <!-- resource>
-                            <directory>../../app/</directory>
+                            <directory>../../client_dist/</directory>
                         </resource -->
                         <webResource>
                             <directory>${basedir}/src/main/webapp/WEB-INF</directory>

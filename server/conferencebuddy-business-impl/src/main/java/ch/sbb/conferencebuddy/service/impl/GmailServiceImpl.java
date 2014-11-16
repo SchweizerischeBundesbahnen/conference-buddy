@@ -81,7 +81,7 @@ public class GmailServiceImpl implements EmailService {
         message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(user.getEmail()));
         message.setSubject("conference-buddy registration");
         message.setText("Dear " + user.getName() + ","
-            + "\n\nYour Registration-URL: http://sbb-conferencebuddy.elasticbeanstalk.com/t=" + user.getId()
+            + "\n\nYour Registration-URL: http://sbb-conferencebuddy.elasticbeanstalk.com//#/register#" + user.getId()
             + "\n\nYour conference-buddy team"
         );
 
