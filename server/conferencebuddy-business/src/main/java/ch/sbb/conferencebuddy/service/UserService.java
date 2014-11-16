@@ -17,6 +17,11 @@ public interface UserService {
     /**
      * @param userId UUID out of {@link ch.sbb.conferencebuddy.model.User#id}
      */
+    public User validateAndLoadUser(final String userId);
+
+    /**
+     * @param userId UUID out of {@link ch.sbb.conferencebuddy.model.User#id}
+     */
     public List<String> loadUserTracks(final String userId);
 
     /**

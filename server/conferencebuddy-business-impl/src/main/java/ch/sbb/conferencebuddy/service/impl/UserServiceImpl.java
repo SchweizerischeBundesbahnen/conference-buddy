@@ -6,6 +6,7 @@ import ch.sbb.conferencebuddy.persistence.UserRepository;
 import ch.sbb.conferencebuddy.persistence.UserTalkRepository;
 import ch.sbb.conferencebuddy.service.EmailService;
 import ch.sbb.conferencebuddy.service.UserService;
+import ch.sbb.conferencebuddy.service.exception.UserUnauthorizedException;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReader;
 import ch.sbb.esta.core.exception.EstaRuntimeException;
 import ch.sbb.esta.core.stereotype.EstaService;
@@ -44,6 +45,12 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
         userRepository.save(user);
 
         return id;
+    }
+
+    @Override
+    public User validateAndLoadUser(String userId) {
+        validateUser(userId);
+        return userRepository.findOne(userId);
     }
 
     /**
