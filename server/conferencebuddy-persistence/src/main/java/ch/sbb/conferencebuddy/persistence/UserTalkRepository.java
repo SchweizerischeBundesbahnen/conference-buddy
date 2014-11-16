@@ -8,13 +8,13 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 /**
- * @author Gilles Zimmermann
+ * @author Gilles Zimmermann      User
  *
  * @since 0.0.1, 2014
  */
 public interface UserTalkRepository extends JpaRepository<UserTalk, Long> {
 
-    @Query("select ut.pid from UserTalk ut where ut.userId = ?1 order by ut.startTime asc")
+    @Query("select ut.pid from UserTalk ut where upper(ut.userId) = ?1 order by ut.startTime asc")
     List<String> findByUserId(final String userId);
 
     @Modifying

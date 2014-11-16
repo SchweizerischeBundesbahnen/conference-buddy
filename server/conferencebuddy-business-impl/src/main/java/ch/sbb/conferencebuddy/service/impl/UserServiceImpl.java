@@ -6,16 +6,19 @@ import ch.sbb.conferencebuddy.persistence.UserRepository;
 import ch.sbb.conferencebuddy.persistence.UserTalkRepository;
 import ch.sbb.conferencebuddy.service.EmailService;
 import ch.sbb.conferencebuddy.service.UserService;
+import ch.sbb.conferencebuddy.service.exception.UserUnauthorizedException;
 import ch.sbb.conferencebuddy.service.util.EtutorCVSReader;
 import ch.sbb.esta.core.exception.EstaRuntimeException;
 import ch.sbb.esta.core.stereotype.EstaService;
 import ch.sbb.esta.util.condition.Reject;
 import org.joda.time.LocalTime;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -44,6 +47,12 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
         return id;
     }
 
+    @Override
+    public User validateAndLoadUser(String userId) {
+        validateUser(userId);
+        return userRepository.findOne(userId);
+    }
+
     /**
      * @param userId UUID out of {@link ch.sbb.conferencebuddy.model.User#id}
      */
@@ -59,7 +68,12 @@ public class UserServiceImpl extends AbstractServiceImpl implements UserService 
         Reject.ifNull(user);
 
         // load all talks by u-nummer
-        return userTalkRepository.findByUserId(user.getUserId());
+        if(!StringUtils.isEmpty(user.getUserId())){
+            return userTalkRepository.findByUserId(user.getUserId().toUpperCase());
+        }
+        else{
+            return new ArrayList();
+        }
     }
 
     @Override

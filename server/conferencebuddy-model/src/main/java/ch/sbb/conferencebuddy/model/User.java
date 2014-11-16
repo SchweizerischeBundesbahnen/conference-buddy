@@ -16,7 +16,6 @@ import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 
 import ch.sbb.esta.core.model.StringIdEntity;
-import ch.sbb.esta.core.webservice.xmladapter.DateTimeAdapter;
 
 /**
  * @author Gilles Zimmermann

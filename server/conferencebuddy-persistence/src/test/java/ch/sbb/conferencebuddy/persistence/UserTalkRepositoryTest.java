@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class UserTalkRepositoryTest extends AbstractRepositoryTest {
 
-    public static final String TEST_U_NUMMER = "u123456";
+    public static final String TEST_U_NUMMER = "U123456";
     public static final String PID = "1";
     public static final String PID_2 = "2";
     @Autowired
@@ -36,7 +36,7 @@ public class UserTalkRepositoryTest extends AbstractRepositoryTest {
         createNewUserTalk(PID, new LocalTime(17, 2));
         createNewUserTalk(PID_2, new LocalTime(15, 2));
 
-        final List<String> userTalks = userTalkRepository.findByUserId(TEST_U_NUMMER);
+        final List<String> userTalks = userTalkRepository.findByUserId(TEST_U_NUMMER.toUpperCase());
 
         Assert.assertNotNull(userTalks);
         Assert.assertEquals(2, userTalks.size());
