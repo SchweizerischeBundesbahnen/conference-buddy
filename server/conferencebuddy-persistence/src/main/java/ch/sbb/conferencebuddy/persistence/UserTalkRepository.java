@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 /**
- * @author Gilles Zimmermann      User
+ * @author Gilles Zimmermann
  *
  * @since 0.0.1, 2014
  */
