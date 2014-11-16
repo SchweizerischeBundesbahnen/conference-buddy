@@ -39,10 +39,12 @@ angular.module('conferenceBuddyApp').factory('MyTrackService',
             if (talk.common) {
                 result.push(presentation);
             } else {
-                myTrackPresentationId = myTrackIds[0];
-                myTrackIds = myTrackIds.slice(1);
-                pres = lookupPresentation(conference, myTrackPresentationId);
-                result.push(pres);
+                if (myTrackIds.length > 0) {
+                    myTrackPresentationId = myTrackIds[0];
+                    myTrackIds = myTrackIds.slice(1);
+                    pres = lookupPresentation(conference, myTrackPresentationId);
+                    result.push(pres);
+                }
             }
 
         });
@@ -51,10 +53,10 @@ angular.module('conferenceBuddyApp').factory('MyTrackService',
 
     return {
         load: function() {
-            if(!userService.isRegistered()) {
+            if (!userService.isRegistered()) {
                 $location.url(ROUTES.REGISTER);
             }
-            return $http.get(REST_URL + '/mytrack').then(function(result) {
+            return $http.get(REST_URL + '/mytrack', {cache: true}).then(function(result) {
                 return result.data;
             });
         },

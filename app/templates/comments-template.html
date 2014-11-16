@@ -1,7 +1,8 @@
 <div style="padding-left:15px; padding-right: 15px">
     <div class="row">
         <hr/>
-        <p class="h4">Kommentare
+        <p class="h4">
+            Kommentare
             <button ng-click="load()" type="button" class="btn btn-default pull-right btn-sm">
                 <span class="glyphicon glyphicon-repeat"></span>
             </button>
@@ -15,8 +16,8 @@
             <button class="btn btn-default pull-right btn-sm" ng-disabled="commentsForm.$invalid">Abschicken</button>
 
         </form>
-        <div ng-show="!showInputForm()"><a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> dich, um hier teilnehmen zu
-            können!
+        <div ng-show="!showInputForm()">
+            <a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> Dich, um Kommentare abgeben zu können!
         </div>
     </div>
 
