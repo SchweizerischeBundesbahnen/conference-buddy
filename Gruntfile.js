@@ -73,7 +73,7 @@ module.exports = function(grunt) {
                 proxies: [
                     {
                         context: '/service',
-                        host: 'sbb-conferencebuddy.elasticbeanstalk.com',
+                        host: 'sbb-conferencebuddy-test.elasticbeanstalk.com',
                         port: 80,
                         https: false,
                         changeOrigin: false,
