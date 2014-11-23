@@ -3,9 +3,12 @@
         <p class="h3"><strong>{{conference.name}}</strong></p>
 
         <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
+        <small>
+            <rating class="pull-right" ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
+        </small>
+        <p>
         <img src="images/devday10.png"/>
-        <p/>
-
+        </p>
         <p>
             Am 10. Dezember 2014 wird es wieder soweit sein. Wir können uns an der 10. Durchführung des SBB IT Developer Day aus dem Tagesgeschäft
             lösen, uns austauschen und durch neue Ideen aus dem Software-Engineering-Bereich inspirieren lassen. Um das Jubiläum der 10. Durchführung
@@ -15,18 +18,16 @@
             Period periodOfInterest = Period.between(LocalDate.of(2005, Month.NOVEMBER, 29), LocalDate.now().plusYears(9));
         </p>
 
+        <hr/>
         <p class="h4">
             Bewertung
-            <small>
-                <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
-            </small>
         </p>
         <div class="pull-right">
             <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default btn-sm" ng-show="isRegistered()">Bewerten</button>
         </div>
         <br/>
-        <hr/>
+
         <comments pid="{{conference.id}}"></comments>
     </div>
 </div>

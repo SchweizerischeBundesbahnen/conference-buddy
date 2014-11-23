@@ -6,9 +6,11 @@ angular.module('conferenceBuddyApp').factory('StorageService', ['localStorageSer
     var KEY_USER = 'user';
 
     return {
-        setUserAndToken: function(user, token) {
-            localStorageService.set(KEY_USER, user);
+        setToken: function(token) {
             localStorageService.set(KEY_TOKEN, token);
+        },
+        setUser: function(user) {
+            localStorageService.set(KEY_USER, user);
         },
         clear: function() {
             localStorageService.clearAll();

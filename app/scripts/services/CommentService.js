@@ -2,8 +2,6 @@
 
 angular.module('conferenceBuddyApp').factory('CommentService', ['$http', 'UserService', 'REST_URL', function($http, userService, REST_URL) {
 
-    userService.initFromCookie();
-
     return {
         load: function(pid) {
             return $http.get(REST_URL + '/comment/' + pid).then(function(result) {

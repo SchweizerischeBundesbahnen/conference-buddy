@@ -3,12 +3,7 @@
 angular.module('conferenceBuddyApp').factory('UserService',
     ['$http', 'StorageService', 'REST_URL', function($http, storageService, REST_URL) {
 
-    var HTTP_HEADER_TOKEN = 'X-Access-Token';
-
     return {
-        initFromCookie: function() {
-            $http.defaults.headers.common[HTTP_HEADER_TOKEN] = storageService.getToken();
-        },
         isRegistered: function() {
             return typeof storageService.getToken() === 'string';
         },
@@ -17,9 +12,9 @@ angular.module('conferenceBuddyApp').factory('UserService',
             });
         },
         validate: function(userToken) {
-            $http.defaults.headers.common[HTTP_HEADER_TOKEN] = userToken;
+            storageService.setToken(userToken);
             return $http.get(REST_URL + '/user').then(function(result) {
-                storageService.setUserAndToken(result.data, userToken);
+                storageService.setUser(result.data);
             });
         },
         currentUser: function() {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q', 'UserService', function($http, $q, userService) {
+angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q', function($http, $q) {
 
     // will be initialized the first time load() is called
     var conference;
@@ -10,8 +10,6 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q'
 
     // ref to selected presentation
     var currentPresentation;
-
-    userService.initFromCookie();
 
     return {
 

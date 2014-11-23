@@ -1,8 +1,6 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'UserService', 'REST_URL', function($http, userService, REST_URL) {
-
-    userService.initFromCookie();
+angular.module('conferenceBuddyApp').factory('RatingService', ['$http', 'REST_URL', function($http, REST_URL) {
 
     return {
         load: function(presentationId) {
