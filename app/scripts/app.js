@@ -65,9 +65,9 @@ app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($p
 }]);
 
 var initializeConference = function($q, $http, ConferenceService) {
-    var deffered = $q.defer();
+    var deferred = $q.defer();
     ConferenceService.load().then(function(conf) {
-        deffered.resolve(ConferenceService);
+        deferred.resolve(ConferenceService);
     });
-    return deffered.promise;
+    return deferred.promise;
 };
