@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('HttpInterceptor', ['$q', '$location', '$cookieStore', 'ROUTES', 'AUTH', function($q, $location, $cookieStore, ROUTES, AUTH) {
+angular.module('conferenceBuddyApp').factory('HttpInterceptor', ['$q', '$location', 'StorageService', 'ROUTES', 'AUTH',
+    function($q, $location, storageService, ROUTES, AUTH) {
 
     return function(promise) {
 
@@ -10,8 +11,7 @@ angular.module('conferenceBuddyApp').factory('HttpInterceptor', ['$q', '$locatio
 
         var error = function(response) {
             if (response.status === 401) {
-                $cookieStore.remove(AUTH.COOKIES_USERTOKEN);
-                $cookieStore.remove(AUTH.COOKIES_USER);
+                storageService.clear();
                 $location.url(ROUTES.REGISTER);
             }
             return $q.reject(response);
