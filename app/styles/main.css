@@ -149,3 +149,20 @@ textarea {
 cite {
     font-style: italic;
 }
+
+
+#loading-bar .bar {
+    top: 1px;
+    height: 3px;
+}
+
+/* Fancy blur effect */
+#loading-bar .peg {
+    top: 1px;
+    height: 3px;
+}
+
+#loading-bar-spinner {
+    top: 7px;
+    left: 5px;
+}
