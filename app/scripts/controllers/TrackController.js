@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', 'ConferenceService', 'MyTrackService', 'UserService', 'DialogService', function($scope, conferenceService, myTrackService, userService,
-                                                                                           dialogService) {
+['$scope', 'ConferenceService', 'MyTrackService', 'UserService', 'DialogService',
+    function($scope, conferenceService, myTrackService, userService, dialogService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.copperfield = '';

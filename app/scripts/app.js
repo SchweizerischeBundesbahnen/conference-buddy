@@ -1,6 +1,7 @@
 'use strict';
 
-var app = angular.module('conferenceBuddyApp', ['ngRoute', 'ngTouch', 'ngAnimate', 'ngCookies', 'ui.bootstrap', 'angular-loading-bar']);
+var app = angular.module('conferenceBuddyApp',
+['ngRoute', 'ngTouch', 'ngAnimate', 'ngCookies', 'ui.bootstrap', 'angular-loading-bar', 'LocalStorageModule']);
 
 // route constants, injectable into services and controllers
 app.constant('ROUTES', {
@@ -12,16 +13,12 @@ app.constant('ROUTES', {
     REGISTER: '/register'
 });
 app.constant('REST_URL', '/service');
-app.constant('AUTH', {
-    HTTP_HEADER_TOKEN: 'X-Access-Token',
-    COOKIES_USERTOKEN: 'userToken',
-    COOKIES_USER: 'user'
-});
 
-app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($provide, $routeProvider, $httpProvider, ROUTES) {
+app.config(['$provide', '$routeProvider', '$httpProvider', 'localStorageServiceProvider', 'ROUTES', function($provide, $routeProvider, $httpProvider,
+                                                                                                             localStorageServiceProvider, ROUTES) {
 
     // we are using the interceptor to check UserService status (auth-token)
-    $httpProvider.responseInterceptors.push('HttpInterceptor');
+    $httpProvider.interceptors.push('HttpInterceptor');
 
     // routes
     $routeProvider.when(ROUTES.CONFERENCE, {
@@ -62,6 +59,8 @@ app.config(['$provide', '$routeProvider', '$httpProvider', 'ROUTES', function($p
     }).otherwise({
         redirectTo: ROUTES.CONFERENCE
     });
+
+    localStorageServiceProvider.setPrefix('conferenceBuddyApp').setNotify(false, false);
 }]);
 
 var initializeConference = function($q, $http, ConferenceService) {

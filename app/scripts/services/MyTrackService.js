@@ -3,8 +3,6 @@
 angular.module('conferenceBuddyApp').factory('MyTrackService',
 ['$http', '$location', 'UserService', 'ROUTES', 'REST_URL', function($http, $location, userService, ROUTES, REST_URL) {
 
-    userService.initFromCookie();
-
     function lookupPresentation(conference, presentationId) {
         for (var i = 0; i < conference.tracks.length; i++) {
             var track = conference.tracks[i];

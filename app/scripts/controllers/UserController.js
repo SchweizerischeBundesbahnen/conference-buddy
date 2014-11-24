@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('UserController',
-['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES', function($scope, $location, conferenceService, userService,
-                                                                                                dialogService, ROUTES) {
+['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES',
+    function($scope, $location, conferenceService, userService, dialogService, ROUTES) {
 
     $scope.step = 1;
     $scope.user = {};
