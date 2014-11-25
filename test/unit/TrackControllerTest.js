@@ -24,11 +24,15 @@ describe('Controller: TrackController', function() {
                 ],
                 tracks: [
                     {id: 'tea4Life', title: 'Tea for life', presentations: [
-                        {talkId: 'teaTime'}
+                        {talkId: 'teaTime', roomId: '1'}
                     ]},
                     {id: 'coffeeFTW', title: 'CoffeeEEEEE', presentations: [
-                        {talkId: 'coffeeTime'}
+                        {talkId: 'coffeeTime', roomId: '2'}
                     ]}
+                ],
+                rooms: [
+                    {id: 1, name: 'Future Lounge'},
+                    {id: 2, name: 'Sky Lounge'}
                 ]
             };
 
@@ -119,5 +123,12 @@ describe('Controller: TrackController', function() {
         expect(scope.currentTrack.id).toBe('tea4Life');
         scope.previousTrack();
         expect(scope.currentTrack.id).toBe('coffeeFTW');
+    });
+
+    it('should have room', function() {
+        createController();
+        rootScope.$apply();
+        httpBackend.flush();
+        expect(scope.currentTrack.presentations[0].room.name).toBe('Future Lounge');
     });
 });

@@ -21,7 +21,7 @@
             <div class="header">{{presentation.title}}</div>
             <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
-                <small>{{presentation.room}}</small>
+                <small>{{presentation.room.name}}</small>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
             </div>
             <div ng-show="presentation.speakers" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
-                <small>{{presentation.room}}</small>
+                <small>{{presentation.room.name}}</small>
             </div>
             <div><p collapsible-text="200">{{presentation.abstract}}</p></div>
         </div>

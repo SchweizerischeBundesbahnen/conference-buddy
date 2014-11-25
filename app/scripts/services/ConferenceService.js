@@ -40,13 +40,20 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q'
                     talkMap[talk.id] = talk;
                 });
 
+                var roomMap = {};
+                conference.rooms.forEach(function(room) {
+                    roomMap[room.id] = room;
+                });
+
                 conference.tracks.forEach(function(track) {
                     track.presentations.forEach(function(presentation) {
                         var talk = talkMap[presentation.talkId];
+                        var room = roomMap[presentation.roomId];
                         presentation.common = talk.common;
                         presentation.title = talk.title;
                         presentation.abstract = talk.abstract;
                         presentation.speakers = talk.speakers;
+                        presentation.room = room;
                     });
                 });
 

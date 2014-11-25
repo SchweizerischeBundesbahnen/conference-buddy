@@ -23,12 +23,17 @@ describe('Controller: ConferenceService', function() {
             ],
             tracks: [
                 {id: 'coreTec', presentations: [
-                    {talkId: 1},
-                    {talkId: 2}
+                    {talkId: 1, roomId: 1},
+                    {talkId: 2, roomId: 3}
                 ]},
                 {id: 'javaTec', presentations: [
-                    {talkId: 2}
+                    {talkId: 2, roomId: 2}
                 ]}
+            ],
+            rooms: [
+                {id: 1, name: 'Zürich'},
+                {id: 2, name: 'Basel'},
+                {id: 3, name: 'Lausanne'}
             ]
         };
         httpBackend.whenGET('api/conference.json').respond(conferenceJson);
@@ -49,6 +54,8 @@ describe('Controller: ConferenceService', function() {
         expect(conference.speakers.length).toBe(2);
         expect(conference.talks.length).toBe(2);
         expect(conference.tracks.length).toBe(2);
+        expect(conference.rooms.length).toBe(3);
+
         expect(conference.tracks[0].id).toBe('coreTec');
         expect(conference.tracks[0].presentations.length).toBe(2);
         expect(conference.tracks[1].presentations.length).toBe(1);
@@ -61,6 +68,9 @@ describe('Controller: ConferenceService', function() {
         expect(conference.tracks[0].presentations[1].title).toBe(conferenceJson.talks[1].title);
         expect(conference.tracks[0].presentations[1].speakers.length).toBe(1);
         expect(conference.tracks[0].presentations[1].speakers[0].surname).toBe('White');
+
+        expect(conference.tracks[0].presentations[0].room.name).toBe('Zürich');
+        expect(conference.tracks[0].presentations[1].room.name).toBe('Lausanne');
     });
 
     function loadJsonMock() {
