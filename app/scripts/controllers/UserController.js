@@ -34,9 +34,9 @@ angular.module('conferenceBuddyApp').controller('UserController',
         if (pos > -1) {
             var userToken = url.substr(pos + 1);
             userService.validate(userToken).then(function() {
-                $location.path(ROUTES.MYTRACK);
+                $location.url(ROUTES.MYTRACK);
             }).catch(function(err) {
-                $location.path(ROUTES.REGISTER);
+                $location.url(ROUTES.REGISTER);
             });
         }
     }

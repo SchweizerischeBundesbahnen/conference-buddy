@@ -7,24 +7,29 @@
             <rating class="pull-right" ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
         </small>
         <p>
-        <img src="images/devday10.png"/>
+            <img src="images/devday10.png"/>
         </p>
+
         <p>
             Am 10. Dezember 2014 wird es wieder soweit sein. Wir können uns an der 10. Durchführung des SBB IT Developer Day aus dem Tagesgeschäft
             lösen, uns austauschen und durch neue Ideen aus dem Software-Engineering-Bereich inspirieren lassen. Um das Jubiläum der 10. Durchführung
             zu unterstreichen, läuft der Anlass dieses Jahr unter diesem Motto:
         </p>
+
         <p>
-            Period periodOfInterest = Period.between(LocalDate.of(2005, Month.NOVEMBER, 29), LocalDate.now().plusYears(9));
+            <small>
+                Period periodOfInterest = Period.between(LocalDate.of(2005, Month.NOVEMBER, 29), LocalDate.now().plusYears(9));
+            </small>
         </p>
 
         <hr/>
         <p class="h4">
             Bewertung
         </p>
+
         <div class="pull-right">
             <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
-            <button type="button" ng-click="rate()" class="btn btn-default btn-sm" ng-show="isRegistered()">Bewerten</button>
+            <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">Bewerten</button>
         </div>
         <br/>
 
