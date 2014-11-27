@@ -7,7 +7,7 @@
         </p>
         <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
         <p class="h4">{{presentation.title}}</p>
-        <small>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room}}</small>
+        <small>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room.name}}</small>
         <p>{{presentation.abstract}}</p>
         <h4 ng-show="presentation.speakers.length > 1">Referenten</h4>
         <h4 ng-show="presentation.speakers.length === 1">Referent</h4>
