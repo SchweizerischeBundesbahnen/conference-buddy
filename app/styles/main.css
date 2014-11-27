@@ -74,8 +74,8 @@ a {
 
 /* poor mans swipe animations */
 .copperfield {
-    -webkit-transition: all linear 0.1s;
-    transition: all linear 0.1s;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
     opacity: 1;
 }
 

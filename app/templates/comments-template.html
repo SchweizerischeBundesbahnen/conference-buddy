@@ -3,9 +3,6 @@
         <hr/>
         <p class="h4">
             Kommentare
-            <button ng-click="load()" type="button" class="btn btn-default pull-right btn-sm">
-                <span class="glyphicon glyphicon-repeat"></span>
-            </button>
         </p>
 
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
@@ -13,14 +10,17 @@
                 <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
                           ng-model="commentEntry.value" required></textarea>
             </div>
-            <button class="btn btn-default pull-right btn-sm" ng-disabled="commentsForm.$invalid">Abschicken</button>
-
+            <button class="btn btn-default pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
         </form>
         <div ng-show="!showInputForm()">
             <a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> Dich, um Kommentare abgeben zu können!
         </div>
+        <div class="form-group">
+            <button ng-click="load()" type="button" class="btn btn-default pull-right">
+                <span class="glyphicon glyphicon-repeat"></span>
+            </button>
+        </div>
     </div>
-
     <div class="row" style="padding-top: 10px">
         <div class="panel panel-default" ng-repeat="comment in comments">
             <div class="panel-body">

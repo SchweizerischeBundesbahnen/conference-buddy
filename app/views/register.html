@@ -11,7 +11,7 @@
             Zusätzlich erhalten SBB Mitarbeiter nach der Registrierung Zugriff auf die Funktion MyTrack.
             MyTrack zeigt Dir die Vorträge an, zu denen Du Dich im E-Tutor angemeldet hast.
         </p>
-        <button type="submit" ng-click="showRegistration()" class="btn btn-default btn-sm">Weiter</button>
+        <button type="submit" ng-click="showRegistration()" class="btn btn-default">Weiter</button>
     </div>
 
     <div class="row track registration" ng-show="step === 2">
@@ -34,10 +34,10 @@
             </div>
             <div class="form-group">
                 <label for="userId">U-Nummer (nur SBB Mitarbeiter)</label>
-                <input type="text" class="form-control" ng-model="user.userId" id="userId" ng-pattern="/u(e?)\d+/"
+                <input type="text" class="form-control" ng-model="user.userId" id="userId" ng-pattern="/^(u|U)(e|E)?\d+$/"
                        placeholder="U-Nummer eingeben oder leer lassen"/>
             </div>
-            <button type="submit" class="btn btn-default btn-sm" ng-disabled="registration.$invalid">Registrieren</button>
+            <button type="submit" class="btn btn-default" ng-disabled="registration.$invalid">Registrieren</button>
         </form>
     </div>
 
@@ -45,7 +45,7 @@
         <p class="h3">
             <strong>Registrierung erfolgreich</strong>
         </p>
-        <p>Du erhälst bald eine E-Mail mit der Bestätigung.</p>
+        <p>Du erhälst bald eine E-Mail mit der Bestätigung. TODO: Den Link brauchst Du nur einmal, um die App zu starten.</p>
     </div>
 
 </div>
