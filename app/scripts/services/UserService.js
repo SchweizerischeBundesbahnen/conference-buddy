@@ -11,6 +11,9 @@ angular.module('conferenceBuddyApp').factory('UserService',
             return $http.post(REST_URL + '/user', user).then(function(result) {
             });
         },
+        unregister: function() {
+            storageService.clear();
+        },
         validate: function(userToken) {
             storageService.setToken(userToken);
             return $http.get(REST_URL + '/user').then(function(result) {

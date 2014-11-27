@@ -1,16 +1,29 @@
 <div class="container content">
     <div class="row track">
         <p class="h3"><strong>Conference-Buddy</strong></p>
-
+        <h4>Your Buddy-App for conferences</h4>
         <p>
-            <strong>Your Buddy-App for conferences</strong><br/>
             View conference agenda, manage your tracks, comment and rate talks.<br/>
             v1.0.0 by SBB IT
         </p>
 
+        <h4>Team</h4>
         <p>
-            <strong>Team</strong><br/>
             Manuel Friedli, Korhan Gülseven, Marc Walter, Stefan Zeller, Gilles Zimmermann
         </p>
+
+        <h4>Registrierung</h4>
+        <p>
+        <span ng-hide="isRegistered()">Du bist nicht registriert. Du kannst dich hier
+            <a ng-controller="NavigationController" ng-click="goToMyTrack()">registieren</a>.
+        </span>
+        <span ng-show="isRegistered()">Du bist registriert als <code>{{user.name}}</code> mit <br>
+            E-Mail: <code>{{user.email}}</code><br/>
+            SBB UserId: <code>{{getUserId()}}</code>
+        </span>
+        </p>
+        <button ng-show="isRegistered()" ng-click="unregister()" class="btn btn-default" ng-disabled="commentsForm.$invalid">Registrierung
+            löschen</button>
+
     </div>
 </div>

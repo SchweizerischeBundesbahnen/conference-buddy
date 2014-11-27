@@ -2,10 +2,11 @@
     <div class="row track">
         <p class="h3"><strong>{{conference.name}}</strong></p>
 
-        <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
+        <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong>
         <small>
             <rating class="pull-right" ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
         </small>
+        </p>
         <p>
             <img src="images/devday10.png"/>
         </p>
@@ -21,14 +22,10 @@
                 Period periodOfInterest = Period.between(LocalDate.of(2005, Month.NOVEMBER, 29), LocalDate.now().plusYears(9));
             </small>
         </p>
+        <br/>
 
-        <hr/>
-        <p class="h4">
-            Bewertung
-        </p>
-
-        <div class="pull-right">
-            <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
+        <div class="rating pull-right">
+            <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">Bewerten</button>
         </div>
         <br/>

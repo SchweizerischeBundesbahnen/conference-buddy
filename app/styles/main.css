@@ -1,13 +1,17 @@
 .talk {
     border: 1px solid #eee;
     border-left-color: #aaaaaa;
-    border-left-width: 5px;
+    border-left-width: 6px;
     border-radius: 3px;
     margin-bottom: 5px;
 }
 
 .clickable {
     border-left-color: #ff0000;
+}
+
+.mytrackClickable {
+    border-left-color: rgb(0, 44, 134);
 }
 
 .talk .header {
@@ -89,6 +93,7 @@ a {
 
 textarea {
     resize: none;
+    margin-bottom: 5px;
 }
 
 .collapsible-text-toggle {
@@ -152,7 +157,7 @@ cite {
 
 
 #loading-bar .bar {
-    top: 1px;
+    top: 0px;
     height: 3px;
 }
 
@@ -165,4 +170,31 @@ cite {
 #loading-bar-spinner {
     top: 7px;
     left: 5px;
+}
+
+p.abstract {
+ margin-top: 5px;
+}
+
+.rating {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.ratingStars {
+    font-size: 20px;
+}
+
+.panel {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.panel-body {
+    padding: 8px;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }

@@ -5,10 +5,10 @@
             <span class="glyphicon glyphicon-chevron-left"></span> Zurück
         </button>
         </p>
+        <h4>{{presentation.title}}</h4>
         <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
-        <p class="h4">{{presentation.title}}</p>
-        <small>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room.name}}</small>
-        <p>{{presentation.abstract}}</p>
+        <i>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room.name}}</i>
+        <p class="abstract">{{presentation.abstract}}</p>
         <h4 ng-show="presentation.speakers.length > 1">Referenten</h4>
         <h4 ng-show="presentation.speakers.length === 1">Referent</h4>
 
@@ -23,11 +23,12 @@
                 </div>
             </div>
         </div>
-        <div class="pull-right">
-            <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
+
+        <div class="rating pull-right">
+            <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">Bewerten</button>
         </div>
-        <br/>
+
         <comments pid="{{presentation.id}}"></comments>
     </div>
 </div>
