@@ -1,27 +1,21 @@
 <div style="padding-left:15px; padding-right: 15px">
     <div class="row">
-        <hr/>
-        <p class="h4">
-            Kommentare
-        </p>
-
+        <h4>Kommentare</h4>
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
-                <textarea class="span12 form-control" rows="2" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
+                <textarea class="span12 form-control" rows="4" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
                           ng-model="commentEntry.value" required></textarea>
+                <button class="btn btn-default" ng-disabled="commentsForm.$invalid">Abschicken</button>
             </div>
-            <button class="btn btn-default pull-right" ng-disabled="commentsForm.$invalid">Abschicken</button>
         </form>
         <div ng-show="!showInputForm()">
             <a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> Dich, um Kommentare abgeben zu können!
         </div>
-        <div class="form-group">
-            <button ng-click="load()" type="button" class="btn btn-default pull-right">
-                <span class="glyphicon glyphicon-repeat"></span>
-            </button>
-        </div>
+        <button ng-click="load()" type="button" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-repeat"></span>
+        </button>
     </div>
-    <div class="row" style="padding-top: 10px">
+    <div class="row">
         <div class="panel panel-default" ng-repeat="comment in comments">
             <div class="panel-body">
                 <strong>{{formatDate(comment)}}</strong>

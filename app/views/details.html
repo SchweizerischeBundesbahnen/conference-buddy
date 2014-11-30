@@ -1,33 +1,34 @@
 <div class="container content copperfield" ng-class="{magic: copperfield}">
     <div class="row track">
-        <p class="h3">
-        <button type="button" ng-click="goBack()" class="btn btn-default">
-            <span class="glyphicon glyphicon-chevron-left"></span> Zurück
-        </button>
-        </p>
+        <h4>
+            <button type="button" ng-click="goBack()" class="btn btn-default">
+                <span class="glyphicon glyphicon-chevron-left"></span> Zurück
+            </button>
+        </h4>
+
+        <h4>{{presentation.title}}</h4>
         <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
-        <p class="h4">{{presentation.title}}</p>
-        <small>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room.name}}</small>
-        <p>{{presentation.abstract}}</p>
+        <i>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room.name}}</i>
+
+        <p class="abstract">{{presentation.abstract}}</p>
         <h4 ng-show="presentation.speakers.length > 1">Referenten</h4>
         <h4 ng-show="presentation.speakers.length === 1">Referent</h4>
 
         <div ng-repeat="speaker in presentation.speakers">
-            <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <img ng-src="{{speaker.picture}}" class="pull-left profileimg"/>
-                    <strong>{{speaker.name}} {{speaker.surname}}</strong><br>
-                    <a href="mailto:{{speaker.email}}">{{speaker.email}}</a><br>
-                    {{speaker.company}}
-                    <p class="bio">{{speaker.bio}}</p>
-                </div>
+            <div class="col-xs-12 col-md-12 col-lg-12 speakerRow">
+                <img ng-src="{{speaker.picture}}" class="pull-left profileimg"/>
+                <strong>{{speaker.name}} {{speaker.surname}}</strong><br>
+                <a href="mailto:{{speaker.email}}">{{speaker.email}}</a><br>
+                {{speaker.company}}
+                <p class="bio">{{speaker.bio}}</p>
             </div>
         </div>
-        <div class="pull-right">
-            <rating ng-model="myRating" max="6" ng-show="isRegistered()"></rating>
+
+        <div class="rating pull-right">
+            <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">Bewerten</button>
         </div>
-        <br/>
+
         <comments pid="{{presentation.id}}"></comments>
     </div>
 </div>

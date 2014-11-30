@@ -55,7 +55,8 @@ app.config(['$provide', '$routeProvider', '$httpProvider', 'localStorageServiceP
         templateUrl: 'views/register.html',
         controller: 'UserController'
     }).when(ROUTES.ABOUT, {
-        templateUrl: 'views/about.html'
+        templateUrl: 'views/about.html',
+        controller: 'AboutController'
     }).otherwise({
         redirectTo: ROUTES.CONFERENCE
     });
