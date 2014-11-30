@@ -155,7 +155,6 @@ cite {
     font-style: italic;
 }
 
-
 #loading-bar .bar {
     top: 0px;
     height: 3px;
@@ -173,12 +172,12 @@ cite {
 }
 
 p.abstract {
- margin-top: 5px;
+    margin-top: 5px;
 }
 
 .rating {
- margin-top: 10px;
- margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .ratingStars {
@@ -197,4 +196,8 @@ p.abstract {
 h4 {
     margin-top: 15px;
     margin-bottom: 5px;
+}
+
+.speakerRow {
+    padding-left: 0px;
 }

@@ -10,20 +10,19 @@
         <p>
             <img src="images/devday10.png"/>
         </p>
-
         <p>
             Am 10. Dezember 2014 wird es wieder soweit sein. Wir können uns an der 10. Durchführung des SBB IT Developer Day aus dem Tagesgeschäft
             lösen, uns austauschen und durch neue Ideen aus dem Software-Engineering-Bereich inspirieren lassen. Um das Jubiläum der 10. Durchführung
             zu unterstreichen, läuft der Anlass dieses Jahr unter diesem Motto:
         </p>
-
         <p>
             <small>
-                Period periodOfInterest = Period.between(LocalDate.of(2005, Month.NOVEMBER, 29), LocalDate.now().plusYears(9));
+<pre><code>Period periodOfInterest = Period.between(
+ LocalDate.of(2005, Month.NOVEMBER, 29),
+ LocalDate.of(2014, Month.DECEMBER, 10)
+);</code></pre>
             </small>
         </p>
-        <br/>
-
         <div class="rating pull-right">
             <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">Bewerten</button>

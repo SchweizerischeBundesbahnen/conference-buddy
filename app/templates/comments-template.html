@@ -7,13 +7,13 @@
                           ng-model="commentEntry.value" required></textarea>
                 <button class="btn btn-default" ng-disabled="commentsForm.$invalid">Abschicken</button>
             </div>
-            <div ng-show="!showInputForm()">
-                <a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> Dich, um Kommentare abgeben zu können!
-            </div>
-            <button ng-click="load()" type="button" class="btn btn-default pull-right">
-                <span class="glyphicon glyphicon-repeat"></span>
-            </button>
         </form>
+        <div ng-show="!showInputForm()">
+            <a ng-controller="NavigationController" ng-click="goToMyTrack()">Registriere</a> Dich, um Kommentare abgeben zu können!
+        </div>
+        <button ng-click="load()" type="button" class="btn btn-default pull-right">
+            <span class="glyphicon glyphicon-repeat"></span>
+        </button>
     </div>
     <div class="row">
         <div class="panel panel-default" ng-repeat="comment in comments">
