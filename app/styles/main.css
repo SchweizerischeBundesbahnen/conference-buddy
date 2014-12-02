@@ -201,3 +201,8 @@ h4 {
 .speakerRow {
     padding-left: 0px;
 }
+
+ul {
+    padding-left: 18px;
+    margin: 0px;
+}
