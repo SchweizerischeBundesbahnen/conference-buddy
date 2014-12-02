@@ -1,29 +1,37 @@
 <div class="container content">
     <div class="row track">
         <p class="h3"><strong>Conference-Buddy</strong></p>
-        <h4>Your Buddy-App for conferences</h4>
-        <p>
-            View conference agenda, manage your tracks, comment and rate talks.<br/>
-            v1.0.0 by SBB IT
-        </p>
-
-        <h4>Team</h4>
+        <p>Die Buddy-App für Konferenzen</p>
+        <p>Version 1.0.0</p>
+        <h4>Features</h4>
+        <ul>
+            <li>Konferenz-Agenda und Tracks im Überblick</li>
+            <li>Keinen Vortrag verpassen mit Raum- und Zeitangaben</li>
+            <li>Synchronisation mit dem E-Tutor (nur für SBB Mitarbeiter)</li>
+            <li>Konferenz und Vorträge kommentieren und bewerten</li>
+            <li>Sofort wissen, was andere von den Vorträgen halten</li>
+        </ul>
+        <h4>Entwicklungsteam</h4>
         <p>
             Manuel Friedli, Korhan Gülseven, Marc Walter, Stefan Zeller, Gilles Zimmermann
         </p>
-
+        <h4>Technologien und Tools</h4>
+        <p>
+            AngularJS, Bootstrap, Bower, Karma, Spring, ESTA, REST, Tomcat, MySQL, GitHub, Travis, Amazon AWS
+        </p>
         <h4>Status der Registrierung</h4>
         <p>
-        <span ng-hide="isRegistered()">Du bist nicht registriert. Du kannst dich hier
-            <a ng-controller="NavigationController" ng-click="goToMyTrack()">registrieren</a>.
+        <span ng-hide="isRegistered()">
+            Du bist nicht registriert. Du kannst dich hier <a ng-controller="NavigationController" ng-click="goToMyTrack()">registrieren</a>.
         </span>
-        <span ng-show="isRegistered()">Du bist registriert als <code>{{user.name}}</code> mit <br>
+        <span ng-show="isRegistered()">
+            Du bist registriert als <code>{{user.name}}</code> mit <br>
             E-Mail: <code>{{user.email}}</code><br/>
-            SBB UserId: <code>{{getUserId()}}</code>
+            SBB Benutzername: <code>{{getUserId()}}</code>
         </span>
         </p>
-        <button ng-show="isRegistered()" ng-click="unregister()" class="btn btn-default" ng-disabled="commentsForm.$invalid">Registrierung
-            löschen</button>
-
+        <button ng-show="isRegistered()" ng-click="unregister()" class="btn btn-default" ng-disabled="commentsForm.$invalid">
+            Registrierung löschen
+        </button>
     </div>
 </div>
