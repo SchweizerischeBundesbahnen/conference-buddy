@@ -12,11 +12,12 @@
     <title>conference-buddy</title>
     <base href="/"/>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -62,6 +63,8 @@
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -77,6 +80,7 @@
 <script src="scripts/services/CommentService.js"></script>
 <script src="scripts/services/RatingService.js"></script>
 <script src="scripts/services/UserService.js"></script>
+<script src="scripts/services/StorageService.js"></script>
 <script src="scripts/services/HttpInterceptor.js"></script>
 <script src="scripts/controllers/NavigationController.js"></script>
 <script src="scripts/controllers/TrackController.js"></script>
@@ -85,6 +89,7 @@
 <script src="scripts/controllers/PresentationController.js"></script>
 <script src="scripts/controllers/DetailsController.js"></script>
 <script src="scripts/controllers/UserController.js"></script>
+<script src="scripts/controllers/AboutController.js"></script>
 <script src="scripts/directives/CommentDirective.js"></script>
 <script src="scripts/directives/CollapsibleTextDirective.js"></script>
 <!-- endbuild -->

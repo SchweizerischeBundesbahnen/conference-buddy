@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q', 'UserService', function($http, $q, userService) {
+angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q', function($http, $q) {
 
     // will be initialized the first time load() is called
     var conference;
@@ -10,8 +10,6 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q'
 
     // ref to selected presentation
     var currentPresentation;
-
-    userService.initFromCookie();
 
     return {
 
@@ -42,13 +40,20 @@ angular.module('conferenceBuddyApp').factory('ConferenceService', ['$http', '$q'
                     talkMap[talk.id] = talk;
                 });
 
+                var roomMap = {};
+                conference.rooms.forEach(function(room) {
+                    roomMap[room.id] = room;
+                });
+
                 conference.tracks.forEach(function(track) {
                     track.presentations.forEach(function(presentation) {
                         var talk = talkMap[presentation.talkId];
+                        var room = roomMap[presentation.roomId];
                         presentation.common = talk.common;
                         presentation.title = talk.title;
                         presentation.abstract = talk.abstract;
                         presentation.speakers = talk.speakers;
+                        presentation.room = room;
                     });
                 });
 

@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('UserController',
-['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES', function($scope, $location, conferenceService, userService,
-                                                                                                dialogService, ROUTES) {
+['$scope', '$location', 'ConferenceService', 'UserService', 'DialogService', 'ROUTES',
+    function($scope, $location, conferenceService, userService, dialogService, ROUTES) {
 
     $scope.step = 1;
     $scope.user = {};
@@ -34,9 +34,9 @@ angular.module('conferenceBuddyApp').controller('UserController',
         if (pos > -1) {
             var userToken = url.substr(pos + 1);
             userService.validate(userToken).then(function() {
-                $location.path(ROUTES.MYTRACK);
+                $location.url(ROUTES.MYTRACK);
             }).catch(function(err) {
-                $location.path(ROUTES.REGISTER);
+                $location.url(ROUTES.REGISTER);
             });
         }
     }

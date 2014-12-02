@@ -1,867 +1,1152 @@
 {
     "id": 99999,
-    "name": "Tech4",
-    "location": "Stade de Suisse Bern",
-    "date": "17.11.2014",
+    "name": "SBB IT Developer Day 10th Anniversary",
+    "location": "Gurten",
+    "date": "10.12.2014",
     "speakers": [
         {
             "id": 1,
-            "name": "Nicolas",
-            "surname": "Perrin",
+            "name": "Florian",
+            "surname": "Brunner",
             "email": "",
-            "company": "IT-SCG",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/01.jpg",
             "bio": ""
         },
         {
             "id": 2,
-            "name": "Eva",
-            "surname": "Siegenthaler",
+            "name": "Raoul",
+            "surname": "Pärli",
             "email": "",
             "company": "IT-SWE",
-            "picture": "images/pict1.jpg",
+            "picture": "images/referenten/02.jpg",
             "bio": ""
         },
         {
             "id": 3,
-            "name": "Sandro",
-            "surname": "Corradi",
+            "name": "Michael",
+            "surname": "Esser",
             "email": "",
             "company": "IT-SWE",
-            "picture": "images/pict1.jpg",
+            "picture": "images/referenten/03.jpg",
             "bio": ""
         },
         {
             "id": 4,
-            "name": "Christian",
-            "surname": "Trachsel",
+            "name": "Lukas",
+            "surname": "Gehrig",
             "email": "",
-            "company": "IT-AQ",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/04.jpg",
             "bio": ""
         },
         {
             "id": 5,
-            "name": "Paul",
-            "surname": "Kaeser",
+            "name": "Jürgen",
+            "surname": "Höller",
             "email": "",
-            "company": "Savvy Telematic Systems AG",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/05.jpg",
             "bio": ""
         },
         {
             "id": 6,
-            "name": "Felix",
-            "surname": "Schwarz",
+            "name": "Stefan",
+            "surname": "Kühnel",
             "email": "",
-            "company": "Savvy Telematic Systems AG",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SCP",
+            "picture": "images/referenten/06.jpg",
             "bio": ""
         },
         {
             "id": 7,
-            "name": "Daniel",
-            "surname": "Berger",
+            "name": "Philip",
+            "surname": "Oser",
             "email": "",
-            "company": "IT-SCP",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/07.jpg",
             "bio": ""
         },
         {
             "id": 8,
-            "name": "Roger",
-            "surname": "Bula",
+            "name": "Simon",
+            "surname": "Martinelli",
             "email": "",
-            "company": "P-VS-EZ",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/08.jpg",
             "bio": ""
         },
         {
             "id": 9,
-            "name": "André",
-            "surname": "Gerster",
+            "name": "Beat",
+            "surname": "Rigazzi",
             "email": "",
-            "company": "IT-SCP",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/09.jpg",
             "bio": ""
         },
         {
             "id": 10,
-            "name": "Lothar",
-            "surname": "Jöckel",
+            "name": "Robert",
+            "surname": "Hegi",
             "email": "",
-            "company": "IT-SCI",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/10.jpg",
             "bio": ""
         },
         {
             "id": 11,
-            "name": "Thomas",
-            "surname": "Probst",
+            "name": "Manuel",
+            "surname": "Schulz",
             "email": "",
-            "company": "IT-SWE",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "",
             "bio": ""
         },
         {
             "id": 12,
-            "name": "Peter",
-            "surname": "Müller",
+            "name": "Baltisar",
+            "surname": "Oswald",
             "email": "",
-            "company": "Siemens",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/12.jpg",
             "bio": ""
         },
         {
             "id": 13,
-            "name": "Adrian",
-            "surname": "Peter",
+            "name": "Philipp",
+            "surname": "Rossmanith",
             "email": "",
-            "company": "I-ET",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/13.jpg",
             "bio": ""
         },
         {
             "id": 14,
-            "name": "Christoph",
-            "surname": "Marthaler",
+            "name": "Peter",
+            "surname": "Leuenberger",
             "email": "",
-            "company": "IT-SCI",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/14.jpg",
             "bio": ""
         },
         {
             "id": 15,
-            "name": "Beat",
-            "surname": "Wettstein",
+            "name": "Patrick",
+            "surname": "Jeckelmann",
             "email": "",
-            "company": "IT-SWE",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/15.jpg",
             "bio": ""
         },
         {
             "id": 16,
-            "name": "Gabriela",
-            "surname": "Loosli",
+            "name": "Peter",
+            "surname": "Brunner",
             "email": "",
-            "company": "IT-AQ",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/16.jpg",
             "bio": ""
         },
         {
             "id": 17,
-            "name": "Yannis",
-            "surname": "Baillet",
+            "name": "Peter",
+            "surname": "Wick",
             "email": "",
-            "company": "IT-AQ",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/17.jpg",
             "bio": ""
         },
         {
             "id": 18,
-            "name": "Raphael",
-            "surname": "Kosir",
+            "name": "Jonas",
+            "surname": "Bandi",
             "email": "",
-            "company": "IT-SCG",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/18.jpg",
             "bio": ""
         },
         {
             "id": 19,
-            "name": "Reto",
-            "surname": "Schlunegger",
+            "name": "Eva",
+            "surname": "Siegenthaler",
             "email": "",
-            "company": "IT-SCF",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/19.jpg",
             "bio": ""
         },
         {
             "id": 20,
-            "name": "Marcel",
-            "surname": "Affolter",
+            "name": "Andreas",
+            "surname": "Badstöber",
             "email": "",
-            "company": "IT-AQ",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/20.jpg",
             "bio": ""
         },
         {
             "id": 21,
-            "name": "Melkon",
-            "surname": "Torosyan",
+            "name": "Thomas",
+            "surname": "Probst",
             "email": "",
-            "company": "IT-AQ",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/21.jpg",
             "bio": ""
         },
         {
             "id": 22,
-            "name": "Marco",
-            "surname": "Nepote",
+            "name": "Simon",
+            "surname": "Butscher",
             "email": "",
-            "company": "IT-SCF",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/22.jpg",
             "bio": ""
         },
         {
             "id": 23,
-            "name": "Robert",
-            "surname": "Gebel",
+            "name": "Dominik",
+            "surname": "Schmucki",
             "email": "",
-            "company": "Swisscom",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/23.jpg",
             "bio": ""
         },
         {
             "id": 24,
-            "name": "Beat",
-            "surname": "Maurer",
+            "name": "Kaspar",
+            "surname": "Käser",
             "email": "",
-            "company": "IT-SWE",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "",
             "bio": ""
         },
         {
             "id": 25,
-            "name": "Jürg",
-            "surname": "Frühauf",
+            "name": "Erwann",
+            "surname": "Wernli",
             "email": "",
-            "company": "IT-SCF",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "images/referenten/25.jpg",
             "bio": ""
         },
         {
             "id": 26,
             "name": "Roger",
-            "surname": "Furrer",
+            "surname": "Wetzel",
             "email": "",
-            "company": "IT-SCP",
-            "picture": "images/pict1.jpg",
+            "company": "IT-SWE",
+            "picture": "",
             "bio": ""
         },
         {
             "id": 27,
-            "name": "Ingo",
-            "surname": "Wendler",
+            "name": "Philippe",
+            "surname": "Robert",
             "email": "",
-            "company": "I-ET-TC",
-            "picture": "images/pict1.jpg",
+            "company": "",
+            "picture": "images/referenten/27.jpg",
             "bio": ""
         },
         {
             "id": 28,
+            "name": "Michael",
+            "surname": "Krausse",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/referenten/28.jpg",
+            "bio": ""
+        },
+        {
+            "id": 29,
+            "name": "Stefan",
+            "surname": "Zeller",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/29.jpg",
+            "bio": ""
+        },
+        {
+            "id": 31,
+            "name": "Bernhard",
+            "surname": "Rytz",
+            "email": "",
+            "company": "IT-AQ",
+            "picture": "images/referenten/31.jpg",
+            "bio": ""
+        },
+        {
+            "id": 32,
+            "name": "Ernst",
+            "surname": "Kammermann-Gerber",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/32.jpg",
+            "bio": ""
+        },
+        {
+            "id": 33,
+            "name": "Cengis",
+            "surname": "Cetinkaya",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/33.jpg",
+            "bio": ""
+        },
+        {
+            "id": 34,
+            "name": "Gilles",
+            "surname": "Zimmermann",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/referenten/34.jpg",
+            "bio": ""
+        },
+        {
+            "id": 35,
+            "name": "Alina Maria",
+            "surname": "Mylka",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/referenten/35.jpg",
+            "bio": ""
+        },
+        {
+            "id": 37,
+            "name": "Patrick",
+            "surname": "Spiegel",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "",
+            "bio": ""
+        },
+        {
+            "id": 38,
+            "name": "Markus",
+            "surname": "Färber",
+            "email": "",
+            "company": "IT-SCP",
+            "picture": "images/referenten/38.jpg",
+            "bio": ""
+        },
+        {
+            "id": 39,
+            "name": "Klaus",
+            "surname": "Lechner",
+            "email": "",
+            "company": "IT-SCP",
+            "picture": "images/referenten/39.jpg",
+            "bio": ""
+        },
+        {
+            "id": 40,
+            "name": "Piotr",
+            "surname": "Kowol",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/40.jpg",
+            "bio": ""
+        },
+        {
+            "id": 41,
+            "name": "Beat",
+            "surname": "Maurer",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/41.jpg",
+            "bio": ""
+        },
+        {
+            "id": 42,
+            "name": "Martin",
+            "surname": "Klausch",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/42.jpg",
+            "bio": ""
+        },
+        {
+            "id": 43,
+            "name": "Ronny",
+            "surname": "Stauffer",
+            "email": "",
+            "company": "IT-SCP",
+            "picture": "images/referenten/43.jpg",
+            "bio": ""
+        },
+        {
+            "id": 44,
+            "name": "Peter",
+            "surname": "Hirzel",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/44.jpg",
+            "bio": ""
+        },
+        {
+            "id": 45,
+            "name": "Florian",
+            "surname": "Seidl",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "images/referenten/45.jpg",
+            "bio": ""
+        },
+        {
+            "id": 46,
+            "name": "Sebastian",
+            "surname": "Graf",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/46.jpg",
+            "bio": ""
+        },
+        {
+            "id": 47,
+            "name": "Christian",
+            "surname": "Eichenberger",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/47.jpg",
+            "bio": ""
+        },
+        {
+            "id": 48,
+            "name": "Christoph",
+            "surname": "Glanzmann",
+            "email": "",
+            "company": "",
+            "picture": "images/referenten/48.jpg",
+            "bio": ""
+        },
+        {
+            "id": 49,
+            "name": "Nicolas",
+            "surname": "Cotting",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "",
+            "bio": ""
+        },
+        {
+            "id": 50,
             "name": "Peter",
             "surname": "Kummer",
             "email": "",
             "company": "IT",
-            "picture": "images/pict1.jpg",
+            "picture": "",
+            "bio": ""
+        },
+        {
+            "id": 51,
+            "name": "Daniel",
+            "surname": "Marthaler",
+            "email": "",
+            "company": "IT-SWE",
+            "picture": "",
             "bio": ""
         }
     ],
     "talks": [
         {
-            "id": "cafe",
-            "title": "Begrüssungscafe",
+            "id": "intro",
+            "title": "Intro und Begrüssung",
             "abstract": "",
-            "speakerIds": [],
+            "speakerIds": [49, 50],
             "common": true
         },
         {
-            "id": "opening",
-            "title": "Opening Remarks",
-            "abstract": "",
-            "speakerIds": [28],
-            "common": true
+            "id": "keynote1",
+            "title": "Keynote 1- Java Application Frameworks - 2004, 2014, 2024?",
+            "abstract": "Die Geschichte von Java im Enterprise-Umfeld ist eine Geschichte von Frameworks im Laufe der Zeit. Ein Rückblick auf die Entwicklung und vor allem die Weiterentwicklung von Spring neben Struts, Hibernate, EJB und CDI zeigt, dass im Java-Ökosystem niemand isoliert auf einer Insel lebt - weder Framework-Hersteller noch Anwendungsentwickler. Diese Keynote legt dabei den Schwerpunkt auf die Co-Evolution von Frameworks und neuen Java-Sprachmitteln sowie neuen JDK-Libraries, insbesondere anhand von Java 5 (im Jahre 2004) und Java 8 (im Jahre 2014).",
+            "speakerIds": [5],
+            "common": false
         },
         {
-            "id": "closing",
-            "title": "Closing Remarks",
-            "abstract": "",
-            "speakerIds": [28],
-            "common": true
+            "id": "keynote2",
+            "title": "Keynote 2 - Variables won't; constants aren't – können Informatiker aus der Geschichte lernen?",
+            "abstract": "Wer weiss noch, wie die Informatik bei SBB vor 10 Jahren ausgesehen hat?  Spielt das überhaupt eine Rolle? Können wir aus der unserer Geschichte etwas lernen oder ist Fortschritt in der IT eher ein „random walk“? Die Präsentation beleuchtet einige Konstanten und Variablen der letzten Jahre auf den verschiedenen Ebenen: was waren die Prioritäten der SBB in Bezug auf IT? Wie war die IT organisiert? Was lief in der Methodik, was in der Technik? Aus diesem Rückblick versuchen wir einige Muster herauszudestillieren und riskieren eine Prognose, wohin die Reise gehen könnte. Den Schluss widmen wir der Frage: was bedeutet dies für mich?",
+            "speakerIds": [31],
+            "common": false
         },
         {
             "id": "pause",
-            "title": "*** PAUSE ***",
+            "title": "Pause",
             "abstract": "",
             "speakerIds": [],
             "common": true
         },
         {
-            "id": "keynote",
-            "title": "Keynote - SBB IT - Mehr Wert für den Kunden",
-            "abstract": "Zugang zu Informations- und Kommunikationstechnologien bedeutet für Menschen mit Behinderungen mehr als für alle anderen. Der barrierefreie Zugang ermöglicht mehr Chancengleichheit und Selbstständigkeit im privaten und beruflichen Leben. Im ersten Teil der Keynote wird aufgezeigt, für was das Konzept Accessibility steht, wer alles davon profitiert, welche unterschiedlichen Bedürfnisse es gibt und wie diese durch assistierende Technologien unterstützt werden können. Im zweiten Teil wird live vorgestellt, was es heisst „blind“ einen Computer oder ein iPhone zu bedienen und wie Websites und Apps benutzt werden können oder wo teils unüberwindbare Hürden auftauchen. Am Schluss werden häufige Stolpersteine bei der Umsetzung von Rich Internet Applications in Websites durch den Einsatz von JS und AJAX aufgezeigt.",
-            "speakerIds": [1],
+            "id": "mittagessen",
+            "title": "Mittagessen",
+            "abstract": "",
+            "speakerIds": [],
             "common": true
         },
         {
-            "id": "a1",
-            "title": "A1 – UX@SBB",
-            "abstract": "Die Themen Usability und User Experience (UX) stellen eine zentrale Herausforderung dar, und zwar sowohl bei kommerziellen Anwendungen wie auch bei spezifischen Geschäftsapplikationen. Grosskonzerne wie Apple haben mit ihren Produkten neue Standards geschaffen worden, die erlebnisreiche Erfahrungen auslösen und die Ansprüche der Kunden und Anwender im Hinblick auf Bedienung und Ästhetik signifikant erhöht haben. Diese Erfahrungen und Erwartungen tragen sie auch in ihren beruflichen Kontext hinein. Selbst von betrieblichen Anwendungen erwarten sie heute ein modernes, einfaches und ansprechendes User Interface, wie sie von aktuellen Web- und Mobile Applikationen gewohnt sind. Bei der Entwicklung oder der Beschaffung von immer komplexeren Produkten und immer umfassenderen Software-Lösungen wird die Einbeziehung der Endkunden und der Endanwender immer wichtiger bzw. unabdingbar, und zwar so früh wie möglich und im gesamten Entwicklungsprozess. Seit Beginn 2014 widmet sich eine zentrale Einheit diesem Themenfeld. Das aus Informatikern, Psychologen, Ingenieuren, Designern und Ökonomen bestehende Team verfolgt die Vision, User Centered Design innerhalb der SBB-IT zu verankern und somit eine wesentlichen Beitrag zur Kunden- und Mitarbeiterzufriedenheit zu leisten. In der Präsentation stellt sich das neue UX-Team vor. Es zeigt auf was seine Dienstleistungen sind und was es mit diesen erreichen will.",
-            "speakerIds": [2, 3],
+            "id": "1a",
+            "title": "A1 – Events auf Knopfdruck – Regressionstests einer ereignis-gesteuerten, parallelisierten Applikation",
+            "abstract": "CUS 5 / Kihub wird in einem agilen Umfeld in 2-Wochen Sprints entwickelt. Die Applikation ist sehr stark ereignisgesteuert und parallelisiert. Regressionstests sind für dieses Projekt unabdingbar. So wurde alleine für die Testengine 290‘000.- SFr. budgetiert. Diese Testengine ist ein Tool für deklarative (XML) Regressionstests (DB, JMS, HTTP), welches von Grund auf entwickelt wurde. Sie lässt sich sowohl in die IDE als auch in Jenkins integrieren und wird von Tester ohne Java-Kenntnisse bedient. Dieser Vortrag stellt zum ersten Mal diese Testengine und somit unseren Lösungsansatz vor, wie in diesem Projektumfeld hunderte wohl-definierte und automatisiert-wiederholbare Regressionstests aufgebaut wurden, um die Korrektheit der implementierten Funktionalitäten über den gesamten Projektablauf zu gewährleisten.",
+            "speakerIds": [1, 2],
             "common": false
         },
         {
-            "id": "a2",
-            "title": "A2 - ePOS, Nutzen für den Kunden",
-            "abstract": "Die SBB ersetzt zwischen 2014 und 2015 schweizweit 1‘000 der alten Billettautomaten BATS (1. Generation Touch Screen Automaten) durch Automaten der neusten Generation – dem ePOS. Unsere Kunden profitieren von zahlreichen Verbesserungen: Das Bezahlen mit grossen Noten wird möglich, da das Rückgeld neu auch in Noten erfolgt. Daneben ermöglicht der neue Automat kontaktloses Bezahlen mit Kreditkarten und erfüllt die Anforderungen des Behindertengesetzes. Durch den Einbau eines zweiten Druckers, dem erhöhten Aufbruchschutz und der Notenausgabe reduziert sich die Störungsanfälligkeit und somit die Verfügbarkeit der Automaten für unsere Kundinnen und Kunden. Aber auch unser Servicepersonal, welches tagtäglich den Unterhalt sicherstellt, kann sich freuen: Komponentenwechsel sind ohne Werkzeug möglich.",
-            "speakerIds": [8, 9],
+            "id": "2a",
+            "title": "A2 - Java Concurrency",
+            "abstract": "Nebenläufigkeit ist oft eine Voraussetzung für gute Skalierbarkeit und die effiziente Ausnutzung moderner und zukünftiger Mehrkernprozessoren. Sie ist mit Risiken, z.B. Deadlocks, Livelocks und Race-Conditions, verbunden und erhöht die Komplexität erheblich. Ohne gute Kenntnisse einschlägiger Modelle und Konzepte werden die möglichen Vorteile oft nicht erreicht, Verständlichkeit und Testbarkeit aber stark eingeschränkt. Manche Aufgaben eignen sich gut, andere dagegen schlecht für eine nebenläufige Verarbeitung. Dazu werden Kriterien vorgestellt und Beispiele gezeigt. Nebenläufigkeit kann in Frameworks integriert werden, um Anwendungsentwickler von den Gefahren und Schwierigkeiten zu isolieren. Das gelingt nur mit Einschränkungen und bringt neue Probleme mit sich. Applicationserver müssen den Umgang mit Nebenläufigkeit streng reglementieren, damit ihr internes Multithreading nicht kompromittiert wird. Java unterstützt Nebenläufigkeit durch Spracheigenschaften und Elemente der Klassenbibliothek. Die Unterstützung wurde insbesondere auf höherer Ebene stark weiterentwickelt. Concurrency-Utilities, das Executor-Framework und Fork-Join-Pools erleichtern den sicheren Umgang mit Nebenläufigkeit. Java 8 führt neue Konzepte wie parallele Streams und funktionale Programmierung ein. Mit Beispielen wird gezeigt, welche Verbesserungen gegenüber sequentiellen Programmen möglich sind, welche Gefahren auftreten und wie Nebenläufigkeit durch den Einsatz moderner Konzepte relativ sicher und einfach genutzt werden kann.",
+            "speakerIds": [3],
             "common": false
         },
         {
-            "id": "a3",
-            "title": "A3 – A Day in the Life: Basisdienste...",
-            "abstract": "Kunden erwarten von der SBB korrekte und konsistente Informationen. Für die IT-Systeme bedeutet das, die richtigen Daten zum richtigen Zeitpunkt am richtigen Ort in der richtigen Qualität zur Verfügung zu stellen. Basisdienste helfen, diese Anforderung sicherzustellen indem sie festlegen, wie Daten identifiziert und von Anwendungen standardisiert bezogen werden. In unserem Vortrag gehen wir folgenden Fragen nach: Was ist eigentlich ein fachlicher Basisdienst? Warum brauchen wir Basisdienste? Welche Basisdienste machen bei der SBB Sinn? Welche existieren bereits? Welche lohnt es sich zu erstellen und warum? Welchen Mehrwert bieten Basisdienste den Kunden? Zur Veranschaulichung zeigen wir dabei einen typischen Tag eines SBB-Kunden und vergleichen ausgewählte Situationen mit und ohne Basisdienste. Wir zeigen die Vorteile auf, die Kunden haben, wenn ihre Interaktionen mit der SBB durch Basisdienste unterstützt werden.",
-            "speakerIds": [16, 17],
+            "id": "3a",
+            "title": "A3 - Podiumsdiskussion - Wieviel Framework ist nötig?",
+            "abstract": "Frameworks können die Effizienz der Entwicklung erhöhen und die Wartung vereinfachen. Sie versprechen, insbesondere auf lange Sicht, Kosteneinsparungen. Andererseits schränken Frameworks die Freiheiten bei der Entwicklung und die Flexibilität ein. Sie bedeuten Lernaufwand, der sich erst nach längerem Einsatz rentiert. Es entsteht eine langfristige, starke Abhängigkeit, die sehr problematisch wird, wenn ein Framework nicht gut weiterentwickelt und fortlaufend den aktuellen Anforderungen angepasst wird. Die SBB entwickelt seit 2011 mit ESTA Entwicklungsstacks die den Einsatz bestimmter Frameworks regeln und durch eigene Bestandteile erweitern. Erste Erfahrungen im Projekteinsatz existieren bereits. Das alte SBB-interne im Bereich MVP vorgeschriebene MCA-Framework wird durch ESTA abgelöst. Welche Argumente sprechen für bzw. gegen den Einsatz von Frameworks? Von welchen Faktoren hängt die Einsetzbarkeit von Frameworks ab? Welche Framework-Eigenschaften sind für den Erfolg entscheidend (Modularität etc.)? Welche Rahmenbedingungen (Projekt, Anwendung, ...) sind für den Erfolg entscheidend? Welche Aufgaben sollen von einem Framework übernommen werden und welche von der Anwendung selbst? Beispiele für erfolgreiche Framework-Nutzung und gescheiterte Versuche.",
+            "speakerIds": [4, 5, 6, 7, 8, 9, 10],
             "common": false
         },
         {
-            "id": "a4",
-            "title": "A4 - SBB Maps",
-            "abstract": "„Was ist das Ziel? Mit wenigen publizierten Services können verschiedenste SBB Clients einfach und effizient mit Kartenmaterial ausgestattet werden um den wichtigen räumlichen Bezug der Business Daten zu erhalten. Was ist ein Bahnplan? Räumlich dargestellte Bahnanlagen wie Gleis, Signalanlagen, Bahnhofdetails aus der DfA (Datenbank feste Anlagen). Wo können die SBB Maps verwendet werden? IPAD, Android, SAP, Browser, allgemein in Applikationen. Wo werden sie bereits oder nächstens produktiv verwendet? iPad für Sperrprozess Bau, iPad für Zustandsmonitoring Infra Anlagen, verschiedene WebGIS Browser Applikationen wie Immobilienbewirtschaftung, Naturrisiken oder Energie. Was kostet es? Grobe Einschätzung: Günstig bis Gratis (je nach Anzahl Anfragen pro Tag), ein wiederverwendeter Service aus dem Standartangebot.Teurer ist ein projektspezifischer zusätzlicher Service (Beispiel Offerte RailClean GPS: 6‘000.- pro Jahr Betrieb plus die Erstellung) und nochmals teurer ein optimierter, vorgerechneter und hochauflösender Kacheldienst. Was brauchts um SBB Maps anzubieten?",
+            "id": "4a",
+            "title": "A4 - ESTAINT: Evolution eines Frameworks für Message Broker",
+            "abstract": "„Wir stellen euch ESTAINT, das neue Integrationsframework für IBM WebSphere Message Broker 7/Integration Bus 9, vor. Dabei handelt es sich um die Evolution des existierenden Service-Oriented Framework (SOF). Es ist gemeinsam von IT-OM-PSV-APF, IT-SWE und IT-AQ-UA-INA entwickelt worden. Im Vortrag gehen wir auf die Gründe für die Weiterentwicklung ein. Dabei stellen wir die Architektur und Hauptkomponenten des Frameworks vor, zeigen die neuen pattern-basierten Entwicklungsmethoden und den Brückenschlag zum INA-Schichtenmodell, SCHMOD, und runden das Ganze mit einer Live-Demo ab.",
+            "speakerIds": [3, 11, 12, 13],
+            "common": false
+        },
+        {
+            "id": "1b",
+            "title": "B1 - Testautomation mobile Geräte und Lasttest-Kennzahlen",
+            "abstract": "Mit Perfecto Mobile können Testfälle für mobile Geräte automatisiert und für die gängigen Betriebssysteme (z.B. Android, iOS) abgespielt werden. Ausgehend von reinen UFT-Automaten (Unified Functional Tester, alt Quicktest Professional) zeigen wir die entsprechenden Implementierungsmöglichkeiten im Perfecto Mobile am Beispiel des Fahrplanautomaten. Mit dem Tool Loadrunner führen wir basierend auf den nicht funktionalen Anforderungen und daraus resultierenden Testszenarien Last-, Performance- und Stresstests durch. Anhand aktueller Projekte erläutern wir die dabei gemessenen Kennzahlen und deren Bedeutung.",
+            "speakerIds": [14, 15, 16, 17],
+            "common": false
+        },
+        {
+            "id": "2b",
+            "title": "B2 - Performante Java Enterprise Applikationen trotz O/R-Mapping",
+            "abstract": "Viele sogenannte Enterprise Applikationen leiden unter schlechter Performance. Häufig hervorgerufen durch den naiven Einsatz von objektrelationalem Mapping (ORM). ORM gilt seit Jahren als de facto Standard für den Datenzugriff in Enterprise Applikationen und wurde mit der Java Persistence API (JPA) in Java/Java EE standardisiert. Daneben haben sich aber auch alternative Konzepte entwickelt, welche die Schwachstellen von ORM beheben sollen. Der Vortag behandelt kurz die theoretischen Konzepte des ORM und deren praktische Umsetzung mit JPA.  Danach werden die häufigsten Performanceprobleme aufgezeigt und wie diese mit JPA-Bordmitteln gelöst werden können. Ausserdem wird kurz auf alternative Konzepte eingegangen.",
+            "speakerIds": [8],
+            "common": false
+        },
+        {
+            "id": "3b",
+            "title": "B3 - Java und JavaScript: Neue beste Freunde",
+            "abstract": "Ein Trend zeichnet sich immer klarer ab: JavaScript erobert die Welt! Kaum jemand weiss jedoch, dass JavaScript ein Trademark von Oracle ist! Dies erstaunt umso mehr, weil sich die klassische Enterprise Entwicklung lange dagegen wehrte JavaScript als vollwertige Sprache oder Programmierplatform zu akzeptieren. Die Zeiten ändern sich jedoch und auch die klassische Enterprise Entwicklung muss mit der Zeit gehen und akzeptieren, dass JavaScript in Zukunft eine relevante Rolle spielen wird. Mit Java 8 untermauert auch Oracle den Trend und verheiratet JavaScript erneut mit der JVM: Nashorn ist eine neue JavaScript Runtime, welche in Java geschrieben wurde und auf der JVM läuft. Nashorn macht eine nahtlose Integration zwischen Java und JavaScript möglich und erlaubt die Nutzung des reichhaltigen Java Ökosystems in JavaScript. Avatar.js ist ein Projekt mit dem Ziel das Programmiermodel und das Ökosystem von Node.js auf die JVM zu bringen. Project Avatar ist eine experimentelle Web-Platform von Oracle, welche versucht die Schlichtheit von Node.js und die bewährten Konzepte von Java EE zusammenzuführen. Dieser Vortrag ist eine Demo-getriebene Vorstellung von Nashorn und JavaScript auf der JVM.",
+            "speakerIds": [18],
+            "common": false
+        },
+        {
+            "id": "4b",
+            "title": "B4 - Mehr Zeit fürs Wesentliche – dank Styleguide",
+            "abstract": "Bei den SBB existieren um die 1‘000 Anwendungen in verschiedensten Formen und Farben. Einheitliche Look & Feels sind allerdings eher eine Seltenheit. Immer wieder werden verschiedene Agenturen beauftragt, Benutzeroberflächen visuell zu gestalten. Dabei erfinden sie das Rad gestaltungsmässig immer wieder neu und erstellen die unterschiedlichsten Designs. Der Grund ist, dass es keine klaren Leitplanken für die visuelle Gestaltung der neuen Medien bei den SBB gibt. Es fehlen ausserdem Richtlinien, welche Usability-Aspekte berücksichtigen und Konsistenz über verschiedene Medien hinweg sicherstellen. Das führt in der Entwicklung dazu, dass UI-Elemente und CSS-Definitionen für jede Anwendung neu entwickelt werden müssen, eine Wiederverwendung ist aufwändig bis unmöglich. Mit dem neuen Styleguide soll damit Schluss sein. Der neue Styleguide wird klare Definitionen des Visual Designs vorgeben und konkret aufzeigen, wie diese implementiert werden sollen. Entwickler können davon profitieren, da für sie der entsprechende Code für verschiedene Elemente und Komponenten (beispielsweise in Form von ESTA-JSF-Komponenten oder wiederverwendbaren CSS) bereits zur Verfügung steht. Wir wollen damit zur Vereinheitlichung des bestehenden Corporate Designs beitragen und so dem Ziel zu einem einheitlichen Look & Feel in der Welt der SBB Applikationen näher kommen. Für die Entwickler heisst das, mehr Zeit fürs Wesentliche wie die Logik der Anwendung oder die Umsetzung anderer nicht-funktionaler Anforderungen. Wir stellen euch unsere Vision vor und freuen uns auf eine angeregte Diskussion.",
+            "speakerIds": [19, 20, 21],
+            "common": false
+        },
+        {
+            "id": "1c",
+            "title": "C1 - SAP? Mobile? Platform?",
+            "abstract": "In unserer Präsentation knüpfen wir an die Präsentation „Mobile Enterprise Application Platform MEAP“ von Tobias Röthlisberger vom vorigen Jahr an. Erste Projekte z.B. MIT, AMGT Mobile und ESTA setzen nun auf der damals vorgestellten SAP Mobile Platform (SMP) auf. Wir möchten aus Entwicklersicht aufzeigen, was die SMP bedeutet, was momentan an Funktionalität (SSO, Push, Offline. Logging, OData) verfügbar ist und anhand von ESTA Mobile ein Beispiel geben, wie sie in mobilen Applikationen eingesetzt werden kann.",
+            "speakerIds": [22, 23],
+            "common": false
+        },
+        {
+            "id": "2c",
+            "title": "C2 - Java 8, die neuen Sprachmittel (Ergebnisse aus VT)",
+            "abstract": "Im März 2014 wurde mit Java 8 ein Major-Feature-Release veröffentlicht. Im Rahmen eines Vertiefungsthemas haben wir uns mit den neuen Sprachfeatures von Java 8 auseinandergesetzt. Eine der wichtigsten Neuerungen in Java 8 sind Lambda-Expressions, welche es ermöglichen, Funktionen als Methodenargumente zu übergeben. In Kombination mit dem - ebenfalls neuen - Stream-Interface eröffnen sich dem Java-Entwickler neue Möglichkeiten, um simplen, sauberen und einfach lesbaren Code zu schreiben. Dieser Vortrag wird im Stil eines 'Live-Hacking' in die neuen Möglichkeiten von Lamdbda-Expressions und Streams einführen. Auf der Basis von 'vor Java 8'-Code wird live gezeigt, wie durch die Verwendung von Lambdas und Streams der Code kompakter, sauberer und lesbarer wird.",
             "speakerIds": [24],
             "common": false
         },
         {
-            "id": "b1",
-            "title": "B1 - Open Data",
-            "abstract": "Wie komme ich von A nach B? Was man sich früher über x Kombinationsmöglichkeiten mühsam von Hand aus dem Kursbuch heraussuchen musste ist heute per Knopfdruck verfügbar. Diese Information will nicht nur die SBB den Schweizerinnen und Schweizer zur Verfügung stellen. Neben Big Players wie Google und Amadeus wollen auch Open Source Projekte, KMU’s und Privatpersonen eine qualitativ hochwertige Reiseinformation anbieten. Intermodaler Routenplaner, Tür zu Tür Navigation, jeder Anbieter will sich durch Zusatznutzen beim Kunden profilieren. Was sind die innovativsten/kreativsten Umsetzungen auf Basis der ÖV Information und wie positioniert sich die SBB in diesem umkämpften Markt? Welche SBB-Informationen interessieren die Open Data Community nebst dem Fahrplan und wie geht die SBB mit diesen Anfragen um. ",
-            "speakerIds": [4],
+            "id": "3c",
+            "title": "C3 - Tripple Session",
+            "abstract": "A) Rx oder: wie ich lernte, asynchrone Ereignisse zu lieben. Mit modernen Nebenläufigkeits-API können einzelne Ereignisse asynchron einfach verarbeitet werden. Die Koordination von mehreren asynchronen Ereignissen stellt hingegen nach wie vor eine Herausforderung dar. Um dieses Problem zu beheben, wurden die Reactive Extensions (Rx) entwickelt: in Rx liegt der Fokus nicht auf einzelnen Ereignissen, sondern auf Ereignis-Quellen, welche sich mittels Funktionen umwandeln lassen. In diesem Talk werde ich einen Überblick zu den Rx geben und zeigen, wie asynchroner Code ausgedruckt werden kann. B) Swift Playgrounds - Mit Swift hat Apple an der WWDC 2014 eine neue, moderne Programmiersprache vorgestellt, welche die Entwicklung für iOS und OS X in Zukunft erleichtern soll. Entwickelt wird dabei mit Apples bekannter Entwicklungsumgebung Xcode, die in der aktuellen Version 6 auch die sogenannten “Swift Playgrounds” einführt. Diese “Spielplätze” ermöglichen es auf innovative Art und Weise Swift-Code direkt und mit sofortigem Feedback zu testen, was ein besonders effizientes Experimentieren von Ideen und Konzepten aber auch Auffinden von Fehlern ermöglicht. Swift und die Swift Playgrounds werden kurz eingeführt und dann anhand von einem kleinen Beispiel vorgestellt. C) Mit Markupsprachen effizient Dokumente erstellen - Die meisten Dokumente erstellen wir mit WYSIWYG Editoren wie Microsoft Word. Warum eigentlich? In zehn Minuten werde ich zwei wesentlichen Schwächen von Word nennen. Danach demonstriere ich live, wie diese Schwächen mit Hilfe der Markupsprache Asciidoch nicht mehr auftreten und wie mit ihr Dokumente erzeugt werden.",
+            "speakerIds": [25, 26, 27, 28],
             "common": false
         },
         {
-            "id": "b2",
-            "title": "B2 - Innovative Kundenlenkung",
-            "abstract": "Die Systeme der SBB sind hochgradig vernetzt und erfassen eine Vielzahl von Daten. Im ersten Schritt der Kundeninformation hat man den Automatisierungsgrad für die Kundeninformation ausgebaut um die visuellen und akustischen Ausgaben zentral in Echtzeit steuern zu können. Im zweiten Schritt wird ein weiterer Teil der bestehenden Daten verwendet, um die Kundeninformationen für die Kundenlenkung anzureichern. Konkret soll die Auslastung der Personenwagen in Echtzeit mit den heutigen Systemen ermittelt werden. Hierbei werden unterschiedliche Messwerte analysiert und mittels selbstlernender Algorithmen aus der künstlichen Intelligenz trainiert. Ziel ist es auf dieser Basis dann die Auslastung in Echtzeit zu kennen um z.B. im Ereignisfall abschätzen zu können, wie viele Reisende betroffen sind um die benötigten Ersatzbusse aufzubieten.",
-            "speakerIds": [10, 11],
+            "id": "4c",
+            "title": "C4 - Ruck zuck, zack zack! Mit Angular und Co",
+            "abstract": "Um die Web-Frontend Entwicklung hat sich ein ganzes Universum an Libraries und Tools etabliert. Ich möchte anhand eines speziellen Stacks zeigen, wie Web-Applikationen intuitiv und effizient erstellt werden können. Dieser Stack besteht aus angularJS, einem deklarativen und leicht testbaren Javascript MVC Framework. Aus Bootstrap, einem CSS Framework für responsible Design. Ausserdem Spring Boot, für ein annotationsgetriebenes Rest API. Und einem Tool Stack, der effizientes Entwickeln ermöglicht: grunt, bower, yeoman. Dieser Stack eignet sich für ebenso für die Applikationsentwicklung, Rapid Tool Development wie auch für Rapid Prototyping. Anstatt eine ausgiebige Einführung in alle Technologien zu zeigen, präsentiere ich einen kompletten Stack, mit dem man erstens so schnell wie möglich den ersten Use-Case umsetzen kann. Und der zweitens auch eine schnelle Weiterentwicklung erlaubt. Vor allem bei Prototyping und entwicklungsunterstützenden Tools hat man weder Zeit noch Budget für lange Konfigurationen, umständliche GUI Entwicklung und zeitraubende Deployment-Rituale. Ganz klar, gilt das auch für die Applikationsentwicklung.",
+            "speakerIds": [29],
             "common": false
         },
         {
-            "id": "b3",
-            "title": "B3 - Usability@Cargo",
-            "abstract": "Durch nationale und internationale Gesetze und Vorgaben im Güterverkehr ist SBB Cargo verpflichtet, die Instandhaltung der Güterwagenflotte lückenlos zu dokumentieren. Ein besonderes Augenmerk liegt dabei auf den sicherheitsrelevanten Komponenten wie Radsätze oder Bremssohlen. Gerade bei Implementationen von neuen Gesetzesanforderungen ist es dabei umso wichtiger, dass mit Hilfe von IT-Systemen neue und zusätzliche Prozessschritte möglichst einfach und effizient abgewickelt werden können. Mit diesem Ziel vor Augen, sind bei SBB Cargo 2014 zwei SAP Lösungen eingeführt worden, die auf neusten SAP UI Technologien aufsetzen. Durch den Einsatz von SAP Netweaver Business Client (NWBC) konnten ausgewählte Prozesse mit einer neuen Benutzeroberfläche stark vereinfacht werden. Die Reduzierung von „Klicks“, die Unterstützung von „drag and drop“ Funktionalitäten und die voreingestellten Selektionen von Objekten haben zu einer Verbesserung der Datenqualität, einer Optimierung der Durchlaufzeiten und einer Steigerung der Benutzerakzeptanz geführt. Mit einer mobilen „HTML5“ Tablet-Lösung kann der Mitarbeitende bei der Fahrzeug Eingangskontrolle (Befundung) direkt am Fahrzeug die notwendigen Reparaturaufträge im SAP auswählen, weitere Informationen zum Vorgang nachschlagen und Hinweise zur  Schadensbehebung verfassen. Mit Hilfe dieser Lösung können Fahrzeuge papierlos, einfach und effizient kontrolliert werden. Mögliche Fehlerquellen werden dabei auf ein Minimum beschränkt.",
-            "speakerIds": [18, 19],
+            "id": "1d",
+            "title": "D1 – Web Application und XML Firewalls - was, wie, wo?",
+            "abstract": "Die Bedeutung von Web Anwendungen nimmt laufend zu – es werden immer mehr Geschäftsprozesse über diesen Kanal abgewickelt. Die Web Application und XML Firewalls tragen wesentlich zu einem adäquaten Schutz dieser Anwendungen bei. Wozu eine Web Application und/oder XML Firewall? Welchen Einfluss hat das auf das Entwickeln von Web-Anwendungen? Wie funktioniert ein korrektes Login/Logout? Was passiert bei der XML-Firewall mit einem WebService Call (SOAP, ReST mit XML/JSon), auf was muss man achten? Welche neuen Möglichkeiten hat die Neuzonierung geschaffen um die Sicherheit von Web Anwendungen zu erhöhen?",
+            "speakerIds": [32, 10, 33],
             "common": false
         },
         {
-            "id": "b4",
-            "title": "B4 - Big Data",
-            "abstract": "Viel wurde darüber schon geredet und geschrieben, wenige haben Erfahrung damit. Der Big Data Hype hat seinen Zenit gemäss Einschätzung Gartner überschritten. Wie ist Big Data auf dem Boden der SBB-Realität angekommen? Hält die Technologie was sie verspricht? Wir berichten über Erfahrungen mit ersten realisierten Use Cases aus verschiedenen Anwendungsgebieten und zeigen am Beispiel wie es funktioniert. Zudem wagen wir einen Blick in die nahe Zukunft: Welche SBB-Innovationen könnte Big Data unterstützen oder sogar erst ermöglichen? Und was ist dazu notwendig an Technologie, Kompetenzen sowie Vernetzung von Fach und IT? Wir sind überzeugt: Der SBB-Datenschatz birgt viel Innovationspotential. Und Big Data hilft bei der Hebung dieses Schatzes. Darüber hinaus zeigen wir, wie ein „Data Lake“ funktioniert und wie sich eine Big Data Infrastruktur in die IT-Landschaft der SBB integrieren lässt. Wie kommen die Daten in den „Data Lake“, wie lange bleiben sie drin und wohin fliessen sie daraus ab? Wer darf die Daten zu welchen Zwecken nutzen und wie steht es um den Datenschutz? Welche Fähigkeiten sind für den Umgang mit Big Data Technologien erforderlich? Viele Fragen rund um Big Data sind zu klären. Wir geben Einblick in den Stand der Abklärungen.",
-            "speakerIds": [25],
+            "id": "2d",
+            "title": "D2 – Re-booting ESTA mit Spring Boot?",
+            "abstract": "Die Konfiguration einfacher ESTA-Anwendungen ist über die Zeit sehr komplex geworden. Es müssen 2 Applikationskontexte mit n XML-Konfigurationen im jeweils richtigem Kontext definiert werden, einen Web- und ein Business-Komponenten-Scan definiert, AOP-Konfiguration für die Environment-Policy erstellt werden. Mit jedem neuen Feature in ESTA könnte diese Liste beliebig erweitert werden. Mit dem Spring Framework 4.0 Release wurde Spring Boot vorgestellt. Es soll mittels 'Konvention vor Konfiguration', dem kompletten Verzicht auf XML-Konfiguration und das 'automatische' hinzufügen aller nötigen Klassenbibliotheken eine schlanke und agile Möglichkeit bieten, um u.A. das Erstellen von standalone Spring-Anwendungen zu erleichtern. Mittels 'starter' POMs wird die Maven-Konfiguration vereinfacht und mit Hilfe von einem gekapseltem Tomcat oder Jetty kann auf das Deployment von WAR-Dateien verzichtet werden. Eine komplette Liste der Feature ist unter zu finden. Der Vortrag soll aufzeigen, welche Features in Spring Boot enthalten sind, wie diese die Entwicklung von Anwendungen vereinfachen und wo die Konfiguration von ESTA vereinfacht werden könnte, falls für ESTA einige Feature von Spring Boot verwendet würden. Der Vortrag soll primär eine Einführung in Spring Boot sein und kurz die möglichen Auswirkungen in ESTA aufzeigen.",
+            "speakerIds": [34, 35, 7],
             "common": false
         },
         {
-            "id": "c1",
-            "title": "C1 - Neue Technologien werden erwachsen",
-            "abstract": "Schäden am Rollmaterial, verursacht durch unsachgemässe Behandlung, fehlerhafte Bedienung oder infrastrukturseitige Einflüsse, erzeugen nicht nur hohe Reparaturkosten, sondern können auch den geordneten Bahnbetrieb beeinflussen und generieren grosse Aufwände für die Kompensation des entstandenen Produktionsausfalls. Um die Schadensursachen beseitigen zu können, müssen diese erst identifiziert werden. Mit den regelmässig durchgeführten Kontrollen ist dies in vielen Fällen nicht möglich. Am Rollmaterial installierte, intelligente Sensoren sind heute in der Lage, Schäden wie z.B. Flachstellen zu detektieren und mit GPS Unterstützung verschiedene weitere Ereignisse und Einflussfaktoren genau zu protokollieren. Mittels Telemetrie können diese Informationen als potentielle Schadensverursacher in eine zentrale Datenbank übertragen werden. Bei Flotten von mehren tausend Fahrzeugen entstehen so grosse Datenmengen mit vielfältigem Informationsgehalt, wie Sensormessdaten, Stossereignisse oder Bewegungsprofile. Eine Auswertung dieses Datenberges mit konventionellen Methoden wäre sehr zeitaufwändig und würde sich nur in ganz spezifischen Fällen lohnen. Auswertungen, basierend auf Business Intelligence Technologien, erlauben dagegen eine gezielte Korrelation verschiedenster Einflussfaktoren gegeneinander und ermöglichen eine effiziente Identifikation von Schadensursachen. Der Vortrag zeigt Methoden und Technologien, wie aus einer riesigen Datenmenge aus unterschiedlichen Quellen  (Big Data) gezielt nach Schadensursachen gesucht werden kann und diese genau identifiziert werden können. Im Weiteren wird die für diesen Zweck benötigte Infrastruktur und die zugrundeligende Softwarearchitektur beleuchtet. Bezug: Eine Verkettung neuer Technologien, wie inntelligente Sensoren, Telemetrie, Big Data und  Bussiness Intelligence ermöglichen neue innovative Ansätze zur Optimierung des geregelten Bahnbetriebs und zur Senkung der Instandhaltungskosten.",
-            "speakerIds": [5, 6],
+            "id": "3d",
+            "title": "D3 – CQRS und EventSourcing.. oder ein etwas anderes Architekturmuster",
+            "abstract": "Die Anwendungsentwicklung von Individualsoftware bei den SBB orientiert sich weitgehen am klassischen vertikalen Schichtenmodell. Dieses Modell verletzt in der Regel das Single Responsibility Prinzip  auf Ebene der Softwarearchitektur. Mit CQRS stellen wir ein alternatives Konzept vor, welches durch die Aufteilung des Datenmodells in ein Domänenmodell und ein Abfragemodell zu erheblichen Vereinfachungen in der fachlichen und technischen Komplexität führt. Manchmal interessiert uns nicht nur der aktuelle Systemzustand sondern auch der Weg dorthin. EventSourcing nimmt sich genau dieses Aspekts an und speichert den Zustand des Systems indirekt als Sequenz von aufeinander folgenden, unabhängigen Events. Auf diese Weise ist es jederzeit möglich, einen x-beliebigen Zustand in der Vergangenheit zu rekonstruieren. Kombiniert man beide Ansätze ensteht daraus ein alternatives Architektur-Muster, welches einiges an Potential beinhaltet – auch für die SBB IT. Anhand von Anwendungsfällen und praktischen Code-Beispielen wird das Muster näher vorgestellt.",
+            "speakerIds": [37, 38],
             "common": false
         },
         {
-            "id": "c2",
-            "title": "C2 - GBT",
-            "abstract": "Siemens präsentiert die Tunnelleittechnik (TLT) für den Gotthard Basistunnel (GBT). Die TLT ist Anzeige und Bedinung der Einrichtungen im GBT, wie Telekom-Einrichtungen, Tunnelfunk, Stromversorgung 50Hz, Stromversorgung 16.3 Hz, Belüftung, Klima, Entwässerung… die Liste ist fast endlos. Für die Ereignisbewältigung ist die die TLT mit einem voll integrierten Einsatzleitsystem und für die Instandhaltung mit einem Maintenance Management Tool auf Basis SAP verbunden. Wie erfolgen die Anzeige und Bedienung in einem derart komplexen Systemumfeld?",
-            "speakerIds": [5, 6],
+            "id": "4d",
+            "title": "D4 – Architekturkonformität - wie misst man Architektur?",
+            "abstract": "Die Definition einer Zielarchitektur ist Kernkompetenzen eines Softwarearchiteken. Gemäss dem Motto 'You care about what you measure' ist es aber wünschenswert, die Einhaltung der definierten Architektur auch überprüfen zu können. Wie aber lässt sich Architektur messen und welche Risiken werden damit adressiert und hoffentlich mitigiert? In einem kurzen Überblick dazu werden Motivation und Ziele von Architekturmessungen aufgezeigt sowie die betrachteten Qualitätsaspekte und deren Kostenwirksamkeit beleuchtet. Anhand eines konkreten Fallbeispiels - der Messung der Anwendungsarchitektur Guidelines innerhalb der Domäne MVP im IT-SCP - wird eine konkrete Umsetzung von Architekturkonformitätsmessung mit dem Werkzeug Sonargraph anhand der folgenden Fragen diskutiert: Nach welchen Regeln wird gemessen, was wird gemessen, welche Ergebnisse liegen vor? Wie ist der Stand bezüglich Scope und Automatisierung? Was wären sinnvolle weitere Ausbauschritte? Wo liegen die Grenzen, was konnte bisher nicht gemessen werden?",
+            "speakerIds": [39],
             "common": false
         },
         {
-            "id": "c3",
-            "title": "C3 - Mitarbeitende verbinden",
-            "abstract": "Mit der Digitalisierung wird die Welt schneller, komplexer, mobiler und transparenter. Künftig wird alles miteinander verbunden sein: Menschen, Informationen, Anlagen, Unternehmen. Privat und im Arbeitsalltag. Der Trend zu mobilen Geräten ist ungebrochen, auch bei der SBB. Moderne Kommunikations- und Arbeitsmittel tragen dazu bei, dass Mitarbeitende unseren Kundinnen und Kunden einen exzellenten Service bieten. Die KL hat beschlossen die Mitarbeitenden der SBB bis 2015 flächendeckend mit mobilen Endgeräten auszurüsten und den digitalen Graben zu schliessen. Die Kompetenz zur Anwendung digitaler Endgeräte wird somit beschleunigt & flächendeckend aufgebaut. Mit diesem Entscheid wird das Mobile Computing im Unternehmen standardisiert und die Basis für effiziente, mobile Prozesse im Unternehmen geschaffen. Bereits sind Anwendungen vorhanden oder geplant, um in ihren Bereichen schneller, transparenter und besser zu werden. Einige Anwendungsfälle: Durch MIT bereitgestellte SBB-Anwendungen wie Digitale Dokumentenmappe, Mängel-App, News-App, Intranet, u.a. Business Case: Integrale Geschäftsabwicklung von Railclean (IGCL) – Ablösung der Meldezettel sowie die Auftragsrapportierung (Papier) durch moderne Apps. Dieser Schritt hat Herausforderungen für die MAIN und auch für die IT. Denn wir kriegen dadurch viele neue IT-Nutzer, die nur mobil bedient werden können. Die neue Zielarchitektur muss u.a. die Inbetriebnahme- und Support-Prozesse „Mobile only“ nutzbar machen und Antworten auf die Fragen liefern wie: Wie nehmen Mitarbeiternde ein mobiles, integriertes Endgerät in Betrieb, wenn der Vorgesetzte keinen ICT-Workplace hat? Wie ändere ich das SBB-Passwort (NT-SBB1) mit einem Smartphone? Wie lösche ich alte Mails, wenn meine Mailbox voll ist und ich auf dem Smartphone nur noch die letzten 3 Monate sehe?",
-            "speakerIds": [20, 21, 22],
+            "id": "1e",
+            "title": "E1 – Tripple Session",
+            "abstract": "A) Qualitätssicherung der Datenmigration mit Infomatica DVO - Immer wenn Daten bewegt und verändert werden, sei es über Schnittstellen oder in Datenmigrationen, können sich Fehler einschleichen. Der Validierung der Daten wird in der Regel zu wenig Aufmerksamkeit geschenkt, da dies oft mit zusätzlichem und manuellem Aufwand verbunden ist. Die ETL-Plattform bietet mit der Informatica PowerCenter Data Validation Option (DVO) eine Funktionalität, um Daten mit wesentlich geringerem Aufwand, ohne Programmierung und besserer Nachvollziehbarkeit als mit manuell erstellten Scripts zu validieren. Die Lösung eignet sich nicht nur während der Testphase, sondern auch zur periodischen Überwachung der Datenqualität in der Produktion. In diesem Kurzreferat werden Erstellung und Durchführung von Testfällen live demonstriert sowie Stärken und Schwächen aus ersten Projekteinsätzen vermittelt. B) '....implements SBB Maps' - Was ist das Ziel? Mit wenigen publizierten Services können verschiedenste SBB Clients einfach und effizient mit räumlichen SBB Informationen ausgestattet werden um sich im Bahnbereich exakt orientieren zu können. Wo können die SBB Maps verwendet werden? IOS, Android, SAP, Browser, allgemein in Applikationen, Bsp HTML Code Wo werden sie bereits oder nächstens produktiv verwendet? IPAD für Sperrprozess beim Bauen(Gleispad), IPAD für Zustandsmonitoring Infra Anlagen(ZMON), verschiedene WebGIS Browser Applikationen wie Immobilienbewirtschaftung, Naturrisiken oder Energie C) Die 'richtige' Architektur PAIP - warum nicht OSGi? - Im Rahmen von PAIP (Prozessalignment Intervallplanung) werden Prozesse und Software für die Intervallplanung grundlegend geändert und an die neuen Anforderungen angepasst. Bisher wurde dafür das Teilverfahren „INTO“ innerhalb von NeTS verwendet. Aufgrund der bekannten Anforderungen steht fest, dass auch die neue Lösung eine Individualentwicklung auf Basis von Java EE sein wird. Im Rahmen von Studien wurde der Rahmen dafür abgesteckt. In dem folgenden Kurzvortrag wird auf die folgenden Fragen eingegangen: Kann die Chance für Modularisierung der NeTS-Applikation genutzt werden? Welche Modularisierung? Welche Ebenen von Modularisierung gibt es? Welche technischen Lösungen gibt es für die Modularisierung? Was spricht für OSGi? Was dagegen? Weshalb haben wir uns gegen OSGi entschieden? Wie geht es weiter?",
+            "speakerIds": [40, 41, 42],
             "common": false
         },
         {
-            "id": "c4",
-            "title": "C4 - SBB Police goes Mobile",
-            "abstract": "Praktisch alle Geschäftsprozesse der Transportpolizei werden durch die IT unterstützt, z.B. in der Einsatzleitzentrale bei der Koordination von geplanten und präventiven Einsätzen sowie auch bei ungeplanten Einsätzen und Notfällen. Mobile Einsatzmittel sind immer stärker gefragt und gefordert. Die Modernisierung der Einsatzmittel für das ganze Korps der Transportpolizei findet seit der Integration der TPO in die SBB im 2011 laufend statt, sei es mit einem mobilen Patrouillenjournal oder die GPS basierten Lokalisierung der Patrouillen. Dank der neuen Einsatzmittel hat die Transportpolizei unter anderem folgende Vorteile: Sie ist in der Lage schneller, effizienter und gezielter auf Ereignisse zu reagieren. Sie ist schneller beim Endkunden vor Ort und verstärkt so dessen Sicherheitsgefühl durch mehr Präsenz. Die Einsätze können durch die Einsatzleitzentrale einfacher und schneller koordiniert werden. Journale werden künftig über das mobile Patrouillenjournal elektronisch übermittelt – damit können Medienbrüche und hoher administrativer Aufwand deutlich reduziert werden. Die Einsatzkräfte sind, aufgrund der Lokalisierung durch Tracker, sofort allozierbar und abrufbereit. Die erhöhte Einsatzbereitschaft kann kurzfristig sichergestellt werden. Sie ist besser mit anderen Polizeikorps vernetzt. Die Einsatzkoordination über Korps hinweg wird einfacher. Andere Polizeikorps zeigen Interesse an den innovativen Lösungen, die die SBB IT für die Transportpolizei umgesetzt hat!",
-            "speakerIds": [26],
+            "id": "2e",
+            "title": "E2 - Model-Driven Engineering (MDE)",
+            "abstract": "Model Driven Engineering (MDE) war und ist ein weites Gebiet. Ursprünglich definierte die OMG mit ihrem MDA Ansatz (http://www.omg.org/mda/) wie man bspw. aus einem UML2 Modell konkreten Programmcode (z.B. Java) generiert. Das Konzept dahinter ist stets, wie man mehr oder weniger Plattform unabhängige Modelle in Plattform spezifischen Code transformiert. Im Vortrag setzen wir die konkrete Service-Architektur der MVP Anwendungslandschaft als 'neuralgischen Punkt' in Sachen Code-Generierung ins Zentrum und stellen einen Generator vor, der durch IT-SCP entwickelt wurde und auch für neue strategische Anwendungsservices eingesetzt wird. Dabei setzen wir folgende Schwerpunkte: - Modellierung von technischen Anwendungsservices in UML2 - Demonstration des Generators für ESTA basierte Services - Anleitung zum Generatorbau (Sparx EA, Model2Text, eclipse EMF, eclipse UML, OCL) - Nutzen für nachhaltige Entwicklungen (Feedback von Usern) - Weiteres Potential für Generatoren in der SBB",
+            "speakerIds": [43, 44],
             "common": false
         },
         {
-            "id": "d1",
-            "title": "D1 - Touchpoints - Kunden berühren",
-            "abstract": "Die Bedürfnisse der Kunden haben sich in den letzten Jahren stetig und rasch verändert. Die Kunden wünschen die Leistungen des öffentlichen Verkehrs schneller, mobiler, persönlicher und transparenter. Der Kunde des öV Schweiz differenziert dabei kaum, welcher Geschäftsakteur welche Dienstleistung für ihn erbringt; für den Kunden zählt vielmehr das eigene Erlebnis bei der Erfüllung seiner persönlichen Mobilitätsbedürfnisse. Dieses Erlebnis wird zunehmend von der Gesamtheit der IT-Unterstützung geprägt. Der für eine Dienstleistung zuständige Geschäftsakteur ist nämlich zwangsläufig in seiner Innenperspektive gefangen: er sieht zwar gut, wie er «seinen» Kanal zum Kunden gestalten soll. Umgekehrt ist es schwieriger: die Perspektive des Kunden einnehmen und von aussen betrachten, wie die Vielfalt aller Geschäftsfähigkeiten an einem bestimmten Punkt wirkt! Wir stellen uns die Frage: Wie können die grossartigen Soli der einzelnen Leistungserbringer am Berührungspunkt zwischen Kunde und SBB zur einer harmonischen Synfonie orchestriert werden? Das öV Branchenmodell aus der Geschäftsarchitektur des Personenverkehrs bringt mit dem «Touchpoint-Ansatz» ein innovatives Denkmodell und nützliches Arbeitsinstrument ins Spiel.",
-            "speakerIds": [7],
+            "id": "3e",
+            "title": "E3 – Next Generation Enterprise Application Plattforms",
+            "abstract": "Wie könnte eine nächste Generation von Anwendungsplattformen für Enterpriseanwendungen ausschauen? Wohin können wir uns entwicken? Wie können wir sowohl die steigende Komplexität des Umfelds (Libraries, Schnittstellen) alsauch sich ändernde betriebliche Rahmenbedingungen wie Cloud oder Devops und Anfoderungen an Skalierbarkeit und niedrigere Betriebskosten berücksichtigen? Mit vermehrten Alternativen zu einer durchgenden transaktionalen Verarbeitung, kleineren Workunits, damit verbunderener höhere Skalierbarkeit werden auch optionen jenseits der monolithischen JEE Anwendungen frei. Dazu kommt ein schrittweiser Abbau von Rollen im Entwicklungsprozess durch verbesserte Tools und Automation. Dies öffnet Optionen jenseits der heutigen JEE Server. In diesem Vortrag wird die Geschichte der Plattformen mit denen wir heute arbeiten (JEE Server) aus der transaktionalen Abarbeitung von Anfragen und einer starken horizontralen Rollentrennung heraus beleuchtet und Alteranativen in anderen Bereichen gegenübergestellt. Es wird auf die tatsächliche und auf eine sinnvolle Rollentrennung und die sich daraus ergebenden Divergenzen zum Desgin von JEE Servern eingegangen. Aus dieser Geschichte heraus und aus den oben genannten Anfoderungen wird auf einen meiner Meinung nach zukunftsweisendsten Weg für Enterpriseplattformen eingegangen.",
+            "speakerIds": [45],
             "common": false
         },
         {
-            "id": "d2",
-            "title": "D2 - Projekt VVB",
-            "abstract": "Das Konzern Top-Programm «Energiesparen» hat zum Ziel, den Energieverbrauch gegenüber der unbeeinflussten Prognose von 2025 um 20% zu senken. Grundvoraussetzung für die langfristige Zielerreichung ist eine transparente und verursachergerechte Verrechnung des Bahnstroms (VVB). Die elektrischen Lokomotiven werden mit Messgeräten ausgestattet. Die gemessenen Energiedaten (Stromverbrauch) werden an das europäische Abrechnungssystem EREX (Norwegen) gesendet und dort ausgewertet, damit nachfolgend der effektiven Stromverbrauch, mittels der SBB IT Anwendung I-Prix, den Eisenbahnverkehrsunternehmen (EVU) verrechnet werden kann. Das Referat bietet einerseits einen Einblick in die WebService IT-Architektur der Schnittstelle zwischen I-Prix und EREX und andererseits werden neben Business Anforderungen betreffend verursachergerechte Verrechnung auch Energiemesstechniken im Fahrzeug vorgestellt. Dank VVB wird zukünftig die Energie nicht mehr pauschal sondern verursachergerecht verrechnet, und damit wird ein Anreiz zum Stromsparen geschaffen, was einem realen Kundenwunsch entspricht.",
-            "speakerIds": [13, 14, 15],
+            "id": "4e",
+            "title": "E4 – Software ausrollen gestern, heute und morgen",
+            "abstract": "Softwareentwicklung ist heute agil: Agile Methoden brauchen aber schnelle und reproduzierbare Releases. Die Mechanismen, um Software zu releasen, entwickelten sich darum in den letzten Jahren weg von lokalen Builds hin zu Releases über die CI. Diese CI-Pipeline wird momentan zu einer Continuous Delivery (CD)-Pipeline ausgebaut. In diesem Vortrag wollen wir euch diese Verlängerung der Build-Pipeline vorstellen, welche, durch die Automatisierung von manuellen Delivery-Schritten, auch verbreitert wird. Desweiteren skizzieren wir mögliche Releases von übermorgen: Applikationen werden in LinuX-Containern (LXC) entwickelt, getestet und als leicht-gewichtige Images bereitgestellt.",
+            "speakerIds": [46, 47, 48],
             "common": false
         },
         {
-            "id": "d3",
-            "title": "D3 - M2M & Daten",
-            "abstract": "Bigdata und Machine2Machine sind mittlerweile Buzzwords, die in aller Munde sind und sich sehr schnell verbrauchen. Dahinter steht aber eine reale und sich schnell entwickelnde Tatsache: immer mehr Menschen und immer mehr Dinge kommunizieren miteinander. Diese Hyperdigitalisierung führt zu gewaltigen Datenmengen, die ein grosses Potenzial darstellen. Dieses Potenzial nutzen wir heute – am Anfang der Hyperdigitalisierung – nur zu einem kleinen Teil. Meist geschieht das mit konkreten Fragestellungen auf sehr isolierten Datenbeständen. Die Nutzung verschiedenster Datenquellen über Unternehmensgrenzen hinweg ist dabei die nächste Entwicklungsstufe – verbunden mit mächtigen Werkzeugen, die grosse Datenmengen flexibel auswerten können. Zentral dabei ist die Frage der Sicherheit und des Datenschutzes. Dies stellt eine grosse Herausforderung im Spannungsfeld technischer Machbarkeit und ethischer Vertretbarkeit dar. Der Vortrag beleuchtet die aktuellen Möglichkeiten von Machine2Machine und Bigdata aus der Sicht von Swisscom. Ausserdem wagen wir einen Blick in die Nahe Zukunft und beschäftigen uns mit Risiken und flankierenden Massnahmen.",
-            "speakerIds": [23],
-            "common": false
+            "id": "outro",
+            "title": "Abschluss Developer Day 2014",
+            "abstract": "",
+            "speakerIds": [51],
+            "common": true
         },
         {
-            "id": "d4",
-            "title": "D4 - GSM-R",
-            "abstract": "Die moderne Zugsicherung mittels ETCS wird mehr und mehr die etablierten Lichtsignale und elektromechanischen Steuersysteme ablösen. ETCS wurde ins Leben gerufen, um in Europa eine einheitliche und länderübergreifende Zugsicherung mit Führerstandsignalisierung einzuführen, so dass Züge im grenz-überschreitenden Verkehr den Transport von Personen und Gütern ohne Wechsel des Traktions- und Zusicherungssystems sicherstellen können. Die Einführung von ETCS reduziert somit die Reisezeiten im grenzüberschreitenden Verkehr, erlaubt zudem eine höhere Strecken-Zugdichte und reduziert Verspätungsminuten. Der Transport der ETCS-Applikation erfolgt heute über das SBB eigene GSM-R Mobilkommunikationssystem. Die notwendige Bandbreite zur Übertragung der ETCS Applikation, im SBB Durchschnitt 500 Bit/s, erfolgt momentan im leitungsorientierten Übertragungsmodus. Hierfür werden vom GSM-R System Übertragungsbandbreiten von 4.8 bzw. 9.6kbit/s vom System zur Verfügung gestellt. Aufgrund der geringen Bandbreitenanforderungen der ETCS-Applikation stellt sich die Frage, ob dessen Transport neu im GSM Paketmodus erfolgen kann. Damit verbunden sind folgende Fragestellungen zu beantworten: Kann ein Übertragungsressource mehrfach genutzt werden? Wie gross ist der Multiplexing Gain pro Übertragungsressource?    Ist der Paketmodus robust gegenüber äusseren Einflüssen (z.B. Doppler Effekt) und wie schnell können Übertragungsfehler korrigiert werden? Können die QoS Anforderungen für Packet Transfer Delay/Loss etc. eingehalten werden? Kann das GSM-R Radionetzwerk der ETCS Applikation Übertragungsressourcen zuweisen, die dessen  QoS Anforderungen (z.B. Garantierte Bitrate oder Verkehrskategorie) ensprechen?",
-            "speakerIds": [27],
-            "common": false
+            "id": "apero",
+            "title": "Apéro",
+            "abstract": "",
+            "speakerIds": [],
+            "common": true
         }
     ],
     "tracks": [
         {
-            "id": "kunden",
-            "title": "Mehr Wert für die Kunden",
+            "id": "coretec",
+            "title": "Core Tec",
             "presentations": [
                 {
-                    "id": 1,
-                    "talkId": "opening",
+                    "id": 5,
+                    "talkId": "intro",
                     "time": {
                         "start": "09:00",
-                        "end": "09:15"
+                        "end": "09:20"
                     },
-                    "room": ""
-                },
-                {
-                    "id": 5,
-                    "talkId": "keynote",
-                    "time": {
-                        "start": "09:15",
-                        "end": "10:15"
-                    },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
                     "id": 10,
-                    "talkId": "pause",
+                    "talkId": "keynote1",
                     "time": {
-                        "start": "10:15",
-                        "end": "10:45"
+                        "start": "09:20",
+                        "end": "10:10"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
                     "id": 15,
-                    "talkId": "a1",
+                    "talkId": "pause",
                     "time": {
-                        "start": "10:45",
-                        "end": "11:30"
+                        "start": "10:10",
+                        "end": "10:35"
                     },
-                    "room": "Champions Lounge"
+                    "roomId": ""
                 },
                 {
                     "id": 20,
-                    "talkId": "pause",
+                    "talkId": "1a",
                     "time": {
-                        "start": "11:30",
-                        "end": "11:45"
+                        "start": "10:35",
+                        "end": "11:20"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
                     "id": 25,
-                    "talkId": "a2",
+                    "talkId": "1b",
                     "time": {
-                        "start": "11:45",
-                        "end": "12:30"
+                        "start": "11:30",
+                        "end": "12:15"
                     },
-                    "room": "Media Center"
+                    "roomId": "2"
                 },
                 {
                     "id": 30,
-                    "talkId": "pause",
+                    "talkId": "mittagessen",
                     "time": {
-                        "start": "12:30",
-                        "end": "14:00"
+                        "start": "12:15",
+                        "end": "13:25"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
                     "id": 35,
-                    "talkId": "a3",
+                    "talkId": "1c",
                     "time": {
-                        "start": "14:00",
-                        "end": "14:45"
+                        "start": "13:25",
+                        "end": "14:20"
                     },
-                    "room": "Media Center"
+                    "roomId": "3"
                 },
                 {
                     "id": 40,
-                    "talkId": "pause",
+                    "talkId": "1d",
                     "time": {
-                        "start": "14:45",
-                        "end": "15:00"
+                        "start": "14:20",
+                        "end": "15:05"
                     },
-                    "room": ""
+                    "roomId": "4"
                 },
                 {
                     "id": 45,
-                    "talkId": "a4",
+                    "talkId": "pause",
                     "time": {
-                        "start": "15:00",
-                        "end": "15:45"
+                        "start": "15:05",
+                        "end": "15:30"
                     },
-                    "room": "Media Center"
+                    "roomId": ""
                 },
                 {
                     "id": 50,
-                    "talkId": "pause",
+                    "talkId": "1e",
                     "time": {
-                        "start": "15:45",
-                        "end": "16:00"
+                        "start": "15:30",
+                        "end": "16:15"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
                     "id": 55,
-                    "talkId": "closing",
+                    "talkId": "keynote2",
                     "time": {
-                        "start": "16:00",
-                        "end": "16:15"
+                        "start": "16:25",
+                        "end": "17:00"
                     },
-                    "room": ""
+                    "roomId": "1"
+                },
+                {
+                    "id": 60,
+                    "talkId": "outro",
+                    "time": {
+                        "start": "17:00",
+                        "end": "17:10"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 65,
+                    "talkId": "apero",
+                    "time": {
+                        "start": "17:10",
+                        "end": "18:45"
+                    },
+                    "roomId": ""
                 }
             ]
         },
         {
-            "id": "innovation",
-            "title": "Innovative (IT-) Projekte aus dem Business / Was bewegt das Bahnhofsgeschäft",
+            "id": "javatec",
+            "title": "Java Tec",
             "presentations": [
                 {
-                    "id": 2,
-                    "talkId": "opening",
+                    "id": 5,
+                    "talkId": "intro",
                     "time": {
                         "start": "09:00",
-                        "end": "09:15"
+                        "end": "09:20"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
-                    "id": 6,
-                    "talkId": "keynote",
+                    "id": 10,
+                    "talkId": "keynote1",
                     "time": {
-                        "start": "09:15",
-                        "end": "10:15"
+                        "start": "09:20",
+                        "end": "10:10"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
-                    "id": 11,
+                    "id": 15,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:15",
-                        "end": "10:45"
+                        "start": "10:10",
+                        "end": "10:35"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
-                    "id": 16,
-                    "talkId": "b1",
+                    "id": 20,
+                    "talkId": "2a",
                     "time": {
-                        "start": "10:45",
-                        "end": "11:30"
+                        "start": "10:35",
+                        "end": "11:20"
                     },
-                    "room": "Media Center"
+                    "roomId": "1"
                 },
                 {
-                    "id": 21,
-                    "talkId": "pause",
+                    "id": 25,
+                    "talkId": "2b",
                     "time": {
                         "start": "11:30",
-                        "end": "11:45"
+                        "end": "12:15"
                     },
-                    "room": ""
+                    "roomId": "2"
                 },
                 {
-                    "id": 26,
-                    "talkId": "b2",
+                    "id": 30,
+                    "talkId": "mittagessen",
                     "time": {
-                        "start": "11:45",
-                        "end": "12:30"
+                        "start": "12:15",
+                        "end": "13:25"
                     },
-                    "room": "Champions Lounge"
+                    "roomId": ""
                 },
                 {
-                    "id": 31,
+                    "id": 35,
+                    "talkId": "2c",
+                    "time": {
+                        "start": "13:25",
+                        "end": "14:20"
+                    },
+                    "roomId": "3"
+                },
+                {
+                    "id": 40,
+                    "talkId": "2d",
+                    "time": {
+                        "start": "14:20",
+                        "end": "15:05"
+                    },
+                    "roomId": "4"
+                },
+                {
+                    "id": 45,
                     "talkId": "pause",
                     "time": {
-                        "start": "12:30",
-                        "end": "14:00"
+                        "start": "15:05",
+                        "end": "15:30"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
-                    "id": 36,
-                    "talkId": "b3",
+                    "id": 50,
+                    "talkId": "2e",
                     "time": {
-                        "start": "14:00",
-                        "end": "14:45"
-                    },
-                    "room": "Sky Lounge"
-                },
-                {
-                    "id": 41,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "14:45",
-                        "end": "15:00"
-                    },
-                    "room": ""
-                },
-                {
-                    "id": 46,
-                    "talkId": "b4",
-                    "time": {
-                        "start": "15:00",
-                        "end": "15:45"
-                    },
-                    "room": "Future Lounge"
-                },
-                {
-                    "id": 51,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "15:45",
-                        "end": "16:00"
-                    },
-                    "room": ""
-                },
-                {
-                    "id": 56,
-                    "talkId": "closing",
-                    "time": {
-                        "start": "16:00",
+                        "start": "15:30",
                         "end": "16:15"
                     },
-                    "room": ""
+                    "roomId": "1"
+                },
+                {
+                    "id": 55,
+                    "talkId": "keynote2",
+                    "time": {
+                        "start": "16:25",
+                        "end": "17:00"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 60,
+                    "talkId": "outro",
+                    "time": {
+                        "start": "17:00",
+                        "end": "17:10"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 65,
+                    "talkId": "apero",
+                    "time": {
+                        "start": "17:10",
+                        "end": "18:45"
+                    },
+                    "roomId": ""
                 }
             ]
         },
         {
-            "id": "erfahrungen",
-            "title": "Erfahrungen aus dem IT-gestützten Bahngeschäft",
+            "id": "beyondnow",
+            "title": "Beyond Now",
             "presentations": [
                 {
-                    "id": 3,
-                    "talkId": "opening",
+                    "id": 5,
+                    "talkId": "intro",
                     "time": {
                         "start": "09:00",
-                        "end": "09:15"
+                        "end": "09:20"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
-                    "id": 7,
-                    "talkId": "keynote",
+                    "id": 10,
+                    "talkId": "keynote1",
                     "time": {
-                        "start": "09:15",
-                        "end": "10:15"
+                        "start": "09:20",
+                        "end": "10:10"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
-                    "id": 12,
+                    "id": 15,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:15",
-                        "end": "10:45"
+                        "start": "10:10",
+                        "end": "10:35"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
-                    "id": 17,
-                    "talkId": "c1",
+                    "id": 20,
+                    "talkId": "3a",
                     "time": {
-                        "start": "10:45",
-                        "end": "11:30"
+                        "start": "10:35",
+                        "end": "11:20"
                     },
-                    "room": "Future Lounge"
+                    "roomId": "1"
                 },
                 {
-                    "id": 22,
-                    "talkId": "pause",
+                    "id": 25,
+                    "talkId": "3b",
                     "time": {
                         "start": "11:30",
-                        "end": "11:45"
+                        "end": "12:15"
                     },
-                    "room": ""
+                    "roomId": "2"
                 },
                 {
-                    "id": 27,
-                    "talkId": "c2",
+                    "id": 30,
+                    "talkId": "mittagessen",
                     "time": {
-                        "start": "11:45",
-                        "end": "12:30"
+                        "start": "12:15",
+                        "end": "13:25"
                     },
-                    "room": "Future Lounge"
+                    "roomId": ""
                 },
                 {
-                    "id": 32,
+                    "id": 35,
+                    "talkId": "3c",
+                    "time": {
+                        "start": "13:25",
+                        "end": "14:20"
+                    },
+                    "roomId": "3"
+                },
+                {
+                    "id": 40,
+                    "talkId": "3d",
+                    "time": {
+                        "start": "14:20",
+                        "end": "15:05"
+                    },
+                    "roomId": "4"
+                },
+                {
+                    "id": 45,
                     "talkId": "pause",
                     "time": {
-                        "start": "12:30",
-                        "end": "14:00"
+                        "start": "15:05",
+                        "end": "15:30"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
-                    "id": 37,
-                    "talkId": "c3",
+                    "id": 50,
+                    "talkId": "3e",
                     "time": {
-                        "start": "14:00",
-                        "end": "14:45"
-                    },
-                    "room": "Champions Lounge"
-                },
-                {
-                    "id": 42,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "14:45",
-                        "end": "15:00"
-                    },
-                    "room": ""
-                },
-                {
-                    "id": 47,
-                    "talkId": "c4",
-                    "time": {
-                        "start": "15:00",
-                        "end": "15:45"
-                    },
-                    "room": "Champions Lounge"
-                },
-                {
-                    "id": 52,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "15:45",
-                        "end": "16:00"
-                    },
-                    "room": ""
-                },
-                {
-                    "id": 57,
-                    "talkId": "closing",
-                    "time": {
-                        "start": "16:00",
+                        "start": "15:30",
                         "end": "16:15"
                     },
-                    "room": ""
+                    "roomId": "1"
+                },
+                {
+                    "id": 55,
+                    "talkId": "keynote2",
+                    "time": {
+                        "start": "16:25",
+                        "end": "17:00"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 60,
+                    "talkId": "outro",
+                    "time": {
+                        "start": "17:00",
+                        "end": "17:10"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 65,
+                    "talkId": "apero",
+                    "time": {
+                        "start": "17:10",
+                        "end": "18:45"
+                    },
+                    "roomId": ""
                 }
             ]
         },
         {
-            "id": "future",
-            "title": "Future and Trends",
+            "id": "engineeringarts",
+            "title": "Engineering Arts",
             "presentations": [
                 {
-                    "id": 4,
-                    "talkId": "opening",
+                    "id": 5,
+                    "talkId": "intro",
                     "time": {
                         "start": "09:00",
-                        "end": "09:15"
+                        "end": "09:20"
                     },
-                    "room": ""
+                    "roomId": "1"
                 },
                 {
-                    "id": 8,
-                    "talkId": "keynote",
+                    "id": 10,
+                    "talkId": "keynote1",
                     "time": {
-                        "start": "09:15",
-                        "end": "10:15"
+                        "start": "09:20",
+                        "end": "10:10"
                     },
-                    "room": "Saal 1"
+                    "roomId": "1"
                 },
                 {
-                    "id": 13,
+                    "id": 15,
                     "talkId": "pause",
                     "time": {
-                        "start": "10:15",
-                        "end": "10:45"
+                        "start": "10:10",
+                        "end": "10:35"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
-                    "id": 18,
-                    "talkId": "d1",
+                    "id": 20,
+                    "talkId": "4a",
                     "time": {
-                        "start": "10:45",
-                        "end": "11:30"
+                        "start": "10:35",
+                        "end": "11:20"
                     },
-                    "room": "Sky Lounge"
+                    "roomId": "1"
                 },
                 {
-                    "id": 23,
-                    "talkId": "pause",
+                    "id": 25,
+                    "talkId": "4b",
                     "time": {
                         "start": "11:30",
-                        "end": "11:45"
+                        "end": "12:15"
                     },
-                    "room": ""
+                    "roomId": "2"
                 },
                 {
-                    "id": 28,
-                    "talkId": "d2",
+                    "id": 30,
+                    "talkId": "mittagessen",
                     "time": {
-                        "start": "11:45",
-                        "end": "12:30"
+                        "start": "12:15",
+                        "end": "13:25"
                     },
-                    "room": "Sky Lounge"
+                    "roomId": ""
                 },
                 {
-                    "id": 33,
+                    "id": 35,
+                    "talkId": "4c",
+                    "time": {
+                        "start": "13:25",
+                        "end": "14:20"
+                    },
+                    "roomId": "3"
+                },
+                {
+                    "id": 40,
+                    "talkId": "4d",
+                    "time": {
+                        "start": "14:20",
+                        "end": "15:05"
+                    },
+                    "roomId": "4"
+                },
+                {
+                    "id": 45,
                     "talkId": "pause",
                     "time": {
-                        "start": "12:30",
-                        "end": "14:00"
+                        "start": "15:05",
+                        "end": "15:30"
                     },
-                    "room": ""
+                    "roomId": ""
                 },
                 {
-                    "id": 38,
-                    "talkId": "d3",
+                    "id": 50,
+                    "talkId": "4e",
                     "time": {
-                        "start": "14:00",
-                        "end": "14:45"
-                    },
-                    "room": "Future Lounge"
-                },
-                {
-                    "id": 43,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "14:45",
-                        "end": "15:00"
-                    },
-                    "room": ""
-                },
-                {
-                    "id": 48,
-                    "talkId": "d4",
-                    "time": {
-                        "start": "15:00",
-                        "end": "15:45"
-                    },
-                    "room": "Sky Lounge"
-                },
-                {
-                    "id": 53,
-                    "talkId": "pause",
-                    "time": {
-                        "start": "15:45",
-                        "end": "16:00"
-                    },
-                    "room": ""
-                },
-                {
-                    "id": 58,
-                    "talkId": "closing",
-                    "time": {
-                        "start": "16:00",
+                        "start": "15:30",
                         "end": "16:15"
                     },
-                    "room": ""
+                    "roomId": "1"
+                },
+                {
+                    "id": 55,
+                    "talkId": "keynote2",
+                    "time": {
+                        "start": "16:25",
+                        "end": "17:00"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 60,
+                    "talkId": "outro",
+                    "time": {
+                        "start": "17:00",
+                        "end": "17:10"
+                    },
+                    "roomId": "1"
+                },
+                {
+                    "id": 65,
+                    "talkId": "apero",
+                    "time": {
+                        "start": "17:10",
+                        "end": "18:45"
+                    },
+                    "roomId": ""
                 }
             ]
+        }
+    ],
+    "rooms": [
+        {
+            "id": 1,
+            "name": "Saal London"
+        },
+        {
+            "id": 2,
+            "name": "Saal Berlin"
+        },
+        {
+            "id": 3,
+            "name": "Saal Paris"
+        },
+        {
+            "id": 4,
+            "name": "Saal Wien"
         }
     ]
 }
