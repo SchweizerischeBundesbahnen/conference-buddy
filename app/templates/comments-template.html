@@ -16,11 +16,12 @@
         </button>
     </div>
     <div class="row">
-        <div class="panel panel-default" ng-repeat="comment in comments">
-            <div class="panel-body">
-                <strong>{{formatDate(comment)}}</strong>
+        <div class="commentbox" ng-repeat="comment in comments">
+            <div class="commentmeta">
+                <strong>{{comment.author}}</strong> <span class="commenttimestamp">| {{formatDate(comment)}}</span>
+             </div>
+            <div class="commentbody">
                 {{comment.value}}
-                <cite class="clearfix"> - {{comment.author}}</cite>
             </div>
         </div>
     </div>

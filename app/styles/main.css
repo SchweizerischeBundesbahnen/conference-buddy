@@ -206,3 +206,24 @@ ul {
     padding-left: 18px;
     margin: 0px;
 }
+
+.commentbox {
+    margin: 20px 0px 20px 0px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.commentmeta {
+    padding: 4px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+.commentbody {
+    padding: 4px 4px 4px 8px;
+}
+
+.commenttimestamp {
+    color: #838383;
+}
