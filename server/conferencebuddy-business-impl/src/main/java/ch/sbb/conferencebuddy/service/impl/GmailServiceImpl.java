@@ -82,6 +82,7 @@ public class GmailServiceImpl implements EmailService {
         message.setSubject("conference-buddy registration");
         message.setText("Dear " + user.getName() + ","
             + "\n\nYour Registration-URL: http://www.devday.ch/#/register?" + user.getId()
+            + "\nSBB UserId: " + user.getUserId()
             + "\n\nYour conference-buddy team"
         );
 
