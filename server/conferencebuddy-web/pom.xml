@@ -166,6 +166,29 @@
                 <groupId>pl.allegro</groupId>
                 <artifactId>grunt-maven-plugin</artifactId>
             </plugin -->
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>prepare</id>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <tasks>
+                                <echo message="process-resources phase" />
+                                <unzip src="../../client_dist/dist.zip" dest="${project.build.directory}/generated-sources/client-dist/" />
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
 
@@ -183,9 +206,9 @@
                     </archive>
                     <webResources>
                         <!-- angular client einbinden -->
-                        <!-- resource>
-                            <directory>../../client_dist/</directory>
-                        </resource -->
+                        <resource>
+                            <directory>${project.build.directory}/generated-sources/client-dist/</directory>
+                        </resource>
                         <webResource>
                             <directory>${basedir}/src/main/webapp/WEB-INF</directory>
                             <includes>

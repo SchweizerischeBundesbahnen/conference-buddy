@@ -48,14 +48,14 @@ public class CommentRepositoryTest extends AbstractRepositoryTest {
         commentRepository.flush();
 
         // read
-        savedComment2 = commentRepository.findOne(Long.valueOf(1));
+        savedComment2 = commentRepository.findOne(savedComment2.getId());
         commentRepository.flush(); // just in case
         Assert.assertNotNull(savedComment2);
         Assert.assertEquals("comment2", savedComment2.getValue());
 
         // delete
         commentRepository.delete(savedComment2);
-        savedComment2 = commentRepository.findOne(Long.valueOf(1));
+        savedComment2 = commentRepository.findOne(savedComment2.getId());
         Assert.assertNull(savedComment2);
     }
 }
