@@ -6,7 +6,8 @@ angular.module('conferenceBuddyApp').controller('ConferenceController',
 
     $scope.averageRating = 0;
     $scope.hasRatings = false;
-    $scope.myRating = undefined;
+    $scope.myRating = 0;
+    $scope.rated;
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
@@ -33,7 +34,8 @@ angular.module('conferenceBuddyApp').controller('ConferenceController',
             if ($scope.hasRatings) {
                 $scope.averageRating = rating.averageRate;
             }
-            $scope.myRating = (rating.rate !== undefined) ? rating.rate : 0;
+            $scope.rated = rating.rate || false;
+            $scope.myRating = rating.rate || 0;
         }).catch(function(err) {
             dialogService.showError('Backend Error', 'Failed to load ratings from the backend', 'HTTP-Status:' + err.status);
         });
