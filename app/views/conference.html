@@ -18,14 +18,17 @@
         <p>
             <small>
 <pre><code>Period periodOfInterest = Period.between(
- LocalDate.of(2005, Month.NOVEMBER, 29),
- LocalDate.of(2014, Month.DECEMBER, 10)
+    LocalDate.of(2005, Month.NOVEMBER, 29),
+    LocalDate.now().plusYears(9)
 );</code></pre>
             </small>
         </p>
         <div class="rating pull-right">
             <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
-            <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">Bewerten</button>
+            <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">
+                <span ng-if="rated">Aktualisieren</span>
+                <span ng-if="!rated">Bewerten</span>
+            </button>
         </div>
         <br/>
 

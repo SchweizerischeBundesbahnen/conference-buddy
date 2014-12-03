@@ -2,9 +2,14 @@
     <div class="row track">
         <p class="h3"><strong>MyTrack</strong></p>
     </div>
-    <div class="row track" ng-hide="myTrack.presentations"><p>Ops! Uns fehlen die Daten, um Deinen MyTrack anzuzeigen.</p> <p>Ist vielleicht was
-        bei der Registrierung schief gegangen? <a ng-controller="NavigationController" ng-click="goToAbout()">Lösche Deine Daten</a> und registriere
-            Dich nochmals.</p></div>
+    <div class="row track" ng-hide="myTrack.presentations">
+        <p>Ops! Uns fehlen Deine Anmeldungsdaten aus e-Tutor, um den MyTrack anzuzeigen.</p>
+        <p>
+            Falls Du Dich in e-Tutor angemeldet hast, ist vielleicht etwas bei der Registrierung schief gelaufen. In dem Fall kannst Du <a
+                ng-controller="NavigationController" ng-click="goToAbout()">Deine Registrierung hier löschen</a> und Dich nochmals registrieren.
+        </p>
+    </div>
+
     <!-- Smartphones und Tablets -->
     <div class="visible-xs-block visible-sm-block" ng-class="{row: true, talk: true, mytrack: true, mytrackClickable: hasAbstract(presentation)}"
          ng-repeat="presentation in myTrack.presentations"

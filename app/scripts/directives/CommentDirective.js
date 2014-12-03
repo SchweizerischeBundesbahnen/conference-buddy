@@ -8,6 +8,7 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
         },
         templateUrl: 'templates/comments-template.html',
         controller: function($scope) {
+
             $scope.commentEntry = null;
             $scope.author = userService.currentUser();
 
@@ -32,13 +33,7 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
             };
 
             $scope.formatDate = function(comment) {
-                var date = new Date(comment.timestamp);
-                var month = date.getMonth() + 1;
-                var hours = (date.getHours() < 10) ? '0' : '';
-                hours = hours + date.getHours();
-                var mins = (date.getMinutes() < 10) ? '0' : '';
-                mins = mins + date.getMinutes();
-                return date.getDate() + '.' + month + '.' + date.getFullYear() + ' ' + hours + ':' + mins;
+                return moment(comment.timestamp).fromNow();
             };
 
             $scope.showInputForm = function() {

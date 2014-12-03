@@ -36,7 +36,7 @@
             "name": "Lukas",
             "surname": "Gehrig",
             "email": "",
-            "company": "",
+            "company": "IT-AQ",
             "picture": "images/referenten/04.jpg",
             "bio": ""
         },
@@ -45,7 +45,7 @@
             "name": "Jürgen",
             "surname": "Höller",
             "email": "",
-            "company": "",
+            "company": "Pivotal",
             "picture": "images/referenten/05.jpg",
             "bio": ""
         },
@@ -72,7 +72,7 @@
             "name": "Simon",
             "surname": "Martinelli",
             "email": "",
-            "company": "",
+            "company": "simas GmbH",
             "picture": "images/referenten/08.jpg",
             "bio": ""
         },
@@ -81,7 +81,7 @@
             "name": "Beat",
             "surname": "Rigazzi",
             "email": "",
-            "company": "",
+            "company": "IT-SCI",
             "picture": "images/referenten/09.jpg",
             "bio": ""
         },
@@ -90,7 +90,7 @@
             "name": "Robert",
             "surname": "Hegi",
             "email": "",
-            "company": "",
+            "company": "IT-AQ",
             "picture": "images/referenten/10.jpg",
             "bio": ""
         },
@@ -99,8 +99,8 @@
             "name": "Manuel",
             "surname": "Schulz",
             "email": "",
-            "company": "",
-            "picture": "",
+            "company": "IT-OM",
+            "picture": "images/referenten/11.jpg",
             "bio": ""
         },
         {
@@ -117,7 +117,7 @@
             "name": "Philipp",
             "surname": "Rossmanith",
             "email": "",
-            "company": "",
+            "company": "IT-AQ",
             "picture": "images/referenten/13.jpg",
             "bio": ""
         },
@@ -126,7 +126,7 @@
             "name": "Peter",
             "surname": "Leuenberger",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/14.jpg",
             "bio": ""
         },
@@ -135,7 +135,7 @@
             "name": "Patrick",
             "surname": "Jeckelmann",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/15.jpg",
             "bio": ""
         },
@@ -144,7 +144,7 @@
             "name": "Peter",
             "surname": "Brunner",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/16.jpg",
             "bio": ""
         },
@@ -153,7 +153,7 @@
             "name": "Peter",
             "surname": "Wick",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/17.jpg",
             "bio": ""
         },
@@ -162,7 +162,7 @@
             "name": "Jonas",
             "surname": "Bandi",
             "email": "",
-            "company": "",
+            "company": "IvoryCode GmbH",
             "picture": "images/referenten/18.jpg",
             "bio": ""
         },
@@ -216,8 +216,8 @@
             "name": "Kaspar",
             "surname": "Käser",
             "email": "",
-            "company": "",
-            "picture": "",
+            "company": "IT-SWE",
+            "picture": "images/referenten/24.jpg",
             "bio": ""
         },
         {
@@ -235,7 +235,7 @@
             "surname": "Wetzel",
             "email": "",
             "company": "IT-SWE",
-            "picture": "",
+            "picture": "images/referenten/26.jpg",
             "bio": ""
         },
         {
@@ -243,7 +243,7 @@
             "name": "Philippe",
             "surname": "Robert",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/27.jpg",
             "bio": ""
         },
@@ -261,7 +261,7 @@
             "name": "Stefan",
             "surname": "Zeller",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/29.jpg",
             "bio": ""
         },
@@ -279,7 +279,7 @@
             "name": "Ernst",
             "surname": "Kammermann-Gerber",
             "email": "",
-            "company": "",
+            "company": "IT-AQ",
             "picture": "images/referenten/32.jpg",
             "bio": ""
         },
@@ -288,7 +288,7 @@
             "name": "Cengis",
             "surname": "Cetinkaya",
             "email": "",
-            "company": "",
+            "company": "IT-OM",
             "picture": "images/referenten/33.jpg",
             "bio": ""
         },
@@ -316,7 +316,7 @@
             "surname": "Spiegel",
             "email": "",
             "company": "IT-SWE",
-            "picture": "",
+            "picture": "images/referenten/37.jpg",
             "bio": ""
         },
         {
@@ -342,7 +342,7 @@
             "name": "Piotr",
             "surname": "Kowol",
             "email": "",
-            "company": "",
+            "company": "IT-SCF",
             "picture": "images/referenten/40.jpg",
             "bio": ""
         },
@@ -351,7 +351,7 @@
             "name": "Beat",
             "surname": "Maurer",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/41.jpg",
             "bio": ""
         },
@@ -360,7 +360,7 @@
             "name": "Martin",
             "surname": "Klausch",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/42.jpg",
             "bio": ""
         },
@@ -369,7 +369,7 @@
             "name": "Ronny",
             "surname": "Stauffer",
             "email": "",
-            "company": "IT-SCP",
+            "company": "IT-SWE",
             "picture": "images/referenten/43.jpg",
             "bio": ""
         },
@@ -378,7 +378,7 @@
             "name": "Peter",
             "surname": "Hirzel",
             "email": "",
-            "company": "",
+            "company": "IT-SCP",
             "picture": "images/referenten/44.jpg",
             "bio": ""
         },
@@ -396,7 +396,7 @@
             "name": "Sebastian",
             "surname": "Graf",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/46.jpg",
             "bio": ""
         },
@@ -405,7 +405,7 @@
             "name": "Christian",
             "surname": "Eichenberger",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/47.jpg",
             "bio": ""
         },
@@ -414,7 +414,7 @@
             "name": "Christoph",
             "surname": "Glanzmann",
             "email": "",
-            "company": "",
+            "company": "IT-SWE",
             "picture": "images/referenten/48.jpg",
             "bio": ""
         },
@@ -597,7 +597,7 @@
         {
             "id": "1e",
             "title": "E1 – Tripple Session",
-            "abstract": "A) Qualitätssicherung der Datenmigration mit Infomatica DVO - Immer wenn Daten bewegt und verändert werden, sei es über Schnittstellen oder in Datenmigrationen, können sich Fehler einschleichen. Der Validierung der Daten wird in der Regel zu wenig Aufmerksamkeit geschenkt, da dies oft mit zusätzlichem und manuellem Aufwand verbunden ist. Die ETL-Plattform bietet mit der Informatica PowerCenter Data Validation Option (DVO) eine Funktionalität, um Daten mit wesentlich geringerem Aufwand, ohne Programmierung und besserer Nachvollziehbarkeit als mit manuell erstellten Scripts zu validieren. Die Lösung eignet sich nicht nur während der Testphase, sondern auch zur periodischen Überwachung der Datenqualität in der Produktion. In diesem Kurzreferat werden Erstellung und Durchführung von Testfällen live demonstriert sowie Stärken und Schwächen aus ersten Projekteinsätzen vermittelt. B) '....implements SBB Maps' - Was ist das Ziel? Mit wenigen publizierten Services können verschiedenste SBB Clients einfach und effizient mit räumlichen SBB Informationen ausgestattet werden um sich im Bahnbereich exakt orientieren zu können. Wo können die SBB Maps verwendet werden? IOS, Android, SAP, Browser, allgemein in Applikationen, Bsp HTML Code Wo werden sie bereits oder nächstens produktiv verwendet? IPAD für Sperrprozess beim Bauen(Gleispad), IPAD für Zustandsmonitoring Infra Anlagen(ZMON), verschiedene WebGIS Browser Applikationen wie Immobilienbewirtschaftung, Naturrisiken oder Energie C) Die 'richtige' Architektur PAIP - warum nicht OSGi? - Im Rahmen von PAIP (Prozessalignment Intervallplanung) werden Prozesse und Software für die Intervallplanung grundlegend geändert und an die neuen Anforderungen angepasst. Bisher wurde dafür das Teilverfahren „INTO“ innerhalb von NeTS verwendet. Aufgrund der bekannten Anforderungen steht fest, dass auch die neue Lösung eine Individualentwicklung auf Basis von Java EE sein wird. Im Rahmen von Studien wurde der Rahmen dafür abgesteckt. In dem folgenden Kurzvortrag wird auf die folgenden Fragen eingegangen: Kann die Chance für Modularisierung der NeTS-Applikation genutzt werden? Welche Modularisierung? Welche Ebenen von Modularisierung gibt es? Welche technischen Lösungen gibt es für die Modularisierung? Was spricht für OSGi? Was dagegen? Weshalb haben wir uns gegen OSGi entschieden? Wie geht es weiter?",
+            "abstract": "A) Qualitätssicherung der Datenmigration mit Infomatica DVO - Immer wenn Daten bewegt und verändert werden, sei es über Schnittstellen oder in Datenmigrationen, können sich Fehler einschleichen. Der Validierung der Daten wird in der Regel zu wenig Aufmerksamkeit geschenkt, da dies oft mit zusätzlichem und manuellem Aufwand verbunden ist. Die ETL-Plattform bietet mit der Informatica PowerCenter Data Validation Option (DVO) eine Funktionalität, um Daten mit wesentlich geringerem Aufwand, ohne Programmierung und besserer Nachvollziehbarkeit als mit manuell erstellten Scripts zu validieren. Die Lösung eignet sich nicht nur während der Testphase, sondern auch zur periodischen Überwachung der Datenqualität in der Produktion. In diesem Kurzreferat werden Erstellung und Durchführung von Testfällen live demonstriert sowie Stärken und Schwächen aus ersten Projekteinsätzen vermittelt. B) '....implements SBB Maps' - Wie verwende ich SBBmaps in meiner Applikation? 2 Code-Beispiele, einmal basic und einmal mit Navigationsfunktion. Was macht eine Geo Daten Plattform ausser SBBmaps zu produzieren? Die OpenGIS Architektur beinhaltet auch folgende Komponenten: Service Katalog (2 konkrete Beispiele, Bahnplan und Luftbilder), Service Publikation, Service Portal (Mini-Demo: Kombination von internen und externen Geo Web Services). C) Die 'richtige' Architektur PAIP - warum nicht OSGi? - Im Rahmen von PAIP (Prozessalignment Intervallplanung) werden Prozesse und Software für die Intervallplanung grundlegend geändert und an die neuen Anforderungen angepasst. Bisher wurde dafür das Teilverfahren „INTO“ innerhalb von NeTS verwendet. Aufgrund der bekannten Anforderungen steht fest, dass auch die neue Lösung eine Individualentwicklung auf Basis von Java EE sein wird. Im Rahmen von Studien wurde der Rahmen dafür abgesteckt. In dem folgenden Kurzvortrag wird auf die folgenden Fragen eingegangen: Kann die Chance für Modularisierung der NeTS-Applikation genutzt werden? Welche Modularisierung? Welche Ebenen von Modularisierung gibt es? Welche technischen Lösungen gibt es für die Modularisierung? Was spricht für OSGi? Was dagegen? Weshalb haben wir uns gegen OSGi entschieden? Wie geht es weiter?",
             "speakerIds": [40, 41, 42],
             "common": false
         },
@@ -649,7 +649,7 @@
                         "start": "09:00",
                         "end": "09:20"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 10,
@@ -658,7 +658,7 @@
                         "start": "09:20",
                         "end": "10:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 15,
@@ -670,7 +670,7 @@
                     "roomId": ""
                 },
                 {
-                    "id": 20,
+                    "id": 100,
                     "talkId": "1a",
                     "time": {
                         "start": "10:35",
@@ -679,13 +679,13 @@
                     "roomId": "1"
                 },
                 {
-                    "id": 25,
+                    "id": 101,
                     "talkId": "1b",
                     "time": {
                         "start": "11:30",
                         "end": "12:15"
                     },
-                    "roomId": "2"
+                    "roomId": "3"
                 },
                 {
                     "id": 30,
@@ -697,22 +697,22 @@
                     "roomId": ""
                 },
                 {
-                    "id": 35,
+                    "id": 102,
                     "talkId": "1c",
                     "time": {
                         "start": "13:25",
                         "end": "14:20"
                     },
-                    "roomId": "3"
+                    "roomId": "1"
                 },
                 {
-                    "id": 40,
+                    "id": 103,
                     "talkId": "1d",
                     "time": {
                         "start": "14:20",
                         "end": "15:05"
                     },
-                    "roomId": "4"
+                    "roomId": "2"
                 },
                 {
                     "id": 45,
@@ -724,13 +724,13 @@
                     "roomId": ""
                 },
                 {
-                    "id": 50,
+                    "id": 104,
                     "talkId": "1e",
                     "time": {
                         "start": "15:30",
                         "end": "16:15"
                     },
-                    "roomId": "1"
+                    "roomId": "4"
                 },
                 {
                     "id": 55,
@@ -739,7 +739,7 @@
                         "start": "16:25",
                         "end": "17:00"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 60,
@@ -748,7 +748,7 @@
                         "start": "17:00",
                         "end": "17:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 65,
@@ -772,7 +772,7 @@
                         "start": "09:00",
                         "end": "09:20"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 10,
@@ -781,7 +781,7 @@
                         "start": "09:20",
                         "end": "10:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 15,
@@ -793,22 +793,22 @@
                     "roomId": ""
                 },
                 {
-                    "id": 20,
+                    "id": 200,
                     "talkId": "2a",
                     "time": {
                         "start": "10:35",
                         "end": "11:20"
                     },
-                    "roomId": "1"
+                    "roomId": "2"
                 },
                 {
-                    "id": 25,
+                    "id": 201,
                     "talkId": "2b",
                     "time": {
                         "start": "11:30",
                         "end": "12:15"
                     },
-                    "roomId": "2"
+                    "roomId": "1"
                 },
                 {
                     "id": 30,
@@ -820,7 +820,7 @@
                     "roomId": ""
                 },
                 {
-                    "id": 35,
+                    "id": 202,
                     "talkId": "2c",
                     "time": {
                         "start": "13:25",
@@ -829,13 +829,13 @@
                     "roomId": "3"
                 },
                 {
-                    "id": 40,
+                    "id": 203,
                     "talkId": "2d",
                     "time": {
                         "start": "14:20",
                         "end": "15:05"
                     },
-                    "roomId": "4"
+                    "roomId": "3"
                 },
                 {
                     "id": 45,
@@ -847,7 +847,7 @@
                     "roomId": ""
                 },
                 {
-                    "id": 50,
+                    "id": 204,
                     "talkId": "2e",
                     "time": {
                         "start": "15:30",
@@ -862,7 +862,7 @@
                         "start": "16:25",
                         "end": "17:00"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 60,
@@ -871,7 +871,7 @@
                         "start": "17:00",
                         "end": "17:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 65,
@@ -895,7 +895,7 @@
                         "start": "09:00",
                         "end": "09:20"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 10,
@@ -904,7 +904,7 @@
                         "start": "09:20",
                         "end": "10:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 15,
@@ -916,16 +916,16 @@
                     "roomId": ""
                 },
                 {
-                    "id": 20,
+                    "id": 300,
                     "talkId": "3a",
                     "time": {
                         "start": "10:35",
                         "end": "11:20"
                     },
-                    "roomId": "1"
+                    "roomId": "3"
                 },
                 {
-                    "id": 25,
+                    "id": 301,
                     "talkId": "3b",
                     "time": {
                         "start": "11:30",
@@ -943,22 +943,22 @@
                     "roomId": ""
                 },
                 {
-                    "id": 35,
+                    "id": 302,
                     "talkId": "3c",
                     "time": {
                         "start": "13:25",
                         "end": "14:20"
                     },
-                    "roomId": "3"
+                    "roomId": "5"
                 },
                 {
-                    "id": 40,
+                    "id": 303,
                     "talkId": "3d",
                     "time": {
                         "start": "14:20",
                         "end": "15:05"
                     },
-                    "roomId": "4"
+                    "roomId": "1"
                 },
                 {
                     "id": 45,
@@ -970,13 +970,13 @@
                     "roomId": ""
                 },
                 {
-                    "id": 50,
+                    "id": 304,
                     "talkId": "3e",
                     "time": {
                         "start": "15:30",
                         "end": "16:15"
                     },
-                    "roomId": "1"
+                    "roomId": "2"
                 },
                 {
                     "id": 55,
@@ -985,7 +985,7 @@
                         "start": "16:25",
                         "end": "17:00"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 60,
@@ -994,7 +994,7 @@
                         "start": "17:00",
                         "end": "17:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 65,
@@ -1018,7 +1018,7 @@
                         "start": "09:00",
                         "end": "09:20"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 10,
@@ -1027,7 +1027,7 @@
                         "start": "09:20",
                         "end": "10:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 15,
@@ -1039,22 +1039,22 @@
                     "roomId": ""
                 },
                 {
-                    "id": 20,
+                    "id": 400,
                     "talkId": "4a",
                     "time": {
                         "start": "10:35",
                         "end": "11:20"
                     },
-                    "roomId": "1"
+                    "roomId": "4"
                 },
                 {
-                    "id": 25,
+                    "id": 401,
                     "talkId": "4b",
                     "time": {
                         "start": "11:30",
                         "end": "12:15"
                     },
-                    "roomId": "2"
+                    "roomId": "5"
                 },
                 {
                     "id": 30,
@@ -1066,22 +1066,22 @@
                     "roomId": ""
                 },
                 {
-                    "id": 35,
+                    "id": 402,
                     "talkId": "4c",
                     "time": {
                         "start": "13:25",
                         "end": "14:20"
                     },
-                    "roomId": "3"
+                    "roomId": "2"
                 },
                 {
-                    "id": 40,
+                    "id": 403,
                     "talkId": "4d",
                     "time": {
                         "start": "14:20",
                         "end": "15:05"
                     },
-                    "roomId": "4"
+                    "roomId": "5"
                 },
                 {
                     "id": 45,
@@ -1093,13 +1093,13 @@
                     "roomId": ""
                 },
                 {
-                    "id": 50,
+                    "id": 404,
                     "talkId": "4e",
                     "time": {
                         "start": "15:30",
                         "end": "16:15"
                     },
-                    "roomId": "1"
+                    "roomId": "3"
                 },
                 {
                     "id": 55,
@@ -1108,7 +1108,7 @@
                         "start": "16:25",
                         "end": "17:00"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 60,
@@ -1117,7 +1117,7 @@
                         "start": "17:00",
                         "end": "17:10"
                     },
-                    "roomId": "1"
+                    "roomId": ""
                 },
                 {
                     "id": 65,
@@ -1134,19 +1134,23 @@
     "rooms": [
         {
             "id": 1,
-            "name": "Saal London"
+            "name": "Falco"
         },
         {
             "id": 2,
-            "name": "Saal Berlin"
+            "name": "Pavillon"
         },
         {
             "id": 3,
-            "name": "Saal Paris"
+            "name": "Buteo"
         },
         {
             "id": 4,
-            "name": "Saal Wien"
+            "name": "Fringilla"
+        },
+        {
+            "id": 5,
+            "name": "Cuculus"
         }
     ]
 }

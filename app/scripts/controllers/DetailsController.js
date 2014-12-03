@@ -6,6 +6,7 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
 
     $scope.conference = {tracks: []};
     $scope.presentation = null;
+    $scope.rated;
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
@@ -42,7 +43,8 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
             if ($scope.hasRatings) {
                 $scope.averageRating = rating.averageRate;
             }
-            $scope.myRating = (rating.rate !== undefined) ? rating.rate : 0;
+            $scope.rated = rating.rate || false;
+            $scope.myRating = rating.rate || 0;
         });
 
     }
