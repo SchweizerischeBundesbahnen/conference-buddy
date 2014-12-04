@@ -1,11 +1,12 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('DetailsController',
-['$scope', '$routeParams', '$window', '$location', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES',
-    function($scope, $routeParams, $window, $location, conferenceService, ratingService, userService, ROUTES) {
+['$scope', '$routeParams', '$window', '$location', '$sce', 'ConferenceService', 'RatingService', 'UserService', 'ROUTES',
+    function($scope, $routeParams, $window, $location, $sce, conferenceService, ratingService, userService, ROUTES) {
 
     $scope.conference = {tracks: []};
     $scope.presentation = null;
+    $scope.abstract;
     $scope.rated;
 
     conferenceService.load().then(function(conference) {
@@ -17,6 +18,7 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
             // to the home page
             $location.path(ROUTES.TRACKS);
         } else {
+            $scope.abstract = $sce.trustAsHtml($scope.presentation.abstract);
             loadRatings();
         }
     });
