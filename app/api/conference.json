@@ -459,14 +459,14 @@
             "title": "Keynote 1- Java Application Frameworks - 2004, 2014, 2024?",
             "abstract": "Die Geschichte von Java im Enterprise-Umfeld ist eine Geschichte von Frameworks im Laufe der Zeit. Ein Rückblick auf die Entwicklung und vor allem die Weiterentwicklung von Spring neben Struts, Hibernate, EJB und CDI zeigt, dass im Java-Ökosystem niemand isoliert auf einer Insel lebt - weder Framework-Hersteller noch Anwendungsentwickler. Diese Keynote legt dabei den Schwerpunkt auf die Co-Evolution von Frameworks und neuen Java-Sprachmitteln sowie neuen JDK-Libraries, insbesondere anhand von Java 5 (im Jahre 2004) und Java 8 (im Jahre 2014).",
             "speakerIds": [5],
-            "common": false
+            "common": true
         },
         {
             "id": "keynote2",
             "title": "Keynote 2 - Variables won't; constants aren't – können Informatiker aus der Geschichte lernen?",
             "abstract": "Wer weiss noch, wie die Informatik bei SBB vor 10 Jahren ausgesehen hat?  Spielt das überhaupt eine Rolle? Können wir aus der unserer Geschichte etwas lernen oder ist Fortschritt in der IT eher ein „random walk“? Die Präsentation beleuchtet einige Konstanten und Variablen der letzten Jahre auf den verschiedenen Ebenen: was waren die Prioritäten der SBB in Bezug auf IT? Wie war die IT organisiert? Was lief in der Methodik, was in der Technik? Aus diesem Rückblick versuchen wir einige Muster herauszudestillieren und riskieren eine Prognose, wohin die Reise gehen könnte. Den Schluss widmen wir der Frage: was bedeutet dies für mich?",
             "speakerIds": [31],
-            "common": false
+            "common": true
         },
         {
             "id": "pause",
