@@ -18,7 +18,7 @@
     <div class="row">
         <div class="commentbox" ng-repeat="comment in comments">
             <div class="commentmeta">
-                <strong>{{comment.author}}</strong> <span class="commenttimestamp">| {{formatDate(comment)}}</span>
+                <strong>{{comment.author}}</strong> <span class="commenttimestamp"> {{formatDate(comment)}}</span>
              </div>
             <div class="commentbody">
                 {{comment.value}}
