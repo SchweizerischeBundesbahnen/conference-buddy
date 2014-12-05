@@ -34,14 +34,8 @@ public class GmailServiceImpl implements EmailService {
     @Autowired
     private UserRepository userRepository;
 
-    @Value("${email.username}")
-    private String username;
-
-    @Value("${email.password}")
-    private String password;
-
     @Override
-    @Scheduled(fixedRate= 3*1000) // every 3sec, performance???
+    @Scheduled(fixedRate= 9*1000) // every 9sec, performance???
     public synchronized void sendMail() {
         final List<User> userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc(); // performance???
         if (userPage != null && !userPage.isEmpty()) {
@@ -59,6 +53,16 @@ public class GmailServiceImpl implements EmailService {
         }
     }
 
+    @Value("${email.username}")
+    private String username;
+
+    @Value("${email.password}")
+    private String password;
+
+    @Value("${email.smtp}")
+    private String smtp;
+
+
     void sendMail(final User user) throws MessagingException {
         // ugli, ugli, ugli but quick and dirty
         LOGGER.info("send email for user {}", user.getEmail());
@@ -66,7 +70,7 @@ public class GmailServiceImpl implements EmailService {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.host", smtp);
         props.put("mail.smtp.port", "587");
 
         final Session session = Session.getInstance(props,
