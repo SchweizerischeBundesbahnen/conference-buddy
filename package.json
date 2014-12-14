@@ -6,7 +6,7 @@
     "url": "git://github.com/SchweizerischeBundesbahnen/conference-buddy.git"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "bower install --allow-root",
     "test": "grunt test",
     "start": "grunt serve",
     "protractor": "protractor test/protractor.conf.js"
