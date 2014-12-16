@@ -6,8 +6,7 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
         scope: {
             pid: '@'
         },
-        templateUrl: 'templates/comments-template.html',
-        controller: function($scope) {
+        templateUrl: 'templates/comments-template.html', controller: ['$scope', function($scope) {
 
             $scope.commentEntry = null;
             $scope.author = userService.currentUser();
@@ -39,6 +38,6 @@ angular.module('conferenceBuddyApp').directive('comments', ['CommentService', 'U
             $scope.showInputForm = function() {
                 return userService.isRegistered();
             };
-        }
+      }]
     };
 }]);
