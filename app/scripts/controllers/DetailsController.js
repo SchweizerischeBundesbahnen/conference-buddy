@@ -6,8 +6,8 @@ angular.module('conferenceBuddyApp').controller('DetailsController',
 
     $scope.conference = {tracks: []};
     $scope.presentation = null;
-    $scope.abstract;
-    $scope.rated;
+      $scope.abstract = undefined;
+      $scope.rated = undefined;
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;

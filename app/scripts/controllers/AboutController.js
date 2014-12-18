@@ -16,6 +16,6 @@ angular.module('conferenceBuddyApp').controller('AboutController',
 
     $scope.getUserId = function() {
         return $scope.user.userId || '-';
-    }
+    };
 
 }]);

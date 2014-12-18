@@ -31,6 +31,7 @@
 
 	// Project specific globals to allow aka Friends.
 	"predef": [
-		"angular"
+    "angular",
+    "moment"
 	]
 }

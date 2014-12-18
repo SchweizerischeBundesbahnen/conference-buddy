@@ -30,7 +30,7 @@ angular.module('conferenceBuddyApp').controller('UserController',
 
     function checkRegistrationLink() {
         var url = $location.url();
-        var pos = url.lastIndexOf("?");
+      var pos = url.lastIndexOf('?');
         if (pos > -1) {
             var userToken = url.substr(pos + 1);
             userService.validate(userToken).then(function() {
