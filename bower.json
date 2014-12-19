@@ -1,22 +1,44 @@
 {
-  "name": "conference-buddy",
-  "version": "1.0.0",
-  "dependencies": {
-    "json3": "3.2.6",
-    "es5-shim": "2.1.0",
-    "jquery": "1.11.0",
-    "bootstrap": "3.2.0",
-    "angular": "1.3.7",
-    "angular-touch": "1.3.7",
-    "angular-route": "1.3.7",
-    "angular-bootstrap": "0.11.0",
-    "angular-animate": "1.3.7",
-    "angular-cookies": "1.3.7",
-    "angular-loading-bar": "~0.6.0",
-    "angular-local-storage": "~0.1.5",
-    "moment": "~2.8.4"
-  },
-  "devDependencies": {
-    "angular-mocks": "1.3.7"
-  }
+    "name": "conference-buddy",
+    "description": "Die Buddy-App für Konferenzen",
+    "version": "1.1.0",
+    "authors": [
+        {
+            "name": "Manuel Friedli"
+        },
+        {
+            "name": "Korhan Gülseven"
+        },
+        {
+            "name": "Marc Walter"
+        },
+        {
+            "name": "Stefan Zeller"
+        },
+        {
+            "name": "Gilles Zimmermann"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/SchweizerischeBundesbahnen/conference-buddy.git"
+    },
+    "dependencies": {
+        "json3": "3.2.6",
+        "es5-shim": "2.1.0",
+        "jquery": "1.11.0",
+        "bootstrap": "3.2.0",
+        "angular": "1.3.7",
+        "angular-touch": "1.3.7",
+        "angular-route": "1.3.7",
+        "angular-bootstrap": "0.11.0",
+        "angular-animate": "1.3.7",
+        "angular-cookies": "1.3.7",
+        "angular-loading-bar": "~0.6.0",
+        "angular-local-storage": "~0.1.5",
+        "moment": "~2.8.4"
+    },
+    "devDependencies": {
+        "angular-mocks": "1.3.7"
+    }
 }
