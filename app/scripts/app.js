@@ -14,6 +14,15 @@ app.constant('ROUTES', {
 });
 app.constant('REST_URL', '/service');
 
+var initializeConference = ['$q', '$http', 'ConferenceService', function($q, $http, ConferenceService) {
+  var deferred = $q.defer();
+  ConferenceService.load().then(function(conf) {
+    deferred.resolve(ConferenceService);
+  });
+  return deferred.promise;
+}];
+
+
 app.config(['$provide', '$routeProvider', '$httpProvider', 'localStorageServiceProvider', 'ROUTES', function($provide, $routeProvider, $httpProvider,
                                                                                                              localStorageServiceProvider, ROUTES) {
 
@@ -63,11 +72,3 @@ app.config(['$provide', '$routeProvider', '$httpProvider', 'localStorageServiceP
 
     localStorageServiceProvider.setPrefix('conferenceBuddyApp').setNotify(false, false);
 }]);
-
-var initializeConference = ['$q', '$http', 'ConferenceService', function($q, $http, ConferenceService) {
-    var deferred = $q.defer();
-    ConferenceService.load().then(function(conf) {
-        deferred.resolve(ConferenceService);
-    });
-    return deferred.promise;
-}];

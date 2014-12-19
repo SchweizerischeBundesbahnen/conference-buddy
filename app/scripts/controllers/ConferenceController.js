@@ -7,7 +7,7 @@ angular.module('conferenceBuddyApp').controller('ConferenceController',
     $scope.averageRating = 0;
     $scope.hasRatings = false;
     $scope.myRating = 0;
-    $scope.rated;
+      $scope.rated = undefined;
 
     conferenceService.load().then(function(conference) {
         $scope.conference = conference;
