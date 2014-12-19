@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('MyTrackController',
-['$scope', 'ConferenceService', 'DialogService', 'MyTrackService', 'UserService', function($scope, conferenceService, dialogService, myTrackService) {
+  ['$scope', 'ConferenceService', 'DialogService', 'MyTrackService', function($scope, conferenceService, dialogService, myTrackService) {
 
     $scope.conference = {};
     $scope.myTrack = {presentations: true};

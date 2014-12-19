@@ -22,7 +22,6 @@
 	"latedef": "nofunc",	// Variables may not be used before definition. Function declaration are ignored.
 	"newcap": true,				// Names of constructor functions always start with a capital.
 	"quotmark": true,			// Consistency of quotation marks (true: consistent, "single" or "double" for only).
-	"maxparams": 3,				// Max. number of parameters per function.
 	"maxdepth": 5,				// Max. number of nested blocks per function.
 	"unused": true,				// Defined variable/arguments never used.
 	"undef": true,				// Used variable is undefined.
