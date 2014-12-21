@@ -25,29 +25,39 @@ angular.module('conferenceBuddyApp').factory('MyTrackService',
         return result;
     }
 
+    /**
+     * Returns an array of presentations create from myTrackIds. The
+     * result will contain every common talk and all presentation
+     * referenced by given myTrackIds. Presumes myTrackIds to be
+     * ordered according to time.start.
+     */
     function createMyTrack(conference, myTrackIds) {
         var result = [];
-        if (!myTrackIds || myTrackIds.length === 0) {
+        if (!myTrackIds) {
             return result;
         }
-        conference.tracks[0].presentations.forEach(function(presentation) {
-            var myTrackPresentationId, pres;
-            var talkId = presentation.talkId;
-            var talk = lookupTalk(conference, talkId);
+        // pick first track as reference (which actually doesn't matter)
+        var presentations = conference.tracks[0].presentations;
+        var talk, myTrackPid, myTrackPres;
+        for (var i = 0; i < presentations.length; i++) {
+            talk = lookupTalk(conference, presentations[i].talkId);
             if (talk.common) {
-                result.push(presentation);
-            } else {
-                if (myTrackIds.length > 0) {
-                    // parseInt to accept both strings and ints
-                    myTrackPresentationId = parseInt(myTrackIds[0], 10);
+                result.push(presentations[i]);
+            } else if (myTrackIds.length > 0) {
+                // parseInt to accept both strings and ints
+                myTrackPid = parseInt(myTrackIds[0], 10);
+                myTrackPres = lookupPresentation(conference, myTrackPid);
+                if (i == (presentations.length - 1) || startsBefore(myTrackPres, presentations[i + 1])) {
                     myTrackIds = myTrackIds.slice(1);
-                    pres = lookupPresentation(conference, myTrackPresentationId);
-                    result.push(pres);
+                    result.push(myTrackPres);
                 }
             }
-
-        });
+        }
         return result;
+    }
+
+    function startsBefore(pres1, pres2) {
+        return pres1.time.start < pres2.time.start;
     }
 
     return {
