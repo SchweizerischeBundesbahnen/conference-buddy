@@ -2,7 +2,7 @@
 
 describe('Controller: MyTrackService', function() {
 
-    var myTrackService, httpBackend, completeMyTrack, nonCompleteMyTrack, emptyMyTrack, conference;
+    var myTrackService, httpBackend, conference;
 
     conference = {
         'talks': [
