@@ -122,10 +122,6 @@ describe('Controller: MyTrackService', function() {
             myTrackService = _MyTrackService_;
             httpBackend = $httpBackend;
         });
-
-        // myTrackJson = [25];
-
-        // httpBackend.whenGET('/api-mock/mytrack').respond(myTrackJson);
     });
 
     afterEach(function() {
