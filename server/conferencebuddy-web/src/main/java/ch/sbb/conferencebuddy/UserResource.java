@@ -56,9 +56,10 @@ public class UserResource {
     }
 
     /**
-     * Registriert einen Benutzer und generiert einen eindeutigen Token, am besten eine UUID.
+     * Gibt den {@link User} zurück, der zu der übergebenen {@code userId} passt.
      *
-     * @return unique ID
+     * @return {@code null} oder ein {@code User} Objekt
+     *
      */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
