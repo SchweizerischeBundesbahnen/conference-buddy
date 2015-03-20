@@ -4,7 +4,6 @@ import ch.sbb.conferencebuddy.service.exception.UserUnauthorizedException;
 import ch.sbb.esta.core.webservice.rest.handler.AbstractExceptionMapper;
 
 import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
 /**

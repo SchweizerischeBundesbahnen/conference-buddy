@@ -47,6 +47,7 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class CommentResource {
+
     /** logger */
     private static final Logger LOGGER = LoggerFactory.getLogger(CommentResource.class);
 
@@ -65,7 +66,7 @@ public class CommentResource {
      * Liefert alle Kommentare des Vortrags {pid}.
      * Rückgabe: Array von Kommentare. Die Kommentare sind chronologisch nach Erstellungszeitpunkt sortiert,
      * vom Letzten zum Ersten. Falls keine Kommentare existieren, wird ein leeres Array zurückgeliefert.
-     * 
+     *
      * @param pid Vortrag-ID
      */
     @GET
@@ -82,7 +83,7 @@ public class CommentResource {
     /**
      * Speichert den Kommentar in der DB. Der Kommentar wird mit PUT ohne id geliefert. Das Backend erzeugt
      * die eindeutige id beim Speichern. user-token wird verlangt.
-     * 
+     *
      * @return Kommentar mit der Id.
      */
     @PUT

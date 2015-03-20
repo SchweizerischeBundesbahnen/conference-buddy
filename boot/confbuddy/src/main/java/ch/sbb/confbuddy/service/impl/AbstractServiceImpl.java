@@ -1,18 +1,20 @@
-package ch.sbb.conferencebuddy.service.impl;
+package ch.sbb.confbuddy.service.impl;
 
 
-import ch.sbb.conferencebuddy.model.User;
-import ch.sbb.conferencebuddy.persistence.UserRepository;
-import ch.sbb.conferencebuddy.service.exception.UserUnauthorizedException;
+import ch.sbb.confbuddy.model.User;
+import ch.sbb.confbuddy.service.exception.UserUnauthorizedException;
+import ch.sbb.confbuddy.service.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 /**
  * @author Gilles Zimmermann
  * @since 0.0.1, 2014
  */
+@Service
 public abstract class AbstractServiceImpl {
 
     @Autowired
