@@ -360,6 +360,7 @@ module.exports = function(grunt) {
                 configFile: 'test/karma.conf.js',
                 singleRun: true
             },
+            // Run only PhantomJS tests
             ci: {
                 configFile: 'test/karma.conf.js',
                 singleRun: true,
