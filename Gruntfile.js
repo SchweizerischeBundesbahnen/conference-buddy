@@ -359,6 +359,11 @@ module.exports = function(grunt) {
             unit: {
                 configFile: 'test/karma.conf.js',
                 singleRun: true
+            },
+            {
+                ci: {
+                    browsers: ['PhantomJS']
+                }
             }
         }
     });
@@ -382,6 +387,10 @@ module.exports = function(grunt) {
     grunt.registerTask('test', [
         'clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma'
     ]);
+
+    grunt.registerTask('test-ci', [
+            'clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma:ci'
+        ]);
 
     grunt.registerTask('build', [
         'clean:dist', 'wiredep', 'bowerInstall', 'useminPrepare', 'concurrent:dist', 'autoprefixer', 'concat', 'ngAnnotate', 'copy:dist', 'cdnify', 'cssmin', 'uglify', 'rev', 'usemin', 'htmlmin'
