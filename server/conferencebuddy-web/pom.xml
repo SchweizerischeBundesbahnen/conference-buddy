@@ -221,54 +221,31 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>com.github.eirslett</groupId>
-        <artifactId>frontend-maven-plugin</artifactId>
-        <version>0.0.23</version>
-
-        <!-- optional -->
+        <groupId>pl.allegro</groupId>
+        <artifactId>grunt-maven-plugin</artifactId>
+        <version>1.5.0</version>
         <configuration>
-          <workingDirectory>../..</workingDirectory>
+          <sourceDirectory >${basedir}/../.. </sourceDirectory >
+          <!-- relative to sourceDirectory -->
+          <jsSourceDirectory>app</jsSourceDirectory>
+
+
+          <!-- example options usage to get verbose output in logs -->
+          <gruntOptions>
+            <gruntOption>--verbose</gruntOption>
+          </gruntOptions>
+
+
         </configuration>
         <executions>
-
           <execution>
-            <id>grunt build</id>
             <goals>
+              <goal>create-resources</goal>
+              <goal>npm</goal>
+              <!-- or npm-offline if npm failure is not an option -->
+              <goal>bower</goal>
               <goal>grunt</goal>
             </goals>
-
-            <!-- optional: the default phase is "generate-resources" -->
-            <phase>generate-resources</phase>
-
-            <configuration>
-              <!-- optional: if not specified, it will run Grunt's default
-              task (and you can remove this whole <configuration> section.) -->
-              <arguments>build</arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>grunt test</id>
-            <goals>
-              <goal>grunt</goal>
-            </goals>
-
-            <!-- optional: the default phase is "generate-resources" -->
-            <phase>test</phase>
-
-            <configuration>
-              <!-- optional: if not specified, it will run Grunt's default
-              task (and you can remove this whole <configuration> section.) -->
-              <arguments>test</arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>javascript tests</id>
-            <goals>
-              <goal>karma</goal>
-            </goals>
-            <configuration>
-              <karmaConfPath>test/karma.conf.js</karmaConfPath>
-            </configuration>
           </execution>
         </executions>
       </plugin>
