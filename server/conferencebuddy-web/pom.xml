@@ -220,14 +220,13 @@
         <artifactId>grunt-maven-plugin</artifactId>
         <configuration>
           <gruntBuildDirectory>${basedir}/target-grunt</gruntBuildDirectory>
-          <sourceDirectory >${basedir}/../.. </sourceDirectory >
+          <sourceDirectory>${basedir}/../..</sourceDirectory>
           <!-- relative to sourceDirectory -->
           <jsSourceDirectory>app</jsSourceDirectory>
 
           <!-- example options usage to get verbose output in logs -->
           <gruntOptions>
             <gruntOption>--verbose</gruntOption>
-            <gruntOption>--force</gruntOption>
           </gruntOptions>
 
         </configuration>
@@ -240,6 +239,11 @@
               <!-- or npm-offline if npm failure is not an option -->
               <goal>grunt</goal>
             </goals>
+            <configuration>
+              <gruntOptions>
+                <gruntOption>--force</gruntOption>
+              </gruntOptions>
+            </configuration>
           </execution>
           <execution>
             <id>grunt-tests</id>
@@ -247,7 +251,9 @@
             <goals>
               <goal>grunt</goal>
             </goals>
-            <configuration><target>test</target></configuration>
+            <configuration>
+              <target>test</target>
+            </configuration>
           </execution>
         </executions>
       </plugin>
