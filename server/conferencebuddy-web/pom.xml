@@ -134,37 +134,13 @@
           </configuration>
         </plugin>
         <plugin>
-          <groupId>com.github.eirslett</groupId>
-          <artifactId>frontend-maven-plugin</artifactId>
-          <version>0.0.23</version>
+          <groupId>pl.allegro</groupId>
+          <artifactId>grunt-maven-plugin</artifactId>
+          <version>1.5.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
-
-      <plugin>
-        <artifactId>maven-resources-plugin</artifactId>
-        <version>2.7</version>
-        <executions>
-          <execution>
-            <id>copy-resources</id>
-            <!-- here the phase you need -->
-            <phase>process-resources</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
-              <resources>
-                <resource>
-                  <directory>${project.basedir}../../dist/</directory>
-                  <filtering>false</filtering>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
 
@@ -200,35 +176,30 @@
         <groupId>org.apache.tomcat.maven</groupId>
         <artifactId>tomcat7-maven-plugin</artifactId>
       </plugin>
-      <plugin>
+      <!--plugin>
         <artifactId>maven-clean-plugin</artifactId>
         <version>2.6.1</version>
         <configuration>
           <filesets>
-            <!--fileset>
+            <fileset>
               <directory>node</directory>
               <followSymlinks>false</followSymlinks>
             </fileset>
             <fileset>
               <directory>node_modules</directory>
               <followSymlinks>false</followSymlinks>
-            </fileset-->
-            <fileset>
-              <directory>dist</directory>
-              <followSymlinks>false</followSymlinks>
             </fileset>
           </filesets>
         </configuration>
-      </plugin>
+      </plugin-->
       <plugin>
         <groupId>pl.allegro</groupId>
         <artifactId>grunt-maven-plugin</artifactId>
-        <version>1.5.0</version>
         <configuration>
           <sourceDirectory >${basedir}/../.. </sourceDirectory >
           <!-- relative to sourceDirectory -->
           <jsSourceDirectory>app</jsSourceDirectory>
-
+          <warTargetDirectory>${project.build.directory}/generated-sources/client-dist/</warTargetDirectory>
 
           <!-- example options usage to get verbose output in logs -->
           <gruntOptions>
@@ -243,7 +214,6 @@
               <goal>create-resources</goal>
               <goal>npm</goal>
               <!-- or npm-offline if npm failure is not an option -->
-              <goal>bower</goal>
               <goal>grunt</goal>
             </goals>
           </execution>
