@@ -207,7 +207,7 @@
               <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
               <resources>
                 <resource>
-                  <directory>${basedir}../../dist</directory>
+                  <directory>${basedir}/../../dist</directory>
                   <filtering>false</filtering>
                 </resource>
               </resources>
