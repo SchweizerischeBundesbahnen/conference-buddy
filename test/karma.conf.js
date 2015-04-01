@@ -24,8 +24,7 @@ module.exports = function(config) {
             '../app/bower_components/angular-local-storage/dist/angular-local-storage.js',
             '../app/scripts/*.js',
             '../app/scripts/**/*.js',
-            'unit/**/*.js',
-            'test/**/*.js'
+            'unit/**/*.js'
         ],
 
         // list of files / patterns to exclude
@@ -59,23 +58,28 @@ module.exports = function(config) {
               'karma-htmlfile-reporter'
         ],
 
-        reporters: ['progress', 'html', 'coverage'],
+        reporters: ['progress', 'junit', 'html', 'coverage'],
 
         htmlReporter: {
           outputFile: 'tests/units.html'
+        },
+
+        junitReporter: {
+            outputFile: 'reports/junit/TESTS-xunit.xml'
         },
 
         preprocessors: {
           // source files, that you wanna generate coverage for
           // do not include tests or libraries
           // (these files will be instrumented by Istanbul)
-          'src/**/*.js': ['coverage']
+          'app/scripts/**/*.js': ['coverage']
         },
 
         // optionally, configure the reporter
         coverageReporter: {
-          type : 'html',
-          dir : 'coverage/'
+          type:   'lcov',
+          dir:    'reports',
+          subdir: 'coverage'
         }
     });
 };
