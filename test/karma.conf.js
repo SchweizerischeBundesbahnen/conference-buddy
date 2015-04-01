@@ -24,7 +24,8 @@ module.exports = function(config) {
             '../app/bower_components/angular-local-storage/dist/angular-local-storage.js',
             '../app/scripts/*.js',
             '../app/scripts/**/*.js',
-            'unit/**/*.js'
+            'unit/**/*.js',
+            'test/**/*.js'
         ],
 
         // list of files / patterns to exclude
@@ -63,11 +64,6 @@ module.exports = function(config) {
         htmlReporter: {
           outputFile: 'tests/units.html'
         },
-
-        files: [
-              'app/**/*.js',
-              'test/**/*.js'
-        ],
 
         preprocessors: {
           // source files, that you wanna generate coverage for
