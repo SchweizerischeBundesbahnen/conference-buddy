@@ -204,9 +204,8 @@
           <!-- example options usage to get verbose output in logs -->
           <gruntOptions>
             <gruntOption>--verbose</gruntOption>
+            <gruntOption>--force</gruntOption>
           </gruntOptions>
-          <npmOptions><npmOption>--force</npmOption></npmOptions>
-
 
         </configuration>
         <executions>
