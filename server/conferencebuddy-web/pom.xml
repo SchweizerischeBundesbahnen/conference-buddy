@@ -232,6 +232,7 @@
         </configuration>
         <executions>
           <execution>
+            <id>grunt-build</id>
             <goals>
               <goal>create-resources</goal>
               <goal>npm</goal>
@@ -240,6 +241,7 @@
             </goals>
           </execution>
           <execution>
+            <id>grunt-tests</id>
             <phase>test</phase>
             <goals>
               <goal>grunt</goal>
