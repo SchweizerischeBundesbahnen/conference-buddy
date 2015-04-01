@@ -207,7 +207,7 @@
               <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
               <resources>
                 <resource>
-                  <directory>${basedir}/target-grunt</directory>
+                  <directory>${basedir}../../dist</directory>
                   <filtering>false</filtering>
                 </resource>
               </resources>
@@ -219,7 +219,6 @@
         <groupId>pl.allegro</groupId>
         <artifactId>grunt-maven-plugin</artifactId>
         <configuration>
-          <gruntBuildDirectory>${basedir}/target-grunt</gruntBuildDirectory>
           <sourceDirectory>${basedir}/../..</sourceDirectory>
           <!-- relative to sourceDirectory -->
           <jsSourceDirectory>app</jsSourceDirectory>
@@ -252,7 +251,7 @@
               <goal>grunt</goal>
             </goals>
             <configuration>
-              <target>test</target>
+              <target>testci</target>
             </configuration>
           </execution>
         </executions>
