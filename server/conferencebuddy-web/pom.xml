@@ -193,13 +193,35 @@
         </configuration>
       </plugin-->
       <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${project.basedir}../../dist/</directory>
+                  <filtering>false</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>pl.allegro</groupId>
         <artifactId>grunt-maven-plugin</artifactId>
         <configuration>
           <sourceDirectory >${basedir}/../.. </sourceDirectory >
           <!-- relative to sourceDirectory -->
           <jsSourceDirectory>app</jsSourceDirectory>
-          <warTargetDirectory>${project.build.directory}/generated-sources/client-dist/</warTargetDirectory>
 
           <!-- example options usage to get verbose output in logs -->
           <gruntOptions>
@@ -218,6 +240,22 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.kelveden</groupId>
+        <artifactId>maven-karma-plugin</artifactId>
+        <version>1.6</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>start</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <browsers>PhantomJS</browsers>
+          <configFile>../../test/karma.conf.js</configFile>
+        </configuration>
       </plugin>
 
     </plugins>
