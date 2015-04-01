@@ -252,7 +252,7 @@
               <goal>grunt</goal>
             </goals>
             <configuration>
-              <target>test-ci</target>
+              <target>test</target>
             </configuration>
           </execution>
         </executions>

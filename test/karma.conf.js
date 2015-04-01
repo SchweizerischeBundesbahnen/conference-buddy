@@ -58,10 +58,28 @@ module.exports = function(config) {
               'karma-htmlfile-reporter'
         ],
 
-        reporters: ['progress', 'html'],
+        reporters: ['progress', 'html', 'coverage'],
 
         htmlReporter: {
           outputFile: 'tests/units.html'
+        },
+
+        files: [
+              'app/**/*.js',
+              'test/**/*.js'
+        ],
+
+        preprocessors: {
+          // source files, that you wanna generate coverage for
+          // do not include tests or libraries
+          // (these files will be instrumented by Istanbul)
+          'src/**/*.js': ['coverage']
+        },
+
+        // optionally, configure the reporter
+        coverageReporter: {
+          type : 'html',
+          dir : 'coverage/'
         }
     });
 };
