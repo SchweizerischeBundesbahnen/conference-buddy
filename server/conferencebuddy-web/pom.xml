@@ -239,28 +239,17 @@
               <goal>grunt</goal>
             </goals>
           </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>com.kelveden</groupId>
-        <artifactId>maven-karma-plugin</artifactId>
-        <version>1.6</version>
-        <executions>
           <execution>
+            <phase>test</phase>
             <goals>
-              <goal>start</goal>
+              <goal>grunt</goal>
             </goals>
+            <configuration><target>test</target></configuration>
           </execution>
         </executions>
-        <configuration>
-          <browsers>PhantomJS</browsers>
-          <configFile>../../test/karma.conf.js</configFile>
-        </configuration>
       </plugin>
-
     </plugins>
   </build>
-
 
   <profiles>
     <profile>
