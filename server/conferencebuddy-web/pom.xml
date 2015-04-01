@@ -252,6 +252,9 @@
             </goals>
             <configuration>
               <target>testci</target>
+              <gruntOptions>
+                <gruntOption>--force</gruntOption>
+              </gruntOptions>
             </configuration>
           </execution>
         </executions>

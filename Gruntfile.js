@@ -390,8 +390,8 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('testci', [
-            'clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma:ci'
-        ]);
+        'clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma:ci'
+    ]);
 
     grunt.registerTask('build', [
         'clean:dist', 'wiredep', 'bowerInstall', 'useminPrepare', 'concurrent:dist', 'autoprefixer', 'concat', 'ngAnnotate', 'copy:dist', 'cdnify', 'cssmin', 'uglify', 'rev', 'usemin', 'htmlmin'
