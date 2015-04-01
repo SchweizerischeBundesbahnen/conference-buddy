@@ -360,10 +360,10 @@ module.exports = function(grunt) {
                 configFile: 'test/karma.conf.js',
                 singleRun: true
             },
-            {
-                ci: {
-                    browsers: ['PhantomJS']
-                }
+            ci: {
+                configFile: 'test/karma.conf.js',
+                singleRun: true,
+                browsers: ['PhantomJS']
             }
         }
     });
