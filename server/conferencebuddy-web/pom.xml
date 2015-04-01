@@ -205,6 +205,7 @@
           <gruntOptions>
             <gruntOption>--verbose</gruntOption>
           </gruntOptions>
+          <npmOptions><npmOption>--force</npmOption></npmOptions>
 
 
         </configuration>
