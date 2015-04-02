@@ -18,8 +18,9 @@
     <sonar.sources>app,test/unit</sonar.sources>
     <sonar.exclusions>app/bower_components/**/*</sonar.exclusions>
     <sonar.coverage.exclusions>test/**/*</sonar.coverage.exclusions>
-    <sonar.javascript.lcov.reportPath>test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
-    <sonar.javascript.jstestdriver.reportsPath>test/reports/junit/TESTS-xunit.xml</sonar.javascript.jstestdriver.reportsPath>
+    <sonar.javascript.coveragePlugin>lcov</sonar.javascript.coveragePlugin>
+    <sonar.javascript.lcov.reportPath>${project.basedir}/test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
+    <!--sonar.javascript.jstestdriver.reportsPath>test/reports/junit/TESTS-xunit.xml</sonar.javascript.jstestdriver.reportsPath-->
   </properties>
 
   <build>
