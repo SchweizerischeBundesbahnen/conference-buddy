@@ -62,7 +62,7 @@
                      Sets the name of the property containing the settings
                      for JaCoCo runtime agent.
                   -->
-                  <!--propertyName>jacocoUtArgLine</propertyName-->
+                  <propertyName>jacocoUtArgLine</propertyName-->
                 </configuration>
               </execution>
               <execution>
@@ -214,7 +214,7 @@
             <systemPropertyVariables>
               <h2server>false</h2server>
             </systemPropertyVariables>
-            <!--argLine>${jacocoUtArgline}</argLine-->
+            <argLine>${jacocoUtArgline}</argLine>
           </configuration>
         </plugin>
         <!-- failsafe-plugin used and configured only to run integration-tests
