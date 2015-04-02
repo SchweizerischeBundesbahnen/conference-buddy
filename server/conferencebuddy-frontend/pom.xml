@@ -162,13 +162,14 @@
         <executions>
           <execution>
             <id>correct-lcov-file</id>
-            <phase>verify</phase>
+            <phase>package</phase>
             <configuration>
               <target>
                 <replaceregexp file="test/reports/coverage/lcov.info"
                                match="SF:.*conferencebuddy-frontend/(.*)"
                                replace="SF:\1"
                                byline="true"
+                               flags="g"
                   />
               </target>
             </configuration>
