@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>conferencebuddy-parent</artifactId>
+    <groupId>ch.sbb.conferencebuddy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../conferencebuddy-parent</relativePath>
+  </parent>
+  <artifactId>conferencebuddy-frontend</artifactId>
+  <packaging>pom</packaging>
+  <name>${project.artifactId}</name>
+
+  <properties>
+
+  </properties>
+
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>src/main/tomcatconf</directory>
+        <targetPath>${project.build.directory}/tomcatconf</targetPath>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>pl.allegro</groupId>
+          <artifactId>grunt-maven-plugin</artifactId>
+          <version>1.5.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+      <!--plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.6.1</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>node</directory>
+              <followSymlinks>false</followSymlinks>
+            </fileset>
+            <fileset>
+              <directory>node_modules</directory>
+              <followSymlinks>false</followSymlinks>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin-->
+
+      <plugin>
+        <groupId>pl.allegro</groupId>
+        <artifactId>grunt-maven-plugin</artifactId>
+        <configuration>
+          <sourceDirectory>${basedir}/../..</sourceDirectory>
+          <!-- relative to sourceDirectory -->
+          <jsSourceDirectory>app</jsSourceDirectory>
+
+          <!-- example options usage to get verbose output in logs -->
+          <gruntOptions>
+            <gruntOption>--verbose</gruntOption>
+          </gruntOptions>
+
+        </configuration>
+        <executions>
+          <execution>
+            <id>grunt-prepare</id>
+            <goals>
+              <goal>create-resources</goal>
+              <goal>npm</goal>
+              <!-- or npm-offline if npm failure is not an option -->
+            </goals>
+          </execution>
+          <execution>
+            <id>grunt-build</id>
+            <goals>
+              <goal>grunt</goal>
+            </goals>
+            <configuration>
+              <target>build</target>
+            </configuration>
+          </execution>
+          <execution>
+            <id>grunt-tests</id>
+            <goals>
+              <goal>grunt</goal>
+            </goals>
+            <configuration>
+              <target>testci</target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${basedir}/../../dist</directory>
+                  <filtering>false</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>integration-test-start-and-stop-tomcat</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>tomcat-start-before-selenium-integrationtests</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <fork>true</fork>
+                  <port>${tomcat.http.port}</port>
+                </configuration>
+              </execution>
+              <execution>
+                <id>tomcat-stop-after-selenium-integrationtests</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                  <goal>shutdown</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
