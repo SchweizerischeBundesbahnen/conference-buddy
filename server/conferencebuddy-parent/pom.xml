@@ -212,7 +212,7 @@
             <systemPropertyVariables>
               <h2server>false</h2server>
             </systemPropertyVariables>
-            <argLine>FAILLL</argLine>
+            <argLine>${jacocoUtArgline}</argLine>
           </configuration>
         </plugin>
         <!-- failsafe-plugin used and configured only to run integration-tests
