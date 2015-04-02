@@ -365,7 +365,7 @@ module.exports = function(grunt) {
             },
             // Run only PhantomJS tests
             ci: {
-                configFile: 'test/karma.conf.ci.js'
+                configFile: 'test/karma.ci.conf.js'
             }
         }
     });
