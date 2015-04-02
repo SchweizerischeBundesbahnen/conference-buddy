@@ -177,7 +177,7 @@
                                byline="true"
                                flags="g"
                   />
-                <!-- Sonar expects filename in classname tag, do a bit of magic workaround... -->
+                <!-- Sonar expects filename (without .js!) in classname tag, so do a bit of magic workaround... -->
                 <replaceregexp file="test/reports/junit/TESTS-xunit.xml"
                                match="classname=&quot;.*: ([^ :&quot;]+)&quot;"
                                replace="classname=&quot;test/unit/\1&quot;"
