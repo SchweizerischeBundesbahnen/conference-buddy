@@ -15,7 +15,7 @@
 
   <properties>
     <sonar.sources>${project.basedir}</sonar.sources>
-    <sonar.exclusions>app/bower_components/**/*</sonar.exclusions>
+    <sonar.exclusions>app/bower_components/**/*,node/**/*,node_modules/**/*</sonar.exclusions>
     <sonar.coverage.exclusions>test/**/*</sonar.coverage.exclusions>
     <sonar.javascript.lcov.reportPath>test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
     <sonar.javascript.jstestdriver.reportsPath>test/reports/junit/TESTS-xunit.xml</sonar.javascript.jstestdriver.reportsPath>
