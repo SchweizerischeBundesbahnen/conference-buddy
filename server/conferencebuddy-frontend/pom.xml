@@ -14,8 +14,8 @@
   <name>${project.artifactId}</name>
 
   <properties>
-    <sonar.language>js</sonar.language>
-    <sonar.sources>app,test/unit</sonar.sources>
+    <sonar.language>js,web</sonar.language>
+    <sonar.sources>app</sonar.sources>
     <sonar.tests>test/unit</sonar.tests>
     <sonar.exclusions>app/bower_components/**/*</sonar.exclusions>
     <sonar.coverage.exclusions>test/**/*</sonar.coverage.exclusions>
