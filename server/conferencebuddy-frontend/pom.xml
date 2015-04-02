@@ -20,7 +20,7 @@
     <sonar.coverage.exclusions>test/**/*</sonar.coverage.exclusions>
     <sonar.javascript.coveragePlugin>lcov</sonar.javascript.coveragePlugin>
     <sonar.javascript.lcov.reportPath>${project.basedir}/test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
-    <!--sonar.javascript.jstestdriver.reportsPath>test/reports/junit/TESTS-xunit.xml</sonar.javascript.jstestdriver.reportsPath-->
+    <sonar.javascript.jstestdriver.reportsPath>test/reports/junit/TESTS-xunit.xml</sonar.javascript.jstestdriver.reportsPath>
   </properties>
 
   <build>
