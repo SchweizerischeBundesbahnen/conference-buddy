@@ -164,7 +164,7 @@
         <version>1.7</version>
         <executions>
           <execution>
-            <id>correct-lcov-file</id>
+            <id>correct-lcov-and-xunit-xml-file</id>
             <phase>package</phase>
             <goals><goal>run</goal></goals>
             <configuration>
@@ -177,10 +177,10 @@
                                byline="true"
                                flags="g"
                   />
-                <!-- Sonar expects filename (without .js!) in classname tag, so do a bit of magic workaround... -->
+                <!-- Sonar expects filename (without .js!) in classname tag, so do a bit of hacky magic workaround... -->
                 <replaceregexp file="test/reports/junit/TESTS-xunit.xml"
                                match="classname=&quot;.*: ([^ :&quot;]+)&quot;"
-                               replace="classname=&quot;test/unit/\1&quot;"
+                               replace="classname=&quot;test/unit/\1Test&quot;"
                                byline="true"
                                flags="g"
                   />
