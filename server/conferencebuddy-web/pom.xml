@@ -231,7 +231,7 @@
         </configuration>
         <executions>
           <execution>
-            <id>grunt-build</id>
+            <id>grunt-prepare</id>
             <goals>
               <goal>create-resources</goal>
               <goal>npm</goal>
