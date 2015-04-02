@@ -105,17 +105,19 @@
         <executions>
           <execution>
             <id>copy-resources</id>
-            <!-- here the phase you need -->
-            <phase>process-resources</phase>
+            <phase>generate-sources</phase>
             <goals>
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
+              <outputDirectory>${basedir}</outputDirectory>
               <resources>
                 <resource>
                   <directory>${basedir}/../../dist</directory>
                   <filtering>false</filtering>
+                  <excludes>
+                    <exclude>server/**/*</exclude>
+                  </excludes>
                 </resource>
               </resources>
             </configuration>
