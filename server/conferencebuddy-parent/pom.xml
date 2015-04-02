@@ -30,6 +30,13 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <maven.build.timestamp.format>dd.MM.yyyy-HH:mm:ss</maven.build.timestamp.format>
+
+    <sonar.jacoco.reportPath>${WORKSPACE}/jacoco-ut.exec</sonar.jacoco.reportPath>
+    <sonar.jacoco.itReportPath>${WORKSPACE}/jacoco-it.exec</sonar.jacoco.itReportPath>
+    <!-- report zero coverage in SonarQube if no coverage report was written -->
+    <sonar.jacoco.reportMissing.force.zero>true</sonar.jacoco.reportMissing.force.zero>
+    <!-- exclude test classes from coverage -->
+    <sonar.coverage.exclusions>**/Test*.java,**/*Test.java,**/*TestCase.java,**/IT*.java,**/*IT.java,**/*ITCase.java</sonar.coverage.exclusions>
   </properties>
 
   <dependencyManagement>

@@ -57,7 +57,7 @@ module.exports = function(config) {
         reporters: ['progress', 'junit', 'html', 'coverage'],
 
         htmlReporter: {
-          outputFile: 'tests/units.html'
+            outputFile: 'reports/junit/units.html'
         },
 
         junitReporter: {
