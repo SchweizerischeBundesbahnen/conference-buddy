@@ -54,10 +54,6 @@ module.exports = function(config) {
         // if true, it capture browsers, run tests and exit
         singleRun: true,
 
-        plugins : [
-              'karma-htmlfile-reporter', 'karma-junit-reporter', 'karma-coverage-reporter'
-        ],
-
         reporters: ['progress', 'junit', 'html', 'coverage'],
 
         htmlReporter: {
