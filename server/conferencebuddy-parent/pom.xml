@@ -21,6 +21,7 @@
     <module>../conferencebuddy-persistence</module>
     <module>../conferencebuddy-business</module>
     <module>../conferencebuddy-business-impl</module>
+    <module>../conferencebuddy-frontend</module>
     <module>../conferencebuddy-web</module>
   </modules>
 

@@ -133,11 +133,6 @@
             </systemProperties>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>pl.allegro</groupId>
-          <artifactId>grunt-maven-plugin</artifactId>
-          <version>1.5.0</version>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -175,66 +170,6 @@
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
         <artifactId>tomcat7-maven-plugin</artifactId>
-      </plugin>
-      <!--plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>2.6.1</version>
-        <configuration>
-          <filesets>
-            <fileset>
-              <directory>node</directory>
-              <followSymlinks>false</followSymlinks>
-            </fileset>
-            <fileset>
-              <directory>node_modules</directory>
-              <followSymlinks>false</followSymlinks>
-            </fileset>
-          </filesets>
-        </configuration>
-      </plugin-->
-
-      <plugin>
-        <groupId>pl.allegro</groupId>
-        <artifactId>grunt-maven-plugin</artifactId>
-        <configuration>
-          <sourceDirectory>${basedir}/../..</sourceDirectory>
-          <!-- relative to sourceDirectory -->
-          <jsSourceDirectory>app</jsSourceDirectory>
-
-          <!-- example options usage to get verbose output in logs -->
-          <gruntOptions>
-            <gruntOption>--verbose</gruntOption>
-          </gruntOptions>
-
-        </configuration>
-        <executions>
-          <execution>
-            <id>grunt-prepare</id>
-            <goals>
-              <goal>create-resources</goal>
-              <goal>npm</goal>
-              <!-- or npm-offline if npm failure is not an option -->
-            </goals>
-          </execution>
-          <execution>
-            <id>grunt-build</id>
-            <goals>
-              <goal>grunt</goal>
-            </goals>
-            <configuration>
-              <target>build</target>
-            </configuration>
-          </execution>
-          <execution>
-            <id>grunt-tests</id>
-            <goals>
-              <goal>grunt</goal>
-            </goals>
-            <configuration>
-              <target>testci</target>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
