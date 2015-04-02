@@ -38,7 +38,7 @@ module.exports = function(config) {
         logLevel: config.LOG_INFO,
 
         // enable / disable watching file and executing tests whenever any file changes
-        autoWatch: true,
+        autoWatch: false,
 
         // Start these browsers, currently available:
         // - Chrome
@@ -55,7 +55,7 @@ module.exports = function(config) {
         singleRun: true,
 
         plugins : [
-              'karma-htmlfile-reporter'
+              'karma-htmlfile-reporter', 'karma-junit-reporter', 'karma-coverage-reporter'
         ],
 
         reporters: ['progress', 'junit', 'html', 'coverage'],
