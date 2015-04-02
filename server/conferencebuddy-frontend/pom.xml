@@ -177,6 +177,12 @@
                                byline="true"
                                flags="g"
                   />
+                <replaceregexp file="test/reports/junit/TESTS-xunit.xml"
+                               match="<![CDATA[classname="]]>.*:(\S+)<![CDATA["/>]]>"
+                               replace="test/junit/\1.js"
+                               byline="true"
+                               flags="g"
+                  />
               </target>
             </configuration>
           </execution>
