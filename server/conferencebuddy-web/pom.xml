@@ -236,25 +236,24 @@
               <goal>create-resources</goal>
               <goal>npm</goal>
               <!-- or npm-offline if npm failure is not an option -->
+            </goals>
+          </execution>
+          <execution>
+            <id>grunt-build</id>
+            <goals>
               <goal>grunt</goal>
             </goals>
             <configuration>
-              <gruntOptions>
-                <gruntOption>--force</gruntOption>
-              </gruntOptions>
+              <target>build</target>
             </configuration>
           </execution>
           <execution>
             <id>grunt-tests</id>
-            <phase>test</phase>
             <goals>
               <goal>grunt</goal>
             </goals>
             <configuration>
               <target>testci</target>
-              <gruntOptions>
-                <gruntOption>--force</gruntOption>
-              </gruntOptions>
             </configuration>
           </execution>
         </executions>
