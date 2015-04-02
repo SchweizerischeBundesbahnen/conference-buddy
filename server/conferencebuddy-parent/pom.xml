@@ -313,10 +313,10 @@
   </build>
 
   <scm>
-    <connection>scm:svn:http://svn.sbb.ch/conferencebuddy/trunk/conferencebuddy-parent</connection>
-    <developerConnection>scm:svn:http://svn.sbb.ch/conferencebuddy/trunk/conferencebuddy-parent
+    <connection>scm:git:https://github.com/SchweizerischeBundesbahnen/conference-buddy.git</connection>
+    <developerConnection>scm:git:https://github.com/SchweizerischeBundesbahnen/conference-buddy.git
     </developerConnection>
-    <url>http://svn.sbb.ch/conferencebuddy/trunk/conferencebuddy-parent</url>
+    <url>scm:git:https://github.com/SchweizerischeBundesbahnen/conference-buddy.git</url>
   </scm>
 
   <ciManagement>
