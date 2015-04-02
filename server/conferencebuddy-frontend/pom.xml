@@ -14,7 +14,8 @@
   <name>${project.artifactId}</name>
 
   <properties>
-    <sonar.sources>app,test</sonar.sources>
+    <sonar.language>js</sonar.language>
+    <sonar.sources>app,test/unit</sonar.sources>
     <sonar.exclusions>app/bower_components/**/*</sonar.exclusions>
     <sonar.coverage.exclusions>test/**/*</sonar.coverage.exclusions>
     <sonar.javascript.lcov.reportPath>test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
