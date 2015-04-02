@@ -26,6 +26,8 @@
   </modules>
 
   <properties>
+    <jacocoUtArgLine></jacocoUtArgLine>
+    <jacocoItArgLine></jacocoItArgLine>
     <esta.version>2.4.1-SNAPSHOT</esta.version>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -60,7 +62,7 @@
                      Sets the name of the property containing the settings
                      for JaCoCo runtime agent.
                   -->
-                  <propertyName>jacocoUtArgLine</propertyName>
+                  <!--propertyName>jacocoUtArgLine</propertyName-->
                 </configuration>
               </execution>
               <execution>
@@ -76,7 +78,7 @@
                      Sets the name of the property containing the settings
                      for JaCoCo runtime agent.
                   -->
-                  <propertyName>jacocoItArgLine</propertyName>
+                  <!--propertyName>jacocoItArgLine</propertyName-->
                 </configuration>
               </execution>
             </executions>
