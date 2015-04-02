@@ -164,8 +164,11 @@
           <execution>
             <id>correct-lcov-file</id>
             <phase>package</phase>
+            <goals><goal>run</goal></goals>
             <configuration>
               <target>
+                <!-- http://blog.akquinet.de/2014/11/25/js-test-coverage/ -->
+                <!-- Correct full CI path to path relative to module as used in SonarQube -->
                 <replaceregexp file="test/reports/coverage/lcov.info"
                                match="SF:.*conferencebuddy-frontend/(.*)"
                                replace="SF:\1"
