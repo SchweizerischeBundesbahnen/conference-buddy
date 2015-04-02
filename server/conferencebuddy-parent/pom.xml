@@ -312,12 +312,12 @@
     </plugins>
   </build>
 
-  <!--scm>
+  <scm>
     <connection>scm:git:https://github.com/SchweizerischeBundesbahnen/conference-buddy.git</connection>
     <developerConnection>scm:git:https://github.com/SchweizerischeBundesbahnen/conference-buddy.git
     </developerConnection>
     <url>scm:git:https://github.com/SchweizerischeBundesbahnen/conference-buddy.git</url>
-  </scm-->
+  </scm>
 
   <ciManagement>
     <system>jenkins</system>
