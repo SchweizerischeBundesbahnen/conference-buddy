@@ -250,7 +250,7 @@
                 <!-- with forking, the CHROME and FIREFOX driver blocks after runs
                     when launched in maven -->
                 <forkCount>0</forkCount>
-                <!--argLine>${jacocoItArgLine‡}</argLine-->
+                <!--argLine>${jacocoItArgLine}</argLine-->
               </configuration>
             </execution>
           </executions>
