@@ -156,7 +156,7 @@
             <configuration>
               <artifacts>
                 <artifact>
-                  <file>${project.build.directory}/${project.groupId}-${project.artifactId}-${project.version}</file>
+                  <file>${project.build.directory}/${project.artifactId}-${project.version}-zipassembly.zip</file>
                   <type>zip</type>
                 </artifact>
               </artifacts>
