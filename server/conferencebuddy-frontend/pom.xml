@@ -15,6 +15,7 @@
 
   <properties>
     <sonar.sources>app</sonar.sources>
+    <sonar.exclusions>app/bower_component/**/*</sonar.exclusions>
     <sonar.javascript.lcov.reportPath>test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
     <sonar.javascript.jstestdriver.reportsPath>test/reports/junit/TESTS-xunit.xml</sonar.javascript.jstestdriver.reportsPath>
   </properties>
