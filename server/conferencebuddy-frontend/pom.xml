@@ -60,7 +60,7 @@
         <groupId>pl.allegro</groupId>
         <artifactId>grunt-maven-plugin</artifactId>
         <configuration>
-          <sourceDirectory>${basedir}/../..</sourceDirectory>
+          <sourceDirectory>.</sourceDirectory>
           <!-- relative to sourceDirectory -->
           <jsSourceDirectory>app</jsSourceDirectory>
 
@@ -120,6 +120,46 @@
                   </excludes>
                 </resource>
               </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>create-distribution</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>src/main/resources/assembly.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.9.1</version>
+        <executions>
+          <execution>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>${project.build.directory}/${project.groupId}-${project.artifactId}-${project.version}</file>
+                  <type>zip</type>
+                </artifact>
+              </artifacts>
             </configuration>
           </execution>
         </executions>
