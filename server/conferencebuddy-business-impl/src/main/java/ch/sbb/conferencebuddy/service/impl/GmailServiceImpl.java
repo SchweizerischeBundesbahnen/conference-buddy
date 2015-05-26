@@ -35,7 +35,8 @@ public class GmailServiceImpl implements EmailService {
     private UserRepository userRepository;
 
     @Override
-    @Scheduled(fixedRate= 9*1000) // every 9sec, performance???
+    // TODO[kg] enable after correcting gmail config
+    // @Scheduled(fixedRate= 9*1000) // every 9sec, performance???
     public synchronized void sendMail() {
         final List<User> userPage = userRepository.findByEmailSentFalseOrderByCreatedAsc(); // performance???
         if (userPage != null && !userPage.isEmpty()) {
