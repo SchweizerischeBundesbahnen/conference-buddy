@@ -10,9 +10,10 @@
   <formats>
     <format>zip</format>
   </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
   <fileSets>
     <fileSet>
-      <outputDirectory>target</outputDirectory>
+      <outputDirectory>/</outputDirectory>
       <directory>dist</directory>
     </fileSet>
   </fileSets>
