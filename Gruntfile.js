@@ -73,8 +73,9 @@ module.exports = function(grunt) {
                 proxies: [
                     {
                         context: '/service',
-                        host: 'sbb-conferencebuddy.elasticbeanstalk.com',
-                        port: 80,
+                        host: 'localhost',
+                        // host: 'sbb-conferencebuddy.elasticbeanstalk.com',
+                        port: 8080,
                         https: false,
                         changeOrigin: false,
                         xforward: false,
@@ -82,7 +83,7 @@ module.exports = function(grunt) {
                             'x-custom-added-header': 'korhan-fooya'
                         },
                          rewrite: {
-                            '^/service': '/service'
+                            '^/service': '/conferencebuddy-web/service'
                         }
                     }
                 ]
