@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>conferencebuddy-parent</artifactId>
+    <groupId>ch.sbb.conferencebuddy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../conferencebuddy-parent</relativePath>
+  </parent>
+  <artifactId>conferencebuddy-frontend</artifactId>
+  <packaging>pom</packaging>
+  <name>${project.artifactId}</name>
+
+  <properties>
+    <sonar.language>js</sonar.language>
+    <sonar.sources>app</sonar.sources>
+    <sonar.tests>test/unit</sonar.tests>
+    <sonar.exclusions>app/bower_components/**/*</sonar.exclusions>
+    <sonar.coverage.exclusions>test/**/*</sonar.coverage.exclusions>
+    <sonar.javascript.coveragePlugin>lcov</sonar.javascript.coveragePlugin>
+    <sonar.javascript.lcov.reportPath>test/reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
+    <sonar.javascript.jstestdriver.reportsPath>test/reports/junit/</sonar.javascript.jstestdriver.reportsPath>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>pl.allegro</groupId>
+          <artifactId>grunt-maven-plugin</artifactId>
+          <version>1.5.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${basedir}/../../</directory>
+                  <filtering>false</filtering>
+                  <excludes>
+                    <exclude>server/**/*</exclude>
+                  </excludes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>pl.allegro</groupId>
+        <artifactId>grunt-maven-plugin</artifactId>
+        <configuration>
+          <sourceDirectory>.</sourceDirectory>
+          <!-- relative to sourceDirectory -->
+          <jsSourceDirectory>app</jsSourceDirectory>
+
+          <!-- example options usage to get verbose output in logs -->
+          <gruntOptions>
+            <gruntOption>--verbose</gruntOption>
+          </gruntOptions>
+
+        </configuration>
+        <executions>
+          <execution>
+            <id>grunt-prepare</id>
+            <goals>
+              <goal>create-resources</goal>
+              <goal>npm</goal>
+              <!-- or npm-offline if npm failure is not an option -->
+            </goals>
+          </execution>
+          <execution>
+            <id>grunt-build</id>
+            <goals>
+              <goal>grunt</goal>
+            </goals>
+            <configuration>
+              <target>build</target>
+            </configuration>
+          </execution>
+          <execution>
+            <id>grunt-tests</id>
+            <goals>
+              <goal>grunt</goal>
+            </goals>
+            <configuration>
+              <target>testci</target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>create-distribution</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>src/main/resources/assembly.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.9.1</version>
+        <executions>
+          <execution>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>${project.build.directory}/${project.artifactId}-${project.version}-zipassembly.zip</file>
+                  <type>zip</type>
+                </artifact>
+              </artifacts>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.7</version>
+        <executions>
+          <execution>
+            <id>correct-lcov-and-xunit-xml-file</id>
+            <phase>package</phase>
+            <goals><goal>run</goal></goals>
+            <configuration>
+              <target>
+                <!-- http://blog.akquinet.de/2014/11/25/js-test-coverage/ -->
+                <!-- Correct full CI path to path relative to module as used in SonarQube -->
+                <replaceregexp file="test/reports/coverage/lcov.info"
+                               match="SF:.*conferencebuddy-frontend/(.*)"
+                               replace="SF:\1"
+                               byline="true"
+                               flags="g"
+                  />
+                <!-- Sonar expects filename (without .js!) in classname tag, so do a bit of hacky magic workaround... -->
+                <replaceregexp file="test/reports/junit/TESTS-xunit.xml"
+                               match="classname=&quot;.*: ([^ :&quot;]+)&quot;"
+                               replace="classname=&quot;test/unit/\1Test&quot;"
+                               byline="true"
+                               flags="g"
+                  />
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

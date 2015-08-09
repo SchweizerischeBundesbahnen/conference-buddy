@@ -38,7 +38,7 @@ module.exports = function(config) {
         logLevel: config.LOG_INFO,
 
         // enable / disable watching file and executing tests whenever any file changes
-        autoWatch: true,
+        autoWatch: false,
 
         // Start these browsers, currently available:
         // - Chrome
@@ -48,11 +48,34 @@ module.exports = function(config) {
         // - Safari (only Mac)
         // - PhantomJS
         // - IE (only Windows)
-        browsers: ['PhantomJS', 'Firefox'],
+        browsers: ['PhantomJS' ],
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
-        singleRun: false
+        singleRun: true,
 
+        reporters: ['progress', 'junit', 'html', 'coverage'],
+
+        htmlReporter: {
+            outputFile: 'reports/junit/units.html'
+        },
+
+        junitReporter: {
+            outputFile: 'reports/junit/TESTS-xunit.xml'
+        },
+
+        preprocessors: {
+          // source files, that you wanna generate coverage for
+          // do not include tests or libraries
+          // (these files will be instrumented by Istanbul)
+          '../app/scripts/**/*.js': ['coverage']
+        },
+
+        // optionally, configure the reporter
+        coverageReporter: {
+          type:   'lcov',
+          dir:    'reports',
+          subdir: 'coverage'
+        }
     });
 };

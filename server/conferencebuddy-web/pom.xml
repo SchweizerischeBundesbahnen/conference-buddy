@@ -1,271 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<artifactId>conferencebuddy-parent</artifactId>
-		<groupId>ch.sbb.conferencebuddy</groupId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../conferencebuddy-parent</relativePath>
-	</parent>
-	<artifactId>conferencebuddy-web</artifactId>
-	<packaging>war</packaging>
-	<name>${project.artifactId}</name>
+  <parent>
+    <artifactId>conferencebuddy-parent</artifactId>
+    <groupId>ch.sbb.conferencebuddy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../conferencebuddy-parent</relativePath>
+  </parent>
+  <artifactId>conferencebuddy-web</artifactId>
+  <packaging>war</packaging>
+  <name>${project.artifactId}</name>
 
-	<properties>
-		<tomcat.host>localhost</tomcat.host>
-		<tomcat.http.port>8080</tomcat.http.port>
-		<tomcat.demo.baseUrl>http://${tomcat.host}:${tomcat.http.port}/conferencebuddy-web</tomcat.demo.baseUrl>
-	</properties>
+  <properties>
+    <tomcat.host>localhost</tomcat.host>
+    <tomcat.http.port>8080</tomcat.http.port>
+    <tomcat.demo.baseUrl>http://${tomcat.host}:${tomcat.http.port}/conferencebuddy-web</tomcat.demo.baseUrl>
+  </properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>ch.sbb.conferencebuddy</groupId>
-			<artifactId>conferencebuddy-business</artifactId>
-		</dependency>
+  <dependencies>
+    <dependency>
+      <groupId>ch.sbb.conferencebuddy</groupId>
+      <artifactId>conferencebuddy-business</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>ch.sbb.conferencebuddy</groupId>
-            <artifactId>conferencebuddy-business-impl</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>ch.sbb.conferencebuddy</groupId>
+      <artifactId>conferencebuddy-business-impl</artifactId>
+    </dependency>
 
-		<!-- esta dependencies -->
-		<dependency>
-			<groupId>ch.sbb.esta</groupId>
-			<artifactId>esta-web</artifactId>
-		</dependency>
-        <dependency>
-            <groupId>ch.sbb.esta</groupId>
-            <artifactId>esta-rest-gateway</artifactId>
-        </dependency>
+    <!-- esta dependencies -->
+    <dependency>
+      <groupId>ch.sbb.esta</groupId>
+      <artifactId>esta-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.sbb.esta</groupId>
+      <artifactId>esta-rest-gateway</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>ch.sbb.esta</groupId>
-            <artifactId>esta-starter-tomcat</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>ch.sbb.esta</groupId>
+      <artifactId>esta-starter-tomcat</artifactId>
+    </dependency>
 
-        <!-- TODO: move into it's own esta-starter-ws artifact -->
-        <!-- jersey find a solution -->
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet-core</artifactId>
-        </dependency>
+    <!-- TODO: move into it's own esta-starter-ws artifact -->
+    <!-- jersey find a solution -->
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet-core</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-common</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-common</artifactId>
+    </dependency>
 
-        <!-- for JAXB/ JSON support -->
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-        </dependency>
+    <!-- for JAXB/ JSON support -->
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+    </dependency>
 
-        <!-- TODO just for now until we have a proper database ;) -->
-        <!-- in-memory database -->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <!-- liquibase -->
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.mattbertolini</groupId>
-            <artifactId>liquibase-slf4j</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+    <!-- TODO just for now until we have a proper database ;) -->
+    <!-- in-memory database -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- liquibase -->
+    <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.mattbertolini</groupId>
+      <artifactId>liquibase-slf4j</artifactId>
+      <scope>runtime</scope>
+    </dependency>
 
-        <!-- still required and changing the scope manually -->
-        <dependency>
-            <groupId>org.codehaus.btm</groupId>
-            <artifactId>btm</artifactId>
-            <classifier>sbb</classifier>
-            <scope>runtime</scope>
-            <version>2.1.3</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>javax.transaction</groupId>
-                    <artifactId>jta</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-	</dependencies>
+    <!-- still required and changing the scope manually -->
+    <dependency>
+      <groupId>org.codehaus.btm</groupId>
+      <artifactId>btm</artifactId>
+      <classifier>sbb</classifier>
+      <scope>runtime</scope>
+      <version>2.1.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>javax.transaction</groupId>
+          <artifactId>jta</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
 
-    <build>
-        <resources>
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>src/main/tomcatconf</directory>
+        <targetPath>${project.build.directory}/tomcatconf</targetPath>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.0</version>
+          <configuration>
+            <port>${tomcat.http.port}</port>
+            <systemProperties>
+              <!-- in the next line, we should set the right base url for tomcat,
+                  but when jax-ws is not set up, tomcat does not launch? -->
+              <demo.baseUrl>${tomcat.demo.baseUrl}</demo.baseUrl>
+              <net.sf.ehcache.skipUpdateCheck>true</net.sf.ehcache.skipUpdateCheck>
+            </systemProperties>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+
+        <configuration>
+          <archive>
+            <manifest>
+              <classpathPrefix>WEB-INF/lib/</classpathPrefix>
+              <addClasspath>true</addClasspath>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+            </manifest>
+            <manifestEntries>
+              <Build-Number>${buildNumber}</Build-Number>
+              <Build-Time>${maven.build.timestamp}</Build-Time>
+            </manifestEntries>
+          </archive>
+          <webResources>
+            <!-- angular client einbinden -->
             <resource>
-                <directory>src/main/resources</directory>
+              <directory>${project.build.directory}/generated-sources/client-dist/</directory>
             </resource>
-            <resource>
-                <directory>src/main/tomcatconf</directory>
-                <targetPath>${project.build.directory}/tomcatconf</targetPath>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.tomcat.maven</groupId>
-                    <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>2.0</version>
-                    <configuration>
-                        <port>${tomcat.http.port}</port>
-                        <systemProperties>
-                            <!-- in the next line, we should set the right base url for tomcat,
-                                but when jax-ws is not set up, tomcat does not launch? -->
-                            <demo.baseUrl>${tomcat.demo.baseUrl}</demo.baseUrl>
-                            <net.sf.ehcache.skipUpdateCheck>true</net.sf.ehcache.skipUpdateCheck>
-                        </systemProperties>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>pl.allegro</groupId>
-                    <artifactId>grunt-maven-plugin</artifactId>
-                    <version>1.4.1</version>
-                    <configuration>
-                        <!-- relative to src/main/webapp/, default: static -->
-                        <jsSourceDirectory>../../</jsSourceDirectory>
+            <webResource>
+              <directory>${basedir}/src/main/webapp/WEB-INF</directory>
+              <includes>
+                <include>web.xml</include>
+              </includes>
+              <targetPath>WEB-INF</targetPath>
+              <filtering>true</filtering>
+            </webResource>
+          </webResources>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.10</version>
+        <executions>
+          <execution>
+            <id>unpack</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>conferencebuddy-frontend</artifactId>
+                  <version>${project.version}</version>
+                  <type>zip</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${project.build.directory}/generated-sources/client-dist/</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+              <overWriteReleases>true</overWriteReleases>
+              <overWriteSnapshots>true</overWriteSnapshots>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
-                        <!-- example options usage to get verbose output in logs -->
-                        <gruntOptions>
-                            <gruntOption>--verbose</gruntOption>
-                        </gruntOptions>
-
-                        <!-- add more configuration here -->
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <!-- ??? -->
-                                <goal>create-resources</goal>
-                                <goal>npm</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+  <profiles>
+    <profile>
+      <id>integration-test-start-and-stop-tomcat</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <build>
         <plugins>
-            <!-- not yet working :( -->
-            <!-- plugin>
-                <groupId>pl.allegro</groupId>
-                <artifactId>grunt-maven-plugin</artifactId>
-            </plugin -->
-
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                    <execution>
-                        <id>prepare</id>
-                        <phase>process-resources</phase>
-                        <configuration>
-                            <tasks>
-                                <echo message="process-resources phase" />
-                                <unzip src="../../client_dist/dist.zip" dest="${project.build.directory}/generated-sources/client-dist/" />
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>tomcat-start-before-selenium-integrationtests</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <classpathPrefix>WEB-INF/lib/</classpathPrefix>
-                            <addClasspath>true</addClasspath>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        </manifest>
-                        <manifestEntries>
-                            <Build-Number>${buildNumber}</Build-Number>
-                            <Build-Time>${maven.build.timestamp}</Build-Time>
-                        </manifestEntries>
-                    </archive>
-                    <webResources>
-                        <!-- angular client einbinden -->
-                        <resource>
-                            <directory>${project.build.directory}/generated-sources/client-dist/</directory>
-                        </resource>
-                        <webResource>
-                            <directory>${basedir}/src/main/webapp/WEB-INF</directory>
-                            <includes>
-                                <include>web.xml</include>
-                            </includes>
-                            <targetPath>WEB-INF</targetPath>
-                            <filtering>true</filtering>
-                        </webResource>
-                    </webResources>
+                  <fork>true</fork>
+                  <port>${tomcat.http.port}</port>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-            </plugin>
+              </execution>
+              <execution>
+                <id>tomcat-stop-after-selenium-integrationtests</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                  <goal>shutdown</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
-    </build>
-
-
-    <profiles>
-        <profile>
-            <id>integration-test-start-and-stop-tomcat</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-failsafe-plugin</artifactId>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.tomcat.maven</groupId>
-                        <artifactId>tomcat7-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>tomcat-start-before-selenium-integrationtests</id>
-                                <phase>pre-integration-test</phase>
-                                <goals>
-                                    <goal>run</goal>
-                                </goals>
-                                <configuration>
-                                    <fork>true</fork>
-                                    <port>${tomcat.http.port}</port>
-                                </configuration>
-                            </execution>
-                            <execution>
-                                <id>tomcat-stop-after-selenium-integrationtests</id>
-                                <phase>post-integration-test</phase>
-                                <goals>
-                                    <goal>shutdown</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+      </build>
+    </profile>
+  </profiles>
 </project>

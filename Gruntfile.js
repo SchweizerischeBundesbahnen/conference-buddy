@@ -181,11 +181,12 @@ module.exports = function(grunt) {
 
         // Automatically inject Bower components into the app
         wiredep: {
-            /*
-            options: {
+            // / https://github.com/stephenplusplus/grunt-wiredep/issues/100
+            // Comment out
+            /*options: {
                 cwd: '<%= yeoman.app %>'
-            },
-            */
+            },*/
+            // \ https://github.com/stephenplusplus/grunt-wiredep/issues/100
             app: {
                 src: ['<%= yeoman.app %>/index.html'],
                 // ignorePath: /..\//
@@ -362,6 +363,10 @@ module.exports = function(grunt) {
             unit: {
                 configFile: 'test/karma.conf.js',
                 singleRun: true
+            },
+            // Run only PhantomJS tests
+            ci: {
+                configFile: 'test/karma.ci.conf.js'
             }
         }
     });
@@ -384,6 +389,10 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', [
         'clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma'
+    ]);
+
+    grunt.registerTask('testci', [
+        'clean:server', 'concurrent:test', 'autoprefixer', 'connect:test', 'karma:ci'
     ]);
 
     grunt.registerTask('build', [
