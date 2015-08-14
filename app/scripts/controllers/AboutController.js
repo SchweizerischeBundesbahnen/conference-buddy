@@ -15,7 +15,10 @@ angular.module('conferenceBuddyApp').controller('AboutController',
     };
 
     $scope.getUserId = function() {
-        return $scope.user.userId || '-';
+      if($scope.user) {
+        return $scope.user.userId;
+      }
+      return '-';
     };
 
 }]);

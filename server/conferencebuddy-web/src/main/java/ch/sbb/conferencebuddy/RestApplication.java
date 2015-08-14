@@ -36,7 +36,6 @@ public class RestApplication extends Application {
     public Set<Class<?>> getClasses() {
         LOGGER.debug("in MyApplication#getClasses");
         final Set<Class<?>> classes = new HashSet<>();
-        classes.add(HelloWorldResource.class);
         classes.add(CommentResource.class);
         classes.add(RatingResource.class);
         classes.add(UserResource.class);

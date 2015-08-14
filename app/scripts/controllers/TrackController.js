@@ -45,6 +45,10 @@ angular.module('conferenceBuddyApp').controller('TrackController',
         return !presentation.common && index !== -1;
     };
 
+    $scope.hasSpeakers = function(presentation) {
+        return presentation.speakers && presentation.speakers.length > 0;
+    }
+
     function toggleMagic() {
         $scope.copperfield = $scope.copperfield ? '' : 'magic';
     }
