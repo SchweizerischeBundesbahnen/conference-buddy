@@ -1,43 +1,50 @@
 <div class="container content">
-    <div class="row track">
-        <p class="h3"><strong>Conference-Buddy</strong></p>
-        <p>Die Buddy-App für Konferenzen, Version 1.1.0</p>
+  <div class="row track">
+    <p class="h3"><strong>Conference-Buddy</strong></p>
 
-        <h4>Status der Registrierung</h4>
-        <p>
+    <p>Die Buddy-App für Konferenzen, Version 1.1.0</p>
+
+    <h4>Status der Registrierung</h4>
+
+    <p>
             <span ng-hide="isRegistered()">
-                Du bist nicht registriert. Du kannst dich hier <a ng-controller="NavigationController" ng-click="goToMyTrack()">registrieren</a>.
+                Du bist nicht registriert. Du kannst dich hier <a ng-controller="NavigationController"
+                                                                  ng-click="goToMyTrack()">registrieren</a>.
             </span>
             <span ng-show="isRegistered()">
                 Du bist registriert als <code>{{user.name}}</code> mit <br>
                 E-Mail: <code>{{user.email}}</code><br/>
                 SBB Benutzername: <code>{{getUserId()}}</code>
             </span>
-        </p>
-        <button ng-show="isRegistered()" ng-click="unregister()" class="btn btn-default" ng-disabled="commentsForm.$invalid">
-            Registrierung löschen
-        </button>
-        <hr/>
+    </p>
+    <button ng-show="isRegistered()" ng-click="unregister()" class="btn btn-default"
+            ng-disabled="commentsForm.$invalid">
+      Registrierung löschen
+    </button>
+    <hr/>
 
-        <h4>Features</h4>
-        <ul>
-            <li>Konferenz-Agenda und Tracks im Überblick</li>
-            <li>Keinen Vortrag verpassen mit Raum- und Zeitangaben</li>
-            <li>Synchronisation mit dem E-Tutor (nur für SBB Mitarbeiter)</li>
-            <li>Konferenz und Vorträge kommentieren und bewerten</li>
-            <li>Sofort wissen, was andere von den Vorträgen halten</li>
-        </ul>
-        <hr/>
+    <h4>Features</h4>
+    <ul>
+      <li>Konferenz-Agenda und Tracks im Überblick</li>
+      <li>Keinen Vortrag verpassen mit Raum- und Zeitangaben</li>
+      <li>Synchronisation mit dem E-Tutor (nur für SBB Mitarbeiter)</li>
+      <li>Konferenz und Vorträge kommentieren und bewerten</li>
+      <li>Sofort wissen, was andere von den Vorträgen halten</li>
+    </ul>
+    <hr/>
 
-        <h4>Entwicklungsteam</h4>
-        <p>
-            Freiwillige aus der RC-ENG Community, SBB IT
-        </p>
-        <hr/>
+    <h4>Entwicklungsteam</h4>
 
-        <h4>Technologien und Tools</h4>
-        <p>
-            AngularJS, Bootstrap, Bower, Karma, Spring, ESTA, REST, Tomcat, MySQL, GitHub, Travis, Amazon AWS
-        </p>
-    </div>
+    <p>
+      {{contributors}}
+    </p>
+
+    <hr/>
+
+    <h4>Technologien und Tools</h4>
+
+    <p>
+      AngularJS, Bootstrap, Bower, Karma, Spring, ESTA, REST, Tomcat, MySQL, GitHub, Travis, Amazon AWS
+    </p>
+  </div>
 </div>
