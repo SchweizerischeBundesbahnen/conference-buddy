@@ -39,4 +39,5 @@ npm run protractor
 For installation see https://github.com/SchweizerischeBundesbahnen/conference-buddy/wiki#protractor
 
 
+boomya
 
