@@ -23,21 +23,20 @@ public class ImportEtutorDevDay extends AbstractRestIT {
     @Test
     public void importAllTrack() throws IOException {
         LOGGER.info(urlOfFirstPage);
-        importTrack("0", "A", 10, 35);
-        importTrack("1", "B", 11, 30);
-        importTrack("2", "C", 13, 25);
-        importTrack("3", "D", 14, 20);
-        importTrack("4", "E", 15, 30);
-
+        importTrack("0", "A", 10, 30);
+        importTrack("1", "B", 11, 20);
+        importTrack("2", "C", 13, 10);
+        importTrack("3", "D", 14, 00);
+        importTrack("4", "E", 15, 10);
     }
 
 
     private void importTrack( final String staticPartId, final String track, final int hour, final int minutes) throws IOException {
         LOGGER.info("import staticPart {}, track {}", staticPartId, track);
-        importCSV("10" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "1 Präsenzliste.csv"), Charsets.UTF_8));
-        importCSV("20" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "2 Präsenzliste.csv"), Charsets.UTF_8));
-        importCSV("30" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "3 Präsenzliste.csv"), Charsets.UTF_8));
-        importCSV("40" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "4 Präsenzliste.csv"), Charsets.UTF_8));
+        importCSV("10" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "1.csv"), Charsets.UTF_8));
+        importCSV("20" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "2.csv"), Charsets.UTF_8));
+        importCSV("30" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "3.csv"), Charsets.UTF_8));
+        importCSV("40" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "4.csv"), Charsets.UTF_8));
     }
 
 

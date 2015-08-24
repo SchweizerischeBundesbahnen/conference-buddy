@@ -1,7 +1,8 @@
 package ch.sbb.conferencebuddy.service.impl;
 
-import java.util.UUID;
-
+import ch.sbb.conferencebuddy.model.User;
+import ch.sbb.conferencebuddy.persistence.UserRepository;
+import ch.sbb.conferencebuddy.service.EmailService;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -10,9 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import ch.sbb.conferencebuddy.model.User;
-import ch.sbb.conferencebuddy.persistence.UserRepository;
-import ch.sbb.conferencebuddy.service.EmailService;
+import java.util.UUID;
 
 /**
  * @author Gilles Zimmermann
@@ -25,7 +24,7 @@ import ch.sbb.conferencebuddy.service.EmailService;
         "classpath:root-context.xml",
         "classpath:email-config-context.xml"})
 @Ignore("configuration for username and password is not commited into github, hence this test will faile and the config needs to be adjusted manually.")
-public class GmailServiceImplTest{
+public class EmailServiceTest {
 
     @Autowired
     private EmailService emailService;
