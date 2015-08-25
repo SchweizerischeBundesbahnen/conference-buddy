@@ -33,10 +33,10 @@ public class ImportEtutorDevDay extends AbstractRestIT {
 
     private void importTrack( final String staticPartId, final String track, final int hour, final int minutes) throws IOException {
         LOGGER.info("import staticPart {}, track {}", staticPartId, track);
-        importCSV("10" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "1.csv"), Charsets.UTF_8));
-        importCSV("20" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "2.csv"), Charsets.UTF_8));
-        importCSV("30" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "3.csv"), Charsets.UTF_8));
-        importCSV("40" + staticPartId, hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "4.csv"), Charsets.UTF_8));
+        importCSV("2" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "1.csv"), Charsets.UTF_8));
+        importCSV("3" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "2.csv"), Charsets.UTF_8));
+        importCSV("4" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "3.csv"), Charsets.UTF_8));
+        importCSV("5" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "4.csv"), Charsets.UTF_8));
     }
 
 
