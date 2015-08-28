@@ -19,7 +19,7 @@
       "surname": "Emruli",
       "email": "",
       "company": "mimacom ag",
-      "picture": "images/referenten/missing.png",
+      "picture": "images/referenten/ae.jpg",
       "bio": ""
     },
     {
@@ -45,8 +45,8 @@
       "name": "Björn",
       "surname": "Mosler",
       "email": "",
-      "company": "Pivotal",
-      "picture": "images/referenten/missing.png",
+      "company": "Netcetera AG",
+      "picture": "images/referenten/bm.jpg",
       "bio": ""
     },
     {
@@ -72,7 +72,7 @@
       "name": "Florian",
       "surname": "Seidl",
       "email": "",
-      "company": "simas GmbH",
+      "company": "IT-SWE",
       "picture": "images/referenten/fs.jpg",
       "bio": ""
     },
@@ -81,7 +81,7 @@
       "name": "Gilles",
       "surname": "Zimmermann",
       "email": "",
-      "company": "IT-SCI",
+      "company": "IT-SWE",
       "picture": "images/referenten/gz.jpg",
       "bio": ""
     },
@@ -90,7 +90,7 @@
       "name": "Igor",
       "surname": "Masen",
       "email": "",
-      "company": "IT-AQ",
+      "company": "IT-SWE",
       "picture": "images/referenten/im.jpg",
       "bio": ""
     },
@@ -117,7 +117,7 @@
       "name": "Jonas",
       "surname": "Bandi",
       "email": "",
-      "company": "IT-AQ",
+      "company": "Jonas Bandi",
       "picture": "images/referenten/jb.jpg",
       "bio": ""
     },
@@ -135,7 +135,7 @@
       "name": "Katharina",
       "surname": "Mellert",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-SCF",
       "picture": "images/referenten/km.jpg",
       "bio": ""
     },
@@ -153,7 +153,7 @@
       "name": "Lukas",
       "surname": "Eder",
       "email": "",
-      "company": "IT-SWE",
+      "company": "Data Geekery GmbH",
       "picture": "images/referenten/le.jpg",
       "bio": ""
     },
@@ -162,7 +162,7 @@
       "name": "Lukasz",
       "surname": "Pielak",
       "email": "",
-      "company": "IvoryCode GmbH",
+      "company": "Lukasz Pielak",
       "picture": "images/referenten/lp.jpg",
       "bio": ""
     },
@@ -171,7 +171,7 @@
       "name": "Maciej",
       "surname": "Raciborski",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-OM",
       "picture": "images/referenten/mr.jpg",
       "bio": ""
     },
@@ -180,7 +180,7 @@
       "name": "Maik",
       "surname": "Fettig",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-SCP",
       "picture": "images/referenten/mf.jpg",
       "bio": ""
     },
@@ -189,7 +189,7 @@
       "name": "Marc",
       "surname": "Hoffmann",
       "email": "",
-      "company": "IT-SWE",
+      "company": "mtrail GmbH",
       "picture": "images/referenten/mh.jpg",
       "bio": ""
     },
@@ -198,8 +198,8 @@
       "name": "Matthias",
       "surname": "Junker",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/missing.png",
+      "company": "Netcetera AG",
+      "picture": "images/referenten/mj.jpg",
       "bio": ""
     },
     {
@@ -225,7 +225,7 @@
       "name": "Peter",
       "surname": "Hirzel",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-SCP",
       "picture": "images/referenten/ph.jpg",
       "bio": ""
     },
@@ -243,7 +243,7 @@
       "name": "Piotr",
       "surname": "Kowol",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-SCF",
       "picture": "images/referenten/pk.jpg",
       "bio": ""
     },
@@ -253,7 +253,7 @@
       "surname": "Spahr",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/missing.png",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
@@ -270,7 +270,7 @@
       "name": "Roger",
       "surname": "Bobst",
       "email": "",
-      "company": "IT-AQ",
+      "company": "IT-SWE",
       "picture": "images/referenten/missing.png",
       "bio": ""
     },
@@ -279,7 +279,7 @@
       "name": "Sebastian",
       "surname": "Graf",
       "email": "",
-      "company": "IT-AQ",
+      "company": "IT-SWE",
       "picture": "images/referenten/sg.jpg",
       "bio": ""
     },
@@ -288,7 +288,7 @@
       "name": "Simon",
       "surname": "Butscher",
       "email": "",
-      "company": "IT-OM",
+      "company": "IT-SWE",
       "picture": "images/referenten/sb.jpg",
       "bio": ""
     },
@@ -297,7 +297,7 @@
       "name": "Simon",
       "surname": "Martinelli",
       "email": "",
-      "company": "IT-SWE",
+      "company": "simas GmbH",
       "picture": "images/referenten/sm.jpg",
       "bio": ""
     },
@@ -306,7 +306,7 @@
       "name": "Stefan",
       "surname": "Graf",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-SCF",
       "picture": "images/referenten/sg2.jpg",
       "bio": ""
     },
@@ -324,7 +324,7 @@
       "name": "Thorsten",
       "surname": "Löhndorf",
       "email": "",
-      "company": "IT-SCP",
+      "company": "IT-SWE",
       "picture": "images/referenten/tl.jpg",
       "bio": ""
     },
@@ -333,7 +333,7 @@
       "name": "Tobias",
       "surname": "Denzler",
       "email": "",
-      "company": "IT-SCP",
+      "company": "IT-SWE",
       "picture": "images/referenten/td.jpg",
       "bio": ""
     },
@@ -342,7 +342,7 @@
       "name": "Tobias",
       "surname": "Röthlisberger",
       "email": "",
-      "company": "IT-SCF",
+      "company": "IT-AQ",
       "picture": "images/referenten/tr.jpg",
       "bio": ""
     },
@@ -351,7 +351,7 @@
       "name": "Werner",
       "surname": "Perret",
       "email": "",
-      "company": "IT-SWE",
+      "company": "IT-SCP",
       "picture": "images/referenten/wp.jpg",
       "bio": ""
     }
@@ -367,14 +367,14 @@
     {
       "id": "keynote1",
       "title": "Keynote 1 - Continuous Innovation mit Open-Source",
-      "abstract": "<p>Open-Source hat sich von einer kostengünstigen Alternative zum Innovationsmotor in der Softwareindustrie gewandelt. Firmen nutzen Open-Source Technologien um selbst innovativ am Markt zu sein oder ganze Geschäftsmodelle neu zu erfinden. Die Keynote zeigt wie Open-Source disruptive sowie kontinuierliche Innovationen auf Basis von breiten communities liefert.</p>",
+      "abstract": "<p>Open-Source hat sich von einer kostengünstigen Alternative zum Innovationsmotor in der Softwareindustrie gewandelt. Firmen nutzen Open-Source Technologien um selbst innovativ am Markt zu sein oder ganze Geschäftsmodelle neu zu erfinden.</p><p>Die Keynote zeigt wie Open-Source disruptive sowie kontinuierliche Innovationen auf Basis von breiten communities liefert.</p>",
       "speakerIds": [2],
       "common": true
     },
     {
       "id": "keynote2",
       "title": "Keynote 2 - Beyond Technology: Care, Act, Communicate",
-      "abstract": "<p>Unsere primäre Aufgabe als Softwareentwickler ist es, mit geeigneten Technologien und Werkzeugen Projekte zum Erfolg zu führen. Meist hängt der Projekterfolg – und leider manchmal auch Misserfolg – jedoch ganz entscheidend von nicht-technischen Faktoren ab. Was sind diese nicht-technischen Erfolgsfaktoren? Und vor allem: Wie können wir als Softwareingenieure diese Faktoren selber in die Hand nehmen? Die Keynote versteht sich als Aufforderung an alle technischen Projektmitarbeiter, auch auf die nicht-technischen Aspekte ein Augenmerk zu richten und damit aktiv zum Projekterfolg beizutragen.</p>",
+      "abstract": "<p>Unsere primäre Aufgabe als Softwareentwickler ist es, mit geeigneten Technologien und Werkzeugen Projekte zum Erfolg zu führen. Meist hängt der Projekterfolg – und leider manchmal auch Misserfolg – jedoch ganz entscheidend von nicht-technischen Faktoren ab. Was sind diese nicht-technischen Erfolgsfaktoren? Und vor allem: Wie können wir als Softwareingenieure diese Faktoren selber in die Hand nehmen?</p><p>Die Keynote versteht sich als Aufforderung an alle technischen Projektmitarbeiter, auch auf die nicht-technischen Aspekte ein Augenmerk zu richten und damit aktiv zum Projekterfolg beizutragen.</p>",
       "speakerIds": [21],
       "common": true
     },
@@ -416,14 +416,14 @@
     {
       "id": "A3",
       "title": "A3 - Continuous Delivery und DevOps - Theorie und Praxis",
-      "abstract": "<p>Durch die Einführung von agilen Methoden in der Softwareentwicklung werden regelmässig neue Software-Releases produziert. Aber wie bringen wir diese möglichst rasch, in guter Qualität und ohne Nebenwirkungen in Produktion? Continuous Delivery und DevOps werden in diesem Zusammenhang oft genannt. Was steckt hinter diesen Begriffen und wie können diese in der Praxis gewinnbringend eingesetzt werden? Der Vortrag geht kurz auf die Theorie ein, welche Rahmenbedingungen erforderlich sind und zeigt  anhand eines aktuellen Projekts aus dem Grosshandel welchen Nutzen Continuous Delivery und DevOps in der Praxis haben.</p>",
+      "abstract": "<p>Durch die Einführung von agilen Methoden in der Softwareentwicklung werden regelmässig neue Software-Releases produziert. Aber wie bringen wir diese möglichst rasch, in guter Qualität und ohne Nebenwirkungen in Produktion? Continuous Delivery und DevOps werden in diesem Zusammenhang oft genannt. Was steckt hinter diesen Begriffen und wie können diese in der Praxis gewinnbringend eingesetzt werden?</p><p>Der Vortrag geht kurz auf die Theorie ein, welche Rahmenbedingungen erforderlich sind und zeigt  anhand eines aktuellen Projekts aus dem Grosshandel welchen Nutzen Continuous Delivery und DevOps in der Praxis haben.</p>",
       "speakerIds": [33],
       "common": false
     },
     {
       "id": "A4",
       "title": "A4 - Making data big - Einführung in die BigData Analytik Platform",
-      "abstract": "<p>Ab Sommer 2015 steht eine konzernweit nutzbare Big Data Analytik Plattform zur Verfügung. Diese Plattform wird Ausgangsbasis für innovative Entwicklungen sein, indem sie wertvolle und umfassende Datenbestände der SBB wie bspw. Mess-, Sensor- und Logdaten kosteneffizient für aktuelle oder künftige rechenintensive Analysen nutzbar macht. Beispiele solcher innovativen Entwicklungen sind Echtzeitprognosen im öffentlichen Verkehr oder prädiktive Instandhaltung von festen und rollenden Anlagen. Wir stellen die Architektur vor und geben einen Überblick über Technologien wie Hadoop und SAP HANA. Anhand laufender Projekte zeigen wir, welche Vorteile und Herausforderungen sich für Entwicklung und Modellierung von Lösungen ergeben und welchen Nutzen das Business aus den neuen Technologien ziehen kann. Zusammen mit „Big Data“ ist auch „Advanced Analytics“ wieder zum Thema geworden. Wir zeigen hands-on, wie man mit statistischen Analysen und Machine Learning auf grossen und kleinen Datenmengen Arbeitsabläufe unterstützen und neue Insights gewinnen kann.</p>",
+      "abstract": "<p>Ab Sommer 2015 steht eine konzernweit nutzbare Big Data Analytik Plattform zur Verfügung. Diese Plattform wird Ausgangsbasis für innovative Entwicklungen sein, indem sie wertvolle und umfassende Datenbestände der SBB wie bspw. Mess-, Sensor- und Logdaten kosteneffizient für aktuelle oder künftige rechenintensive Analysen nutzbar macht. Beispiele solcher innovativen Entwicklungen sind Echtzeitprognosen im öffentlichen Verkehr oder prädiktive Instandhaltung von festen und rollenden Anlagen. Wir stellen die Architektur vor und geben einen Überblick über Technologien wie Hadoop und SAP HANA. Anhand laufender Projekte zeigen wir, welche Vorteile und Herausforderungen sich für Entwicklung und Modellierung von Lösungen ergeben und welchen Nutzen das Business aus den neuen Technologien ziehen kann.</p><p>Zusammen mit „Big Data“ ist auch „Advanced Analytics“ wieder zum Thema geworden. Wir zeigen hands-on, wie man mit statistischen Analysen und Machine Learning auf grossen und kleinen Datenmengen Arbeitsabläufe unterstützen und neue Insights gewinnen kann.</p>",
       "speakerIds": [
         15,
         23,
@@ -434,7 +434,7 @@
     {
       "id": "B1",
       "title": "B1 - Einführung in TypeScript",
-      "abstract": "<p>TypeScript ist eine Web-Programmiersprache, welche von Microsoft entwickelt und 2012 veröffentlicht wurde. TypeScript wurde spezifisch für die Entwicklung von komplexen und grossen JavaScript-Applikationen geschaffen. Die Verbreitung von TypeScript hat sich bisher auf einige Nischen der Web-Entwicklung (v.a. im .NET Umfeld) beschränkt. Die Verbreitung und Bedeutung von TypeScript wird sich aber voraussichtlich in naher Zukunft ändern: Die nächste Version von Angular ist nicht in JavaScript sondern in TypeScript geschrieben und TypeScript wird auch die empfohlene Sprache sein um Applikationen mit Angular 2 zu realisieren. Dieser Entscheid des Angular Teams wird dazu führen, dass TypeScript eine zentralerer Rolle ind er Web Entwicklung v.a. auch bei Enterprise Applikationen einnehmen wird. Das Ziel von TypeScript ist es die Stärken des JavaScript Ecosystems (weite Verbreitung, vorhandene Libraries und Tools ...) zu nutzen und gleichzeitig die Schwächen von JavaScript als Sprache (schwache Typisierung, fehlende OO Konstrukte ...) zu minimieren. TypeScript ist ein striktes Superset von JavaScript, somit jeder JavaScript-Code immer auch gültiger TypeScript-Code und bestehende JavaScript Libraries funktionieren ohne weiteres mit TypeScript. TypeScript erweitert jedoch den JavaScript-Syntax mit optionaler Typisierung und zusätzlichen OO-Konstrukten.         Der Vortrag stellt TypeScript als Sprache vor und zeigt wie man TypeScript in den Workflow für Web-Entwicklung einbindet. Der Vortrag besteht zu einem grossen Teil aus Demos und Beispielen.</p>",
+      "abstract": "<p>TypeScript ist eine Web-Programmiersprache, welche von Microsoft entwickelt und 2012 veröffentlicht wurde. TypeScript wurde spezifisch für die Entwicklung von komplexen und grossen JavaScript-Applikationen geschaffen. Die Verbreitung von TypeScript hat sich bisher auf einige Nischen der Web-Entwicklung (v.a. im .NET Umfeld) beschränkt.</p><p>Die Verbreitung und Bedeutung von TypeScript wird sich aber voraussichtlich in naher Zukunft ändern: Die nächste Version von Angular ist nicht in JavaScript sondern in TypeScript geschrieben und TypeScript wird auch die empfohlene Sprache sein um Applikationen mit Angular 2 zu realisieren. Dieser Entscheid des Angular Teams wird dazu führen, dass TypeScript eine zentralerer Rolle ind er Web Entwicklung v.a. auch bei Enterprise Applikationen einnehmen wird.</p><p>Das Ziel von TypeScript ist es die Stärken des JavaScript Ecosystems (weite Verbreitung, vorhandene Libraries und Tools ...) zu nutzen und gleichzeitig die Schwächen von JavaScript als Sprache (schwache Typisierung, fehlende OO Konstrukte ...) zu minimieren.</p><p>TypeScript ist ein striktes Superset von JavaScript, somit jeder JavaScript-Code immer auch gültiger TypeScript-Code und bestehende JavaScript Libraries funktionieren ohne weiteres mit TypeScript. TypeScript erweitert jedoch den JavaScript-Syntax mit optionaler Typisierung und zusätzlichen OO-Konstrukten.</p><p>Der Vortrag stellt TypeScript als Sprache vor und zeigt wie man TypeScript in den Workflow für Web-Entwicklung einbindet. Der Vortrag besteht zu einem grossen Teil aus Demos und Beispielen.</p>",
       "speakerIds": [13],
       "common": false
     },
@@ -486,7 +486,7 @@
     {
       "id": "C3",
       "title": "C3 - Triple Session",
-      "abstract": "<p><b>Jira-Integration in IDE (Eclipse + IntelliJ)</b><br>Habt ihr euch auch schon gefragt, warum die Logik im Code so ist, wie sie ist? In den Scrum-Teams mit physischem Scrum-Board ist die Nachvollziehbarkeit von implementiertem Code zur Story eher schwierig bzw., nur durch klare Commit-Kommentare zu bewerkstelligen. Bei der Verwendung des Scrumboards in JIRA bieten die Tools von Atlassian gute Unterstützung für die Verknüpfung zwischen Stories und Code (was aber kein Ersatz für klare Commit-Kommentare sein soll). In einer Kurzdemo zeigen wir Konfiguration und Workflow der Jira-Integration in Eclipse und IntelliJ. Wir vermuten, dass das Wissen um diese Integration nicht sehr verbreitet ist, sie die Entwickler bei der Arbeit aber gut unterstützen kann. Weitere mögliche Themen: Smart Commits in Jira, Stash Transition Triggering (falls aktiviert bis dann), Hintergrundinfos (Link zu SVN via Fisheye)</p><p><b>Effizientes Arbeiten mit IntelliJ</b>Anhand von kleinen Beispielen wird aufgezeigt, wie häufige Tätigkeiten eines Entwicklers mit IntelliJ effizienter erledigt werden können.</p><p><b>Babun - A Windows Shell you will love!</b>„Die Unix-Konsole ist eines der wichtigsten Werkzeuge für Entwickler, die auf einem Mac oder Linux arbeiten. Entwickler, die Windows verwenden kennen die Unix-Konsole entweder nicht, oder unterschätzen die Dinge, die mit ihr möglich sind. In dieser kurzen Session werde ich eine kurze Präsentation über „Babun – a linux console for Windows“ geben.“</p>",
+      "abstract": "<p><b>Jira-Integration in IDE (Eclipse + IntelliJ)</b><br>Habt ihr euch auch schon gefragt, warum die Logik im Code so ist, wie sie ist? In den Scrum-Teams mit physischem Scrum-Board ist die Nachvollziehbarkeit von implementiertem Code zur Story eher schwierig bzw., nur durch klare Commit-Kommentare zu bewerkstelligen. Bei der Verwendung des Scrumboards in JIRA bieten die Tools von Atlassian gute Unterstützung für die Verknüpfung zwischen Stories und Code (was aber kein Ersatz für klare Commit-Kommentare sein soll). In einer Kurzdemo zeigen wir Konfiguration und Workflow der Jira-Integration in Eclipse und IntelliJ. Wir vermuten, dass das Wissen um diese Integration nicht sehr verbreitet ist, sie die Entwickler bei der Arbeit aber gut unterstützen kann. Weitere mögliche Themen: Smart Commits in Jira, Stash Transition Triggering (falls aktiviert bis dann), Hintergrundinfos (Link zu SVN via Fisheye)</p><p><b>Effizientes Arbeiten mit IntelliJ</b><br>Anhand von kleinen Beispielen wird aufgezeigt, wie häufige Tätigkeiten eines Entwicklers mit IntelliJ effizienter erledigt werden können.</p><p><b>Babun - A Windows Shell you will love!</b><br>Die Unix-Konsole ist eines der wichtigsten Werkzeuge für Entwickler, die auf einem Mac oder Linux arbeiten. Entwickler, die Windows verwenden kennen die Unix-Konsole entweder nicht, oder unterschätzen die Dinge, die mit ihr möglich sind. In dieser kurzen Session werde ich eine kurze Präsentation über 'Babun – a linux console for Windows' geben.</p>",
       "speakerIds": [
         14,
         37,
@@ -497,14 +497,14 @@
     {
       "id": "C4",
       "title": "C4 - Stairway to Heaven: Kleine oder grosse Schritte in die Cloud?",
-      "abstract": "<p>Mit VIAS steht ab 3Q2015 eine Cloud-Plattform für die SBB IT zur Verfügung. Wie wirkt sich dieses neue Betriebsmodell auf Entwicklung und Anwendungsbetrieb aus? Welche bisherigen Plattformen (WAS, Oracle, WMQ, ...) findet man unter VIAS wieder, welche Plattformen kommen neu dazu? In der Positionierung wird zwischen dem Betrieb bestehender Anwendungen und der Entwicklung neuer Anwendungen unterschieden. Ziel des Vortrages ist es, einen Überblick über die (Zwischen-)Resultate des Projekts Cloud@SBB zu geben und die Optionen für neue Wege in der Software Entwicklung, in der Software Architektur und im Technologiemanagement aufzuzeigen: Leichtgewichtige Plattformen, MicroServices, Container-basiertes Deployment, Self-service Portal, etc.</p>",
+      "abstract": "<p>Mit VIAS steht ab 3Q2015 eine Cloud-Plattform für die SBB IT zur Verfügung. Wie wirkt sich dieses neue Betriebsmodell auf Entwicklung und Anwendungsbetrieb aus? Welche bisherigen Plattformen (WAS, Oracle, WMQ, ...) findet man unter VIAS wieder, welche Plattformen kommen neu dazu?</p><p>In der Positionierung wird zwischen dem Betrieb bestehender Anwendungen und der Entwicklung neuer Anwendungen unterschieden. Ziel des Vortrages ist es, einen Überblick über die (Zwischen-)Resultate des Projekts Cloud@SBB zu geben und die Optionen für neue Wege in der Software Entwicklung, in der Software Architektur und im Technologiemanagement aufzuzeigen: Leichtgewichtige Plattformen, MicroServices, Container-basiertes Deployment, Self-service Portal, etc.</p>",
       "speakerIds": [38],
       "common": false
     },
     {
       "id": "D1",
       "title": "D1 - ES6/Angular2/Tilestache/Docker: Erfahrungen aus dem Projekt ZPS",
-      "abstract": "<p><b>Einführung Projekt ZPS + Demo NOVA-Pflege (10')</b>br>Beschreibung Projekt und Umfeld, Demo des Kartenbasierten Pflege-Frontends.</p><p><b>ES6/Angular 2 schon heute (15')</b><br>Unter anderem sollen folgende Fragen beantwortet werden:<ul><li>Warum jetzt schon umsteigen auf ES6/Angular 2?</li><li>Wie entwickelt man heute schon mit ES6/Angular 2, obwohl die Browserunterstützung noch nicht vorhanden ist?</li></ul></p><p><b>Leichtgewichtige Map-Tiles-Server Lösung mit Docker (5')</b><br>Auf der Suche nach Alternativen zu schweren GIS-Lösungen haben wir uns für ein dockerisiertes Setup mit Tilestache und Mapnik entschieden, welches Karten-Tiles basierend auf GeoJSON-Daten rendert. Dieser Themenblock soll unsere Lösung vorstellen.</p><p><b>Automatisierte Datenbankmigration mit Flyway auf mehreren Umgebungen im Continuous-Delivery-Modus (10')</b><br>Eine Herausforderung im Projekt ist die Arbeit am Datenmodell, da dieses von zwei Subprojekten verwendet wird. Zudem existieren für unterschiedliche Sprint mehrere Umgebungen. Um effizient arbeiten zu können setzt dies voraus, dass Datenmigrationen und Schemaanpassungen automatisiert ablaufen. Dazu wird Flyway eingesetzt.</p>",
+      "abstract": "<p><b>Einführung Projekt ZPS + Demo NOVA-Pflege (10')</b><br>Beschreibung Projekt und Umfeld, Demo des Kartenbasierten Pflege-Frontends.</p><p><b>ES6/Angular 2 schon heute (15')</b><br>Unter anderem sollen folgende Fragen beantwortet werden:<ul><li>Warum jetzt schon umsteigen auf ES6/Angular 2?</li><li>Wie entwickelt man heute schon mit ES6/Angular 2, obwohl die Browserunterstützung noch nicht vorhanden ist?</li></ul></p><p><b>Leichtgewichtige Map-Tiles-Server Lösung mit Docker (5')</b><br>Auf der Suche nach Alternativen zu schweren GIS-Lösungen haben wir uns für ein dockerisiertes Setup mit Tilestache und Mapnik entschieden, welches Karten-Tiles basierend auf GeoJSON-Daten rendert. Dieser Themenblock soll unsere Lösung vorstellen.</p><p><b>Automatisierte Datenbankmigration mit Flyway auf mehreren Umgebungen im Continuous-Delivery-Modus (10')</b><br>Eine Herausforderung im Projekt ist die Arbeit am Datenmodell, da dieses von zwei Subprojekten verwendet wird. Zudem existieren für unterschiedliche Sprint mehrere Umgebungen. Um effizient arbeiten zu können setzt dies voraus, dass Datenmigrationen und Schemaanpassungen automatisiert ablaufen. Dazu wird Flyway eingesetzt.</p>",
       "speakerIds": [
         22,
         5
