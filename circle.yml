@@ -1,0 +1,22 @@
+# circle.yml
+general:
+  build_dir: app
+
+machine:
+  python:
+    version: 2.7.3
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - pip install awscli
+#    - docker build -t schweizerischebundesbahnen/conference-buddy:$CIRCLE_SHA1 .
+#    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+#    - docker push schweizerischebundesbahnen/conference-buddy:$CIRCLE_SHA1
+
+#deployment:
+#  elasticbeanstalk:
+#    branch: develop
+#    commands:
+#    - ./deploy.sh $CIRCLE_SHA1
