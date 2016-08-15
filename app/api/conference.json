@@ -7,68 +7,113 @@
     {
       "id": 1,
       "name": "Adrian",
-      "surname": "Hofer",
+      "surname": "Egli",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/ah.jpg",
-      "bio": ""
-    },
-    {
-      "id": 2,
-      "name": "Agim",
-      "surname": "Emruli",
-      "email": "",
-      "company": "mimacom ag",
       "picture": "images/referenten/ae.jpg",
       "bio": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Andreas",
-      "surname": "Wieczorek",
+      "surname": "Schlapbach",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/aw.jpg",
+      "company": "IT-SCP",
+      "picture": "images/referenten/as.jpg",
       "bio": ""
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Baltisar",
       "surname": "Oswald",
       "email": "",
-      "company": "IT-AQ",
+      "company": "IT-SWE",
       "picture": "images/referenten/bo.jpg",
       "bio": ""
     },
     {
-      "id": 5,
-      "name": "Björn",
-      "surname": "Mosler",
+      "id": 4,
+      "name": "Beat",
+      "surname": "Wettstein",
       "email": "",
-      "company": "Netcetera AG",
-      "picture": "images/referenten/bm.jpg",
+      "company": "IT-SWE",
+      "picture": "images/referenten/bw.jpg",
+      "bio": ""
+    },
+    {
+      "id": 5,
+      "name": "Christian",
+      "surname": "Egli",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/ce.jpg",
       "bio": ""
     },
     {
       "id": 6,
-      "name": "Dominik",
-      "surname": "Schmucki",
+      "name": "Christian",
+      "surname": "Eichenberger",
       "email": "",
-      "company": "IT-SCP",
-      "picture": "images/referenten/ds.jpg",
+      "company": "IT-SWE",
+      "picture": "images/referenten/ce1.jpg",
       "bio": ""
     },
     {
       "id": 7,
-      "name": "Eleuza",
-      "surname": "Kalbermatter Mendes",
+      "name": "Christoph",
+      "surname": "Trutmann",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/emk.jpg",
+      "picture": "images/referenten/ct.jpg",
       "bio": ""
     },
     {
       "id": 8,
+      "name": "Claude-Alain",
+      "surname": "Brohy",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/cab.jpg",
+      "bio": ""
+    },
+    {
+      "id": 9,
+      "name": "Daniel",
+      "surname": "Agile Marthaler",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/dm.jpg",
+      "bio": ""
+    },
+    {
+      "id": 10,
+      "name": "Dominik",
+      "surname": "Schmucki",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/ds.jpg",
+      "bio": ""
+    },
+    {
+      "id": 11,
+      "name": "Franco",
+      "surname": "Ehrat",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/fe.jpg",
+      "bio": ""
+    },
+    {
+      "id": 12,
+      "name": "Florian",
+      "surname": "Brunner",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/fb.jpg",
+      "bio": ""
+    },
+    {
+      "id": 13,
       "name": "Florian",
       "surname": "Seidl",
       "email": "",
@@ -77,26 +122,17 @@
       "bio": ""
     },
     {
-      "id": 9,
-      "name": "Gilles",
-      "surname": "Zimmermann",
+      "id": 14,
+      "name": "Heiko",
+      "surname": "Hünnefeld",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/gz.jpg",
+      "company": "IT-SCI",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
-      "id": 10,
-      "name": "Igor",
-      "surname": "Masen",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/im.jpg",
-      "bio": ""
-    },
-    {
-      "id": 11,
-      "name": "Ivan",
+      "id": 15,
+      "name": "Ivo",
       "surname": "Hechmann",
       "email": "",
       "company": "IT-OM",
@@ -104,48 +140,12 @@
       "bio": ""
     },
     {
-      "id": 12,
-      "name": "Jamie",
-      "surname": "Townsend",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/jt.jpg",
-      "bio": ""
-    },
-    {
-      "id": 13,
+      "id": 16,
       "name": "Jonas",
       "surname": "Bandi",
       "email": "",
-      "company": "Jonas Bandi",
+      "company": "jonasbandi.net",
       "picture": "images/referenten/jb.jpg",
-      "bio": ""
-    },
-    {
-      "id": 14,
-      "name": "Kaspar",
-      "surname": "Käser",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/kk.jpg",
-      "bio": ""
-    },
-    {
-      "id": 15,
-      "name": "Katharina",
-      "surname": "Mellert",
-      "email": "",
-      "company": "IT-SCF",
-      "picture": "images/referenten/km.jpg",
-      "bio": ""
-    },
-    {
-      "id": 16,
-      "name": "Korhan",
-      "surname": "Gülseven",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/kg.jpg",
       "bio": ""
     },
     {
@@ -155,78 +155,78 @@
       "email": "",
       "company": "Data Geekery GmbH",
       "picture": "images/referenten/le.jpg",
-      "bio": ""
+      "bio": "Mit jahrelanger Java, SQL und PL/SQL Erfahrung aus dem E-Banking Bereich hat Lukas Eder die Firma Data Geekery GmbH mit dem Kernprodukt jOOQ gegründet und spricht an Konferenzen oft über Java und SQL."
     },
     {
       "id": 18,
-      "name": "Lukasz",
-      "surname": "Pielak",
+      "name": "Markus",
+      "surname": "Färber",
       "email": "",
-      "company": "Lukasz Pielak",
-      "picture": "images/referenten/lp.jpg",
+      "company": "IT-SCP",
+      "picture": "images/referenten/mf1.jpg",
       "bio": ""
     },
     {
       "id": 19,
-      "name": "Maciej",
-      "surname": "Raciborski",
+      "name": "Michael",
+      "surname": "Esser",
       "email": "",
-      "company": "IT-OM",
-      "picture": "images/referenten/mr.jpg",
+      "company": "IT-SWE",
+      "picture": "images/referenten/me.jpg",
       "bio": ""
     },
     {
       "id": 20,
-      "name": "Maik",
-      "surname": "Fettig",
+      "name": "Michael",
+      "surname": "Fetzer",
       "email": "",
-      "company": "IT-SCP",
+      "company": "IT-SWE",
       "picture": "images/referenten/mf.jpg",
       "bio": ""
     },
     {
       "id": 21,
-      "name": "Marc",
-      "surname": "Hoffmann",
+      "name": "Mike",
+      "surname": "Morgenthaler",
       "email": "",
-      "company": "mtrail GmbH",
-      "picture": "images/referenten/mh.jpg",
+      "company": "IT-SWE",
+      "picture": "images/referenten/mm.jpg",
       "bio": ""
     },
     {
       "id": 22,
-      "name": "Matthias",
-      "surname": "Junker",
+      "name": "Patrick",
+      "surname": "Spiegel",
       "email": "",
-      "company": "Netcetera AG",
-      "picture": "images/referenten/mj.jpg",
+      "company": "IT-SWE",
+      "picture": "images/referenten/ps.jpg",
       "bio": ""
     },
     {
       "id": 23,
-      "name": "Matthias",
-      "surname": "von Rohr",
+      "name": "Peter",
+      "surname": "Moosmann",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/mvr.jpg",
+      "company": "IT-AQ",
+      "picture": "images/referenten/pm.jpg",
       "bio": ""
     },
     {
       "id": 24,
-      "name": "Michael",
-      "surname": "Krausse",
+      "name": "Philipp",
+      "surname": "Kasiotis",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/mk.jpg",
+      "picture": "images/referenten/pk.jpg",
       "bio": ""
     },
     {
       "id": 25,
-      "name": "Peter",
-      "surname": "Hirzel",
+      "name": "Philipp",
+      "surname": "Oser",
       "email": "",
-      "company": "IT-SCP",
-      "picture": "images/referenten/ph.jpg",
+      "company": "Elca Informatik AG",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
@@ -240,15 +240,6 @@
     },
     {
       "id": 27,
-      "name": "Piotr",
-      "surname": "Kowol",
-      "email": "",
-      "company": "IT-SCF",
-      "picture": "images/referenten/pk.jpg",
-      "bio": ""
-    },
-    {
-      "id": 28,
       "name": "Ramon",
       "surname": "Spahr",
       "email": "",
@@ -257,25 +248,25 @@
       "bio": ""
     },
     {
-      "id": 29,
-      "name": "Raoul",
-      "surname": "Neu",
+      "id": 28,
+      "name": "Reto",
+      "surname": "Lehmann",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/rn.jpg",
+      "picture": "images/referenten/rl.jpg",
+      "bio": ""
+    },
+    {
+      "id": 29,
+      "name": "Roland",
+      "surname": "Berger",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
       "id": 30,
-      "name": "Roger",
-      "surname": "Bobst",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/rb.jpg",
-      "bio": ""
-    },
-    {
-      "id": 31,
       "name": "Sebastian",
       "surname": "Graf",
       "email": "",
@@ -284,16 +275,7 @@
       "bio": ""
     },
     {
-      "id": 32,
-      "name": "Simon",
-      "surname": "Butscher",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/sb.jpg",
-      "bio": ""
-    },
-    {
-      "id": 33,
+      "id": 31,
       "name": "Simon",
       "surname": "Martinelli",
       "email": "",
@@ -302,12 +284,30 @@
       "bio": ""
     },
     {
+      "id": 32,
+      "name": "Stefan",
+      "surname": "Aeschbacher",
+      "email": "",
+      "company": "PostAuto AG",
+      "picture": "images/referenten/sa.jpg",
+      "bio": "Stefan Aeschbacher ist dipl. Ing. EPFL und Certified Systems Engineering Professional (CSEP). Nach dem Studium hat er sich selbständig gemacht und eine IT-Security Firma gegründet. Sein Arbeitsgebiet hat sich schon bald von der Security in Richtung öffentlicher Verkehr gewandelt. Im Rahmen verschiedener Projekte hat er an der Modernisierung der Informatik-Infrastruktur verschiedener Eisenbahn-Flotten mitgearbeitet. Nach einem Abstecher ins Ticketing mit dem Projekt BIBO hat er im Jahr 2014 den Wechsel von der Schiene auf die Strasse vollzogen und leitet nun die Entwicklung im Projekt ISA von PostAuto. <br>Er ist Gründungsmitglied der Swiss Society of Systems Engineering (SSSE) und deren aktueller Präsident."
+    },
+    {
+      "id": 33,
+      "name": "Stefan",
+      "surname": "Toth",
+      "email": "",
+      "company": "embarc GmbH",
+      "picture": "images/referenten/st1.jpg",
+      "bio": "Stefan Toth (stefan.toth@embarc.de) ist Geschäftsführer der embarc GmbH, Sprecher auf internationalen Konferenzen und Buchautor. Er unterstützt Unternehmen aus unterschiedlichen Branchen im Bereich Software- und Unternehmensarchitektur. Sein größtes Kapital ist der breite technologische Kontext und seine methodische Erfahrung aus dynamischen IT-Unternehmen."
+    },
+    {
       "id": 34,
       "name": "Stefan",
-      "surname": "Graf",
+      "surname": "Zeller",
       "email": "",
-      "company": "IT-SCF",
-      "picture": "images/referenten/sg2.jpg",
+      "company": "IT-SWE",
+      "picture": "images/referenten/sz.jpg",
       "bio": ""
     },
     {
@@ -321,11 +321,11 @@
     },
     {
       "id": 36,
-      "name": "Thorsten",
-      "surname": "Löhndorf",
+      "name": "Thomas",
+      "surname": "Siegrist",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/tl.jpg",
+      "picture": "images/referenten/ts.jpg",
       "bio": ""
     },
     {
@@ -339,20 +339,11 @@
     },
     {
       "id": 38,
-      "name": "Tobias",
-      "surname": "Röthlisberger",
+      "name": "Yannis",
+      "surname": "Baillet",
       "email": "",
       "company": "IT-AQ",
-      "picture": "images/referenten/tr.jpg",
-      "bio": ""
-    },
-    {
-      "id": 39,
-      "name": "Werner",
-      "surname": "Perret",
-      "email": "",
-      "company": "IT-SCP",
-      "picture": "images/referenten/wp.jpg",
+      "picture": "images/referenten/yb.jpg",
       "bio": ""
     }
   ],
