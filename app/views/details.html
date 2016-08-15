@@ -25,14 +25,25 @@
             </div>
         </div>
 
-        <div class="rating pull-right">
+        <div class="pull-right" ng-show="isRegistered()">
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon glyphicon-thumbs-down" style="font-size:1.5em;" ></span>
+          </button>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon glyphicon-thumbs-up" style="font-size:1.5em;" ></span>
+          </button>
+          <textarea class="form-control" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
+                    ng-model="commentEntry.value" required></textarea>
+        </div>
+
+<!--
             <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">
                 <span ng-if="rated">Aktualisieren</span>
                 <span ng-if="!rated">Bewerten</span>
             </button>
         </div>
-
+-->
         <comments pid="{{presentation.id}}"></comments>
     </div>
 </div>
