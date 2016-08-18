@@ -18,9 +18,11 @@
     <div ng-repeat="speaker in presentation.speakers">
       <div class="col-xs-12 col-md-12 col-lg-12 speakerRow">
         <img ng-src="{{speaker.picture}}" class="pull-left profileimg"/>
-        <strong>{{speaker.name}} {{speaker.surname}}</strong><br>
-        <a href="mailto:{{speaker.email}}">{{speaker.email}}</a><br>
-        {{speaker.company}}
+        <div style="margin-top: 30px;">
+          <strong>{{speaker.name}} {{speaker.surname}}</strong><br>
+          <div ng-show="!!speaker.email"><a href="mailto:{{speaker.email}}">{{speaker.email}}</a></div>
+          {{speaker.company}}
+        </div>
         <p class="bio">{{speaker.bio}}</p>
       </div>
     </div>
