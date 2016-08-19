@@ -1,140 +1,142 @@
 .talk {
-    border: 1px solid #eee;
-    border-left-color: #aaaaaa;
-    border-left-width: 6px;
-    border-radius: 3px;
-    margin-bottom: 5px;
+  border: 1px solid #eee;
+  border-left-color: #aaaaaa;
+  border-left-width: 6px;
+  border-radius: 3px;
+  margin-bottom: 5px;
 }
 
 .clickable {
-    border-left-color: #ff0000;
+  border-left-color: #ff0000;
 }
 
 .mytrackClickable {
-    border-left-color: rgb(0, 44, 134);
+  border-left-color: rgb(0, 44, 134);
 }
 
 .talk .header {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 .talk .author {
-    font-style: italic;
+  font-style: italic;
 }
 
 .talk .description {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .talk .link-header {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .track {
-    padding: 5px;
+  padding: 5px;
 }
 
 .banner {
-    padding: 10px;
-    background-color: rgb(0, 33, 99);
-    color: white;
-    font-weight: bold;
+  padding: 10px;
+  background-color: rgb(0, 33, 99);
+  color: white;
+  font-weight: bold;
 }
 
 .modal-footer {
-    padding: 5px;
+  padding: 5px;
 }
 
 .modal-header {
-    padding: 10px;
+  padding: 10px;
 }
 
 .profileimg {
-    margin: 0 2% 2% 0;
+  margin: 0 2% 2% 0;
+  border-radius: 50%;
+  max-width: 40%;
 }
 
 .bio {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .trackLabel {
-    color: #aaaaaa;
+  color: #aaaaaa;
 }
 
 .glyphicon-chevron-left, .glyphicon-chevron-right {
-    font-size: 0.8em;
-    color: #aaaaaa;
+  font-size: 0.8em;
+  color: #aaaaaa;
 }
 
 .glyphicon-user, .glyphicon-list {
-    color: #aaaaaa;
+  color: #aaaaaa;
 }
 
 /* poor mans swipe animations */
 .copperfield {
-    -webkit-transition: all linear 0.2s;
-    transition: all linear 0.2s;
-    opacity: 1;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  opacity: 1;
 }
 
 .copperfield.magic {
-    opacity: 1;
+  opacity: 1;
 }
 
 .copperfield.magic-remove, .copperfield.magic-add {
-    opacity: 0;
+  opacity: 0;
 }
 
 textarea {
-    resize: none;
-    margin-bottom: 5px;
+  resize: none;
+  margin-bottom: 5px;
 }
 
 .collapsible-text-toggle {
-    color: #428bca;
-    cursor: pointer;
+  color: #428bca;
+  cursor: pointer;
 }
 
 .collapsible-text-toggle:hover {
-    color: #2a6496;
+  color: #2a6496;
 }
 
 .css-form input.ng-invalid {
-    border: 1px solid red;;
+  border: 1px solid red;;
 }
 
 .css-form input.ng-valid {
-    border: 1px solid green;
+  border: 1px solid green;
 }
 
 .disabled {
-    color: #EEE;
+  color: #EEE;
 }
 
 .navlink {
-    background-color: rgb(0, 33, 99);
-    padding-top: 5px;
-    padding-bottom: 3px;
-    min-height: 50px;
-    text-align: center;
-    border-right: 1px solid #2a516c;
+  background-color: rgb(0, 33, 99);
+  padding-top: 5px;
+  padding-bottom: 3px;
+  min-height: 50px;
+  text-align: center;
+  border-right: 1px solid #2a516c;
 }
 
 .navlink span {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.9em;
-    color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  color: white;
 }
 
 .navlink.active {
-    background-color: rgb(0, 44, 134);
-    border-bottom: 5px solid #ff0000;
+  background-color: rgb(0, 44, 134);
+  border-bottom: 5px solid #ff0000;
 }
 
 .navlinklast {
@@ -142,60 +144,60 @@ textarea {
 }
 
 .navlink img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content {
-    padding-top: 55px;
+  padding-top: 55px;
 }
 
 cite {
-    font-style: italic;
+  font-style: italic;
 }
 
 #loading-bar .bar {
   top: 0;
-    height: 3px;
+  height: 3px;
 }
 
 /* Fancy blur effect */
 #loading-bar .peg {
-    top: 1px;
-    height: 3px;
+  top: 1px;
+  height: 3px;
 }
 
 #loading-bar-spinner {
-    top: 7px;
-    left: 5px;
+  top: 7px;
+  left: 5px;
 }
 
 p.abstract {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .rating {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ratingStars {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .panel {
-    margin-top: 5px;
-    margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .panel-body {
-    padding: 8px;
+  padding: 8px;
 }
 
 h4 {
-    margin-top: 15px;
-    margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .speakerRow {
@@ -203,27 +205,28 @@ h4 {
 }
 
 ul {
-    padding-left: 18px;
+  padding-left: 18px;
   margin: 0;
 }
 
 .commentbox {
   margin: 20px 0 20px 0;
-    border: 1px solid #dcdcdc;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
 .commentmeta {
-    padding: 4px;
-    border-bottom: 1px solid #eee;
-    background-color: #f9f9f9;
+  padding: 4px;
+  border-bottom: 1px solid #eee;
+  background-color: #f9f9f9;
 }
+
 .commentbody {
-    padding: 4px 4px 4px 8px;
+  padding: 4px 4px 4px 8px;
 }
 
 .commenttimestamp {
-    color: #838383;
+  color: #838383;
 }

@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('TrackController',
-['$scope', 'ConferenceService', 'MyTrackService', 'UserService', 'DialogService',
-    function($scope, conferenceService, myTrackService, userService, dialogService) {
+['$scope', '$sce', 'ConferenceService', 'MyTrackService', 'UserService', 'DialogService',
+    function($scope, $sce, conferenceService, myTrackService, userService, dialogService) {
 
     $scope.conference = {tracks: [ ]};
     $scope.copperfield = '';
@@ -47,6 +47,10 @@ angular.module('conferenceBuddyApp').controller('TrackController',
 
     $scope.hasSpeakers = function(presentation) {
         return presentation.speakers && presentation.speakers.length > 0;
+    }
+
+    $scope.renderHtml = function(html) {
+      return $sce.trustAsHtml(html);
     }
 
     function toggleMagic() {

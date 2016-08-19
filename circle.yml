@@ -1,4 +1,7 @@
 # circle.yml
+general:
+  build_dir: app
+
 machine:
   python:
     version: 2.7.3

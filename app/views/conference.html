@@ -6,11 +6,16 @@
          <rating class="pull-right" ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
         </p>
         <p>
-            <img src="images/devday11.png"/>
+            <img src="images/devday_pacman.png" alt="pacman(devday2016): mjam mjam.."/>
         </p>
-        <p><b>Continuous Improvement - <br>in kleinen Schritten besser werden.</b></p>
+        <p><b>Software is eating the world</b>
+        </p>
+        <p>Es besteht kein Zweifel daran, dass der technologische Fortschritt in Zukunft
+          schneller voranschreiten wird und seine Auswirkungen die Gesellschaft stärker
+          verändern werden, als alles was vorherige Generationen bisher erlebt haben.</p>
+        <p>Die spannende Frage ist also, wo wir in 10 Jahren stehen - welche Rolle willst Du dabei spielen?</p>
 
-        <div class="rating pull-right">
+      <div class="rating pull-right">
             <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">
                 <span ng-if="rated">Aktualisieren</span>
