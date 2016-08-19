@@ -56,9 +56,9 @@ a {
 }
 
 .profileimg {
-  margin: 0 2% 2% 0;
+  margin: 0 5% 2% 0;
   border-radius: 50%;
-  max-width: 40%;
+  max-width: 35%;
 }
 
 .bio {
