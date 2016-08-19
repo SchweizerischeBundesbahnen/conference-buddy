@@ -58,6 +58,7 @@ a {
 .profileimg {
   margin: 0 2% 2% 0;
   border-radius: 50%;
+  max-width: 40%;
 }
 
 .bio {
