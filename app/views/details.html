@@ -12,13 +12,12 @@
 
     <p class="abstract" ng-bind-html="abstract"></p>
 
-    <h4 ng-show="presentation.speakers.length > 1">Referenten</h4>
-    <h4 ng-show="presentation.speakers.length === 1">Referent</h4>
+    <hr class="delimiter">
 
     <div ng-repeat="speaker in presentation.speakers">
       <div class="col-xs-12 col-md-12 col-lg-12 speakerRow">
         <img ng-src="{{speaker.picture}}" class="pull-left profileimg"/>
-        <div style="margin-top: 40px;">
+        <div style="margin-top: 30px;">
           <strong>{{speaker.name}} {{speaker.surname}}</strong><br>
           <div ng-show="!!speaker.email"><a href="mailto:{{speaker.email}}">{{speaker.email}}</a></div>
           {{speaker.company}}
