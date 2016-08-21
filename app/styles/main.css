@@ -244,6 +244,7 @@ ul {
 
 .commentbody {
   padding: 4px 4px 4px 8px;
+  word-wrap: break-word;
 }
 
 .commenttimestamp {
