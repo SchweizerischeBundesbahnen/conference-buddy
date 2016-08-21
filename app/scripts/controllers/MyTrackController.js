@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conferenceBuddyApp').controller('MyTrackController',
-  ['$scope', 'ConferenceService', 'DialogService', 'MyTrackService', function($scope, conferenceService, dialogService, myTrackService) {
+  ['$scope', '$sce', 'ConferenceService', 'DialogService', 'MyTrackService', function($scope, $sce, conferenceService, dialogService, myTrackService) {
 
     $scope.conference = {};
     $scope.myTrack = {presentations: true};
@@ -23,4 +23,7 @@ angular.module('conferenceBuddyApp').controller('MyTrackController',
       return presentation.speakers && presentation.speakers.length > 0;
     }
 
+    $scope.renderHtml = function(html) {
+      return $sce.trustAsHtml(html);
+    }
 }]);
