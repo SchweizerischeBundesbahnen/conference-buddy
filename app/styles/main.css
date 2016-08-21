@@ -205,6 +205,10 @@ hr.delimiter:after {
   font-size: 20px;
 }
 
+.ratingAverageStar {
+  color: orange;
+}
+
 .panel {
   margin-top: 5px;
   margin-bottom: 10px;
