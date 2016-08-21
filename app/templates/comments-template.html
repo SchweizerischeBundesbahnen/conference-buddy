@@ -4,7 +4,7 @@
         <form name="commentsForm" role="form" ng-submit="submitForm(commentsForm.$valid)" ng-show="showInputForm()" novalidate>
             <div class="form-group">
                 <textarea class="span12 form-control" rows="4" placeholder="{{author.name}}, erfasse einen Kommentar" style="width: 100%"
-                          ng-model="commentEntry.value" ng-maxlength="256" required></textarea>
+                          ng-model="commentEntry.value" ng-maxlength="255" maxlength="255" required></textarea>
                 <button class="btn btn-default" ng-disabled="commentsForm.$invalid">Abschicken</button>
             </div>
         </form>
