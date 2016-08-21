@@ -2,14 +2,12 @@
     <div class="row track">
         <p class="h3"><strong>{{conference.name}}</strong></p>
 
-        <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong>
-         <rating class="pull-right" ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings"></rating>
-        </p>
+        <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
         <p>
             <img src="images/devday_pacman.png" alt="pacman(devday2016): mjam mjam.."/>
+            <div ng-show="!!averageRating" class="pull-right">{{averageRating}} <span class="glyphicon glyphicon-star ratingAverageStar"/></div>
         </p>
-        <p><b>Software is eating the world</b>
-        </p>
+        <p><b>Software is eating the world</b></p>
         <p>Es besteht kein Zweifel daran, dass der technologische Fortschritt in Zukunft
           schneller voranschreiten wird und seine Auswirkungen die Gesellschaft stärker
           verändern werden, als alles was vorherige Generationen bisher erlebt haben.</p>

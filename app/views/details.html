@@ -7,7 +7,7 @@
     </h4>
 
     <h4>{{presentation.title}}</h4>
-    <rating ng-model="averageRating" readonly="true" max="6" ng-show="hasRatings" class="pull-right"></rating>
+    <div ng-show="!!averageRating" class="pull-right">{{averageRating}} <span class="glyphicon glyphicon-star ratingAverageStar"/></div>
     <i>{{presentation.time.start}} - {{presentation.time.end}}, {{presentation.room.name}}</i>
 
     <p class="abstract" ng-bind-html="abstract"></p>
