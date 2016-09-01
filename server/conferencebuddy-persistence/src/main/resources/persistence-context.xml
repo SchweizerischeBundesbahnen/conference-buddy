@@ -11,6 +11,15 @@
 	<jpa:repositories base-package="ch.sbb.conferencebuddy.persistence" entity-manager-factory-ref="estaEntityManagerFactory"/>
 
 
+    <bean id="persistProps" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:h2.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+  </bean>
 
     <bean class="ch.sbb.esta.core.persistence.emf.EstaPersistenceUnitPostProcessor">
         <!-- Definiert die Packages der Entity-Klassen -->
@@ -24,7 +33,7 @@
 	<!-- local H2 in-memory database -->
     <!-- used for local development, education, etc. -->
     <bean id="dataSource"  class="ch.sbb.esta.util.persistence.h2.LiquibaseInitializingH2XADataSource">
-        <property name="url" value="jdbc:h2:~/confbuddy;DB_CLOSE_DELAY=-1;MODE=Oracle;" />
+        <property name="url" value="jdbc:h2:${h2.db.location};DB_CLOSE_DELAY=-1;MODE=Oracle;" />
         <property name="username" value="sa" />
         <property name="password" value="" />
     </bean>
