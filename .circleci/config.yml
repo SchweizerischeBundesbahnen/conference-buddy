@@ -11,4 +11,4 @@ jobs:
 
       - checkout
       
-      - run: mvn install
+      - run: mvn clean install -f server/conferencebuddy-parent/pom.xml
