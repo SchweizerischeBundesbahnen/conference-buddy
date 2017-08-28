@@ -4,6 +4,9 @@ jobs:
     
     working_directory: ~/server/conference-buddy-parent
 
+    docker:
+      - image: circleci/openjdk:8-jdk-browsers
+
     steps:
 
       - checkout
