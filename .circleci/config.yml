@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    
+    working_directory: ~/server/conference-buddy-parent
+
+    steps:
+
+      - checkout
+      
+      - run: mvn install
