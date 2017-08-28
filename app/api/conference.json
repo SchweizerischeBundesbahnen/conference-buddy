@@ -1,74 +1,47 @@
 {
   "id": 99999,
-  "name": "SBB IT Developer Day 2016",
+  "name": "SBB IT Developer Day 2017",
   "location": "Gurten",
-  "date": "08.09.2016",
+  "date": "07.09.2016",
   "speakers": [
     {
       "id": 1,
-      "name": "Adrian",
-      "surname": "Egli",
+      "name": "Alina",
+      "surname": "Mylka",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/ae.jpg",
+      "picture": "images/referenten/am.jpg",
       "bio": ""
     },
     {
       "id": 2,
-      "name": "Andreas",
-      "surname": "Schlapbach",
+      "name": "Andres",
+      "surname": "Almiray",
       "email": "",
-      "company": "IT-SCP",
-      "picture": "images/referenten/as.jpg",
+      "company": "Canoo Engineering AG",
+      "picture": "images/referenten/aa.jpg",
       "bio": ""
     },
     {
       "id": 3,
-      "name": "Baltisar",
-      "surname": "Oswald",
+      "name": "Cédric",
+      "surname": "Lavanchy",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/bo.jpg",
+      "picture": "images/referenten/cl.jpg",
       "bio": ""
     },
     {
       "id": 4,
-      "name": "Beat",
-      "surname": "Wettstein",
+      "name": "Christoph",
+      "surname": "Bühlmann",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/bw.jpg",
+      "picture": "images/referenten/cb.jpg",
       "bio": ""
     },
     {
       "id": 5,
-      "name": "Christian",
-      "surname": "Egli",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ce.jpg",
-      "bio": ""
-    },
-    {
-      "id": 6,
-      "name": "Christian",
-      "surname": "Eichenberger",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ce1.jpg",
-      "bio": ""
-    },
-    {
-      "id": 7,
-      "name": "Christoph",
-      "surname": "Trutmann",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ct.jpg",
-      "bio": ""
-    },
-    {
-      "id": 8,
       "name": "Claude-Alain",
       "surname": "Brohy",
       "email": "",
@@ -77,43 +50,25 @@
       "bio": ""
     },
     {
-      "id": 9,
-      "name": "Daniel",
-      "surname": "Agile Marthaler",
+      "id": 6,
+      "name": "Da(gile)niel",
+      "surname": "Marthaler",
       "email": "",
       "company": "IT-SWE",
       "picture": "images/referenten/dm.jpg",
       "bio": ""
     },
     {
-      "id": 10,
-      "name": "Dominik",
-      "surname": "Schmucki",
+      "id": 7,
+      "name": "Erwann",
+      "surname": "Wernli",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/ds.jpg",
+      "picture": "images/referenten/ew.jpg",
       "bio": ""
     },
     {
-      "id": 11,
-      "name": "Franco",
-      "surname": "Ehrat",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/fe.jpg",
-      "bio": ""
-    },
-    {
-      "id": 12,
-      "name": "Florian",
-      "surname": "Brunner",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/fb.jpg",
-      "bio": ""
-    },
-    {
-      "id": 13,
+      "id": 8,
       "name": "Florian",
       "surname": "Seidl",
       "email": "",
@@ -122,25 +77,52 @@
       "bio": ""
     },
     {
+      "id": 9,
+      "name": "Gilles",
+      "surname": "Zimmermann",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/gz.jpg",
+      "bio": ""
+    },
+    {
+      "id": 10,
+      "name": "Hannes",
+      "surname": "Gassert",
+      "email": "",
+      "company": "Liip",
+      "picture": "images/referenten/hg.jpg",
+      "bio": ""
+    },
+    {
+      "id": 11,
+      "name": "Igor",
+      "surname": "Masen",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/im.jpg",
+      "bio": ""
+    },
+    {
+      "id": 12,
+      "name": "Ilir",
+      "surname": "Fetai",
+      "email": "",
+      "company": "IT-DA",
+      "picture": "images/referenten/if.jpg",
+      "bio": ""
+    },
+    {
+      "id": 13,
+      "name": "Janne",
+      "surname": "Hyötylä",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/jh.jpg",
+      "bio": ""
+    },
+    {
       "id": 14,
-      "name": "Heiko",
-      "surname": "Hünnefeld",
-      "email": "",
-      "company": "IT-SCI",
-      "picture": "images/referenten/hh.jpg",
-      "bio": ""
-    },
-    {
-      "id": 15,
-      "name": "Ivo",
-      "surname": "Hechmann",
-      "email": "",
-      "company": "IT-OM",
-      "picture": "images/referenten/ih.jpg",
-      "bio": ""
-    },
-    {
-      "id": 16,
       "name": "Jonas",
       "surname": "Bandi",
       "email": "",
@@ -149,34 +131,34 @@
       "bio": "Jonas Bandi hat 15 Jahre Erfahrung als Entwickler in Enterprise-Projekten. Aktuell arbeitet er als Freelancer in verschiedenen Entwicklungs- und Beratungsmandaten mit dem Fokus auf der Realisierung von komplexen Web-Applikationen. Daneben unterrichtet er seit 9 Jahren an der Berner Fachhochschule, unteranderem im CAS 'Applikationsentwicklung mit JavaScript & HTML5'. In den letzen Jahren hat er ausserdem viele InHouse-Kurse und Coachings für moderene Webentwicklung und AngularJS im Enterprise Umfeld durchgeführt."
     },
     {
-      "id": 17,
-      "name": "Lukas",
-      "surname": "Eder",
+      "id": 15,
+      "name": "Kevin",
+      "surname": "Kreuzer",
       "email": "",
-      "company": "Data Geekery GmbH",
-      "picture": "images/referenten/le.jpg",
-      "bio": "Lukas ist Java Champion, Vorstandsmitglied der JUG.ch, der Mann hinter jOOQ, und verbringt seine Zeit am liebsten mit dem Tunen von kompliziertem SQL."
+      "company": "IT-SWE",
+      "picture": "images/referenten/kk.jpg",
+      "bio": ""
+    },
+    {
+      "id": 16,
+      "name": "Lorenz",
+      "surname": "Meyer",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/lm.jpg",
+      "bio": ""
+    },
+    {
+      "id": 17,
+      "name": "Manuell",
+      "surname": "Wallrapp",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/mw.jpg",
+      "bio": ""
     },
     {
       "id": 18,
-      "name": "Markus",
-      "surname": "Färber",
-      "email": "",
-      "company": "IT-SCP",
-      "picture": "images/referenten/mf1.jpg",
-      "bio": ""
-    },
-    {
-      "id": 19,
-      "name": "Michael",
-      "surname": "Esser",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/me.jpg",
-      "bio": ""
-    },
-    {
-      "id": 20,
       "name": "Michael",
       "surname": "Fetzer",
       "email": "",
@@ -185,70 +167,61 @@
       "bio": ""
     },
     {
-      "id": 21,
-      "name": "Mike",
-      "surname": "Morgenthaler",
+      "id": 19,
+      "name": "Michael",
+      "surname": "Krausse",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/mk.jpg",
+      "bio": ""
+    },
+    {
+      "id": 20,
+      "name": "Michael",
+      "surname": "Moor",
       "email": "",
       "company": "IT-SWE",
       "picture": "images/referenten/mm.jpg",
       "bio": ""
     },
     {
-      "id": 22,
-      "name": "Patrick",
-      "surname": "Spiegel",
+      "id": 21,
+      "name": "Michael",
+      "surname": "Rothenbühler",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/ps.jpg",
+      "picture": "images/referenten/mr.jpg",
+      "bio": ""
+    },
+    {
+      "id": 22,
+      "name": "Neil",
+      "surname": "Stevenson",
+      "email": "",
+      "company": "Hazelcast",
+      "picture": "images/referenten/ns.jpg",
       "bio": ""
     },
     {
       "id": 23,
-      "name": "Peter",
-      "surname": "Moosmann",
+      "name": "Nima",
+      "surname": "Riahi",
       "email": "",
-      "company": "IT-AQ",
-      "picture": "images/referenten/pm.jpg",
+      "company": "IT-SCF",
+      "picture": "images/referenten/nr.jpg",
       "bio": ""
     },
     {
       "id": 24,
       "name": "Philipp",
-      "surname": "Kasiotis",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/pk.jpg",
-      "bio": ""
-    },
-    {
-      "id": 25,
-      "name": "Philipp",
       "surname": "Oser",
       "email": "",
-      "company": "Elca Informatik AG",
+      "company": "IT-SWE",
       "picture": "images/referenten/po.jpg",
       "bio": ""
     },
     {
-      "id": 26,
-      "name": "Philippe",
-      "surname": "Robert",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/pr.jpg",
-      "bio": ""
-    },
-    {
-      "id": 27,
-      "name": "Ramon",
-      "surname": "Spahr",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/rs.jpg",
-      "bio": ""
-    },
-    {
-      "id": 28,
+      "id": 25,
       "name": "Reto",
       "surname": "Lehmann",
       "email": "",
@@ -257,16 +230,7 @@
       "bio": ""
     },
     {
-      "id": 29,
-      "name": "Roland",
-      "surname": "Berger",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/rg.jpg",
-      "bio": ""
-    },
-    {
-      "id": 30,
+      "id": 26,
       "name": "Sebastian",
       "surname": "Graf",
       "email": "",
@@ -275,39 +239,75 @@
       "bio": ""
     },
     {
-      "id": 31,
+      "id": 27,
       "name": "Simon",
       "surname": "Martinelli",
       "email": "",
-      "company": "simas GmbH",
+      "company": "72 Services GmbH",
       "picture": "images/referenten/sm.jpg",
-      "bio": "Simon Martinelli ist Geschäftsführer der simas GmbH und als Software Architekt, Entwickler, Berater und Trainer im Java EE Umfeld tätig.  Er verfügt über 20 Jahre Erfahrung in der Software Entwicklung in verschiedenen Rollen in Projekten unterschiedlicher Grösse. Durch seine Tätigkeit als Dozent an der Berner Fachhochschule (SWS) in den Bereichen Java EE Architektur und Design, Persistenztechnologien und DevOps kann er seine Interessen vertiefen und sein Know-How weitergeben."
+      "bio": "Simon Martinelli ist Geschäftsführer der 72 Services GmbH und als Software Architekt, Entwickler, Berater und Trainer im Java EE Umfeld tätig.  Er verfügt über 20 Jahre Erfahrung in der Software Entwicklung in verschiedenen Rollen in Projekten unterschiedlicher Grösse. Durch seine Tätigkeit als Dozent an der Berner Fachhochschule (SWS) in den Bereichen Java EE Architektur und Design, Persistenztechnologien und DevOps kann er seine Interessen vertiefen und sein Know-How weitergeben."
     },
     {
-      "id": 32,
-      "name": "Stefan",
-      "surname": "Aeschbacher",
-      "email": "",
-      "company": "PostAuto AG",
-      "picture": "images/referenten/sa.jpg",
-      "bio": "Stefan Aeschbacher ist dipl. Ing. EPFL und Certified Systems Engineering Professional (CSEP). Nach dem Studium hat er sich selbständig gemacht und eine IT-Security Firma gegründet. Sein Arbeitsgebiet hat sich schon bald von der Security in Richtung öffentlicher Verkehr gewandelt. Im Rahmen verschiedener Projekte hat er an der Modernisierung der Informatik-Infrastruktur verschiedener Eisenbahn-Flotten mitgearbeitet. Nach einem Abstecher ins Ticketing mit dem Projekt BIBO hat er im Jahr 2014 den Wechsel von der Schiene auf die Strasse vollzogen und leitet nun die Entwicklung im Projekt ISA von PostAuto. Er ist Gründungsmitglied der Swiss Society of Systems Engineering (SSSE) und deren aktueller Präsident."
-    },
-    {
-      "id": 33,
-      "name": "Stefan",
-      "surname": "Toth",
-      "email": "",
-      "company": "embarc GmbH",
-      "picture": "images/referenten/st1.jpg",
-      "bio": "Stefan Toth (stefan.toth@embarc.de) ist Geschäftsführer der embarc GmbH, Sprecher auf internationalen Konferenzen und Buchautor. Er unterstützt Unternehmen aus unterschiedlichen Branchen im Bereich Software- und Unternehmensarchitektur. Sein größtes Kapital ist der breite technologische Kontext und seine methodische Erfahrung aus dynamischen IT-Unternehmen."
-    },
-    {
-      "id": 34,
+      "id": 28,
       "name": "Stefan",
       "surname": "Zeller",
       "email": "",
       "company": "IT-SWE",
       "picture": "images/referenten/sz.jpg",
+      "bio": ""
+    },
+    {
+      "id": 29,
+      "name": "Thomas",
+      "surname": "Siegrist",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/ts.jpg",
+      "bio": ""
+    },
+    {
+      "id": 30,
+      "name": "Tobias",
+      "surname": "Denzler",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/td.jpg",
+      "bio": ""
+    },
+    {
+      "id": 31,
+      "name": "Tse",
+      "surname": "Akumawah",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/ta.jpg",
+      "bio": ""
+    },
+    {
+      "id": 32,
+      "name": "Stefan",
+      "surname": "Tilkov",
+      "email": "",
+      "company": "innoQ",
+      "picture": "images/referenten/st2.jpg",
+      "bio": "Stefan Tilkov ist Geschäftsführer und Principal Consultant bei der innoQ Deutschland GmbH, wo er sich vorwiegend mit der strategischen Beratung von Kunden im Umfeld von Softwarearchitekturen beschäftigt. Er ist Autor des Buchs “REST und HTTP”, Mitherausgeber von “SOA-Expertenwissen” (beide dpunkt.verlag), Autor zahlreicher Fachartikel und häufiger Sprecher auf internationalen Konferenzen."
+    },
+    {
+      "id": 33,
+      "name": "Bernhard",
+      "surname": "Rytz",
+      "email": "",
+      "company": "IT",
+      "picture": "images/referenten/br.jpg",
+      "bio": ""
+    },
+    {
+      "id": 34,
+      "name": "Christoph",
+      "surname": "Frei",
+      "email": "",
+      "company": "IT-SCI-TPR",
+      "picture": "images/referenten/cf.jpg",
       "bio": ""
     },
     {
@@ -317,33 +317,6 @@
       "email": "",
       "company": "IT-SWE",
       "picture": "images/referenten/st.jpg",
-      "bio": ""
-    },
-    {
-      "id": 36,
-      "name": "Thomas",
-      "surname": "Siegrist",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ts.jpg",
-      "bio": ""
-    },
-    {
-      "id": 37,
-      "name": "Tobias",
-      "surname": "Denzler",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/td.jpg",
-      "bio": ""
-    },
-    {
-      "id": 38,
-      "name": "Yannis",
-      "surname": "Baillet",
-      "email": "",
-      "company": "IT-AQ",
-      "picture": "images/referenten/yb.jpg",
       "bio": ""
     }
   ],
@@ -366,19 +339,20 @@
     },
     {
       "id": "keynote1",
-      "title": "Keynote 1 - Wie kommt die Software ins PostAuto?",
-      "abstract": "<p>PostAuto ersetzt im Rahmen des Grossprojektes ISA (Integrierte Systemarchitektur) die IT-Infrastruktur auf den ca. 2500 Fahrzeugen. Betroffene Systeme sind unter anderem der Ticketverkauf für den Fahrer, die Fahrgastzählung oder die Fahrgastinformation. Im Sinne eines Paradigmenwechsels hat PostAuto entschieden den Grossteil der Systeme modular neu zu entwickeln und nicht mehr mit einem Systemlieferanten zu arbeiten. Die Software wird mit externen Partnern oder der IT-Post nach Scrum entwickelt. Zum Einsatz kommen Technologien wie Java, Docker oder AngularJS welche für die Bus-Branche Neuland darstellen. Die vorwiegend auf Microservices basierende Architektur wird kontinuierlich integriert und automatisiert getestet. Wo sinnvoll wurden Kooperationen innerhalb des Post-Konzerns oder auch mit öV-Partnern wie den SBB eingegangen.</p>",
+      "title": "Keynote 1 - Kunden, Menschen – was hat dies mit SmartRail 4.0 zu tun?",
+      "abstract": "<p><ul><li>Mobilität ist ein zentraler Erfolgsfaktor in unserer Volkswirtschaft der Schweiz und wir sind als Bewohner dieses Landes heute darauf eingestellt, diese frei zu nutzen – gerade wie wir sie individuell benötigen. Dieses Grundbedürfnis wird sich weiter verstärken.</li><li>Ein paar Indikationen kündigen jedoch deutlich an, dass wir uns nicht auf den erarbeiteten Lorbeeren ausruhen können, sondern ins Handeln kommen müssen. Sonst werden uns andere ein- und überholen.</li><li>Backbone des öffentlichen Mobilitätssystems ist (heute noch) die Bahn. Doch sie gilt als teuer, eher unflexibel und andere Verkehrsträger holen gerade deutlich auf und einige prophezeien gar schon das Ende der Bahn.</li><li>Wir glauben, dass die Bahn eine reale Chance hat auch in Zukunft eine entscheidende Rolle zu spielen. Voraussetzung ist jedoch, dass wir bei deren Weiterentwicklung noch viel konsequenter von den Menschen ausgehen müssen, die diese Mobilität auch nutzen wollen/werden – nicht nur die Bahnnutzer</li><li>SR4.0 ist kein technisches Programm, sondern ein Kundeprojekt, welches Technik konsequent nutzt um Kundenbedürfnisse wertorientiert zu realisieren – ganz im Sinne der Nachhaltigkeit.</li><li>Als Entwickler sind wir gefordert und nur erfolgreich, wenn wir ganz individuell bereit sind wie ein  Kunde zu denken und zu handeln.</li></ul></p>",
       "speakerIds": [
-        32
+        33,
+        34
       ],
       "common": true
     },
     {
       "id": "keynote2",
-      "title": "Keynote 2 - Speed IT up - Die schnelle Art der Softwareentwicklung",
-      "abstract": "<p>Internet-Firmen arbeiten in einem sehr dynamischen Umfeld. Start-Ups mischen regelmäßig die Szene auf, Benutzer sind sehr empfänglich für bessere Angebote der Konkurrenz und die Menge an Benutzern ist direkt für den Erfolg relevant. In diesem Kontext haben sich Firmen auf schnelle Time-to-Market und stetige Innovation eingerichtet. Mit der Digitalisierung treten nun sehr klassisch strukturierte Firmen auf die gleiche Bühne und müssen sich mit Internet Start-Ups messen. Diese Keynote beschäftigt sich mit den Erfolgsmodellen schneller IT-Firmen, den organisatorischen und technischen Herausforderungen die Konzerne zu überwinden haben und den Kompromissen die damit einhergehen.</p>",
+      "title": "Keynote 2 - Nachhaltige Architekturen: Modularität durch 'Self-contained systems'",
+      "abstract": "<p>Jahrelang haben Architekten versucht, möglichst viel zu standardisieren und Effizienz durch Homogenität zu erzielen. Aber häufig sind nur ein paar Versionen eines erfolgreichen Software-Systems notwendig, um es zu einem monolithischen, unwartbaren Klotz am Bein werden zu lassen, der Unmengen an Geld kostet und allen den Spaß an der Arbeit vermiest. In diesem Vortrag werfen wir einen Blick auf einige der Gründe für  diesen Effekt und sehen uns danach den Lösungsansatz SCS (Self-contained Systems) an, der Modularisierung durchein „System    of Systems“ in den Mittelpunkt stellt und viele Ähnlichkeiten, aber auch einige Unterschiede zu den aktuell viel besprochenen Microservices hat.</p>",
       "speakerIds": [
-        33
+        32
       ],
       "common": true
     },
@@ -398,202 +372,198 @@
     },
     {
       "id": "A1",
-      "title": "A1 – Reaktiv statt proaktiv - Akka und seine Einsatzmöglichkeiten im Cloud-Umfeld",
-      "abstract": "<p>Begriffe wie “Reactive Programming“, „Actor Model Framework“ oder auch das Reactive Manifesto existieren schon einige Jahre und sind alles andere als neu. Es erstaunt daher umso mehr, dass dieses Paradigma bei der SBB noch nicht vermehrt Einzug gehalten hat? Akka als „leichtgewichtiger Vertreter“ dieser Kategorie bringt eigentlich alle Voraussetzungen mit, um erfolgreich auf der JVM bzw. im Java-Umfeld eingesetzt werden zu können. Anhand von Beispielen und Erfahrungen aus dem Projekt Redko möchten wir dies beweisen.</p>",
+      "title": "A1 – Hilfe, die Affen kommen! Überleben mit resilienten Anwendungen.",
+      "abstract": "<p>Bei verteilten Systemen, wie wir sie oft in der SBB antreffen, funktionieren traditionelle Stabilitätsansätze nicht, bei denen versucht wird Zuverlässigkeit und Verfügbarkeit zu maximieren. Beim Resilient Software Design geht man hingegen davon aus, dass Fehler passieren und erstellt das System so, dass damit umgegangen werden kann: Do not try to avoid failures. Embrace them. In diesem Vortrag stellen wir die Grundprinzipien des Resilient Software Design Isolation, Redundanz, Lose Kopplung und Fallback vor und zeigen, wie wir das in der Applikation touri umgesetzt haben.</p>",
       "speakerIds": [
-        22
+        1,
+        28
       ],
       "common": false
     },
     {
       "id": "A2",
-      "title": "A2 - Jenkins: von Continuous Integration zu Continuous Delivery - alles Pipeline oder was?",
-      "abstract": "<p>Software is eating the world - auch in der Software-Entwicklung selber: Config as Code! Mit Jenkins 2.0 werden Job-Konfiguration mit dem Quell-Code eingecheckt und Jobs generiert. <ul><li>Alles ist Pipeline</li><li>Jobs as Code: DSL</li><li>WZU-Infrastruktur</li></ul></p>",
+      "title": "A2 - Double Session",
+      "abstract": "<p><b>Let’s do APIs!</b><br>Die SBB braucht im Umgang mit ihren Assets einen Weckruf. Wir müssen die Sichtweise auf Schnittstellen verändern und ihnen die längst nötige Aufmerksamkeit widmen. Der Vortrag präsentiert die dazu notwendigen Technologien und Werkzeuge und gibt einen Einblick in die Ideologie.</p><p><b>Mit Open Data an die Weltspitze</b><br>Der öffentliche Verkehr wird mehr und mehr ein riesengrosses Schnittstellenthema: der nahtlose Datenaustausch zwischen Transportunternehmen, Verkehrsmitteln, allerlei Onlineplattformen, Apps und mit Open Data auch der interessierten Öffentlichkeit ist eine Herausforderung — erst recht wenn es um Echtzeit-Datenströme geht. Um dieser Herausforderung Herr zu werden, braucht es professionelles API-Management. Tyk (http://tyk.io) ist eine moderne, leistungsfähige und skalierbare API Management Plattform, Open Source und in Go geschrieben, die das Erstellen, Verwalten, Analysieren, Absichern entwicklerfreundlicher Schnittstellen endlich einfach und sicher macht. Was konkret kann Tyk, wie arbeitet es sich damit, und wohin geht die Reise in Sachen APIs? Jenni und Gassert arbeiten bei Liip Bern, wo Tyk für die SBB aufgebaut und bei opentransportdata.swiss erstmals eingesetzt wurde. Sie teilen an den DevDays erstmals ihre Erfahrungen und Ideen dazu.</p>",
       "speakerIds": [
-        6
+        29,
+        10
       ],
       "common": false
     },
     {
       "id": "A3",
-      "title": "A3 - Der Software Entwickler – Mensch oder Ressource?",
-      "abstract": "<p>In meinen 21 Jahre in verschiedenen Rollen in der Software Entwicklung habe ich festgestellt, dass sich vor allem bei grossen Firmen der Wert und die Rolle des Software Entwicklers stark gewandelt hat. Viele Unternehmen sprechen von Entwickler-Pools und Ressourcen. Auf der anderen Seite gibt es einen strikte Trennung zwischen Kunde, Anforderungsanalyse, Entwicklung, Test und Betrieb. Ich erachte diesen Trend in Kombination mit Near- und Off-Shoring und der Idee, dass der Entwickler eine Ressource ist und damit beliebig austauschbar wird, als grosse Gefahr und Kern vieler Probleme in der heutigen Software Entwicklung. Der Vortrag soll aufzeigen, wie der moderne Software Entwickler richtig eingesetzt wird, wie man die Rolle wieder aufwertet und attraktiv macht und damit die Effizienz und Kundenzufriedenheit im ganzen Software Entwicklungszyklus massiv steigert. </p>",
+      "title": "A3 - Mit Kulturwandel zu moderner Software",
+      "abstract": "<p>Produkt NeTS - nicht gerade berühmt berüchtig für moderne und reaktive Architekturen und Lösungen. Ein klassisches JEE-Projekt der ersten Stunde mit allen vorstellbaren und gut bekannten Gebrechen. Stetiger Fachlicher und Technischer Druck mit Vorhaben wie Smart Rail oder auch der EOL-Phase der WAS 8.5 Plattform drohen auch die letzte Bastion einzureissen.<br>Monolithische Architekturen solcher Grösse abzulösen erfordert eine gehörige Portion Kreativität und in den Augen der etablierten Welt auch Leichtsinn. Wie sonst kann man sich auf neue Modelle wie Devops stürzen und mit klassischen rollenbildern brechen.<br>Um den Monolithen ins aktuelle Jahrzehnt zu transformieren, zeigen wir Mittel und Wege auf Architektonischer Seite wie auch Organisatorische und Kulturelle Aspekt auf.</p>",
       "speakerIds": [
-        31
+        4,
+        9,
+        3
       ],
       "common": false
     },
     {
       "id": "A4",
-      "title": "A4 - Künstliche Intelligenz in 40 Minuten",
-      "abstract": "<p>Künstliche Intelligenz wird immer noch oft als rein akademisch fehleingeschätzt. Ihre Anwendungen dringen eher unbemerkt in wichtige produktive Bereiche vor. Dieser Vortrag bietet einen breiten Blick über das Gebiet der KI mit ihren Teilbereichen, Paradigmen und Architekturmustern. Kurz vorgestellt und abgegrenzt werden: <ul><li>Neuronale Netze vs. symbolische Modelle</li><li>Suche im Zustandsraum, Heuristik</li><li>Experten- und Planungssysteme</li><li>Induktion, Deduktion</li><li>Diagnostik</li><li>Unsicheres und nicht-monotones Schliessen</li><li>Agenten</li><li>Genetische Algorithmen</li></ul>Entwicklungen und Trends werden vorgestellt.</p>",
+      "title": "A4 - Serverless Computing",
+      "abstract": "<p>Das Angebot und die Nutzungsmöglichkeiten von Cloud-Services wachsen rasant an. Nebst der IaaS, PaaS und SaaS Angeboten, gibt es mittlerweile von einigen Cloud-Anbietern die Möglichkeit, Funktionen ereignisgesteuert aufzurufen und bedarfsgerecht abzurechnen. Dieser Ansatz wird Serverless Computing genannt (bekannt auch als Function as a Services – FaaS).<br>Beim Einsatz von Serverless Computing wird die Skalierbarkeit und Ausfallsicherheit der Infrastruktur vom Entwickler wegabstrahiert.  Das bedeutet, dass der Serverless-Service sich um die Bereitstellung der notwendigen Server und weiterer Ressourcen kümmert und zu jeder Zeit sicherstellt, dass die Anwendung ständig ausreichend Ressourcen zur Verfügung hat, um performant Anfragen zu beantworten. Der Cloud-Service organisiert hierbei unter anderem die automatische Skalierung der Server-Infrastruktur, des Speichers, des Netzwerks und anderer Ressourcen und übernimmt somit eigenständig das Kapazitätsmanagement.<br>Im ersten Teil dieses Vortrages werden wir die grundlegendsten Konzepte, sowie die Vor- und Nachteile von Serverless Computing vorstellen.<br>Im zweiten Teil werden wir  auf den Aufbau und die Architektur der AWS Serverless Plattform (AWS Lambda) eingehen.</p>",
       "speakerIds": [
-        19
+        12
       ],
       "common": false
     },
     {
       "id": "B1",
-      "title": "B1 - R - The Machinery behind Machine Learning",
-      "abstract": "<p>Beim PFI (Plattform für Forschung und Innovation) vom SCI ist seit über einem Jahr R intensiv im Einsatz. Wir werden bei diesem Vortrag zeigen, weshalb wir R verwenden, was R kann und wie man mit R schnell und professionelle Analysen durchführen kann.<ul><li>Im PFI eingesetzte Machine Learning Algorithmen</li><li>Tips und Tricks (R Debugging und Performance Optimierungen)</li><li>Ein paar Beispiele aus der Praxis, welche wir im PFI bearbeitet haben.</li></ul></p>",
+      "title": "B1 - Double Session",
+      "abstract": "<p><b>jOOQ – Typesafe SQL direkt in Java</b><br>Hast du auch das Gefühl, dass Hibernate nicht die Lösung für alle Fälle sein kann? Frisst das N+1 Problem die Performance weg? ORMs sind ideal, um komplexe Objektgraphen auf Datenbanken abzubilden. Sie können jedoch auch zu ineffizientem oder schwer wartbarem Code führen. jOOQ ist eine Alternative, welche wir seit einem Jahr erfolgreich in unserer datenbanklastigen Applikation einsetzen. Mit jOOQ schreiben wir SQL direkt in Java, ohne die Nachteile von „SQL-Strings“ und JDBC-Boilerplate. jOOQ stellt die Korrektheit der SQL-Syntax und der Datentypen zur Kompilierzeit sicher. Anhand unserer Erfahrungen stelle ich jOOQ und ORMs gegenüber, und zeige, wann der Einsatz von jOOQ sinnvoll sein kann.</p><p><b>Jenkins Pipeline & Deployment-Konfiguration: Demo mit Openshift</b><br>Neu unterstützt Jenkins Jenkinsfiles: Damit definiere ich in meinem Git Repository, wie mein Projekt gebuildet werden soll. Jenkinsfiles sind deklarativer als bisherige Jenkins-Konfigurationen: ich sage eher WAS ich builden will und nicht mehr WIE. Ausserdem kann ich damit Openshift-Operationen bequem in einer Groovy DSL definieren. Damit sind Operationen wie Builds, Unit-Tests, Qualitätschecks, Deployments nach Jenkins, End-to-End Tests, Staging usw. einfacher möglich. Wir zeigen kurz was ESTA Cloud anbietet und was damit möglich wird (Jenkins ist eigentlich ein WZU Thema).</p>",
       "speakerIds": [
-        1,
-        4
-      ],
-      "common": false
-    },
-    {
-      "id": "B2",
-      "title": "B2 - Triple Session",
-      "abstract": "<p><b>Introscope News 10.2</b><br>Die SBB setzt Introscope von der Firma CA für Performancemessungen sowie Analysen in Problemfällen für Websphere Applikationen ein. Hier werden Nützliches, die Möglichkeiten von Introscope in der Cloud sowie die neuen Features der Version 10.2 vorgestellt.</p><p><b>The MEAN Machine</b><br>Der MEAN Stack besteht aus den Komponenten MongoDB, ExpressJS, AngluarJS und NodeJS. Da alle Komponenten auf JavaScript aufbauen, lässt sich Client- und Server-seitig in einer Sprache und einem Paradigma End2End entwickeln. In dem Talk wird gezeigt, wie sich mit einfachen Schritten eine moderne MicroService basierte WebApp entwickeln lässt.</p><p><b>Das SwissPass Login für Mobile Apps</b><br>Im Rahmen von Projekt SID wurde eine neue Integrationsarchitektur für das SwissPass Login für mobile Apps auf Basis von OAuth 2.0 erarbeitet und auch umgesetzt. Diese wird im Detail vorgestellt und anhand einer Demo gezeigt, wie einfach man B2C-Apps mit dem SwissPass Login ausstatten kann.</p>",
-      "speakerIds": [
-        15,
-        2,
-        26
-      ],
-      "common": false
-    },
-    {
-      "id": "B3",
-      "title": "B3 - Triple Session",
-      "abstract": "<p><b>UX für mobile Geschäftsanwendungen</b><br>Welchen Gewinn bringt der Einsatz von UX für mobile Geschäftsanwendungen? Am Beispiel der MobWK App für SBB Cargo zeigen wir auf, worauf man bei der Konzeption einer App für die Arbeit im Gleis achten muss. Welche Vorteile bringt dabei das benutzerzentrierte Vorgehen?</p><p><b>Continuous Testing</b><br>Kurze Vorschau wie man die HP Tool Palette (HP UFT, HP Loadrunner, HP ALM) und SOATest zusammen mit Jenkins in der Continuous Testing/Delivery Welt einbinden kann.</p><p><b>Docker and LetsEncrypt: 10mins to spawn SSL-Services</b><br>LetsEncrypt (https://letsencrypt.org) erlaubt seit Dezember letzten Jahres das automatisierte Generieren von vertrauenswürdigen, kostenlosen SSL-Zertifikaten auf Basis des ACME-Protokolls. Das manuelle, teure und teilweise auch organisatorisch mühsame Erstellen und Warten von Zertifikaten für Webseiten wird dadurch drastisch vereinfacht. In diesem Vortrag wird das Zusammenspiel von LetsEncrypt und Docker vorgestellt. Einfach und schnell wird innert 10min eine beliebig existierende Webapplikationen inklusive SSL bereitgestellt.</p>",
-      "speakerIds": [
-        11,
-        21,
+        13,
         24,
         30
       ],
       "common": false
     },
     {
-      "id": "B4",
-      "title": "B4 - JavaScript - Die universelle Plattform?",
-      "abstract": "<p>Spätestens seit dem Siegeszug von HTML5 und modernen Single Page Application Frameworks wie Angular, React und Ember ist JavaScript die unumstrittene de-facto Programmiersprache für Web-Applikationen. Im Schatten der Browser-seitigen Programmierung hat sich JavaScript aber zu der einzigen wirklich ernstzunehmenden universellen Plattform entwickelt: Basierend auf JavaScript werden heute Desktop-Applikationen, Mobile-Apps, Backend-Services und sogar Datenbank-Lösungen realisiert. Der Vortrag zeigt anhand von Beispielen was heute mit JavaScript ausserhalb der klassischen Web-Entwicklung alles machbar ist:<ul><li>Electron für die Realisierung von Cross-Platform Desktop Applikationen</li><li>Native-Script & React-Native für die Realisierung von nativen mobilen Applikationen</li><li>Node.js für server-seitige Programmierung</li><li>Verschiedene Datenbank Lösungen mit einem JavaScript API</li></ul>Am Ende werden Überlegungen angestellt, wie mit diesen Ansätzen eine bessere Wiederverwendbarkeit von Code erreicht werden könnte.</p>",
+      "id": "B2",
+      "title": "B2 - Verteiltes Machine Learning im Dienste der Pendler",
+      "abstract": "<p>Vor dem Betreten des Zuges wissen, welcher Wagen am wenigsten belegt ist? Die Antwort automatisiert zu liefern ist Ziel des Belegungsprognose-Service (Pilotprojekt „Cleverpendeln“), mit geplanter Ausgabe auf SBB Mobile. Dafür werden Millionen Belegungsdatensätze (gemessen von Zugbegleitern) mit Variablen wie Abschnitt, Klasse, Wagenposition, Reservationen, Wetter, etc. in einem Entscheidungsbaum-Algorithmus (xgboost) abgeglichen. Die Speicheranforderungen überfordern allerdings selbst noch so athletische Maschinen. Der Ausweg: H2O, eine open-source Lösung für verteiltes maschinelles Lernen, Huckepack aufgesetzt auf Spark. Wir zeigen euch die Ausgangslage, die Daten und wie komplizierte Prognosemodelle auf der Big Data Plattform der SBB berechnet werden.</p>",
       "speakerIds": [
-        16
+        23
+      ],
+      "common": false
+    },
+    {
+      "id": "B3",
+      "title": "B3 - Die Suchmaschine – das Q in CQRS",
+      "abstract": "<p>Das CQRS Pattern (Command-Query-Responsibility-Segregation) unterteilt das Datenmodell in zwei spezifische Modelle. Eines für das Abfragen/Anzeigen (Query) und eines für die Veränderungen (Command) der Daten. Während das Command-Modell mit traditionellen Mitteln wie O/R-Mapping und relationalen Datenbank implementiert werden kann, stellt sich die Frage wie das Query-Modell umgesetzt werden soll. Eine Möglichkeit ist die Verwendungen einer Suchmaschine wie Apache Solr oder Elasticsearch. Anhand eines konkreten Projektbeispiels aus dem Grosshandelsumfeld wird aufgezeigt, wie die Suchmaschine für das Query-Modells eingesetzt werden kann, wie die Daten der relationalen Datenbank in den Suchindex gelangen und welche speziellen Features der Suchmaschine, wie z.B. Synonyme, Auto-Suggest, oder Boosting, quasi «gratis» mitbenutzt werden können.</p>",
+      "speakerIds": [
+        27
+      ],
+      "common": false
+    },
+    {
+      "id": "B4",
+      "title": "B4 - SRE, DevOps done right",
+      "abstract": "<p>Endlich hat die SBB ihren Cloudstack in Produktion. Nur ist es „DevOps“ wenn Teams selbst in Produktion deployen? Namhafte Cloud-Natives wie Netflix, Spotify, Google, Facebook, Uber, Dropbox unterhalten für Stabilität, Skalierung und Enabling der Entwickler spezielle Teams aus Site Reliability Engineers (SRE), welche das DevOps-Paradigma „implementieren.</p><p>Dieser Vortrag skizziert die Rolle von SRE in verschiedenen Organisationen und setzt sie in Relation zu unseren heutigen Deployment-, Releasing- und Incidentprozessen. Anhand von konkreten Beispielen wird gezeigt, welche Probleme sie damit angehen, welche Werkzeuge sie dafür nutzen und in welcher Kultur dies resultierte.</p>",
+      "speakerIds": [
+        26
       ],
       "common": false
     },
     {
       "id": "C1",
-      "title": "C1 - Get your applications ready for the cloud with ESTA Cloud and ESTA WebJS",
-      "abstract": "<p>Bereits jetzt haben SBB Projekte die Möglichkeit Web-GUIs mit ESTA WebJS (AngularJS) zu bauen. Im Laufe dieses Jahres wir mit ESTA Cloud die Möglichkeit Backends mit Spring Boot und dem Netflix-Cloudstack dazu kommen. Dieser Vortrag zeigt diese neuen Möglichkeiten und stellt die Stacks vor und zeigt eine Demonstration am ESTA Showcase.</p>",
-      "speakerIds": [
-        28,
-        5
-      ],
-      "common": false
-    },
-    {
-      "id": "C2",
-      "title": "C2 - Zehn SQL-Tricks, die du nicht für möglich gehalten hättest",
-      "abstract": "<p>SQL ist die Sprache von Big Data. Egal, ob eine klassische relationale Datenbank, ein Column Store („NewSQL“) oder ein nicht relationales Speichersystem („NoSQL“) verwendet wird, eine starke, deklarative, SQL-basierte Abfragesprache verschafft den entscheidenden Vorteil. In diesem rasanten und nicht immer ganz ernst gemeinten Vortrag werden wir einige eigenartige, jedoch sehr interessante Datenprobleme anschauen und mittels SQL lösen. Schnallt euch an, und zieht euch warm an!</p>",
-      "speakerIds": [
-        17
-      ],
-      "common": false
-    },
-    {
-      "id": "C3",
-      "title": "C3 - Das Agilität - Stabilität Paradoxon (oder ist antifragil die nächste Evolutionsstufe von agil)",
-      "abstract": "<p>Seit Jahrzenten haben IT Abteilungen, so auch die SBB-IT, die Betriebsstabilität als einer der wichtigsten Faktoren angesehen. Mit gutem Grund, denn instabile Applikationen kosten viel Geld, Kunden und sind auf lange Sicht sehr schädlich für die Reputation des Unternehmens. Die Grossstörungen im 2015 hatten spürbare Auswirkungen für unser Business. Mit der Digitalisierung wird die IT-Durchdringung bei der SBB weiter zunehmen. Die damit steigende IT-Abhängigkeit des Geschäfts verstärkt die Wichtigkeit der Betriebsstabilität erheblich. Welche Auswirkungen hat die Agilisierung, Cloud-Computing und DevOps auf die Stabilität? Ist es ein nicht tragbares Risiko oder ist es die Voraussetzung um in Zukunft mit der immer stärkeren durch die Digitalisierung verursachten IT-Durchdringung die Stabilität überhaupt zu gewährleisten?</p>",
-      "speakerIds": [
-        23,
-        3
-      ],
-      "common": false
-    },
-    {
-      "id": "C4",
-      "title": "C4 - Vom Infrastruktur Monitoring zur proaktiven Service-Überwachung mithilfe kognitiver Intelligenz",
-      "abstract": "<p>Das SBB Infrastruktur Monitoring („IMon“) basiert auf dem IBM Cloud Softwareportfolio und wird heute für das Fault-­ und IT-­Service Management eingesetzt. Wesentliche Software Komponenten im IMon-­Umfeld sind u.a. die IBM Tivoli Netcool Produkte, Datenbanken (Oracle), WebSphere Middleware, WebApplications (Java) und Business Objects. Stetig wachsende Anforderungen an die Verfügbarkeit, Performance und Kundenzufriedenheit von Business Anwendungen bei der SBB erfordern auch ein Umdenken im Fault-­ und IT-­Service Management. Es reicht nicht mehr aus, auf der Basis von Alarmlisten zu arbeiten und die einzelnen technischen Komponenten der IT Infrastruktur zu überwachen. Entscheidend ist es, die Zusammenhänge von unterschiedlichen Infrastruktur-Fehlern schnell zu realisieren – ja, sogar zu erkennen, bevor die Fehler den Kundenservice beeinträchtigen! Die notwendigen Daten, um Störungen vorhersehen zu können, liegen dabei heute bereits vor. Die Herausforderung ist, intelligent die richtigen Schlüsse aus den massiven Datenmengen zu ziehen. Dabei müssen auch Daten aus Mobile Apps, Social Media und anderen Quellen zu Rate gezogen werden.</p><p>Heute werden in der Regel die möglichen Zusammenhänge von Datenpunkten durch Fachexperten erarbeitet und den Monitoring-­Administratoren vorgeschlagen. In langwierigen Prozessen werden dann Störungsszenarien entwickelt und die entsprechenden Korrelationen in der Monitoring-­Software aufgebaut. In Zukunft wird die Software solche Zusammenhänge selbst aus den Daten erkennen und lernen. Die Erfahrung, die heute noch in den Köpfen der System Engineers verteilt ist, wird dann in das Monitoring-­Produkt wandern (müssen!). Das bietet dann die Möglichkeit, die Service-­Verfügbarkeit und –Qualität effektiv zu überwachen, das Infrastruktur-­Monitoring ist dann nur noch Mittel zum Zweck, die Arbeitsweise im Operations-­Center wird sich entsprechend verändern. IBM ist auf dem Gebiet der kognitiven Analytik seit Jahren führend und hat mit Watson ein extrem erfolgreiches Produkt geschaffen, von dem nun sehr viele andere IBM-­Produkte profitieren. IBM Netcool bietet nun die technischen Möglichkeiten, die Kunden auf dem oben beschriebenen Weg zu einem effektiven Service-­Monitoring zu begleiten.</p>",
+      "title": "C1 - React & Redux - Eine Alternative zu Angular",
+      "abstract": "<p>React ist eine moderne JavaScript Library für die Erstellung von User Interfaces. Der Fokus liegt dabei bei der Erstellung von komplexen Single Page Applikationen. In nur 4 Jahren hat sich React zu einem der populärsten Web-Frameworks entwickelt und wir von unzähligen Firmen verwendet (Facebook, Apple, Microsoft, Netflix …) und viele Produkte setzen React ein (Jenkins, Firefox, WhatsApp, Office UI Fabric …).</p><p>React findet nicht nur in der Web-Entwicklung, sondern auch bei der Entwicklung von nativen Mobile-Apps (React Native) eine grosse Verbreitung. In seinem Kern bietet React ein sehr einfaches, aber mächtiges Komponenten-Model. React bricht dabei mit der traditionellen Separierung von Layout (HTML) und Verhalten (JavaScript): Mittels JSX können Templates im JavaScript Code deklariert werden. Dieser neue Ansatz erlaubt eine effiziente und produktive Programmierung. Bei der Programmierung von React Komponenten kommen Konzepte aus der funktionalen reaktiven Programmierung zum Einsatz. Muster aus der funktionalen reaktiven Programmierung können auch als Architektur-Pattern eingesetzt werden.Eine Ausprägung davon ist die „Flux“-Architektur, welche die im React-Ökosystem verbreitet ist. Flux stellte eine Alternative zu dem traditionellen MVC Pattern dar um den State einer Web-Applikation zu verwalten.</p><p>Redux ist eine besonders innovative Implementation des Flux Pattern und findet vor allem im Zusammenspiel mit React grossen Anklang. Redux kann aber auch mit anderen Frameworks (z.B. Angular) eingesetzt werden. React und Redux brechen mit dem traditionellen „De-Facto Standard“ in der Webentwicklung. Mit neuen innovativen Ansätzen wird die Frontend-Entwicklung vereinfacht. Selbst wenn React nicht direkt in einem aktuellen Projekt eingesetzt wird, lohnt es sich daher die Ansätze von React und Redux zu studieren.</p>",
       "speakerIds": [
         14
       ],
       "common": false
     },
     {
-      "id": "D1",
-      "title": "D1 - Double Session",
-      "abstract": "<p><b>What is New in Angular2?</b><br>Die Referenten geben einen Ausblick auf die neue Angular2 Version. Dabei werden neue Features kurz betrachtet und einen Blick auf Angular als Applikationsplattform gegeben.</p><p><b>Swagger – RESTful Webservices sichtbar gemacht</b><br>RESTFul Webservices werden im Backend immer wichtiger. Anhand von Live-Demos wird gezeigt, wie man mit Java Technologien RESTFul Webservices definieren und diese mit Swagger sichtbar machen kann. Ein Erfahrungsbericht aus der Entwicklungsstrasse Drittgeschäft (SCP).</p>",
+      "id": "C2",
+      "title": "C2 - Amazon Web Services Nutzung bei WZU",
+      "abstract": "<p>Im Februar 2017 hat das Team WZU sämtliche Entwicklungswerkzeuge in die Public Cloud zu Amazon Web Services migriert. Das Vorhaben kam einem kleinen RZ-Move gleich, denn dabei wurden knapp 100 Server mit 25 TB Daten und 500 CPUs in die Wolke verschoben. Doch man hat nicht nur das RZ gewechselt, sondern auch die Arbeitsweise an die Möglichkeiten einer Public Cloud angepasst und im Team etabliert. Themen wie Infrastructure-as-Code, Automatisierung oder Immutable Infrastructure werden bei uns aktiv gelebt. In diesem Vortrag möchten wir aufzeigen wie wir diese Methodiken implementiert haben und welche Vorteile sie für uns und evtl. auch für euch bringen.</p>",
       "speakerIds": [
-        34,
-        12
+        11
+      ],
+      "common": false
+    },
+    {
+      "id": "C3",
+      "title": "C3 - Schnittstellen - die Achillesferse von 'Agile'",
+      "abstract": "<p>In der Entwicklung bewegen wir uns an in dem meisten Vorhaben langsam in die Richtung agilen Vorgehens und wollen so immer öfter rasch unmittelbaren Nutzen für unsere Kunden und Mitarbeiter schaffen. Leider enden unsere Möglichkeiten meist abrupt, wenn es darum geht Schnittstellen anzubinden (bzw. Daten von anderen Systemen zu beziehen. Die Schnittstellen sind sehr aufwändig zu konsumieren, auf sehr schwergewichtige Systeme ausgerichtet und jede Änderung, aber oft sogar auch schon jede Anbindung erfordert einen hohen organisatorischen Aufwand und lange Vorlaufzeiten, die nicht ins agile Vorgehen passen und uns eine pragmatische Lösungsfindung sehr oft verunmöglichen.</p><p>Daher fliesst ein grosser Teil unseres Entwicklungsaufwandes - oft mehr als die Hälfte - statt in die Umsetzung von tatsächlich nutzbaren Features in die Anbindung von Schnittstellen, unsere Entwicklung wird langsam und teuer. Und es ist zu erwarten dass dieses Problem mit der fortschreitendenden Durchdringung des Geschäfts mit IT immer schlimmer werden wird, wenn es uns nicht gelingt hier andere Wege zu finden.</p><ul><li>Wie ist es dazu gekommen, warum ist die Situation heute so?</li><li>Ist das unvermeidbar? Oder was können wir besser machen, woran scheitert es?</li><li>Hindern uns vor allem technische Probleme, oder liegt es an der Organisation?</li></ul>",
+      "speakerIds": [
+        8
+      ],
+      "common": false
+    },
+    {
+      "id": "C4",
+      "title": "C4 - Be In / Be Out ohne Hardware?",
+      "abstract": "<p>In den letzten Jahren hat sich auf dem Markt einiges getan und diverse Anbieter arbeiten bereits im Bereich automatische Zug und/oder Reiseerkennung mit der SBB zusammen. Da aber alle Lösungen aus einem oder mehreren Gründen nicht ideal sind, kam die Frage auf: Können wir das selbst machen?</p><p>Im Rahmen des Vortrags werden die Schwierigkeiten und mögliche Lösungen für diese Herausforderungen vorgestellt und diskutiert. Zusätzlich werden die Resultate eines PoCs präsentiert und die Frage nach dem 'Können wir das?' beantwortet.</p>",
+      "speakerIds": [
+        18
+      ],
+      "common": false
+    },
+    {
+      "id": "D1",
+      "title": "D1 - In Ludicrousspeed to production with JHipster + Openshift",
+      "abstract": "<p>Wir erstellen vor dem Publikum eine Applikation mit dem Generator JHipster welches SBB Technologien (Spring-Boot, Spring-Data, Hazlecast, Angular JS, Angular 4, Liquibase usw.) als Basis verwendet. Das Ziel ist es in 40 Minuten eine Applikation mit diversen Business Entitäten in SBB Look zu erstellen und produktiv in der SBB Cloud zu deployen. Es soll zeigen wie man innerhalb der SBB sehr schnell eine lauffähige Applikation in Produktion bringen kann. Der JHipster-Generator bringt sehr viel Knowhow über Spring und Angular und das Zusammenspiel all dieser Komponenten mit. JHipster kann einem Projekt enorm Zeit für das Bootstrapping einer Applikation einsparen. Auch verkürzt es die Einarbeitungszeit in all die Technologien, da es das Zusammenspiel der Technologien sehr gut vereint.Provisorisch Runbook:<ul><li>Kurzübersicht JHipster (5min)</li><li>JHipster initial Generierung (5min)</li><li>Customizing (10min - im Hintergrund läuft JHipster Generierung)</li><li>Deployment (10min)</li><li>Präsentation UI & Code Struktur zeigen (5min)</li><li>Fragen und Antworten (5min)</li></ul>Detailliertes Runbook (https://confluence.sbb.ch/display/CISINFRAE/Detailliertes+Runbook)</p>",
+      "speakerIds": [
+        6,
+        17
       ],
       "common": false
     },
     {
       "id": "D2",
-      "title": "D2 - Let it Flow: RxJava auf Android",
-      "abstract": "<p>Reactive Programming ist schon seit längerem ein vieldiskutiertes Thema, welches trotzdem oder gerade deswegen noch viele Fragen aufwirft. Dieser Vortrag zeigt, wie die ursprünglich für .NET entwickelte Erweiterung des Observer-Patterns für gängige Probleme unter Android verwendet werden kann. Nach einer Einführung in die Grundlagen und Prinzipien des ‚Reactive Programming‘ und Observables, nehmen wir Themen wie die Integration mit dem Android Lifecycle und den Umgang mit dem Android Threading Model unter die Lupe. Den Abschluss bildet eine Demo-App, welche die Integration mit bekannten Bibliotheken wie z.B. Retrofit demonstriert und zeigt, wie RxJava den Entwickler-Alltag vereinfachen kann.</p>",
+      "title": "D2 - G# - GIS für alle @SBB",
+      "abstract": "<p>G# (Geodata Shared Platform) ist eine GIS Plattform der SBB für die SBB. Dieser Vortrag richtet sich an alle Interessenten, welche in irgendeiner Form Geodaten in der SBB verwalten, publizieren oder visualisieren wollen. Der Vortrag deckt das komplette Spektrum ab und veranschaulicht die Architektur und den Aufbau der Plattform, sowie dessen vielfältige Einsatzmöglichkeiten mit allen möglichen Technologien. Erstellen von einfach konfigurierbaren Web-Applikationen bis hin zu vollständigen Eigenentwicklungen im Web- oder iOS Umfeld. Der Vortrag wird anhand von konkret umgesetzten Beispielen mit der Verwendung der G# Plattform, untermauert. Der Vortrag soll die Vielfältigkeit der Plattform, sowie bereits einige Lessons Learned aufzeigen.</p>",
       "speakerIds": [
         20,
-        10
+        16
       ],
       "common": false
     },
     {
       "id": "D3",
-      "title": "D3 - Double Session",
-      "abstract": "<p><b>Automatisierung Build und Deploymentaufgaben mit Smoothie</b><br>Das Build und Deplyoment-Team bei MVD unterstützt den Wartungsbetrieb und viele Projekte. Mit dem fortschreiten der agilen Transition steigt die Nachfrage nach Releases, Deployments und neuen Infrastrukturkomponenten laufend. Das B&D-Team bei MVD hat daher mit Smootie eine Lösung entwickelt um auf Basis des WZU-Toolstacks und der Verfahren bei IT-OM grosse Teile der regelmässig wiederkehrenden Aufgaben zu automatisieren. Zusätzlich werden mittlerweile grosse Teile der Build-und Deplyoment-Dokumentation generiert.Wir beleuchten im Vortrag die technischen Grundlagen von Smoothie, beleuchten auch kurz die Schwierigkeiten die auf dem Weg zur heutigen Lösung zu überwinden waren, und geben einen Ausblick auf die Einsatzmöglichkeiten von Smoothie in anderen Bereichen der SBB-IT.</p><p><b>Continuous Release, the missing piece</b><br>Mit den Standard CI Tools der SBB lässt sich nicht nur kontinuierlich Software builden, testen und integrieren, sondern auch automatisch releasen und liefern. Ich zeige auf wie:<ul>Das Release Train Mojo ist als Vertiefungsthema entstanden und steht auf dem SBB GIT Hub Account frei zur Verfügung.</li><li>Aufbau, Architektur und funktionen des Plugins</li><li>Entwickeln auf GITHub & den offiziellen Maven Repos</li><li>Hand’s On</li></ul></p>",
+      "title": "D3 - Eine explizite Versionierung ist möglich",
+      "abstract": "<p>Im Projekt SVS haben wir den alten Monolithen mittlerweile erfolgreich in einen verteilten Monolithen zerlegt. Damit haben wir ein Zwischenziel erreicht. Ein weiterer Schritt autonomere Anwendungen zu bekommen besteht in der expliziten Serviceversionierung. In meinem Vortrag möchte ich vorstellen<ul><li>Warum braucht es Serviceversionierung?</li><li>Mögliche Implementierungen mit Ihren Vor- und Nachteilen kurz vorstellen</li><li>Was haben wir gelernt</li></ul></p>",
       "speakerIds": [
-        18,
-        9
+        19
       ],
       "common": false
     },
     {
       "id": "D4",
-      "title": "D4 - IoT end to end",
-      "abstract": "<p>Ein Einblick in technische Herausforderungen zu Cloud-Integration und das Internet der Dinge bei der SBB-IT. Wir zeigen, dass durch die Konvergenz bestehender Technologien aus dem Bereich Cloud, Big-Data und dem Webservice-Gateway schnell und nachhaltig eine Lösung für einen IoT Showcase realisiert werden kann.</p>",
+      "title": "D4 - AngularJS 2 & Reaktive Programmierung",
+      "abstract": "<p>AngularJS 2+ bringt nebst dem neuen Framework auch die reaktive Programmierung in die Webentwicklung. Viele Konzepte in AngularJS 2 basieren auf diesen Methoden & Modellen.Diese Art der Entwicklung bringt viele Vorteile aber auch ein Umdenken in der Art wie man Web-GUIs entwickelt.</p><p>In diesem Vortrag zeigen wir zum einen den neuen ESTA WebJS 2 Stack. Zum anderen zeigen wir anhand von verschiedenen Beispielen die reaktive GUI-Programmierung. Wir gehen dabei auf Themen wie Streams, Observables, RxJS und Websockets ein.</p>",
       "speakerIds": [
-        8,
-        7,
-        27
+        15,
+        25
       ],
       "common": false
     },
     {
       "id": "E1",
-      "title": "E1 - Basisservices und API Management: ein Showcase",
-      "abstract": "<p>Vorstellung eines PoC auf Basis tyk (tyk.io) und des Zusammenspiels mit dem SBB Service Repository (https://confluence.sbb.ch/x/eYZIKg ). Als fachlicher Case dient eine einfache API für den Basisservice „Mitarbeiter“. Erfahrungen mit dem Produkt sowohl für Provider als auch Consumer von APIs werden aufgezeigt.</p>",
+      "title": "E1 - Testing Java Code Effectively",
+      "abstract": "<p>The Java ecosystem has myriads of libraries and projects that can be used to create the features our customers require, there's no shortage of options everywhere you look when it comes to writing production code. But what about testing code? If you ascribe to the Clean Code ideals then you know that testing code is as important as production code. Luckily there are a good number of libraries that can be used with popular testing frameworks. In this session we'll discover how to write better parameterized tests; take care of concurrency related events; spy/mock/stub out collaborators to ensure cleaner and isolated tests; fake out REST APIs to test out client code; fake out REST clients to test out server code, and more.</p>",
       "speakerIds": [
-        36,
-        38
+        2
       ],
       "common": false
     },
     {
       "id": "E2",
-      "title": "E2 - Mastering the Cloud: Continuous Delivery & Self Service on OpenShift",
-      "abstract": "<p>OpenShift bietet Entwicklern und Betreibern völlig neue Möglichkeiten, ihre Applikationen und Infrastrukturen zu definieren und zu steuern. In diesem Vortrag nehmen wir euch mit in die schöne neue Welt und zeigen, wie eine Anwendung in wenigen Schritten in die Cloud gebracht wird. Dabei führen wir auch durch Themen wie Continuous Delivery oder Zero-Downtime Deployments und demonstrieren, wie vordefinierte Infrastrukturkomponenten verwendet werden können.</p>",
+      "title": "E2 - RCS und der Bazaar: Die Migration zu Eclipse 4",
+      "abstract": "<p>RCS-D auf E4 zu migrieren ist nicht trivial: RCS-D ist eine grosse RCP Anwendung mit Echtzeitdarstellung der Zugsbewegungen und teilt sich die Codebasis teilweise mit ALEA. Für die Migration haben wir EclipseSource ins Boot genommen, um bei der Problembehebung Unterstützung zu bekommen—oder Bugs in E4 direkt zu flicken! In diesem Vortrag teilen wir unsere Erfahrung mit dieser Zusammenarbeit und reflektieren über die Dynamik des Open Source Modells.</p>",
       "speakerIds": [
-        25,
-        37
+        7,
+        21
       ],
       "common": false
     },
     {
       "id": "E3",
-      "title": "E3 - Wer plant verliert oder How I Learned to Stop Worrying and Love Complexity",
-      "abstract": "<p>Jahrzehntelang haben wir versucht, mit Techniken aus dem traditionellen Ingenieurwesen Software zu entwickeln. Wir haben versucht, komplexe Probleme durch Annahmen und Analyse zu komplizierten und so planbar zu machen. Mittlerweile wissen wir, dass dieser Ansatz der Natur der Softwareentwicklung nicht gereicht wird.Aber warum eigentlich? Müssten wir nicht einfach nur besser planen? Was macht Softwareentwicklung komplex? Was heisst das? Und sind agile Vorgehensweisen wirklich die Lösung aller Probleme?</p>",
+      "title": "E3 - Double Session",
+      "abstract": "<p><b>Understanding your Team members for a better Software</b><br>The Enneagram of personality classifies humans in 9 distinct categories with eventual attachments to other categories. Usually, software development team usually comprises of people with different categories. Knowing how each and every team member “works” increases our chance to work more efficiently with them. My short presentation would explain the different categories which exist and help the listeners to analyse themselves and maybe try to know their colleagues. A better understanding of each and every individual in software development teams would help us best allocate the human resources for most efficient result. Close up by analysing the applicability in SBB.</p><p><b>Consumer Driven Contract für Web Services Unit Testing</b><br>Eine Herausförderung für Web Service Hersteller mit viele Abnehmer und viele Releases ist sicher zu sein, dass die neue Release kompatible mit allen seinen Abnehmern ist.   Consumer Driven Contract  (CDC) hilft dieses Herausförderung zu meistern. Das Konzept ist einfach: jede Benützer von dem Web Service schreibt ein oder mehrere Unit Test für den Web Service Hersteller. Diese Unit Test laufen bei Web Service Hersteller. Der Web Service Hersteller merkt sofort wenn er das Kontrakt mit einem oder mehreren Abnehmer bricht. Dieser Vortrag wird anhand von realen Beispielen zeigen was Consumer Driven Contracts sind und wie dieses Konzept in das reale Welt funktioniert.</p>",
       "speakerIds": [
-        13
+        31,
+        5
       ],
       "common": false
     },
     {
       "id": "E4",
-      "title": "E4 - Kotlin, die Sprache die Java verdrängen wird",
-      "abstract": "<p>Die coolsten Kotlin Sprachfeatures anhand von Code Beispielen für (Java) Entwickler die noch nie etwas von Kotlin gehört oder gesehen haben.</p>",
+      "title": "E4 - New style Streaming with Hazelcast Jet",
+      "abstract": "<p>Tradionally, data processing is post-processing. Data is stored in a data warehouse or database and we process it from where it is held. As we can only compute on what is held, this model has two intrinsic costs -- the money cost of storage, and the time costs for the storage technology.</p><p>Although storage technology gets cheaper and faster, the data ingest rate is increasing exponentially so this is a race it has lost. What we need to do is process data as it arrives, storing any subset of derived or original results that suit us.</p><p>This is what Hazelcast Jet does, a new offering in the stream processing world offering genuine infinite stream and micro-batch handling, all deployed with the ease and speed of Hazelcast. You can literally be up and running in minutes, and processing in microseconds.</p><p>In this talk I'll cover real world use of Jet, taking a simple Java jar as as deployment unit, using Kafka as a data source, analyse a stream of observations and saving only the insights calculated from this. What we'll see is that Jet is super easy to get started, uses the powerful directed acyclic graph as it's base construct, extends out with a *distributed* version of Java streams, so the programmer gets all the benefits of scaling for very little coding.</p><p>lanyrd.com/profile/neilstevenson/bio/</p>",
       "speakerIds": [
-        29
+        22
       ],
       "common": false
     },
     {
       "id": "outro",
-      "title": "Abschluss Developer Day 2016",
+      "title": "Abschluss Developer Day 2017",
       "abstract": "",
       "speakerIds": [],
       "common": true
@@ -612,58 +582,58 @@
       "title": "Technologies",
       "presentations": [
         {
-          "id": 10,
+          "id": "intro",
           "talkId": "intro",
           "time": {
             "start": "09:00",
             "end": "09:05"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 20,
+          "id": "eroeffnungsrede",
           "talkId": "eroeffnungsrede",
           "time": {
             "start": "09:05",
             "end": "09:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 30,
+          "id": "keynote1",
           "talkId": "keynote1",
           "time": {
             "start": "09:15",
             "end": "10:00"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 40,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "10:00",
             "end": "10:30"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 200,
+          "id": "A1",
           "talkId": "A1",
           "time": {
             "start": "10:30",
             "end": "11:15"
           },
-          "roomId": "4"
+          "roomId": "2"
         },
         {
-          "id": 210,
+          "id": "B1",
           "talkId": "B1",
           "time": {
             "start": "11:20",
             "end": "12:05"
           },
-          "roomId": "1"
+          "roomId": "2"
         },
         {
           "id": 50,
@@ -672,70 +642,70 @@
             "start": "12:05",
             "end": "13:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 220,
+          "id": "C1",
           "talkId": "C1",
           "time": {
             "start": "13:10",
             "end": "13:55"
           },
-          "roomId": "1"
+          "roomId": "3"
         },
         {
-          "id": 230,
+          "id": "D1",
           "talkId": "D1",
           "time": {
             "start": "14:00",
             "end": "14:45"
           },
-          "roomId": "1"
+          "roomId": "3"
         },
         {
-          "id": 60,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "14:45",
             "end": "15:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 240,
+          "id": "E1",
           "talkId": "E1",
           "time": {
             "start": "15:10",
             "end": "15:55"
           },
-          "roomId": "4"
+          "roomId": "3"
         },
         {
-          "id": 70,
+          "id": "keynote2",
           "talkId": "keynote2",
           "time": {
             "start": "16:00",
-            "end": "16:35"
+            "end": "16:45"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 80,
+          "id": "outro",
           "talkId": "outro",
           "time": {
-            "start": "16:35",
-            "end": "16:40"
+            "start": "16:45",
+            "end": "16:55"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 90,
+          "id": "apero",
           "talkId": "apero",
           "time": {
-            "start": "16:40",
+            "start": "16:55",
             "end": "18:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         }
       ]
     },
@@ -744,130 +714,130 @@
       "title": "Plattforms",
       "presentations": [
         {
-          "id": 10,
+          "id": "intro",
           "talkId": "intro",
           "time": {
             "start": "09:00",
             "end": "09:05"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 20,
+          "id": "eroeffnungsrede",
           "talkId": "eroeffnungsrede",
           "time": {
             "start": "09:05",
             "end": "09:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 30,
+          "id": "keynote1",
           "talkId": "keynote1",
           "time": {
             "start": "09:15",
             "end": "10:00"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 40,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "10:00",
             "end": "10:30"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 300,
+          "id": "A2",
           "talkId": "A2",
           "time": {
             "start": "10:30",
             "end": "11:15"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
-          "id": 310,
+          "id": "B2",
           "talkId": "B2",
           "time": {
             "start": "11:20",
             "end": "12:05"
           },
-          "roomId": "4"
+          "roomId": "1"
         },
         {
-          "id": 50,
+          "id": "mittagessen",
           "talkId": "mittagessen",
           "time": {
             "start": "12:05",
             "end": "13:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 320,
+          "id": "C2",
           "talkId": "C2",
           "time": {
             "start": "13:10",
             "end": "13:55"
           },
-          "roomId": "3"
+          "roomId": "2"
         },
         {
-          "id": 330,
+          "id": "D2",
           "talkId": "D2",
           "time": {
             "start": "14:00",
             "end": "14:45"
           },
-          "roomId": "4"
+          "roomId": "2"
         },
         {
-          "id": 60,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "14:45",
             "end": "15:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 340,
+          "id": "E2",
           "talkId": "E2",
           "time": {
             "start": "15:10",
             "end": "15:55"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
-          "id": 70,
+          "id": "keynote2",
           "talkId": "keynote2",
           "time": {
             "start": "16:00",
-            "end": "16:35"
+            "end": "16:45"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 80,
+          "id": "outro",
           "talkId": "outro",
           "time": {
-            "start": "16:35",
-            "end": "16:40"
+            "start": "16:45",
+            "end": "16:55"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 90,
+          "id": "apero",
           "talkId": "apero",
           "time": {
-            "start": "16:40",
+            "start": "16:55",
             "end": "18:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         }
       ]
     },
@@ -876,97 +846,97 @@
       "title": "Engineering Arts",
       "presentations": [
         {
-          "id": 10,
+          "id": "intro",
           "talkId": "intro",
           "time": {
             "start": "09:00",
             "end": "09:05"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 20,
+          "id": "eroeffnungsrede",
           "talkId": "eroeffnungsrede",
           "time": {
             "start": "09:05",
             "end": "09:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 30,
+          "id": "keynote1",
           "talkId": "keynote1",
           "time": {
             "start": "09:15",
             "end": "10:00"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 40,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "10:00",
             "end": "10:30"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 400,
+          "id": "A3",
           "talkId": "A3",
           "time": {
             "start": "10:30",
             "end": "11:15"
           },
-          "roomId": "3"
+          "roomId": "1"
         },
         {
-          "id": 410,
+          "id": "B3",
           "talkId": "B3",
           "time": {
             "start": "11:20",
             "end": "12:05"
           },
-          "roomId": "3"
+          "roomId": "4"
         },
         {
-          "id": 50,
+          "id": "mittagessen",
           "talkId": "mittagessen",
           "time": {
             "start": "12:05",
             "end": "13:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 420,
+          "id": "C3",
           "talkId": "C3",
           "time": {
             "start": "13:10",
             "end": "13:55"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 430,
+          "id": "D3",
           "talkId": "D3",
           "time": {
             "start": "14:00",
             "end": "14:45"
           },
-          "roomId": "3"
+          "roomId": "4"
         },
         {
-          "id": 60,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "14:45",
             "end": "15:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 440,
+          "id": "E3",
           "talkId": "E3",
           "time": {
             "start": "15:10",
@@ -975,31 +945,31 @@
           "roomId": "2"
         },
         {
-          "id": 70,
+          "id": "keynote2",
           "talkId": "keynote2",
           "time": {
             "start": "16:00",
-            "end": "16:35"
+            "end": "16:45"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 80,
+          "id": "outro",
           "talkId": "outro",
           "time": {
-            "start": "16:35",
-            "end": "16:40"
+            "start": "16:45",
+            "end": "16:55"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 90,
+          "id": "apero",
           "talkId": "apero",
           "time": {
-            "start": "16:40",
+            "start": "16:55",
             "end": "18:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         }
       ]
     },
@@ -1008,70 +978,70 @@
       "title": "Beyond",
       "presentations": [
         {
-          "id": 10,
+          "id": "intro",
           "talkId": "intro",
           "time": {
             "start": "09:00",
             "end": "09:05"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 20,
+          "id": "eroeffnungsrede",
           "talkId": "eroeffnungsrede",
           "time": {
             "start": "09:05",
             "end": "09:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 30,
+          "id": "keynote1",
           "talkId": "keynote1",
           "time": {
             "start": "09:15",
             "end": "10:00"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 40,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "10:00",
             "end": "10:30"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 500,
+          "id": "A4",
           "talkId": "A4",
           "time": {
             "start": "10:30",
             "end": "11:15"
           },
-          "roomId": "2"
+          "roomId": "3"
         },
         {
-          "id": 510,
+          "id": "B4",
           "talkId": "B4",
           "time": {
             "start": "11:20",
             "end": "12:05"
           },
-          "roomId": "2"
+          "roomId": "3"
         },
         {
-          "id": 50,
+          "id": "mittagessen",
           "talkId": "mittagessen",
           "time": {
             "start": "12:05",
             "end": "13:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 520,
+          "id": "C4",
           "talkId": "C4",
           "time": {
             "start": "13:10",
@@ -1080,58 +1050,58 @@
           "roomId": "4"
         },
         {
-          "id": 530,
+          "id": "D4",
           "talkId": "D4",
           "time": {
             "start": "14:00",
             "end": "14:45"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 60,
+          "id": "pause",
           "talkId": "pause",
           "time": {
             "start": "14:45",
             "end": "15:10"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 540,
+          "id": "E4",
           "talkId": "E4",
           "time": {
             "start": "15:10",
             "end": "15:55"
           },
-          "roomId": "3"
+          "roomId": "1"
         },
         {
-          "id": 70,
+          "id": "keynote2",
           "talkId": "keynote2",
           "time": {
             "start": "16:00",
-            "end": "16:35"
+            "end": "16:45"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 80,
+          "id": "outro",
           "talkId": "outro",
           "time": {
-            "start": "16:35",
-            "end": "16:40"
+            "start": "16:45",
+            "end": "16:55"
           },
-          "roomId": "2"
+          "roomId": "1"
         },
         {
-          "id": 90,
+          "id": "apero",
           "talkId": "apero",
           "time": {
-            "start": "16:40",
+            "start": "16:55",
             "end": "18:15"
           },
-          "roomId": "2"
+          "roomId": "1"
         }
       ]
     }
@@ -1139,15 +1109,15 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Falco"
-    },
-    {
-      "id": 2,
       "name": "Pavillon"
     },
     {
+      "id": 2,
+      "name": "Wytsicht"
+    },
+    {
       "id": 3,
-      "name": "Buteo"
+      "name": "Ussicht"
     },
     {
       "id": 4,
