@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     
-    working_directory: ~/server/conferencebuddy-parent
+    working_directory: ~/conferencebuddy
 
     docker:
       - image: circleci/openjdk:8-jdk-browsers
