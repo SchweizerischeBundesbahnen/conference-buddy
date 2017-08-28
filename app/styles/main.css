@@ -56,8 +56,8 @@ a {
 }
 
 .profileimg {
-  margin: 0 5% 2% 0;
-  border-radius: 50%;
+  margin: 0 5% 2% 2%;
+  border-radius: 15%;
   max-width: 35%;
 }
 

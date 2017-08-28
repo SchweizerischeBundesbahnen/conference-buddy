@@ -23,20 +23,20 @@ public class ImportEtutorDevDay extends AbstractRestIT {
     @Test
     public void importAllTrack() throws IOException {
         LOGGER.info(urlOfFirstPage);
-        importTrack("0", "A", 10, 30);
-        importTrack("1", "B", 11, 20);
-        importTrack("2", "C", 13, 10);
-        importTrack("3", "D", 14, 00);
-        importTrack("4", "E", 15, 10);
+        importTrack( "A", 10, 30);
+        importTrack( "B", 11, 20);
+        importTrack( "C", 13, 10);
+        importTrack( "D", 14, 00);
+        importTrack( "E", 15, 10);
     }
 
 
-    private void importTrack( final String staticPartId, final String track, final int hour, final int minutes) throws IOException {
-        LOGGER.info("import staticPart {}, track {}", staticPartId, track);
-        importCSV("2" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "1.csv"), Charsets.UTF_8));
-        importCSV("3" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "2.csv"), Charsets.UTF_8));
-        importCSV("4" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "3.csv"), Charsets.UTF_8));
-        importCSV("5" + staticPartId + "0", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "4.csv"), Charsets.UTF_8));
+    private void importTrack(final String track, final int hour, final int minutes) throws IOException {
+        LOGGER.info("import staticPart {}, track {}", track);
+        importCSV(track + "1", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "1.csv"), Charsets.UTF_8));
+        importCSV(track + "2", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "2.csv"), Charsets.UTF_8));
+        importCSV(track + "3", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "3.csv"), Charsets.UTF_8));
+        importCSV(track + "4", hour, minutes, Resources.toString(Resources.getResource("DevDay/" + track + "4.csv"), Charsets.UTF_8));
     }
 
 

@@ -4,15 +4,26 @@
 
         <p class="h5"><strong>{{conference.location}}, {{conference.date}}</strong></p>
         <p>
-            <img src="images/devday_pacman.png" alt="pacman(devday2016): mjam mjam.."/>
+            <img src="images/devday_2017.png" alt="devday2017"/>
             <div ng-show="!!averageRating" class="pull-right">{{averageRating}} <span class="glyphicon glyphicon-star ratingAverageStar"/></div>
         </p>
-        <p><b>Software is eating the world</b></p>
-        <p>Es besteht kein Zweifel daran, dass der technologische Fortschritt in Zukunft
-          schneller voranschreiten wird und seine Auswirkungen die Gesellschaft stärker
-          verändern werden, als alles was vorherige Generationen bisher erlebt haben.</p>
-        <p>Die spannende Frage ist also, wo wir in 10 Jahren stehen - welche Rolle willst Du dabei spielen?</p>
-
+        <p><b>Von der Kathedrale zum Basar</b></p>
+      <!--
+        <p>Eric Raymond verfasste 1997 seinen Essay "Die Kathedrale und der Basar".
+          In ihm beschreibt er unter anderem die Vorteile dezentraler und selbstorganisierter
+          Softwareentwicklung, des Basars, gegenüber hierarchisch organisierter Softwareentwicklung
+          der Kathedrale. Haben wir bis vor kurzem tatsächlich in der Kathedrale gearbeitet?
+          "Unterstützt" von Architekten und Vorgaben, hiess unsere Lösung für die meisten
+          Probleme: Java + Oracle Datenbank + Websphere + Wasserfall + Halbjahresrelease.
+          Ganz nach dem Motto "Wer als Werkzeug nur einen Hammer hat, sieht in jedem
+          Problem einen Nagel". Heute erscheinen neue Programmiersprachen, Technologien
+          und Methodiken die spezifische Probleme besser lösen, im Wochentakt. Mit der Openshift
+          verfügen wir nun auch über eine Plattform, mit der wir diese Technologievielfalt zu
+          unserem Vorteil nutzen können, wenn wir wollen. </p>
+        <p>Befinden wir uns also auf dem Weg von der
+          Kathedrale zum Basar und werden durch die Mischung verschiedener Technologien
+          wirklich innovativer, schneller und besser? Oder machen wir vieles einfach nur anders?</p>
+      -->
       <div class="rating pull-right">
             <rating ng-model="myRating" max="6" ng-show="isRegistered()" class="ratingStars"></rating>
             <button type="button" ng-click="rate()" class="btn btn-default" ng-show="isRegistered()">

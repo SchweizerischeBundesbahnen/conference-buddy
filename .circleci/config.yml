@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    
+    working_directory: ~/conferencebuddy
+
+    docker:
+      - image: circleci/openjdk:8-jdk-browsers
+
+    steps:
+
+      - checkout
+      
+      - run: mvn clean install -f server/conferencebuddy-parent/pom.xml
