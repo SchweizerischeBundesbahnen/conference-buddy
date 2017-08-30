@@ -75,7 +75,7 @@ module.exports = function(grunt) {
                         context: '/service',
                         host: 'localhost',
                         // host: 'sbb-conferencebuddy.elasticbeanstalk.com',
-                        port: 8090,
+                        port: 8080,
                         https: false,
                         changeOrigin: false,
                         xforward: false,
