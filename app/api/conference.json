@@ -318,7 +318,17 @@
       "company": "IT-SWE",
       "picture": "images/referenten/st.jpg",
       "bio": ""
+    },
+    {
+      "id": 36,
+      "name": "Markus",
+      "surname": "Färber",
+      "email": "",
+      "company": "BLS",
+      "picture": "images/referenten/mfa.jpg",
+      "bio": ""
     }
+
   ],
   "talks": [
     {
@@ -444,7 +454,7 @@
       "title": "B4 - SRE, DevOps done right",
       "abstract": "<p>Endlich hat die SBB ihren Cloudstack in Produktion. Nur ist es „DevOps“ wenn Teams selbst in Produktion deployen? Namhafte Cloud-Natives wie Netflix, Spotify, Google, Facebook, Uber, Dropbox unterhalten für Stabilität, Skalierung und Enabling der Entwickler spezielle Teams aus Site Reliability Engineers (SRE), welche das DevOps-Paradigma „implementieren.</p><p>Dieser Vortrag skizziert die Rolle von SRE in verschiedenen Organisationen und setzt sie in Relation zu unseren heutigen Deployment-, Releasing- und Incidentprozessen. Anhand von konkreten Beispielen wird gezeigt, welche Probleme sie damit angehen, welche Werkzeuge sie dafür nutzen und in welcher Kultur dies resultierte.</p>",
       "speakerIds": [
-        26
+        26,36
       ],
       "common": false
     },
