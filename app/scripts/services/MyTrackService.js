@@ -45,7 +45,7 @@ angular.module('conferenceBuddyApp').factory('MyTrackService',
                 result.push(presentations[i]);
             } else if (myTrackIds.length > 0) {
                 // parseInt to accept both strings and ints
-                myTrackPid = parseInt(myTrackIds[0], 10);
+                myTrackPid = myTrackIds[0];
                 myTrackPres = lookupPresentation(conference, myTrackPid);
                 if (i == (presentations.length - 1) || startsBefore(myTrackPres, presentations[i + 1])) {
                     myTrackIds = myTrackIds.slice(1);
