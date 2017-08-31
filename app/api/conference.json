@@ -327,8 +327,25 @@
       "company": "BLS",
       "picture": "images/referenten/mfa.jpg",
       "bio": ""
+    },
+    {
+      "id": 37,
+      "name": "Marc",
+      "surname": "Hoffmann",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/mh.jpg",
+      "bio": ""
+    },
+    {
+      "id": 38,
+      "name": "Tom",
+      "surname": "Schindl",
+      "email": "",
+      "company": " BestSolution.at",
+      "picture": "images/referenten/tsc.jpg",
+      "bio": ""
     }
-
   ],
   "talks": [
     {
@@ -548,7 +565,9 @@
       "abstract": "<p>RCS-D auf E4 zu migrieren ist nicht trivial: RCS-D ist eine grosse RCP Anwendung mit Echtzeitdarstellung der Zugsbewegungen und teilt sich die Codebasis teilweise mit ALEA. Für die Migration haben wir EclipseSource ins Boot genommen, um bei der Problembehebung Unterstützung zu bekommen—oder Bugs in E4 direkt zu flicken! In diesem Vortrag teilen wir unsere Erfahrung mit dieser Zusammenarbeit und reflektieren über die Dynamik des Open Source Modells.</p>",
       "speakerIds": [
         7,
-        21
+        21,
+        37,
+        38
       ],
       "common": false
     },
