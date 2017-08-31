@@ -141,16 +141,16 @@
     },
     {
       "id": 16,
-      "name": "Lorenz",
-      "surname": "Meyer",
+      "name": "Georgios",
+      "surname": "Antoniadis",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/lm.jpg",
+      "picture": "images/referenten/ga.jpg",
       "bio": ""
     },
     {
       "id": 17,
-      "name": "Manuell",
+      "name": "Manuel",
       "surname": "Wallrapp",
       "email": "",
       "company": "IT-SWE",
@@ -177,11 +177,11 @@
     },
     {
       "id": 20,
-      "name": "Michael",
-      "surname": "Moor",
+      "name": "Véronique",
+      "surname": "Constantin",
       "email": "",
       "company": "IT-SWE",
-      "picture": "images/referenten/mm.jpg",
+      "picture": "images/referenten/vc.jpg",
       "bio": ""
     },
     {
@@ -266,15 +266,6 @@
       "bio": ""
     },
     {
-      "id": 30,
-      "name": "Tobias",
-      "surname": "Denzler",
-      "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/td.jpg",
-      "bio": ""
-    },
-    {
       "id": 31,
       "name": "Tse",
       "surname": "Akumawah",
@@ -342,8 +333,17 @@
       "name": "Tom",
       "surname": "Schindl",
       "email": "",
-      "company": " BestSolution.at",
+      "company": "BestSolution.at",
       "picture": "images/referenten/tsc.jpg",
+      "bio": ""
+    },
+    {
+      "id": 39,
+      "name": "Raoul",
+      "surname": "Pärli",
+      "email": "",
+      "company": "IT-SWE",
+      "picture": "images/referenten/rp.jpg",
       "bio": ""
     }
   ],
@@ -443,8 +443,7 @@
       "abstract": "<p><b>jOOQ – Typesafe SQL direkt in Java</b><br>Hast du auch das Gefühl, dass Hibernate nicht die Lösung für alle Fälle sein kann? Frisst das N+1 Problem die Performance weg? ORMs sind ideal, um komplexe Objektgraphen auf Datenbanken abzubilden. Sie können jedoch auch zu ineffizientem oder schwer wartbarem Code führen. jOOQ ist eine Alternative, welche wir seit einem Jahr erfolgreich in unserer datenbanklastigen Applikation einsetzen. Mit jOOQ schreiben wir SQL direkt in Java, ohne die Nachteile von „SQL-Strings“ und JDBC-Boilerplate. jOOQ stellt die Korrektheit der SQL-Syntax und der Datentypen zur Kompilierzeit sicher. Anhand unserer Erfahrungen stelle ich jOOQ und ORMs gegenüber, und zeige, wann der Einsatz von jOOQ sinnvoll sein kann.</p><p><b>Jenkins Pipeline & Deployment-Konfiguration: Demo mit Openshift</b><br>Neu unterstützt Jenkins Jenkinsfiles: Damit definiere ich in meinem Git Repository, wie mein Projekt gebuildet werden soll. Jenkinsfiles sind deklarativer als bisherige Jenkins-Konfigurationen: ich sage eher WAS ich builden will und nicht mehr WIE. Ausserdem kann ich damit Openshift-Operationen bequem in einer Groovy DSL definieren. Damit sind Operationen wie Builds, Unit-Tests, Qualitätschecks, Deployments nach Jenkins, End-to-End Tests, Staging usw. einfacher möglich. Wir zeigen kurz was ESTA Cloud anbietet und was damit möglich wird (Jenkins ist eigentlich ein WZU Thema).</p>",
       "speakerIds": [
         13,
-        24,
-        30
+        24
       ],
       "common": false
     },
@@ -527,7 +526,8 @@
       "abstract": "<p>G# (Geodata Shared Platform) ist eine GIS Plattform der SBB für die SBB. Dieser Vortrag richtet sich an alle Interessenten, welche in irgendeiner Form Geodaten in der SBB verwalten, publizieren oder visualisieren wollen. Der Vortrag deckt das komplette Spektrum ab und veranschaulicht die Architektur und den Aufbau der Plattform, sowie dessen vielfältige Einsatzmöglichkeiten mit allen möglichen Technologien. Erstellen von einfach konfigurierbaren Web-Applikationen bis hin zu vollständigen Eigenentwicklungen im Web- oder iOS Umfeld. Der Vortrag wird anhand von konkret umgesetzten Beispielen mit der Verwendung der G# Plattform, untermauert. Der Vortrag soll die Vielfältigkeit der Plattform, sowie bereits einige Lessons Learned aufzeigen.</p>",
       "speakerIds": [
         20,
-        16
+        16,
+        39
       ],
       "common": false
     },
