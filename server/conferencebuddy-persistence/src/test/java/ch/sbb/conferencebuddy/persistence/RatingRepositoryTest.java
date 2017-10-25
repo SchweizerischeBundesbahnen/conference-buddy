@@ -17,7 +17,7 @@ import ch.sbb.conferencebuddy.model.Rating;
  */
 public class RatingRepositoryTest extends AbstractRepositoryTest {
 
-    private static final Double EXPECTED_AVG_RATING = 8d/3; //(5+1+2)/3
+    private static final Double EXPECTED_AVG_RATING = Math.round((8d/3) * 10d) / 10d; //(5+1+2)/3
     private static final String TEST_PID = "1";
     private static final Long TEST_RATE = Long.valueOf(1);
 
