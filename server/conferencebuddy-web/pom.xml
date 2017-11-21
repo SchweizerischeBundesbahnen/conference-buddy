@@ -15,7 +15,7 @@
 
   <properties>
     <tomcat.host>localhost</tomcat.host>
-    <tomcat.http.port>8080</tomcat.http.port>
+    <tomcat.http.port>8090</tomcat.http.port>
     <tomcat.demo.baseUrl>http://${tomcat.host}:${tomcat.http.port}/conferencebuddy-web</tomcat.demo.baseUrl>
   </properties>
 
