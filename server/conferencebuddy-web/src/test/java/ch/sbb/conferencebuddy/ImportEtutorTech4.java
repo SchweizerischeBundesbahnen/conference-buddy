@@ -22,34 +22,34 @@ import java.nio.file.Paths;
  */
 public class ImportEtutorTech4 extends AbstractRestIT {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ImportEtutorTech4.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(ImportEtutorTech4.class);
 
-    @Test
-    public void importAllTrack() throws IOException {
-        LOGGER.info(urlOfFirstPage);
-        importTrack("5", "A");
-        importTrack("6", "B");
-        importTrack("7", "C");
-        importTrack("8", "D");
-
-    }
-
-
-    private void importTrack( final String staticPartId, final String track) throws IOException {
-        LOGGER.info("import staticPart {}, track {}", staticPartId, track);
-        importCSV("1" + staticPartId, 10, 45, Resources.toString(Resources.getResource("tech4/1" + track + ".csv"), Charsets.UTF_8));
-        importCSV("2" + staticPartId, 11, 45, Resources.toString(Resources.getResource("tech4/2" + track + ".csv"), Charsets.UTF_8));
-        importCSV("3" + staticPartId, 14, 00, Resources.toString(Resources.getResource("tech4/3" + track + ".csv"), Charsets.UTF_8));
-        importCSV("4" + staticPartId, 15, 00, Resources.toString(Resources.getResource("tech4/4" + track + ".csv"), Charsets.UTF_8));
-    }
+  @Test
+  public void importAllTrack() throws IOException {
+    LOGGER.info(urlOfFirstPage);
+    importTrack("A");
+    importTrack("B");
+    importTrack("C");
+    importTrack("D");
+    importTrack("W");
+  }
 
 
-    private void importCSV(final String pid, final int hour, final int minutes, final String csv){
-        final String url = urlOfFirstPage + "admin/" + pid + "/" + hour + "/" + minutes;
+  private void importTrack(final String track) throws IOException {
+    LOGGER.info("importing track {}", track);
+    importCSV("1" + track, 10, 50, Resources.toString(Resources.getResource("tech4/1" + track + ".csv"), Charsets.UTF_8));
+    importCSV("2" + track, 11, 50, Resources.toString(Resources.getResource("tech4/2" + track + ".csv"), Charsets.UTF_8));
+    importCSV("3" + track, 15, 05, Resources.toString(Resources.getResource("tech4/3" + track + ".csv"), Charsets.UTF_8));
+    importCSV("4" + track, 16, 05, Resources.toString(Resources.getResource("tech4/4" + track + ".csv"), Charsets.UTF_8));
+  }
 
-        final Response response = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.text(csv));
-        Assert.assertNotNull(response);
-        Assert.assertEquals(Response.Status.NO_CONTENT.getStatusCode(), response.getStatus());
-    }
+
+  private void importCSV(final String pid, final int hour, final int minutes, final String csv) {
+    LOGGER.info("importing pid {}", pid);
+    final String url = urlOfFirstPage + "admin/" + pid + "/" + hour + "/" + minutes;
+    final Response response = client.target(url).request(MediaType.TEXT_PLAIN).post(Entity.text(csv));
+    Assert.assertNotNull(response);
+    Assert.assertEquals(Response.Status.NO_CONTENT.getStatusCode(), response.getStatus());
+  }
 
 }

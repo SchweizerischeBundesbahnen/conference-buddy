@@ -20,7 +20,7 @@ public abstract class AbstractRestIT {
      * Die URL von der ersten Seite, kann mit dem System-Property demo.baseUrl (z.B.. via mvn) überschrieben werden
      * (Je nachdem wo die Applikation betrieben wird). Standard-Wert ist für Tomcat konfiguriert.
      */
-    protected final String urlOfFirstPage = System.getProperty("demo.baseUrl", "http://localhost:8080/conferencebuddy-web/service/");
+    protected final String urlOfFirstPage = System.getProperty("demo.baseUrl", "http://localhost:8090/conferencebuddy-web/service/");
 
 
     @Before
