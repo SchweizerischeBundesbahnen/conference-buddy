@@ -10,7 +10,7 @@
       "surname": "Meyer",
       "email": "",
       "company": "CEO SBB",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/am.jpg",
       "bio": ""
     },
     {
@@ -19,7 +19,7 @@
       "surname": "Matzler",
       "email": "",
       "company": "Professor an der Freien Universität Bozen und Gastprofessor an der Universität Innsbruck",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ex/km.jpg",
       "bio": ""
     },
     {
@@ -28,7 +28,7 @@
       "surname": "Kummer",
       "email": "",
       "company": "IT",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/pk.jpg",
       "bio": ""
     },
     {
@@ -37,7 +37,7 @@
       "surname": "Naef",
       "email": "",
       "company": "CEO SwissSign",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ex/mn.jpg",
       "bio": ""
     },
     {
@@ -46,7 +46,7 @@
       "surname": "Hofer",
       "email": "",
       "company": "IT-DA-ARS      ",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/oh.jpg",
       "bio": ""
     },
     {
@@ -55,7 +55,7 @@
       "surname": "Kindler",
       "email": "",
       "company": "Deutsche Bahn",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ex/dk.jpg",
       "bio": ""
     },
     {
@@ -64,7 +64,7 @@
       "surname": "von Bonin",
       "email": "",
       "company": "Deutsche Bahn",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ex/bvn.jpg",
       "bio": ""
     },
     {
@@ -73,7 +73,7 @@
       "surname": "Reiser",
       "email": "",
       "company": "IT-DA-TSR",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/dr.jpg",
       "bio": ""
     },
     {
@@ -82,7 +82,7 @@
       "surname": "Gut",
       "email": "",
       "company": "I-AT-GLCM",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/tg.jpg",
       "bio": ""
     },
     {
@@ -91,16 +91,16 @@
       "surname": "Fuhrer",
       "email": "",
       "company": "IT-SCP-OEV",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/afh.jpg",
       "bio": ""
     },
     {
       "id": 11,
-      "name": "Ladina",
-      "surname": "Purtschert",
+      "name": "Fabio",
+      "surname": "Herzig",
       "email": "",
       "company": "P-V-GET",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/fh.jpg",
       "bio": ""
     },
     {
@@ -109,7 +109,7 @@
       "surname": "Spitz-Lehmann",
       "email": "",
       "company": "IT-DA-INO",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/psl.jpg",
       "bio": ""
     },
     {
@@ -118,7 +118,7 @@
       "surname": "Lichtsteiner-Ledermann",
       "email": "",
       "company": "IT-DA-INO",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/mlm.jpg",
       "bio": ""
     },
     {
@@ -127,7 +127,7 @@
       "surname": "Hurni",
       "email": "",
       "company": "IT-DA-INO",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/dh.jpg",
       "bio": ""
     },
     {
@@ -136,7 +136,7 @@
       "surname": "Lucas",
       "email": "",
       "company": "IT-DA-INO",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/cl.jpg",
       "bio": ""
     },
     {
@@ -145,7 +145,7 @@
       "surname": "Schneider",
       "email": "",
       "company": "IT-SWE-CD2-UX",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/as.jpg",
       "bio": ""
     },
     {
@@ -163,7 +163,7 @@
       "surname": "Krueger",
       "email": "",
       "company": "KOM-CX",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ek.jpg",
       "bio": ""
     },
     {
@@ -190,7 +190,7 @@
       "surname": "Lochbrunner",
       "email": "",
       "company": "IM-BW-ZEB-KBM",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/bl.jpg",
       "bio": ""
     },
     {
@@ -199,7 +199,7 @@
       "surname": "Baumann",
       "email": "",
       "company": "IT-SCP-MVD-VKA",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/cb.jpg",
       "bio": ""
     },
     {
@@ -208,7 +208,7 @@
       "surname": "Aerni",
       "email": "",
       "company": "P-VS",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/aa.jpg",
       "bio": ""
     },
     {
@@ -217,7 +217,7 @@
       "surname": "Ringwald",
       "email": "",
       "company": "IT-SCG-G",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/fr.jpg",
       "bio": ""
     },
     {
@@ -226,7 +226,7 @@
       "surname": "Leccardi",
       "email": "",
       "company": "G-VB-PJG",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/gl.jpg",
       "bio": ""
     },
     {
@@ -235,7 +235,7 @@
       "surname": "Scheidegger",
       "email": "",
       "company": "IT-SWE-CD3-MOB",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/js.jpg",
       "bio": ""
     },
     {
@@ -244,7 +244,7 @@
       "surname": "Bowald",
       "email": "",
       "company": "P-VM-EUS-ETW-PJ",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/tb.jpg",
       "bio": ""
     },
     {
@@ -262,7 +262,7 @@
       "surname": "Koray",
       "email": "",
       "company": "IT-SCF-EDA-MPC",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ky.jpg",
       "bio": ""
     },
     {
@@ -271,7 +271,7 @@
       "surname": "Schmidt",
       "email": "",
       "company": "IM-QS-PJ",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/rs.jpg",
       "bio": ""
     },
     {
@@ -280,7 +280,7 @@
       "surname": "Dolfus",
       "email": "",
       "company": "IT-DA-ARS",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/kd.jpg",
       "bio": ""
     },
     {
@@ -289,7 +289,7 @@
       "surname": "Riedle",
       "email": "",
       "company": "IM-PF-UE",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ar.jpg",
       "bio": ""
     },
     {
@@ -298,7 +298,7 @@
       "surname": "Gehrig",
       "email": "",
       "company": "P-OP-UE-SPR",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ug.jpg",
       "bio": ""
     },
     {
@@ -307,7 +307,7 @@
       "surname": "Fahrni",
       "email": "",
       "company": "P-OP-UE-SP",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/af.jpg",
       "bio": ""
     },
     {
@@ -316,7 +316,7 @@
       "surname": "Siegrist",
       "email": "",
       "company": "IT-SWE-CD1-ITG",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/tsi.jpg",
       "bio": ""
     },
     {
@@ -325,7 +325,7 @@
       "surname": "Krebs",
       "email": "",
       "company": "P-VS-GKPV-KMP",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/tk.jpg",
       "bio": ""
     },
     {
@@ -334,7 +334,7 @@
       "surname": "Sterchi",
       "email": "",
       "company": "P-UE-SOE",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ns.jpg",
       "bio": ""
     },
     {
@@ -343,7 +343,7 @@
       "surname": "Bowald",
       "email": "",
       "company": "P-VM-EUS-ETW-PJ",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/tb.jpg",
       "bio": ""
     },
     {
@@ -352,7 +352,7 @@
       "surname": "Richert",
       "email": "",
       "company": "IT-SCP-PLB-PJ1",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/ur.jpg",
       "bio": ""
     },
     {
@@ -361,7 +361,7 @@
       "surname": "Gaiser",
       "email": "",
       "company": "IT-SCP-PLB-PJ2",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/jg.jpg",
       "bio": ""
     },
     {
@@ -370,7 +370,7 @@
       "surname": "Kellenberger",
       "email": "",
       "company": "P-VM-EUS-ETW-PJ",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/rk.jpg",
       "bio": ""
     },
     {
@@ -379,7 +379,7 @@
       "surname": "Balsiger",
       "email": "",
       "company": "IT-SCI",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/jb.jpg",
       "bio": ""
     },
     {
@@ -388,7 +388,7 @@
       "surname": "Zischek",
       "email": "",
       "company": "I-SR40",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/vz.jpg",
       "bio": ""
     },
     {
@@ -397,7 +397,7 @@
       "surname": "Sieber",
       "email": "",
       "company": "IT-SCG-IWP",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ts.jpg",
       "bio": ""
     },
     {
@@ -406,7 +406,7 @@
       "surname": "Helwin",
       "email": "",
       "company": "IT-SCG-IWP-MWC",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/sh.jpg",
       "bio": ""
     },
     {
@@ -415,7 +415,7 @@
       "surname": "Schrag",
       "email": "",
       "company": "P-VM-ZUE-ZFV-ZT1",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ss.jpg",
       "bio": ""
     },
     {
@@ -424,7 +424,7 @@
       "surname": "Zuber",
       "email": "",
       "company": "P-VM-ZUE-ZFV-ZT1",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/nz.png",
       "bio": ""
     },
     {
@@ -433,7 +433,7 @@
       "surname": "Cotovanu",
       "email": "",
       "company": "IT-SWE-CD2-GI2",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/vc.jpg",
       "bio": ""
     },
     {
@@ -442,7 +442,7 @@
       "surname": "Rahel",
       "email": "",
       "company": "I-FN-VT-AFM-SKI",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/rr.jpg",
       "bio": ""
     },
     {
@@ -451,7 +451,7 @@
       "surname": "Winterling",
       "email": "",
       "company": "K-SQ-KP",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/fw.jpg",
       "bio": ""
     },
     {
@@ -460,7 +460,7 @@
       "surname": "Hitz",
       "email": "",
       "company": "Uni Bern",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ex/bhg.jpg",
       "bio": ""
     },
     {
@@ -469,7 +469,7 @@
       "surname": "Boos",
       "email": "",
       "company": "IT-SWE-CD2-UX",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/db.jpg",
       "bio": ""
     },
     {
@@ -478,7 +478,7 @@
       "surname": "Ehrat",
       "email": "",
       "company": "IT-SWE-CD2-UX",
-      "picture": "images/referenten/missing.jpg",
+      "picture": "images/referenten/ws/fe.jpg",
       "bio": ""
     },
     {
@@ -560,7 +560,7 @@
     {
       "id": "key",
       "title": "Keynote - Gelebte Digitale Transformation",
-      "abstract": "",
+      "abstract": "Gelebte Digitale Transformation",
       "speakerIds": [
         2
       ],
@@ -569,7 +569,7 @@
     {
       "id": "pg",
       "title": "Podiumsgespräch:  Digitalisierung & Mensch – ein Widerspruch?",
-      "abstract": "",
+      "abstract": "Digitalisierung & Mensch – ein Widerspruch?",
       "speakerIds": [
         57,
         58,
@@ -843,7 +843,7 @@
             "start": "10:30",
             "end": "10:50"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "1A",
@@ -852,7 +852,7 @@
             "start": "10:50",
             "end": "11:35"
           },
-          "roomId": "1"
+          "roomId": "2"
         },
         {
           "id": "2A",
@@ -861,7 +861,7 @@
             "start": "11:50",
             "end": "12:35"
           },
-          "roomId": "1"
+          "roomId": "3"
         },
         {
           "id": "mittagessen",
@@ -870,7 +870,7 @@
             "start": "12:35",
             "end": "14:20"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "pg",
@@ -888,7 +888,7 @@
             "start": "15:05",
             "end": "15:50"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
           "id": "4A",
@@ -897,7 +897,7 @@
             "start": "16:05",
             "end": "16:50"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
           "id": "cr",
@@ -915,7 +915,7 @@
             "start": "17:20",
             "end": "18:30"
           },
-          "roomId": "1"
+          "roomId": "6"
         }
       ]
     },
@@ -948,7 +948,7 @@
             "start": "10:30",
             "end": "10:50"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "1B",
@@ -966,7 +966,7 @@
             "start": "11:50",
             "end": "12:35"
           },
-          "roomId": "1"
+          "roomId": "2"
         },
         {
           "id": "mittagessen",
@@ -975,7 +975,7 @@
             "start": "12:35",
             "end": "14:20"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "pg",
@@ -1020,7 +1020,7 @@
             "start": "17:20",
             "end": "18:30"
           },
-          "roomId": "1"
+          "roomId": "6"
         }
       ]
     },
@@ -1053,7 +1053,7 @@
             "start": "10:30",
             "end": "10:50"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "1C",
@@ -1062,7 +1062,7 @@
             "start": "10:50",
             "end": "11:35"
           },
-          "roomId": "1"
+          "roomId": "3"
         },
         {
           "id": "2C",
@@ -1080,7 +1080,7 @@
             "start": "12:35",
             "end": "14:20"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "pg",
@@ -1098,7 +1098,7 @@
             "start": "15:05",
             "end": "15:50"
           },
-          "roomId": "1"
+          "roomId": "2"
         },
         {
           "id": "4C",
@@ -1107,7 +1107,7 @@
             "start": "16:05",
             "end": "16:50"
           },
-          "roomId": "1"
+          "roomId": "2"
         },
         {
           "id": "cr",
@@ -1125,7 +1125,7 @@
             "start": "17:20",
             "end": "18:30"
           },
-          "roomId": "1"
+          "roomId": "6"
         }
       ]
     },
@@ -1158,7 +1158,7 @@
             "start": "10:30",
             "end": "10:50"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "1D",
@@ -1167,7 +1167,7 @@
             "start": "10:50",
             "end": "11:35"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
           "id": "2D",
@@ -1176,7 +1176,7 @@
             "start": "11:50",
             "end": "12:35"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
           "id": "mittagessen",
@@ -1185,7 +1185,7 @@
             "start": "12:35",
             "end": "14:20"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "pg",
@@ -1203,7 +1203,7 @@
             "start": "15:05",
             "end": "15:50"
           },
-          "roomId": "1"
+          "roomId": "3"
         },
         {
           "id": "4D",
@@ -1212,7 +1212,7 @@
             "start": "16:05",
             "end": "16:50"
           },
-          "roomId": "1"
+          "roomId": "3"
         },
         {
           "id": "cr",
@@ -1230,7 +1230,7 @@
             "start": "17:20",
             "end": "18:30"
           },
-          "roomId": "1"
+          "roomId": "6"
         }
       ]
     },
@@ -1263,7 +1263,7 @@
             "start": "10:30",
             "end": "10:50"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "1W",
@@ -1272,7 +1272,7 @@
             "start": "10:50",
             "end": "11:35"
           },
-          "roomId": "1"
+          "roomId": "5"
         },
         {
           "id": "2W",
@@ -1281,7 +1281,7 @@
             "start": "11:50",
             "end": "12:35"
           },
-          "roomId": "1"
+          "roomId": "5"
         },
         {
           "id": "mittagessen",
@@ -1290,7 +1290,7 @@
             "start": "12:35",
             "end": "14:20"
           },
-          "roomId": "1"
+          "roomId": "6"
         },
         {
           "id": "pg",
@@ -1308,7 +1308,7 @@
             "start": "15:05",
             "end": "15:50"
           },
-          "roomId": "1"
+          "roomId": "5"
         },
         {
           "id": "4W",
@@ -1317,7 +1317,7 @@
             "start": "16:05",
             "end": "16:50"
           },
-          "roomId": "1"
+          "roomId": "5"
         },
         {
           "id": "cr",
@@ -1335,7 +1335,7 @@
             "start": "17:20",
             "end": "18:30"
           },
-          "roomId": "1"
+          "roomId": "6"
         }
       ]
     }
@@ -1343,23 +1343,27 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Raum1"
+      "name": "Trafohalle, 1. OG"
     },
     {
       "id": 2,
-      "name": "Raum2"
+      "name": "36.2, EG"
     },
     {
       "id": 3,
-      "name": "Raum3"
+      "name": "36.3, EG"
     },
     {
       "id": 4,
-      "name": "Raum4"
+      "name": "Glassaal, 1. OG"
     },
     {
       "id": 5,
-      "name": "Raum5"
+      "name": "Hertz, EG"
+    },
+    {
+      "id": 6,
+      "name": "Halle 37, EG"
     }
   ]
 }
