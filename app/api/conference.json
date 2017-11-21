@@ -1,385 +1,579 @@
 {
   "id": 99999,
-  "name": "SBB IT Developer Day 2017",
-  "location": "Gurten",
-  "date": "07.09.2017",
+  "name": "SBB Tech4 2017",
+  "location": "Baden",
+  "date": "1. Dezember 2017",
   "speakers": [
     {
       "id": 1,
-      "name": "Alina",
-      "surname": "Mylka",
+      "name": "Andreas",
+      "surname": "Meyer",
       "email": "",
-      "company": "IT-SWE",
+      "company": "CEO SBB",
       "picture": "images/referenten/am.jpg",
       "bio": ""
     },
     {
       "id": 2,
-      "name": "Andres",
-      "surname": "Almiray",
+      "name": "Kurt",
+      "surname": "Matzler",
       "email": "",
-      "company": "Canoo Engineering AG",
-      "picture": "images/referenten/aa.jpg",
+      "company": "Professor an der Freien Universität Bozen und Gastprofessor an der Universität Innsbruck",
+      "picture": "images/referenten/ex/km.jpg",
       "bio": ""
     },
     {
       "id": 3,
-      "name": "Cédric",
-      "surname": "Lavanchy",
+      "name": "Peter",
+      "surname": "Kummer",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/cl.jpg",
+      "company": "IT",
+      "picture": "images/referenten/pk.jpg",
       "bio": ""
     },
     {
       "id": 4,
-      "name": "Christoph",
-      "surname": "Bühlmann",
+      "name": "Markus",
+      "surname": "Naef",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/cb.jpg",
+      "company": "CEO SwissSign",
+      "picture": "images/referenten/ex/mn.jpg",
       "bio": ""
     },
     {
       "id": 5,
-      "name": "Claude-Alain",
-      "surname": "Brohy",
+      "name": "Oliver",
+      "surname": "Hofer",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/cab.jpg",
+      "company": "IT-DA-ARS      ",
+      "picture": "images/referenten/oh.jpg",
       "bio": ""
     },
     {
       "id": 6,
-      "name": "Da(gile)niel",
-      "surname": "Marthaler",
+      "name": "Daniel",
+      "surname": "Kindler",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/dm.jpg",
+      "company": "Deutsche Bahn",
+      "picture": "images/referenten/ex/dk.jpg",
       "bio": ""
     },
     {
       "id": 7,
-      "name": "Erwann",
-      "surname": "Wernli",
+      "name": "Moritz",
+      "surname": "von Bonin",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ew.jpg",
+      "company": "Deutsche Bahn",
+      "picture": "images/referenten/ex/bvn.jpg",
       "bio": ""
     },
     {
       "id": 8,
-      "name": "Florian",
-      "surname": "Seidl",
+      "name": "David",
+      "surname": "Reiser",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/fs.jpg",
+      "company": "IT-DA-TSR",
+      "picture": "images/referenten/dr.jpg",
       "bio": ""
     },
     {
       "id": 9,
-      "name": "Gilles",
-      "surname": "Zimmermann",
+      "name": "Thomas",
+      "surname": "Gut",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/gz.jpg",
+      "company": "I-AT-GLCM",
+      "picture": "images/referenten/tg.jpg",
       "bio": ""
     },
     {
       "id": 10,
-      "name": "Hannes",
-      "surname": "Gassert",
+      "name": "Andreas",
+      "surname": "Fuhrer",
       "email": "",
-      "company": "Liip",
-      "picture": "images/referenten/hg.jpg",
+      "company": "IT-SCP-OEV",
+      "picture": "images/referenten/afh.jpg",
       "bio": ""
     },
     {
       "id": 11,
-      "name": "Igor",
-      "surname": "Masen",
+      "name": "Fabio",
+      "surname": "Herzig",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/im.jpg",
+      "company": "P-V-GET",
+      "picture": "images/referenten/fh.jpg",
       "bio": ""
     },
     {
       "id": 12,
-      "name": "Ilir",
-      "surname": "Fetai",
+      "name": "Patricia",
+      "surname": "Spitz-Lehmann",
       "email": "",
-      "company": "IT-DA",
-      "picture": "images/referenten/if.jpg",
+      "company": "IT-DA-INO",
+      "picture": "images/referenten/ws/psl.jpg",
       "bio": ""
     },
     {
       "id": 13,
-      "name": "Janne",
-      "surname": "Hyötylä",
+      "name": "Marlyse",
+      "surname": "Lichtsteiner-Ledermann",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/jh.jpg",
+      "company": "IT-DA-INO",
+      "picture": "images/referenten/ws/mlm.jpg",
       "bio": ""
     },
     {
       "id": 14,
-      "name": "Jonas",
-      "surname": "Bandi",
+      "name": "Dominic",
+      "surname": "Hurni",
       "email": "",
-      "company": "jonasbandi.net",
-      "picture": "images/referenten/jb.jpg",
-      "bio": "Jonas Bandi hat 15 Jahre Erfahrung als Entwickler in Enterprise-Projekten. Aktuell arbeitet er als Freelancer in verschiedenen Entwicklungs- und Beratungsmandaten mit dem Fokus auf der Realisierung von komplexen Web-Applikationen. Daneben unterrichtet er seit 9 Jahren an der Berner Fachhochschule, unteranderem im CAS 'Applikationsentwicklung mit JavaScript & HTML5'. In den letzen Jahren hat er ausserdem viele InHouse-Kurse und Coachings für moderene Webentwicklung und AngularJS im Enterprise Umfeld durchgeführt."
+      "company": "IT-DA-INO",
+      "picture": "images/referenten/ws/dh.jpg",
+      "bio": ""
     },
     {
       "id": 15,
-      "name": "Kevin",
-      "surname": "Kreuzer",
+      "name": "Christoph",
+      "surname": "Lucas",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/kk.jpg",
+      "company": "IT-DA-INO",
+      "picture": "images/referenten/ws/cl.jpg",
       "bio": ""
     },
     {
       "id": 16,
-      "name": "Georgios",
-      "surname": "Antoniadis",
+      "name": "Andrea",
+      "surname": "Schneider",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ga.jpg",
+      "company": "IT-SWE-CD2-UX",
+      "picture": "images/referenten/as.jpg",
       "bio": ""
     },
     {
       "id": 17,
-      "name": "Manuel",
-      "surname": "Wallrapp",
+      "name": "Fabian",
+      "surname": "Imsand",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/mw.jpg",
+      "company": "IT-SWE-CD3-MOB",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
       "id": 18,
-      "name": "Michael",
-      "surname": "Fetzer",
+      "name": "Eva",
+      "surname": "Krueger",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/mf.jpg",
+      "company": "KOM-CX",
+      "picture": "images/referenten/ek.jpg",
       "bio": ""
     },
     {
       "id": 19,
-      "name": "Michael",
-      "surname": "Krausse",
+      "name": "Mélanie",
+      "surname": "Muggli",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/mk.jpg",
+      "company": "P-V-MA-KNA",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
       "id": 20,
-      "name": "Véronique",
-      "surname": "Constantin",
+      "name": "Alexandra",
+      "surname": "Zimmermann Peter",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/vc.jpg",
+      "company": "IT-SCF-IM",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
       "id": 21,
-      "name": "Michael",
-      "surname": "Rothenbühler",
+      "name": "Bruno",
+      "surname": "Lochbrunner",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/mr.jpg",
+      "company": "IM-BW-ZEB-KBM",
+      "picture": "images/referenten/bl.jpg",
       "bio": ""
     },
     {
       "id": 22,
-      "name": "Neil",
-      "surname": "Stevenson",
+      "name": "Claude",
+      "surname": "Baumann",
       "email": "",
-      "company": "Hazelcast",
-      "picture": "images/referenten/ns.jpg",
+      "company": "IT-SCP-MVD-VKA",
+      "picture": "images/referenten/cb.jpg",
       "bio": ""
     },
     {
       "id": 23,
-      "name": "Nima",
-      "surname": "Riahi",
+      "name": "Adrian",
+      "surname": "Aerni",
       "email": "",
-      "company": "IT-SCF",
-      "picture": "images/referenten/nr.jpg",
+      "company": "P-VS",
+      "picture": "images/referenten/aa.jpg",
       "bio": ""
     },
     {
       "id": 24,
-      "name": "Philipp",
-      "surname": "Oser",
+      "name": "Fabian",
+      "surname": "Ringwald",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/po.jpg",
+      "company": "IT-SCG-G",
+      "picture": "images/referenten/fr.jpg",
       "bio": ""
     },
     {
       "id": 25,
-      "name": "Reto",
-      "surname": "Lehmann",
+      "name": "Gianpaolo",
+      "surname": "Leccardi",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/rl.jpg",
+      "company": "G-VB-PJG",
+      "picture": "images/referenten/gl.jpg",
       "bio": ""
     },
     {
       "id": 26,
-      "name": "Sebastian",
-      "surname": "Graf",
+      "name": "Joe",
+      "surname": "Scheidegger",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/sg.jpg",
+      "company": "IT-SWE-CD3-MOB",
+      "picture": "images/referenten/ws/js.jpg",
       "bio": ""
     },
     {
       "id": 27,
-      "name": "Simon",
-      "surname": "Martinelli",
+      "name": "Tobias",
+      "surname": "Bowald",
       "email": "",
-      "company": "72 Services GmbH",
-      "picture": "images/referenten/sm.jpg",
-      "bio": "Simon Martinelli ist Geschäftsführer der 72 Services GmbH und als Software Architekt, Entwickler, Berater und Trainer im Java EE Umfeld tätig.  Er verfügt über 20 Jahre Erfahrung in der Software Entwicklung in verschiedenen Rollen in Projekten unterschiedlicher Grösse. Durch seine Tätigkeit als Dozent an der Berner Fachhochschule (SWS) in den Bereichen Java EE Architektur und Design, Persistenztechnologien und DevOps kann er seine Interessen vertiefen und sein Know-How weitergeben."
+      "company": "P-VM-EUS-ETW-PJ",
+      "picture": "images/referenten/ws/tb.jpg",
+      "bio": ""
     },
     {
       "id": 28,
-      "name": "Stefan",
-      "surname": "Zeller",
+      "name": "Julian",
+      "surname": "Renninger",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/sz.jpg",
+      "company": "P-HR-PE-NP-HOP",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     },
     {
       "id": 29,
-      "name": "Thomas",
-      "surname": "Siegrist",
+      "name": "Yersel",
+      "surname": "Koray",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ts.jpg",
+      "company": "IT-SCF-EDA-MPC",
+      "picture": "images/referenten/ky.jpg",
+      "bio": ""
+    },
+    {
+      "id": 30,
+      "name": "Roman",
+      "surname": "Schmidt",
+      "email": "",
+      "company": "IM-QS-PJ",
+      "picture": "images/referenten/rs.jpg",
       "bio": ""
     },
     {
       "id": 31,
-      "name": "Tse",
-      "surname": "Akumawah",
+      "name": "Kirsten",
+      "surname": "Dolfus",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/ta.jpg",
+      "company": "IT-DA-ARS",
+      "picture": "images/referenten/kd.jpg",
       "bio": ""
     },
     {
       "id": 32,
-      "name": "Stefan",
-      "surname": "Tilkov",
+      "name": "Anja",
+      "surname": "Riedle",
       "email": "",
-      "company": "innoQ",
-      "picture": "images/referenten/st2.jpg",
-      "bio": "Stefan Tilkov ist Geschäftsführer und Principal Consultant bei der innoQ Deutschland GmbH, wo er sich vorwiegend mit der strategischen Beratung von Kunden im Umfeld von Softwarearchitekturen beschäftigt. Er ist Autor des Buchs “REST und HTTP”, Mitherausgeber von “SOA-Expertenwissen” (beide dpunkt.verlag), Autor zahlreicher Fachartikel und häufiger Sprecher auf internationalen Konferenzen."
+      "company": "IM-PF-UE",
+      "picture": "images/referenten/ar.jpg",
+      "bio": ""
     },
     {
       "id": 33,
-      "name": "Bernhard",
-      "surname": "Rytz",
+      "name": "Urs",
+      "surname": "Gehrig",
       "email": "",
-      "company": "IT",
-      "picture": "images/referenten/br.jpg",
+      "company": "P-OP-UE-SPR",
+      "picture": "images/referenten/ug.jpg",
       "bio": ""
     },
     {
       "id": 34,
-      "name": "Christoph",
-      "surname": "Frei",
+      "name": "Alfred",
+      "surname": "Fahrni",
       "email": "",
-      "company": "IT-SCI-TPR",
-      "picture": "images/referenten/cf.jpg",
+      "company": "P-OP-UE-SP",
+      "picture": "images/referenten/af.jpg",
       "bio": ""
     },
     {
       "id": 35,
-      "name": "Stefano",
-      "surname": "Trentini",
+      "name": "Thomas",
+      "surname": "Siegrist",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/st.jpg",
+      "company": "IT-SWE-CD1-ITG",
+      "picture": "images/referenten/tsi.jpg",
       "bio": ""
     },
     {
       "id": 36,
-      "name": "Markus",
-      "surname": "Färber",
+      "name": "Tabea",
+      "surname": "Krebs",
       "email": "",
-      "company": "BLS",
-      "picture": "images/referenten/mfa.jpg",
+      "company": "P-VS-GKPV-KMP",
+      "picture": "images/referenten/tk.jpg",
       "bio": ""
     },
     {
       "id": 37,
-      "name": "Marc",
-      "surname": "Hoffmann",
+      "name": "Nadja",
+      "surname": "Sterchi",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/mh.jpg",
+      "company": "P-UE-SOE",
+      "picture": "images/referenten/ns.jpg",
       "bio": ""
     },
     {
       "id": 38,
-      "name": "Tom",
-      "surname": "Schindl",
+      "name": "Tobias",
+      "surname": "Bowald",
       "email": "",
-      "company": "BestSolution.at",
-      "picture": "images/referenten/tsc.jpg",
+      "company": "P-VM-EUS-ETW-PJ",
+      "picture": "images/referenten/tb.jpg",
       "bio": ""
     },
     {
       "id": 39,
-      "name": "Raoul",
-      "surname": "Pärli",
+      "name": "Urs",
+      "surname": "Richert",
       "email": "",
-      "company": "IT-SWE",
-      "picture": "images/referenten/rp.jpg",
+      "company": "IT-SCP-PLB-PJ1",
+      "picture": "images/referenten/ws/ur.jpg",
+      "bio": ""
+    },
+    {
+      "id": 40,
+      "name": "Jennifer",
+      "surname": "Gaiser",
+      "email": "",
+      "company": "IT-SCP-PLB-PJ2",
+      "picture": "images/referenten/jg.jpg",
+      "bio": ""
+    },
+    {
+      "id": 41,
+      "name": "Roman",
+      "surname": "Kellenberger",
+      "email": "",
+      "company": "P-VM-EUS-ETW-PJ",
+      "picture": "images/referenten/rk.jpg",
+      "bio": ""
+    },
+    {
+      "id": 42,
+      "name": "Jürg",
+      "surname": "Balsiger",
+      "email": "",
+      "company": "IT-SCI",
+      "picture": "images/referenten/jb.jpg",
+      "bio": ""
+    },
+    {
+      "id": 43,
+      "name": "Yves",
+      "surname": "Zischek",
+      "email": "",
+      "company": "I-SR40",
+      "picture": "images/referenten/vz.jpg",
+      "bio": ""
+    },
+    {
+      "id": 44,
+      "name": "Thomas",
+      "surname": "Sieber",
+      "email": "",
+      "company": "IT-SCG-IWP",
+      "picture": "images/referenten/ts.jpg",
+      "bio": ""
+    },
+    {
+      "id": 45,
+      "name": "Steve",
+      "surname": "Helwin",
+      "email": "",
+      "company": "IT-SCG-IWP-MWC",
+      "picture": "images/referenten/sh.jpg",
+      "bio": ""
+    },
+    {
+      "id": 46,
+      "name": "Sven",
+      "surname": "Schrag",
+      "email": "",
+      "company": "P-VM-ZUE-ZFV-ZT1",
+      "picture": "images/referenten/ss.jpg",
+      "bio": ""
+    },
+    {
+      "id": 47,
+      "name": "Nicolas",
+      "surname": "Zuber",
+      "email": "",
+      "company": "P-VM-ZUE-ZFV-ZT1",
+      "picture": "images/referenten/nz.png",
+      "bio": ""
+    },
+    {
+      "id": 48,
+      "name": "Vasile",
+      "surname": "Cotovanu",
+      "email": "",
+      "company": "IT-SWE-CD2-GI2",
+      "picture": "images/referenten/vc.jpg",
+      "bio": ""
+    },
+    {
+      "id": 49,
+      "name": "Ryf",
+      "surname": "Rahel",
+      "email": "",
+      "company": "I-FN-VT-AFM-SKI",
+      "picture": "images/referenten/rr.jpg",
+      "bio": ""
+    },
+    {
+      "id": 50,
+      "name": "Felix",
+      "surname": "Winterling",
+      "email": "",
+      "company": "K-SQ-KP",
+      "picture": "images/referenten/fw.jpg",
+      "bio": ""
+    },
+    {
+      "id": 51,
+      "name": "Benedikt",
+      "surname": "Hitz",
+      "email": "",
+      "company": "Uni Bern",
+      "picture": "images/referenten/ex/bhg.jpg",
+      "bio": ""
+    },
+    {
+      "id": 52,
+      "name": "Daniel",
+      "surname": "Boos",
+      "email": "",
+      "company": "IT-SWE-CD2-UX",
+      "picture": "images/referenten/ws/db.jpg",
+      "bio": ""
+    },
+    {
+      "id": 53,
+      "name": "Franco",
+      "surname": "Ehrat",
+      "email": "",
+      "company": "IT-SWE-CD2-UX",
+      "picture": "images/referenten/ws/fe.jpg",
+      "bio": ""
+    },
+    {
+      "id": 54,
+      "name": "Filipa",
+      "surname": "Cordeiro",
+      "email": "",
+      "company": "IT-SWE-CD2-UX",
+      "picture": "images/referenten/missing.jpg",
+      "bio": ""
+    },
+    {
+      "id": 55,
+      "name": "Gaby",
+      "surname": "Pfandt",
+      "email": "",
+      "company": "IT-SWE-CD2-UX",
+      "picture": "images/referenten/missing.jpg",
+      "bio": ""
+    },
+    {
+      "id": 56,
+      "name": "Gianpaolo",
+      "surname": "Leccardi",
+      "email": "",
+      "company": "G-VB-PJG",
+      "picture": "images/referenten/missing.jpg",
+      "bio": ""
+    },
+    {
+      "id": 57,
+      "name": "Jochen",
+      "surname": "Decker",
+      "email": "",
+      "company": "IT-DA",
+      "picture": "images/referenten/missing.jpg",
+      "bio": ""
+    },
+    {
+      "id": 58,
+      "name": "Sandra",
+      "surname": "Hutterli",
+      "email": "",
+      "company": "HR-BIL",
+      "picture": "images/referenten/missing.jpg",
+      "bio": ""
+    },
+    {
+      "id": 59,
+      "name": "Markus",
+      "surname": "Streckeisen",
+      "email": "",
+      "company": "IM-BW",
+      "picture": "images/referenten/missing.jpg",
       "bio": ""
     }
   ],
   "talks": [
     {
-      "id": "intro",
-      "title": "Begrüssung & Infos",
-      "abstract": "",
-      "speakerIds": [],
-      "common": true
-    },
-    {
-      "id": "eroeffnungsrede",
-      "title": "Eröffnungsrede",
+      "id": "or",
+      "title": "Opening Remarks",
       "abstract": "",
       "speakerIds": [
-        35
+        1,
+        3
       ],
       "common": true
     },
     {
-      "id": "keynote1",
-      "title": "Keynote 1 - Kunden, Menschen – was hat dies mit SmartRail 4.0 zu tun?",
-      "abstract": "<p><ul><li>Mobilität ist ein zentraler Erfolgsfaktor in unserer Volkswirtschaft der Schweiz und wir sind als Bewohner dieses Landes heute darauf eingestellt, diese frei zu nutzen – gerade wie wir sie individuell benötigen. Dieses Grundbedürfnis wird sich weiter verstärken.</li><li>Ein paar Indikationen kündigen jedoch deutlich an, dass wir uns nicht auf den erarbeiteten Lorbeeren ausruhen können, sondern ins Handeln kommen müssen. Sonst werden uns andere ein- und überholen.</li><li>Backbone des öffentlichen Mobilitätssystems ist (heute noch) die Bahn. Doch sie gilt als teuer, eher unflexibel und andere Verkehrsträger holen gerade deutlich auf und einige prophezeien gar schon das Ende der Bahn.</li><li>Wir glauben, dass die Bahn eine reale Chance hat auch in Zukunft eine entscheidende Rolle zu spielen. Voraussetzung ist jedoch, dass wir bei deren Weiterentwicklung noch viel konsequenter von den Menschen ausgehen müssen, die diese Mobilität auch nutzen wollen/werden – nicht nur die Bahnnutzer</li><li>SR4.0 ist kein technisches Programm, sondern ein Kundeprojekt, welches Technik konsequent nutzt um Kundenbedürfnisse wertorientiert zu realisieren – ganz im Sinne der Nachhaltigkeit.</li><li>Als Entwickler sind wir gefordert und nur erfolgreich, wenn wir ganz individuell bereit sind wie ein  Kunde zu denken und zu handeln.</li></ul></p>",
+      "id": "cr",
+      "title": "Closing Remarks",
+      "abstract": "",
       "speakerIds": [
-        33,
-        34
+        1,
+        3
       ],
       "common": true
     },
     {
-      "id": "keynote2",
-      "title": "Keynote 2 - Nachhaltige Architekturen: Modularität durch 'Self-contained systems'",
-      "abstract": "<p>Jahrelang haben Architekten versucht, möglichst viel zu standardisieren und Effizienz durch Homogenität zu erzielen. Aber häufig sind nur ein paar Versionen eines erfolgreichen Software-Systems notwendig, um es zu einem monolithischen, unwartbaren Klotz am Bein werden zu lassen, der Unmengen an Geld kostet und allen den Spaß an der Arbeit vermiest. In diesem Vortrag werfen wir einen Blick auf einige der Gründe für  diesen Effekt und sehen uns danach den Lösungsansatz SCS (Self-contained Systems) an, der Modularisierung durchein „System    of Systems“ in den Mittelpunkt stellt und viele Ähnlichkeiten, aber auch einige Unterschiede zu den aktuell viel besprochenen Microservices hat.</p>",
+      "id": "key",
+      "title": "Keynote - Gelebte Digitale Transformation",
+      "abstract": "Gelebte Digitale Transformation",
       "speakerIds": [
-        32
+        2
+      ],
+      "common": true
+    },
+    {
+      "id": "pg",
+      "title": "Podiumsgespräch:  Digitalisierung & Mensch – ein Widerspruch?",
+      "abstract": "Digitalisierung & Mensch – ein Widerspruch?",
+      "speakerIds": [
+        57,
+        58,
+        59
       ],
       "common": true
     },
@@ -398,204 +592,218 @@
       "common": true
     },
     {
-      "id": "A1",
-      "title": "A1 – Hilfe, die Affen kommen! Überleben mit resilienten Anwendungen.",
-      "abstract": "<p>Bei verteilten Systemen, wie wir sie oft in der SBB antreffen, funktionieren traditionelle Stabilitätsansätze nicht, bei denen versucht wird Zuverlässigkeit und Verfügbarkeit zu maximieren. Beim Resilient Software Design geht man hingegen davon aus, dass Fehler passieren und erstellt das System so, dass damit umgegangen werden kann: Do not try to avoid failures. Embrace them. In diesem Vortrag stellen wir die Grundprinzipien des Resilient Software Design Isolation, Redundanz, Lose Kopplung und Fallback vor und zeigen, wie wir das in der Applikation touri umgesetzt haben.</p>",
+      "id": "1A",
+      "title": "1A - Identity first! SwissID - das vertrauenswürdige Eco-System",
+      "abstract": "<p>SwissID heisst die schweizweite einheitliche digitale Identität, die von der SwissSign AG – dem Joint Venture von Post und SBB. Und wird den Zugang zur digitalen Schweiz vereinfachen. Das Abwickeln von Online-Geschäften wird mit SwissID in Zukunft nicht nur einfacher, sondern auch sicherer. SBB und Post decken mit SwissID ein grosses Bedürfnis in einem Wachstumsmarkt ab und leisten so einen wichtigen Beitrag zur Digitalisierung der Schweiz.</p>",
       "speakerIds": [
-        1,
-        28
+        3,
+        4
       ],
       "common": false
     },
     {
-      "id": "A2",
-      "title": "A2 - Double Session",
-      "abstract": "<p><b>Let’s do APIs!</b><br>Die SBB braucht im Umgang mit ihren Assets einen Weckruf. Wir müssen die Sichtweise auf Schnittstellen verändern und ihnen die längst nötige Aufmerksamkeit widmen. Der Vortrag präsentiert die dazu notwendigen Technologien und Werkzeuge und gibt einen Einblick in die Ideologie.</p><p><b>Mit Open Data an die Weltspitze</b><br>Der öffentliche Verkehr wird mehr und mehr ein riesengrosses Schnittstellenthema: der nahtlose Datenaustausch zwischen Transportunternehmen, Verkehrsmitteln, allerlei Onlineplattformen, Apps und mit Open Data auch der interessierten Öffentlichkeit ist eine Herausforderung — erst recht wenn es um Echtzeit-Datenströme geht. Um dieser Herausforderung Herr zu werden, braucht es professionelles API-Management. Tyk (http://tyk.io) ist eine moderne, leistungsfähige und skalierbare API Management Plattform, Open Source und in Go geschrieben, die das Erstellen, Verwalten, Analysieren, Absichern entwicklerfreundlicher Schnittstellen endlich einfach und sicher macht. Was konkret kann Tyk, wie arbeitet es sich damit, und wohin geht die Reise in Sachen APIs? Jenni und Gassert arbeiten bei Liip Bern, wo Tyk für die SBB aufgebaut und bei opentransportdata.swiss erstmals eingesetzt wurde. Sie teilen an den DevDays erstmals ihre Erfahrungen und Ideen dazu.</p>",
+      "id": "1B",
+      "title": "1B - Blockchain - Die Technologie, welche die digitale Welt verändert",
+      "abstract": "<p>Der aktuelle Blockchain-Hype mit den vielen Newsmeldungen und Vorträgen macht es uns nicht einfacher, das sonst schon schwer fassbare Thema einzuordnen. Wann und wie betrifft es mich und mein Geschäftsmodell? Wie und wann soll ich darauf reagieren? Welchen Nutzen und welche Risiken bringt es mit sich? Diese Fragen wollen wir im Referat beleuchten und zeigen auf, wie die SBB und die Deutsche Bahn die Thematik adressieren.</p>",
       "speakerIds": [
-        29,
-        10
+        5,
+        6,
+        7
       ],
       "common": false
     },
     {
-      "id": "A3",
-      "title": "A3 - Mit Kulturwandel zu moderner Software",
-      "abstract": "<p>Produkt NeTS - nicht gerade berühmt berüchtig für moderne und reaktive Architekturen und Lösungen. Ein klassisches JEE-Projekt der ersten Stunde mit allen vorstellbaren und gut bekannten Gebrechen. Stetiger Fachlicher und Technischer Druck mit Vorhaben wie Smart Rail oder auch der EOL-Phase der WAS 8.5 Plattform drohen auch die letzte Bastion einzureissen.<br>Monolithische Architekturen solcher Grösse abzulösen erfordert eine gehörige Portion Kreativität und in den Augen der etablierten Welt auch Leichtsinn. Wie sonst kann man sich auf neue Modelle wie Devops stürzen und mit klassischen rollenbildern brechen.<br>Um den Monolithen ins aktuelle Jahrzehnt zu transformieren, zeigen wir Mittel und Wege auf Architektonischer Seite wie auch Organisatorische und Kulturelle Aspekt auf.</p>",
+      "id": "1C",
+      "title": "1C - Effizienzsteigerung im Bereich Wartung und Störungsbehebung mit AR/VR im Gotthard und Ceneri",
+      "abstract": "<p>Mit AR/VR soll die Effizienz und Polyvalenz gesteigert werden.</p>",
       "speakerIds": [
-        4,
-        9,
-        3
+        8,
+        9
       ],
       "common": false
     },
     {
-      "id": "A4",
-      "title": "A4 - Serverless Computing",
-      "abstract": "<p>Das Angebot und die Nutzungsmöglichkeiten von Cloud-Services wachsen rasant an. Nebst der IaaS, PaaS und SaaS Angeboten, gibt es mittlerweile von einigen Cloud-Anbietern die Möglichkeit, Funktionen ereignisgesteuert aufzurufen und bedarfsgerecht abzurechnen. Dieser Ansatz wird Serverless Computing genannt (bekannt auch als Function as a Services – FaaS).<br>Beim Einsatz von Serverless Computing wird die Skalierbarkeit und Ausfallsicherheit der Infrastruktur vom Entwickler wegabstrahiert.  Das bedeutet, dass der Serverless-Service sich um die Bereitstellung der notwendigen Server und weiterer Ressourcen kümmert und zu jeder Zeit sicherstellt, dass die Anwendung ständig ausreichend Ressourcen zur Verfügung hat, um performant Anfragen zu beantworten. Der Cloud-Service organisiert hierbei unter anderem die automatische Skalierung der Server-Infrastruktur, des Speichers, des Netzwerks und anderer Ressourcen und übernimmt somit eigenständig das Kapazitätsmanagement.<br>Im ersten Teil dieses Vortrages werden wir die grundlegendsten Konzepte, sowie die Vor- und Nachteile von Serverless Computing vorstellen.<br>Im zweiten Teil werden wir  auf den Aufbau und die Architektur der AWS Serverless Plattform (AWS Lambda) eingehen.</p>",
+      "id": "1D",
+      "title": "1D - NOVA – oder wie man den Frosch küsst",
+      "abstract": "<p>Die öV-Vertriebsplattform NOVA ermöglicht völlig neue Zugänge zur Mobilität –wie werden Möglichkeiten Wirklichkeit? </p>",
       "speakerIds": [
-        12
-      ],
-      "common": false
-    },
-    {
-      "id": "B1",
-      "title": "B1 - Double Session",
-      "abstract": "<p><b>jOOQ – Typesafe SQL direkt in Java</b><br>Hast du auch das Gefühl, dass Hibernate nicht die Lösung für alle Fälle sein kann? Frisst das N+1 Problem die Performance weg? ORMs sind ideal, um komplexe Objektgraphen auf Datenbanken abzubilden. Sie können jedoch auch zu ineffizientem oder schwer wartbarem Code führen. jOOQ ist eine Alternative, welche wir seit einem Jahr erfolgreich in unserer datenbanklastigen Applikation einsetzen. Mit jOOQ schreiben wir SQL direkt in Java, ohne die Nachteile von „SQL-Strings“ und JDBC-Boilerplate. jOOQ stellt die Korrektheit der SQL-Syntax und der Datentypen zur Kompilierzeit sicher. Anhand unserer Erfahrungen stelle ich jOOQ und ORMs gegenüber, und zeige, wann der Einsatz von jOOQ sinnvoll sein kann.</p><p><b>Jenkins Pipeline & Deployment-Konfiguration: Demo mit Openshift</b><br>Neu unterstützt Jenkins Jenkinsfiles: Damit definiere ich in meinem Git Repository, wie mein Projekt gebuildet werden soll. Jenkinsfiles sind deklarativer als bisherige Jenkins-Konfigurationen: ich sage eher WAS ich builden will und nicht mehr WIE. Ausserdem kann ich damit Openshift-Operationen bequem in einer Groovy DSL definieren. Damit sind Operationen wie Builds, Unit-Tests, Qualitätschecks, Deployments nach Jenkins, End-to-End Tests, Staging usw. einfacher möglich. Wir zeigen kurz was ESTA Cloud anbietet und was damit möglich wird (Jenkins ist eigentlich ein WZU Thema).</p>",
-      "speakerIds": [
-        13,
-        24
-      ],
-      "common": false
-    },
-    {
-      "id": "B2",
-      "title": "B2 - Verteiltes Machine Learning im Dienste der Pendler",
-      "abstract": "<p>Vor dem Betreten des Zuges wissen, welcher Wagen am wenigsten belegt ist? Die Antwort automatisiert zu liefern ist Ziel des Belegungsprognose-Service (Pilotprojekt „Cleverpendeln“), mit geplanter Ausgabe auf SBB Mobile. Dafür werden Millionen Belegungsdatensätze (gemessen von Zugbegleitern) mit Variablen wie Abschnitt, Klasse, Wagenposition, Reservationen, Wetter, etc. in einem Entscheidungsbaum-Algorithmus (xgboost) abgeglichen. Die Speicheranforderungen überfordern allerdings selbst noch so athletische Maschinen. Der Ausweg: H2O, eine open-source Lösung für verteiltes maschinelles Lernen, Huckepack aufgesetzt auf Spark. Wir zeigen euch die Ausgangslage, die Daten und wie komplizierte Prognosemodelle auf der Big Data Plattform der SBB berechnet werden.</p>",
-      "speakerIds": [
-        23
-      ],
-      "common": false
-    },
-    {
-      "id": "B3",
-      "title": "B3 - Die Suchmaschine – das Q in CQRS",
-      "abstract": "<p>Das CQRS Pattern (Command-Query-Responsibility-Segregation) unterteilt das Datenmodell in zwei spezifische Modelle. Eines für das Abfragen/Anzeigen (Query) und eines für die Veränderungen (Command) der Daten. Während das Command-Modell mit traditionellen Mitteln wie O/R-Mapping und relationalen Datenbank implementiert werden kann, stellt sich die Frage wie das Query-Modell umgesetzt werden soll. Eine Möglichkeit ist die Verwendungen einer Suchmaschine wie Apache Solr oder Elasticsearch. Anhand eines konkreten Projektbeispiels aus dem Grosshandelsumfeld wird aufgezeigt, wie die Suchmaschine für das Query-Modells eingesetzt werden kann, wie die Daten der relationalen Datenbank in den Suchindex gelangen und welche speziellen Features der Suchmaschine, wie z.B. Synonyme, Auto-Suggest, oder Boosting, quasi «gratis» mitbenutzt werden können.</p>",
-      "speakerIds": [
-        27
-      ],
-      "common": false
-    },
-    {
-      "id": "B4",
-      "title": "B4 - SRE, DevOps done right",
-      "abstract": "<p>Endlich hat die SBB ihren Cloudstack in Produktion. Nur ist es „DevOps“ wenn Teams selbst in Produktion deployen? Namhafte Cloud-Natives wie Netflix, Spotify, Google, Facebook, Uber, Dropbox unterhalten für Stabilität, Skalierung und Enabling der Entwickler spezielle Teams aus Site Reliability Engineers (SRE), welche das DevOps-Paradigma „implementieren.</p><p>Dieser Vortrag skizziert die Rolle von SRE in verschiedenen Organisationen und setzt sie in Relation zu unseren heutigen Deployment-, Releasing- und Incidentprozessen. Anhand von konkreten Beispielen wird gezeigt, welche Probleme sie damit angehen, welche Werkzeuge sie dafür nutzen und in welcher Kultur dies resultierte.</p>",
-      "speakerIds": [
-        26,36
-      ],
-      "common": false
-    },
-    {
-      "id": "C1",
-      "title": "C1 - React & Redux - Eine Alternative zu Angular",
-      "abstract": "<p>React ist eine moderne JavaScript Library für die Erstellung von User Interfaces. Der Fokus liegt dabei bei der Erstellung von komplexen Single Page Applikationen. In nur 4 Jahren hat sich React zu einem der populärsten Web-Frameworks entwickelt und wir von unzähligen Firmen verwendet (Facebook, Apple, Microsoft, Netflix …) und viele Produkte setzen React ein (Jenkins, Firefox, WhatsApp, Office UI Fabric …).</p><p>React findet nicht nur in der Web-Entwicklung, sondern auch bei der Entwicklung von nativen Mobile-Apps (React Native) eine grosse Verbreitung. In seinem Kern bietet React ein sehr einfaches, aber mächtiges Komponenten-Model. React bricht dabei mit der traditionellen Separierung von Layout (HTML) und Verhalten (JavaScript): Mittels JSX können Templates im JavaScript Code deklariert werden. Dieser neue Ansatz erlaubt eine effiziente und produktive Programmierung. Bei der Programmierung von React Komponenten kommen Konzepte aus der funktionalen reaktiven Programmierung zum Einsatz. Muster aus der funktionalen reaktiven Programmierung können auch als Architektur-Pattern eingesetzt werden.Eine Ausprägung davon ist die „Flux“-Architektur, welche die im React-Ökosystem verbreitet ist. Flux stellte eine Alternative zu dem traditionellen MVC Pattern dar um den State einer Web-Applikation zu verwalten.</p><p>Redux ist eine besonders innovative Implementation des Flux Pattern und findet vor allem im Zusammenspiel mit React grossen Anklang. Redux kann aber auch mit anderen Frameworks (z.B. Angular) eingesetzt werden. React und Redux brechen mit dem traditionellen „De-Facto Standard“ in der Webentwicklung. Mit neuen innovativen Ansätzen wird die Frontend-Entwicklung vereinfacht. Selbst wenn React nicht direkt in einem aktuellen Projekt eingesetzt wird, lohnt es sich daher die Ansätze von React und Redux zu studieren.</p>",
-      "speakerIds": [
-        14
-      ],
-      "common": false
-    },
-    {
-      "id": "C2",
-      "title": "C2 - Amazon Web Services Nutzung bei WZU",
-      "abstract": "<p>Im Februar 2017 hat das Team WZU sämtliche Entwicklungswerkzeuge in die Public Cloud zu Amazon Web Services migriert. Das Vorhaben kam einem kleinen RZ-Move gleich, denn dabei wurden knapp 100 Server mit 25 TB Daten und 500 CPUs in die Wolke verschoben. Doch man hat nicht nur das RZ gewechselt, sondern auch die Arbeitsweise an die Möglichkeiten einer Public Cloud angepasst und im Team etabliert. Themen wie Infrastructure-as-Code, Automatisierung oder Immutable Infrastructure werden bei uns aktiv gelebt. In diesem Vortrag möchten wir aufzeigen wie wir diese Methodiken implementiert haben und welche Vorteile sie für uns und evtl. auch für euch bringen.</p>",
-      "speakerIds": [
+        10,
         11
       ],
       "common": false
     },
     {
-      "id": "C3",
-      "title": "C3 - Schnittstellen - die Achillesferse von 'Agile'",
-      "abstract": "<p>In der Entwicklung bewegen wir uns an in dem meisten Vorhaben langsam in die Richtung agilen Vorgehens und wollen so immer öfter rasch unmittelbaren Nutzen für unsere Kunden und Mitarbeiter schaffen. Leider enden unsere Möglichkeiten meist abrupt, wenn es darum geht Schnittstellen anzubinden (bzw. Daten von anderen Systemen zu beziehen. Die Schnittstellen sind sehr aufwändig zu konsumieren, auf sehr schwergewichtige Systeme ausgerichtet und jede Änderung, aber oft sogar auch schon jede Anbindung erfordert einen hohen organisatorischen Aufwand und lange Vorlaufzeiten, die nicht ins agile Vorgehen passen und uns eine pragmatische Lösungsfindung sehr oft verunmöglichen.</p><p>Daher fliesst ein grosser Teil unseres Entwicklungsaufwandes - oft mehr als die Hälfte - statt in die Umsetzung von tatsächlich nutzbaren Features in die Anbindung von Schnittstellen, unsere Entwicklung wird langsam und teuer. Und es ist zu erwarten dass dieses Problem mit der fortschreitendenden Durchdringung des Geschäfts mit IT immer schlimmer werden wird, wenn es uns nicht gelingt hier andere Wege zu finden.</p><ul><li>Wie ist es dazu gekommen, warum ist die Situation heute so?</li><li>Ist das unvermeidbar? Oder was können wir besser machen, woran scheitert es?</li><li>Hindern uns vor allem technische Probleme, oder liegt es an der Organisation?</li></ul>",
+      "id": "1W",
+      "title": "1W - InnoPoly: Bringt Eure Innovationsidee schnellstmöglich zum Erfolg!",
+      "abstract": "<p>Der Workshop zeigt spielerisch auf, wie die eigene Idee zum Start und möglichst schnell ins Business gebracht werden kann. Die Teilnehmenden lernen dabei spielerisch das SBB Innovationsmanagement kennen. Sie wissen anschliessend an wen sie sich direkt wenden können, was die minimalen Voraussetzungen sind und welche Hilfsmittel ihnen zur Verfügung stehen.</p>",
       "speakerIds": [
-        8
+        12,
+        13,
+        14,
+        15
       ],
       "common": false
     },
     {
-      "id": "C4",
-      "title": "C4 - Be In / Be Out ohne Hardware?",
-      "abstract": "<p>In den letzten Jahren hat sich auf dem Markt einiges getan und diverse Anbieter arbeiten bereits im Bereich automatische Zug und/oder Reiseerkennung mit der SBB zusammen. Da aber alle Lösungen aus einem oder mehreren Gründen nicht ideal sind, kam die Frage auf: Können wir das selbst machen?</p><p>Im Rahmen des Vortrags werden die Schwierigkeiten und mögliche Lösungen für diese Herausforderungen vorgestellt und diskutiert. Zusätzlich werden die Resultate eines PoCs präsentiert und die Frage nach dem 'Können wir das?' beantwortet.</p>",
+      "id": "2A",
+      "title": "2A - SBB go - Touchpoint-Analyse aus Kundensicht mit einer App",
+      "abstract": "<p>Entwicklung einer Touchpoint-Analysemethode und Umsetzung der Methode mit einer App in zwei Tagen. (SBB-Touchpoints (engl. Kontaktpunkte) sind sämliche Berührungspunkte eines bestehenden oder potentiellen Kunden mit der SBB, die durch das Unternehmen gestaltet oder beeinflusst werden können – vor während und nach der Reise).</p>",
       "speakerIds": [
-        18
-      ],
-      "common": false
-    },
-    {
-      "id": "D1",
-      "title": "D1 - In Ludicrousspeed to production with JHipster + Openshift",
-      "abstract": "<p>Wir erstellen vor dem Publikum eine Applikation mit dem Generator JHipster welches SBB Technologien (Spring-Boot, Spring-Data, Hazlecast, Angular JS, Angular 4, Liquibase usw.) als Basis verwendet. Das Ziel ist es in 40 Minuten eine Applikation mit diversen Business Entitäten in SBB Look zu erstellen und produktiv in der SBB Cloud zu deployen. Es soll zeigen wie man innerhalb der SBB sehr schnell eine lauffähige Applikation in Produktion bringen kann. Der JHipster-Generator bringt sehr viel Knowhow über Spring und Angular und das Zusammenspiel all dieser Komponenten mit. JHipster kann einem Projekt enorm Zeit für das Bootstrapping einer Applikation einsparen. Auch verkürzt es die Einarbeitungszeit in all die Technologien, da es das Zusammenspiel der Technologien sehr gut vereint.Provisorisch Runbook:<ul><li>Kurzübersicht JHipster (5min)</li><li>JHipster initial Generierung (5min)</li><li>Customizing (10min - im Hintergrund läuft JHipster Generierung)</li><li>Deployment (10min)</li><li>Präsentation UI & Code Struktur zeigen (5min)</li><li>Fragen und Antworten (5min)</li></ul>Detailliertes Runbook (https://confluence.sbb.ch/display/CISINFRAE/Detailliertes+Runbook)</p>",
-      "speakerIds": [
-        6,
-        17
-      ],
-      "common": false
-    },
-    {
-      "id": "D2",
-      "title": "D2 - G# - GIS für alle @SBB",
-      "abstract": "<p>G# (Geodata Shared Platform) ist eine GIS Plattform der SBB für die SBB. Dieser Vortrag richtet sich an alle Interessenten, welche in irgendeiner Form Geodaten in der SBB verwalten, publizieren oder visualisieren wollen. Der Vortrag deckt das komplette Spektrum ab und veranschaulicht die Architektur und den Aufbau der Plattform, sowie dessen vielfältige Einsatzmöglichkeiten mit allen möglichen Technologien. Erstellen von einfach konfigurierbaren Web-Applikationen bis hin zu vollständigen Eigenentwicklungen im Web- oder iOS Umfeld. Der Vortrag wird anhand von konkret umgesetzten Beispielen mit der Verwendung der G# Plattform, untermauert. Der Vortrag soll die Vielfältigkeit der Plattform, sowie bereits einige Lessons Learned aufzeigen.</p>",
-      "speakerIds": [
-        20,
         16,
-        39
-      ],
-      "common": false
-    },
-    {
-      "id": "D3",
-      "title": "D3 - Eine explizite Versionierung ist möglich",
-      "abstract": "<p>Im Projekt SVS haben wir den alten Monolithen mittlerweile erfolgreich in einen verteilten Monolithen zerlegt. Damit haben wir ein Zwischenziel erreicht. Ein weiterer Schritt autonomere Anwendungen zu bekommen besteht in der expliziten Serviceversionierung. In meinem Vortrag möchte ich vorstellen<ul><li>Warum braucht es Serviceversionierung?</li><li>Mögliche Implementierungen mit Ihren Vor- und Nachteilen kurz vorstellen</li><li>Was haben wir gelernt</li></ul></p>",
-      "speakerIds": [
+        17,
+        18,
         19
       ],
       "common": false
     },
     {
-      "id": "D4",
-      "title": "D4 - AngularJS 2 & Reaktive Programmierung",
-      "abstract": "<p>AngularJS 2+ bringt nebst dem neuen Framework auch die reaktive Programmierung in die Webentwicklung. Viele Konzepte in AngularJS 2 basieren auf diesen Methoden & Modellen.Diese Art der Entwicklung bringt viele Vorteile aber auch ein Umdenken in der Art wie man Web-GUIs entwickelt.</p><p>In diesem Vortrag zeigen wir zum einen den neuen ESTA WebJS 2 Stack. Zum anderen zeigen wir anhand von verschiedenen Beispielen die reaktive GUI-Programmierung. Wir gehen dabei auf Themen wie Streams, Observables, RxJS und Websockets ein.</p>",
+      "id": "2B",
+      "title": "2B - My smart station Zürich HB (MSSZH) – Act instead of talk!",
+      "abstract": "<p>„Wir wetten, dass wir bis 01.04.2019 den Zürich HB als digitalsten, persönlichsten Verkehrsknoten der Welt umgesetzt haben: mit Mietern, Lieferanten und weiteren innovativen Partnern.“</p>",
       "speakerIds": [
-        15,
+        20,
+        21
+      ],
+      "common": false
+    },
+    {
+      "id": "2C",
+      "title": "2C - Der Sprung aus dem Hamsterrad: Skalierte Agilität",
+      "abstract": "<p>Skalierte Agilität sorgt in einem Umfeld mit mehreren Teams  - unter Einhaltung der agilen Prinzipien – für eine vertikale und horizontale Koordination zur Erreichung eines gemeinsamens Ziels. Die Skalierung nutzt auf allen Ebenen dieselben Elemente und Prinzipien zur Reduktion der Komplexität und basiert auf einer postheroischen Führung. Die Organisation springt  aus dem Hamsterrad, definiert eigene, klare Spielregeln in ihrem Arbeitsrahmen und entwickelt sich emergent weiter. Erlebe einen interaktiven Vortrag zu den kritischen Erfolgsfaktoren der skalierten Agilität.</p>",
+      "speakerIds": [
+        22,
+        23
+      ],
+      "common": false
+    },
+    {
+      "id": "2D",
+      "title": "2D - SBB Cargo Digital: Das digitale Logistik-Ökosystem für die moderne Güterbahn",
+      "abstract": "<p>Vom industriellen Zeitalter in eine digitale Zukunft: Die Güterlogistik befindet sich in einem spannenden Umbruch und SBB Cargo hat die Chance, diesen Umbruch bahnseitig zu gestalten.</p>",
+      "speakerIds": [
+        24,
         25
       ],
       "common": false
     },
     {
-      "id": "E1",
-      "title": "E1 - Testing Java Code Effectively",
-      "abstract": "<p>The Java ecosystem has myriads of libraries and projects that can be used to create the features our customers require, there's no shortage of options everywhere you look when it comes to writing production code. But what about testing code? If you ascribe to the Clean Code ideals then you know that testing code is as important as production code. Luckily there are a good number of libraries that can be used with popular testing frameworks. In this session we'll discover how to write better parameterized tests; take care of concurrency related events; spy/mock/stub out collaborators to ensure cleaner and isolated tests; fake out REST APIs to test out client code; fake out REST clients to test out server code, and more.</p>",
+      "id": "2W",
+      "title": "2W - Die Zukunft der Kundenbegleitung im digitalen Zeitalter",
+      "abstract": "<p>Sich wandelnde Kundenbedürfnisse und die zunehmenden technologische Möglichkeit der Digitalisierung und Automatisierung werden die Kundenbegleitung im Zug und am Bahnhof (heute: Kontrolle, Kundenbetreuung, betriebliche Aufgaben) in den kommenden Jahren stark verändern. Die Teilnehmenden des Workshops diskutieren konkrete Chancen und Risiken und erarbeiten Visionen zur Rolle der Kundenbegleiter/innen im Jahr 2025.</p>",
       "speakerIds": [
-        2
+        26,
+        27,
+        28
       ],
       "common": false
     },
     {
-      "id": "E2",
-      "title": "E2 - RCS und der Bazaar: Die Migration zu Eclipse 4",
-      "abstract": "<p>RCS-D auf E4 zu migrieren ist nicht trivial: RCS-D ist eine grosse RCP Anwendung mit Echtzeitdarstellung der Zugsbewegungen und teilt sich die Codebasis teilweise mit ALEA. Für die Migration haben wir EclipseSource ins Boot genommen, um bei der Problembehebung Unterstützung zu bekommen—oder Bugs in E4 direkt zu flicken! In diesem Vortrag teilen wir unsere Erfahrung mit dieser Zusammenarbeit und reflektieren über die Dynamik des Open Source Modells.</p>",
+      "id": "3A",
+      "title": "3A - Digitales Mietercockpit",
+      "abstract": "<p>Wir entwickeln für unsere Geschäftsmieter ein Cockpit mit digitalen Services, das sie aus den Socken haut.</p>",
       "speakerIds": [
-        7,
-        21,
-        37,
-        38
+        29,
+        30
       ],
       "common": false
     },
     {
-      "id": "E3",
-      "title": "E3 - Double Session",
-      "abstract": "<p><b>Understanding your Team members for a better Software</b><br>The Enneagram of personality classifies humans in 9 distinct categories with eventual attachments to other categories. Usually, software development team usually comprises of people with different categories. Knowing how each and every team member “works” increases our chance to work more efficiently with them. My short presentation would explain the different categories which exist and help the listeners to analyse themselves and maybe try to know their colleagues. A better understanding of each and every individual in software development teams would help us best allocate the human resources for most efficient result. Close up by analysing the applicability in SBB.</p><p><b>Consumer Driven Contract für Web Services Unit Testing</b><br>Eine Herausförderung für Web Service Hersteller mit viele Abnehmer und viele Releases ist sicher zu sein, dass die neue Release kompatible mit allen seinen Abnehmern ist.   Consumer Driven Contract  (CDC) hilft dieses Herausförderung zu meistern. Das Konzept ist einfach: jede Benützer von dem Web Service schreibt ein oder mehrere Unit Test für den Web Service Hersteller. Diese Unit Test laufen bei Web Service Hersteller. Der Web Service Hersteller merkt sofort wenn er das Kontrakt mit einem oder mehreren Abnehmer bricht. Dieser Vortrag wird anhand von realen Beispielen zeigen was Consumer Driven Contracts sind und wie dieses Konzept in das reale Welt funktioniert.</p>",
+      "id": "3B",
+      "title": "3B - IoT and the (Smart) City",
+      "abstract": "<p>Die Digitalisierung (v.a. IoT) ermöglicht smartere Infrastrukturen (z.B. Transport, Energie, Kommunikation) und effizientere Abläufe bei der Ver- und Entsorgung in den Städten und führt so trotz steigender Einwohnerzahlen zu höherer Lebensqualität.</p>",
       "speakerIds": [
         31,
-        5
+        32
       ],
       "common": false
     },
     {
-      "id": "E4",
-      "title": "E4 - New style Streaming with Hazelcast Jet",
-      "abstract": "<p>Tradionally, data processing is post-processing. Data is stored in a data warehouse or database and we process it from where it is held. As we can only compute on what is held, this model has two intrinsic costs -- the money cost of storage, and the time costs for the storage technology.</p><p>Although storage technology gets cheaper and faster, the data ingest rate is increasing exponentially so this is a race it has lost. What we need to do is process data as it arrives, storing any subset of derived or original results that suit us.</p><p>This is what Hazelcast Jet does, a new offering in the stream processing world offering genuine infinite stream and micro-batch handling, all deployed with the ease and speed of Hazelcast. You can literally be up and running in minutes, and processing in microseconds.</p><p>In this talk I'll cover real world use of Jet, taking a simple Java jar as as deployment unit, using Kafka as a data source, analyse a stream of observations and saving only the insights calculated from this. What we'll see is that Jet is super easy to get started, uses the powerful directed acyclic graph as it's base construct, extends out with a *distributed* version of Java streams, so the programmer gets all the benefits of scaling for very little coding.</p><p>lanyrd.com/profile/neilstevenson/bio/</p>",
+      "id": "3C",
+      "title": "3C - Operating auf dem Weg zu „Smart Maintenance“ für Rollmaterial",
+      "abstract": "<p>Unrundheiten an Rädern, Ausbrüche an Schleifstücken von Stromabnehmern oder ungenaue Fahrzeug-Lokalisierung sind nur einige der Herausforderungen im Alltag des Betriebs und der Instandhaltung. Operating zeigt anhand von konkreten Beispielen auf, welchen Beitrag die Digitalisierung in diesem Kontext leistet und wie smart Ziele (messbar, ansprechend, realistisch und terminiert) zur Meisterung dieser Herausforderungen gesetzt werden können.</p>",
       "speakerIds": [
-        22
+        33,
+        34
       ],
       "common": false
     },
     {
-      "id": "outro",
-      "title": "Abschluss Developer Day 2017",
-      "abstract": "",
-      "speakerIds": [],
-      "common": true
+      "id": "3D",
+      "title": "3D - Digitale Partnerschaften dank APIs – Chance packen!",
+      "abstract": "<p>Anhand des WebService B2P zeigen wir, wie ein API hilft neue Verkaufskanäle zu eröffnen und weshalb APIs ein starker Treiber in der Digitalisierung der SBB sind.</p>",
+      "speakerIds": [
+        35,
+        36
+      ],
+      "common": false
+    },
+    {
+      "id": "3W",
+      "title": "3W - Sind wir agil? Aktueller Stand der agilen Transformation und Ausblick aus gemeinsamer Sicht Business und IT",
+      "abstract": "<p>Die Teilnehmenden des Workshops diskutieren Erfolgsfaktoren, Hürden sowie Stand der agilen Transformation und entwickeln eine Vision der zukünftige Zusammenarbeit einer agilen SBB. Ziel ist es von den gegenseitigen Erfahrungen zu lernen und einen Blick in die Zukunft zu werfen. Von den Teilnehmenden wird erwartet, dass sie mit der Terminologie und den groben Inhalten der agilen Transformation vertraut sind.</p>",
+      "speakerIds": [
+        37,
+        38,
+        39
+      ],
+      "common": false
+    },
+    {
+      "id": "4A",
+      "title": "4A - Mit der KULT-App besser & schneller informiert im Ereignisfall",
+      "abstract": "<p>Nach einem erfolgreichen PoC im Rahmen des Topprogramms Digitalisierung wurde die KULT-App (KUBE-/Liveticker-App) in kurzer Zeit zur Marktreife entwickelt. Sie stellt für die Mitarbeitenden im Kundenkontakt bei Störungen und anderen Ereignissen der zentrale Kanal zu den relevanten Informationen dar und sorgt für die effizientere Abwicklung von Kundenbetreuungseinsätzen. Wir werden aufzeigen, welches die Schlüsselstellen im agilen Produktentwicklungsprozess waren - und welche Erfolgsfaktoren und Lessons learnt wir für weitere Produkte mitnehmen – Business- und IT-seitig.</p>",
+      "speakerIds": [
+        40,
+        41
+      ],
+      "common": false
+    },
+    {
+      "id": "4B",
+      "title": "4B - SmartRail 4.0 – wie die Eisenbahn 'smart' wird und warum",
+      "abstract": "<p>SmartRail 4.0 innoviert die Eisenbahnproduktion durch eine neue Architektur und die Kombination von neuen Industrieanwendungen im Bahnumfeld – die neue Architektur ermöglicht mehr Kapazität, reduziert die Kosten und erhöht die Sicherheit.</p>",
+      "speakerIds": [
+        42,
+        43
+      ],
+      "common": false
+    },
+    {
+      "id": "4C",
+      "title": "4C - NEXT ICT Workplace – What's New für Teams!",
+      "abstract": "<p>Der neue ICT Workplace baut technische Hürden ab und fördert mit orts- und geräteunabhängigen Diensten die einfache und effiziente Zusammenarbeit über Bereichs- und Hierarchiegrenzen hinaus.</p>",
+      "speakerIds": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "common": false
+    },
+    {
+      "id": "4D",
+      "title": "4D - Pünktlichkeit 'vo de Lüt, für d Lüt' mit Open Data",
+      "abstract": "<p>Dank Open Data können wir den Kunden die Pünktlichkeit sichtbar und greifbar machen und so die Wahrnehmung der Pünktlichkeit verbesssern. Die Kunden können ihre individuelle Pünktlichkeit (Bahnhöfe, Linien) online tracken und Effekte, welche die Pünktlichkeit beeinflussen besser verstehen.</p>",
+      "speakerIds": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "common": false
+    },
+    {
+      "id": "4W",
+      "title": "4W - Mit einfachen Prototypen die eigene Idee schnell testen (Build – Test – Learn)",
+      "abstract": "<p>„Ein Bild sagt mehr als 1000 Worte, ein Prototyp nützt mehr als 1000 Meetings (IDEO)“. Aber was ist überhaupt ein Prototyp? Und wozu dient ein Prototyp? Wie schafft man es, mit einem einfachen Prototyp Produkt- und/oder Dienstleistungsideen zu konkretisieren, um schnellstmöglich Feedback zu erhalten? Nach unserem Workshop wird es möglich sein, diese Fragen selbst zu beantworten. Wir führen in die Philosophie des Prototyping ein, erstellen erste Prototypen basierend auf einer konkreten Problemstellung von SBB Cargo und holen direkt Feedback dazu ein. Der Workshop richtet sich sowohl an Personen aus den Business, als auch aus der IT und benötigt keine speziellen Vorkenntnisse. </p>",
+      "speakerIds": [
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "common": false
     },
     {
       "id": "apero",
@@ -607,456 +815,51 @@
   ],
   "tracks": [
     {
-      "id": "technologies",
-      "title": "Technologies",
+      "id": "trackA",
+      "title": "A: Touch Points",
       "presentations": [
         {
-          "id": "intro",
-          "talkId": "intro",
+          "id": "or",
+          "talkId": "or",
           "time": {
             "start": "09:00",
-            "end": "09:05"
+            "end": "09:30"
           },
           "roomId": "1"
         },
         {
-          "id": "eroeffnungsrede",
-          "talkId": "eroeffnungsrede",
+          "id": "key",
+          "talkId": "key",
           "time": {
-            "start": "09:05",
-            "end": "09:15"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "keynote1",
-          "talkId": "keynote1",
-          "time": {
-            "start": "09:15",
-            "end": "10:00"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "10:00",
+            "start": "09:30",
             "end": "10:30"
           },
           "roomId": "1"
         },
         {
-          "id": "A1",
-          "talkId": "A1",
+          "id": "pause",
+          "talkId": "pause",
           "time": {
             "start": "10:30",
-            "end": "11:15"
+            "end": "10:50"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "1A",
+          "talkId": "1A",
+          "time": {
+            "start": "10:50",
+            "end": "11:35"
           },
           "roomId": "2"
         },
         {
-          "id": "B1",
-          "talkId": "B1",
+          "id": "2A",
+          "talkId": "2A",
           "time": {
-            "start": "11:20",
-            "end": "12:05"
-          },
-          "roomId": "2"
-        },
-        {
-          "id": 50,
-          "talkId": "mittagessen",
-          "time": {
-            "start": "12:05",
-            "end": "13:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "C1",
-          "talkId": "C1",
-          "time": {
-            "start": "13:10",
-            "end": "13:55"
-          },
-          "roomId": "3"
-        },
-        {
-          "id": "D1",
-          "talkId": "D1",
-          "time": {
-            "start": "14:00",
-            "end": "14:45"
-          },
-          "roomId": "3"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "14:45",
-            "end": "15:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "E1",
-          "talkId": "E1",
-          "time": {
-            "start": "15:10",
-            "end": "15:55"
-          },
-          "roomId": "3"
-        },
-        {
-          "id": "keynote2",
-          "talkId": "keynote2",
-          "time": {
-            "start": "16:00",
-            "end": "16:45"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "outro",
-          "talkId": "outro",
-          "time": {
-            "start": "16:45",
-            "end": "16:55"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "apero",
-          "talkId": "apero",
-          "time": {
-            "start": "16:55",
-            "end": "18:15"
-          },
-          "roomId": "1"
-        }
-      ]
-    },
-    {
-      "id": "plattforms",
-      "title": "Plattforms",
-      "presentations": [
-        {
-          "id": "intro",
-          "talkId": "intro",
-          "time": {
-            "start": "09:00",
-            "end": "09:05"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "eroeffnungsrede",
-          "talkId": "eroeffnungsrede",
-          "time": {
-            "start": "09:05",
-            "end": "09:15"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "keynote1",
-          "talkId": "keynote1",
-          "time": {
-            "start": "09:15",
-            "end": "10:00"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "10:00",
-            "end": "10:30"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "A2",
-          "talkId": "A2",
-          "time": {
-            "start": "10:30",
-            "end": "11:15"
-          },
-          "roomId": "4"
-        },
-        {
-          "id": "B2",
-          "talkId": "B2",
-          "time": {
-            "start": "11:20",
-            "end": "12:05"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "mittagessen",
-          "talkId": "mittagessen",
-          "time": {
-            "start": "12:05",
-            "end": "13:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "C2",
-          "talkId": "C2",
-          "time": {
-            "start": "13:10",
-            "end": "13:55"
-          },
-          "roomId": "2"
-        },
-        {
-          "id": "D2",
-          "talkId": "D2",
-          "time": {
-            "start": "14:00",
-            "end": "14:45"
-          },
-          "roomId": "2"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "14:45",
-            "end": "15:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "E2",
-          "talkId": "E2",
-          "time": {
-            "start": "15:10",
-            "end": "15:55"
-          },
-          "roomId": "4"
-        },
-        {
-          "id": "keynote2",
-          "talkId": "keynote2",
-          "time": {
-            "start": "16:00",
-            "end": "16:45"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "outro",
-          "talkId": "outro",
-          "time": {
-            "start": "16:45",
-            "end": "16:55"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "apero",
-          "talkId": "apero",
-          "time": {
-            "start": "16:55",
-            "end": "18:15"
-          },
-          "roomId": "1"
-        }
-      ]
-    },
-    {
-      "id": "engineeringArts",
-      "title": "Engineering Arts",
-      "presentations": [
-        {
-          "id": "intro",
-          "talkId": "intro",
-          "time": {
-            "start": "09:00",
-            "end": "09:05"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "eroeffnungsrede",
-          "talkId": "eroeffnungsrede",
-          "time": {
-            "start": "09:05",
-            "end": "09:15"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "keynote1",
-          "talkId": "keynote1",
-          "time": {
-            "start": "09:15",
-            "end": "10:00"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "10:00",
-            "end": "10:30"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "A3",
-          "talkId": "A3",
-          "time": {
-            "start": "10:30",
-            "end": "11:15"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "B3",
-          "talkId": "B3",
-          "time": {
-            "start": "11:20",
-            "end": "12:05"
-          },
-          "roomId": "4"
-        },
-        {
-          "id": "mittagessen",
-          "talkId": "mittagessen",
-          "time": {
-            "start": "12:05",
-            "end": "13:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "C3",
-          "talkId": "C3",
-          "time": {
-            "start": "13:10",
-            "end": "13:55"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "D3",
-          "talkId": "D3",
-          "time": {
-            "start": "14:00",
-            "end": "14:45"
-          },
-          "roomId": "4"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "14:45",
-            "end": "15:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "E3",
-          "talkId": "E3",
-          "time": {
-            "start": "15:10",
-            "end": "15:55"
-          },
-          "roomId": "2"
-        },
-        {
-          "id": "keynote2",
-          "talkId": "keynote2",
-          "time": {
-            "start": "16:00",
-            "end": "16:45"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "outro",
-          "talkId": "outro",
-          "time": {
-            "start": "16:45",
-            "end": "16:55"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "apero",
-          "talkId": "apero",
-          "time": {
-            "start": "16:55",
-            "end": "18:15"
-          },
-          "roomId": "1"
-        }
-      ]
-    },
-    {
-      "id": "beyond",
-      "title": "Beyond",
-      "presentations": [
-        {
-          "id": "intro",
-          "talkId": "intro",
-          "time": {
-            "start": "09:00",
-            "end": "09:05"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "eroeffnungsrede",
-          "talkId": "eroeffnungsrede",
-          "time": {
-            "start": "09:05",
-            "end": "09:15"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "keynote1",
-          "talkId": "keynote1",
-          "time": {
-            "start": "09:15",
-            "end": "10:00"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "pause",
-          "talkId": "pause",
-          "time": {
-            "start": "10:00",
-            "end": "10:30"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "A4",
-          "talkId": "A4",
-          "time": {
-            "start": "10:30",
-            "end": "11:15"
-          },
-          "roomId": "3"
-        },
-        {
-          "id": "B4",
-          "talkId": "B4",
-          "time": {
-            "start": "11:20",
-            "end": "12:05"
+            "start": "11:50",
+            "end": "12:35"
           },
           "roomId": "3"
         },
@@ -1064,62 +867,44 @@
           "id": "mittagessen",
           "talkId": "mittagessen",
           "time": {
-            "start": "12:05",
-            "end": "13:10"
+            "start": "12:35",
+            "end": "14:20"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "pg",
+          "talkId": "pg",
+          "time": {
+            "start": "14:20",
+            "end": "14:50"
           },
           "roomId": "1"
         },
         {
-          "id": "C4",
-          "talkId": "C4",
+          "id": "3A",
+          "talkId": "3A",
           "time": {
-            "start": "13:10",
-            "end": "13:55"
+            "start": "15:05",
+            "end": "15:50"
           },
           "roomId": "4"
         },
         {
-          "id": "D4",
-          "talkId": "D4",
+          "id": "4A",
+          "talkId": "4A",
           "time": {
-            "start": "14:00",
-            "end": "14:45"
+            "start": "16:05",
+            "end": "16:50"
           },
-          "roomId": "1"
+          "roomId": "4"
         },
         {
-          "id": "pause",
-          "talkId": "pause",
+          "id": "cr",
+          "talkId": "cr",
           "time": {
-            "start": "14:45",
-            "end": "15:10"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "E4",
-          "talkId": "E4",
-          "time": {
-            "start": "15:10",
-            "end": "15:55"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "keynote2",
-          "talkId": "keynote2",
-          "time": {
-            "start": "16:00",
-            "end": "16:45"
-          },
-          "roomId": "1"
-        },
-        {
-          "id": "outro",
-          "talkId": "outro",
-          "time": {
-            "start": "16:45",
-            "end": "16:55"
+            "start": "17:05",
+            "end": "17:20"
           },
           "roomId": "1"
         },
@@ -1127,10 +912,430 @@
           "id": "apero",
           "talkId": "apero",
           "time": {
-            "start": "16:55",
-            "end": "18:15"
+            "start": "17:20",
+            "end": "18:30"
+          },
+          "roomId": "6"
+        }
+      ]
+    },
+    {
+      "id": "trackB",
+      "title": "B: Am Puls der Digitalisierung",
+      "presentations": [
+        {
+          "id": "or",
+          "talkId": "or",
+          "time": {
+            "start": "09:00",
+            "end": "09:30"
           },
           "roomId": "1"
+        },
+        {
+          "id": "key",
+          "talkId": "key",
+          "time": {
+            "start": "09:30",
+            "end": "10:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "pause",
+          "talkId": "pause",
+          "time": {
+            "start": "10:30",
+            "end": "10:50"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "1B",
+          "talkId": "1B",
+          "time": {
+            "start": "10:50",
+            "end": "11:35"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "2B",
+          "talkId": "2B",
+          "time": {
+            "start": "11:50",
+            "end": "12:35"
+          },
+          "roomId": "2"
+        },
+        {
+          "id": "mittagessen",
+          "talkId": "mittagessen",
+          "time": {
+            "start": "12:35",
+            "end": "14:20"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "pg",
+          "talkId": "pg",
+          "time": {
+            "start": "14:20",
+            "end": "14:50"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "3B",
+          "talkId": "3B",
+          "time": {
+            "start": "15:05",
+            "end": "15:50"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "4B",
+          "talkId": "4B",
+          "time": {
+            "start": "16:05",
+            "end": "16:50"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "cr",
+          "talkId": "cr",
+          "time": {
+            "start": "17:05",
+            "end": "17:20"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "apero",
+          "talkId": "apero",
+          "time": {
+            "start": "17:20",
+            "end": "18:30"
+          },
+          "roomId": "6"
+        }
+      ]
+    },
+    {
+      "id": "trackC",
+      "title": "C: Future of Work",
+      "presentations": [
+        {
+          "id": "or",
+          "talkId": "or",
+          "time": {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "key",
+          "talkId": "key",
+          "time": {
+            "start": "09:30",
+            "end": "10:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "pause",
+          "talkId": "pause",
+          "time": {
+            "start": "10:30",
+            "end": "10:50"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "1C",
+          "talkId": "1C",
+          "time": {
+            "start": "10:50",
+            "end": "11:35"
+          },
+          "roomId": "3"
+        },
+        {
+          "id": "2C",
+          "talkId": "2C",
+          "time": {
+            "start": "11:50",
+            "end": "12:35"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "mittagessen",
+          "talkId": "mittagessen",
+          "time": {
+            "start": "12:35",
+            "end": "14:20"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "pg",
+          "talkId": "pg",
+          "time": {
+            "start": "14:20",
+            "end": "14:50"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "3C",
+          "talkId": "3C",
+          "time": {
+            "start": "15:05",
+            "end": "15:50"
+          },
+          "roomId": "2"
+        },
+        {
+          "id": "4C",
+          "talkId": "4C",
+          "time": {
+            "start": "16:05",
+            "end": "16:50"
+          },
+          "roomId": "2"
+        },
+        {
+          "id": "cr",
+          "talkId": "cr",
+          "time": {
+            "start": "17:05",
+            "end": "17:20"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "apero",
+          "talkId": "apero",
+          "time": {
+            "start": "17:20",
+            "end": "18:30"
+          },
+          "roomId": "6"
+        }
+      ]
+    },
+    {
+      "id": "trackD",
+      "title": "D: Öko-System",
+      "presentations": [
+        {
+          "id": "or",
+          "talkId": "or",
+          "time": {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "key",
+          "talkId": "key",
+          "time": {
+            "start": "09:30",
+            "end": "10:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "pause",
+          "talkId": "pause",
+          "time": {
+            "start": "10:30",
+            "end": "10:50"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "1D",
+          "talkId": "1D",
+          "time": {
+            "start": "10:50",
+            "end": "11:35"
+          },
+          "roomId": "4"
+        },
+        {
+          "id": "2D",
+          "talkId": "2D",
+          "time": {
+            "start": "11:50",
+            "end": "12:35"
+          },
+          "roomId": "4"
+        },
+        {
+          "id": "mittagessen",
+          "talkId": "mittagessen",
+          "time": {
+            "start": "12:35",
+            "end": "14:20"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "pg",
+          "talkId": "pg",
+          "time": {
+            "start": "14:20",
+            "end": "14:50"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "3D",
+          "talkId": "3D",
+          "time": {
+            "start": "15:05",
+            "end": "15:50"
+          },
+          "roomId": "3"
+        },
+        {
+          "id": "4D",
+          "talkId": "4D",
+          "time": {
+            "start": "16:05",
+            "end": "16:50"
+          },
+          "roomId": "3"
+        },
+        {
+          "id": "cr",
+          "talkId": "cr",
+          "time": {
+            "start": "17:05",
+            "end": "17:20"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "apero",
+          "talkId": "apero",
+          "time": {
+            "start": "17:20",
+            "end": "18:30"
+          },
+          "roomId": "6"
+        }
+      ]
+    },
+    {
+      "id": "trackW",
+      "title": "W: Workshop",
+      "presentations": [
+        {
+          "id": "or",
+          "talkId": "or",
+          "time": {
+            "start": "09:00",
+            "end": "09:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "key",
+          "talkId": "key",
+          "time": {
+            "start": "09:30",
+            "end": "10:30"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "pause",
+          "talkId": "pause",
+          "time": {
+            "start": "10:30",
+            "end": "10:50"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "1W",
+          "talkId": "1W",
+          "time": {
+            "start": "10:50",
+            "end": "11:35"
+          },
+          "roomId": "5"
+        },
+        {
+          "id": "2W",
+          "talkId": "2W",
+          "time": {
+            "start": "11:50",
+            "end": "12:35"
+          },
+          "roomId": "5"
+        },
+        {
+          "id": "mittagessen",
+          "talkId": "mittagessen",
+          "time": {
+            "start": "12:35",
+            "end": "14:20"
+          },
+          "roomId": "6"
+        },
+        {
+          "id": "pg",
+          "talkId": "pg",
+          "time": {
+            "start": "14:20",
+            "end": "14:50"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "3W",
+          "talkId": "3W",
+          "time": {
+            "start": "15:05",
+            "end": "15:50"
+          },
+          "roomId": "5"
+        },
+        {
+          "id": "4W",
+          "talkId": "4W",
+          "time": {
+            "start": "16:05",
+            "end": "16:50"
+          },
+          "roomId": "5"
+        },
+        {
+          "id": "cr",
+          "talkId": "cr",
+          "time": {
+            "start": "17:05",
+            "end": "17:20"
+          },
+          "roomId": "1"
+        },
+        {
+          "id": "apero",
+          "talkId": "apero",
+          "time": {
+            "start": "17:20",
+            "end": "18:30"
+          },
+          "roomId": "6"
         }
       ]
     }
@@ -1138,19 +1343,27 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Pavillon"
+      "name": "Trafohalle, 1. OG"
     },
     {
       "id": 2,
-      "name": "Wytsicht"
+      "name": "36.2, EG"
     },
     {
       "id": 3,
-      "name": "Ussicht"
+      "name": "36.3, EG"
     },
     {
       "id": 4,
-      "name": "SIBE"
+      "name": "Glassaal, 1. OG"
+    },
+    {
+      "id": 5,
+      "name": "Hertz, EG"
+    },
+    {
+      "id": 6,
+      "name": "Halle 37, EG"
     }
   ]
 }
