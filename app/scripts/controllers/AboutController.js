@@ -5,7 +5,7 @@ angular.module('conferenceBuddyApp').controller('AboutController',
 
     $scope.user = userService.currentUser();
 
-    $scope.contributors = shuffle(["Christian Eichenberger", "Gilles Zimmermann", "Graf Sebastian", "Korhan Gülseven",
+    $scope.contributors = shuffle(["Christian Eichenberger", "Gilles Zimmermann", "Sebastian Graf", "Korhan Gülseven",
       "Manuel Friedli", "Marc Walter", "Michelle Luginbühl", "Nicolas Cotting", "Stefan Zeller"]);
 
     $scope.isRegistered = function () {
