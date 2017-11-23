@@ -18,7 +18,7 @@
             {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
-            <div class="header">{{presentation.title}}</div>
+            <div class="header" ng-bind-html="renderHtml(presentation.title)"></div>
             <div ng-show="hasSpeakers(presentation)" class="author">mit {{formatSpeakers(presentation)}}</div>
             <div>
                 <small>{{presentation.room.name}}</small>
@@ -35,7 +35,7 @@
             {{presentation.time.end}}
         </div>
         <div class="col-xs-10 col-lg-11">
-            <div class="header" ng-show="!hasAbstract(presentation)">{{presentation.title}}</div>
+            <div class="header" ng-show="!hasAbstract(presentation)" ng-bind-html="renderHtml(presentation.title)"></div>
             <div class="link-header"><a ng-click="showDetails($index, currentTrack, ROUTES.TRACKS)" ng-show="hasAbstract(presentation)">{{presentation.title}}</a>
             </div>
             <div ng-show="hasSpeakers(presentation)" class="author">mit {{formatSpeakers(presentation)}}</div>

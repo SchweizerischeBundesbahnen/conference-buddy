@@ -806,6 +806,14 @@
       "common": false
     },
     {
+      "id": "ms",
+      "title": "<p>Marktstände</p><ul style=\"font-weight:normal;\"><li>Extended Reality auf der Gotthard-Achse</li><li>Data Science Community: Gemeinsam aus Daten Mehrwert erzeugen!</li><li>Sleep well my Train - Energiesparen einfach gemacht.</li><li>Technologie Outlook: Was kommt auf uns zu?</li><li>Wie fördern wir gemeinsam die Innovation AT SBB?</li><li>loT@sbb.ch</li><li>Mobilität der Zukunft</li><li>Wir machen uns fit für die Zukunft.</li><li>Gemeinsam entwickeln wir die Arbeitswelt der Zukunft.</li><li>Die SBB in der Digitalen Transformation – Surfen auf der Welle</li></ul><br/>",
+      "abstract": "",
+      "speakerIds": [
+      ],
+      "common": true
+    },
+    {
       "id": "apero",
       "title": "Apéro",
       "abstract": "",
@@ -1333,6 +1341,21 @@
           "talkId": "apero",
           "time": {
             "start": "17:20",
+            "end": "18:30"
+          },
+          "roomId": "6"
+        }
+      ]
+    },
+    {
+      "id": "trackM",
+      "title": "M: Marktstände",
+      "presentations": [
+        {
+          "id": "ms1",
+          "talkId": "ms",
+          "time": {
+            "start": "08:15",
             "end": "18:30"
           },
           "roomId": "6"
