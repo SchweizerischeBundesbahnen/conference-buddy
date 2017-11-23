@@ -70,7 +70,7 @@ public class ApacheMailServiceImpl implements EmailService {
     email.setFrom(username);
     email.setSubject("conference-buddy registration");
     email.setMsg("Dear " + user.getName() + ","
-      + "\n\nYour Registration-URL: http://www.devday.ch/#/register?" + user.getId()
+      + "\n\nYour Registration-URL: http://www.tech4.ch/#/register?" + user.getId()
       + "\nSBB UserId: " + user.getUserId()
       + "\n\nYour conference-buddy team");
     email.addTo(user.getEmail());
