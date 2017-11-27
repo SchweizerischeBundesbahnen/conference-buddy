@@ -33,9 +33,9 @@
                 <input type="text" class="form-control" ng-model="user.name" id="name" required placeholder="Name eingeben"/>
             </div>
             <div class="form-group">
-                <label for="userId">U-Nummer (nur SBB Mitarbeiter)</label>
-                <input type="text" class="form-control" ng-model="user.userId" id="userId" ng-pattern="/^(u|U)(e|E)?\d+$/"
-                       placeholder="U-Nummer eingeben oder leer lassen"/>
+                <label for="userId">U/UE/E-Nummer (nur SBB Mitarbeiter)</label>
+                <input type="text" class="form-control" ng-model="user.userId" id="userId" ng-pattern="/^(u|e|ue)?\d+$/i"
+                       placeholder="U/UE/E-Nummer eingeben oder leer lassen"/>
             </div>
             <button type="submit" class="btn btn-default" ng-disabled="registration.$invalid">Registrieren</button>
         </form>
