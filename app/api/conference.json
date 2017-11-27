@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "name": "Kurt",
+      "name": "Prof. Dr. Kurt",
       "surname": "Matzler",
       "email": "",
       "company": "Professor an der Freien Universität Bozen und Gastprofessor an der Universität Innsbruck",
@@ -258,8 +258,8 @@
     },
     {
       "id": 29,
-      "name": "Yersel",
-      "surname": "Koray",
+      "name": "Koray",
+      "surname": "Yersel",
       "email": "",
       "company": "IT-SCF-EDA-MPC",
       "picture": "images/referenten/ky.jpg",
@@ -457,7 +457,7 @@
     {
       "id": 51,
       "name": "Benedikt",
-      "surname": "Hitz",
+      "surname": "Hitz-Gamper",
       "email": "",
       "company": "Uni Bern",
       "picture": "images/referenten/bhg.jpg",
@@ -542,8 +542,8 @@
       "title": "Opening Remarks",
       "abstract": "",
       "speakerIds": [
-        1,
-        3
+        3,
+        1
       ],
       "common": true
     },
@@ -552,8 +552,8 @@
       "title": "Closing Remarks",
       "abstract": "",
       "speakerIds": [
-        1,
-        3
+        3,
+        1
       ],
       "common": true
     },
@@ -785,9 +785,9 @@
       "title": "4D - Pünktlichkeit 'vo de Lüt, für d Lüt' mit Open Data",
       "abstract": "<p>Dank Open Data können wir den Kunden die Pünktlichkeit sichtbar und greifbar machen und so die Wahrnehmung der Pünktlichkeit verbesssern. Die Kunden können ihre individuelle Pünktlichkeit (Bahnhöfe, Linien) online tracken und Effekte, welche die Pünktlichkeit beeinflussen besser verstehen.</p>",
       "speakerIds": [
-        48,
-        49,
         50,
+        49,
+        48,
         51
       ],
       "common": false
